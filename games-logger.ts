@@ -40,8 +40,7 @@ if (code === 0) {
     pid: decoder.decode(rawOutput),
     timestramp: Date.now(),
   };
-  const data = await postData(baseURL, game)
-  Deno.stdout.write(data); // JSON data parsed by `response.json()` call
+  await postData(baseURL, game)
 } else {
   const rawError = await p.stderrOutput();
   const errorString = new TextDecoder().decode(rawError);
