@@ -1,5 +1,5 @@
 # Deno REST API
-> This is a simple REST API using Deno and Oak. It is part of my YouTube crash course. I will be adding database functionality and JWT to it in the near future
+> This is a simple REST API using Deno and Oak to monitor my son's game playing records
 
 ## Run
 ```
@@ -8,9 +8,9 @@ deno run --allow-net server.ts
 
 ## Routes
 ```
-GET      /api/v1/products
-GET      /api/v1/products/:id
-POST     /api/v1/products
-PUT      /api/v1/products/:id
-DELETE   /api/v1/products/:id
+GET      /api/v1/games
+GET      /api/v1/games/:id
+POST     /api/v1/games
+PUT      /api/v1/games/:id
+DELETE   /api/v1/games/:id
 ```
