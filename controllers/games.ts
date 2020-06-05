@@ -1,19 +1,17 @@
 import { v4 } from 'https://deno.land/std/uuid/mod.ts'
 import { Game } from '../types.ts'
 
-let games: Game[] = [
-    {
-      id: "1",
-      name: "Game One",
-      description: "This is game one",
-      pid: 9999,
-      timestramp: "2020-06-05"
-    },
-]
+// const decoder = new TextDecoder('utf-8')
+// const r = await Deno.readFile('../data/games.json')
+// let games: Game[] = JSON.parse(decoder.decode(r))
+
+const FILE_PATH='data/games.json';
 
 // @desc    Get all games
 // @route   GET /api/v1/games
-const getGames = ({ response }: { response: any }) => {
+const getGames = async ({ response }: { response: any }) => {
+    const r = await Deno.readTextFile(FILE_PATH);
+    let games: Game[] = JSON.parse(r)
     response.body = {
         success: true,
         data: games
@@ -22,7 +20,9 @@ const getGames = ({ response }: { response: any }) => {
 
 // @desc    Get single game
 // @route   GET /api/v1/games/:id
-const getGame = ({ params, response }: { params: { id: string }, response: any }) => {
+const getGame = async ({ params, response }: { params: { id: string }, response: any }) => {
+    const r = await Deno.readTextFile(FILE_PATH);
+    let games: Game[] = JSON.parse(r)
     const game: Game | undefined = games.find(p => p.id === params.id)
 
     if (game) {
@@ -53,8 +53,15 @@ const addGame = async ({ request, response }: { request: any, response: any }) =
         }
     } else {
         const game: Game = body.value
+        console.log(game)
         game.id = v4.generate()
+        // added
+        const r = await Deno.readTextFile(FILE_PATH);
+        let games: Game[] = JSON.parse(r)
         games.push(game)
+        // write 
+        await Deno.writeTextFile(FILE_PATH, JSON.stringify(games));
+        // response
         response.status = 201
         response.body = {
             success: true,
@@ -66,6 +73,8 @@ const addGame = async ({ request, response }: { request: any, response: any }) =
 // @desc    Update game
 // @route   PUT /api/v1/games/:id
 const updateGame = async({ params, request, response }: { params: { id: string }, request: any, response: any }) => {
+    const r = await Deno.readTextFile(FILE_PATH);
+    let games: Game[] = JSON.parse(r)
     const game: Game | undefined = games.find(p => p.id === params.id)
 
     if (game) {
@@ -74,6 +83,8 @@ const updateGame = async({ params, request, response }: { params: { id: string }
         const updateData: { name?: string; description?: string; price?: number } = body.value
 
         games = games.map(p => p.id === params.id ? { ...p, ...updateData } : p)
+        // write 
+        await Deno.writeTextFile(FILE_PATH, JSON.stringify(games));
 
         response.status = 200
         response.body = {
@@ -90,9 +101,13 @@ const updateGame = async({ params, request, response }: { params: { id: string }
 }
 
 // @desc    Delete game
-// @route   DELETE /api/v1/game/:id
-const deleteGame = ({ params, response }: { params: { id: string }, response: any }) => {
+// @route   DELETE /api/v1/games/:id
+const deleteGame = async ({ params, response }: { params: { id: string }, response: any }) => {
+    const r = await Deno.readTextFile(FILE_PATH);
+    let games: Game[] = JSON.parse(r)
     games = games.filter(p => p.id !== params.id)
+    await Deno.writeTextFile(FILE_PATH, JSON.stringify(games));
+
     response.body = { 
         success: true,
         msg: 'Game removed'
