@@ -38,12 +38,12 @@ if (code === 0) {
     name: "Minecraft",
     description: "Minecraft process",
     pid: decoder.decode(rawOutput),
-    timestramp: Date.now(),
+    timestramp: new Date(),
   };
   await postData(baseURL, game)
 } else {
   const rawError = await p.stderrOutput();
-  const errorString = new TextDecoder().decode(rawError);
+  const errorString = decoder.decode(rawError);
   console.log(errorString);
 }
 
