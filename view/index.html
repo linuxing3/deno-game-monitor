@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <style>
+            html, body {
+                background-color: #111111;
+                color: #eeeeee;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+        </style>
+        
+        <!-- 
+            Including the Plotly.js library. In production applications this
+            library will be linked to a file on the disk instead of pulled from
+            the web. 
+        -->
+        <script src="https://cdn.plot.ly/plotly-1.53.0.min.js"></script>
+    </head>
+    <body>
+        <h1>Bitcoin Price Index</h1>
+        <div id="BitcoinChart"></div>
+        
+        <!-- 
+            Code to create the chart. First the Bitcoin Price Index data is added
+            to the JavaScript code when the template gets rendered. Then Plotly is
+            used to generate a chart.
+         -->
+        <script>
+            let bpiData = {{ bpiData|safe }};
+            
+            let chart = Plotly.newPlot(
+                document.querySelector("#BitcoinChart"),
+                [
+                    {
+                        x: Object.keys(bpiData),
+                        y: Object.values(bpiData),
+                        type: "scatter",
+                        mode: "lines",
+                        line: {
+                            color: "#FF0000",
+                            width: 2.5,
+                        },
+                    },
+                ],
+            );
+        </script>
+    </body>
+</html>

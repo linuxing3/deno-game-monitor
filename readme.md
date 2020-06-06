@@ -14,3 +14,5 @@ POST     /api/v1/games
 PUT      /api/v1/games/:id
 DELETE   /api/v1/games/:id
 ```
+
+Documents: [docs](docs/index.md)
