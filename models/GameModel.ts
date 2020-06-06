@@ -4,7 +4,7 @@ import {
   Field,
   FieldType,
   Model,
-} from "https://deno.land/x/dso@v1.0.0/mod.ts";
+} from "../deps.ts";
 
 
 @Model("games")

@@ -1,7 +1,9 @@
 import {
   dso,
+  Client,
   Where
-} from "https://deno.land/x/dso@v1.0.0/mod.ts";
+} from "../deps.ts";
+import env from "../config/env.ts";
 
 import { UserModel } from "../models/UserModel.ts"
 import { GameModel } from "../models/GameModel.ts"
@@ -9,17 +11,20 @@ import { GameModel } from "../models/GameModel.ts"
 export const userModel = dso.define(UserModel);
 export const gameModel = dso.define(GameModel);
 
+// TODO: client to be global
+export const client: Client = await dso.connect({
+  hostname: env["DB_HOST"] || "xunqinji.top",
+  port: parseInt(env["DB_PORT"]) || 9005,
+  username: env["DB_USERNAME"] ||"monitor",
+  password: env["DB_PASSWORD"] || "20090909",
+  db: env["DB_DATABASE"] || "monitor"
+});
+
 export async function initDb() {
-  await dso.connect({
-    hostname: "xunqinji.top",
-    port: 9005,
-    username: "monitor",
-    password: "20090909",
-    db: "monitor"
-  });
   await dso.sync(false);
 }
 
+// Grub Options
 export async function addRecord(model: UserModel | GameModel, data: any) {
 
   const id = await model.insert(data);

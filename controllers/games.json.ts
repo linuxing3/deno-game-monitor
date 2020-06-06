@@ -1,4 +1,5 @@
-import { v4 } from 'https://deno.land/std/uuid/mod.ts'
+import { v4 } from '../deps.ts'
+import env from '../config/env.ts'
 import { Game } from '../types.ts'
 
 
@@ -6,7 +7,7 @@ import { Game } from '../types.ts'
 // const r = await Deno.readFile('../data/games.json')
 // let games: Game[] = JSON.parse(decoder.decode(r))
 
-const FILE_PATH='data/games.json';
+const FILE_PATH=env["FILE_PATH"] || 'data/games.json';
 
 // @desc    Get all games
 // @route   GET /api/v1/games

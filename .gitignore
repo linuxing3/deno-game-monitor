@@ -1,2 +1,3 @@
 nohup.out
 data/games.json
+.deno_plugins/*.dll

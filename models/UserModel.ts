@@ -4,12 +4,11 @@ import {
   Field,
   FieldType,
   Model,
-} from "https://deno.land/x/dso@v1.0.0/mod.ts";
+} from "../deps.ts";
 
 // Define a database model
 @Model("users")
 export class UserModel extends BaseModel {
-  // The ! operator is needed for primary key since it's never null 
   @Field({
     type: FieldType.INT,
     primary: true,
@@ -18,11 +17,13 @@ export class UserModel extends BaseModel {
   })
   id!: number; 
   
-  // We use ! since name is never null 
   @Field({ type: FieldType.STRING, length: 30, notNull: true }) 
   name!: string;
 
-  // We use ? since password is nullable
+  // FIXEM: password is hashed and needs long string, over 100
+  @Field({ type: FieldType.STRING, length: 100, notNull: true  })
+  password!: string;
+
   @Field({ type: FieldType.STRING, length: 30 }) 
-  password?: string;
+  email?: string;
 }
