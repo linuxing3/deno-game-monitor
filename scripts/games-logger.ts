@@ -48,18 +48,11 @@ async function addTextLog(keyword: string, filePath: string) {
   });
 
   const { code } = await p.status();
-  if (code === 0) {
-    const rawOutput = await p.stdOutput();
-    await Deno.stdout.write(decoder.decode(rawOutput));
-  } else {
-    const rawError = await p.stderrOutput();
-    await Deno.stdout.write(decoder.decode(rawError));
-  }
   Deno.exit(code);
 }
 
 async function addJsonLog(keyword: string, filePath: string, url: string) {
-  let result: any[]
+  let result: any[] = [];
   const text: string = decoder.decode(await Deno.readFile(filePath))
   text.split('\n').map((value) => {
     result.push({
@@ -71,7 +64,7 @@ async function addJsonLog(keyword: string, filePath: string, url: string) {
   // local write
   writeJsonSync(filePath.split('.')[0] + '.json', result, { spaces: 2 });
   // remote post to api server
-  await postData(url, lines)
+  await postData(url, result)
 }
 
 // Start the command line program
@@ -84,7 +77,7 @@ const program = new Denomander({
 program
   .command('[keyword] [file]')
   .description('log with keyword to file')
-  .action(({ keyword, file }) => {
+  .action(async ({ keyword, file }: { keyword: string, file: string }) => {
     await addTextLog(keyword, file)
     await addJsonLog(keyword, file, baseURL)
   });
