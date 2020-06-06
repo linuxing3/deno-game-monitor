@@ -35,7 +35,7 @@ async function postData(url = "", data = {}) {
 async function addTextLog(keyword: string, filePath: string) {
   const p = Deno.run({
     cmd: [
-      "tasklist.exe",
+      "/mnt/c/Windows/System32/tasklist.exe",
       "|",
       `grep '${keyword}'`,
       "|",
