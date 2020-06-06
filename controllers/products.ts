@@ -1,13 +1,13 @@
 import { v4 } from '../deps.ts'
-import { Product } from '../types.ts'
+Iimport { IProduct } from '../types.ts'
 
-let products: Product[] = [
+let products: IProduct[] = [
     {
       id: "1",
       name: "Product One",
       description: "This is product one",
       price: 99.99,
-    },
+    },I
     {
       id: "2",
       name: "Product Two",
@@ -34,7 +34,7 @@ const getProducts = ({ response }: { response: any }) => {
 // @desc    Get single product
 // @route   GET /api/v1/products/:id
 const getProduct = ({ params, response }: { params: { id: string }, response: any }) => {
-    const product: Product | undefined = products.find(p => p.id === params.id)
+    const product: IProduct | undefined = products.find(p => p.id === params.id)
 
     if (product) {
         response.status = 200
@@ -77,7 +77,7 @@ const addProduct = async ({ request, response }: { request: any, response: any }
 // @desc    Update product
 // @route   PUT /api/v1/products/:id
 const updateProduct = async({ params, request, response }: { params: { id: string }, request: any, response: any }) => {
-    const product: Product | undefined = products.find(p => p.id === params.id)
+    const product: IProduct | undefined = products.find(p => p.id === params.id)
 
     if (product) {
         const body = await request.body()

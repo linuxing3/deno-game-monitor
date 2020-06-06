@@ -1,31 +1,17 @@
 import Denomander from "https://deno.land/x/denomander/mod.ts";
-export * as path from 'https://deno.land/std/path/mod.ts';
+import { writeJsonSync } from 'https://deno.land/std/fs/mod.ts';
 
-const baseURL = "http://xunqinji.top:9007/api/v1/games";
-const fileNames = Deno.args || "/tmp/games.log";
-const decoder = new TextDecoder('utf-8')
-
-const program = new Denomander({
-  app_name: 'Notes App',
-  app_description: 'Create notes in json format from the command-line',
-  app_version: '1.0.0',
-});
-
-program
-  .command('cat [file]')
-  .description('cat log file')
-  .action (({ file }: any) => {
-    console.log(file)
-    catFile(file)
-  });
-
-  
-interface GamePlayLog {
+interface ILog {
   name: string;
   description?: string;
   pid: string;
   timestramp?: string;
 }
+
+const ns = 'games'
+const baseURL = `http://xunqinji.top:9007/api/v1/${ns}`;
+const decoder = new TextDecoder('utf-8')
+// const fileNames = Deno.args || `/tmp/${ns}.log`;
 
 async function postData(url = "", data = {}) {
   // Default options are marked with *
@@ -45,37 +31,62 @@ async function postData(url = "", data = {}) {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-async function catFile(file: string) {
+
+async function addTextLog(keyword: string, filePath: string) {
   const p = Deno.run({
     cmd: [
-      "cat",
-      ...fileNames,
+      "tasklist.exe",
+      "|",
+      `grep '${keyword}'`,
+      "|",
+      "awk '{ print $2 }'",
+      ">",
+      filePath
     ],
     stdout: "piped",
     stderr: "piped",
   });
 
   const { code } = await p.status();
-
   if (code === 0) {
-    const rawOutput = await p.output();
-    await Deno.stdout.write(rawOutput);
-    const game: GamePlayLog = {
-      name: "Minecraft",
-      description: "Minecraft process",
-      pid: decoder.decode(rawOutput),
-      timestramp: new Date(),
-    };
-    await postData(baseURL, game)
-    console.log(game)
+    const rawOutput = await p.stdOutput();
+    await Deno.stdout.write(decoder.decode(rawOutput));
   } else {
     const rawError = await p.stderrOutput();
-    const errorString = decoder.decode(rawError);
-    console.log(errorString);
+    await Deno.stdout.write(decoder.decode(rawError));
   }
-
   Deno.exit(code);
-
 }
+
+async function addJsonLog(keyword: string, filePath: string, url: string) {
+  let result: any[]
+  const text: string = decoder.decode(await Deno.readFile(filePath))
+  text.split('\n').map((value) => {
+    result.push({
+      name: keyword,
+      pid: value,
+      timestramp: new Date()
+    })
+  })
+  // local write
+  writeJsonSync(filePath.split('.')[0] + '.json', result, { spaces: 2 });
+  // remote post to api server
+  await postData(url, lines)
+}
+
+// Start the command line program
+const program = new Denomander({
+  app_name: 'Log App',
+  app_description: 'Create Log in json format from the command-line',
+  app_version: '1.0.0',
+});
+
+program
+  .command('[keyword] [file]')
+  .description('log with keyword to file')
+  .action(({ keyword, file }) => {
+    await addTextLog(keyword, file)
+    await addJsonLog(keyword, file, baseURL)
+  });
 
 program.parse(Deno.args);

@@ -1,4 +1,5 @@
-import { gameModel, addRecord, findAllRecord, findRecord, updateRecord, deleteRecord } from '../services/db.sql.ts'
+import { findRecord, addRecord, findAllRecord, updateRecord, deleteRecord } from '../services/crud.sql.ts'
+import { gameModel  } from '../services/db.sql.ts'
 
 const FILE_PATH='data/games.json';
 

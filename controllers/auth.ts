@@ -1,6 +1,7 @@
 import { Status, compare, makeJwt, hash, config } from "../deps.ts";
 import env from "../config/env.ts";
-import { userModel, findRecord, addRecord  } from '../services/db.sql.ts'
+import { findRecord, addRecord  } from '../services/crud.sql.ts'
+import { userModel  } from '../services/db.sql.ts'
 
 export async function register(ctx: any) {
 

@@ -1,11 +1,11 @@
 import { v4 } from '../deps.ts'
 import env from '../config/env.ts'
-import { Game } from '../types.ts'
+import { IGame } from '../types.ts'
 
 
 // const decoder = new TextDecoder('utf-8')
 // const r = await Deno.readFile('../data/games.json')
-// let games: Game[] = JSON.parse(decoder.decode(r))
+// let games: IGame[] = JSON.parse(decoder.decode(r))
 
 const FILE_PATH=env["FILE_PATH"] || 'data/games.json';
 
@@ -13,7 +13,7 @@ const FILE_PATH=env["FILE_PATH"] || 'data/games.json';
 // @route   GET /api/v1/games
 const getGames = async ({ response }: { response: any }) => {
     const r = await Deno.readTextFile(FILE_PATH);
-    let games: Game[] = JSON.parse(r)
+    let games: IGame[] = JSON.parse(r)
     response.body = {
         success: true,
         data: games
@@ -24,8 +24,8 @@ const getGames = async ({ response }: { response: any }) => {
 // @route   GET /api/v1/games/:id
 const getGame = async ({ params, response }: { params: { id: string }, response: any }) => {
     const r = await Deno.readTextFile(FILE_PATH);
-    let games: Game[] = JSON.parse(r)
-    const game: Game | undefined = games.find(p => p.id === params.id)
+    let games: IGame[] = JSON.parse(r)
+    const game: IGame | undefined = games.find(p => p.id === params.id)
 
     if (game) {
         response.status = 200
@@ -54,12 +54,12 @@ const addGame = async ({ request, response }: { request: any, response: any }) =
             msg: 'No data'
         }
     } else {
-        const game: Game = body.value
+        const game: IGame = body.value
         console.log(game)
         game.id = v4.generate()
         // added
         const r = await Deno.readTextFile(FILE_PATH);
-        let games: Game[] = JSON.parse(r)
+        let games: IGame[] = JSON.parse(r)
         games.push(game)
         // write 
         await Deno.writeTextFile(FILE_PATH, JSON.stringify(games));
@@ -76,8 +76,8 @@ const addGame = async ({ request, response }: { request: any, response: any }) =
 // @route   PUT /api/v1/games/:id
 const updateGame = async({ params, request, response }: { params: { id: string }, request: any, response: any }) => {
     const r = await Deno.readTextFile(FILE_PATH);
-    let games: Game[] = JSON.parse(r)
-    const game: Game | undefined = games.find(p => p.id === params.id)
+    let games: IGame[] = JSON.parse(r)
+    const game: IGame | undefined = games.find(p => p.id === params.id)
 
     if (game) {
         const body = await request.body()
@@ -106,7 +106,7 @@ const updateGame = async({ params, request, response }: { params: { id: string }
 // @route   DELETE /api/v1/games/:id
 const deleteGame = async ({ params, response }: { params: { id: string }, response: any }) => {
     const r = await Deno.readTextFile(FILE_PATH);
-    let games: Game[] = JSON.parse(r)
+    let games: IGame[] = JSON.parse(r)
     games = games.filter(p => p.id !== params.id)
     await Deno.writeTextFile(FILE_PATH, JSON.stringify(games));
 

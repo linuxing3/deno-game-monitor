@@ -40,6 +40,7 @@ export function listNotes() {
 export function saveNotes(notes: INote[]) {
   writeJsonSync(notesFilePath, notes, { spaces: 2 });
 }
+
 export function createNote({ title, body }: INote) {
   const notesList = fetchNotes();
   const isDuplicate = notesList.find((note: INote) => note.title === title);

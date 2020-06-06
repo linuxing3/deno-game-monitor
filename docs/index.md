@@ -43,6 +43,12 @@ export {
 
 ## 控制器controllers
 
+控制器是连接服务器请求和响应之间的关键工作流程
+
+从`ctx`中获取request, response, params等参数
+
+发送后端服务器，接收结果并返回
+
 Check `controllers/auth.ts`
 
 ```typescript
@@ -111,6 +117,8 @@ export async function login(ctx: any) {
 
 ## 中间件 middleware
 
+中间件主要对ctx进行拦截处理，比如输出日志
+
 Check `middleware/logger.ts`
 
 ```typescript
@@ -122,6 +130,8 @@ export default async (ctx: any, next: any) => {
 ```
 
 ## 数据模型 models
+
+在ORM中定义数据的类型，大小，属性，可以供数据库创建数据表
 
 Check `models/UserModel`
 
@@ -161,6 +171,8 @@ export class UserModel extends BaseModel {
 
 ### ORM
 
+通过对象关系模型和数据库进行互动连接
+
 Check `services/db.sql.ts`
 
 ```javascript
@@ -193,3 +205,17 @@ await dso.sync(false);
 
 
 ## 视图 view
+
+## 环境 env
+
+Powered by `export { config } from "https://deno.land/x/dotenv@v0.4.0/mod.ts";`
+
+Check the `config/env.ts`
+
+```typescript
+import { config } from "../deps.ts";
+const env = config();
+export default env;
+```
+
+Now you cant use `env['NAME']` as const in your code

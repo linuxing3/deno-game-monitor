@@ -1,4 +1,4 @@
-  
+export {cron, daily, monthly, weekly} from 'https://deno.land/x/deno_cron/cron.ts';
 export { MongoClient } from "https://deno.land/x/mongo@v0.7.0/mod.ts";
 export { config } from "https://deno.land/x/dotenv@v0.4.0/mod.ts";
 export { slugify } from "https://deno.land/x/slugify@0.3.0/mod.ts";
