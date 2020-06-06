@@ -1,1 +1,1 @@
-nohup deno run --allow-net --allow-read --allow-write server.ts &
+nohup deno run -A --unstable -c tsconfig.json server.ts &
