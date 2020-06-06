@@ -1,0 +1,32 @@
+
+import {
+  BaseModel,
+  Field,
+  FieldType,
+  Model,
+} from "https://deno.land/x/dso@v1.0.0/mod.ts";
+
+
+@Model("games")
+export class GameModel extends BaseModel {
+  @Field({
+    type: FieldType.INT,
+    primary: true,
+    length: 11,
+    autoIncrement: true
+  })
+  id!: number; 
+  
+  @Field({ type: FieldType.STRING, length: 30}) 
+  name?: string;
+
+  @Field({ type: FieldType.STRING, length: 30 }) 
+  description?: string;
+  
+  @Field({ type: FieldType.STRING, length: 10, notNull: true }) 
+  pid!: string;
+
+  @Field({ type: FieldType.STRING, length: 30 })
+  timestramp?: string;
+
+}

@@ -1,6 +1,6 @@
 import { Application } from 'https://deno.land/x/oak/mod.ts'
 import router from './routes.ts'
-import { initDb } from './controllers/db.ts'
+import { initDb } from './services/db.sql.ts'
 
 const port = 8000
 

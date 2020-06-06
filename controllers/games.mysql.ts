@@ -1,13 +1,11 @@
-import { Game } from '../types.ts'
-import { gameModel, addRecord, findAllRecord, findRecord, updateRecord, deleteRecord } from './db.ts'
-
+import { gameModel, addRecord, findAllRecord, findRecord, updateRecord, deleteRecord } from '../services/db.sql.ts'
 
 const FILE_PATH='data/games.json';
 
 // @desc    Get all games
 // @route   GET /api/v1/games
 const getGames = async ({ response }: { response: any }) => {
-    const games = await findAllRecord(gameModel, { name: "" })
+    const games = await findAllRecord(gameModel)
     response.body = {
         success: true,
         data: games
@@ -60,17 +58,16 @@ const addGame = async ({ request, response }: { request: any, response: any }) =
 // @route   PUT /api/v1/games/:id
 const updateGame = async({ params, request, response }: { params: { id: string }, request: any, response: any }) => {
 
+    const body = await request.body()
     let game = await findRecord(gameModel, { id: params.id })
 
     if (game) {    
-        const body = await request.body()
-        const updateData = { id: params.id, ...body.value}
-        let game = await updateRecord(gameModel, updateData)
+        const data = await updateRecord(gameModel, { ...body.value, id: params.id })
 
         response.status = 200
         response.body = {
             success: true,
-            data: game
+            data
         }
     } else {
         response.status = 404
@@ -84,7 +81,7 @@ const updateGame = async({ params, request, response }: { params: { id: string }
 // @desc    Delete game
 // @route   DELETE /api/v1/games/:id
 const deleteGame = async ({ params, response }: { params: { id: string }, response: any }) => {
-    const count =  deleteRecord(gameModel, { id: params.id } )
+    const count = await deleteRecord(gameModel, { id: params.id } )
 
     response.body = { 
         success: true,
