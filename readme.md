@@ -3,7 +3,7 @@
 
 ## Run
 ```
-deno run --allow-net server.ts
+nohup deno run -A --unstable -c tsconfig.json server.ts &
 ```
 
 ## Routes
