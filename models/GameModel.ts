@@ -1,4 +1,3 @@
-
 import {
   BaseModel,
   Field,
@@ -6,27 +5,25 @@ import {
   Model,
 } from "../deps.ts";
 
-
 @Model("games")
 export class GameModel extends BaseModel {
   @Field({
     type: FieldType.INT,
     primary: true,
     length: 11,
-    autoIncrement: true
+    autoIncrement: true,
   })
-  id!: number; 
-  
-  @Field({ type: FieldType.STRING, length: 30}) 
+  id!: number;
+
+  @Field({ type: FieldType.STRING, length: 30 })
   name?: string;
 
-  @Field({ type: FieldType.STRING, length: 30 }) 
+  @Field({ type: FieldType.STRING, length: 30 })
   description?: string;
-  
-  @Field({ type: FieldType.STRING, length: 10, notNull: true }) 
+
+  @Field({ type: FieldType.STRING, length: 10, notNull: true })
   pid!: string;
 
   @Field({ type: FieldType.STRING, length: 30 })
   timestramp?: string;
-
 }

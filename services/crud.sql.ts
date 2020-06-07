@@ -1,6 +1,6 @@
 import {
   Where,
-  BaseModel
+  BaseModel,
 } from "../deps.ts";
 
 // Grub Options
@@ -15,7 +15,7 @@ export async function findRecord(model: BaseModel, query: any) {
   if (query.id) {
     record = await model.findById(query.id);
   } else {
-     record = await model.findOne(Where.from(query));
+    record = await model.findOne(Where.from(query));
   }
   console.log("Found user by id:", record);
   return record;
@@ -28,7 +28,7 @@ export async function addRecord(model: BaseModel, data: any) {
 }
 
 export async function updateRecord(model: BaseModel, query: any) {
-  const records = await model.update(query, Where.from({id: query.id}));
+  const records = await model.update(query, Where.from({ id: query.id }));
   console.log("Update user with id:", records);
   return records;
 }

@@ -1,4 +1,3 @@
-
 import {
   BaseModel,
   Field,
@@ -13,17 +12,17 @@ export class UserModel extends BaseModel {
     type: FieldType.INT,
     primary: true,
     length: 11,
-    autoIncrement: true
+    autoIncrement: true,
   })
-  id!: number; 
-  
-  @Field({ type: FieldType.STRING, length: 30, notNull: true }) 
+  id!: number;
+
+  @Field({ type: FieldType.STRING, length: 30, notNull: true })
   name!: string;
 
   // FIXEM: password is hashed and needs long string, over 100
-  @Field({ type: FieldType.STRING, length: 100, notNull: true  })
+  @Field({ type: FieldType.STRING, length: 100, notNull: true })
   password!: string;
 
-  @Field({ type: FieldType.STRING, length: 30 }) 
+  @Field({ type: FieldType.STRING, length: 30 })
   email?: string;
 }
