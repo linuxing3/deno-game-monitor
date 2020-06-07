@@ -1,4 +1,4 @@
-import { Application } from './deps.ts'
+import { Application, oakCors } from './deps.ts'
 import env from "./config/env.ts";
 
 import gameRouter from './routes/game.ts'
@@ -17,6 +17,7 @@ const port = parseInt(env["PORT"])|| 8000
 const app = new Application()
 
 // Builtin middleware
+app.use(oakCors()); // Enable CORS for All Routes
 app.use(gameRouter.routes())
     .use(homeRouter.routes())
     .use(authRouter.routes())
