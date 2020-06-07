@@ -1,32 +1,21 @@
 
-import {
-  BaseModel,
-  Field,
-  FieldType,
-  Model,
-} from "../deps.ts";
+import { Model, FieldType } from "https://deno.land/x/cotton/mod.ts";
 
+export class GameModel extends Model {
+  static tableName = "games";
+  static fields = {
+    name: { type: FieldType.STRING },
+    description: { type: FieldType.STRING },
+    pid: { type: FieldType.STRING },
+    timestramp: { type: FieldType.STRING },
+    created_at: { type: FieldType.DATE },
+    updated_at: { type: FieldType.DATE },
+  };
 
-@Model("games")
-export class GameModel extends BaseModel {
-  @Field({
-    type: FieldType.INT,
-    primary: true,
-    length: 11,
-    autoIncrement: true
-  })
-  id!: number; 
-  
-  @Field({ type: FieldType.STRING, length: 30}) 
-  name?: string;
-
-  @Field({ type: FieldType.STRING, length: 30 }) 
-  description?: string;
-  
-  @Field({ type: FieldType.STRING, length: 10, notNull: true }) 
+  name!: string;
+  description!: string;
   pid!: string;
-
-  @Field({ type: FieldType.STRING, length: 30 })
-  timestramp?: string;
-
+  timestramp!: string;
+  created_at!: Date;
+  updated_at!: Date;
 }

@@ -1,29 +1,19 @@
-
-import {
-  BaseModel,
-  Field,
-  FieldType,
-  Model,
-} from "../deps.ts";
-
+import { Model, FieldType } from "https://deno.land/x/cotton/mod.ts";
 // Define a database model
-@Model("users")
-export class UserModel extends BaseModel {
-  @Field({
-    type: FieldType.INT,
-    primary: true,
-    length: 11,
-    autoIncrement: true
-  })
-  id!: number; 
-  
-  @Field({ type: FieldType.STRING, length: 30, notNull: true }) 
+
+export class UserModel extends Model {
+  static tableName = "users";
+  static fields = {
+    name: { type: FieldType.STRING },
+    password: { type: FieldType.STRING },
+    email: { type: FieldType.STRING },
+    created_at: { type: FieldType.DATE },
+    updated_at: { type: FieldType.DATE },
+  };
+
   name!: string;
-
-  // FIXEM: password is hashed and needs long string, over 100
-  @Field({ type: FieldType.STRING, length: 100, notNull: true  })
   password!: string;
-
-  @Field({ type: FieldType.STRING, length: 30 }) 
-  email?: string;
+  email!: string;
+  created_at!: Date;
+  updated_at!: Date;
 }

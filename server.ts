@@ -9,8 +9,6 @@ import logger from './middleware/logger.ts';
 import timer from './middleware/timer.ts';
 import error from './middleware/error.ts';
 
-import { initDb } from './services/db.sql.ts'
-
 const host = env["HOST"] || "http://127.0.0.1";
 const port = parseInt(env["PORT"])|| 8000
 
@@ -33,9 +31,6 @@ app.use(error);
 app.addEventListener("error", (evt) => {
   console.log(evt.error);
 });
-
-// Mysql Db with ORM
-await initDb()
 
 // bootstrap
 console.log(`Server running on ${host}:${port}`)

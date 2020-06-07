@@ -1,5 +1,5 @@
 import { Router } from '../deps.ts'
-import { getGames, getGame, addGame, updateGame, deleteGame } from '../controllers/games.mysql.ts'
+import { getGames, getGame, addGame, updateGame, deleteGame } from '../controllers/games.cotton.ts'
 import authorize from '../middleware/authorize.ts'
 
 const router = new Router()

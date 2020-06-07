@@ -8,6 +8,7 @@ export { validateJwt } from "https://deno.land/x/djwt@v0.9.0/validate.ts";
 export { v4 } from 'https://deno.land/std/uuid/mod.ts';
 export {program, Lizard } from 'https://deno.land/x/denomander/mod.ts';
 export { oakCors } from "https://deno.land/x/cors/mod.ts";
+export { Model as CottonModel, FieldType as CottonFieldType, connect } from "https://deno.land/x/cotton/mod.ts";
 
 export { readJsonSync, writeJsonSync } from 'https://deno.land/std/fs/mod.ts';
 
