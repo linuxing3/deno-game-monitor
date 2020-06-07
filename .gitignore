@@ -29,6 +29,5 @@ tools/node_modules/
 nohup.out
 data/*.json
 /data/*.json
-.deno_plugins/*.dll
-/.deno_plugins/*.dll
-**/*/*.dll
+.deno_plugins/*.*
+*/.deno_plugins/*.*
