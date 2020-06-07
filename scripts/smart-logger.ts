@@ -160,7 +160,9 @@ program
   .command('show [keyword] [file]')
   .description('show Code.exe /tmp/games.csv')
   .action(async ({ keyword, file }: { keyword: string, file: string }) => {
-    await readTextLog(keyword, file)
+    const data = await readTextLog(keyword, file)
+    console.log(`Show all process of ${keyword}`)
+    console.log(data)
   });
 
 program
@@ -168,6 +170,8 @@ program
   .description('json Code.exe /tmp/games.csv')
   .action(async ({ keyword, file }: { keyword: string, file: string }) => {
     const data = await readTextLog(keyword, file)
+    console.log(`Write JSON of all process of ${keyword}`)
+    console.log(data)
     await createJsonLog(file, data)
   });
 
@@ -176,6 +180,8 @@ program
   .description('pids Code.exe /tmp/games.csv')
   .action(async ({ keyword, file }: { keyword: string, file: string }) => {
     const data = await readTextLog(keyword, file)
+    console.log(`Savel all pid of process of ${keyword}`)
+    console.log(data)
     await createPidOnlyLog(file, data)
   });
 
@@ -184,6 +190,8 @@ program
   .description('send Code.exe /tmp/games.csv')
   .action(async ({ keyword, file }: { keyword: string, file: string }) => {
     const data = await readTextLog(keyword, file)
+    console.log(`Send all process of ${keyword}  to api server`)
+    console.log(data)
     await sendTextLog(baseURL, data)
   });
 
@@ -192,6 +200,8 @@ program
   .description('kill Code.exe /tmp/games.csv')
   .action(async ({ keyword, file }: { keyword: string, file: string }) => {
     const data = await readTextLog(keyword, file)
+    console.log(`Danger! Kill all process of ${keyword}`)
+    console.log(data)
     await taskKillAll(data)
   });
 
