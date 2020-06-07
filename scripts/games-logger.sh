@@ -7,15 +7,15 @@ cd /root/workspace/deno-game-monitor
 
 # deno install -f -A --unstable scripts/smart-logger.ts 
 
-deno run -A --unstable scripts/smart-logger.ts log /tmp/games csv
+deno run -A --unstable scripts/smart-logger.ts log  -f csv /tmp/games
 
-deno run -A --unstable scripts/smart-logger.ts show "Code.exe" /tmp/games csv
+deno run -A --unstable scripts/smart-logger.ts filter -f csv -k "Code.exe" /tmp/games
 
-deno run -A --unstable scripts/smart-logger.ts json "Code.exe" /tmp/games csv
+deno run -A --unstable scripts/smart-logger.ts json -f csv -k "Code.exe" /tmp/games
 
-deno run -A --unstable scripts/smart-logger.ts pids "Code.exe" /tmp/games csv
+deno run -A --unstable scripts/smart-logger.ts pids -f csv -k "Code.exe" /tmp/games
 
-deno run -A --unstable scripts/smart-logger.ts send "Code.exe" /tmp/games csv
+deno run -A --unstable scripts/smart-logger.ts send -f csv -k "Code.exe" /tmp/games
 
-deno run -A --unstable scripts/smart-logger.ts kill "Code.exe" /tmp/games csv
+deno run -A --unstable scripts/smart-logger.ts kill -f csv -k "Code.exe" /tmp/games
 

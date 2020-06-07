@@ -9,12 +9,8 @@ interface ILog {
   timestramp?: string;
 }
 
-const ns = 'games'
-const decoder = new TextDecoder('utf-8')
-const token = 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI'
+const token = Deno.env.toObject()['LOGGER_REST_TOKEN'] || 'bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI'
 const baseURL = `http://xunqinji.top:9007/api/v1/games`;
-// const fileNames = Deno.args || `/tmp/${ns}.log`;
-
 
 /**
  * post数据
@@ -233,7 +229,8 @@ async function sendTextLog(url: string, data: any[]) {
       pid: d["PID"]
     }
     console.log(game)
-    await postData(url, game)
+    const response = await postData(url, game)
+    console.table(response)
   })
 }
 
@@ -264,63 +261,74 @@ async function createPidOnlyLog(filePath: string, data: any[]) {
 // Start the command line program
 const program = new Denomander({
   app_name: 'Log App',
-  app_description: 'Create Log in json format from the command-line',
+  app_description: 'Create Log in csv, json format from the command-line',
   app_version: '1.0.0',
 });
 
 program
-  .command('log [file] [format]')
-  .description('log /tmp/games csv | log /tmp/games table')
-  .action(async ({ file, format }: { file: string, format: string }) => {
-    console.log(`Save all process  to ${file} as ${format}`)
-    await taskListAll(file, format)
+  .command('log [file]')
+  .option('-f --format', "File format")
+  .description('log -f csv /tmp/games | log -f table /tmp/games')
+  .action(async ({ file }: { file: string }) => {
+    console.log(`Save all process  to ${file} as ${program.format}`)
+    await taskListAll(file, program.format)
   });
 
 program
-  .command('filter [keyword] [file] [format]')
-  .description('filter Code.exe /tmp/games csv')
-  .action(async ({ keyword, file, format }: { keyword: string, file: string, format: string }) => {
-    const data = await filterLogWithKeyword(keyword, file, format)
-    console.log(`Show all process of ${keyword}`)
+  .command('filter [file]')
+  .option('-f --format', "File format")
+  .option('-k --keyword', "Query keyword")
+  .description('filter -f csv -k Code.exe /tmp/games')
+  .action(async ({ file }: { file: string }) => {
+    const data = await filterLogWithKeyword(program.keyword, file, program.format)
+    console.log(`Show all process of ${program.keyword}`)
     console.log(data)
   });
 
 program
-  .command('json [keyword] [file] [format]')
-  .description('json Code.exe /tmp/games csv')
-  .action(async ({ keyword, file, format }: { keyword: string, file: string, format: string }) => {
-    const data = await filterLogWithKeyword(keyword, file, format)
-    console.log(`Write JSON of all process of ${keyword}`)
+  .command('json [file]')
+  .option('-f --format', "File format")
+  .option('-k --keyword', "Query keyword")
+  .description('json -f csv -k Code.exe /tmp/games')
+  .action(async ({ file }: { file: string }) => {
+    const data = await filterLogWithKeyword(program.keyword, file, program.format)
+    console.log(`Write JSON of all process of ${program.keyword}`)
     console.log(data)
     await createJsonLog(file, data)
   });
 
 program
-  .command('pids [keyword] [file] [format]')
-  .description('pids Code.exe /tmp/games csv')
-  .action(async ({ keyword, file, format }: { keyword: string, file: string, format: string }) => {
-    const data = await filterLogWithKeyword(keyword, file)
-    console.log(`Savel all pid of process of ${keyword}`)
+  .command('pids [file] ')
+  .option('-f --format', "File format")
+  .option('-k --keyword', "Query keyword")
+  .description('pids -f csv -k Code.exe /tmp/games')
+  .action(async ({ file }: { file: string }) => {
+    const data = await filterLogWithKeyword(program.keyword, file, program.format)
+    console.log(`Savel all pid of process of ${program.keyword}`)
     console.log(data)
     await createPidOnlyLog(file, data)
   });
 
 program
-  .command('send [keyword] [file] [format]')
-  .description('send Code.exe /tmp/games csv')
-  .action(async ({ keyword, file, format }: { keyword: string, file: string, format: string }) => {
-    const data = await filterLogWithKeyword(keyword, file, format)
-    console.log(`Send all process of ${keyword}  to api server`)
+  .command('send [file]')
+  .option('-f --format', "File format")
+  .option('-k --keyword', "Query keyword")
+  .description('send -k Code.exe -f csv /tmp/games')
+  .action(async ({ file }: { file: string }) => {
+    const data = await filterLogWithKeyword(program.keyword, file, program.format)
+    console.log(`Send all process of ${program.keyword}  to api server`)
     console.log(data)
     await sendTextLog(baseURL, data)
   });
 
 program
-  .command('kill [keyword] [file] [format]')
-  .description('kill Code.exe /tmp/games csv')
-  .action(async ({ keyword, file, format }: { keyword: string, file: string, format: string }) => {
-    const data = await filterLogWithKeyword(keyword, file, format)
-    console.log(`Danger! Kill all process of ${keyword}`)
+.command('kill [file]')
+.option('-f --format', "File format")
+.option('-k --keyword', "Query keyword")
+.description('kill -k Code.exe -f csv /tmp/games')
+.action(async ({ file }: { file: string }) => {
+    const data = await filterLogWithKeyword(program.keyword, file, program.format)
+    console.log(`Danger! Kill all process of ${program.keyword}`)
     console.log(data)
     await taskKillAll(data)
   });
