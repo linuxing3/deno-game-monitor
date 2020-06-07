@@ -97,7 +97,7 @@ async function taskListAll(filePath: string, format: string) {
  */
 async function taskKillAll(process: any[]) {
   process.forEach(async p => {
-    taskKill(p["PID"])
+    await taskKill(p["PID"])
   })
 }
 
@@ -160,10 +160,10 @@ async function filterLogWithKeyword(keyword: string, filePath: string, format: s
   // 已对象格式读取csv文件
   let options = getOptions(filePath + '.' + format);
   let result: any[] = []
-
+  let pattern = new RegExp(keyword)
   const f = await Deno.open(filePath + '.' + format);
   for await (const obj of readCSVObjects(f, options)) {
-    if (obj["Image Name"] === keyword) {
+    if (pattern.test(obj["Image Name"])) {
       result.push(obj)
     }
   }
