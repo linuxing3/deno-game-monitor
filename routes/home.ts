@@ -7,7 +7,7 @@ router.get("/", (ctx) => {
   ctx.response.type = "json";
   ctx.response.body = {
     status: "success",
-    message: "Hello World!",
+    message: "Hello Deno!",
     data: null,
   };
 });

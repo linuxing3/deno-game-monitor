@@ -14,7 +14,7 @@ import { initDb } from "./services/db.sql.ts";
 const host = env["HOST"] || "http://127.0.0.1";
 const port = parseInt(env["PORT"]) || 8000;
 
-const app = new Application();
+export const app = new Application();
 
 // Builtin middleware
 app.use(oakCors()); // Enable CORS for All Routes
