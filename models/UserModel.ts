@@ -1,28 +1,26 @@
 import {
-  BaseModel,
-  Field,
-  FieldType,
+  DataTypes,
   Model,
 } from "../deps.ts";
 
-// Define a database model
-@Model("users")
-export class UserModel extends BaseModel {
-  @Field({
-    type: FieldType.INT,
-    primary: true,
-    length: 11,
-    autoIncrement: true,
-  })
-  id!: number;
+// Define a database modelclass 
+export default class User extends Model {
+  static table = 'user';
+  static timestamps = true;
 
-  @Field({ type: FieldType.STRING, length: 30, notNull: true })
-  name!: string;
+  static fields = {
+    id: {
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    name: DataTypes.STRING,
+    password: DataTypes.STRING,
+    email: DataTypes.STRING,
+  };
 
-  // FIXEM: password is hashed and needs long string, over 100
-  @Field({ type: FieldType.STRING, length: 100, notNull: true })
-  password!: string;
-
-  @Field({ type: FieldType.STRING, length: 30 })
-  email?: string;
+  static defaults = {
+    name: "xingwenju",
+    email: "xingwenju@gmail.com",
+    password: "20090909",
+  };
 }

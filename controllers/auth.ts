@@ -1,17 +1,17 @@
-import { Status, compare, makeJwt, hash, config } from "../deps.ts";
+import { Status, compare, makeJwt, hash } from "../deps.ts";
 import env from "../config/env.ts";
 import { findRecord, addRecord } from "../services/crud.sql.ts";
-import { userModel } from "../services/db.sql.ts";
+import models from "../models/index.ts";
 
 export async function register(ctx: any) {
   const body = await ctx.request.body();
 
   // FIXEM: password is hashed and needs long string, over 100
-  let checkId = await findRecord(userModel, { name: body.value.name });
+  let checkId = await findRecord(models['user'], {id: ctx.params.id});
 
   if (!checkId) {
     const password = await hash(body.value.password);
-    const user = await addRecord(userModel, {
+    const user = await addRecord(models['user'], {
       name: body.value.name,
       email: body.value.email,
       password,
@@ -35,7 +35,7 @@ export async function login(ctx: any) {
   const body = await ctx.request.body();
 
   // Find record with name
-  let user: any = await findRecord(userModel, { name: body.value.name });
+  let user: any = await findRecord(models['user'], { name: body.value.name });
 
   if (!user) {
     ctx.throw(Status.UnprocessableEntity, "Wrong Email Address!");

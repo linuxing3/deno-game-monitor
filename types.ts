@@ -1,18 +1,3 @@
-export interface IProduct {
-  id?: string;
-  name: string;
-  description: string;
-  price: number;
-}
-
-export interface IGame {
-  id?: string;
-  name: string;
-  description: string;
-  pid: number;
-  timestramp: string;
-}
-
 export interface IUser {
   id?: string;
   name: string;
