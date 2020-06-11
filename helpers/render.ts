@@ -21,3 +21,10 @@ export const jsWrapper = (...components: any[]) => {
   `import React from "https://dev.jspm.io/react@16.13.1";\nimport ReactDOM from "https://dev.jspm.io/react-dom@16.13.1";\nimport ReactRouter from "https://dev.jspm.io/react-router";\nconst LoginComponent = ${components[1]}; \nconst App = ${components[0]};\nReactDOM.hydrate(React.createElement(App), document.getElementById("app"));`;
   return js;
 };
+
+export const jsWrapperOne = (component: any) => {
+  // On the client-side, let’s simply wrap our App component with React Router’s BrowserRouter component:
+  const js =
+  `import React from "https://dev.jspm.io/react@16.13.1";\nimport ReactDOM from "https://dev.jspm.io/react-dom@16.13.1";\nimport ReactRouter from "https://dev.jspm.io/react-router";\nconst App = ${component};\nReactDOM.hydrate(React.createElement(App), document.getElementById("app"));`;
+  return js;
+};
