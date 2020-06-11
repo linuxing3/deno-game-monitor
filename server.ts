@@ -2,7 +2,7 @@ import { Application, oakCors } from "./deps.ts";
 import env from "./config/env.ts";
 
 import gameRouter from "./routes/game.ts";
-import homeRouter from "./routes/home.ts";
+import homeRouter from "./routes/home.tsx";
 import authRouter from "./routes/auth.ts";
 
 import logger from "./middleware/logger.ts";
@@ -29,10 +29,6 @@ app.use(gameRouter.allowedMethods())
 app.use(logger);
 app.use(timer);
 app.use(error);
-
-app.addEventListener("error", (evt) => {
-  console.log(evt.error);
-});
 
 // Mysql Db with ORM
 await initDb();

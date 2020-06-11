@@ -13,12 +13,19 @@ declare global {
 }
 
 const App = () => {
-  const [count, setCount] = React.useState(0);
+  const [count, setCount] = (React as any).useState(0);
+
+  const handleClick = () => {
+    console.log(count);
+    setCount(count + 1);
+    console.log(count);
+  }
 
   return (
     <div>
       <h1>Hello DenoLand!</h1>
-      <button onClick={() => setCount(count + 1)}>Click the 🦕</button>
+      <button onClick={() => handleClick()}>
+      Click the 🦕</button>
       <p>You clicked the 🦕 {count} times</p>
     </div>
   );

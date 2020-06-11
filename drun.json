@@ -1,5 +1,5 @@
 {
-  "entryPoint": "./server.slim.ts",
+  "entryPoint": "./server.ts",
   "cwd": "./",
   "excludes": [""],
   "runtimeOptions": [
@@ -8,6 +8,8 @@
     "--allow-write",
     "--allow-env",
     "--allow-plugin",
-    "--unstable"
+    "--unstable",
+    "-c",
+    "tsconfig.json"
   ]
 }
