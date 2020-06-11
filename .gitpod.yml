@@ -4,8 +4,8 @@ image: gitpod/workspace-full
 
 # Command to start on workspace startup (optional)
 tasks:
-  - init: curl -fsSL https://deno.land/x/install/install.sh | sh
-    command: deno run -A --unstable -c config.json server.ts
+  - init: curl -fsSL https://deno.land/x/install/install.sh | sh && export DENO_INSTALL="/home/gitpod/.deno" && export PATH="$DENO_INSTALL/bin:$PATH"
+    command: deno run -A --unstable -c tsconfig.json server.ts
 
 ports:
   - port: 8000
