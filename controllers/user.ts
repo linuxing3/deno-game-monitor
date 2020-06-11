@@ -1,31 +1,19 @@
-import { connect, Model, FieldType } from "https://deno.land/x/cotton/mod.ts";
-import { mysqlOptions} from "../config/db.ts";
-
-class User extends Model {
-  static tableName = "users";
-  static fields = {
-    name: { type: FieldType.STRING },
-    email: { type: FieldType.STRING },
-    password: { type: FieldType.STRING },
-  };
-
-  name!: string;
-  email!: string;
-  password!: string;
-}
+import {
+  findRecord,
+  addRecord,
+  findAllRecord,
+  updateRecord,
+  deleteRecord,
+} from "../services/crud.sql.ts";
+import { userModel } from "../services/db.sql.ts";
 
 // @desc    Get all users
 // @route   GET /api/v1/users
 const getUsers = async ({ response }: { response: any }) => {
-
-  const db = await connect({ type: "mysql", ...mysqlOptions });
-  db.addModel(User);
-  const users = await User.find();
-  await db.disconnect();
-
+  // const users = await findAllRecord(userModel);
   response.body = {
     success: true,
-    data: users,
+    data: [],
   };
 };
 
@@ -34,10 +22,7 @@ const getUsers = async ({ response }: { response: any }) => {
 const getUser = async (
   { params, response }: { params: { id: string }; response: any },
 ) => {
-  const db = await connect({ type: "mysql", ...mysqlOptions });
-  db.addModel(User);
-  const user = await User.findOne(1);
-  await db.disconnect();
+  const user = await findRecord(userModel, { id: params.id });
 
   if (user) {
     response.status = 200;
@@ -71,11 +56,7 @@ const addUser = async (
       msg: "No data",
     };
   } else {
-    const db = await connect({ type: "mysql", ...mysqlOptions });
-    db.addModel(User);
-    const { id } = await User.insert(body.value);
-    await db.disconnect();
-    
+    const id = await addRecord(userModel, body.value);
     response.status = 201;
     response.body = {
       success: true,
@@ -95,24 +76,24 @@ const updateUser = async (
   },
 ) => {
   const body = await request.body();
-
-  const db = await connect({ type: "mysql", ...mysqlOptions });
-  db.addModel(User);
-  const user = {};
-  // const user = await User.update(body.value, { id: params.id });
-  await db.disconnect();
+  let user = await findRecord(userModel, { id: params.id });
 
   if (user) {
+    const data = await updateRecord(
+      userModel,
+      { ...body.value, id: params.id },
+    );
+
     response.status = 200;
     response.body = {
       success: true,
-      data: '',
+      data,
     };
   } else {
     response.status = 404;
     response.body = {
       success: false,
-      msg: "Failed to update",
+      msg: "No user found",
     };
   }
 };
@@ -122,15 +103,12 @@ const updateUser = async (
 const deleteUser = async (
   { params, response }: { params: { id: string }; response: any },
 ) => {
-  const db = await connect({ type: "mysql", ...mysqlOptions });
-  db.addModel(User);
-  // const user = await User.delete(params.id);
-  await db.disconnect();
+  const count = await deleteRecord(userModel, { id: params.id });
 
   response.body = {
     success: true,
-    msg: `user deleted `,
+    msg: `${count} users deleted `,
   };
 };
 
-export { User, getUsers, getUser, addUser, updateUser, deleteUser };
+export { getUsers, getUser, addUser, updateUser, deleteUser };
