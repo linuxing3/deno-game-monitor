@@ -3,6 +3,7 @@
     "multi": ["ls", "pwd"],
     "ls": "ls -l",
     "start": "deno run -A --unstable -c tsconfig.json server.ts",
+    "start:slim": "deno run -A --unstable -c tsconfig.json server.slim.ts",
     "test": "deno test -A --unstable",
     "note": "deno run -A --unstable scripts/note_app.ts",
     "pm": "nohup deno run -A --unstable -c tsconfig.json server.ts &",
