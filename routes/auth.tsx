@@ -12,8 +12,8 @@ router.post("/auth/register", register)
 
 router.get("/api/v1/users", getUsers)
   .get("/api/v1/users", getUser)
-  .post("/api/v1/users", authorize, addUser)
-  .put("/api/v1/users", authorize, updateUser)
-  .delete("/api/v1/users", authorize, deleteUser);
+  .post("/api/v1/users", register)
+  .put("/api/v1/users", updateUser)
+  .delete("/api/v1/users", deleteUser);
 
 export default router;

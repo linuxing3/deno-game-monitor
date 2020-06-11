@@ -10,10 +10,10 @@ import { userModel } from "../services/db.sql.ts";
 // @desc    Get all users
 // @route   GET /api/v1/users
 const getUsers = async ({ response }: { response: any }) => {
-  // const users = await findAllRecord(userModel);
+  const users = await findAllRecord(userModel);
   response.body = {
     success: true,
-    data: [],
+    data: users,
   };
 };
 

@@ -28,6 +28,7 @@ export async function register(ctx: any) {
     };
   } else {
     ctx.throw(Status.BadRequest, "User name exits!");
+    login(ctx);
   }
 }
 
