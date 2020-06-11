@@ -3,9 +3,9 @@ import env from "./config/env.ts";
 
 import authRouter from "./routes/auth.ts";
 
-import logger from "./middleware/logger.ts";
-import timer from "./middleware/timer.ts";
-import error from "./middleware/error.ts";
+// import logger from "./middleware/logger.ts";
+// import timer from "./middleware/timer.ts";
+// import error from "./middleware/error.ts";
 import db from "./services/db.ts";
 
 const host = env["HOST"] || "http://127.0.0.1";
@@ -19,13 +19,9 @@ app.use(authRouter.routes());
 app.use(authRouter.allowedMethods());
 
 // User middleware
-app.use(logger);
-app.use(timer);
-app.use(error);
-
-app.addEventListener("error", (evt) => {
-  console.log(evt.error);
-});
+// app.use(logger);
+// app.use(timer);
+// app.use(error);
 
 console.log(db);
 

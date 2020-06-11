@@ -13,5 +13,5 @@ export {
   isHttpError,
 } from "https://deno.land/x/oak/mod.ts";
 export { oakCors } from "https://deno.land/x/cors/mod.ts";
-
+// BUG need update
 export { DataTypes, Database, Model } from 'https://deno.land/x/denodb/mod.ts';
