@@ -1,22 +1,39 @@
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
 import { React } from "../deps.ts";
 import env from "../config/env.ts";
+import { postOption, token } from "../helpers/request.ts";
 
 // const data =  await fetch(`${env["HOST"]}:${env["PORT"]}/api/v1/users`);
 
 const LoginComponent = () => {
   const [user, setUser] = (React as any).useState({
-      name: 'xingwenju',
+      name: 'xingxiaorui',
       password: '200090909',
       email: 'xingwenju@gmail.com'
   });
 
   const handleClick = async () => {
     console.log(user);
-    await fetch('/auth/register', {
-      method: 'post',
-      body: JSON.stringify(user)
-    })
+    // Try login
+    const response: any = await fetch('/auth/login', {
+        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(user)
+    });
+    console.log(response);
+
+    // if user exists try login
+    if (response.status !== 200) {
+        const response: any = await fetch('/auth/register', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(user)
+        });
+    }
   }
 
   return (

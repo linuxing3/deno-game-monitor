@@ -5,6 +5,7 @@ import { userModel } from "../services/db.sql.ts";
 
 export async function register(ctx: any) {
   const body = await ctx.request.body();
+  console.log(body);
 
   // FIXEM: password is hashed and needs long string, over 100
   let checkId = await findRecord(userModel, { name: body.value.name });
@@ -28,7 +29,6 @@ export async function register(ctx: any) {
     };
   } else {
     ctx.throw(Status.BadRequest, "User name exits!");
-    login(ctx);
   }
 }
 
