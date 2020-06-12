@@ -36,7 +36,7 @@ const LoginComponent = () => {
   };
 
   return (
-    <div class="w-full max-w-xs max-w-sm">
+    <div class="w-full pl-10 pt-50">
       <form
         onSubmit={handleSubmit(onSubmit)}
         class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"

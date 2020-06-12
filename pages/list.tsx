@@ -54,11 +54,11 @@ const List = () => {
   };
 
   return (
-    <div class="pt-50 w-full max-w-xs max-w-sm border-4 border-gray-600">
+    <div class="pt-50 w-full">
       <p class="pt-8 pd-8 font-sans text-lg text-gray-800 text-center">
         <h1>User List</h1>
       </p>
-      <div class="grid grid-cols-3 gap-4 pl-10 pr-10">
+      <div class="grid grid-cols-3 gap-4 pl-3 pr-3">
         {list.map((item: any) => {
           return (
             <div class="h-12 flex items-center justify-center">
