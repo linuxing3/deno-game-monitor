@@ -2,6 +2,7 @@
 import { React, ReactRouter } from "../deps.ts";
 import ListComponent from "./list.tsx";
 import LoginComponent from "./form.tsx";
+import { ComponentMap } from "../helpers/render.ts";
 
 const {
   Route,
@@ -81,5 +82,20 @@ export const AppWithRouter = () => {
     </BrowserRouter>
   );
 };
+
+export const componentMapList: ComponentMap[] = [
+  {
+    name: "App",
+    component: App,
+  },
+  {
+    name: "LoginComponent",
+    component: LoginComponent,
+  },
+  {
+    name: "ListComponent",
+    component: ListComponent,
+  },
+];
 
 export default App;

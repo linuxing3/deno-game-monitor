@@ -2,7 +2,7 @@ import { connect, Model, FieldType } from "https://deno.land/x/cotton/mod.ts";
 import { MysqlAdapter } from "https://deno.land/x/cotton/src/adapters/mysql.ts";
 
 import { assertEquals } from "../testdeps.ts";
-import { mysqlOptions} from "../config/db.ts";
+import { mysqlOptions } from "../config/db.ts";
 import { User } from "../controllers/user.cotton.ts";
 
 Deno.test("connect: mysql", async () => {
@@ -10,7 +10,6 @@ Deno.test("connect: mysql", async () => {
   assertEquals(db instanceof MysqlAdapter, true);
   await db.disconnect();
 });
-
 
 Deno.test("model: findOne", async () => {
   const db = await connect({ type: "mysql", ...mysqlOptions });

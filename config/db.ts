@@ -4,4 +4,4 @@ export const mysqlOptions = {
   username: "monitor",
   password: "20090909",
   database: "monitor",
-}
+};

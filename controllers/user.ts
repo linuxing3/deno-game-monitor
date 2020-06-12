@@ -77,7 +77,7 @@ const updateUser = async (
   if (user) {
     const data = await updateRecord(
       userModel,
-      body.value
+      body.value,
     );
 
     response.status = 200;
