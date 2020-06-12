@@ -10,6 +10,7 @@ export { oakCors } from "https://deno.land/x/cors/mod.ts";
 export { default as React } from "https://dev.jspm.io/react@16.13.1";
 export { default as ReactDOMServer } from "https://dev.jspm.io/react-dom@16.13.1/server";
 export { default as ReactRouter } from "https://dev.jspm.io/react-router";
+export { default as ReactHookForm } from "https://dev.jspm.io/react-hook-form";
 // ORM
 export {
   dso,

@@ -20,9 +20,10 @@ const getUsers = async ({ response }: { response: any }) => {
 // @desc    Get single user
 // @route   GET /api/v1/users/:id
 const getUser = async (
-  { params, response }: { params: { id: string }; response: any },
+  { request, response }: { request: any; response: any },
 ) => {
-  const user = await findRecord(userModel, { id: params.id });
+  const body = await request.body();
+  const user = await findRecord(userModel, { id: body.value.id });
 
   if (user) {
     response.status = 200;
@@ -46,9 +47,6 @@ const addUser = async (
 ) => {
   const body = await request.body();
 
-  const user = request.user;
-  console.log(user);
-
   if (!request.hasBody) {
     response.status = 400;
     response.body = {
@@ -60,7 +58,6 @@ const addUser = async (
     response.status = 201;
     response.body = {
       success: true,
-      auth: { user },
       data: { id },
     };
   }
@@ -69,19 +66,18 @@ const addUser = async (
 // @desc    Update user
 // @route   PUT /api/v1/users/:id
 const updateUser = async (
-  { params, request, response }: {
-    params: { id: string };
+  { request, response }: {
     request: any;
     response: any;
   },
 ) => {
   const body = await request.body();
-  let user = await findRecord(userModel, { id: params.id });
+  let user = await findRecord(userModel, { id: body.value.id });
 
   if (user) {
     const data = await updateRecord(
       userModel,
-      { ...body.value, id: params.id },
+      body.value
     );
 
     response.status = 200;
@@ -101,13 +97,15 @@ const updateUser = async (
 // @desc    Delete user
 // @route   DELETE /api/v1/users/:id
 const deleteUser = async (
-  { params, response }: { params: { id: string }; response: any },
+  { request, response }: { request: any; response: any },
 ) => {
-  const count = await deleteRecord(userModel, { id: params.id });
+  const body = await request.body();
+  console.log(body);
+  const count = await deleteRecord(userModel, { id: body.value.id });
 
   response.body = {
     success: true,
-    msg: `${count} users deleted `,
+    msg: `${count} user deleted `,
   };
 };
 

@@ -3,7 +3,14 @@ import { React, ReactRouter } from "../deps.ts";
 import ListComponent from "./list.tsx";
 import LoginComponent from "./form.tsx";
 
-const { Route, Switch, NavLink, BrowserRouter, Router, StaticRouter } = ReactRouter;
+const {
+  Route,
+  Switch,
+  NavLink,
+  BrowserRouter,
+  Router,
+  StaticRouter,
+} = ReactRouter;
 
 declare global {
   namespace JSX {
@@ -46,11 +53,7 @@ const Home = (props: any) => {
       </ul>
 
       <Switch>
-        <Route
-          exact
-          path="/"
-          render={() => <div>home</div>}
-        />
+        <Route exact path="/" render={() => <div>home</div>} />
         <Route path="/todos" component={ListComponent} />
         <Route path="/posts" component={LoginComponent} />
       </Switch>
@@ -60,8 +63,13 @@ const Home = (props: any) => {
 
 const App = (props: any) => {
   return (
-    <div>
-      <LoginComponent />
+    <div class="flex">
+      <div class="w-2/5">
+        <LoginComponent />
+      </div>
+      <div class="w-3/5">
+        <ListComponent />
+      </div>
     </div>
   );
 };
@@ -71,7 +79,7 @@ export const AppWithRouter = () => {
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  )
-}
+  );
+};
 
 export default App;

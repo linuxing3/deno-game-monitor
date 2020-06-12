@@ -34,8 +34,7 @@ export async function updateRecord(model: BaseModel, query: any) {
 }
 
 export async function deleteRecord(model: BaseModel, query: any) {
-  await model.update(query);
-  const record = await model.delete(Where.from(query));
-  console.log("Delete user by id:", record);
-  return record;
+  const count = await model.delete(Where.from(query));
+  console.log(`${count} record deleted`);
+  return count;
 }

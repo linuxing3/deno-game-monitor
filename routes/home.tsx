@@ -3,7 +3,8 @@
 import { React, Router, ReactDOMServer, ReactRouter } from '../deps.ts';
 import App, { AppWithRouter } from '../pages/app.tsx';
 import LoginComponent from '../pages/form.tsx';
-import { htmlWrapper, jsWrapper } from '../helpers/render.ts';
+import ListComponent from '../pages/list.tsx';
+import { htmlWrapper, jsWrapper, jsMultiWrapper } from '../helpers/render.ts';
 const { StaticRouter, BrowserRouter } = ReactRouter;
 
 // define 2 routes: 
@@ -26,7 +27,20 @@ router.get("/", (ctx: any) => {
 // 客户端渲染App
 router.get(browserBundlePath, ({ response }: { response: any}) => {
   // On the client-side, let’s simply wrap our App component with React Router’s BrowserRouter component:
-  const js = jsWrapper(App, LoginComponent);
+  const js = jsMultiWrapper([
+    {
+      name: 'App',
+      component: App
+    },
+    {
+      name: 'LoginComponent',
+      component: LoginComponent
+    },
+    {
+      name: 'ListComponent',
+      component: ListComponent
+    }
+  ]);
   response.type = 'application/javascript';
   response.body = js;
 });
