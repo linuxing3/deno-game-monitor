@@ -3,8 +3,6 @@ import { React } from "../deps.ts";
 import env from "../config/env.ts";
 import { postOption, token } from "../helpers/request.ts";
 
-// const data =  await fetch(`${env["HOST"]}:${env["PORT"]}/api/v1/users`);
-
 const LoginComponent = () => {
   const [user, setUser] = (React as any).useState({
       name: 'xingxiaorui',
@@ -16,7 +14,7 @@ const LoginComponent = () => {
     console.log(user);
     // Try login
     const response: any = await fetch('/auth/login', {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
+        method: "POST", 
         headers: {
             "Content-Type": "application/json",
         },
@@ -43,13 +41,13 @@ const LoginComponent = () => {
         <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
             Username
         </label>
-        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder={user.name} onChange={(e: any) => setUser({name: e.target.value})} />
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text"  onChange={(e: any) => setUser({...user, name: e.target.value})} />
         </div>
         <div class="mb-6">
         <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
             Password
         </label>
-        <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder={user.password} onChange={(e: any) => setUser({password: e.target.value})} />
+        <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" onChange={(e: any) => setUser({...user, password: e.target.value})} />
         <p class="text-red-500 text-xs italic">Please choose a password.</p>
         </div>
         <div class="flex items-center justify-between">
