@@ -5,6 +5,6 @@ import { mysqlOptions} from "../config/db.ts";
 const db = new Database('mysql', mysqlOptions);
 
 db.link(modelsArray);
-await db.sync({ drop: true });
+await db.sync({ drop: false });
 
 export default db;

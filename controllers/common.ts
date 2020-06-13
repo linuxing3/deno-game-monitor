@@ -1,3 +1,4 @@
+import { Context } from "../deps.ts";
 import {
   findRecord,
   addRecord,
@@ -8,87 +9,82 @@ import {
 
 import models from "../models/index.ts";
 
-// @desc    Get all games
-// @route   GET /api/v1/games
-const findAll = async ({ request, response }: { request: any; response: any }) => {
-  const query = request.body().value;
-  const data = findAllRecord(models[query.table]);
-  response.body = {
+// @desc    Get all <table>
+// @route   GET /api/v1/<table>
+const getAll = async (ctx: Context) => {
+  const table = await ctx.request.headers.get('table') as string;
+  const data = await findAllRecord(models[table]);
+  ctx.response.body = {
     success: true,
     data,
   }
 };
 
-// @desc    Get single game
-// @route   GET /api/v1/games/:id
-const findOne = async (
-  { params, response }: { params: { id: string }; response: any },
-) => {
-  const data = findRecord(models[query.table], params);
+// @desc    Get single <model>
+// @route   GET /api/v1/<table>
+const getOne = async (ctx: any) => {
+  const table = await ctx.request.headers.get('table') as string;
+  const data = await findRecord(models[table], {id: ctx.params.id});
   if (data) {
-    response.status = 200;
-    response.body = {
+    ctx.response.status = 200;
+    ctx.response.body = {
       success: true,
       data,
     };
   } else {
-    response.status = 404;
-    response.body = {
+    ctx.response.status = 404;
+    ctx.response.body = {
       success: false,
-      msg: "No game found",
+      msg: `No ${table} found`,
+      data
     };
   }
 };
 
-// @desc    Add game
-// @route   Post /api/v1/games
-const add = async (
-  { request, response }: { request: any; response: any },
-) => {
-  const query = Request.body().value;
-  const data = await addRecord(models[query.table], query);
-  response.status = 201;
-  response.body = {
+// @desc    Add <model>
+// @route   Post /api/v1/<table>
+const add = async (ctx: Context) => {
+  const body = await ctx.request.body();
+  const table = await ctx.request.headers.get('table') as string;
+  const data = await addRecord(models[table], body.value);
+  ctx.response.status = 201;
+  ctx.response.body = {
     success: true,
     data,
   };
 };
 
-// @desc    Update game
-// @route   PUT /api/v1/games/:id
-const update = async (
-  { request, response }: {
-    request: any;
-    response: any;
-  },
-) => {
-  const query = request.body().value;
-  const data = await updateRecord(models[query.table], query);
+// @desc    Update <model>
+// @route   PUT /api/v1/<table>
+const update = async (ctx: any) => {
+  const body = await ctx.request.body();
+  const table = await ctx.request.headers.get('table') as string;
+  const data = await updateRecord(models[table], { id: ctx.params.id }, body.value );
   if (data) {
-    response.status = 201;
-    response.body = {
+    ctx.response.status = 201;
+    ctx.response.body = {
       success: true,
       data,
     };
   } else {
-    response.status = 404;
-    response.body = {
+    ctx.response.status = 404;
+    ctx.response.body = {
       success: false,
       msg: "Not found",
     };
   }
 };
 
-// @desc    Delete game
-// @route   DELETE /api/v1/games/:id
-const deleteOne = async (
-  { params, response }: { params: { id: string }; response: any },
-) => {
-  const data = await deleteRecord(models[query.table], params);
-  response.body = {
+// @desc    Delete <model>
+// @route   DELETE /api/v1/<table>
+const deleteOneOrMore = async (ctx: any) => {
+  const table = await ctx.request.headers.get('table') as string;
+  const data = await deleteRecord(models[table], {id: ctx.params.id});
+  ctx.response.body = {
     success: true,
     msg: `Successfully deleted `,
+    data
   };
 };
 
-export { getGames, getGame, addGame, updateGame, deleteGame };
+export { getAll, getOne, add, update, deleteOneOrMore };
