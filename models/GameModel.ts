@@ -5,6 +5,7 @@ import {
   Model,
 } from "../deps.ts";
 
+// Define a database model
 @Model("games")
 export class GameModel extends BaseModel {
   @Field({

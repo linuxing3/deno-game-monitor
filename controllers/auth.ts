@@ -1,8 +1,11 @@
-import { Status, compare, makeJwt, hash, config } from "../deps.ts";
+import { Status, compare, makeJwt, hash, Context } from "../deps.ts";
 import env from "../config/env.ts";
 import { findRecord, addRecord } from "../services/crud.sql.ts";
-import { userModel } from "../services/db.sql.ts";
+import modelMap from "../models/index.ts";
 
+const userModel = modelMap['users'];
+
+// TODO Normalize model with the [table] query parameter
 export async function register(ctx: any) {
   const body = await ctx.request.body();
   console.log(body);
@@ -32,9 +35,9 @@ export async function register(ctx: any) {
   }
 }
 
-export async function login(ctx: any) {
+export async function login(ctx: Context | any) {
   const body = await ctx.request.body();
-
+  
   // Find record with name
   let user: any = await findRecord(userModel, { name: body.value.name });
 

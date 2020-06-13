@@ -5,9 +5,10 @@ import {
   updateRecord,
   deleteRecord,
 } from "../services/crud.sql.ts";
-import { gameModel } from "../services/db.sql.ts";
+import modelMap from "../models/index.ts";
 
-const FILE_PATH = "data/games.json";
+// TODO Normalize model with the [table] query parameter
+const gameModel = modelMap['games'];
 
 // @desc    Get all games
 // @route   GET /api/v1/games
@@ -83,7 +84,8 @@ const updateGame = async (
   if (game) {
     const data = await updateRecord(
       gameModel,
-      { ...body.value, id: params.id },
+      { id: params.id },
+      body.value, 
     );
 
     response.status = 200;

@@ -5,7 +5,9 @@ import {
   updateRecord,
   deleteRecord,
 } from "../services/crud.sql.ts";
-import { userModel } from "../services/db.sql.ts";
+import modelMap from "../models/index.ts";
+
+const userModel = modelMap['user'];
 
 // @desc    Get all users
 // @route   GET /api/v1/users
@@ -65,18 +67,18 @@ const addUser = async (
 
 // @desc    Update user
 // @route   PUT /api/v1/users/:id
-const updateUser = async (
-  { request, response }: {
-    request: any;
-    response: any;
-  },
-) => {
+const updateUser = async ({ params, request, response }: {
+  params: { id: string };
+  request: any;
+  response: any;
+}) => {
   const body = await request.body();
-  let user = await findRecord(userModel, { id: body.value.id });
+  let user = await findRecord(userModel, { id: params.id });
 
   if (user) {
     const data = await updateRecord(
       userModel,
+      { id: params.id},
       body.value,
     );
 

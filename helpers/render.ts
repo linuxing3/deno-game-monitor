@@ -21,11 +21,12 @@ export const htmlWrapper = (component: any) => {
   const html =
     `<html><head><script type="module" src="${browserBundlePath}"></script><link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
   </head><body><div id="app">${
-      (ReactDOMServer as any).renderToString(component)
+    (ReactDOMServer as any).renderToString(component)
     }</div></body></html>`;
   const body = new TextEncoder().encode(html);
   return body;
 };
+
 
 export const jsMultiWrapper = (components: ComponentMap[]) => {
   // On the client-side, let’s simply wrap our App component with React Router’s BrowserRouter component:

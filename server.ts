@@ -1,4 +1,7 @@
-import { Application, oakCors } from "./deps.ts";
+import {
+  Application,
+  oakCors
+} from "./deps.ts";
 import env from "./config/env.ts";
 
 // Routes

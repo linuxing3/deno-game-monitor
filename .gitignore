@@ -31,3 +31,5 @@ data/*.json
 /data/*.json
 .deno_plugins/*.*
 */.deno_plugins/*.*
+
+*.sqlite
