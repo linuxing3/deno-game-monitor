@@ -2,12 +2,17 @@ import { Model } from "../deps.ts";
 
 // Grub Options
 export async function findAllRecord(model: typeof Model) {
-  const data = await model.all();
+  const data: any[] = await model.all();
   return data;
 }
 
 export async function findRecord(model: typeof Model, query: any) {
-  const data = await model.find(query.id);
+  let data;
+  if (query.id) {
+    data = await model.find(query.id);
+  } else {
+    data = await model.where(query).get();
+  }
   return data;
 }
 

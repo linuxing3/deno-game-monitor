@@ -7,9 +7,9 @@ export async function register(ctx: any) {
   const body = await ctx.request.body();
 
   // FIXEM: password is hashed and needs long string, over 100
-  let checkId = await findRecord(models['user'], {id: ctx.params.id});
+  let result: any[] = await findRecord(models['user'], { name: body.value.name });
 
-  if (!checkId) {
+  if (result.length === 0) {
     const password = await hash(body.value.password);
     const user = await addRecord(models['user'], {
       name: body.value.name,
@@ -35,15 +35,15 @@ export async function login(ctx: any) {
   const body = await ctx.request.body();
 
   // Find record with name
-  let user: any = await findRecord(models['user'], { name: body.value.name });
+  let user: any[] = await findRecord(models['user'], { name: body.value.name });
 
-  if (!user) {
+  if (!user[0]) {
     ctx.throw(Status.UnprocessableEntity, "Wrong Email Address!");
-  } else if (await compare(body.value.password, user.password)) {
+  } else if (await compare(body.value.password, user[0].password)) {
     const token = makeJwt(
       {
         header: { alg: "HS256", typ: "JWT" },
-        payload: { id: user.id, name: user.name, email: user.email },
+        payload: { id: user[0].id, name: user[0].name, email: user[0].email },
         key: env["TOKEN_SECRET"],
       },
     );
