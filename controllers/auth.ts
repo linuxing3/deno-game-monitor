@@ -39,6 +39,7 @@ export async function login(ctx: any) {
   let user: any = await findRecord(userModel, { name: body.value.name });
 
   if (!user) {
+    // localStorage.setItem('status', '0');
     ctx.throw(Status.UnprocessableEntity, "Wrong Email Address!");
   } else if (await compare(body.value.password, user.password)) {
     const token = makeJwt(
@@ -48,7 +49,9 @@ export async function login(ctx: any) {
         key: env["TOKEN_SECRET"],
       },
     );
-
+    // set login status
+    // localStorage.setItem('status', '1');
+    // response
     ctx.response.status = Status.OK;
     ctx.response.type = "json";
     ctx.response.body = {
@@ -56,7 +59,9 @@ export async function login(ctx: any) {
       message: `Logged in with ${body.value.email}`,
       data: { accessToken: token },
     };
+    // set redirect
   } else {
+    // localStorage.setItem('status', '0');
     ctx.throw(Status.Unauthorized, "Wrong Password!");
   }
 }

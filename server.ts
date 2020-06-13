@@ -1,19 +1,23 @@
 import { Application, oakCors } from "./deps.ts";
 import env from "./config/env.ts";
 
+// Routes
 import gameRouter from "./routes/game.ts";
 import homeRouter from "./routes/home.tsx";
 import authRouter from "./routes/auth.tsx";
 
+// Middleware
 import logger from "./middleware/logger.ts";
 import timer from "./middleware/timer.ts";
 import error from "./middleware/error.ts";
 
+// SQL Server
 import { initDb } from "./services/db.sql.ts";
 
-const host = env["HOST"] || "http://127.0.0.1";
-const port = parseInt(env["PORT"]) || 8000;
+const host = env["HOST"];
+const port = parseInt(env["PORT"]);
 
+// Configure Application
 export const app = new Application();
 
 // Builtin middleware
@@ -33,6 +37,6 @@ app.use(error);
 // Mysql Db with ORM
 await initDb();
 
-// bootstrap
+// Bootstrap Application
 console.log(`Server running on ${host}:${port}`);
 await app.listen({ port });

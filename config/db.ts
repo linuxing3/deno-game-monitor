@@ -1,7 +1,9 @@
-export const mysqlOptions = {
-  hostname: "xunqinji.top",
-  port: 9005,
-  username: "monitor",
-  password: "20090909",
-  database: "monitor",
-};
+import env from "./env.ts";
+
+export const mysqlOption = {
+  hostname: env["DB_HOST"],
+  port: parseInt(env["DB_PORT"]),
+  username: env["DB_USERNAME"],
+  password: env["DB_PASSWORD"],
+  db: env["DB_DATABASE"]
+}

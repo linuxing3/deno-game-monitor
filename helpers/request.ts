@@ -1,5 +1,6 @@
-export const token = Deno.env.toObject()["LOGGER_REST_TOKEN"] ||
-  "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI";
+import env from "../config/env.ts";
+
+export const token = env['AUTH_TOKEN']
 
 export const postOption = {
   method: "POST", // *GET, POST, PUT, DELETE, etc.
