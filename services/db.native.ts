@@ -58,7 +58,7 @@ export default class User {
   // readAll
   static getAll() {
     const users: User[] = [];
-    db.forEach((item) => {
+    db.forEach((item: User) => {
       users.push(item);
     });
     return users;
