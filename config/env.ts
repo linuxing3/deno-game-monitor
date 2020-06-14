@@ -1,7 +1,7 @@
 // Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { config } from "../deps.ts";
+import { config, DotenvConfig } from "../deps.ts";
 
-const env = config();
+const env: DotenvConfig = config();
 
 export default env;
