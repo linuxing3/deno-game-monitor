@@ -8,6 +8,7 @@ export {
   helpers,
   Context,
   RouterContext,
+  RouteParams,
   Request,
   Response,
 } from "https://deno.land/x/oak/mod.ts";
@@ -45,7 +46,11 @@ export {
 export { slugify } from "https://deno.land/x/slugify@0.3.0/mod.ts";
 export { makeJwt } from "https://deno.land/x/djwt@v0.9.0/create.ts";
 export { validateJwt } from "https://deno.land/x/djwt@v0.9.0/validate.ts";
-export { hash, compare } from "https://deno.land/x/bcrypt@v0.2.1/mod.ts";
+export {
+  hash,
+  compare,
+  genSalt,
+} from "https://deno.land/x/bcrypt@v0.2.1/mod.ts";
 export { v4 } from "https://deno.land/std/uuid/mod.ts";
 export { program, Lizard } from "https://deno.land/x/denomander/mod.ts";
 export { readJsonSync, writeJsonSync } from "https://deno.land/std/fs/mod.ts";
