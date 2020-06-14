@@ -4,8 +4,7 @@
 import App, { componentMapList } from "../pages/app.tsx";
 import { htmlWrapper, jsMultiWrapper } from "../helpers/render.ts";
 
-import { Router, ReactRouter } from "../deps.ts";
-const { StaticRouter, BrowserRouter } = ReactRouter;
+import { Router } from "../deps.ts";
 
 // define 2 routes:
 // one to serve a simple HTML page containing our rendered app,
