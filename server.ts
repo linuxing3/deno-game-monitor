@@ -8,8 +8,8 @@ import env from "./config/env.ts";
 
 // Routes
 import gameRouter from "./routes/game.ts";
-import homeRouter from "./routes/home.tsx";
-import authRouter from "./routes/auth.tsx";
+import homeRouter from "./routes/home.ts";
+import authRouter from "./routes/auth.ts";
 
 // Middleware
 import logger from "./middleware/logger.ts";

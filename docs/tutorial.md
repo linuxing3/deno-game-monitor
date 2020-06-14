@@ -1,7 +1,7 @@
 # `Deno` 环境下开发`Oak-orm-mysql-reactjs`全栈应用
 
 - [`Deno` 环境下开发`Oak-orm-mysql-reactjs`全栈应用](#deno-环境下开发oak-orm-mysql-reactjs全栈应用)
-  - [一、什么是Deno？](#一什么是deno)
+  - [一、什么是 Deno？](#一什么是deno)
     - [（一）基于 JavaScript 语言的现代功能](#一基于-javascript-语言的现代功能)
     - [（二）安装 Deno](#二安装-deno)
     - [（三）命令行](#三命令行)
@@ -12,22 +12,22 @@
     - [（一）项目的基本目录如下](#一项目的基本目录如下)
     - [（二）建立项目文件夹](#二建立项目文件夹)
     - [（三）集中管理依赖](#三集中管理依赖)
-    - [（四）创建env.ts](#四创建envts)
+    - [（四）创建 env.ts](#四创建envts)
     - [（五）创建 server.ts 文件](#五创建-serverts-文件)
     - [（六）启动应用程序](#六启动应用程序)
     - [（七）创建路由器](#七创建路由器)
-    - [（八）添加控制器，api调用功能：](#八添加控制器api调用功能)
+    - [（八）添加控制器，api 调用功能：](#八添加控制器api调用功能)
     - [（九）实现增删改查方法](#九实现增删改查方法)
       - [1. 查询数据方法：](#1-查询数据方法)
       - [2. 新数据方法：](#2-新数据方法)
       - [3. 更新删除的方法：](#3-更新删除的方法)
-    - [（十）Mysql和ORM 支持](#十mysql和orm-支持)
+    - [（十）Mysql 和 ORM 支持](#十mysql和orm-支持)
       - [1. 模型 Model](#1-模型-model)
       - [2. 数据库的连接](#2-数据库的连接)
       - [3. 数据库连接的配置](#3-数据库连接的配置)
     - [（十一）引入密码验证](#十一引入密码验证)
   - [三、客户端的尝试](#三客户端的尝试)
-    - [（一） Reactjs支持](#一-reactjs支持)
+    - [（一） Reactjs 支持](#一-reactjs支持)
     - [（二） 设置 App 组件](#二-设置-app-组件)
     - [（三）设定路由](#三设定路由)
       - [使用帮助器进行实际渲染](#使用帮助器进行实际渲染)
@@ -40,7 +40,7 @@
   - [源码地址](#源码地址)
   - [更多参考资源](#更多参考资源)
 
-## 一、什么是Deno？
+## 一、什么是 Deno
 
 Deno 是基于 V8 JavaScript 引擎和 Rust 编程语言的 JavaScript 和 TypeScript 运行时，默认使用安全环境执行代码。
 
@@ -52,7 +52,7 @@ Deno 建立在 V8、Rust 和 Tokio 的基础上。
 
 Deno 就像 Node，但是在很多方面都得到了深入的改善。
 
-写这篇文章时，`deno`刚刚发布了`1.1.0`的最喜版本，修复了大量bug，优化了执行效率。
+写这篇文章时，`deno`刚刚发布了`1.1.0`的最喜版本，修复了大量 bug，优化了执行效率。
 
 先从 Deno 功能列表开始：
 
@@ -96,14 +96,14 @@ brew install deno
 
 Chocolatey (Windows):
 
-```
+```bash
 choco install deno
 ```
 
 ### （三）命令行
 
-
 在`~/.bashrc`设置好环境变量
+
 ```bash
 export DENO_INSTALL="$HOME/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
@@ -194,7 +194,7 @@ ENVIRONMENT VARIABLES:
 
 ### （五）Deno 代码示例
 
-Deno网站例子：https://deno.land/std/examples/。
+Deno 网站例子：<https://deno.land/std/examples/。>
 
 ### （六） 标准库
 
@@ -208,7 +208,7 @@ Deno网站例子：https://deno.land/std/examples/。
 - fmt： 格式化和打印
 - fs：文件系统 API
 - hash：加密库
-- http： HTTP服务器
+- http： HTTP 服务器
 - io： I/O 库
 - log： 日志实用工具
 - mime：支持 multipart 数据
@@ -220,7 +220,7 @@ Deno网站例子：https://deno.land/std/examples/。
 
 用 `Oak` 构建 `REST API`。 Oak 受到了流行的 Node.js 中间件 Koa 的启发。
 
-构建的API非常简单。我们的服务器将会在内存中存储带有名称 密码 电子邮件的数据列表。
+构建的 API 非常简单。我们的服务器将会在内存中存储带有名称 密码 电子邮件的数据列表。
 
 - 添加新数据
 - 列出数据
@@ -291,7 +291,7 @@ touch deps.ts
 deno cache deps.ts
 ```
 
-### （三）集中管理依赖 
+### （三）集中管理依赖
 
 我们的`deps.ts`文件，类似于`node`下的`package.json`，方便我们进行一些依赖管理
 
@@ -343,7 +343,7 @@ export { readJsonSync, writeJsonSync } from "https://deno.land/std/fs/mod.ts";
 deno cache --unstable deps.ts
 ```
 
-### （四）创建env.ts
+### （四）创建 env.ts
 
 ```bash
 mkdir config
@@ -375,8 +375,8 @@ DB_PASSWORD=20090909
 然后你可以使用一下方式导入环境变量
 
 ```typescript
-import env from './config/env.ts';
-env['HOST']
+import env from "./config/env.ts";
+env["HOST"];
 ```
 
 ### （五）创建 server.ts 文件
@@ -394,8 +394,8 @@ import { Application, oakCors } from "./deps.ts";
 import env from "./config/env.ts";
 
 // Routes
-import homeRouter from "./routes/home.tsx";
-import authRouter from "./routes/auth.tsx";
+import homeRouter from "./routes/home.ts";
+import authRouter from "./routes/auth.ts";
 
 const host = env["HOST"];
 const port = parseInt(env["PORT"]);
@@ -405,15 +405,12 @@ export const app = new Application();
 
 // Builtin middleware
 app.use(oakCors()); // Enable CORS for All Routes
-app.use(homeRouter.routes())
-  .use(authRouter.routes());
-app.use(homeRouter.allowedMethods())
-  .use(authRouter.allowedMethods());
+app.use(homeRouter.routes()).use(authRouter.routes());
+app.use(homeRouter.allowedMethods()).use(authRouter.allowedMethods());
 
 // Bootstrap Application
 console.log(`Server running on ${host}:${port}`);
 await app.listen({ port });
-
 ```
 
 在项目根目录下建立一个`tsconfig.json`文件
@@ -427,7 +424,7 @@ await app.listen({ port });
     "allowJs": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "module": "esnext",
+    "module": "esnext"
   }
 }
 ```
@@ -437,27 +434,32 @@ await app.listen({ port });
 ```bash
 deno run -A --unstable -c tsconfig.json server.ts
 ```
+
 然后 Deno 将会下载依赖项，自动运行我们的程序
 
-
 ![first_run](assets/first_run.png)
-
 
 ### （七）创建路由器
 
 用户验证的路由 `routes/auth.ts`
 
 ```typescript
-import { Router } from '../deps.ts';
+import { Router } from "../deps.ts";
 import { register, login } from "../controllers/auth.ts";
-import { getUsers, getUser, addUser, updateUser, deleteUser } from "../controllers/user.ts";
+import {
+  getUsers,
+  getUser,
+  addUser,
+  updateUser,
+  deleteUser,
+} from "../controllers/user.ts";
 
 const router = new Router();
 
-router.post("/auth/register", register)
-  .post("/auth/login", login);
+router.post("/auth/register", register).post("/auth/login", login);
 
-router.get("/api/v1/users", getUsers)
+router
+  .get("/api/v1/users", getUsers)
   .get("/api/v1/users", getUser)
   .post("/api/v1/users", register)
   .put("/api/v1/users", updateUser)
@@ -471,7 +473,7 @@ export default router;
 `/auth/register`的接口实现了注册功能
 `/auth/login`的接口实现了登录功能
 
-### （八）添加控制器，api调用功能：
+### （八）添加控制器，api 调用功能
 
 用户验证的控制器 `controllers/auth.ts`
 
@@ -535,13 +537,11 @@ export async function login(ctx: any) {
   if (!user) {
     ctx.throw(Status.UnprocessableEntity, "Wrong Email Address!");
   } else if (await compare(body.value.password, user.password)) {
-    const token = makeJwt(
-      {
-        header: { alg: "HS256", typ: "JWT" },
-        payload: { id: user.id, name: user.name, email: user.email },
-        key: env["TOKEN_SECRET"],
-      },
-    );
+    const token = makeJwt({
+      header: { alg: "HS256", typ: "JWT" },
+      payload: { id: user.id, name: user.name, email: user.email },
+      key: env["TOKEN_SECRET"],
+    });
     ctx.response.status = Status.OK;
     ctx.response.type = "json";
     ctx.response.body = {
@@ -554,7 +554,6 @@ export async function login(ctx: any) {
     ctx.throw(Status.Unauthorized, "Wrong Password!");
   }
 }
-
 ```
 
 为了便于维护，我们将数据库的后台操作抽象到`services`中，比如从`register`方法中调用`addRecord`,而`addRecord`在单独的一个`crud.sql.ts`中定义
@@ -563,15 +562,12 @@ export async function login(ctx: any) {
 
 在`services/crud.sql.ts`文件中定义
 
-#### 1. 查询数据方法：
+#### 1. 查询数据方法
 
 ![crud_find](assets/crud_find.png)
 
 ```typescript
-import {
-  Where,
-  BaseModel,
-} from "../deps.ts";
+import { Where, BaseModel } from "../deps.ts";
 
 // Grub Options
 export async function findAllRecord(model: BaseModel) {
@@ -592,17 +588,14 @@ export async function findRecord(model: BaseModel, query: any) {
 }
 ```
 
-#### 2. 新数据方法：
+#### 2. 新数据方法
 
 ![crud_add](assets/crud_add.png)
 
 添加数据非常简单，这里我们把 `ORM` 的 `Model` 对象做出参数，然后调用 `Model` 的方法来执行数据库的操作。
 
 ```typescript
-import {
-  Where,
-  BaseModel,
-} from "../deps.ts";
+import { Where, BaseModel } from "../deps.ts";
 
 export async function addRecord(model: BaseModel, data: any) {
   const id = await model.insert(data);
@@ -611,7 +604,7 @@ export async function addRecord(model: BaseModel, data: any) {
 }
 ```
 
-#### 3. 更新删除的方法：
+#### 3. 更新删除的方法
 
 删除和查询，主要使用 `query` 参数，即一个`JSON`对象，必须包含 `id` 字段作为唯一标识
 
@@ -629,7 +622,7 @@ export async function deleteRecord(model: BaseModel, query: any) {
 }
 ```
 
-### （十）Mysql和ORM 支持
+### （十）Mysql 和 ORM 支持
 
 我们使用 `dso` 模块来提供 `ORM` 支持，当然你可以使用其他类似模块如 `denodb` 或 `cotton`
 
@@ -640,18 +633,12 @@ export async function deleteRecord(model: BaseModel, query: any) {
 再比如在使用`denodb`时，经常会出现 `compile error` 或 `file not found` 等莫名其妙的错误，希望
 随着版本的改进，会消除这些问题。
 
-
 #### 1. 模型 Model
 
 我们的用户模型包含 `name`, `password`, `email` 三个字段
 
 ```typescript
-import {
-  BaseModel,
-  Field,
-  FieldType,
-  Model,
-} from "../deps.ts";
+import { BaseModel, Field, FieldType, Model } from "../deps.ts";
 
 // Define a database model
 @Model("users")
@@ -686,15 +673,12 @@ export class UserModel extends BaseModel {
 
 2. 启动 `dso.connect` 进行数据库连接
 
-3. 使用 `dso.sync`  进行同步，如果没有相应表格，则会自动创建。注意如果传入 `true` 则会重置数据库，删除所有现有数据
+3. 使用 `dso.sync` 进行同步，如果没有相应表格，则会自动创建。注意如果传入 `true` 则会重置数据库，删除所有现有数据
 
 `services/db.sql.ts` 文件内容如下:
 
 ```typescript
-import {
-  dso,
-  Client,
-} from "../deps.ts";
+import { dso, Client } from "../deps.ts";
 import { mysqlOption } from "../config/db.ts";
 
 import { UserModel } from "../models/UserModel.ts";
@@ -712,7 +696,6 @@ export async function initDb() {
 
 #### 3. 数据库连接的配置
 
-
 `config/db.ts`
 
 ```typescript
@@ -722,10 +705,9 @@ export const mysqlOption = {
   port: parseInt(env["DB_PORT"]),
   username: env["DB_USERNAME"],
   password: env["DB_PASSWORD"],
-  db: env["DB_DATABASE"]
-}
+  db: env["DB_DATABASE"],
+};
 ```
-
 
 ### （十一）引入密码验证
 
@@ -743,13 +725,11 @@ export async function login(ctx: any) {
   if (!user) {
     ctx.throw(Status.UnprocessableEntity, "Wrong Email Address!");
   } else if (await compare(body.value.password, user.password)) {
-    const token = makeJwt(
-      {
-        header: { alg: "HS256", typ: "JWT" },
-        payload: { id: user.id, name: user.name, email: user.email },
-        key: env["TOKEN_SECRET"],
-      },
-    );
+    const token = makeJwt({
+      header: { alg: "HS256", typ: "JWT" },
+      payload: { id: user.id, name: user.name, email: user.email },
+      key: env["TOKEN_SECRET"],
+    });
     ctx.response.status = Status.OK;
     ctx.response.type = "json";
     ctx.response.body = {
@@ -772,22 +752,21 @@ import { Status, validateJwt, config } from "../deps.ts";
 const env = config();
 
 export default async (ctx: any, next: any) => {
-    // FIXED: Check authorization
-    const authHeader = ctx.request.headers.get("authorization");
-    if (!authHeader) {
-        ctx.throw(Status.Unauthorized);
-    } else {
-        const requestToken = authHeader.split(" ")[1];
-        try {
-            const jwt: any = await validateJwt(requestToken, env["TOKEN_SECRET"]);
-            ctx.request.user = jwt.payload
-            await next();
-        } catch (err) {
-            ctx.throw(Status.Unauthorized);
-        }
+  // FIXED: Check authorization
+  const authHeader = ctx.request.headers.get("authorization");
+  if (!authHeader) {
+    ctx.throw(Status.Unauthorized);
+  } else {
+    const requestToken = authHeader.split(" ")[1];
+    try {
+      const jwt: any = await validateJwt(requestToken, env["TOKEN_SECRET"]);
+      ctx.request.user = jwt.payload;
+      await next();
+    } catch (err) {
+      ctx.throw(Status.Unauthorized);
     }
+  }
 };
-
 ```
 
 我使用 `talent` 的 `chrome talent rest` 插件进行测试，可以参考下图
@@ -802,22 +781,20 @@ export default async (ctx: any, next: any) => {
 
 ## 三、客户端的尝试
 
-
-### （一） Reactjs支持
+### （一） Reactjs 支持
 
 添加 `reactjs` 支持更加麻烦一些, 主要是服务端和客户端之间的协调问题，具体原理笔者也不太懂，可以参考以下文章和视频
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=sKsW2MUWA8c
-" target="_blank"><img src="http://img.youtube.com/vi/sKsW2MUWA8c/0.jpg" 
+" target="_blank"><img src="http://img.youtube.com/vi/sKsW2MUWA8c/0.jpg"
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
-
-define 2 routes: 
-one to serve a simple HTML page containing our rendered app, 
-and another browser.js route to server our app's code 
+define 2 routes:
+one to serve a simple HTML page containing our rendered app,
+and another browser.js route to server our app's code
 so we can [hydrate] the React application on the client.
 
-简单来说，就是需要定义了2个路由
+简单来说，就是需要定义了 2 个路由
 
 第一个功能是渲染出 `html` 页面，包括被渲染的 `app` 本身
 
@@ -906,38 +883,38 @@ export default router;
 
 ```typescript
 // @deno-types="https://deno.land/x/types/react-dom/v16.13.1/server.d.ts"
-import {  ReactDOMServer, ReactRouter } from '../deps.ts';
+import { ReactDOMServer, ReactRouter } from "../deps.ts";
 const { StaticRouter, BrowserRouter } = ReactRouter;
 
 const jspms = [
   'import React from "https://dev.jspm.io/react@16.13.1"',
   'import ReactDOM from "https://dev.jspm.io/react-dom@16.13.1"',
   'import ReactRouter from "https://dev.jspm.io/react-router"',
-  'import ReactHookForm from "https://dev.jspm.io/react-hook-form"'
-]
+  'import ReactHookForm from "https://dev.jspm.io/react-hook-form"',
+];
 
-const libs = jspms.join(';\n');
+const libs = jspms.join(";\n");
 
 // 导入客户端的reactjs
 export const htmlWrapper = (component: any) => {
   const browserBundlePath = "/browser.js";
-  const html =
-  `<html><head><script type="module" src="${browserBundlePath}"></script><link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-  </head><body><div id="app">${
-    (ReactDOMServer as any).renderToString(component)
-  }</div></body></html>`;
+  const html = `<html><head><script type="module" src="${browserBundlePath}"></script><link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  </head><body><div id="app">${(ReactDOMServer as any).renderToString(
+    component
+  )}</div></body></html>`;
   const body = new TextEncoder().encode(html);
-  return body
+  return body;
 };
 
-export const jsMultiWrapper = (components: { name: string; component: any }[]) => {
+export const jsMultiWrapper = (
+  components: { name: string; component: any }[]
+) => {
   // On the client-side, let’s simply wrap our App component with React Router’s BrowserRouter component:
   const componentLines: string = components.reduce((pre: any, cur: any) => {
-    const line = `const ${cur.name} = ${cur.component};`
-    return pre + '\n' + line;
-  }, '')
-  const js =
-  `${libs};\n${componentLines};\nReactDOM.hydrate(React.createElement(App), document.getElementById("app"));`;
+    const line = `const ${cur.name} = ${cur.component};`;
+    return pre + "\n" + line;
+  }, "");
+  const js = `${libs};\n${componentLines};\nReactDOM.hydrate(React.createElement(App), document.getElementById("app"));`;
   return js;
 };
 ```
@@ -971,7 +948,6 @@ declare global {
     }
   }
 }
-
 
 const App = (props: any) => {
   return (
@@ -1036,10 +1012,7 @@ const LoginComponent = () => {
         class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
       >
         <div class="mb-4">
-          <label
-            class="block text-gray-700 text-sm font-bold mb-2"
-            for="name"
-          >
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
             Username
           </label>
           <input
@@ -1050,10 +1023,7 @@ const LoginComponent = () => {
           />
         </div>
         <div class="mb-4">
-          <label
-            class="block text-gray-700 text-sm font-bold mb-2"
-            for="email"
-          >
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
             Email
           </label>
           <input
@@ -1099,7 +1069,6 @@ const LoginComponent = () => {
 };
 
 export default LoginComponent;
-
 ```
 
 访问根目录，显示出我们的 `React App`，添加、删除功能都可以正常运行！太棒了！
@@ -1110,16 +1079,15 @@ export default LoginComponent;
 
 浏览器中打开检查器，在 `source` 面板中打开 `browser.js`，最终代码是这样的
 
-
 ## 四、调试 Deno
 
 Deno 支持 V8 Inspector Protocol。使用 Chrome Devtools 或其他支持该协议的客户端（比如 VSCode）能够调试 Deno 程序。要启用调试功能，用 --inspect 或 --inspect-brk 选项运行 Deno，对应的选项描述如下：
 
 --inspect=<HOST:PORT>
-  activate inspector on host:port (default: 127.0.0.1:9229)
+activate inspector on host:port (default: 127.0.0.1:9229)
 
 --inspect-brk=<HOST:PORT>
-  activate inspector on host:port and break at start of user script
+activate inspector on host:port and break at start of user script
 
 复制代码--inspect 选项允许在任何时间点连接调试器，而 --inspect-brk 选项会等待调试器连接，在第一行代码处暂停执行。
 
@@ -1162,18 +1130,18 @@ Deno 可以在 VSCode 中调试。插件的官方支持正在开发中
 
 ## 源码地址
 
-Github地址： https://github.com/linuxing3/deno-game-monitor
+Github 地址： <https://github.com/linuxing3/deno-game-monitor>
 
 ## 更多参考资源
 
-- 阮一峰的网络日志 https://www.ruanyifeng.com/blog/2020/01/deno-intro.html
+- 阮一峰的网络日志 <https://www.ruanyifeng.com/blog/2020/01/deno-intro.html>
 
-- Deno 官方网站 https://deno.land
+- Deno 官方网站 <https://deno.land>
 
-- API 文档 https://doc.deno.land 和 https://deno.land/typedoc 
+- API 文档 <https://doc.deno.land> 和 <https://deno.land/typedoc>
 
-- awesome-deno https://github.com/denolib/awesome-deno
+- awesome-deno <https://github.com/denolib/awesome-deno>
 
-- 阿西河 https://www.axihe.com/edu/deno/home.html
+- 阿西河 <https://www.axihe.com/edu/deno/home.html>
 
-- Deno中文手册 https://nugine.github.io/deno-manual-cn/introduction.html
+- Deno 中文手册 <https://nugine.github.io/deno-manual-cn/introduction.html>
