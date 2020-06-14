@@ -4,7 +4,7 @@ import {
   getOneFromTable,
   updateInTable,
   deleteInTable,
-  addToTable
+  addToTable,
 } from "../controllers/common.ts";
 import authorize from "../middleware/authorize.ts";
 

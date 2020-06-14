@@ -8,18 +8,17 @@ import {
 import modelMap from "../models/index.ts";
 import { helpers, RouterContext } from "../deps.ts";
 
-
 // @desc    Get all <table>
 // @route   GET /api/v1/<table>
 const getAllFromTable = async (ctx: RouterContext) => {
   const query = helpers.getQuery(ctx);
 
   if (!query.table) {
-    ctx.response.status = 201
+    ctx.response.status = 201;
     ctx.response.body = {
       success: false,
-      msg: "Not table name provided!"
-    }
+      msg: "Not table name provided!",
+    };
   } else {
     const data = await findAllRecord(modelMap[query.table]);
     ctx.response.body = {
@@ -34,11 +33,11 @@ const getAllFromTable = async (ctx: RouterContext) => {
 const getOneFromTable = async (ctx: RouterContext) => {
   const query = helpers.getQuery(ctx);
   if (!query.table) {
-    ctx.response.status = 201
+    ctx.response.status = 201;
     ctx.response.body = {
       success: false,
-      msg: "Not table name provided!"
-    }
+      msg: "Not table name provided!",
+    };
   } else {
     const data = await findRecord(modelMap[query.table], { id: ctx.params.id });
     if (data) {
@@ -63,11 +62,11 @@ const addToTable = async (ctx: RouterContext) => {
   const query = helpers.getQuery(ctx);
 
   if (!query.table) {
-    ctx.response.status = 201
+    ctx.response.status = 201;
     ctx.response.body = {
       success: false,
-      msg: "Not table name provided!"
-    }
+      msg: "Not table name provided!",
+    };
   } else {
     const body = await ctx.request.body();
     if (!ctx.request.hasBody) {
@@ -92,13 +91,16 @@ const addToTable = async (ctx: RouterContext) => {
 const updateInTable = async (ctx: RouterContext) => {
   const query = helpers.getQuery(ctx);
   if (!query.table) {
-    ctx.response.status = 201
+    ctx.response.status = 201;
     ctx.response.body = {
       success: false,
-      msg: "Not table name provided!"
-    }
+      msg: "Not table name provided!",
+    };
   } else {
-    const found = await findRecord(modelMap[query.table], { id: ctx.params.id });
+    const found = await findRecord(
+      modelMap[query.table],
+      { id: ctx.params.id },
+    );
     if (found) {
       const body = await ctx.request.body();
       const data = await updateRecord(
@@ -127,19 +129,27 @@ const deleteInTable = async (ctx: RouterContext) => {
   const query = helpers.getQuery(ctx);
 
   if (!query.table) {
-    ctx.response.status = 201
+    ctx.response.status = 201;
     ctx.response.body = {
       success: false,
-      msg: "Not table name provided!"
-    }
+      msg: "Not table name provided!",
+    };
   } else {
-    const count = await deleteRecord(modelMap[query.table], { id: ctx.params.id });
+    const count = await deleteRecord(
+      modelMap[query.table],
+      { id: ctx.params.id },
+    );
     ctx.response.body = {
       success: true,
       msg: `${count} deleted `,
     };
   }
-
 };
 
-export { getAllFromTable, getOneFromTable, addToTable, updateInTable, deleteInTable };
+export {
+  getAllFromTable,
+  getOneFromTable,
+  addToTable,
+  updateInTable,
+  deleteInTable,
+};

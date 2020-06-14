@@ -7,7 +7,7 @@ import {
 } from "../services/crud.sql.ts";
 import modelMap from "../models/index.ts";
 
-const userModel = modelMap['user'];
+const userModel = modelMap["user"];
 
 // @desc    Get all users
 // @route   GET /api/v1/users
@@ -78,7 +78,7 @@ const updateUser = async ({ params, request, response }: {
   if (user) {
     const data = await updateRecord(
       userModel,
-      { id: params.id},
+      { id: params.id },
       body.value,
     );
 

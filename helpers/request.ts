@@ -1,6 +1,6 @@
 import env from "../config/env.ts";
 
-export const token = env['AUTH_TOKEN']
+export const token = env["AUTH_TOKEN"];
 
 export const postOption = {
   method: "POST", // *GET, POST, PUT, DELETE, etc.

@@ -5,5 +5,5 @@ export const mysqlOption = {
   port: parseInt(env["DB_PORT"]),
   username: env["DB_USERNAME"],
   password: env["DB_PASSWORD"],
-  db: env["DB_DATABASE"]
-}
+  db: env["DB_DATABASE"],
+};

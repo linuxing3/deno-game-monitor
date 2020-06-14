@@ -10,7 +10,10 @@ export async function findAllRecord(model: BaseModel) {
   return records;
 }
 
-export async function findRecord(model: BaseModel, query: {id: number| string | undefined} | any) {
+export async function findRecord(
+  model: BaseModel,
+  query: { id: number | string | undefined } | any,
+) {
   let record;
   if (query.id) {
     record = await model.findById(query.id);
@@ -27,13 +30,20 @@ export async function addRecord(model: BaseModel, data: any) {
   return id;
 }
 
-export async function updateRecord(model: BaseModel, query: {id: number| string | undefined}, data: any) {
+export async function updateRecord(
+  model: BaseModel,
+  query: { id: number | string | undefined },
+  data: any,
+) {
   const records = await model.update(data, Where.from(query));
   console.log("Update user with id:", records);
   return records;
 }
 
-export async function deleteRecord(model: BaseModel, query: {id: number| string | undefined}) {
+export async function deleteRecord(
+  model: BaseModel,
+  query: { id: number | string | undefined },
+) {
   const count = await model.delete(Where.from(query));
   console.log(`${count} record deleted`);
   return count;

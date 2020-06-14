@@ -3,7 +3,7 @@ import env from "../config/env.ts";
 import { findRecord, addRecord } from "../services/crud.sql.ts";
 import modelMap from "../models/index.ts";
 
-const userModel = modelMap['users'];
+const userModel = modelMap["users"];
 
 // TODO Normalize model with the [table] query parameter
 export async function register(ctx: any) {
@@ -37,7 +37,7 @@ export async function register(ctx: any) {
 
 export async function login(ctx: Context | any) {
   const body = await ctx.request.body();
-  
+
   // Find record with name
   let user: any = await findRecord(userModel, { name: body.value.name });
 

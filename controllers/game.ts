@@ -8,7 +8,7 @@ import {
 import modelMap from "../models/index.ts";
 
 // TODO Normalize model with the [table] query parameter
-const gameModel = modelMap['games'];
+const gameModel = modelMap["games"];
 
 // @desc    Get all games
 // @route   GET /api/v1/games
@@ -85,7 +85,7 @@ const updateGame = async (
     const data = await updateRecord(
       gameModel,
       { id: params.id },
-      body.value, 
+      body.value,
     );
 
     response.status = 200;

@@ -1,6 +1,6 @@
 import {
   Application,
-  oakCors
+  oakCors,
 } from "./deps.ts";
 import env from "./config/env.ts";
 
