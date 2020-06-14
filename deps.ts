@@ -44,3 +44,5 @@ export { hash, compare } from "https://deno.land/x/bcrypt@v0.2.1/mod.ts";
 export { v4 } from "https://deno.land/std/uuid/mod.ts";
 export { program, Lizard } from "https://deno.land/x/denomander/mod.ts";
 export { readJsonSync, writeJsonSync } from "https://deno.land/std/fs/mod.ts";
+export { CasualDB  } from "https://deno.land/x/casualdb@0.1.1/mod.ts";
+

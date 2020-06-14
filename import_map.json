@@ -8,6 +8,8 @@
      "hash/": "https://deno.land/std/hash/",
      "encoding/": "https://deno.land/std/encoding/",
      "examples/": "https://deno.land/std/examples/",
-     "uuid/": "https://deno.land/std/uuid/"
+     "uuid/": "https://deno.land/std/uuid/",
+     "testing/": "https://deno.land/std/testing/",
+     "ws/": "https://deno.land/std/ws/"
   }
 }
