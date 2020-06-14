@@ -3,7 +3,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "module": "esnext",
-    "lib": ["DOM", "SCRIPTHOST", "ES2015", "ES2015.Collection", "ESNext"],
+    // "lib": ["DOM", "SCRIPTHOST", "ES2015", "ES2015.Collection", "ESNext"],
     "plugins": [
       {
         "name": "typescript-deno-plugin",

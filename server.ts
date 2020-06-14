@@ -10,6 +10,7 @@ import env from "./config/env.ts";
 import gameRouter from "./routes/game.ts";
 import homeRouter from "./routes/home.ts";
 import authRouter from "./routes/auth.ts";
+import fieldRouter from "./routes/field.ts";
 
 // Middleware
 import logger from "./middleware/logger.ts";
@@ -29,9 +30,11 @@ export const app = new Application();
 app.use(oakCors()); // Enable CORS for All Routes
 app.use(gameRouter.routes())
   .use(homeRouter.routes())
-  .use(authRouter.routes());
+  .use(authRouter.routes())
+  .use(fieldRouter.routes());
 app.use(gameRouter.allowedMethods())
   .use(homeRouter.allowedMethods())
+  .use(fieldRouter.allowedMethods())
   .use(authRouter.allowedMethods());
 
 // User middleware

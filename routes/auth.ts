@@ -4,23 +4,22 @@
 import { Router } from "../deps.ts";
 import { register, login } from "../controllers/auth.ts";
 import {
-  getUsers,
-  getUser,
-  addUser,
-  updateUser,
-  deleteUser,
-} from "../controllers/user.ts";
+  getAllFromTable,
+  getOneFromTable,
+  updateInTable,
+  deleteInTable,
+  addToTable,
+} from "../controllers/common.ts";
 import authorize from "../middleware/authorize.ts";
 
 const router = new Router();
 
 router.post("/auth/register", register)
-  .post("/auth/login", login);
-
-router.get("/api/v1/users", getUsers)
-  .get("/api/v1/users", getUser)
-  .post("/api/v1/users", register)
-  .put("/api/v1/users", updateUser)
-  .delete("/api/v1/users", deleteUser);
+  .post("/auth/login", login)
+  .get("/api/v1/users", getAllFromTable)
+  .get("/api/v1/users/:id", getOneFromTable)
+  .post("/api/v1/users", addToTable)
+  .put("/api/v1/users/:id", updateInTable)
+  .delete("/api/v1/users/:id", deleteInTable);
 
 export default router;

@@ -8,7 +8,29 @@ import {
   deleteRecord,
 } from "../services/crud.sql.ts";
 import modelMap from "../models/index.ts";
-import { helpers, RouterContext } from "../deps.ts";
+import { helpers, RouterContext, _ } from "../deps.ts";
+
+// @desc    Get all <table>
+// @route   GET /api/v1/<table>
+const getTableFields = async (ctx: RouterContext) => {
+  const query = helpers.getQuery(ctx);
+
+  if (!query.table) {
+    ctx.response.status = 201;
+    ctx.response.body = {
+      success: false,
+      msg: "Not table name provided!",
+    };
+  } else {
+    const model = modelMap[query.table];
+    const fields = model.modelFields;
+    const data = _.map(fields, (i:any) => i['name']);
+    ctx.response.body = {
+      success: true,
+      data,
+    };
+  }
+};
 
 // @desc    Get all <table>
 // @route   GET /api/v1/<table>
@@ -149,6 +171,7 @@ const deleteInTable = async (ctx: RouterContext) => {
 };
 
 export {
+  getTableFields,
   getAllFromTable,
   getOneFromTable,
   addToTable,
