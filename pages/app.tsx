@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
 import { React, ReactRouter } from "../deps.ts";
 import ListComponent from "./list.tsx";

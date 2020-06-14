@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 export default async (ctx: any, next: any) => {
   const start = Date.now();
   await next();

@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import Denomander from "https://deno.land/x/denomander/mod.ts";
 import { writeJsonSync } from "https://deno.land/std/fs/mod.ts";
 import {

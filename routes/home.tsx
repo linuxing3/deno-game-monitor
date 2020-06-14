@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
 // @deno-types="https://deno.land/x/types/react-dom/v16.13.1/server.d.ts"
 import App, { componentMapList } from "../pages/app.tsx";

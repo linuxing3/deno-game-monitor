@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 export default async (ctx: any, next: any) => {
   await next();
   const rt = ctx.response.headers.get("X-Response-Time");

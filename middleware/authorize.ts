@@ -1,3 +1,5 @@
+// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
+// deno-lint-ignore-file
 import { Status, validateJwt, config } from "../deps.ts";
 
 const env = config();

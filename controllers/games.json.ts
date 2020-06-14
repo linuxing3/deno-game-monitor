@@ -1,3 +1,5 @@
+// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
+// deno-lint-ignore-file
 import { v4 } from "../deps.ts";
 import env from "../config/env.ts";
 import { IGame } from "../types.ts";

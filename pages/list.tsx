@@ -1,4 +1,5 @@
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
+// deno-lint-ignore-file
 import { React } from "../deps.ts";
 import env from "../config/env.ts";
 

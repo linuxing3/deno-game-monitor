@@ -1,3 +1,5 @@
+// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
+// deno-lint-ignore-file
 import {
   Where,
   BaseModel,
@@ -12,7 +14,7 @@ export async function findAllRecord(model: BaseModel) {
 
 export async function findRecord(
   model: BaseModel,
-  query: { id: number | string | undefined } | any,
+  query: any,
 ) {
   let record;
   if (query.id) {

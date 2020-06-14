@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 export interface IProduct {
   id?: string;
   name: string;

@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 // Standard deno modules
 import { readJsonSync, writeJsonSync } from "https://deno.land/std/fs/mod.ts";
 import * as path from "https://deno.land/std/path/mod.ts";

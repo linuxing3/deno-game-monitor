@@ -36,7 +36,7 @@ export {
   weekly,
 } from "https://deno.land/x/deno_cron/cron.ts";
 // Helpers
-export { config } from "https://deno.land/x/dotenv@v0.4.0/mod.ts";
+export { config, parse, DotenvConfig, MissingEnvVarsError } from "https://deno.land/x/dotenv@v0.4.0/mod.ts";
 export { slugify } from "https://deno.land/x/slugify@0.3.0/mod.ts";
 export { makeJwt } from "https://deno.land/x/djwt@v0.9.0/create.ts";
 export { validateJwt } from "https://deno.land/x/djwt@v0.9.0/validate.ts";
