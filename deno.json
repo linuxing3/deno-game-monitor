@@ -5,6 +5,8 @@
     "start": "deno run -A --unstable -c tsconfig.json server.ts",
     "start:slim": "deno run -A --unstable -c tsconfig.json server.slim.ts",
     "test": "deno test -A --unstable",
+    "fmt": "deno fmt",
+    "lint": "deno lint --unstable",
     "note": "deno run -A --unstable scripts/note_app.ts",
     "pm": "nohup deno run -A --unstable -c tsconfig.json server.ts &",
     "logger:log": "deno run -A --unstable scripts/smart-logger.ts log  -f csv /tmp/games",
