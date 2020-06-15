@@ -1,12 +1,15 @@
 {
   "prettier.jsxSingleQuote": true,
   "prettier.trailingComma": "none",
-  "prettier.singleQuote": true,
+  "prettier.singleQuote": false,
+  "prettier.semi": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "docthis.includeDateTag": true,
-  "typescript.format.semicolons": "remove"
+  "typescript.format.semicolons": "remove",
+  "python.pythonPath": "/home/vagrant/.anaconda3/bin/python",
+  "remote.restoreForwardedPorts": true
 }

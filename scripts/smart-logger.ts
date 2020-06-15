@@ -16,7 +16,7 @@ interface ILog {
 
 const token = Deno.env.toObject()["LOGGER_REST_TOKEN"] ||
   "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI";
-const baseURL = `http://xunqinji.top:9007/api/v1/games`;
+const baseURL = `http://xunqinji.top:9007/api/v1/games?table=games`;
 
 /**
  * post数据
