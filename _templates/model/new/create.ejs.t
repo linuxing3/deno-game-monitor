@@ -1,5 +1,5 @@
 ---
-to: models/<%= name %>Model.ts
+to: models/<%= name %>.model.ts
 ---
 <%
 const MyModel = name + "Model";

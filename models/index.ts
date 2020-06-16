@@ -3,10 +3,10 @@ import {
   BaseModel,
 } from "../deps.ts";
 
-import { UserModel } from "../models/UserModel.ts";
-import { GameModel } from "../models/GameModel.ts";
+import { UserModel } from "../models/user.model.ts";
+import { GameModel } from "../models/game.model.ts";
 // hygen starts
-import { DocumentModel } from "../models/DocumentModel.ts";
+import { DocumentModel } from "../models/document.model.ts";
 export const documentModel = dso.define(DocumentModel);
 // hygen ends
 export const userModel = dso.define(UserModel);
