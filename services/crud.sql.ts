@@ -1,9 +1,6 @@
 // Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 // deno-lint-ignore-file
-import {
-  Where,
-  BaseModel,
-} from "../deps.ts";
+import { Where, BaseModel } from "../deps.ts";
 
 // Grub Options
 export async function findAllRecord(model: BaseModel) {
@@ -12,10 +9,7 @@ export async function findAllRecord(model: BaseModel) {
   return records;
 }
 
-export async function findRecord(
-  model: BaseModel,
-  query: any,
-) {
+export async function findRecord(model: BaseModel, query: any) {
   let record;
   if (query.id) {
     record = await model.findById(query.id);

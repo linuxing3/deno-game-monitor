@@ -1,4 +1,7 @@
 {
+  "editor.fontFamily": "'BlexMono Nerd Font Mono' , 'DejaVu Sans Mono for Powerline',  'Fura Code Nerd Font Mono', monospace",
+  "editor.fontSize": 18,
+  "editor.fontLigatures": true,
   "prettier.jsxSingleQuote": true,
   "prettier.trailingComma": "none",
   "prettier.singleQuote": false,
@@ -10,6 +13,9 @@
   "terminal.integrated.cursorStyle": "line",
   "docthis.includeDateTag": true,
   "typescript.format.semicolons": "remove",
-  "python.pythonPath": "/home/vagrant/.anaconda3/bin/python",
-  "remote.restoreForwardedPorts": true
+  "python.pythonPath": "/usr/bin/python3",
+  "remote.restoreForwardedPorts": true,
+  "python.linting.enabled": true,
+  "python.linting.mypyEnabled": true,
+  "remote.SSH.defaultForwardedPorts": []
 }
