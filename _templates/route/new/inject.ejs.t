@@ -7,4 +7,4 @@ skip_if: <%= name %>Router
 <%
 const routerName = name + "Router"
 %>
-import <%= routerName %> from "./routes/<%= name %>.ts";
+import <%= routerName %> from "./routes/<%= name %>.router.ts";

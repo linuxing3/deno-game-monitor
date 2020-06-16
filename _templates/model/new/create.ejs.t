@@ -23,7 +23,7 @@ export class <%= MyModel %> extends BaseModel {
   id!: number;
 
 <% fields.split(',').forEach(field => { %>
-  @Field({ type: FieldType.STRING, length: 30 })
+  @Field({ type: FieldType.STRING })
   <%= field %>?: string;
 <% }) %>
 }
