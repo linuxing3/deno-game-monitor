@@ -2,17 +2,10 @@
 to: _templates/<%= name %>/<%= action || 'new' %>/hello.ejs.t
 ---
 ---
-to: app/hello.js
+inject: true
+to: deps.ts
+after: hygen starts
+skip_if: <%=name %>
 ---
-const hello = ```
-Hello!
-This is your first hygen template.
-
-Learn what it can do here:
-
-https://github.com/jondot/hygen
-```
-
-console.log(hello)
-
+export <%=name %> from "https://deno.land/std/<%=name %>/mod.ts";
 
