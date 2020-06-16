@@ -10,7 +10,7 @@ const program = new Denomander({
   app_version: "1.0.0",
 });
 
-interface INote {
+export interface INote {
   title: string;
   body: string;
   newTitle?: string;

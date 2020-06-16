@@ -1,20 +1,24 @@
 {
-    "cmds": {
-        "multi": ["ls", "pwd"],
-        "ls": "ls -l",
-        "start": "deno run -A --importmap=import_map.json --unstable -c tsconfig.json server.ts",
-        "start:slim": "deno run -A --unstable -c tsconfig.json server.slim.ts",
-        "test": "deno test -A --importmap=import_map.json --unstable",
-        "cache:deps": "deno cache --unstable deps.ts",
-        "fmt": "deno fmt",
-        "lint": "deno lint --unstable",
-        "note": "deno run -A --unstable scripts/note_app.ts",
-        "pm": "nohup deno run -A --unstable -c tsconfig.json server.ts &",
-        "logger:log": "deno run -A --unstable scripts/smart-logger.ts log  -f csv /tmp/games",
-        "logger:filter": "deno run -A --unstable scripts/smart-logger.ts filter -f csv -k Code /tmp/games",
-        "logger:json": "deno run -A --unstable scripts/smart-logger.ts json -f csv -k Code.exe /tmp/games",
-        "logger:pids": "deno run -A --unstable scripts/smart-logger.ts pids -f csv -k Code.exe /tmp/games",
-        "logger:send": "deno run -A --unstable scripts/smart-logger.ts send -f csv -k Code.exe /tmp/games",
-        "logger:kill": "deno run -A --unstable scripts/smart-logger.ts kill -f csv -k Code.exe /tmp/games"
-    }
+  "cmds": {
+    "multi": ["ls", "pwd"],
+    "ls": "ls -l",
+    "start": "deno run -A --importmap=import_map.json --unstable -c tsconfig.json server.ts",
+    "pm": "nohup deno run -A --unstable -c tsconfig.json server.ts &",
+    "start:slim": "deno run -A --unstable -c tsconfig.json server.slim.ts",
+    "test": "deno test -A --importmap=import_map.json --unstable",
+    "gen:model": "hygen model new",
+    "gen:controller": "hygen controller new",
+    "gen:route": "hygen route new",
+    "cache:deps": "deno cache --unstable deps.ts",
+    "fmt": "deno fmt",
+    "lint": "deno lint --unstable",
+    "note": "deno run -A --unstable tests/note/note_app.ts",
+    "note:l": "deno run -A --unstable .lizard_installer.ts",
+    "logger:log": "deno run -A --unstable tests/logger/smart-logger.ts log  -f csv /tmp/games",
+    "logger:filter": "deno run -A --unstable tests/logger/smart-logger.ts filter -f csv -k Code /tmp/games",
+    "logger:json": "deno run -A --unstable tests/logger/smart-logger.ts json -f csv -k Code.exe /tmp/games",
+    "logger:pids": "deno run -A --unstable tests/logger/smart-logger.ts pids -f csv -k Code.exe /tmp/games",
+    "logger:send": "deno run -A --unstable tests/logger/smart-logger.ts send -f csv -k Code.exe /tmp/games",
+    "logger:kill": "deno run -A --unstable tests/logger/smart-logger.ts kill -f csv -k Code.exe /tmp/games"
+  }
 }

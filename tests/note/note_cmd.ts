@@ -12,8 +12,8 @@ import iro, {
   bgGreen,
 } from "https://deno.land/x/iro/src/iro.ts";
 
-const currentDir = Deno.cwd();
-const notesFilePath = path.resolve(`${currentDir}/data/notes.json`);
+const homeDir = Deno.env.toObject()["HOME"];
+const notesFilePath = path.resolve(`${homeDir}/.notes/notes.json`);
 
 interface INote {
   title: string;

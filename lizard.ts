@@ -1,30 +1,37 @@
 import { Lizard, program } from "https://deno.land/x/denomander/mod.ts";
+// Local imports
+import * as notes from "./scripts/note_cmd.ts";
+import { INote } from "./scripts/note_app.ts";
 
 Lizard.appDetails({
-  app_name: "Deno game monitor",
-  app_description: "Monitor games of kid playing",
+  app_name: "Lizard Note app",
+  app_description: "Taking notes everyday",
   app_version: "1.0.0",
 });
 
-Lizard.command("clone [url]", clone)
-  .option("-c, --color", "the color")
-  .option("-d, --dcolor", "the color")
+Lizard.command("add [title] [body]", add)
   .describe(
-    "this is a description",
+    "Create Note",
   );
 
-Lizard.command("pull [repo]", ({ repo }: any) => {
-  if (program.force) {
-    console.log(`pull from ${repo} with force`);
-  } else {
-    console.log("Just pull from " + repo);
-  }
-}).requiredOption("-f --force", "With force").describe(
-  "This is a pull command",
-);
-
-function clone({ url }: any) {
-  console.log("clone from ..." + url);
+function add({ title, body }: INote) {
+  notes.createNote({ title, body });
 }
+
+Lizard.command("list", () => {
+  notes.listNotes();
+}).describe("List all notes");
+
+Lizard.command("read [title]", ({ title }: INote) => {
+  notes.readNote(title);
+}).describe("List all notes");
+
+Lizard.command("update [title] [newTitle] [newBody]", (note: INote) => {
+  notes.updateNote(note.title, String(note.newBody), String(note.newTitle));
+}).describe("Update a note");
+
+Lizard.command("remove [title]", ({ title }: INote) => {
+  notes.removeNote(title);
+}).describe("Update a note");
 
 export { Lizard };
