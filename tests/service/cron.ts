@@ -1,4 +1,4 @@
-import { cron, daily, monthly, weekly } from "../deps.ts";
+import { cron, daily, monthly, weekly } from "../../deps.ts";
 
 daily(() => {
   // backupDatabase();

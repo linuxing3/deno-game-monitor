@@ -11,11 +11,15 @@ import gameRouter from "./routes/game.ts";
 import homeRouter from "./routes/home.ts";
 import authRouter from "./routes/auth.ts";
 import fieldRouter from "./routes/field.ts";
+// hygen route starts
+// hygen route ends
 
 // Middleware
 import logger from "./middleware/logger.ts";
 import timer from "./middleware/timer.ts";
 import error from "./middleware/error.ts";
+// hygen middleware starts
+// hygen middleware ends
 
 // SQL Server
 import { initDb } from "./services/db.sql.ts";
@@ -28,10 +32,12 @@ export const app = new Application();
 
 // Builtin middleware
 app.use(oakCors()); // Enable CORS for All Routes
+
 app.use(gameRouter.routes())
   .use(homeRouter.routes())
   .use(authRouter.routes())
   .use(fieldRouter.routes());
+
 app.use(gameRouter.allowedMethods())
   .use(homeRouter.allowedMethods())
   .use(fieldRouter.allowedMethods())

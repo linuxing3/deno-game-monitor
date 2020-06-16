@@ -1,4 +1,4 @@
-import { client } from "../services/db.sql.ts";
+import { client } from "../../services/db.sql.ts";
 
 try {
   await client.execute(`

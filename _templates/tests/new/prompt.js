@@ -1,6 +1,3 @@
----
-to: _templates/<%= name %>/<%= action || 'new' %>/prompt.js
----
 module.exports = [
   {
     type: 'input',

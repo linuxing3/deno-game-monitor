@@ -1,5 +1,5 @@
 // server.test.ts
-import { Application, Router } from "../deps.ts";
+import { Application, Router } from "../../deps.ts";
 import { superoak } from "https://deno.land/x/superoak@master/mod.ts";
 import {
   userList,
@@ -7,8 +7,8 @@ import {
   userProfile,
   userUpdate,
   userDelete,
-} from "../controllers/user.native.ts";
-import User from "../services/db.native.ts";
+} from "../../controllers/user.native.ts";
+import User from "../../services/db.native.ts";
 // routes
 const router = new Router();
 router
