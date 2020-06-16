@@ -13,6 +13,8 @@ const jspms = [
   'import ReactDOM from "https://dev.jspm.io/react-dom@16.13.1"',
   'import ReactRouter from "https://dev.jspm.io/react-router"',
   'import ReactHookForm from "https://dev.jspm.io/react-hook-form"',
+  'import ObservableHook from "https://dev.jspm.io/observable-hook"',
+  'import Rxjs from "https://dev.jspm.io/rxjs"',
 ];
 
 const libs = jspms.join(";\n");

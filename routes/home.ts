@@ -31,4 +31,22 @@ router.get(browserBundlePath, ({ response }: { response: any }) => {
   response.body = js;
 });
 
+router.get("/corona", (ctx: any) => {
+  // And then on the server we’ll use the analogous, but stateless StaticRouter component:
+  const body = htmlWrapper(App);
+  ctx.response.type = "text/html";
+  ctx.response.body = body;
+});
+
+// 客户端渲染App
+router.get(
+  `${browserBundlePath}`,
+  ({ response }: { response: any }) => {
+    // On the client-side, let’s simply wrap our App component with React Router’s BrowserRouter component:
+    const js = jsMultiWrapper(componentMapList);
+    response.type = "application/javascript";
+    response.body = js;
+  },
+);
+
 export default router;
