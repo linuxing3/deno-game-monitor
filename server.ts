@@ -15,9 +15,9 @@ import fieldRouter from "./routes/field.router.ts";
 // hygen route ends
 
 // Middleware
-import logger from "./middleware/logger.ts";
-import timer from "./middleware/timer.ts";
-import error from "./middleware/error.ts";
+import logger from "./middleware/logger.middleware.ts";
+import timer from "./middleware/timer.middleware.ts";
+import error from "./middleware/error.middleware.ts";
 // hygen middleware starts
 // hygen middleware ends
 

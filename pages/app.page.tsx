@@ -1,9 +1,9 @@
 // deno-lint-ignore-file
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
-import { React, ReactRouter } from '../deps.ts';
-import ListComponent from './list.tsx';
-import LoginComponent from './form.tsx';
-import { ComponentMap } from '../helpers/render.ts';
+import { React, ReactRouter } from "../deps.ts";
+import ListComponent from "./list.page.tsx";
+import LoginComponent from "./form.page.tsx";
+import { ComponentMap } from "../helpers/render.ts";
 
 declare global {
   namespace JSX {
@@ -39,17 +39,17 @@ const App = (props: any) => {
 
 export const componentMapList: ComponentMap[] = [
   {
-    name: 'App',
-    component: App
+    name: "App",
+    component: App,
   },
   {
-    name: 'LoginComponent',
-    component: LoginComponent
+    name: "LoginComponent",
+    component: LoginComponent,
   },
   {
-    name: 'ListComponent',
-    component: ListComponent
-  }
+    name: "ListComponent",
+    component: ListComponent,
+  },
 ];
 
 export default App;

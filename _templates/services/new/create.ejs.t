@@ -1,5 +1,5 @@
 ---
-to: services/<%= name %>.<%= action %>.ts
+to: services/<%= name %>.<%= action %>.service.ts
 ---
 // deno-lint-ignore-file
 

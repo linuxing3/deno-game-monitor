@@ -2,7 +2,7 @@
 // deno-lint-ignore-file
 import { Status, compare, makeJwt, hash, Context } from "../deps.ts";
 import env from "../config/env.ts";
-import { findRecord, addRecord } from "../services/crud.sql.ts";
+import { findRecord, addRecord } from "../services/crud.sql.service.ts";
 import modelMap from "../models/index.ts";
 
 const userModel = modelMap["users"];

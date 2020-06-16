@@ -5,10 +5,10 @@ import {
 
 import { UserModel } from "../models/user.model.ts";
 import { GameModel } from "../models/game.model.ts";
-// hygen starts
 import { DocumentModel } from "../models/document.model.ts";
-export const documentModel = dso.define(DocumentModel);
+// hygen starts
 // hygen ends
+export const documentModel = dso.define(DocumentModel);
 export const userModel = dso.define(UserModel);
 export const gameModel = dso.define(GameModel);
 
@@ -24,6 +24,7 @@ interface ModelMap {
 const modelMap: ModelMap = {
   users: userModel,
   games: gameModel,
+  documents: documentModel,
 };
 
 export default modelMap;

@@ -28,8 +28,8 @@ const App = () => {
 export const componentMapList: ComponentMap[] = [
   {
     name: "App",
-    component: App
-  }
+    component: App,
+  },
 ];
 
 export default App;

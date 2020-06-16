@@ -1,5 +1,5 @@
 ---
-to: routes/<%= name%>.route.ts
+to: routes/<%= name%>.router.ts
 ---
 // deno-lint-ignore-file
 import { Router } from "../deps.ts";

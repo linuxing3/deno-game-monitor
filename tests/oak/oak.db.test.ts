@@ -8,7 +8,7 @@ import {
   userUpdate,
   userDelete,
 } from "../../controllers/user.native.controller.ts";
-import User from "../../services/db.native.ts";
+import User from "../../services/crud.native.service.ts";
 // routes
 const router = new Router();
 router

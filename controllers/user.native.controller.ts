@@ -1,5 +1,5 @@
 import { RouteParams, Request, Response } from "../deps.ts";
-import User from "../services/db.native.ts";
+import User from "../services/crud.native.service.ts";
 
 // ------------- //
 // CRUD handlers //

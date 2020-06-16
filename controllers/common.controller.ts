@@ -6,7 +6,7 @@ import {
   findAllRecord,
   updateRecord,
   deleteRecord,
-} from "../services/crud.sql.ts";
+} from "../services/crud.sql.service.ts";
 import modelMap from "../models/index.ts";
 import { helpers, RouterContext, _ } from "../deps.ts";
 
@@ -24,7 +24,7 @@ const getTableFields = async (ctx: RouterContext) => {
   } else {
     const model = modelMap[query.table];
     const fields = model.modelFields;
-    const data = _.map(fields, (i:any) => i['name']);
+    const data = _.map(fields, (i: any) => i["name"]);
     ctx.response.body = {
       success: true,
       data,

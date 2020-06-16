@@ -16,11 +16,15 @@ export class DocumentModel extends BaseModel {
   })
   id!: number;
 
-
-  @Field({ type: FieldType.STRING, length: 30 })
+  @Field({ type: FieldType.STRING })
   title?: string;
 
-  @Field({ type: FieldType.STRING, length: 30 })
-  document?: string;
+  @Field({ type: FieldType.STRING })
+  author?: string;
 
+  @Field({ type: FieldType.STRING })
+  content?: string;
+
+  @Field({ type: FieldType.STRING })
+  tags?: string;
 }

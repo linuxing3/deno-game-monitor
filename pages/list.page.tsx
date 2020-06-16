@@ -1,7 +1,7 @@
 // deno-lint-ignore-file
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
-import { React } from '../deps.ts';
-import env from '../config/env.ts';
+import { React } from "../deps.ts";
+import env from "../config/env.ts";
 
 declare global {
   namespace JSX {
@@ -26,15 +26,15 @@ declare global {
 const List = () => {
   const [list, setList] = (React as any).useState([
     {
-      name: 'xingxiaorui',
-      password: '200090909',
-      email: 'xingwenju@gmail.com'
-    }
+      name: "xingxiaorui",
+      password: "200090909",
+      email: "xingwenju@gmail.com",
+    },
   ]);
 
-  const [tableName, setTableName] = (React as any).useState('users');
-  const [baseUrl, setBaseUrl] = (React as any).useState('/api/v1');
-  const [tableFields, setTableFields] = (React as any).useState(['']);
+  const [tableName, setTableName] = (React as any).useState("users");
+  const [baseUrl, setBaseUrl] = (React as any).useState("/api/v1");
+  const [tableFields, setTableFields] = (React as any).useState([""]);
 
   async function fetchData() {
     const hasFields = await fetchFields();
@@ -66,17 +66,17 @@ const List = () => {
     const url = `${baseUrl}/${tableName}/${id}?table=${tableName}`;
     console.log(id);
     await fetch(url, {
-      method: 'delete',
+      method: "delete",
       headers: {
-        'Content-Type': 'application/json'
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify({ id })
+      body: JSON.stringify({ id }),
     });
   };
 
   const FieldsTable = (props: any) => {
     return (
-      <div class='pt-50 pl-2 pr-2'>
+      <div class="pt-50 pl-2 pr-2">
         {props.tableFields.map((field: string) => (
           <p>
             <h3>
@@ -89,13 +89,13 @@ const List = () => {
   };
 
   return (
-    <div class='pt-50 pl-10 pr-10 w-full'>
-      <div class='pl-3 pr-3'>
+    <div class="pt-50 pl-10 pr-10 w-full">
+      <div class="pl-3 pr-3">
         {list.map((item: any) => {
           return (
-            <div class='flex items-center justify-center'>
+            <div class="flex items-center justify-center">
               <button
-                class='bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded'
+                class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"
                 onClick={() => handleClick(item.id)}
               >
                 {item.name}
