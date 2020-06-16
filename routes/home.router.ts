@@ -38,15 +38,4 @@ router.get("/corona", (ctx: any) => {
   ctx.response.body = body;
 });
 
-// 客户端渲染App
-router.get(
-  `${browserBundlePath}`,
-  ({ response }: { response: any }) => {
-    // On the client-side, let’s simply wrap our App component with React Router’s BrowserRouter component:
-    const js = jsMultiWrapper(componentMapList);
-    response.type = "application/javascript";
-    response.body = js;
-  },
-);
-
 export default router;

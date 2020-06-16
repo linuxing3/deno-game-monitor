@@ -7,7 +7,7 @@ import {
   updateInTable,
   deleteInTable,
   addToTable,
-} from "../controllers/common.ts";
+} from "../controllers/common.controller.ts";
 import authorize from "../middleware/authorize.ts";
 
 const router = new Router();

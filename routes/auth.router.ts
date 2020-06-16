@@ -2,14 +2,14 @@
 // @deno-types="https://deno.land/x/types/react/v16.13.1/react.d.ts"
 // @deno-types="https://deno.land/x/types/react-dom/v16.13.1/server.d.ts"
 import { Router } from "../deps.ts";
-import { register, login } from "../controllers/auth.ts";
+import { register, login } from "../controllers/auth.controller.ts";
 import {
   getAllFromTable,
   getOneFromTable,
   updateInTable,
   deleteInTable,
   addToTable,
-} from "../controllers/common.ts";
+} from "../controllers/common.controller.ts";
 import authorize from "../middleware/authorize.ts";
 
 const router = new Router();

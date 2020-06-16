@@ -4,10 +4,10 @@
 import { Router } from "../deps.ts";
 import {
   getTableFields,
-} from "../controllers/common.ts";
+} from "../controllers/common.controller.ts";
 
 const router = new Router();
 
-router.get("/api/v1/fields", getTableFields)
+router.get("/api/v1/fields", getTableFields);
 
 export default router;

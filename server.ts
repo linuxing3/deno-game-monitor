@@ -7,10 +7,10 @@ import {
 import env from "./config/env.ts";
 
 // Routes
-import gameRouter from "./routes/game.ts";
-import homeRouter from "./routes/home.ts";
-import authRouter from "./routes/auth.ts";
-import fieldRouter from "./routes/field.ts";
+import gameRouter from "./routes/game.router.ts";
+import homeRouter from "./routes/home.router.ts";
+import authRouter from "./routes/auth.router.ts";
+import fieldRouter from "./routes/field.router.ts";
 // hygen route starts
 // hygen route ends
 

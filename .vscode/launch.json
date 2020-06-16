@@ -17,7 +17,7 @@
         "-A",
         "-c",
         "tsconfig.json",
-        "scripts/smart-logger.ts",
+        "tests/logger/smart-logger.ts",
         "log",
         "/tmp/games",
         "csv"
@@ -37,7 +37,7 @@
         "-A",
         "-c",
         "tsconfig.json",
-        "scripts/smart-logger.ts",
+        "tests/logger/smart-logger.ts",
         "show",
         "Code.exe",
         "/tmp/games",
