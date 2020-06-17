@@ -3,8 +3,11 @@
 // @deno-types="https://deno.land/x/types/react-dom/v16.13.1/server.d.ts"
 /*
 |--------------------------------------------------------------------------
-| Router
+| Router: fields v1
 |--------------------------------------------------------------------------
+|
+| get fields of a Model
+|
 */
 import { Router } from "../deps.ts";
 import {

@@ -11,6 +11,7 @@
 */
 import { BaseModel, Status } from "../deps.ts";
 import modelMap from "../models/index.ts";
+
 export default async (ctx: any, next: any) => {
   const modelName: string = ctx.params.table;
   if (!modelName) {

@@ -2,7 +2,7 @@
 // deno-lint-ignore-file
 /*
 |--------------------------------------------------------------------------
-| Game Router
+| Game Router v1
 |--------------------------------------------------------------------------
 | Using [model] middleware to bind [ModelClass] the context
 |

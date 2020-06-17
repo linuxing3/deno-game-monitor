@@ -11,10 +11,15 @@ import { htmlWrapper, jsMultiWrapper } from "../helpers/render.ts";
 
 import { Router } from "../deps.ts";
 
-// define 2 routes:
-// one to serve a simple HTML page containing our rendered app,
-// and another browser.js route to server our app's code
-// so we can [hydrate] the React application on the client.
+/*
+|--------------------------------------------------------------------------
+| SSR React pattern
+|--------------------------------------------------------------------------
+| define 2 routes:
+| one to serve a simple HTML page containing our rendered app,
+| and another browser.js route to server our app's code
+| so we can [hydrate] the React application on the client.
+*/
 
 // 导入客户端的reactjs
 const browserBundlePath = "/browser.js";
