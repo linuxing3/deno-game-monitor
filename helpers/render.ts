@@ -1,5 +1,11 @@
 // Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 // @deno-types="https://deno.land/x/types/react-dom/v16.13.1/server.d.ts"
+/*
+|--------------------------------------------------------------------------
+| Helper
+|--------------------------------------------------------------------------
+| Render react from server
+*/
 // deno-lint-ignore-file
 import { ReactDOMServer, ReactRouter } from "../deps.ts";
 

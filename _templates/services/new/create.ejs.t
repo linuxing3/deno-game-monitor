@@ -7,6 +7,9 @@ to: services/<%= name %>/<%= action %>.service.ts
 |--------------------------------------------------------------------------
 | Service: <%= name %> <%= action %>
 |--------------------------------------------------------------------------
+|
+| Service <%= action %> of <%= name %>
+|
 */
 export async function findAllRecord(model: any) {
   return;

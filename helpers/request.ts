@@ -1,5 +1,11 @@
 // Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 // deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Helper
+|--------------------------------------------------------------------------
+| Request wrapper methods
+*/
 import env from "../config/env.ts";
 
 export const token = env["AUTH_TOKEN"];

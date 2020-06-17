@@ -1,7 +1,7 @@
 // deno-lint-ignore-file
 /*
 |--------------------------------------------------------------------------
-| Middlewares
+| Middleware: param model 
 |--------------------------------------------------------------------------
 |
 | Check the query and find the [table] value
@@ -9,7 +9,7 @@
 | Bind the [ModelClass] to the context
 |
 */
-import { helpers, BaseModel, Status } from "../deps.ts";
+import { BaseModel, Status } from "../deps.ts";
 import modelMap from "../models/index.ts";
 export default async (ctx: any, next: any) => {
   const modelName: string = ctx.params.table;

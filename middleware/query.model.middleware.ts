@@ -1,7 +1,7 @@
 // deno-lint-ignore-file
 /*
 |--------------------------------------------------------------------------
-| Middlewares
+| Middleware: query model
 |--------------------------------------------------------------------------
 |
 | Check the query and find the [table] value

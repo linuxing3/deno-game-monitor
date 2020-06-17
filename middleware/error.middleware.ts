@@ -1,4 +1,10 @@
 // deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Middleware: error handler
+|--------------------------------------------------------------------------
+| Handle error from httpError
+*/
 import { isHttpError, Status } from "../deps.ts";
 
 import between from "../helpers/between.ts";

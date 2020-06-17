@@ -1,5 +1,11 @@
 // Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 // deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Middleware: user authorize
+|--------------------------------------------------------------------------
+| Check header [authorization] and check with jwt
+*/
 import { Status, validateJwt, config } from "../deps.ts";
 
 const env = config();

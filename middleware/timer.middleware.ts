@@ -1,4 +1,10 @@
 // deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Middleware: timer
+|--------------------------------------------------------------------------
+| Calculate time difference
+*/
 export default async (ctx: any, next: any) => {
   const start = Date.now();
   await next();
