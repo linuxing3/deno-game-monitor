@@ -1,15 +1,20 @@
 ---
-to: controllers/<%= name %>.controller.ts
+to: controllers/<%= name %>.<%= action %>.controller.ts
 ---
 <%
 const modelName = h.changeCase.camel(name);
 const modelClass = h.inflection.titleize(name);
-%>import { RouteParams, Request, Response } from "../deps.ts";
+%>// deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Controllers
+|--------------------------------------------------------------------------
+|
+| CRUD handlers without seperate services
+|
+*/
+import { RouteParams, Request, Response } from "../deps.ts";
 import <%= modelClass %> from "../services/<%= modelName %>/<%= action %>.service.ts";
-
-// ------------- //
-// CRUD handlers //
-// ------------- //
 
 // Read <%= modelName %>
 export async function <%= modelName %>List(

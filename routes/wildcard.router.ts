@@ -15,7 +15,7 @@ import {
   deleteInTable,
   addToTable,
 } from "../controllers/common.standalone.controller.ts";
-import model from "../middleware/query.model.middleware.ts";
+import model from "../middleware/param.model.middleware.ts";
 
 const router = new Router();
 
@@ -23,13 +23,14 @@ const router = new Router();
 |--------------------------------------------------------------------------
 | Routes
 |--------------------------------------------------------------------------
-| Using [model] middleware before controller methods.
+| Using [param.model] middleware before controller methods.
+| Get Model from param [table]
 |
 */
-router.get("/api/v1/games", model, getAllFromTable)
-  .get("/api/v1/games/:id", model, getOneFromTable)
-  .post("/api/v1/games", model, addToTable)
-  .put("/api/v1/games/:id", model, updateInTable)
-  .delete("/api/v1/games/:id", model, deleteInTable);
+router.get("/api/v1/:table", model, getAllFromTable)
+  .get("/api/v1/:table/:id", model, getOneFromTable)
+  .post("/api/v1/:table", model, addToTable)
+  .put("/api/v1/:table/:id", model, updateInTable)
+  .delete("/api/v1/:table/:id", model, deleteInTable);
 
 export default router;

@@ -17,7 +17,7 @@ interface RouterContextWithModel extends RouterContext {
 
 // @desc    Get all <table>
 // @route   GET /api/v1/<table>
-const getTableFields = async (ctx: RouterContextWithModel) => {
+const getTableFields = async (ctx: any) => {
   const Model: BaseModel = ctx.model;
   const data = _.map(Model.modelFields, (item: any) => item["name"]);
   ctx.response.body = {
@@ -28,7 +28,7 @@ const getTableFields = async (ctx: RouterContextWithModel) => {
 
 // @desc    Get all <table>
 // @route   GET /api/v1/<table>
-const getAllFromTable = async (ctx: RouterContextWithModel) => {
+const getAllFromTable = async (ctx: any) => {
   const Model: BaseModel = ctx.model;
   const data = await Model.findAll(Where.expr("id > 0"));
   ctx.response.body = {
@@ -39,7 +39,7 @@ const getAllFromTable = async (ctx: RouterContextWithModel) => {
 
 // @desc    Get single <table>
 // @route   GET /api/v1/<table>/:id
-const getOneFromTable = async (ctx: RouterContextWithModel) => {
+const getOneFromTable = async (ctx: any) => {
   const Model: BaseModel = ctx.model;
   const id = ctx.params.id as string;
   const data = await Model.findById(id);
@@ -60,7 +60,7 @@ const getOneFromTable = async (ctx: RouterContextWithModel) => {
 
 // @desc    Add <table>
 // @route   Post /api/v1/<table>
-const addToTable = async (ctx: RouterContextWithModel) => {
+const addToTable = async (ctx: any) => {
   const Model: BaseModel = ctx.model;
   if (!ctx.request.hasBody) {
     ctx.response.status = 400;
@@ -81,7 +81,7 @@ const addToTable = async (ctx: RouterContextWithModel) => {
 
 // @desc    Update <table>
 // @route   PUT /api/v1/<table>/:id
-const updateInTable = async (ctx: RouterContextWithModel) => {
+const updateInTable = async (ctx: any) => {
   const Model: BaseModel = ctx.model;
   if (!ctx.request.hasBody) {
     ctx.response.status = 400;
@@ -105,7 +105,7 @@ const updateInTable = async (ctx: RouterContextWithModel) => {
 
 // @desc    Delete <table>
 // @route   DELETE /api/v1/<table>/:id
-const deleteInTable = async (ctx: RouterContextWithModel) => {
+const deleteInTable = async (ctx: any) => {
   const Model: BaseModel = ctx.model;
   const count = await Model.delete(Where.from({ id: ctx.params.id }));
   ctx.response.body = {

@@ -4,7 +4,13 @@ to: models/<%= name %>.model.ts
 <%
 const MyModel = name + "Model";
 const MyModelName = h.changeCase.lower(name) + "s";
-%>import {
+%>// deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Models
+|--------------------------------------------------------------------------
+*/
+import {
   BaseModel,
   Field,
   FieldType,

@@ -22,6 +22,9 @@ import homeRouter from "./routes/home.router.ts";
 import authRouter from "./routes/auth.router.ts";
 import fieldRouter from "./routes/field.router.ts";
 // hygen route starts
+
+import documentRouter from "./routes/document.router.ts";
+
 // hygen route ends
 
 // Middelware
