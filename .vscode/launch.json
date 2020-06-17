@@ -5,6 +5,23 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug Deno Server",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "runtimeExecutable": "${HOME}/.deno/bin/deno",
+      "runtimeArgs": [
+        "run",
+        "--inspect-brk",
+        "--unstable",
+        "-A",
+        "-c",
+        "tsconfig.json",
+        "server.ts"
+      ],
+      "port": 9229
+    },
+    {
       "name": "Debug Game Log csv",
       "type": "node",
       "request": "launch",
@@ -42,23 +59,6 @@
         "Code.exe",
         "/tmp/games",
         "csv"
-      ],
-      "port": 9229
-    },
-    {
-      "name": "Debug Deno Server",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "${HOME}/.deno/bin/deno",
-      "runtimeArgs": [
-        "run",
-        "--inspect-brk",
-        "--unstable",
-        "-A",
-        "-c",
-        "tsconfig.json",
-        "server.ts"
       ],
       "port": 9229
     }

@@ -43,9 +43,8 @@ export async function login(ctx: Context | any) {
   // Find record with name
   let user: any = await findRecord(userModel, { name: body.value.name });
 
-  if (!user) {
-    // localStorage.setItem('status', '0');
-    ctx.throw(Status.UnprocessableEntity, "Wrong Email Address!");
+  if (user === undefined) {
+    ctx.throw(Status.UnprocessableEntity, "Wrong name provided!");
   } else if (await compare(body.value.password, user.password)) {
     const token = makeJwt(
       {

@@ -10,16 +10,16 @@ import {
   deleteInTable,
   addToTable,
 } from "../controllers/common.controller.ts";
-import authorize from "../middleware/authorize.ts";
+import authorize from "../middleware/authorize.middleware.ts";
 
 const router = new Router();
 
 router.post("/auth/register", register)
   .post("/auth/login", login)
-  .get("/api/v1/users", getAllFromTable)
-  .get("/api/v1/users/:id", getOneFromTable)
-  .post("/api/v1/users", addToTable)
-  .put("/api/v1/users/:id", updateInTable)
-  .delete("/api/v1/users/:id", deleteInTable);
+  .get("/api/v1/users", authorize, getAllFromTable)
+  .get("/api/v1/users/:id", authorize, getOneFromTable)
+  .post("/api/v1/users", authorize, addToTable)
+  .put("/api/v1/users/:id", authorize, updateInTable)
+  .delete("/api/v1/users/:id", authorize, deleteInTable);
 
 export default router;
