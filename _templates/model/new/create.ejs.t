@@ -4,10 +4,11 @@ to: models/<%= name %>.model.ts
 <%
 const MyModel = name + "Model";
 const MyModelName = h.changeCase.lower(name) + "s";
-%>// deno-lint-ignore-file
+%>// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
+// deno-lint-ignore-file
 /*
 |--------------------------------------------------------------------------
-| Models
+| Model: <%= name %>
 |--------------------------------------------------------------------------
 */
 import {

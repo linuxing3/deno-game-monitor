@@ -1,4 +1,10 @@
+// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 // deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Services
+|--------------------------------------------------------------------------
+*/
 
 export async function findAllRecord(model: any) {
   return;

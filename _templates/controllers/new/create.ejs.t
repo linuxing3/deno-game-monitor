@@ -4,10 +4,11 @@ to: controllers/<%= name %>.<%= action %>.controller.ts
 <%
 const modelName = h.changeCase.camel(name);
 const modelClass = h.inflection.titleize(name);
-%>// deno-lint-ignore-file
+%>// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
+// deno-lint-ignore-file
 /*
 |--------------------------------------------------------------------------
-| Controllers
+| Controller: <%= name %> <%= action %>
 |--------------------------------------------------------------------------
 |
 | CRUD handlers without seperate services

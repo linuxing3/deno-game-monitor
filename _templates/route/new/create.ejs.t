@@ -1,7 +1,13 @@
 ---
 to: routes/<%= name%>.router.ts
 ---
+// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 // deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Route: <%= name %>
+|--------------------------------------------------------------------------
+*/
 import { Router } from "../deps.ts";
 import {
   getAllFromTable,

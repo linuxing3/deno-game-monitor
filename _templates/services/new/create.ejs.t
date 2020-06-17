@@ -1,8 +1,13 @@
 ---
 to: services/<%= name %>/<%= action %>.service.ts
 ---
+// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 // deno-lint-ignore-file
-
+/*
+|--------------------------------------------------------------------------
+| Service: <%= name %> <%= action %>
+|--------------------------------------------------------------------------
+*/
 export async function findAllRecord(model: any) {
   return;
 }

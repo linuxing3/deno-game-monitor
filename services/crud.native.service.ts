@@ -1,3 +1,10 @@
+// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
+// deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Services
+|--------------------------------------------------------------------------
+*/
 import { genSalt, hash, v4 } from "../deps.ts";
 
 interface INativeResult {
