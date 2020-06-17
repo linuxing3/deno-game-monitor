@@ -9,11 +9,15 @@
 | Using the [ModelClass] binded to the context
 |
 */
-import { Where, BaseModel, _ } from "../deps.ts";
+import { Where, BaseModel, RouterContext, _ } from "../deps.ts";
+
+interface RouterContextWithModel extends RouterContext {
+  model: BaseModel;
+}
 
 // @desc    Get all <table>
 // @route   GET /api/v1/<table>
-const getTableFields = async (ctx: any) => {
+const getTableFields = async (ctx: RouterContextWithModel) => {
   const Model: BaseModel = ctx.model;
   const data = _.map(Model.modelFields, (item: any) => item["name"]);
   ctx.response.body = {
@@ -24,7 +28,7 @@ const getTableFields = async (ctx: any) => {
 
 // @desc    Get all <table>
 // @route   GET /api/v1/<table>
-const getAllFromTable = async (ctx: any) => {
+const getAllFromTable = async (ctx: RouterContextWithModel) => {
   const Model: BaseModel = ctx.model;
   const data = await Model.findAll(Where.expr("id > 0"));
   ctx.response.body = {
@@ -35,9 +39,10 @@ const getAllFromTable = async (ctx: any) => {
 
 // @desc    Get single <table>
 // @route   GET /api/v1/<table>/:id
-const getOneFromTable = async (ctx: any) => {
+const getOneFromTable = async (ctx: RouterContextWithModel) => {
   const Model: BaseModel = ctx.model;
-  const data = await Model.findById(ctx.params.id);
+  const id = ctx.params.id as string;
+  const data = await Model.findById(id);
   if (data) {
     ctx.response.status = 200;
     ctx.response.body = {
@@ -55,7 +60,7 @@ const getOneFromTable = async (ctx: any) => {
 
 // @desc    Add <table>
 // @route   Post /api/v1/<table>
-const addToTable = async (ctx: any) => {
+const addToTable = async (ctx: RouterContextWithModel) => {
   const Model: BaseModel = ctx.model;
   if (!ctx.request.hasBody) {
     ctx.response.status = 400;
@@ -76,7 +81,7 @@ const addToTable = async (ctx: any) => {
 
 // @desc    Update <table>
 // @route   PUT /api/v1/<table>/:id
-const updateInTable = async (ctx: any) => {
+const updateInTable = async (ctx: RouterContextWithModel) => {
   const Model: BaseModel = ctx.model;
   if (!ctx.request.hasBody) {
     ctx.response.status = 400;
@@ -100,7 +105,7 @@ const updateInTable = async (ctx: any) => {
 
 // @desc    Delete <table>
 // @route   DELETE /api/v1/<table>/:id
-const deleteInTable = async (ctx: any) => {
+const deleteInTable = async (ctx: RouterContextWithModel) => {
   const Model: BaseModel = ctx.model;
   const count = await Model.delete(Where.from({ id: ctx.params.id }));
   ctx.response.body = {
