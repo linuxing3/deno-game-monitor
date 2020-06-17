@@ -5,11 +5,11 @@ module.exports = [
   {
     type: "input",
     name: "name",
-    message: "What's your name?",
+    message: "What's your model name?"
   },
   {
     type: "input",
     name: "fields",
-    message: "What's your fields?",
-  },
+    message: "What's your model fields?"
+  }
 ];

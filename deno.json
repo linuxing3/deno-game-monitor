@@ -10,6 +10,7 @@
     "pm": "nohup deno run -A --unstable -c tsconfig.json server.ts &",
     "test": "deno test -A --importmap=import_map.json --unstable",
     "gen:generator": "hygen generator new",
+    "gen:component": "hygen component new",
     "gen:model": "hygen model new",
     "gen:route": "hygen route new",
     "gen:controller": "hygen controllers new",

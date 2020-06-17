@@ -2,11 +2,11 @@ module.exports = [
   {
     type: "input",
     name: "name",
-    message: "What's your service name?"
+    message: "What's your component name?"
   },
   {
     type: "input",
     name: "action",
-    message: "What's your service action?"
+    message: "What's your component action?"
   }
 ];
