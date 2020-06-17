@@ -39,7 +39,7 @@ export const htmlWrapper = (component: any) => {
   return body;
 };
 
-// TODO  https://es.reactjs.org/docs/react-dom.html#hydrate
+// TODO:  https://es.reactjs.org/docs/react-dom.html#hydrate
 // Es igual a render(), pero es utilizado para hidratar un contenedor cuyo contenido HTML fue renderizado por ReactDOMServer.
 // React tratará de agregar detectores de eventos al marcado existente.
 export const jsMultiWrapper = (components: ComponentMap[]) => {

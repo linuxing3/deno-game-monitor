@@ -15,7 +15,7 @@ import modelMap from "../models/index.ts";
 
 const userModel = modelMap["users"];
 
-// TODO Normalize model with the [table] query parameter
+// TODO: Normalize model with the [table] query parameter
 export async function register(ctx: any) {
   const body = await ctx.request.body();
   console.log(body);

@@ -21,7 +21,7 @@ interface ModelMap {
   [name: string]: BaseModel;
 }
 
-// FIXME All model names should be same
+// FIXME: All model names should be same
 // the key [users] should be equal
 // in [UserModel] @Model('users')
 // query parameter table=users
