@@ -5,7 +5,7 @@ to: controllers/<%= name %>.controller.ts
 const modelName = h.changeCase.camel(name);
 const modelClass = h.inflection.titleize(name);
 %>import { RouteParams, Request, Response } from "../deps.ts";
-import <%= modelClass %> from "../services/<%= modelName %>.<%= action %>.ts";
+import <%= modelClass %> from "../services/<%= modelName %>/<%= action %>.service.ts";
 
 // ------------- //
 // CRUD handlers //

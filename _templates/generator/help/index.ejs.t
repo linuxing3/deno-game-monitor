@@ -4,12 +4,12 @@ message: |
   hygen {bold generator new} --name [NAME] --action [ACTION]
 
   Usage:
-  hygen {bold model new}
-  hygen {bold route new}
-  hygen {bold controllers new}
-  hygen {bold tests new}
-  hygen {bold services new}
+  hygen {green model new}
+  hygen {green route new}
+  hygen {green controllers new}
+  hygen {green tests new}
+  hygen {green services new}
 
   Install:
-  npm i -g {bold hygen}
+  npm i -g {red hygen}
 ---

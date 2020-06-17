@@ -7,4 +7,4 @@ to: <%= name %>/<%= action || 'new' %>/<%= name %>.ts
 after: hygen starts
 skip_if: <%= name %>
 ---
-console.log("Hygen is awesome");
+
