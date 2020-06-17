@@ -1,5 +1,13 @@
 // Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
 // deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Controllers
+|--------------------------------------------------------------------------
+| ------------- //
+| CRUD handlers //
+| ------------- //
+*/
 import { Status, compare, makeJwt, hash, Context } from "../deps.ts";
 import env from "../config/env.ts";
 import { findRecord, addRecord } from "../services/crud.sql.service.ts";

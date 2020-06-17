@@ -1,9 +1,13 @@
 import { RouteParams, Request, Response } from "../deps.ts";
 import User from "../services/crud.native.service.ts";
-
-// ------------- //
-// CRUD handlers //
-// ------------- //
+/*
+|--------------------------------------------------------------------------
+| Controllers
+|--------------------------------------------------------------------------
+| ------------- //
+| CRUD handlers //
+| ------------- //
+*/
 
 // Read user
 export async function userList(
