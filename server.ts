@@ -17,13 +17,12 @@ import env from "./config/env.ts";
 import { initDb } from "./services/db.sql.ts";
 
 // Routes
-import gameRouter from "./routes/game.router.ts";
 import homeRouter from "./routes/home.router.ts";
 import authRouter from "./routes/auth.router.ts";
 import fieldRouter from "./routes/field.router.ts";
 // hygen route starts
 
-import documentRouter from "./routes/document.router.ts";
+import wildCardRouter from "./routes/wildcard.router.ts";
 
 // hygen route ends
 
@@ -46,15 +45,15 @@ const port = parseInt(env["PORT"]);
  */
 app.use(oakCors()); // Enable CORS for All Routes
 
-app.use(gameRouter.routes())
-  .use(homeRouter.routes())
+app.use(homeRouter.routes())
   .use(authRouter.routes())
-  .use(fieldRouter.routes());
+  .use(fieldRouter.routes())
+  .use(wildCardRouter.routes());
 
-app.use(gameRouter.allowedMethods())
-  .use(homeRouter.allowedMethods())
+app.use(homeRouter.allowedMethods())
   .use(fieldRouter.allowedMethods())
-  .use(authRouter.allowedMethods());
+  .use(authRouter.allowedMethods())
+  .use(wildCardRouter.allowedMethods());
 
 /*
 |--------------------------------------------------------------------------
