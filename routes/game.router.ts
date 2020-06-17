@@ -2,8 +2,10 @@
 // deno-lint-ignore-file
 /*
 |--------------------------------------------------------------------------
-| Router
+| Game Router
 |--------------------------------------------------------------------------
+| Using [model] middleware to bind [ModelClass] the context
+|
 */
 import { Router } from "../deps.ts";
 import {
@@ -12,14 +14,22 @@ import {
   updateInTable,
   deleteInTable,
   addToTable,
-} from "../controllers/common.controller.ts";
+} from "../controllers/common.standalone.controller.ts";
+import model from "../middleware/model.middleware.ts";
 
 const router = new Router();
 
-router.get("/api/v1/games", getAllFromTable)
-  .get("/api/v1/games/:id", getOneFromTable)
-  .post("/api/v1/games", addToTable)
-  .put("/api/v1/games/:id", updateInTable)
-  .delete("/api/v1/games/:id", deleteInTable);
+/*
+|--------------------------------------------------------------------------
+| Routes
+|--------------------------------------------------------------------------
+| Using [model] middleware before controller methods.
+|
+*/
+router.get("/api/v1/games", model, getAllFromTable)
+  .get("/api/v1/games/:id", model, getOneFromTable)
+  .post("/api/v1/games", model, addToTable)
+  .put("/api/v1/games/:id", model, updateInTable)
+  .delete("/api/v1/games/:id", model, deleteInTable);
 
 export default router;
