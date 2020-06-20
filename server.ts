@@ -28,8 +28,6 @@ import wildCardRouter from "./routes/wildcard.router.ts";
 
 // Middelware
 import logger from "./middleware/logger.middleware.ts";
-import timer from "./middleware/timer.middleware.ts";
-import error from "./middleware/error.middleware.ts";
 // hygen middleware starts
 // hygen middleware ends
 
@@ -61,8 +59,6 @@ app.use(homeRouter.allowedMethods())
 |--------------------------------------------------------------------------
  */
 app.use(logger);
-app.use(timer);
-app.use(error);
 
 /*
 |--------------------------------------------------------------------------

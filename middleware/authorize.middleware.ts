@@ -14,15 +14,19 @@ export default async (ctx: any, next: any) => {
   // FIXED: Check authorization
   const authHeader = ctx.request.headers.get("authorization");
   if (!authHeader) {
+    console.log("No auth header");
     ctx.throw(Status.Unauthorized);
   } else {
+    console.log("Got auth header");
     const requestToken = authHeader.split(" ")[1];
+    console.log(requestToken);
     try {
       const jwt: any = await validateJwt(requestToken, env["TOKEN_SECRET"]);
-      ctx.request.user = jwt.payload;
+      console.log(jwt);
       await next();
     } catch (err) {
-      ctx.throw(Status.Unauthorized);
+      console.log(err);
+      ctx.throw(err);
     }
   }
 };
