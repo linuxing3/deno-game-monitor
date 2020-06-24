@@ -1,12 +1,12 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { DataTypes, Database, Model } from "https://deno.land/x/denodb/mod.ts";
 
-const db = new Database("postgres", {
-  host: "dongxishijie.xyz",
-  username: "postgres",
+const db = new Database("mysql", {
+  host: "xunqinji.top",
+  username: "monitor",
   password: "20090909",
   database: "monitor",
-  port: 9006,
+  port: 9005,
 });
 
 const flights = [
