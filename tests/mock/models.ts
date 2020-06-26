@@ -1,4 +1,8 @@
-import { DataTypes, Database, Model } from "https://deno.land/x/denodb/mod.ts";
+import {
+  DataTypes,
+  Model,
+  Relationships
+} from "https://deno.land/x/denodb/mod.ts";
 
 export class User extends Model {
   static table = "users";
@@ -8,10 +12,9 @@ export class User extends Model {
     id: { primaryKey: true, autoIncrement: true },
     name: DataTypes.STRING,
     password: DataTypes.STRING,
-    email: DataTypes.FLOAT,
+    email: DataTypes.FLOAT
   };
 }
-
 
 export class Militant extends Model {
   static table = "militants";
@@ -22,7 +25,7 @@ export class Militant extends Model {
     admitted_at: DataTypes.STRING,
     formalized_at: DataTypes.STRING,
     registered_at: DataTypes.STRING,
-    transfered_at: DataTypes.STRING
+    transfered_at: DataTypes.DATE
   };
 }
 
@@ -33,9 +36,9 @@ export class Member extends Model {
   static fields = {
     id: { primaryKey: true, autoIncrement: true },
     department: DataTypes.STRING,
-    name: DataTypes.string,
+    name: DataTypes.STRING,
     gender: DataTypes.STRING,
-    birthday: DataTypes.STRING,
+    birthday: DataTypes.DATE,
     etnia: DataTypes.STRING,
     academicBackground: DataTypes.STRING,
     foreignLanguage: DataTypes.STRING,
@@ -44,20 +47,20 @@ export class Member extends Model {
     militantRole: DataTypes.STRING,
     duty: DataTypes.STRING,
     fromEntity: DataTypes.STRING,
-    arrivingDate: DataTypes.STRING,
-    rotatingDate: DataTypes.STRING,
+    arrivingDate: DataTypes.DATE,
+    rotatingDate: DataTypes.DATE,
     sendingEntity: DataTypes.STRING,
     conyugeName: DataTypes.STRING,
     conyugeEntity: DataTypes.STRING,
     conyugeBonus: DataTypes.STRING,
     memo: DataTypes.STRING,
     protocolId: DataTypes.STRING,
-    isActive: DataTypes.STRING
+    isActive: DataTypes.STRING,
     militant: DataTypes.STRING,
     appraisals: DataTypes.STRING,
-    designations: DataTypes.STRIN,
+    designations: DataTypes.STRING,
     projects: DataTypes.STRING
-  },
+  };
 }
 
 export class Project extends Model {
@@ -70,22 +73,22 @@ export class Project extends Model {
     status: DataTypes.STRING,
     isActive: DataTypes.STRING,
     percentComplete: DataTypes.STRING,
-    expectedStartDate: DataTypes.STRING,
-    expectedEndDate: DataTypes.STRING,
+    expectedStartDate: DataTypes.DATE,
+    expectedEndDate: DataTypes.DATE,
     priority: DataTypes.STRING,
     department: DataTypes.STRING,
     tasks: DataTypes.STRING,
     notes: DataTypes.STRING,
-    actualStartDate: DataTypes.STRING,
-    actualEndDate: DataTypes.STRING,
+    actualStartDate: DataTypes.DATE,
+    actualEndDate: DataTypes.DATE,
     estimatedCost: DataTypes.STRING,
     totalCost: DataTypes.STRING,
     ExpenseClaim: DataTypes.STRING,
     collectProgress: DataTypes.STRING,
     frequency: DataTypes.STRING,
-    fromTime: DataTypes.STRING,
-    toTime: DataTypes.STRING
-  }
+    fromTime: DataTypes.DATETIME,
+    toTime: DataTypes.DATETIME
+  };
 }
 
 export class Flight extends Model {
@@ -94,13 +97,13 @@ export class Flight extends Model {
 
   static fields = {
     id: { primaryKey: true, autoIncrement: true },
-    departure: DataTypes.DataTypes.STRING,
-    destination: DataTypes.DataTypes.STRING,
-    flightDuration: DataTypes.FLOAT,
+    departure: DataTypes.STRING,
+    destination: DataTypes.STRING,
+    flightDuration: DataTypes.FLOAT
   };
 
   static defaults = {
-    flightDuration: 2.5,
+    flightDuration: 2.5
   };
 }
 
@@ -110,9 +113,9 @@ export class Vehicle extends Model {
 
   static fields = {
     id: { primaryKey: true, autoIncrement: true },
-    departure: DataTypes.DataTypes.STRING,
+    departure: DataTypes.STRING,
     licensePlate: DataTypes.STRING,
-    mark: string;
+    mark: DataTypes.STRING,
     model: DataTypes.STRING,
     details: DataTypes.STRING,
     lastOdometerValue: DataTypes.STRING,
@@ -122,8 +125,8 @@ export class Vehicle extends Model {
     insuranceDetails: DataTypes.STRING,
     insuranceCompany: DataTypes.STRING,
     policyNo: DataTypes.STRING,
-    startDate: DataTypes.STRING,
-    endDate: DataTypes.STRING,
+    startDate: DataTypes.DATE,
+    endDate: DataTypes.DATE,
     additionalDetails: DataTypes.STRING,
     fueltype: DataTypes.STRING,
     fuelUom: DataTypes.STRING,
@@ -133,10 +136,9 @@ export class Vehicle extends Model {
   };
 
   static defaults = {
-    flightDuration: 2.5,
+    flightDuration: 2.5
   };
 }
-
 
 export class Document extends Model {
   static table = "users";
@@ -145,8 +147,8 @@ export class Document extends Model {
   static fields = {
     id: { primaryKey: true, autoIncrement: true },
     year: DataTypes.STRING,
-    date: DataTypes.STRING,
-    export classiLevel: DataTypes.STRING,
+    date: DataTypes.DATE,
+    classiLevel: DataTypes.STRING,
     category: DataTypes.STRING,
     inOrOut: DataTypes.STRING,
     sendingCode: DataTypes.STRING,
@@ -158,7 +160,7 @@ export class Document extends Model {
     attachment: DataTypes.STRING,
     keyword: DataTypes.STRING,
     workEntity: DataTypes.STRING,
-    author: DataTypes.STRING,
+    author: DataTypes.STRING
   };
 }
 
@@ -177,11 +179,11 @@ export class Employee extends Model {
     employeeNo: DataTypes.STRING,
     gender: DataTypes.STRING,
     birthday: DataTypes.STRING,
-    joiningDate: DataTypes.STRING,
+    joiningDate: DataTypes.DATE,
     emergencyContact: DataTypes.STRING,
     emergencyPhoneNo: DataTypes.STRING,
-    contractStartDate: DataTypes.STRING,
-    contractEndDate: DataTypes.STRING,
+    contractStartDate: DataTypes.DATE,
+    contractEndDate: DataTypes.DATE,
     department: DataTypes.STRING,
     designation: DataTypes.STRING,
     reportsTo: DataTypes.STRING,
@@ -206,7 +208,7 @@ export class Employee extends Model {
     currentAddress: DataTypes.STRING,
     bio: DataTypes.STRING,
     passportNumber: DataTypes.STRING,
-    dateOfIssue: DataTypes.STRING,
+    dateOfIssue: DataTypes.DATE,
     placeOfIssue: DataTypes.STRING,
     maritalStatus: DataTypes.STRING,
     bloodGroup: DataTypes.STRING,
@@ -216,12 +218,12 @@ export class Employee extends Model {
     previousWorkExperience: DataTypes.STRING,
     externalWorkHistory: DataTypes.STRING,
     historyInCompany: DataTypes.STRING,
-    relievingDate: DataTypes.STRING,
+    relievingDate: DataTypes.DATE,
     reasonForLeaving: DataTypes.STRING,
     leaveEncashed: DataTypes.STRING,
-    encashDate: DataTypes.STRING,
+    encashDate: DataTypes.DATE,
     resiged: DataTypes.STRING,
     reasonForResignation: DataTypes.STRING,
-    feedback: DataTypes.STRING,
+    feedback: DataTypes.STRING
   };
 }
