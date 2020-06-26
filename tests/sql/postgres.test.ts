@@ -1,7 +1,9 @@
 import { assertEquals } from "https://deno.land/std/testing/asserts.ts";
 import { DataTypes, Database, Model } from "https://deno.land/x/denodb/mod.ts";
+import { User, Member, Document, Vehicle, Militant, Project, Flight } from "../mock/models.ts";
+import { flights } from "../mock/data.ts";
 
-const db = new Database("postgres", {
+const postdb = new Database("postgres", {
   host: "dongxishijie.xyz",
   username: "postgres",
   password: "20090909",
@@ -9,40 +11,9 @@ const db = new Database("postgres", {
   port: 9006,
 });
 
-const flights = [
-  {
-    departure: "Paris",
-    destination: "Tokyo",
-  },
-  {
-    departure: "Caracas",
-    destination: "Beijing",
-  },
-  {
-    departure: "Shanghai",
-    destination: "New York",
-  },
-];
+postdb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);
 
-class Flight extends Model {
-  static table = "flights";
-  static timestamps = true;
-
-  static fields = {
-    id: { primaryKey: true, autoIncrement: true },
-    departure: DataTypes.STRING,
-    destination: DataTypes.STRING,
-    flightDuration: DataTypes.FLOAT,
-  };
-
-  static defaults = {
-    flightDuration: 2.5,
-  };
-}
-
-db.link([Flight]);
-
-await db.sync({ drop: true });
+await postdb.sync({ drop: true });
 
 flights.forEach(async (flight) => {
   await Flight.create(flight);
@@ -98,4 +69,4 @@ Deno.test("[ Denodb ]: update one flight by id", async () => {
   assertEquals(parseInt(total), 3);
 });
 
-await db.close();
+await postdb.close();
