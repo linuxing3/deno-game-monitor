@@ -1,0 +1,11 @@
+{
+	"version": "0",
+	"stores": {
+		"books": [
+			{
+				"id": 1,
+				"author": "author"
+			}
+		]
+	}
+}
