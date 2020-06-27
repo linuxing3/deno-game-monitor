@@ -7,30 +7,16 @@ import {
 } from "https://deno.land/x/csv/mod.ts";
 import Ask from 'https://deno.land/x/ask/mod.ts';
 
-interface ILog {
-  name: string;
-  description?: string;
-  pid: string;
-  timestramp?: string;
-}
-
-interface ICommandParams {
-  file: string;
-  format?: string;
-  process: string;
-  [key: string]: any;
-}
-
 const token = Deno.env.toObject()["LOGGER_REST_TOKEN"] ||
   "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI";
 const baseURL = `http://xunqinji.top:9007/api/v1/games`;
 
 const LIST_BIN = "/mnt/c/Windows/system32/tasklist.exe";
 const KILL_BIN = "/mnt/c/Windows/system32/taskkill.exe";
-const LIST_LINK = "/usr/local/bin/tasklist.exe";
-const KILL_LINK = "/usr/local/bin/taskkill.exe";
+// const LIST_LINK = "/usr/local/bin/tasklist.exe";
+// const KILL_LINK = "/usr/local/bin/taskkill.exe";
 
-const INSTALL_PATH = "smart-logger";
+// const INSTALL_PATH = "smart-logger";
 
 
 async function askParams() {
@@ -87,9 +73,9 @@ async function ensureExePath(command: string = "deno") {
     // await exec(`sudo ls -l ${link}`);
   }
   // link taskkill.exe and tasklist.exe
-  await exec(`sudo ln -s ${LIST_BIN} ${LIST_LINK}`);
+  // await exec(`sudo ln -s ${LIST_BIN} ${LIST_LINK}`);
   // await exec(`sudo ls -l ${LIST_LINK}`);
-  await exec(`sudo ln -s ${KILL_BIN} ${KILL_LINK}`);
+  // await exec(`sudo ln -s ${KILL_BIN} ${KILL_LINK}`);
   // await exec(`sudo ls -l ${KILL_LINK}`);
 }
 
@@ -146,7 +132,7 @@ async function taskKillAll(process: any[]) {
  * @param {string} pid 进程id
  */
 async function taskKill(pid: string) {
-  await exec(`sudo ${KILL_BIN} /PID ${pid}`);
+  await exec(`${KILL_BIN} /PID ${pid} /T`);
 }
 
 /**
@@ -164,10 +150,12 @@ async function logAll(process: string, kill: boolean) {
   );
   await createJsonLog('/tmp/games', data);
   await createPidOnlyLog('/tmp/games', data);
-  await sendTextLog(baseURL, data);
+  // FIXME: network error will hang process
+  // await sendTextLog(baseURL, data);
   if (kill) {
     await taskKillAll(data);
   }
+  console.log('Done!')
 }
 
 /**
@@ -186,10 +174,12 @@ async function logAllWithAsk() {
   );
   await createJsonLog(file, data);
   await createPidOnlyLog(file, data);
-  await sendTextLog(baseURL, data);
+  // FIXME: network error will hang process
+  // await sendTextLog(baseURL, data);
   if (kill) {
     await taskKillAll(data);
   }
+  console.log('Done!')
 }
 
 /**
@@ -420,7 +410,6 @@ program
   .description("link deno")
   .action(async ({ command }: { command: string }) => {
     await ensureExePath(command);
-    console.log(`Done!`);
   });
   
   program
@@ -429,7 +418,6 @@ program
   .description("log-all Code --kill true")
   .action(async ({ process }: { process: string }) => {
     await logAll(process, program.kill);
-    console.log(`Done!`);
   });
 
 program
