@@ -12,6 +12,8 @@
     "faker": "deno run -A --importmap=import_map.json --unstable ./faker/faker.ts",
     "dex:create": "deno run -A --importmap=import_map.json --unstable ./dex/create.ts",
     "dex:drop": "deno run -A --importmap=import_map.json --unstable ./dex/drop.ts",
-    "dex:query": "deno run -A --allow-env --importmap=import_map.json --unstable ./dex/query.ts"
+    "dex:query": "deno run -A  --importmap=import_map.json --unstable ./dex/query.ts",
+    "exec:hello": "deno run -A  --importmap=import_map.json --unstable ./exec/hello.ts",
+    "exec:seq": "deno run -A --importmap=import_map.json --unstable ./exec/sequence.ts"
   }
 }
