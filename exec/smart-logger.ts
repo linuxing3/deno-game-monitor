@@ -17,6 +17,22 @@ const token = Deno.env.toObject()["LOGGER_REST_TOKEN"] ||
   "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI";
 const baseURL = `http://xunqinji.top:9007/api/v1/games`;
 
+const LIST_BIN = '/mnt/c/Windows/system32/tasklist.exe'
+const KILL_BIN = '/mnt/c/Windows/system32/taskkill.exe'
+const LIST_LINK = '/usr/local/bin/tasklist.exe'
+const KILL_LINK = '/usr/local/bin/taskkill.exe'
+const DENO_BIN = '/root/.deno/bin/deno'
+const DENO_LINK = '/usr/local/bin/deno'
+const SELF_BIN = '/root/.deno/bin/smart-logger'
+const SELF_LINK = '/usr/local/bin/smart-logger'
+
+async function ensureExePath() {
+  await exec(`ln -s ${LIST_BIN} ${LIST_LINK}`); 
+  await exec(`ln -s ${KILL_BIN} ${KILL_LINK}`); 
+  await exec(`ln -s ${DENO_BIN} ${DENO_LINK}`); 
+  await exec(`ln -s ${SELF_BIN} ${SELF_LINK}`); 
+}
+
 /**
  * post数据
  *
@@ -51,9 +67,7 @@ async function postData(url = "", data = {}): Promise<any> {
  * @param {string} format 格式csv或txt
  */
 async function taskListAll(filePath: string, format: string) {
-  // How to fix locale issue
-  const BIN = '/mnt/c/Windows/system32/tasklist.exe'
-  await exec(`bash -c "${BIN} /FO ${format} > ${filePath}"`);
+  await exec(`bash -c "${LIST_BIN} /FO ${format} > ${filePath}"`);
 }
 
 /**
@@ -73,8 +87,7 @@ async function taskKillAll(process: any[]) {
  * @param {string} pid 进程id
  */
 async function taskKill(pid: string) {
-  const BIN = '/mnt/c/Windows/system32/tasklist.exe'
-  await exec(`${BIN} /PID ${pid}`);
+  await exec(`${KILL_BIN} /PID ${pid}`);
 }
 
 /**
@@ -160,8 +173,10 @@ async function sendTextLog(url: string, data: any[]) {
       description: d["Session Name"],
       pid: d["PID"],
     };
+    console.log('[data]: start sending ...');
     console.log(game);
     const response = await postData(url, game);
+    console.log('[data]: response ending ...');
     console.table(response);
   });
 }
@@ -202,8 +217,10 @@ program
   .option("-f --format", "File format")
   .description("log -f csv /tmp/games | log -f table /tmp/games")
   .action(async ({ file }: { file: string }) => {
-    console.log(`Save all process  to ${file} as ${program.format}`);
+    console.log('Create link of deno, smart-logger, tasklist.exe and taskkill.exe');
+    await ensureExePath();
     await taskListAll(file, program.format);
+    console.log(`Saved all process  to ${file} as ${program.format}`);
   });
 
 program
@@ -232,10 +249,11 @@ program
       file,
       program.format,
     );
-    console.log(`Write JSON of all process of ${program.keyword}`);
     console.log(data);
     // write to json
+    console.log(`Write JSON of all process of ${program.keyword}`);
     await createJsonLog(file, data);
+    console.log(`Wrote JSON of all process of ${program.keyword}`);
   });
 
 program
@@ -249,10 +267,11 @@ program
       file,
       program.format,
     );
-    console.log(`Savel all pid of process of ${program.keyword}`);
     console.log(data);
+    console.log(`Save all pid of process of ${program.keyword}`);
     // write to pid file
     await createPidOnlyLog(file, data);
+    console.log(`Saved all pid of process of ${program.keyword}`);
   });
 
 program
@@ -266,27 +285,30 @@ program
       file,
       program.format,
     );
-    console.log(`Send all process of ${program.keyword}  to api server`);
     console.log(data);
+    console.log(`Send all process of ${program.keyword}  to api server`);
     // send to api server
     await sendTextLog(baseURL, data);
+    console.log(`Sent all process of ${program.keyword}  to api server`);
   });
 
 program
   .command("kill [file]")
   .option("-f --format", "File format")
   .option("-k --keyword", "Query keyword")
-  .description("kill -k Code.exe -f csv /tmp/games")
+  .description("kill -k Youku -f csv /tmp/games")
   .action(async ({ file }: { file: string }) => {
     const data = await filterLogWithKeyword(
       program.keyword,
       file,
       program.format,
     );
-    console.log(`Danger! Kill all process of ${program.keyword}`);
     console.log(data);
+    console.log(`Danger! Kill all process of ${program.keyword}`);
     // kill process
+    await ensureExePath();
     await taskKillAll(data);
+    console.log(`Killed all process of ${program.keyword}`);
   });
 
 program.parse(Deno.args);
