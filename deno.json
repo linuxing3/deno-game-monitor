@@ -9,6 +9,9 @@
     "attain": "deno run -A --importmap=import_map.json --unstable ./attain/attain.ts",
     "attain:graphql": "deno run -A --importmap=import_map.json --unstable ./attain/attain_graphql.ts",
     "casualdb": "deno run -A --importmap=import_map.json --unstable ./casualdb/casualdb.ts",
-    "faker": "deno run -A --importmap=import_map.json --unstable ./faker/faker.ts"
+    "faker": "deno run -A --importmap=import_map.json --unstable ./faker/faker.ts",
+    "dex:create": "deno run -A --importmap=import_map.json --unstable ./dex/create.ts",
+    "dex:drop": "deno run -A --importmap=import_map.json --unstable ./dex/drop.ts",
+    "dex:query": "deno run -A --importmap=import_map.json --unstable ./dex/query.ts"
   }
 }
