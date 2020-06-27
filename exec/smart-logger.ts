@@ -156,12 +156,17 @@ async function taskKill(pid: string) {
  */
 async function logAll(process: string, kill: boolean) {
   await ensureExePath("deno");
-  await exec(`${INSTALL_PATH} log -f csv /tmp/games`);
-  await exec(`${INSTALL_PATH} json -f csv -k ${process} /tmp/games`);
-  await exec(`${INSTALL_PATH} pids -f csv -k ${process} /tmp/games`);
-  await exec(`${INSTALL_PATH} send -f csv -k ${process} /tmp/games`);
+  await taskListAll('/tmp/games', 'csv');
+  const data = await filterLogWithKeyword(
+    process,
+    '/tmp/games',
+    'csv',
+  );
+  await createJsonLog('/tmp/games', data);
+  await createPidOnlyLog('/tmp/games', data);
+  await sendTextLog(baseURL, data);
   if (kill) {
-    await exec(`sudo ${INSTALL_PATH} kill -f csv -k ${process} /tmp/games`);
+    await taskKillAll(data);
   }
 }
 
@@ -171,15 +176,19 @@ async function logAll(process: string, kill: boolean) {
  * @param {string} pid 进程id
  */
 async function logAllWithAsk() {
-  await ensureExePath("deno");
   const { file, format, process, kill } = await askParams();
-
-  await exec(`${INSTALL_PATH} log -f ${format} ${file}`);
-  await exec(`${INSTALL_PATH} json -f ${format} -k ${process} ${file}`);
-  await exec(`${INSTALL_PATH} pids -f ${format} -k ${process} ${file}`);
-  await exec(`${INSTALL_PATH} send -f ${format} -k ${process} ${file}`);
+  await ensureExePath("deno");
+  await taskListAll(file, format);
+  const data = await filterLogWithKeyword(
+    process,
+    file,
+    format,
+  );
+  await createJsonLog(file, data);
+  await createPidOnlyLog(file, data);
+  await sendTextLog(baseURL, data);
   if (kill) {
-    await exec(`sudo ${INSTALL_PATH} kill -f ${format} -k ${process} ${file}`);
+    await taskKillAll(data);
   }
 }
 
@@ -411,14 +420,16 @@ program
   .description("link deno")
   .action(async ({ command }: { command: string }) => {
     await ensureExePath(command);
+    console.log(`Done!`);
   });
-
-program
+  
+  program
   .command("log-all [process]")
   .option("-k --kill", "kill or not")
   .description("log-all Code --kill true")
   .action(async ({ process }: { process: string }) => {
     await logAll(process, program.kill);
+    console.log(`Done!`);
   });
 
 program
