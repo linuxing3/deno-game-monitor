@@ -12,7 +12,7 @@ export class User extends Model {
     id: { primaryKey: true, autoIncrement: true },
     name: DataTypes.STRING,
     password: DataTypes.STRING,
-    email: DataTypes.FLOAT
+    email: DataTypes.STRING
   };
 }
 
@@ -141,7 +141,7 @@ export class Vehicle extends Model {
 }
 
 export class Document extends Model {
-  static table = "users";
+  static table = "documents";
   static timestamps = true;
 
   static fields = {

@@ -10,11 +10,11 @@ import {
 } from "../mock/models.ts";
 
 const postdb = new Database("postgres", {
-  host: "dongxishijie.xyz",
-  username: "postgres",
+  host: "xunqinji.top",
+  username: "pi",
   password: "20090909",
   database: "monitor",
-  port: 9006
+  port: 9003
 });
 
 postdb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);
