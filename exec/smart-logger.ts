@@ -1,5 +1,5 @@
 // deno-lint-ignore-file
-import { exec } from "https://deno.land/x/exec/mod.ts";
+import { exec, OutputMode } from "https://deno.land/x/exec/mod.ts";
 import Denomander from "https://deno.land/x/denomander/mod.ts";
 import { writeJsonSync } from "https://deno.land/std/fs/mod.ts";
 import {
@@ -17,20 +17,31 @@ const token = Deno.env.toObject()["LOGGER_REST_TOKEN"] ||
   "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI";
 const baseURL = `http://xunqinji.top:9007/api/v1/games`;
 
-const LIST_BIN = '/mnt/c/Windows/system32/tasklist.exe'
-const KILL_BIN = '/mnt/c/Windows/system32/taskkill.exe'
-const LIST_LINK = '/usr/local/bin/tasklist.exe'
-const KILL_LINK = '/usr/local/bin/taskkill.exe'
-const DENO_BIN = '/root/.deno/bin/deno'
-const DENO_LINK = '/usr/local/bin/deno'
-const SELF_BIN = '/root/.deno/bin/smart-logger'
-const SELF_LINK = '/usr/local/bin/smart-logger'
+const LIST_BIN = "/mnt/c/Windows/system32/tasklist.exe";
+const KILL_BIN = "/mnt/c/Windows/system32/taskkill.exe";
+const LIST_LINK = "/usr/local/bin/tasklist.exe";
+const KILL_LINK = "/usr/local/bin/taskkill.exe";
 
-async function ensureExePath() {
-  await exec(`ln -s ${LIST_BIN} ${LIST_LINK}`); 
-  await exec(`ln -s ${KILL_BIN} ${KILL_LINK}`); 
-  await exec(`ln -s ${DENO_BIN} ${DENO_LINK}`); 
-  await exec(`ln -s ${SELF_BIN} ${SELF_LINK}`); 
+async function ensureExePath(command: string = 'deno') {
+  // link any command you want to link, if available
+  const { status: { success }, output } = await exec(`which ${command}`, {
+    output: OutputMode.Capture,
+  });
+  if (success) {
+    const link = `/usr/local/bin/${command}`;
+    await exec(`sudo ln -s -f ${output} ${link}`);
+    await exec(`sudo ls -l ${link}`);
+  } else {
+    const source = `/root/.deno/bin/${command}`;
+    const link = `/usr/local/bin/${command}`;
+    await exec(`sudo ln -s -f ${source} ${link}`);
+    await exec(`sudo ls -l ${link}`);
+  }
+  // link taskkill.exe and tasklist.exe
+  await exec(`sudo ln -s -f ${LIST_BIN} ${LIST_LINK}`);
+  await exec(`sudo ls -l ${LIST_LINK}`);
+  await exec(`sudo ln -s -f ${KILL_BIN} ${KILL_LINK}`);
+  await exec(`sudo ls -l ${KILL_LINK}`);
 }
 
 /**
@@ -59,7 +70,6 @@ async function postData(url = "", data = {}): Promise<any> {
   return response.json(); // parses JSON response into native JavaScript objects
 }
 
-
 /**
  * 列出所有的任务
  *
@@ -67,7 +77,7 @@ async function postData(url = "", data = {}): Promise<any> {
  * @param {string} format 格式csv或txt
  */
 async function taskListAll(filePath: string, format: string) {
-  await exec(`bash -c "${LIST_BIN} /FO ${format} > ${filePath}"`);
+  await exec(`bash -c "sudo ${LIST_BIN} /FO ${format} > ${filePath}"`);
 }
 
 /**
@@ -87,7 +97,7 @@ async function taskKillAll(process: any[]) {
  * @param {string} pid 进程id
  */
 async function taskKill(pid: string) {
-  await exec(`${KILL_BIN} /PID ${pid}`);
+  await exec(`sudo ${KILL_BIN} /PID ${pid}`);
 }
 
 /**
@@ -158,7 +168,6 @@ async function changeCSVHeaer(filePath: string, format: string = "csv") {
   console.log("Changed Headers with English!");
 }
 
-
 /**
  * 将记录发送到网络Api
  *
@@ -173,10 +182,10 @@ async function sendTextLog(url: string, data: any[]) {
       description: d["Session Name"],
       pid: d["PID"],
     };
-    console.log('[data]: start sending ...');
+    console.log("[data]: start sending ...");
     console.log(game);
     const response = await postData(url, game);
-    console.log('[data]: response ending ...');
+    console.log("[data]: response ending ...");
     console.table(response);
   });
 }
@@ -208,7 +217,8 @@ async function createPidOnlyLog(filePath: string, data: any[]) {
  */
 const program = new Denomander({
   app_name: "Smart Logger",
-  app_description: "Create Log in csv, json format from the command-line of wsl",
+  app_description:
+    "Create Log in csv, json format from the command-line of wsl",
   app_version: "1.5.0",
 });
 
@@ -217,8 +227,10 @@ program
   .option("-f --format", "File format")
   .description("log -f csv /tmp/games | log -f table /tmp/games")
   .action(async ({ file }: { file: string }) => {
-    console.log('Create link of deno, smart-logger, tasklist.exe and taskkill.exe');
-    await ensureExePath();
+    console.log(
+      "Create link of deno, smart-logger, tasklist.exe and taskkill.exe",
+    );
+    await ensureExePath("deno");
     await taskListAll(file, program.format);
     console.log(`Saved all process  to ${file} as ${program.format}`);
   });
@@ -306,9 +318,16 @@ program
     console.log(data);
     console.log(`Danger! Kill all process of ${program.keyword}`);
     // kill process
-    await ensureExePath();
+    await ensureExePath("deno");
     await taskKillAll(data);
     console.log(`Killed all process of ${program.keyword}`);
+  });
+
+program
+  .command("link [command]")
+  .description("link deno")
+  .action(async ({ command }: { command: string }) => {
+    await ensureExePath(command);
   });
 
 program.parse(Deno.args);
