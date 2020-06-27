@@ -15,6 +15,7 @@
     "dex:query": "deno run -A  --importmap=import_map.json --unstable ./dex/query.ts",
     "exec:hello": "deno run -A  --importmap=import_map.json --unstable ./exec/hello.ts",
     "exec:seq": "deno run -A --importmap=import_map.json --unstable ./exec/sequence.ts",
+    "exec:logger": "deno run -A --importmap=import_map.json --unstable ./exec/smart-logger.ts",
     "rxjs:observable": "deno run -A --importmap=import_map.json --unstable ./rxjs/observable.ts"
   }
 }

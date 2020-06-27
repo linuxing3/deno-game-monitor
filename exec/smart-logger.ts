@@ -4,8 +4,6 @@ import Denomander from "https://deno.land/x/denomander/mod.ts";
 import { writeJsonSync } from "https://deno.land/std/fs/mod.ts";
 import {
   readCSVObjects,
-  readCSV,
-  writeCSV,
 } from "https://deno.land/x/csv/mod.ts";
 
 interface ILog {
@@ -17,7 +15,7 @@ interface ILog {
 
 const token = Deno.env.toObject()["LOGGER_REST_TOKEN"] ||
   "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI";
-const baseURL = `http://xunqinji.top:9007/api/v1/games?table=games`;
+const baseURL = `http://xunqinji.top:9007/api/v1/games`;
 
 /**
  * post数据
@@ -54,7 +52,8 @@ async function postData(url = "", data = {}): Promise<any> {
  */
 async function taskListAll(filePath: string, format: string) {
   // How to fix locale issue
-  await exec(`tasklist.exe /FO ${format} > ${filePath}`);
+  const BIN = '/mnt/c/Windows/system32/tasklist.exe'
+  await exec(`bash -c "${BIN} /FO ${format} > ${filePath}"`);
 }
 
 /**
@@ -74,7 +73,8 @@ async function taskKillAll(process: any[]) {
  * @param {string} pid 进程id
  */
 async function taskKill(pid: string) {
-  await exec(`taskkill.exe /PID ${pid}`);
+  const BIN = '/mnt/c/Windows/system32/tasklist.exe'
+  await exec(`${BIN} /PID ${pid}`);
 }
 
 /**
@@ -188,11 +188,13 @@ async function createPidOnlyLog(filePath: string, data: any[]) {
   await Deno.writeTextFile(filePath + ".pids", content.join("\n"));
 }
 
-// Start the command line program
+/**
+ * 程序选项
+ */
 const program = new Denomander({
-  app_name: "Log App",
-  app_description: "Create Log in csv, json format from the command-line",
-  app_version: "1.0.0",
+  app_name: "Smart Logger",
+  app_description: "Create Log in csv, json format from the command-line of wsl",
+  app_version: "1.5.0",
 });
 
 program
@@ -232,6 +234,7 @@ program
     );
     console.log(`Write JSON of all process of ${program.keyword}`);
     console.log(data);
+    // write to json
     await createJsonLog(file, data);
   });
 
@@ -248,6 +251,7 @@ program
     );
     console.log(`Savel all pid of process of ${program.keyword}`);
     console.log(data);
+    // write to pid file
     await createPidOnlyLog(file, data);
   });
 
@@ -264,6 +268,7 @@ program
     );
     console.log(`Send all process of ${program.keyword}  to api server`);
     console.log(data);
+    // send to api server
     await sendTextLog(baseURL, data);
   });
 
@@ -280,6 +285,7 @@ program
     );
     console.log(`Danger! Kill all process of ${program.keyword}`);
     console.log(data);
+    // kill process
     await taskKillAll(data);
   });
 
