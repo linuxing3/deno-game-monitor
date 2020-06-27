@@ -5,12 +5,20 @@ import { writeJsonSync } from "https://deno.land/std/fs/mod.ts";
 import {
   readCSVObjects,
 } from "https://deno.land/x/csv/mod.ts";
+import Ask from 'https://deno.land/x/ask/mod.ts';
 
 interface ILog {
   name: string;
   description?: string;
   pid: string;
   timestramp?: string;
+}
+
+interface ICommandParams {
+  file: string;
+  format?: string;
+  process: string;
+  [key: string]: any;
 }
 
 const token = Deno.env.toObject()["LOGGER_REST_TOKEN"] ||
@@ -24,26 +32,65 @@ const KILL_LINK = "/usr/local/bin/taskkill.exe";
 
 const INSTALL_PATH = "smart-logger";
 
-async function ensureExePath(command: string = 'deno') {
+
+async function askParams() {
+  const ask = new Ask();
+  const answers = await ask.prompt([
+    {
+      name: 'file',
+      type: 'input',
+      message: 'File Name (default /tmp/games): '
+    },
+    {
+      name: 'format',
+      type: 'input',
+      message: 'File Format (default csv): '
+    },
+    {
+      name: 'process',
+      type: 'input',
+      message: 'Process Name (default Minecraft): '
+    },
+    {
+      name: 'kill',
+      type: 'confirm',
+      message: 'Kill process (default false): '
+    },
+  ]);
+  if (!answers.file) {
+    answers.file = '/tmp/games'
+  }
+  if (!answers.format) {
+    answers.format = 'csv'
+  }
+  if (!answers.process) {
+    answers.process = 'Minecraft'
+  }
+  console.log(answers);
+  return answers;
+}
+
+
+async function ensureExePath(command: string = "deno") {
   // link any command you want to link, if available
   const { status: { success }, output } = await exec(`which ${command}`, {
     output: OutputMode.Capture,
   });
   if (success) {
     const link = `/usr/local/bin/${command}`;
-    await exec(`sudo ln -s -f ${output} ${link}`);
-    await exec(`sudo ls -l ${link}`);
+    await exec(`sudo ln -s ${output} ${link}`);
+    // await exec(`sudo ls -l ${link}`);
   } else {
     const source = `/root/.deno/bin/${command}`;
     const link = `/usr/local/bin/${command}`;
-    await exec(`sudo ln -s -f ${source} ${link}`);
-    await exec(`sudo ls -l ${link}`);
+    await exec(`sudo ln -s ${source} ${link}`);
+    // await exec(`sudo ls -l ${link}`);
   }
   // link taskkill.exe and tasklist.exe
-  await exec(`sudo ln -s -f ${LIST_BIN} ${LIST_LINK}`);
-  await exec(`sudo ls -l ${LIST_LINK}`);
-  await exec(`sudo ln -s -f ${KILL_BIN} ${KILL_LINK}`);
-  await exec(`sudo ls -l ${KILL_LINK}`);
+  await exec(`sudo ln -s ${LIST_BIN} ${LIST_LINK}`);
+  // await exec(`sudo ls -l ${LIST_LINK}`);
+  await exec(`sudo ln -s ${KILL_BIN} ${KILL_LINK}`);
+  // await exec(`sudo ls -l ${KILL_LINK}`);
 }
 
 /**
@@ -115,6 +162,24 @@ async function logAll(process: string, kill: boolean) {
   await exec(`${INSTALL_PATH} send -f csv -k ${process} /tmp/games`);
   if (kill) {
     await exec(`sudo ${INSTALL_PATH} kill -f csv -k ${process} /tmp/games`);
+  }
+}
+
+/**
+ * 运行自身
+ *
+ * @param {string} pid 进程id
+ */
+async function logAllWithAsk() {
+  await ensureExePath("deno");
+  const { file, format, process, kill } = await askParams();
+
+  await exec(`${INSTALL_PATH} log -f ${format} ${file}`);
+  await exec(`${INSTALL_PATH} json -f ${format} -k ${process} ${file}`);
+  await exec(`${INSTALL_PATH} pids -f ${format} -k ${process} ${file}`);
+  await exec(`${INSTALL_PATH} send -f ${format} -k ${process} ${file}`);
+  if (kill) {
+    await exec(`sudo ${INSTALL_PATH} kill -f ${format} -k ${process} ${file}`);
   }
 }
 
@@ -354,6 +419,31 @@ program
   .description("log-all Code --kill true")
   .action(async ({ process }: { process: string }) => {
     await logAll(process, program.kill);
+  });
+
+program
+  .command("log-ask")
+  .description("log-ask")
+  .action(async () => {
+    await logAllWithAsk()
+  });
+
+program
+  .command("helper")
+  .description("helper")
+  .action(async () => {
+    let msg =
+      'deno install --allow-run -f --name taskkill "deno.land/x/win_taskkill/cli.ts';
+    console.log(
+      "Install wrapper for the Windows taskkill command. Ends one or more tasks or processes.",
+    );
+    console.log(msg);
+    msg =
+      'deno install --allow-run -f --name tasklist "deno.land/x/win_tasklist/cli.ts';
+    console.log(
+      "Install wrapper for the Windows tasklist command. Shows one or more tasks or processes.",
+    );
+    console.log(msg);
   });
 
 program.parse(Deno.args);
