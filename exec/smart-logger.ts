@@ -22,6 +22,8 @@ const KILL_BIN = "/mnt/c/Windows/system32/taskkill.exe";
 const LIST_LINK = "/usr/local/bin/tasklist.exe";
 const KILL_LINK = "/usr/local/bin/taskkill.exe";
 
+const INSTALL_PATH = "smart-logger";
+
 async function ensureExePath(command: string = 'deno') {
   // link any command you want to link, if available
   const { status: { success }, output } = await exec(`which ${command}`, {
@@ -98,6 +100,22 @@ async function taskKillAll(process: any[]) {
  */
 async function taskKill(pid: string) {
   await exec(`sudo ${KILL_BIN} /PID ${pid}`);
+}
+
+/**
+ * 运行自身
+ *
+ * @param {string} pid 进程id
+ */
+async function logAll(process: string, kill: boolean) {
+  await ensureExePath("deno");
+  await exec(`${INSTALL_PATH} log -f csv /tmp/games`);
+  await exec(`${INSTALL_PATH} json -f csv -k ${process} /tmp/games`);
+  await exec(`${INSTALL_PATH} pids -f csv -k ${process} /tmp/games`);
+  await exec(`${INSTALL_PATH} send -f csv -k ${process} /tmp/games`);
+  if (kill) {
+    await exec(`sudo ${INSTALL_PATH} kill -f csv -k ${process} /tmp/games`);
+  }
 }
 
 /**
@@ -328,6 +346,14 @@ program
   .description("link deno")
   .action(async ({ command }: { command: string }) => {
     await ensureExePath(command);
+  });
+
+program
+  .command("log-all [process]")
+  .option("-k --kill", "kill or not")
+  .description("log-all Code --kill true")
+  .action(async ({ process }: { process: string }) => {
+    await logAll(process, program.kill);
   });
 
 program.parse(Deno.args);
