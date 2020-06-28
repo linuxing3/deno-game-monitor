@@ -5,7 +5,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Debug Deno Server",
+      "name": "Debug smart logger",
       "type": "node",
       "request": "launch",
       "cwd": "${workspaceFolder}",
@@ -15,52 +15,9 @@
         "--inspect-brk",
         "--unstable",
         "-A",
-        "-c",
-        "tsconfig.json",
-        "server.ts"
+        "exec/smart-logger.ts"
       ],
       "port": 9229
     },
-    {
-      "name": "Debug Game Log csv",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "${HOME}/.deno/bin/deno",
-      "runtimeArgs": [
-        "run",
-        "--inspect-brk",
-        "--unstable",
-        "-A",
-        "-c",
-        "tsconfig.json",
-        "tests/logger/smart-logger.ts",
-        "log",
-        "/tmp/games",
-        "csv"
-      ],
-      "port": 9229
-    },
-    {
-      "name": "Debug Game Show match",
-      "type": "node",
-      "request": "launch",
-      "cwd": "${workspaceFolder}",
-      "runtimeExecutable": "${HOME}/.deno/bin/deno",
-      "runtimeArgs": [
-        "run",
-        "--inspect-brk",
-        "--unstable",
-        "-A",
-        "-c",
-        "tsconfig.json",
-        "tests/logger/smart-logger.ts",
-        "show",
-        "Code.exe",
-        "/tmp/games",
-        "csv"
-      ],
-      "port": 9229
-    }
   ]
 }

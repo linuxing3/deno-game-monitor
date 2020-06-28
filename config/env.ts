@@ -1,7 +1,6 @@
-// Copyright 2018-2020 Xing Wenju. All rights reserved. MIT license.
-/* eslint-disable @typescript-eslint/no-explicit-any */
-import { config, DotenvConfig } from "../deps.ts";
+// app.ts
+import { config } from "https://deno.land/x/dotenv/mod.ts";
 
-const env: DotenvConfig = config();
+const env = config({ safe: true });
 
 export default env;
