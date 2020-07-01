@@ -21,9 +21,7 @@ export class ProjectType extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     projectType: DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class ProjectType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'projectType',
       
         label: 'Project Type',
@@ -41,7 +40,10 @@ export class ProjectType extends Model {
         placeholder: 'Input Project Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -51,7 +53,9 @@ export class ProjectType extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

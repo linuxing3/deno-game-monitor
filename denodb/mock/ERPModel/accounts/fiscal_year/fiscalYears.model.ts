@@ -21,17 +21,11 @@ export class FiscalYear extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     yearName: DataTypes.STRING,
-    
     disabled: DataTypes.STRING,
-    
     yearStartDate: DataTypes.STRING,
-    
     yearEndDate: DataTypes.STRING,
-    
     companies: DataTypes.STRING,
-    
     autoCreated: DataTypes.STRING,
     
   };
@@ -40,6 +34,7 @@ export class FiscalYear extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'yearName',
       
         label: 'Year Name',
@@ -49,7 +44,10 @@ export class FiscalYear extends Model {
         placeholder: 'Input Year Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disabled',
       
         label: 'Disabled',
@@ -59,7 +57,10 @@ export class FiscalYear extends Model {
         placeholder: 'Input Disabled',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'yearStartDate',
       
         label: 'Year Start Date',
@@ -69,7 +70,10 @@ export class FiscalYear extends Model {
         placeholder: 'Input Year Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'yearEndDate',
       
         label: 'Year End Date',
@@ -79,7 +83,10 @@ export class FiscalYear extends Model {
         placeholder: 'Input Year End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'companies',
       
         label: 'Companies',
@@ -89,7 +96,10 @@ export class FiscalYear extends Model {
         placeholder: 'Input Companies',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'autoCreated',
       
         label: 'Auto Created',
@@ -99,7 +109,9 @@ export class FiscalYear extends Model {
         placeholder: 'Input Auto Created',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

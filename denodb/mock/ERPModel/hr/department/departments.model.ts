@@ -21,33 +21,18 @@ export class Department extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     department: DataTypes.STRING,
-    
     parentDepartment: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     isGroup: DataTypes.STRING,
-    
     disabled: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     leaveBlockList: DataTypes.STRING,
-    
     leaveApprovers: DataTypes.STRING,
-    
     leaveApprover: DataTypes.STRING,
-    
     expenseApprovers: DataTypes.STRING,
-    
     expenseApprover: DataTypes.STRING,
-    
     lft: DataTypes.STRING,
-    
     rgt: DataTypes.STRING,
-    
     oldParent: DataTypes.STRING,
     
   };
@@ -56,6 +41,7 @@ export class Department extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'department',
       
         label: 'Department',
@@ -65,7 +51,10 @@ export class Department extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'parentDepartment',
       
         label: 'Parent Department',
@@ -75,7 +64,10 @@ export class Department extends Model {
         placeholder: 'Input Parent Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -85,7 +77,10 @@ export class Department extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isGroup',
       
         label: 'Is Group',
@@ -95,7 +90,10 @@ export class Department extends Model {
         placeholder: 'Input Is Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disabled',
       
         label: 'Disabled',
@@ -105,7 +103,10 @@ export class Department extends Model {
         placeholder: 'Input Disabled',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -115,7 +116,10 @@ export class Department extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveBlockList',
       
         label: 'Leave Block List',
@@ -125,7 +129,10 @@ export class Department extends Model {
         placeholder: 'Input Leave Block List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveApprovers',
       
         label: 'Leave Approvers',
@@ -135,7 +142,10 @@ export class Department extends Model {
         placeholder: 'Input Leave Approvers',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveApprover',
       
         label: 'Leave Approver',
@@ -145,7 +155,10 @@ export class Department extends Model {
         placeholder: 'Input Leave Approver',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseApprovers',
       
         label: 'Expense Approvers',
@@ -155,7 +168,10 @@ export class Department extends Model {
         placeholder: 'Input Expense Approvers',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseApprover',
       
         label: 'Expense Approver',
@@ -165,7 +181,10 @@ export class Department extends Model {
         placeholder: 'Input Expense Approver',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lft',
       
         label: 'Lft',
@@ -175,7 +194,10 @@ export class Department extends Model {
         placeholder: 'Input Lft',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rgt',
       
         label: 'Rgt',
@@ -185,7 +207,10 @@ export class Department extends Model {
         placeholder: 'Input Rgt',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'oldParent',
       
         label: 'Old Parent',
@@ -195,7 +220,9 @@ export class Department extends Model {
         placeholder: 'Input Old Parent',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

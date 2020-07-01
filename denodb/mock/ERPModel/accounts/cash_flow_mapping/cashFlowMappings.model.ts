@@ -21,23 +21,14 @@ export class CashFlowMapping extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     name: DataTypes.STRING,
-    
     label: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
-    
     selectMaximumOf_1: DataTypes.STRING,
-    
     isFinanceCost: DataTypes.STRING,
-    
     isWorkingCapital: DataTypes.STRING,
-    
     isFinanceCostAdjustment: DataTypes.STRING,
-    
     isIncomeTaxLiability: DataTypes.STRING,
-    
     isIncomeTaxExpense: DataTypes.STRING,
     
   };
@@ -46,6 +37,7 @@ export class CashFlowMapping extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'name',
       
         label: 'Name',
@@ -55,7 +47,10 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'label',
       
         label: 'Label',
@@ -65,7 +60,10 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Label',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -75,7 +73,10 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selectMaximumOf_1',
       
         label: 'Select Maximum Of 1',
@@ -85,7 +86,10 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Select Maximum Of 1',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isFinanceCost',
       
         label: 'Is Finance Cost',
@@ -95,7 +99,10 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Is Finance Cost',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isWorkingCapital',
       
         label: 'Is Working Capital',
@@ -105,7 +112,10 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Is Working Capital',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isFinanceCostAdjustment',
       
         label: 'Is Finance Cost Adjustment',
@@ -115,7 +125,10 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Is Finance Cost Adjustment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isIncomeTaxLiability',
       
         label: 'Is Income Tax Liability',
@@ -125,7 +138,10 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Is Income Tax Liability',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isIncomeTaxExpense',
       
         label: 'Is Income Tax Expense',
@@ -135,7 +151,9 @@ export class CashFlowMapping extends Model {
         placeholder: 'Input Is Income Tax Expense',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

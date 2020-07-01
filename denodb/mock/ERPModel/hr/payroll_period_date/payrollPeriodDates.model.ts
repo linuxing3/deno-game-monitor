@@ -21,9 +21,7 @@ export class PayrollPeriodDate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     startDate: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class PayrollPeriodDate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -41,7 +40,10 @@ export class PayrollPeriodDate extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -51,7 +53,9 @@ export class PayrollPeriodDate extends Model {
         placeholder: 'Input End Date',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

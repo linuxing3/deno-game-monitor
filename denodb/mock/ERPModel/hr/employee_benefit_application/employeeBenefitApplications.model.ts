@@ -21,33 +21,18 @@ export class EmployeeBenefitApplication extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     maxBenefitsYearly: DataTypes.STRING,
-    
     remainingBenefitsYearly: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     date: DataTypes.STRING,
-    
     payrollPeriod: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     benefitsApplied: DataTypes.STRING,
-    
     employeeBenefits: DataTypes.STRING,
-    
     totals: DataTypes.STRING,
-    
     totalAmount: DataTypes.STRING,
-    
     dispensedAmountProRated: DataTypes.STRING,
     
   };
@@ -56,6 +41,7 @@ export class EmployeeBenefitApplication extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -65,7 +51,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -75,7 +64,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maxBenefitsYearly',
       
         label: 'Max Benefits Yearly',
@@ -85,7 +77,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Max Benefits Yearly',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remainingBenefitsYearly',
       
         label: 'Remaining Benefits Yearly',
@@ -95,7 +90,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Remaining Benefits Yearly',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -105,7 +103,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'date',
       
         label: 'Date',
@@ -115,7 +116,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollPeriod',
       
         label: 'Payroll Period',
@@ -125,7 +129,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Payroll Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -135,7 +142,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -145,7 +155,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'benefitsApplied',
       
         label: 'Benefits Applied',
@@ -155,7 +168,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Benefits Applied',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeBenefits',
       
         label: 'Employee Benefits',
@@ -165,7 +181,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Employee Benefits',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totals',
       
         label: 'Totals',
@@ -175,7 +194,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Totals',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmount',
       
         label: 'Total Amount',
@@ -185,7 +207,10 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Total Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dispensedAmountProRated',
       
         label: 'Dispensed Amount Pro Rated',
@@ -195,7 +220,9 @@ export class EmployeeBenefitApplication extends Model {
         placeholder: 'Input Dispensed Amount Pro Rated',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

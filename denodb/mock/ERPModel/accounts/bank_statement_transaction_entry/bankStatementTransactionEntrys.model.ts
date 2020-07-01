@@ -21,49 +21,23 @@ export class BankStatementTransactionEntry extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     bankAccount: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
     bankStatementSettings: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     bank: DataTypes.STRING,
-    
     receivableAccount: DataTypes.STRING,
-    
     payableAccount: DataTypes.STRING,
-    
     bankStatement: DataTypes.STRING,
-    
     bankTransactionEntries: DataTypes.STRING,
-    
     newTransactions: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     matchTransactionToInvoices: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     createNewPaymentJournalEntry: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     submitReconcilePayments: DataTypes.STRING,
-    
     matchingInvoices: DataTypes.STRING,
-    
     paymentInvoiceItems: DataTypes.STRING,
-    
     reconciledTransactions: DataTypes.STRING,
-    
     reconciledTransactions: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -72,6 +46,7 @@ export class BankStatementTransactionEntry extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'bankAccount',
       
         label: 'Bank Account',
@@ -81,7 +56,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -91,7 +69,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -101,7 +82,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankStatementSettings',
       
         label: 'Bank Statement Settings',
@@ -111,7 +95,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Bank Statement Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -121,7 +108,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bank',
       
         label: 'Bank',
@@ -131,7 +121,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Bank',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'receivableAccount',
       
         label: 'Receivable Account',
@@ -141,7 +134,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Receivable Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payableAccount',
       
         label: 'Payable Account',
@@ -151,7 +147,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Payable Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankStatement',
       
         label: 'Bank Statement',
@@ -161,7 +160,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Bank Statement',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankTransactionEntries',
       
         label: 'Bank Transaction Entries',
@@ -171,7 +173,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Bank Transaction Entries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'newTransactions',
       
         label: 'New Transactions',
@@ -181,7 +186,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input New Transactions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -191,7 +199,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'matchTransactionToInvoices',
       
         label: 'Match Transaction To Invoices',
@@ -201,7 +212,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Match Transaction To Invoices',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -211,7 +225,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'createNewPaymentJournalEntry',
       
         label: 'Create New Payment Journal Entry',
@@ -221,7 +238,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Create New Payment Journal Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -231,7 +251,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'submitReconcilePayments',
       
         label: 'Submit Reconcile Payments',
@@ -241,7 +264,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Submit Reconcile Payments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'matchingInvoices',
       
         label: 'Matching Invoices',
@@ -251,7 +277,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Matching Invoices',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentInvoiceItems',
       
         label: 'Payment Invoice Items',
@@ -261,7 +290,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Payment Invoice Items',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reconciledTransactions',
       
         label: 'Reconciled Transactions',
@@ -271,7 +303,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Reconciled Transactions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reconciledTransactions',
       
         label: 'Reconciled Transactions',
@@ -281,7 +316,10 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Reconciled Transactions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -291,7 +329,9 @@ export class BankStatementTransactionEntry extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

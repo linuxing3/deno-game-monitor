@@ -21,23 +21,13 @@ export class EmployeeAttendanceTool extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     date: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     branch: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     unmarkedAttendance: DataTypes.STRING,
-    
     employeesHtml: DataTypes.STRING,
-    
     markedAttendance: DataTypes.STRING,
-    
     markedAttendanceHtml: DataTypes.STRING,
     
   };
@@ -46,6 +36,7 @@ export class EmployeeAttendanceTool extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'date',
       
         label: 'Date',
@@ -55,7 +46,10 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -65,7 +59,10 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -75,7 +72,10 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'branch',
       
         label: 'Branch',
@@ -85,7 +85,10 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input Branch',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -95,7 +98,10 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'unmarkedAttendance',
       
         label: 'Unmarked Attendance',
@@ -105,7 +111,10 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input Unmarked Attendance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeesHtml',
       
         label: 'Employees Html',
@@ -115,7 +124,10 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input Employees Html',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'markedAttendance',
       
         label: 'Marked Attendance',
@@ -125,7 +137,10 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input Marked Attendance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'markedAttendanceHtml',
       
         label: 'Marked Attendance Html',
@@ -135,7 +150,9 @@ export class EmployeeAttendanceTool extends Model {
         placeholder: 'Input Marked Attendance Html',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

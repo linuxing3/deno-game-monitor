@@ -21,7 +21,6 @@ export class IdentificationDocumentType extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     identificationDocumentType: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class IdentificationDocumentType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'identificationDocumentType',
       
         label: 'Identification Document Type',
@@ -39,7 +39,9 @@ export class IdentificationDocumentType extends Model {
         placeholder: 'Input Identification Document Type',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

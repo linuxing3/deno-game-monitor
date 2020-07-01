@@ -21,37 +21,19 @@ export class EmployeeOnboarding extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     jobApplicant: DataTypes.STRING,
-    
     jobOffer: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     dateOfJoining: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employeeOnboardingTemplate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     employeeGrade: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     activities: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -60,6 +42,7 @@ export class EmployeeOnboarding extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'jobApplicant',
       
         label: 'Job Applicant',
@@ -69,7 +52,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Job Applicant',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'jobOffer',
       
         label: 'Job Offer',
@@ -79,7 +65,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Job Offer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -89,7 +78,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -99,7 +91,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateOfJoining',
       
         label: 'Date Of Joining',
@@ -109,7 +104,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Date Of Joining',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -119,7 +117,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -129,7 +130,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeOnboardingTemplate',
       
         label: 'Employee Onboarding Template',
@@ -139,7 +143,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Employee Onboarding Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -149,7 +156,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -159,7 +169,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -169,7 +182,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeGrade',
       
         label: 'Employee Grade',
@@ -179,7 +195,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Employee Grade',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -189,7 +208,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -199,7 +221,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'activities',
       
         label: 'Activities',
@@ -209,7 +234,10 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Activities',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -219,7 +247,9 @@ export class EmployeeOnboarding extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

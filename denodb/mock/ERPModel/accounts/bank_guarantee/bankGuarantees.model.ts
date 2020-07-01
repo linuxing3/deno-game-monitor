@@ -21,65 +21,31 @@ export class BankGuarantee extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     bankGuaranteeType: DataTypes.STRING,
-    
     referenceDocumentType: DataTypes.STRING,
-    
     referenceDocumentName: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     validityInDays: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
     bankAccountInfo: DataTypes.STRING,
-    
     bank: DataTypes.STRING,
-    
     bankAccount: DataTypes.STRING,
-    
     account: DataTypes.STRING,
-    
     bankAccountNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     iban: DataTypes.STRING,
-    
     branchCode: DataTypes.STRING,
-    
     swiftNumber: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     clausesAndConditions: DataTypes.STRING,
-    
     otherDetails: DataTypes.STRING,
-    
     bankGuaranteeNumber: DataTypes.STRING,
-    
     nameOfBeneficiary: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     marginMoney: DataTypes.STRING,
-    
     chargesIncurred: DataTypes.STRING,
-    
     fixedDepositNumber: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -88,6 +54,7 @@ export class BankGuarantee extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'bankGuaranteeType',
       
         label: 'Bank Guarantee Type',
@@ -97,7 +64,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Bank Guarantee Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'referenceDocumentType',
       
         label: 'Reference Document Type',
@@ -107,7 +77,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Reference Document Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceDocumentName',
       
         label: 'Reference Document Name',
@@ -117,7 +90,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Reference Document Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -127,7 +103,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -137,7 +116,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -147,7 +129,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -157,7 +142,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -167,7 +155,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -177,7 +168,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'validityInDays',
       
         label: 'Validity In Days',
@@ -187,7 +181,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Validity In Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -197,7 +194,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccountInfo',
       
         label: 'Bank Account Info',
@@ -207,7 +207,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Bank Account Info',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bank',
       
         label: 'Bank',
@@ -217,7 +220,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Bank',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccount',
       
         label: 'Bank Account',
@@ -227,7 +233,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -237,7 +246,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccountNo',
       
         label: 'Bank Account No',
@@ -247,7 +259,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Bank Account No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -257,7 +272,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'iban',
       
         label: 'Iban',
@@ -267,7 +285,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Iban',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'branchCode',
       
         label: 'Branch Code',
@@ -277,7 +298,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Branch Code',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'swiftNumber',
       
         label: 'Swift Number',
@@ -287,7 +311,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Swift Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -297,7 +324,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'clausesAndConditions',
       
         label: 'Clauses And Conditions',
@@ -307,7 +337,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Clauses And Conditions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'otherDetails',
       
         label: 'Other Details',
@@ -317,7 +350,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Other Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankGuaranteeNumber',
       
         label: 'Bank Guarantee Number',
@@ -327,7 +363,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Bank Guarantee Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'nameOfBeneficiary',
       
         label: 'Name Of Beneficiary',
@@ -337,7 +376,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Name Of Beneficiary',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -347,7 +389,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'marginMoney',
       
         label: 'Margin Money',
@@ -357,7 +402,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Margin Money',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chargesIncurred',
       
         label: 'Charges Incurred',
@@ -367,7 +415,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Charges Incurred',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fixedDepositNumber',
       
         label: 'Fixed Deposit Number',
@@ -377,7 +428,10 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Fixed Deposit Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -387,7 +441,9 @@ export class BankGuarantee extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

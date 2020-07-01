@@ -21,45 +21,23 @@ export class LeaveAllocation extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     leaveType: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
     allocation: DataTypes.STRING,
-    
     newLeavesAllocated: DataTypes.STRING,
-    
     addUnusedLeavesFromPreviousAllocations: DataTypes.STRING,
-    
     unusedLeaves: DataTypes.STRING,
-    
     totalLeavesAllocated: DataTypes.STRING,
-    
     totalLeavesEncashed: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     compensatoryLeaveRequest: DataTypes.STRING,
-    
     leavePeriod: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     notes: DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -68,6 +46,7 @@ export class LeaveAllocation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -77,7 +56,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -87,7 +69,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -97,7 +82,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -107,7 +95,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -117,7 +108,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveType',
       
         label: 'Leave Type',
@@ -127,7 +121,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Leave Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -137,7 +134,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -147,7 +147,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocation',
       
         label: 'Allocation',
@@ -157,7 +160,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Allocation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'newLeavesAllocated',
       
         label: 'New Leaves Allocated',
@@ -167,7 +173,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input New Leaves Allocated',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addUnusedLeavesFromPreviousAllocations',
       
         label: 'Add Unused Leaves From Previous Allocations',
@@ -177,7 +186,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Add Unused Leaves From Previous Allocations',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'unusedLeaves',
       
         label: 'Unused Leaves',
@@ -187,7 +199,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Unused Leaves',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalLeavesAllocated',
       
         label: 'Total Leaves Allocated',
@@ -197,7 +212,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Total Leaves Allocated',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalLeavesEncashed',
       
         label: 'Total Leaves Encashed',
@@ -207,7 +225,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Total Leaves Encashed',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -217,7 +238,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'compensatoryLeaveRequest',
       
         label: 'Compensatory Leave Request',
@@ -227,7 +251,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Compensatory Leave Request',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leavePeriod',
       
         label: 'Leave Period',
@@ -237,7 +264,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Leave Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -247,7 +277,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'notes',
       
         label: 'Notes',
@@ -257,7 +290,10 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Notes',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -267,7 +303,9 @@ export class LeaveAllocation extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

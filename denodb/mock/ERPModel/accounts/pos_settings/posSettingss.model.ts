@@ -21,7 +21,6 @@ export class PosSettings extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     usePosInOfflineMode: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class PosSettings extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'usePosInOfflineMode',
       
         label: 'Use Pos In Offline Mode',
@@ -39,7 +39,9 @@ export class PosSettings extends Model {
         placeholder: 'Input Use Pos In Offline Mode',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

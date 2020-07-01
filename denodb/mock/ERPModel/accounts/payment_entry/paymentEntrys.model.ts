@@ -21,133 +21,62 @@ export class PaymentEntry extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     typeOfPayment: DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     paymentType: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     paymentFromTo: DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
     partyName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     bankAccount: DataTypes.STRING,
-    
     email: DataTypes.STRING,
-    
     contact: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
-    
     partyBalance: DataTypes.STRING,
-    
     accountPaidFrom: DataTypes.STRING,
-    
     accountCurrency: DataTypes.STRING,
-    
     accountBalance: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     accountPaidTo: DataTypes.STRING,
-    
     accountCurrency: DataTypes.STRING,
-    
     accountBalance: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     paidAmount: DataTypes.STRING,
-    
     exchangeRate: DataTypes.STRING,
-    
     paidAmountCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     receivedAmount: DataTypes.STRING,
-    
     exchangeRate: DataTypes.STRING,
-    
     receivedAmountCompanyCurrency: DataTypes.STRING,
-    
     reference: DataTypes.STRING,
-    
     allocatePaymentAmount: DataTypes.STRING,
-    
     paymentReferences: DataTypes.STRING,
-    
     writeoff: DataTypes.STRING,
-    
     totalAllocatedAmount: DataTypes.STRING,
-    
     totalAllocatedAmountCompanyCurrency: DataTypes.STRING,
-    
     setExchangeGainLoss: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     unallocatedAmount: DataTypes.STRING,
-    
     differenceAmountCompanyCurrency: DataTypes.STRING,
-    
     writeOffDifferenceAmount: DataTypes.STRING,
-    
     deductionsOrLoss: DataTypes.STRING,
-    
     paymentDeductionsOrLoss: DataTypes.STRING,
-    
     transactionId: DataTypes.STRING,
-    
     chequeReferenceNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     chequeReferenceDate: DataTypes.STRING,
-    
     clearanceDate: DataTypes.STRING,
-    
     moreInformation: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
     remarks: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
     printHeading: DataTypes.STRING,
-    
     bank: DataTypes.STRING,
-    
     bankAccountNo: DataTypes.STRING,
-    
     paymentOrder: DataTypes.STRING,
-    
     subscriptionSection: DataTypes.STRING,
-    
     autoRepeat: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     title: DataTypes.STRING,
     
   };
@@ -156,6 +85,7 @@ export class PaymentEntry extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'typeOfPayment',
       
         label: 'Type Of Payment',
@@ -165,7 +95,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Type Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -175,7 +108,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentType',
       
         label: 'Payment Type',
@@ -185,7 +121,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Payment Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -195,7 +134,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -205,7 +147,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -215,7 +160,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -225,7 +173,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -235,7 +186,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentFromTo',
       
         label: 'Payment From To',
@@ -245,7 +199,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Payment From To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -255,7 +212,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Party Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -265,7 +225,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyName',
       
         label: 'Party Name',
@@ -275,7 +238,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Party Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -285,7 +251,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccount',
       
         label: 'Bank Account',
@@ -295,7 +264,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'email',
       
         label: 'Email',
@@ -305,7 +277,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contact',
       
         label: 'Contact',
@@ -315,7 +290,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -325,7 +303,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyBalance',
       
         label: 'Party Balance',
@@ -335,7 +316,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Party Balance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountPaidFrom',
       
         label: 'Account Paid From',
@@ -345,7 +329,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Account Paid From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountCurrency',
       
         label: 'Account Currency',
@@ -355,7 +342,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountBalance',
       
         label: 'Account Balance',
@@ -365,7 +355,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Account Balance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -375,7 +368,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountPaidTo',
       
         label: 'Account Paid To',
@@ -385,7 +381,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Account Paid To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountCurrency',
       
         label: 'Account Currency',
@@ -395,7 +394,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountBalance',
       
         label: 'Account Balance',
@@ -405,7 +407,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Account Balance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -415,7 +420,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paidAmount',
       
         label: 'Paid Amount',
@@ -425,7 +433,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Paid Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exchangeRate',
       
         label: 'Exchange Rate',
@@ -435,7 +446,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paidAmountCompanyCurrency',
       
         label: 'Paid Amount Company Currency',
@@ -445,7 +459,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Paid Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -455,7 +472,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'receivedAmount',
       
         label: 'Received Amount',
@@ -465,7 +485,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Received Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exchangeRate',
       
         label: 'Exchange Rate',
@@ -475,7 +498,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'receivedAmountCompanyCurrency',
       
         label: 'Received Amount Company Currency',
@@ -485,7 +511,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Received Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reference',
       
         label: 'Reference',
@@ -495,7 +524,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocatePaymentAmount',
       
         label: 'Allocate Payment Amount',
@@ -505,7 +537,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Allocate Payment Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentReferences',
       
         label: 'Payment References',
@@ -515,7 +550,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Payment References',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeoff',
       
         label: 'Writeoff',
@@ -525,7 +563,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Writeoff',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAllocatedAmount',
       
         label: 'Total Allocated Amount',
@@ -535,7 +576,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Total Allocated Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAllocatedAmountCompanyCurrency',
       
         label: 'Total Allocated Amount Company Currency',
@@ -545,7 +589,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Total Allocated Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'setExchangeGainLoss',
       
         label: 'Set Exchange Gain Loss',
@@ -555,7 +602,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Set Exchange Gain Loss',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -565,7 +615,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'unallocatedAmount',
       
         label: 'Unallocated Amount',
@@ -575,7 +628,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Unallocated Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'differenceAmountCompanyCurrency',
       
         label: 'Difference Amount Company Currency',
@@ -585,7 +641,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Difference Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffDifferenceAmount',
       
         label: 'Write Off Difference Amount',
@@ -595,7 +654,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Write Off Difference Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deductionsOrLoss',
       
         label: 'Deductions Or Loss',
@@ -605,7 +667,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Deductions Or Loss',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentDeductionsOrLoss',
       
         label: 'Payment Deductions Or Loss',
@@ -615,7 +680,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Payment Deductions Or Loss',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'transactionId',
       
         label: 'Transaction Id',
@@ -625,7 +693,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Transaction Id',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chequeReferenceNo',
       
         label: 'Cheque Reference No',
@@ -635,7 +706,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Cheque Reference No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -645,7 +719,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chequeReferenceDate',
       
         label: 'Cheque Reference Date',
@@ -655,7 +732,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Cheque Reference Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'clearanceDate',
       
         label: 'Clearance Date',
@@ -665,7 +745,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Clearance Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'moreInformation',
       
         label: 'More Information',
@@ -675,7 +758,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input More Information',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -685,7 +771,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remarks',
       
         label: 'Remarks',
@@ -695,7 +784,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Remarks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -705,7 +797,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -715,7 +810,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printHeading',
       
         label: 'Print Heading',
@@ -725,7 +823,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Print Heading',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bank',
       
         label: 'Bank',
@@ -735,7 +836,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Bank',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccountNo',
       
         label: 'Bank Account No',
@@ -745,7 +849,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Bank Account No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentOrder',
       
         label: 'Payment Order',
@@ -755,7 +862,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Payment Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subscriptionSection',
       
         label: 'Subscription Section',
@@ -765,7 +875,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Subscription Section',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'autoRepeat',
       
         label: 'Auto Repeat',
@@ -775,7 +888,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Auto Repeat',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -785,7 +901,10 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'title',
       
         label: 'Title',
@@ -795,7 +914,9 @@ export class PaymentEntry extends Model {
         placeholder: 'Input Title',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

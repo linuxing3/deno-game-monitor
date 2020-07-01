@@ -21,59 +21,28 @@ export class Vehicle extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     licensePlate: DataTypes.STRING,
-    
     make: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     model: DataTypes.STRING,
-    
     details: DataTypes.STRING,
-    
     odometerValueLast: DataTypes.STRING,
-    
     acquisitionDate: DataTypes.STRING,
-    
     location: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     chassisNo: DataTypes.STRING,
-    
     vehicleValue: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     insuranceDetails: DataTypes.STRING,
-    
     insuranceCompany: DataTypes.STRING,
-    
     policyNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
     additionalDetails: DataTypes.STRING,
-    
     fuelType: DataTypes.STRING,
-    
     fuelUom: DataTypes.STRING,
-    
     lastCarbonCheck: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     color: DataTypes.STRING,
-    
     wheels: DataTypes.STRING,
-    
     doors: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -82,6 +51,7 @@ export class Vehicle extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'licensePlate',
       
         label: 'License Plate',
@@ -91,7 +61,10 @@ export class Vehicle extends Model {
         placeholder: 'Input License Plate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'make',
       
         label: 'Make',
@@ -101,7 +74,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Make',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -111,7 +87,10 @@ export class Vehicle extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'model',
       
         label: 'Model',
@@ -121,7 +100,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Model',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'details',
       
         label: 'Details',
@@ -131,7 +113,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'odometerValueLast',
       
         label: 'Odometer Value Last',
@@ -141,7 +126,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Odometer Value Last',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'acquisitionDate',
       
         label: 'Acquisition Date',
@@ -151,7 +139,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Acquisition Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'location',
       
         label: 'Location',
@@ -161,7 +152,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -171,7 +165,10 @@ export class Vehicle extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chassisNo',
       
         label: 'Chassis No',
@@ -181,7 +178,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Chassis No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'vehicleValue',
       
         label: 'Vehicle Value',
@@ -191,7 +191,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Vehicle Value',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -201,7 +204,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'insuranceDetails',
       
         label: 'Insurance Details',
@@ -211,7 +217,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Insurance Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'insuranceCompany',
       
         label: 'Insurance Company',
@@ -221,7 +230,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Insurance Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'policyNo',
       
         label: 'Policy No',
@@ -231,7 +243,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Policy No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -241,7 +256,10 @@ export class Vehicle extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -251,7 +269,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -261,7 +282,10 @@ export class Vehicle extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDetails',
       
         label: 'Additional Details',
@@ -271,7 +295,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Additional Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fuelType',
       
         label: 'Fuel Type',
@@ -281,7 +308,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Fuel Type',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'fuelUom',
       
         label: 'Fuel Uom',
@@ -291,7 +321,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Fuel Uom',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lastCarbonCheck',
       
         label: 'Last Carbon Check',
@@ -301,7 +334,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Last Carbon Check',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -311,7 +347,10 @@ export class Vehicle extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'color',
       
         label: 'Color',
@@ -321,7 +360,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Color',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'wheels',
       
         label: 'Wheels',
@@ -331,7 +373,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Wheels',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'doors',
       
         label: 'Doors',
@@ -341,7 +386,10 @@ export class Vehicle extends Model {
         placeholder: 'Input Doors',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -351,7 +399,9 @@ export class Vehicle extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

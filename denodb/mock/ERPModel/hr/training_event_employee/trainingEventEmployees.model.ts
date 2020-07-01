@@ -21,17 +21,10 @@ export class TrainingEventEmployee extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     attendance: DataTypes.STRING,
     
   };
@@ -40,6 +33,7 @@ export class TrainingEventEmployee extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -49,7 +43,10 @@ export class TrainingEventEmployee extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -59,7 +56,10 @@ export class TrainingEventEmployee extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -69,7 +69,10 @@ export class TrainingEventEmployee extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -79,7 +82,10 @@ export class TrainingEventEmployee extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -89,7 +95,10 @@ export class TrainingEventEmployee extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'attendance',
       
         label: 'Attendance',
@@ -99,7 +108,9 @@ export class TrainingEventEmployee extends Model {
         placeholder: 'Input Attendance',
       
         options: '[object Object]',
+      
       },
+      
     ]
   };
 } 

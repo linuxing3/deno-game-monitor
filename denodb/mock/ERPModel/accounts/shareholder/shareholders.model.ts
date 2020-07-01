@@ -21,35 +21,15 @@ export class Shareholder extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     title: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     folioNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     isCompany: DataTypes.STRING,
-    
     addressAndContacts: DataTypes.STRING,
-    
     addressHtml: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     contactHtml: DataTypes.STRING,
-    
     shareBalance: DataTypes.STRING,
-    
     shareBalance: DataTypes.STRING,
-    
     contactList: DataTypes.STRING,
     
   };
@@ -58,6 +38,7 @@ export class Shareholder extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'title',
       
         label: 'Title',
@@ -67,7 +48,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -77,7 +61,10 @@ export class Shareholder extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -87,7 +74,10 @@ export class Shareholder extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -97,7 +87,10 @@ export class Shareholder extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'folioNo',
       
         label: 'Folio No',
@@ -107,7 +100,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Folio No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -117,7 +113,10 @@ export class Shareholder extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -127,7 +126,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isCompany',
       
         label: 'Is Company',
@@ -137,7 +139,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Is Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addressAndContacts',
       
         label: 'Address And Contacts',
@@ -147,7 +152,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Address And Contacts',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addressHtml',
       
         label: 'Address Html',
@@ -157,7 +165,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Address Html',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -167,7 +178,10 @@ export class Shareholder extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactHtml',
       
         label: 'Contact Html',
@@ -177,7 +191,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Contact Html',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shareBalance',
       
         label: 'Share Balance',
@@ -187,7 +204,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Share Balance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shareBalance',
       
         label: 'Share Balance',
@@ -197,7 +217,10 @@ export class Shareholder extends Model {
         placeholder: 'Input Share Balance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactList',
       
         label: 'Contact List',
@@ -207,7 +230,9 @@ export class Shareholder extends Model {
         placeholder: 'Input Contact List',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

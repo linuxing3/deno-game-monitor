@@ -21,119 +21,55 @@ export class Asset extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     namingSeries: DataTypes.STRING,
-    
     assetName: DataTypes.STRING,
-    
     itemCode: DataTypes.STRING,
-    
     itemName: DataTypes.STRING,
-    
     assetCategory: DataTypes.STRING,
-    
     assetOwner: DataTypes.STRING,
-    
     assetOwnerCompany: DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
     image: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     location: DataTypes.STRING,
-    
     custodian: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     purchaseDate: DataTypes.STRING,
-    
     disposalDate: DataTypes.STRING,
-    
     journalEntryForScrap: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     grossPurchaseAmount: DataTypes.STRING,
-    
     availableForUseDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     calculateDepreciation: DataTypes.STRING,
-    
     isExistingAsset: DataTypes.STRING,
-    
     openingAccumulatedDepreciation: DataTypes.STRING,
-    
     numberOfDepreciationsBooked: DataTypes.STRING,
-    
     depreciation: DataTypes.STRING,
-    
     financeBooks: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     depreciationMethod: DataTypes.STRING,
-    
     valueAfterDepreciation: DataTypes.STRING,
-    
     totalNumberOfDepreciations: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     frequencyOfDepreciationMonths: DataTypes.STRING,
-    
     nextDepreciationDate: DataTypes.STRING,
-    
     depreciationSchedule: DataTypes.STRING,
-    
     depreciationSchedules: DataTypes.STRING,
-    
     insuranceDetails: DataTypes.STRING,
-    
     policyNumber: DataTypes.STRING,
-    
     insurer: DataTypes.STRING,
-    
     insuredValue: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     insuranceStartDate: DataTypes.STRING,
-    
     insuranceEndDate: DataTypes.STRING,
-    
     comprehensiveInsurance: DataTypes.STRING,
-    
     maintenance: DataTypes.STRING,
-    
     maintenanceRequired: DataTypes.STRING,
-    
     otherDetails: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     bookedFixedAsset: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     purchaseReceipt: DataTypes.STRING,
-    
     purchaseReceiptAmount: DataTypes.STRING,
-    
     purchaseInvoice: DataTypes.STRING,
-    
     defaultFinanceBook: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -142,6 +78,7 @@ export class Asset extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'namingSeries',
       
         label: 'Naming Series',
@@ -151,7 +88,10 @@ export class Asset extends Model {
         placeholder: 'Input Naming Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assetName',
       
         label: 'Asset Name',
@@ -161,7 +101,10 @@ export class Asset extends Model {
         placeholder: 'Input Asset Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemCode',
       
         label: 'Item Code',
@@ -171,7 +114,10 @@ export class Asset extends Model {
         placeholder: 'Input Item Code',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemName',
       
         label: 'Item Name',
@@ -181,7 +127,10 @@ export class Asset extends Model {
         placeholder: 'Input Item Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assetCategory',
       
         label: 'Asset Category',
@@ -191,7 +140,10 @@ export class Asset extends Model {
         placeholder: 'Input Asset Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assetOwner',
       
         label: 'Asset Owner',
@@ -201,7 +153,10 @@ export class Asset extends Model {
         placeholder: 'Input Asset Owner',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'assetOwnerCompany',
       
         label: 'Asset Owner Company',
@@ -211,7 +166,10 @@ export class Asset extends Model {
         placeholder: 'Input Asset Owner Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -221,7 +179,10 @@ export class Asset extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -231,7 +192,10 @@ export class Asset extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'image',
       
         label: 'Image',
@@ -241,7 +205,10 @@ export class Asset extends Model {
         placeholder: 'Input Image',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -251,7 +218,10 @@ export class Asset extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -261,7 +231,10 @@ export class Asset extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'location',
       
         label: 'Location',
@@ -271,7 +244,10 @@ export class Asset extends Model {
         placeholder: 'Input Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'custodian',
       
         label: 'Custodian',
@@ -281,7 +257,10 @@ export class Asset extends Model {
         placeholder: 'Input Custodian',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -291,7 +270,10 @@ export class Asset extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -301,7 +283,10 @@ export class Asset extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseDate',
       
         label: 'Purchase Date',
@@ -311,7 +296,10 @@ export class Asset extends Model {
         placeholder: 'Input Purchase Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disposalDate',
       
         label: 'Disposal Date',
@@ -321,7 +309,10 @@ export class Asset extends Model {
         placeholder: 'Input Disposal Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'journalEntryForScrap',
       
         label: 'Journal Entry For Scrap',
@@ -331,7 +322,10 @@ export class Asset extends Model {
         placeholder: 'Input Journal Entry For Scrap',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -341,7 +335,10 @@ export class Asset extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grossPurchaseAmount',
       
         label: 'Gross Purchase Amount',
@@ -351,7 +348,10 @@ export class Asset extends Model {
         placeholder: 'Input Gross Purchase Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'availableForUseDate',
       
         label: 'Available For Use Date',
@@ -361,7 +361,10 @@ export class Asset extends Model {
         placeholder: 'Input Available For Use Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -371,7 +374,10 @@ export class Asset extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'calculateDepreciation',
       
         label: 'Calculate Depreciation',
@@ -381,7 +387,10 @@ export class Asset extends Model {
         placeholder: 'Input Calculate Depreciation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isExistingAsset',
       
         label: 'Is Existing Asset',
@@ -391,7 +400,10 @@ export class Asset extends Model {
         placeholder: 'Input Is Existing Asset',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'openingAccumulatedDepreciation',
       
         label: 'Opening Accumulated Depreciation',
@@ -401,7 +413,10 @@ export class Asset extends Model {
         placeholder: 'Input Opening Accumulated Depreciation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'numberOfDepreciationsBooked',
       
         label: 'Number Of Depreciations Booked',
@@ -411,7 +426,10 @@ export class Asset extends Model {
         placeholder: 'Input Number Of Depreciations Booked',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciation',
       
         label: 'Depreciation',
@@ -421,7 +439,10 @@ export class Asset extends Model {
         placeholder: 'Input Depreciation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'financeBooks',
       
         label: 'Finance Books',
@@ -431,7 +452,10 @@ export class Asset extends Model {
         placeholder: 'Input Finance Books',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -441,7 +465,10 @@ export class Asset extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciationMethod',
       
         label: 'Depreciation Method',
@@ -451,7 +478,10 @@ export class Asset extends Model {
         placeholder: 'Input Depreciation Method',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'valueAfterDepreciation',
       
         label: 'Value After Depreciation',
@@ -461,7 +491,10 @@ export class Asset extends Model {
         placeholder: 'Input Value After Depreciation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalNumberOfDepreciations',
       
         label: 'Total Number Of Depreciations',
@@ -471,7 +504,10 @@ export class Asset extends Model {
         placeholder: 'Input Total Number Of Depreciations',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -481,7 +517,10 @@ export class Asset extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'frequencyOfDepreciationMonths',
       
         label: 'Frequency Of Depreciation Months',
@@ -491,7 +530,10 @@ export class Asset extends Model {
         placeholder: 'Input Frequency Of Depreciation Months',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'nextDepreciationDate',
       
         label: 'Next Depreciation Date',
@@ -501,7 +543,10 @@ export class Asset extends Model {
         placeholder: 'Input Next Depreciation Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciationSchedule',
       
         label: 'Depreciation Schedule',
@@ -511,7 +556,10 @@ export class Asset extends Model {
         placeholder: 'Input Depreciation Schedule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciationSchedules',
       
         label: 'Depreciation Schedules',
@@ -521,7 +569,10 @@ export class Asset extends Model {
         placeholder: 'Input Depreciation Schedules',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'insuranceDetails',
       
         label: 'Insurance Details',
@@ -531,7 +582,10 @@ export class Asset extends Model {
         placeholder: 'Input Insurance Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'policyNumber',
       
         label: 'Policy Number',
@@ -541,7 +595,10 @@ export class Asset extends Model {
         placeholder: 'Input Policy Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'insurer',
       
         label: 'Insurer',
@@ -551,7 +608,10 @@ export class Asset extends Model {
         placeholder: 'Input Insurer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'insuredValue',
       
         label: 'Insured Value',
@@ -561,7 +621,10 @@ export class Asset extends Model {
         placeholder: 'Input Insured Value',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -571,7 +634,10 @@ export class Asset extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'insuranceStartDate',
       
         label: 'Insurance Start Date',
@@ -581,7 +647,10 @@ export class Asset extends Model {
         placeholder: 'Input Insurance Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'insuranceEndDate',
       
         label: 'Insurance End Date',
@@ -591,7 +660,10 @@ export class Asset extends Model {
         placeholder: 'Input Insurance End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'comprehensiveInsurance',
       
         label: 'Comprehensive Insurance',
@@ -601,7 +673,10 @@ export class Asset extends Model {
         placeholder: 'Input Comprehensive Insurance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenance',
       
         label: 'Maintenance',
@@ -611,7 +686,10 @@ export class Asset extends Model {
         placeholder: 'Input Maintenance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceRequired',
       
         label: 'Maintenance Required',
@@ -621,7 +699,10 @@ export class Asset extends Model {
         placeholder: 'Input Maintenance Required',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'otherDetails',
       
         label: 'Other Details',
@@ -631,7 +712,10 @@ export class Asset extends Model {
         placeholder: 'Input Other Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -641,7 +725,10 @@ export class Asset extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'bookedFixedAsset',
       
         label: 'Booked Fixed Asset',
@@ -651,7 +738,10 @@ export class Asset extends Model {
         placeholder: 'Input Booked Fixed Asset',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -661,7 +751,10 @@ export class Asset extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseReceipt',
       
         label: 'Purchase Receipt',
@@ -671,7 +764,10 @@ export class Asset extends Model {
         placeholder: 'Input Purchase Receipt',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseReceiptAmount',
       
         label: 'Purchase Receipt Amount',
@@ -681,7 +777,10 @@ export class Asset extends Model {
         placeholder: 'Input Purchase Receipt Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseInvoice',
       
         label: 'Purchase Invoice',
@@ -691,7 +790,10 @@ export class Asset extends Model {
         placeholder: 'Input Purchase Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'defaultFinanceBook',
       
         label: 'Default Finance Book',
@@ -701,7 +803,10 @@ export class Asset extends Model {
         placeholder: 'Input Default Finance Book',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -711,7 +816,9 @@ export class Asset extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

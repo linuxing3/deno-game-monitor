@@ -21,19 +21,12 @@ export class UploadAttendance extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     downloadTemplate: DataTypes.STRING,
-    
     attendanceFromDate: DataTypes.STRING,
-    
     attendanceToDate: DataTypes.STRING,
-    
     getTemplate: DataTypes.STRING,
-    
     importAttendance: DataTypes.STRING,
-    
     uploadHtml: DataTypes.STRING,
-    
     importLog: DataTypes.STRING,
     
   };
@@ -42,6 +35,7 @@ export class UploadAttendance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'downloadTemplate',
       
         label: 'Download Template',
@@ -51,7 +45,10 @@ export class UploadAttendance extends Model {
         placeholder: 'Input Download Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'attendanceFromDate',
       
         label: 'Attendance From Date',
@@ -61,7 +58,10 @@ export class UploadAttendance extends Model {
         placeholder: 'Input Attendance From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'attendanceToDate',
       
         label: 'Attendance To Date',
@@ -71,7 +71,10 @@ export class UploadAttendance extends Model {
         placeholder: 'Input Attendance To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'getTemplate',
       
         label: 'Get Template',
@@ -81,7 +84,10 @@ export class UploadAttendance extends Model {
         placeholder: 'Input Get Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'importAttendance',
       
         label: 'Import Attendance',
@@ -91,7 +97,10 @@ export class UploadAttendance extends Model {
         placeholder: 'Input Import Attendance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'uploadHtml',
       
         label: 'Upload Html',
@@ -101,7 +110,10 @@ export class UploadAttendance extends Model {
         placeholder: 'Input Upload Html',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'importLog',
       
         label: 'Import Log',
@@ -111,7 +123,9 @@ export class UploadAttendance extends Model {
         placeholder: 'Input Import Log',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

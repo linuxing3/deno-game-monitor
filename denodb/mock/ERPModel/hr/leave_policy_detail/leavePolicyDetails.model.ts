@@ -21,9 +21,7 @@ export class LeavePolicyDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     leaveType: DataTypes.STRING,
-    
     annualAllocation: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class LeavePolicyDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'leaveType',
       
         label: 'Leave Type',
@@ -41,7 +40,10 @@ export class LeavePolicyDetail extends Model {
         placeholder: 'Input Leave Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'annualAllocation',
       
         label: 'Annual Allocation',
@@ -51,7 +53,9 @@ export class LeavePolicyDetail extends Model {
         placeholder: 'Input Annual Allocation',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,7 +21,6 @@ export class Bank extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     bankName: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class Bank extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'bankName',
       
         label: 'Bank Name',
@@ -39,7 +39,9 @@ export class Bank extends Model {
         placeholder: 'Input Bank Name',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

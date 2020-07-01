@@ -21,15 +21,10 @@ export class CFormInvoiceDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     invoiceNo: DataTypes.STRING,
-    
     invoiceDate: DataTypes.STRING,
-    
     territory: DataTypes.STRING,
-    
     netTotal: DataTypes.STRING,
-    
     grandTotal: DataTypes.STRING,
     
   };
@@ -38,6 +33,7 @@ export class CFormInvoiceDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'invoiceNo',
       
         label: 'Invoice No',
@@ -47,7 +43,10 @@ export class CFormInvoiceDetail extends Model {
         placeholder: 'Input Invoice No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoiceDate',
       
         label: 'Invoice Date',
@@ -57,7 +56,10 @@ export class CFormInvoiceDetail extends Model {
         placeholder: 'Input Invoice Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'territory',
       
         label: 'Territory',
@@ -67,7 +69,10 @@ export class CFormInvoiceDetail extends Model {
         placeholder: 'Input Territory',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netTotal',
       
         label: 'Net Total',
@@ -77,7 +82,10 @@ export class CFormInvoiceDetail extends Model {
         placeholder: 'Input Net Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grandTotal',
       
         label: 'Grand Total',
@@ -87,7 +95,9 @@ export class CFormInvoiceDetail extends Model {
         placeholder: 'Input Grand Total',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

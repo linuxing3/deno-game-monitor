@@ -21,39 +21,18 @@ export class JobOffer extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     jobApplicant: DataTypes.STRING,
-    
     applicantName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     offerDate: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     jobOfferTerms: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     selectTermsAndConditions: DataTypes.STRING,
-    
     termsAndConditions: DataTypes.STRING,
-    
     printingDetails: DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     printHeading: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -62,6 +41,7 @@ export class JobOffer extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'jobApplicant',
       
         label: 'Job Applicant',
@@ -71,7 +51,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Job Applicant',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicantName',
       
         label: 'Applicant Name',
@@ -81,7 +64,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Applicant Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -91,7 +77,10 @@ export class JobOffer extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -101,7 +90,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'offerDate',
       
         label: 'Offer Date',
@@ -111,7 +103,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Offer Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -121,7 +116,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -131,7 +129,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -141,7 +142,10 @@ export class JobOffer extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'jobOfferTerms',
       
         label: 'Job Offer Terms',
@@ -151,7 +155,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Job Offer Terms',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -161,7 +168,10 @@ export class JobOffer extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selectTermsAndConditions',
       
         label: 'Select Terms And Conditions',
@@ -171,7 +181,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Select Terms And Conditions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'termsAndConditions',
       
         label: 'Terms And Conditions',
@@ -181,7 +194,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Terms And Conditions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printingDetails',
       
         label: 'Printing Details',
@@ -191,7 +207,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Printing Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -201,7 +220,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -211,7 +233,10 @@ export class JobOffer extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printHeading',
       
         label: 'Print Heading',
@@ -221,7 +246,10 @@ export class JobOffer extends Model {
         placeholder: 'Input Print Heading',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -231,7 +259,9 @@ export class JobOffer extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

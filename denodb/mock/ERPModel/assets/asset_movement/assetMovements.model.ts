@@ -21,41 +21,20 @@ export class AssetMovement extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     purpose: DataTypes.STRING,
-    
     asset: DataTypes.STRING,
-    
     transactionDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     quantity: DataTypes.STRING,
-    
     selectSerialNo: DataTypes.STRING,
-    
     serialNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     sourceLocation: DataTypes.STRING,
-    
     targetLocation: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     fromEmployee: DataTypes.STRING,
-    
     toEmployee: DataTypes.STRING,
-    
     reference: DataTypes.STRING,
-    
     referenceDocType: DataTypes.STRING,
-    
     referenceName: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -64,6 +43,7 @@ export class AssetMovement extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -73,7 +53,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purpose',
       
         label: 'Purpose',
@@ -83,7 +66,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Purpose',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'asset',
       
         label: 'Asset',
@@ -93,7 +79,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Asset',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'transactionDate',
       
         label: 'Transaction Date',
@@ -103,7 +92,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Transaction Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -113,7 +105,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'quantity',
       
         label: 'Quantity',
@@ -123,7 +118,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Quantity',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selectSerialNo',
       
         label: 'Select Serial No',
@@ -133,7 +131,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Select Serial No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'serialNo',
       
         label: 'Serial No',
@@ -143,7 +144,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Serial No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -153,7 +157,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sourceLocation',
       
         label: 'Source Location',
@@ -163,7 +170,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Source Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'targetLocation',
       
         label: 'Target Location',
@@ -173,7 +183,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Target Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -183,7 +196,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromEmployee',
       
         label: 'From Employee',
@@ -193,7 +209,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input From Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toEmployee',
       
         label: 'To Employee',
@@ -203,7 +222,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input To Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reference',
       
         label: 'Reference',
@@ -213,7 +235,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceDocType',
       
         label: 'Reference Doc Type',
@@ -223,7 +248,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Reference Doc Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceName',
       
         label: 'Reference Name',
@@ -233,7 +261,10 @@ export class AssetMovement extends Model {
         placeholder: 'Input Reference Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -243,7 +274,9 @@ export class AssetMovement extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,293 +21,126 @@ export class PurchaseInvoice extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     title: DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     supplierName: DataTypes.STRING,
-    
     taxId: DataTypes.STRING,
-    
     dueDate: DataTypes.STRING,
-    
     isPaid: DataTypes.STRING,
-    
     isReturnDebitNote: DataTypes.STRING,
-    
     applyTaxWithholdingAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     date: DataTypes.STRING,
-    
     postingTime: DataTypes.STRING,
-    
     editPostingDateAndTime: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     holdInvoice: DataTypes.STRING,
-    
     holdInvoice: DataTypes.STRING,
-    
     releaseDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     reasonForPuttingOnHold: DataTypes.STRING,
-    
     supplierInvoiceDetails: DataTypes.STRING,
-    
     supplierInvoiceNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     supplierInvoiceDate: DataTypes.STRING,
-    
     returns: DataTypes.STRING,
-    
     returnAgainstPurchaseInvoice: DataTypes.STRING,
-    
     addressAndContact: DataTypes.STRING,
-    
     selectSupplierAddress: DataTypes.STRING,
-    
     address: DataTypes.STRING,
-    
     contactPerson: DataTypes.STRING,
-    
     contact: DataTypes.STRING,
-    
     mobileNo: DataTypes.STRING,
-    
     contactEmail: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     selectShippingAddress: DataTypes.STRING,
-    
     shippingAddress: DataTypes.STRING,
-    
     currencyAndPriceList: DataTypes.STRING,
-    
     currency: DataTypes.STRING,
-    
     exchangeRate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     priceList: DataTypes.STRING,
-    
     priceListCurrency: DataTypes.STRING,
-    
     priceListExchangeRate: DataTypes.STRING,
-    
     ignorePricingRule: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     setAcceptedWarehouse: DataTypes.STRING,
-    
     rejectedWarehouse: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     rawMaterialsSupplied: DataTypes.STRING,
-    
     supplierWarehouse: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     updateStock: DataTypes.STRING,
-    
     scanBarcode: DataTypes.STRING,
-    
     items: DataTypes.STRING,
-    
     rawMaterialsSupplied: DataTypes.STRING,
-    
     suppliedItems: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalQuantity: DataTypes.STRING,
-    
     totalCompanyCurrency: DataTypes.STRING,
-    
     netTotalCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     total: DataTypes.STRING,
-    
     netTotal: DataTypes.STRING,
-    
     totalNetWeight: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     taxCategory: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     shippingRule: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     purchaseTaxesAndChargesTemplate: DataTypes.STRING,
-    
     purchaseTaxesAndCharges: DataTypes.STRING,
-    
     taxBreakup: DataTypes.STRING,
-    
     taxesAndChargesCalculation: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     taxesAndChargesAddedCompanyCurrency: DataTypes.STRING,
-    
     taxesAndChargesDeductedCompanyCurrency: DataTypes.STRING,
-    
     totalTaxesAndChargesCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     taxesAndChargesAdded: DataTypes.STRING,
-    
     taxesAndChargesDeducted: DataTypes.STRING,
-    
     totalTaxesAndCharges: DataTypes.STRING,
-    
     additionalDiscount: DataTypes.STRING,
-    
     applyAdditionalDiscountOn: DataTypes.STRING,
-    
     additionalDiscountAmountCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     additionalDiscountPercentage: DataTypes.STRING,
-    
     additionalDiscountAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     grandTotalCompanyCurrency: DataTypes.STRING,
-    
     roundingAdjustmentCompanyCurrency: DataTypes.STRING,
-    
     roundedTotalCompanyCurrency: DataTypes.STRING,
-    
     inWordsCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     grandTotal: DataTypes.STRING,
-    
     roundingAdjustment: DataTypes.STRING,
-    
     roundedTotal: DataTypes.STRING,
-    
     inWords: DataTypes.STRING,
-    
     totalAdvance: DataTypes.STRING,
-    
     outstandingAmount: DataTypes.STRING,
-    
     disableRoundedTotal: DataTypes.STRING,
-    
     payments: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     cashBankAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paidAmount: DataTypes.STRING,
-    
     paidAmountCompanyCurrency: DataTypes.STRING,
-    
     writeOff: DataTypes.STRING,
-    
     writeOffAmount: DataTypes.STRING,
-    
     writeOffAmountCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     writeOffAccount: DataTypes.STRING,
-    
     writeOffCostCenter: DataTypes.STRING,
-    
     advancePayments: DataTypes.STRING,
-    
     setAdvancesAndAllocateFifo: DataTypes.STRING,
-    
     getAdvancesPaid: DataTypes.STRING,
-    
     advances: DataTypes.STRING,
-    
     paymentTerms: DataTypes.STRING,
-    
     paymentTermsTemplate: DataTypes.STRING,
-    
     paymentSchedule: DataTypes.STRING,
-    
     termsAndConditions: DataTypes.STRING,
-    
     terms: DataTypes.STRING,
-    
     termsAndConditions1: DataTypes.STRING,
-    
     printingSettings: DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
     groupSameItems: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     printHeading: DataTypes.STRING,
-    
     printLanguage: DataTypes.STRING,
-    
     moreInformation: DataTypes.STRING,
-    
     creditTo: DataTypes.STRING,
-    
     partyAccountCurrency: DataTypes.STRING,
-    
     isOpening: DataTypes.STRING,
-    
     againstExpenseAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     interCompanyInvoiceReference: DataTypes.STRING,
-    
     remarks: DataTypes.STRING,
-    
     subscriptionSection: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     autoRepeat: DataTypes.STRING,
-    
     updateAutoRepeatReference: DataTypes.STRING,
     
   };
@@ -316,6 +149,7 @@ export class PurchaseInvoice extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'title',
       
         label: 'Title',
@@ -325,7 +159,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -335,7 +172,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -345,7 +185,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplierName',
       
         label: 'Supplier Name',
@@ -355,7 +198,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Supplier Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxId',
       
         label: 'Tax Id',
@@ -365,7 +211,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Tax Id',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dueDate',
       
         label: 'Due Date',
@@ -375,7 +224,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isPaid',
       
         label: 'Is Paid',
@@ -385,7 +237,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Is Paid',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isReturnDebitNote',
       
         label: 'Is Return Debit Note',
@@ -395,7 +250,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Is Return Debit Note',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applyTaxWithholdingAmount',
       
         label: 'Apply Tax Withholding Amount',
@@ -405,7 +263,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Apply Tax Withholding Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -415,7 +276,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -425,7 +289,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -435,7 +302,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'date',
       
         label: 'Date',
@@ -445,7 +315,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingTime',
       
         label: 'Posting Time',
@@ -455,7 +328,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Posting Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'editPostingDateAndTime',
       
         label: 'Edit Posting Date And Time',
@@ -465,7 +341,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Edit Posting Date And Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -475,7 +354,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'holdInvoice',
       
         label: 'Hold Invoice',
@@ -485,7 +367,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Hold Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'holdInvoice',
       
         label: 'Hold Invoice',
@@ -495,7 +380,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Hold Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'releaseDate',
       
         label: 'Release Date',
@@ -505,7 +393,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Release Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -515,7 +406,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reasonForPuttingOnHold',
       
         label: 'Reason For Putting On Hold',
@@ -525,7 +419,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Reason For Putting On Hold',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplierInvoiceDetails',
       
         label: 'Supplier Invoice Details',
@@ -535,7 +432,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Supplier Invoice Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplierInvoiceNo',
       
         label: 'Supplier Invoice No',
@@ -545,7 +445,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Supplier Invoice No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -555,7 +458,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplierInvoiceDate',
       
         label: 'Supplier Invoice Date',
@@ -565,7 +471,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Supplier Invoice Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'returns',
       
         label: 'Returns',
@@ -575,7 +484,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Returns',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'returnAgainstPurchaseInvoice',
       
         label: 'Return Against Purchase Invoice',
@@ -585,7 +497,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Return Against Purchase Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addressAndContact',
       
         label: 'Address And Contact',
@@ -595,7 +510,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Address And Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selectSupplierAddress',
       
         label: 'Select Supplier Address',
@@ -605,7 +523,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Select Supplier Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'address',
       
         label: 'Address',
@@ -615,7 +536,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactPerson',
       
         label: 'Contact Person',
@@ -625,7 +549,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Contact Person',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contact',
       
         label: 'Contact',
@@ -635,7 +562,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'mobileNo',
       
         label: 'Mobile No',
@@ -645,7 +575,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Mobile No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactEmail',
       
         label: 'Contact Email',
@@ -655,7 +588,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Contact Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -665,7 +601,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selectShippingAddress',
       
         label: 'Select Shipping Address',
@@ -675,7 +614,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Select Shipping Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingAddress',
       
         label: 'Shipping Address',
@@ -685,7 +627,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Shipping Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currencyAndPriceList',
       
         label: 'Currency And Price List',
@@ -695,7 +640,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Currency And Price List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currency',
       
         label: 'Currency',
@@ -705,7 +653,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exchangeRate',
       
         label: 'Exchange Rate',
@@ -715,7 +666,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -725,7 +679,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceList',
       
         label: 'Price List',
@@ -735,7 +692,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Price List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceListCurrency',
       
         label: 'Price List Currency',
@@ -745,7 +705,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Price List Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceListExchangeRate',
       
         label: 'Price List Exchange Rate',
@@ -755,7 +718,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Price List Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'ignorePricingRule',
       
         label: 'Ignore Pricing Rule',
@@ -765,7 +731,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Ignore Pricing Rule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -775,7 +744,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'setAcceptedWarehouse',
       
         label: 'Set Accepted Warehouse',
@@ -785,7 +757,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Set Accepted Warehouse',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rejectedWarehouse',
       
         label: 'Rejected Warehouse',
@@ -795,7 +770,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Rejected Warehouse',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -805,7 +783,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rawMaterialsSupplied',
       
         label: 'Raw Materials Supplied',
@@ -815,7 +796,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Raw Materials Supplied',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'supplierWarehouse',
       
         label: 'Supplier Warehouse',
@@ -825,7 +809,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Supplier Warehouse',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -835,7 +822,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'updateStock',
       
         label: 'Update Stock',
@@ -845,7 +835,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Update Stock',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'scanBarcode',
       
         label: 'Scan Barcode',
@@ -855,7 +848,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Scan Barcode',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'items',
       
         label: 'Items',
@@ -865,7 +861,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Items',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rawMaterialsSupplied',
       
         label: 'Raw Materials Supplied',
@@ -875,7 +874,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Raw Materials Supplied',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'suppliedItems',
       
         label: 'Supplied Items',
@@ -885,7 +887,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Supplied Items',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -895,7 +900,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalQuantity',
       
         label: 'Total Quantity',
@@ -905,7 +913,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Total Quantity',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalCompanyCurrency',
       
         label: 'Total Company Currency',
@@ -915,7 +926,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netTotalCompanyCurrency',
       
         label: 'Net Total Company Currency',
@@ -925,7 +939,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Net Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -935,7 +952,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'total',
       
         label: 'Total',
@@ -945,7 +965,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netTotal',
       
         label: 'Net Total',
@@ -955,7 +978,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Net Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalNetWeight',
       
         label: 'Total Net Weight',
@@ -965,7 +991,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Total Net Weight',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -975,7 +1004,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxCategory',
       
         label: 'Tax Category',
@@ -985,7 +1017,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Tax Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -995,7 +1030,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingRule',
       
         label: 'Shipping Rule',
@@ -1005,7 +1043,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Shipping Rule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1015,7 +1056,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseTaxesAndChargesTemplate',
       
         label: 'Purchase Taxes And Charges Template',
@@ -1025,7 +1069,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Purchase Taxes And Charges Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseTaxesAndCharges',
       
         label: 'Purchase Taxes And Charges',
@@ -1035,7 +1082,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Purchase Taxes And Charges',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxBreakup',
       
         label: 'Tax Breakup',
@@ -1045,7 +1095,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Tax Breakup',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxesAndChargesCalculation',
       
         label: 'Taxes And Charges Calculation',
@@ -1055,7 +1108,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Taxes And Charges Calculation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1065,7 +1121,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxesAndChargesAddedCompanyCurrency',
       
         label: 'Taxes And Charges Added Company Currency',
@@ -1075,7 +1134,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Taxes And Charges Added Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxesAndChargesDeductedCompanyCurrency',
       
         label: 'Taxes And Charges Deducted Company Currency',
@@ -1085,7 +1147,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Taxes And Charges Deducted Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalTaxesAndChargesCompanyCurrency',
       
         label: 'Total Taxes And Charges Company Currency',
@@ -1095,7 +1160,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Total Taxes And Charges Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1105,7 +1173,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxesAndChargesAdded',
       
         label: 'Taxes And Charges Added',
@@ -1115,7 +1186,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Taxes And Charges Added',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxesAndChargesDeducted',
       
         label: 'Taxes And Charges Deducted',
@@ -1125,7 +1199,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Taxes And Charges Deducted',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalTaxesAndCharges',
       
         label: 'Total Taxes And Charges',
@@ -1135,7 +1212,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Total Taxes And Charges',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDiscount',
       
         label: 'Additional Discount',
@@ -1145,7 +1225,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Additional Discount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applyAdditionalDiscountOn',
       
         label: 'Apply Additional Discount On',
@@ -1155,7 +1238,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Apply Additional Discount On',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDiscountAmountCompanyCurrency',
       
         label: 'Additional Discount Amount Company Currency',
@@ -1165,7 +1251,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Additional Discount Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1175,7 +1264,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDiscountPercentage',
       
         label: 'Additional Discount Percentage',
@@ -1185,7 +1277,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Additional Discount Percentage',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDiscountAmount',
       
         label: 'Additional Discount Amount',
@@ -1195,7 +1290,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Additional Discount Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1205,7 +1303,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grandTotalCompanyCurrency',
       
         label: 'Grand Total Company Currency',
@@ -1215,7 +1316,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Grand Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundingAdjustmentCompanyCurrency',
       
         label: 'Rounding Adjustment Company Currency',
@@ -1225,7 +1329,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Rounding Adjustment Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundedTotalCompanyCurrency',
       
         label: 'Rounded Total Company Currency',
@@ -1235,7 +1342,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Rounded Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'inWordsCompanyCurrency',
       
         label: 'In Words Company Currency',
@@ -1245,7 +1355,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input In Words Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1255,7 +1368,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grandTotal',
       
         label: 'Grand Total',
@@ -1265,7 +1381,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Grand Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundingAdjustment',
       
         label: 'Rounding Adjustment',
@@ -1275,7 +1394,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Rounding Adjustment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundedTotal',
       
         label: 'Rounded Total',
@@ -1285,7 +1407,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Rounded Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'inWords',
       
         label: 'In Words',
@@ -1295,7 +1420,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input In Words',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAdvance',
       
         label: 'Total Advance',
@@ -1305,7 +1433,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Total Advance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'outstandingAmount',
       
         label: 'Outstanding Amount',
@@ -1315,7 +1446,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Outstanding Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disableRoundedTotal',
       
         label: 'Disable Rounded Total',
@@ -1325,7 +1459,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Disable Rounded Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payments',
       
         label: 'Payments',
@@ -1335,7 +1472,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Payments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -1345,7 +1485,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cashBankAccount',
       
         label: 'Cash Bank Account',
@@ -1355,7 +1498,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Cash Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1365,7 +1511,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paidAmount',
       
         label: 'Paid Amount',
@@ -1375,7 +1524,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Paid Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paidAmountCompanyCurrency',
       
         label: 'Paid Amount Company Currency',
@@ -1385,7 +1537,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Paid Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOff',
       
         label: 'Write Off',
@@ -1395,7 +1550,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Write Off',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffAmount',
       
         label: 'Write Off Amount',
@@ -1405,7 +1563,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Write Off Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffAmountCompanyCurrency',
       
         label: 'Write Off Amount Company Currency',
@@ -1415,7 +1576,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Write Off Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1425,7 +1589,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffAccount',
       
         label: 'Write Off Account',
@@ -1435,7 +1602,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Write Off Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffCostCenter',
       
         label: 'Write Off Cost Center',
@@ -1445,7 +1615,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Write Off Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advancePayments',
       
         label: 'Advance Payments',
@@ -1455,7 +1628,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Advance Payments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'setAdvancesAndAllocateFifo',
       
         label: 'Set Advances And Allocate Fifo',
@@ -1465,7 +1641,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Set Advances And Allocate Fifo',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'getAdvancesPaid',
       
         label: 'Get Advances Paid',
@@ -1475,7 +1654,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Get Advances Paid',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advances',
       
         label: 'Advances',
@@ -1485,7 +1667,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Advances',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentTerms',
       
         label: 'Payment Terms',
@@ -1495,7 +1680,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Payment Terms',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentTermsTemplate',
       
         label: 'Payment Terms Template',
@@ -1505,7 +1693,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Payment Terms Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentSchedule',
       
         label: 'Payment Schedule',
@@ -1515,7 +1706,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Payment Schedule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'termsAndConditions',
       
         label: 'Terms And Conditions',
@@ -1525,7 +1719,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Terms And Conditions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'terms',
       
         label: 'Terms',
@@ -1535,7 +1732,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Terms',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'termsAndConditions1',
       
         label: 'Terms And Conditions1',
@@ -1545,7 +1745,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Terms And Conditions1',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printingSettings',
       
         label: 'Printing Settings',
@@ -1555,7 +1758,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Printing Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -1565,7 +1771,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'groupSameItems',
       
         label: 'Group Same Items',
@@ -1575,7 +1784,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Group Same Items',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1585,7 +1797,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printHeading',
       
         label: 'Print Heading',
@@ -1595,7 +1810,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Print Heading',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printLanguage',
       
         label: 'Print Language',
@@ -1605,7 +1823,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Print Language',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'moreInformation',
       
         label: 'More Information',
@@ -1615,7 +1836,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input More Information',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'creditTo',
       
         label: 'Credit To',
@@ -1625,7 +1849,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Credit To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyAccountCurrency',
       
         label: 'Party Account Currency',
@@ -1635,7 +1862,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Party Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isOpening',
       
         label: 'Is Opening',
@@ -1645,7 +1875,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Is Opening',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'againstExpenseAccount',
       
         label: 'Against Expense Account',
@@ -1655,7 +1888,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Against Expense Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1665,7 +1901,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -1675,7 +1914,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'interCompanyInvoiceReference',
       
         label: 'Inter Company Invoice Reference',
@@ -1685,7 +1927,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Inter Company Invoice Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remarks',
       
         label: 'Remarks',
@@ -1695,7 +1940,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Remarks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subscriptionSection',
       
         label: 'Subscription Section',
@@ -1705,7 +1953,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Subscription Section',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -1715,7 +1966,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -1725,7 +1979,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1735,7 +1992,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'autoRepeat',
       
         label: 'Auto Repeat',
@@ -1745,7 +2005,10 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Auto Repeat',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'updateAutoRepeatReference',
       
         label: 'Update Auto Repeat Reference',
@@ -1755,7 +2018,9 @@ export class PurchaseInvoice extends Model {
         placeholder: 'Input Update Auto Repeat Reference',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

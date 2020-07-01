@@ -21,7 +21,6 @@ export class CashFlowMappingAccounts extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     account: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class CashFlowMappingAccounts extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'account',
       
         label: 'Account',
@@ -39,7 +39,9 @@ export class CashFlowMappingAccounts extends Model {
         placeholder: 'Input Account',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

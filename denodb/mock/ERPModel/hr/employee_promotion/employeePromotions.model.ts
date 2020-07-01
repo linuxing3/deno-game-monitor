@@ -21,23 +21,13 @@ export class EmployeePromotion extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     promotionDate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     employeePromotionDetails: DataTypes.STRING,
-    
     employeePromotionDetail: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -46,6 +36,7 @@ export class EmployeePromotion extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -55,7 +46,10 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -65,7 +59,10 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -75,7 +72,10 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -85,7 +85,10 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'promotionDate',
       
         label: 'Promotion Date',
@@ -95,7 +98,10 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input Promotion Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -105,7 +111,10 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeePromotionDetails',
       
         label: 'Employee Promotion Details',
@@ -115,7 +124,10 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input Employee Promotion Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeePromotionDetail',
       
         label: 'Employee Promotion Detail',
@@ -125,7 +137,10 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input Employee Promotion Detail',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -135,7 +150,9 @@ export class EmployeePromotion extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,119 +21,48 @@ export class SalarySlip extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     postingDate: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     branch: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     journalEntry: DataTypes.STRING,
-    
     payrollEntry: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salarySlipBasedOnTimesheet: DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salaryStructure: DataTypes.STRING,
-    
     payrollFrequency: DataTypes.STRING,
-    
     workingDays: DataTypes.STRING,
-    
     leaveWithoutPay: DataTypes.STRING,
-    
     paymentDays: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salarySlipTimesheet: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalWorkingHours: DataTypes.STRING,
-    
     hourRate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     bankName: DataTypes.STRING,
-    
     bankAccountNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     deductTaxForUnclaimedEmployeeBenefits: DataTypes.STRING,
-    
     deductTaxForUnsubmittedTaxExemptionProof: DataTypes.STRING,
-    
     earningDeduction: DataTypes.STRING,
-    
     earning: DataTypes.STRING,
-    
     earnings: DataTypes.STRING,
-    
     deduction: DataTypes.STRING,
-    
     deductions: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     grossPay: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalDeduction: DataTypes.STRING,
-    
     loanRepayment: DataTypes.STRING,
-    
     employeeLoan: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalPrincipalAmount: DataTypes.STRING,
-    
     totalInterestAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalLoanRepayment: DataTypes.STRING,
-    
     netPayInfo: DataTypes.STRING,
-    
     netPay: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     roundedTotal: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalInWords: DataTypes.STRING,
     
   };
@@ -142,6 +71,7 @@ export class SalarySlip extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -151,7 +81,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -161,7 +94,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -171,7 +107,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -181,7 +120,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -191,7 +133,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'branch',
       
         label: 'Branch',
@@ -201,7 +146,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Branch',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -211,7 +159,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -221,7 +172,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'journalEntry',
       
         label: 'Journal Entry',
@@ -231,7 +185,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Journal Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollEntry',
       
         label: 'Payroll Entry',
@@ -241,7 +198,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Payroll Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -251,7 +211,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -261,7 +224,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -271,7 +237,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlipBasedOnTimesheet',
       
         label: 'Salary Slip Based On Timesheet',
@@ -281,7 +250,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Salary Slip Based On Timesheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -291,7 +263,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -301,7 +276,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -311,7 +289,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salaryStructure',
       
         label: 'Salary Structure',
@@ -321,7 +302,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Salary Structure',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollFrequency',
       
         label: 'Payroll Frequency',
@@ -331,7 +315,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Payroll Frequency',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'workingDays',
       
         label: 'Working Days',
@@ -341,7 +328,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Working Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveWithoutPay',
       
         label: 'Leave Without Pay',
@@ -351,7 +341,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Leave Without Pay',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentDays',
       
         label: 'Payment Days',
@@ -361,7 +354,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Payment Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -371,7 +367,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlipTimesheet',
       
         label: 'Salary Slip Timesheet',
@@ -381,7 +380,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Salary Slip Timesheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -391,7 +393,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalWorkingHours',
       
         label: 'Total Working Hours',
@@ -401,7 +406,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Total Working Hours',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'hourRate',
       
         label: 'Hour Rate',
@@ -411,7 +419,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Hour Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -421,7 +432,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankName',
       
         label: 'Bank Name',
@@ -431,7 +445,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Bank Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccountNo',
       
         label: 'Bank Account No',
@@ -441,7 +458,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Bank Account No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -451,7 +471,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -461,7 +484,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -471,7 +497,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deductTaxForUnclaimedEmployeeBenefits',
       
         label: 'Deduct Tax For Unclaimed Employee Benefits',
@@ -481,7 +510,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Deduct Tax For Unclaimed Employee Benefits',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deductTaxForUnsubmittedTaxExemptionProof',
       
         label: 'Deduct Tax For Unsubmitted Tax Exemption Proof',
@@ -491,7 +523,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Deduct Tax For Unsubmitted Tax Exemption Proof',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'earningDeduction',
       
         label: 'Earning Deduction',
@@ -501,7 +536,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Earning Deduction',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'earning',
       
         label: 'Earning',
@@ -511,7 +549,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Earning',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'earnings',
       
         label: 'Earnings',
@@ -521,7 +562,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Earnings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deduction',
       
         label: 'Deduction',
@@ -531,7 +575,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Deduction',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deductions',
       
         label: 'Deductions',
@@ -541,7 +588,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Deductions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -551,7 +601,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grossPay',
       
         label: 'Gross Pay',
@@ -561,7 +614,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Gross Pay',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -571,7 +627,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalDeduction',
       
         label: 'Total Deduction',
@@ -581,7 +640,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Total Deduction',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanRepayment',
       
         label: 'Loan Repayment',
@@ -591,7 +653,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Loan Repayment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeLoan',
       
         label: 'Employee Loan',
@@ -601,7 +666,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Employee Loan',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -611,7 +679,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalPrincipalAmount',
       
         label: 'Total Principal Amount',
@@ -621,7 +692,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Total Principal Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalInterestAmount',
       
         label: 'Total Interest Amount',
@@ -631,7 +705,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Total Interest Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -641,7 +718,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalLoanRepayment',
       
         label: 'Total Loan Repayment',
@@ -651,7 +731,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Total Loan Repayment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netPayInfo',
       
         label: 'Net Pay Info',
@@ -661,7 +744,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Net Pay Info',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netPay',
       
         label: 'Net Pay',
@@ -671,7 +757,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Net Pay',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -681,7 +770,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundedTotal',
       
         label: 'Rounded Total',
@@ -691,7 +783,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input Rounded Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -701,7 +796,10 @@ export class SalarySlip extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalInWords',
       
         label: 'Total In Words',
@@ -711,7 +809,9 @@ export class SalarySlip extends Model {
         placeholder: 'Input Total In Words',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

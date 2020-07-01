@@ -21,73 +21,34 @@ export class ExpenseClaim extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     fromEmployee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     expenseApprover: DataTypes.STRING,
-    
     approvalStatus: DataTypes.STRING,
-    
     totalClaimedAmount: DataTypes.STRING,
-    
     totalSanctionedAmount: DataTypes.STRING,
-    
     isPaid: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     expenses: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     vehicleLog: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
     task: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalAmountReimbursed: DataTypes.STRING,
-    
     remark: DataTypes.STRING,
-    
     title: DataTypes.STRING,
-    
     employeesEmailId: DataTypes.STRING,
-    
     accountingDetails: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     payableAccount: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     moreDetails: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     advancePayments: DataTypes.STRING,
-    
     advances: DataTypes.STRING,
-    
     totalAdvanceAmount: DataTypes.STRING,
     
   };
@@ -96,6 +57,7 @@ export class ExpenseClaim extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -105,7 +67,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromEmployee',
       
         label: 'From Employee',
@@ -115,7 +80,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input From Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -125,7 +93,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -135,7 +106,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -145,7 +119,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseApprover',
       
         label: 'Expense Approver',
@@ -155,7 +132,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Expense Approver',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'approvalStatus',
       
         label: 'Approval Status',
@@ -165,7 +145,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Approval Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'totalClaimedAmount',
       
         label: 'Total Claimed Amount',
@@ -175,7 +158,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Total Claimed Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalSanctionedAmount',
       
         label: 'Total Sanctioned Amount',
@@ -185,7 +171,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Total Sanctioned Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isPaid',
       
         label: 'Is Paid',
@@ -195,7 +184,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Is Paid',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -205,7 +197,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenses',
       
         label: 'Expenses',
@@ -215,7 +210,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Expenses',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -225,7 +223,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -235,7 +236,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'vehicleLog',
       
         label: 'Vehicle Log',
@@ -245,7 +249,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Vehicle Log',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -255,7 +262,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'task',
       
         label: 'Task',
@@ -265,7 +275,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Task',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -275,7 +288,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmountReimbursed',
       
         label: 'Total Amount Reimbursed',
@@ -285,7 +301,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Total Amount Reimbursed',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remark',
       
         label: 'Remark',
@@ -295,7 +314,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Remark',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'title',
       
         label: 'Title',
@@ -305,7 +327,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeesEmailId',
       
         label: 'Employees Email Id',
@@ -315,7 +340,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Employees Email Id',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountingDetails',
       
         label: 'Accounting Details',
@@ -325,7 +353,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Accounting Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -335,7 +366,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -345,7 +379,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -355,7 +392,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payableAccount',
       
         label: 'Payable Account',
@@ -365,7 +405,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Payable Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -375,7 +418,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'moreDetails',
       
         label: 'More Details',
@@ -385,7 +431,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input More Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -395,7 +444,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -405,7 +457,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advancePayments',
       
         label: 'Advance Payments',
@@ -415,7 +470,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Advance Payments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advances',
       
         label: 'Advances',
@@ -425,7 +483,10 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Advances',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAdvanceAmount',
       
         label: 'Total Advance Amount',
@@ -435,7 +496,9 @@ export class ExpenseClaim extends Model {
         placeholder: 'Input Total Advance Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

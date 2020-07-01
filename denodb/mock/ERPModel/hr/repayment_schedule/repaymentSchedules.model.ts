@@ -21,17 +21,11 @@ export class RepaymentSchedule extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     paymentDate: DataTypes.STRING,
-    
     principalAmount: DataTypes.STRING,
-    
     interestAmount: DataTypes.STRING,
-    
     totalPayment: DataTypes.STRING,
-    
     balanceLoanAmount: DataTypes.STRING,
-    
     paid: DataTypes.STRING,
     
   };
@@ -40,6 +34,7 @@ export class RepaymentSchedule extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'paymentDate',
       
         label: 'Payment Date',
@@ -49,7 +44,10 @@ export class RepaymentSchedule extends Model {
         placeholder: 'Input Payment Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'principalAmount',
       
         label: 'Principal Amount',
@@ -59,7 +57,10 @@ export class RepaymentSchedule extends Model {
         placeholder: 'Input Principal Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'interestAmount',
       
         label: 'Interest Amount',
@@ -69,7 +70,10 @@ export class RepaymentSchedule extends Model {
         placeholder: 'Input Interest Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalPayment',
       
         label: 'Total Payment',
@@ -79,7 +83,10 @@ export class RepaymentSchedule extends Model {
         placeholder: 'Input Total Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'balanceLoanAmount',
       
         label: 'Balance Loan Amount',
@@ -89,7 +96,10 @@ export class RepaymentSchedule extends Model {
         placeholder: 'Input Balance Loan Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paid',
       
         label: 'Paid',
@@ -99,7 +109,9 @@ export class RepaymentSchedule extends Model {
         placeholder: 'Input Paid',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

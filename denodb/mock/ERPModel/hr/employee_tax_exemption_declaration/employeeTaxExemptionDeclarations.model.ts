@@ -21,23 +21,12 @@ export class EmployeeTaxExemptionDeclaration extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     payrollPeriod: DataTypes.STRING,
-    
     totalExemptionAmount: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     declarations: DataTypes.STRING,
     
   };
@@ -46,6 +35,7 @@ export class EmployeeTaxExemptionDeclaration extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -55,7 +45,10 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -65,7 +58,10 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -75,7 +71,10 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollPeriod',
       
         label: 'Payroll Period',
@@ -85,7 +84,10 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input Payroll Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalExemptionAmount',
       
         label: 'Total Exemption Amount',
@@ -95,7 +97,10 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input Total Exemption Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -105,7 +110,10 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -115,7 +123,10 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -125,7 +136,10 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'declarations',
       
         label: 'Declarations',
@@ -135,7 +149,9 @@ export class EmployeeTaxExemptionDeclaration extends Model {
         placeholder: 'Input Declarations',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

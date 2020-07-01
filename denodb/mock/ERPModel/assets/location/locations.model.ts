@@ -21,39 +21,19 @@ export class Location extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     locationName: DataTypes.STRING,
-    
     parentLocation: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isContainer: DataTypes.STRING,
-    
     isGroup: DataTypes.STRING,
-    
     locationDetails: DataTypes.STRING,
-    
     latitude: DataTypes.STRING,
-    
     longitude: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     area: DataTypes.STRING,
-    
     areaUom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     location: DataTypes.STRING,
-    
     treeDetails: DataTypes.STRING,
-    
     lft: DataTypes.STRING,
-    
     rgt: DataTypes.STRING,
-    
     oldParent: DataTypes.STRING,
     
   };
@@ -62,6 +42,7 @@ export class Location extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'locationName',
       
         label: 'Location Name',
@@ -71,7 +52,10 @@ export class Location extends Model {
         placeholder: 'Input Location Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'parentLocation',
       
         label: 'Parent Location',
@@ -81,7 +65,10 @@ export class Location extends Model {
         placeholder: 'Input Parent Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -91,7 +78,10 @@ export class Location extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isContainer',
       
         label: 'Is Container',
@@ -101,7 +91,10 @@ export class Location extends Model {
         placeholder: 'Input Is Container',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isGroup',
       
         label: 'Is Group',
@@ -111,7 +104,10 @@ export class Location extends Model {
         placeholder: 'Input Is Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'locationDetails',
       
         label: 'Location Details',
@@ -121,7 +117,10 @@ export class Location extends Model {
         placeholder: 'Input Location Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'latitude',
       
         label: 'Latitude',
@@ -131,7 +130,10 @@ export class Location extends Model {
         placeholder: 'Input Latitude',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'longitude',
       
         label: 'Longitude',
@@ -141,7 +143,10 @@ export class Location extends Model {
         placeholder: 'Input Longitude',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -151,7 +156,10 @@ export class Location extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'area',
       
         label: 'Area',
@@ -161,7 +169,10 @@ export class Location extends Model {
         placeholder: 'Input Area',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'areaUom',
       
         label: 'Area Uom',
@@ -171,7 +182,10 @@ export class Location extends Model {
         placeholder: 'Input Area Uom',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -181,7 +195,10 @@ export class Location extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'location',
       
         label: 'Location',
@@ -191,7 +208,10 @@ export class Location extends Model {
         placeholder: 'Input Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'treeDetails',
       
         label: 'Tree Details',
@@ -201,7 +221,10 @@ export class Location extends Model {
         placeholder: 'Input Tree Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lft',
       
         label: 'Lft',
@@ -211,7 +234,10 @@ export class Location extends Model {
         placeholder: 'Input Lft',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rgt',
       
         label: 'Rgt',
@@ -221,7 +247,10 @@ export class Location extends Model {
         placeholder: 'Input Rgt',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'oldParent',
       
         label: 'Old Parent',
@@ -231,7 +260,9 @@ export class Location extends Model {
         placeholder: 'Input Old Parent',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,11 +21,8 @@ export class PaymentEntryDeduction extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     account: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class PaymentEntryDeduction extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'account',
       
         label: 'Account',
@@ -43,7 +41,10 @@ export class PaymentEntryDeduction extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -53,7 +54,10 @@ export class PaymentEntryDeduction extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -63,7 +67,9 @@ export class PaymentEntryDeduction extends Model {
         placeholder: 'Input Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

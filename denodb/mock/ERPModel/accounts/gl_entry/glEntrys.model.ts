@@ -21,55 +21,30 @@ export class GlEntry extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     postingDate: DataTypes.STRING,
-    
     transactionDate: DataTypes.STRING,
-    
     account: DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     debitAmount: DataTypes.STRING,
-    
     creditAmount: DataTypes.STRING,
-    
     accountCurrency: DataTypes.STRING,
-    
     debitAmountInAccountCurrency: DataTypes.STRING,
-    
     creditAmountInAccountCurrency: DataTypes.STRING,
-    
     against: DataTypes.STRING,
-    
     againstVoucherType: DataTypes.STRING,
-    
     againstVoucher: DataTypes.STRING,
-    
     voucherType: DataTypes.STRING,
-    
     voucherNo: DataTypes.STRING,
-    
     voucherDetailNo: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
     remarks: DataTypes.STRING,
-    
     isOpening: DataTypes.STRING,
-    
     isAdvance: DataTypes.STRING,
-    
     fiscalYear: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     financeBook: DataTypes.STRING,
-    
     toRename: DataTypes.STRING,
     
   };
@@ -78,6 +53,7 @@ export class GlEntry extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -87,7 +63,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'transactionDate',
       
         label: 'Transaction Date',
@@ -97,7 +76,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Transaction Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -107,7 +89,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -117,7 +102,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Party Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -127,7 +115,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -137,7 +128,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'debitAmount',
       
         label: 'Debit Amount',
@@ -147,7 +141,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Debit Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'creditAmount',
       
         label: 'Credit Amount',
@@ -157,7 +154,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Credit Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountCurrency',
       
         label: 'Account Currency',
@@ -167,7 +167,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'debitAmountInAccountCurrency',
       
         label: 'Debit Amount In Account Currency',
@@ -177,7 +180,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Debit Amount In Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'creditAmountInAccountCurrency',
       
         label: 'Credit Amount In Account Currency',
@@ -187,7 +193,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Credit Amount In Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'against',
       
         label: 'Against',
@@ -197,7 +206,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Against',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'againstVoucherType',
       
         label: 'Against Voucher Type',
@@ -207,7 +219,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Against Voucher Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'againstVoucher',
       
         label: 'Against Voucher',
@@ -217,7 +232,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Against Voucher',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'voucherType',
       
         label: 'Voucher Type',
@@ -227,7 +245,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Voucher Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'voucherNo',
       
         label: 'Voucher No',
@@ -237,7 +258,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Voucher No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'voucherDetailNo',
       
         label: 'Voucher Detail No',
@@ -247,7 +271,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Voucher Detail No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -257,7 +284,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remarks',
       
         label: 'Remarks',
@@ -267,7 +297,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Remarks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isOpening',
       
         label: 'Is Opening',
@@ -277,7 +310,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Is Opening',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'isAdvance',
       
         label: 'Is Advance',
@@ -287,7 +323,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Is Advance',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'fiscalYear',
       
         label: 'Fiscal Year',
@@ -297,7 +336,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Fiscal Year',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -307,7 +349,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'financeBook',
       
         label: 'Finance Book',
@@ -317,7 +362,10 @@ export class GlEntry extends Model {
         placeholder: 'Input Finance Book',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toRename',
       
         label: 'To Rename',
@@ -327,7 +375,9 @@ export class GlEntry extends Model {
         placeholder: 'Input To Rename',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

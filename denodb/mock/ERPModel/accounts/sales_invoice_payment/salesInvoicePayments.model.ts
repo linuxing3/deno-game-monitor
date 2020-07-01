@@ -21,21 +21,12 @@ export class SalesInvoicePayment extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     default: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     account: DataTypes.STRING,
-    
     type: DataTypes.STRING,
-    
     baseAmountCompanyCurrency: DataTypes.STRING,
-    
     clearanceDate: DataTypes.STRING,
     
   };
@@ -44,6 +35,7 @@ export class SalesInvoicePayment extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'default',
       
         label: 'Default',
@@ -53,7 +45,10 @@ export class SalesInvoicePayment extends Model {
         placeholder: 'Input Default',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -63,7 +58,10 @@ export class SalesInvoicePayment extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -73,7 +71,10 @@ export class SalesInvoicePayment extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -83,7 +84,10 @@ export class SalesInvoicePayment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -93,7 +97,10 @@ export class SalesInvoicePayment extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'type',
       
         label: 'Type',
@@ -103,7 +110,10 @@ export class SalesInvoicePayment extends Model {
         placeholder: 'Input Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'baseAmountCompanyCurrency',
       
         label: 'Base Amount Company Currency',
@@ -113,7 +123,10 @@ export class SalesInvoicePayment extends Model {
         placeholder: 'Input Base Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'clearanceDate',
       
         label: 'Clearance Date',
@@ -123,7 +136,9 @@ export class SalesInvoicePayment extends Model {
         placeholder: 'Input Clearance Date',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

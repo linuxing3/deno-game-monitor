@@ -21,69 +21,32 @@ export class TaxRule extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     taxType: DataTypes.STRING,
-    
     useForShoppingCart: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salesTaxTemplate: DataTypes.STRING,
-    
     purchaseTaxTemplate: DataTypes.STRING,
-    
     filters: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     item: DataTypes.STRING,
-    
     billingCity: DataTypes.STRING,
-    
     billingCounty: DataTypes.STRING,
-    
     billingState: DataTypes.STRING,
-    
     billingZipcode: DataTypes.STRING,
-    
     billingCountry: DataTypes.STRING,
-    
     taxCategory: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     customerGroup: DataTypes.STRING,
-    
     supplierGroup: DataTypes.STRING,
-    
     itemGroup: DataTypes.STRING,
-    
     shippingCity: DataTypes.STRING,
-    
     shippingCounty: DataTypes.STRING,
-    
     shippingState: DataTypes.STRING,
-    
     shippingZipcode: DataTypes.STRING,
-    
     shippingCountry: DataTypes.STRING,
-    
     validity: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     priority: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
     
   };
@@ -92,6 +55,7 @@ export class TaxRule extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'taxType',
       
         label: 'Tax Type',
@@ -101,7 +65,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Tax Type',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'useForShoppingCart',
       
         label: 'Use For Shopping Cart',
@@ -111,7 +78,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Use For Shopping Cart',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -121,7 +91,10 @@ export class TaxRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesTaxTemplate',
       
         label: 'Sales Tax Template',
@@ -131,7 +104,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Sales Tax Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseTaxTemplate',
       
         label: 'Purchase Tax Template',
@@ -141,7 +117,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Purchase Tax Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'filters',
       
         label: 'Filters',
@@ -151,7 +130,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Filters',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -161,7 +143,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -171,7 +156,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'item',
       
         label: 'Item',
@@ -181,7 +169,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Item',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingCity',
       
         label: 'Billing City',
@@ -191,7 +182,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Billing City',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingCounty',
       
         label: 'Billing County',
@@ -201,7 +195,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Billing County',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingState',
       
         label: 'Billing State',
@@ -211,7 +208,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Billing State',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingZipcode',
       
         label: 'Billing Zipcode',
@@ -221,7 +221,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Billing Zipcode',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingCountry',
       
         label: 'Billing Country',
@@ -231,7 +234,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Billing Country',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxCategory',
       
         label: 'Tax Category',
@@ -241,7 +247,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Tax Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -251,7 +260,10 @@ export class TaxRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerGroup',
       
         label: 'Customer Group',
@@ -261,7 +273,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Customer Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplierGroup',
       
         label: 'Supplier Group',
@@ -271,7 +286,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Supplier Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemGroup',
       
         label: 'Item Group',
@@ -281,7 +299,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Item Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingCity',
       
         label: 'Shipping City',
@@ -291,7 +312,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Shipping City',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingCounty',
       
         label: 'Shipping County',
@@ -301,7 +325,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Shipping County',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingState',
       
         label: 'Shipping State',
@@ -311,7 +338,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Shipping State',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingZipcode',
       
         label: 'Shipping Zipcode',
@@ -321,7 +351,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Shipping Zipcode',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingCountry',
       
         label: 'Shipping Country',
@@ -331,7 +364,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Shipping Country',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'validity',
       
         label: 'Validity',
@@ -341,7 +377,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Validity',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -351,7 +390,10 @@ export class TaxRule extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -361,7 +403,10 @@ export class TaxRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -371,7 +416,10 @@ export class TaxRule extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -381,7 +429,10 @@ export class TaxRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priority',
       
         label: 'Priority',
@@ -391,7 +442,10 @@ export class TaxRule extends Model {
         placeholder: 'Input Priority',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -401,7 +455,10 @@ export class TaxRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -411,7 +468,9 @@ export class TaxRule extends Model {
         placeholder: 'Input Company',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

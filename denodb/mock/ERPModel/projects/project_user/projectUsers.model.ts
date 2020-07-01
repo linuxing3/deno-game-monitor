@@ -21,23 +21,12 @@ export class ProjectUser extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     user: DataTypes.STRING,
-    
     email: DataTypes.STRING,
-    
     image: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     fullName: DataTypes.STRING,
-    
     welcomeEmailSent: DataTypes.STRING,
-    
     viewAttachments: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     projectStatus: DataTypes.STRING,
     
   };
@@ -46,6 +35,7 @@ export class ProjectUser extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'user',
       
         label: 'User',
@@ -55,7 +45,10 @@ export class ProjectUser extends Model {
         placeholder: 'Input User',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'email',
       
         label: 'Email',
@@ -65,7 +58,10 @@ export class ProjectUser extends Model {
         placeholder: 'Input Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'image',
       
         label: 'Image',
@@ -75,7 +71,10 @@ export class ProjectUser extends Model {
         placeholder: 'Input Image',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -85,7 +84,10 @@ export class ProjectUser extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fullName',
       
         label: 'Full Name',
@@ -95,7 +97,10 @@ export class ProjectUser extends Model {
         placeholder: 'Input Full Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'welcomeEmailSent',
       
         label: 'Welcome Email Sent',
@@ -105,7 +110,10 @@ export class ProjectUser extends Model {
         placeholder: 'Input Welcome Email Sent',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'viewAttachments',
       
         label: 'View Attachments',
@@ -115,7 +123,10 @@ export class ProjectUser extends Model {
         placeholder: 'Input View Attachments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -125,7 +136,10 @@ export class ProjectUser extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'projectStatus',
       
         label: 'Project Status',
@@ -135,7 +149,9 @@ export class ProjectUser extends Model {
         placeholder: 'Input Project Status',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

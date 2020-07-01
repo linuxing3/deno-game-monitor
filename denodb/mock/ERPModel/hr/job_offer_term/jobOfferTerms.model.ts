@@ -21,11 +21,7 @@ export class JobOfferTerm extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     offerTerm: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     valueDescription: DataTypes.STRING,
     
   };
@@ -34,6 +30,7 @@ export class JobOfferTerm extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'offerTerm',
       
         label: 'Offer Term',
@@ -43,7 +40,10 @@ export class JobOfferTerm extends Model {
         placeholder: 'Input Offer Term',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -53,7 +53,10 @@ export class JobOfferTerm extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'valueDescription',
       
         label: 'Value Description',
@@ -63,7 +66,9 @@ export class JobOfferTerm extends Model {
         placeholder: 'Input Value Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

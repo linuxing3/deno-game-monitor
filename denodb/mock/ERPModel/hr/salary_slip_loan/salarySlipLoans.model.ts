@@ -21,19 +21,11 @@ export class SalarySlipLoan extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     loan: DataTypes.STRING,
-    
     loanAccount: DataTypes.STRING,
-    
     interestIncomeAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     principalAmount: DataTypes.STRING,
-    
     interestAmount: DataTypes.STRING,
-    
     totalPayment: DataTypes.STRING,
     
   };
@@ -42,6 +34,7 @@ export class SalarySlipLoan extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'loan',
       
         label: 'Loan',
@@ -51,7 +44,10 @@ export class SalarySlipLoan extends Model {
         placeholder: 'Input Loan',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanAccount',
       
         label: 'Loan Account',
@@ -61,7 +57,10 @@ export class SalarySlipLoan extends Model {
         placeholder: 'Input Loan Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'interestIncomeAccount',
       
         label: 'Interest Income Account',
@@ -71,7 +70,10 @@ export class SalarySlipLoan extends Model {
         placeholder: 'Input Interest Income Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -81,7 +83,10 @@ export class SalarySlipLoan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'principalAmount',
       
         label: 'Principal Amount',
@@ -91,7 +96,10 @@ export class SalarySlipLoan extends Model {
         placeholder: 'Input Principal Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'interestAmount',
       
         label: 'Interest Amount',
@@ -101,7 +109,10 @@ export class SalarySlipLoan extends Model {
         placeholder: 'Input Interest Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalPayment',
       
         label: 'Total Payment',
@@ -111,7 +122,9 @@ export class SalarySlipLoan extends Model {
         placeholder: 'Input Total Payment',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

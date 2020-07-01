@@ -21,35 +21,17 @@ export class BankStatementTransactionPaymentItem extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     transactionDate: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     referenceType: DataTypes.STRING,
-    
     account: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     outstandingAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     referenceName: DataTypes.STRING,
-    
     paymentReference: DataTypes.STRING,
-    
     invoices: DataTypes.STRING,
     
   };
@@ -58,6 +40,7 @@ export class BankStatementTransactionPaymentItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'transactionDate',
       
         label: 'Transaction Date',
@@ -67,7 +50,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Transaction Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -77,7 +63,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -87,7 +76,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -97,7 +89,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -107,7 +102,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Party Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -117,7 +115,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -127,7 +128,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceType',
       
         label: 'Reference Type',
@@ -137,7 +141,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Reference Type',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -147,7 +154,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -157,7 +167,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'outstandingAmount',
       
         label: 'Outstanding Amount',
@@ -167,7 +180,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Outstanding Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -177,7 +193,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceName',
       
         label: 'Reference Name',
@@ -187,7 +206,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Reference Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentReference',
       
         label: 'Payment Reference',
@@ -197,7 +219,10 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Payment Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoices',
       
         label: 'Invoices',
@@ -207,7 +232,9 @@ export class BankStatementTransactionPaymentItem extends Model {
         placeholder: 'Input Invoices',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

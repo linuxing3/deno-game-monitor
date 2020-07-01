@@ -21,21 +21,12 @@ export class AssetFinanceBook extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     financeBook: DataTypes.STRING,
-    
     depreciationMethod: DataTypes.STRING,
-    
     totalNumberOfDepreciations: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     frequencyOfDepreciationMonths: DataTypes.STRING,
-    
     depreciationStartDate: DataTypes.STRING,
-    
     expectedValueAfterUsefulLife: DataTypes.STRING,
-    
     valueAfterDepreciation: DataTypes.STRING,
     
   };
@@ -44,6 +35,7 @@ export class AssetFinanceBook extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'financeBook',
       
         label: 'Finance Book',
@@ -53,7 +45,10 @@ export class AssetFinanceBook extends Model {
         placeholder: 'Input Finance Book',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciationMethod',
       
         label: 'Depreciation Method',
@@ -63,7 +58,10 @@ export class AssetFinanceBook extends Model {
         placeholder: 'Input Depreciation Method',
       
         options: '[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'totalNumberOfDepreciations',
       
         label: 'Total Number Of Depreciations',
@@ -73,7 +71,10 @@ export class AssetFinanceBook extends Model {
         placeholder: 'Input Total Number Of Depreciations',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -83,7 +84,10 @@ export class AssetFinanceBook extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'frequencyOfDepreciationMonths',
       
         label: 'Frequency Of Depreciation Months',
@@ -93,7 +97,10 @@ export class AssetFinanceBook extends Model {
         placeholder: 'Input Frequency Of Depreciation Months',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciationStartDate',
       
         label: 'Depreciation Start Date',
@@ -103,7 +110,10 @@ export class AssetFinanceBook extends Model {
         placeholder: 'Input Depreciation Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expectedValueAfterUsefulLife',
       
         label: 'Expected Value After Useful Life',
@@ -113,7 +123,10 @@ export class AssetFinanceBook extends Model {
         placeholder: 'Input Expected Value After Useful Life',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'valueAfterDepreciation',
       
         label: 'Value After Depreciation',
@@ -123,7 +136,9 @@ export class AssetFinanceBook extends Model {
         placeholder: 'Input Value After Depreciation',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

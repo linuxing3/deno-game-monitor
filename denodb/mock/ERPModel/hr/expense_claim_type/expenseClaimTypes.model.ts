@@ -21,11 +21,8 @@ export class ExpenseClaimType extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     expenseClaimType: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class ExpenseClaimType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'expenseClaimType',
       
         label: 'Expense Claim Type',
@@ -43,7 +41,10 @@ export class ExpenseClaimType extends Model {
         placeholder: 'Input Expense Claim Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -53,7 +54,10 @@ export class ExpenseClaimType extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -63,7 +67,9 @@ export class ExpenseClaimType extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,7 +21,6 @@ export class PosItemGroup extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     itemGroup: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class PosItemGroup extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'itemGroup',
       
         label: 'Item Group',
@@ -39,7 +39,9 @@ export class PosItemGroup extends Model {
         placeholder: 'Input Item Group',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

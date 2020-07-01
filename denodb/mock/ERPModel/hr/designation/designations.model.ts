@@ -21,9 +21,7 @@ export class Designation extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     designation: DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class Designation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -41,7 +40,10 @@ export class Designation extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -51,7 +53,9 @@ export class Designation extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,57 +21,25 @@ export class TrainingEvent extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     eventName: DataTypes.STRING,
-    
     trainingProgram: DataTypes.STRING,
-    
     eventStatus: DataTypes.STRING,
-    
     hasCertificate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     type: DataTypes.STRING,
-    
     level: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     trainerName: DataTypes.STRING,
-    
     trainerEmail: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     contactNumber: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     course: DataTypes.STRING,
-    
     location: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     startTime: DataTypes.STRING,
-    
     endTime: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     introduction: DataTypes.STRING,
-    
     attendees: DataTypes.STRING,
-    
     employees: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     employeeEmails: DataTypes.STRING,
     
   };
@@ -80,6 +48,7 @@ export class TrainingEvent extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'eventName',
       
         label: 'Event Name',
@@ -89,7 +58,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Event Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trainingProgram',
       
         label: 'Training Program',
@@ -99,7 +71,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Training Program',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'eventStatus',
       
         label: 'Event Status',
@@ -109,7 +84,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Event Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'hasCertificate',
       
         label: 'Has Certificate',
@@ -119,7 +97,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Has Certificate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -129,7 +110,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'type',
       
         label: 'Type',
@@ -139,7 +123,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Type',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'level',
       
         label: 'Level',
@@ -149,7 +136,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Level',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -159,7 +149,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -169,7 +162,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trainerName',
       
         label: 'Trainer Name',
@@ -179,7 +175,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Trainer Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trainerEmail',
       
         label: 'Trainer Email',
@@ -189,7 +188,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Trainer Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -199,7 +201,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -209,7 +214,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactNumber',
       
         label: 'Contact Number',
@@ -219,7 +227,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Contact Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -229,7 +240,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'course',
       
         label: 'Course',
@@ -239,7 +253,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Course',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'location',
       
         label: 'Location',
@@ -249,7 +266,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -259,7 +279,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startTime',
       
         label: 'Start Time',
@@ -269,7 +292,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Start Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endTime',
       
         label: 'End Time',
@@ -279,7 +305,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input End Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -289,7 +318,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'introduction',
       
         label: 'Introduction',
@@ -299,7 +331,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Introduction',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'attendees',
       
         label: 'Attendees',
@@ -309,7 +344,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Attendees',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employees',
       
         label: 'Employees',
@@ -319,7 +357,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Employees',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -329,7 +370,10 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeEmails',
       
         label: 'Employee Emails',
@@ -339,7 +383,9 @@ export class TrainingEvent extends Model {
         placeholder: 'Input Employee Emails',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

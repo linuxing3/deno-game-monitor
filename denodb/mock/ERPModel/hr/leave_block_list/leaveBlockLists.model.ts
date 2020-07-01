@@ -21,19 +21,12 @@ export class LeaveBlockList extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     leaveBlockListName: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     appliesToCompany: DataTypes.STRING,
-    
     blockDays: DataTypes.STRING,
-    
     leaveBlockListDates: DataTypes.STRING,
-    
     allowUsers: DataTypes.STRING,
-    
     leaveBlockListAllowed: DataTypes.STRING,
     
   };
@@ -42,6 +35,7 @@ export class LeaveBlockList extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'leaveBlockListName',
       
         label: 'Leave Block List Name',
@@ -51,7 +45,10 @@ export class LeaveBlockList extends Model {
         placeholder: 'Input Leave Block List Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -61,7 +58,10 @@ export class LeaveBlockList extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'appliesToCompany',
       
         label: 'Applies To Company',
@@ -71,7 +71,10 @@ export class LeaveBlockList extends Model {
         placeholder: 'Input Applies To Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'blockDays',
       
         label: 'Block Days',
@@ -81,7 +84,10 @@ export class LeaveBlockList extends Model {
         placeholder: 'Input Block Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveBlockListDates',
       
         label: 'Leave Block List Dates',
@@ -91,7 +97,10 @@ export class LeaveBlockList extends Model {
         placeholder: 'Input Leave Block List Dates',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allowUsers',
       
         label: 'Allow Users',
@@ -101,7 +110,10 @@ export class LeaveBlockList extends Model {
         placeholder: 'Input Allow Users',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveBlockListAllowed',
       
         label: 'Leave Block List Allowed',
@@ -111,7 +123,9 @@ export class LeaveBlockList extends Model {
         placeholder: 'Input Leave Block List Allowed',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

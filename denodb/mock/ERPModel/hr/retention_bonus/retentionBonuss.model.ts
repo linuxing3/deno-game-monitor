@@ -21,23 +21,13 @@ export class RetentionBonus extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     bonusPaymentDate: DataTypes.STRING,
-    
     bonusAmount: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     dateOfJoining: DataTypes.STRING,
     
   };
@@ -46,6 +36,7 @@ export class RetentionBonus extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -55,7 +46,10 @@ export class RetentionBonus extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -65,7 +59,10 @@ export class RetentionBonus extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bonusPaymentDate',
       
         label: 'Bonus Payment Date',
@@ -75,7 +72,10 @@ export class RetentionBonus extends Model {
         placeholder: 'Input Bonus Payment Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bonusAmount',
       
         label: 'Bonus Amount',
@@ -85,7 +85,10 @@ export class RetentionBonus extends Model {
         placeholder: 'Input Bonus Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -95,7 +98,10 @@ export class RetentionBonus extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -105,7 +111,10 @@ export class RetentionBonus extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -115,7 +124,10 @@ export class RetentionBonus extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -125,7 +137,10 @@ export class RetentionBonus extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateOfJoining',
       
         label: 'Date Of Joining',
@@ -135,7 +150,9 @@ export class RetentionBonus extends Model {
         placeholder: 'Input Date Of Joining',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,9 +21,7 @@ export class BudgetAccount extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     account: DataTypes.STRING,
-    
     budgetAmount: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class BudgetAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'account',
       
         label: 'Account',
@@ -41,7 +40,10 @@ export class BudgetAccount extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'budgetAmount',
       
         label: 'Budget Amount',
@@ -51,7 +53,9 @@ export class BudgetAccount extends Model {
         placeholder: 'Input Budget Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

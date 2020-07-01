@@ -21,25 +21,15 @@ export class BankReconciliation extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     bankAccount: DataTypes.STRING,
-    
     accountCurrency: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
     includeReconciledEntries: DataTypes.STRING,
-    
     includePosTransactions: DataTypes.STRING,
-    
     getPaymentEntries: DataTypes.STRING,
-    
     paymentEntries: DataTypes.STRING,
-    
     updateClearanceDate: DataTypes.STRING,
-    
     totalAmount: DataTypes.STRING,
     
   };
@@ -48,6 +38,7 @@ export class BankReconciliation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'bankAccount',
       
         label: 'Bank Account',
@@ -57,7 +48,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountCurrency',
       
         label: 'Account Currency',
@@ -67,7 +61,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -77,7 +74,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -87,7 +87,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'includeReconciledEntries',
       
         label: 'Include Reconciled Entries',
@@ -97,7 +100,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input Include Reconciled Entries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'includePosTransactions',
       
         label: 'Include Pos Transactions',
@@ -107,7 +113,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input Include Pos Transactions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'getPaymentEntries',
       
         label: 'Get Payment Entries',
@@ -117,7 +126,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input Get Payment Entries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentEntries',
       
         label: 'Payment Entries',
@@ -127,7 +139,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input Payment Entries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'updateClearanceDate',
       
         label: 'Update Clearance Date',
@@ -137,7 +152,10 @@ export class BankReconciliation extends Model {
         placeholder: 'Input Update Clearance Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmount',
       
         label: 'Total Amount',
@@ -147,7 +165,9 @@ export class BankReconciliation extends Model {
         placeholder: 'Input Total Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

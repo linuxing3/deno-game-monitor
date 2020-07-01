@@ -21,13 +21,9 @@ export class BankStatementTransactionSettingsItem extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     mappingType: DataTypes.STRING,
-    
     bankData: DataTypes.STRING,
-    
     mappedDataType: DataTypes.STRING,
-    
     mappedData: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class BankStatementTransactionSettingsItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'mappingType',
       
         label: 'Mapping Type',
@@ -45,7 +42,10 @@ export class BankStatementTransactionSettingsItem extends Model {
         placeholder: 'Input Mapping Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankData',
       
         label: 'Bank Data',
@@ -55,7 +55,10 @@ export class BankStatementTransactionSettingsItem extends Model {
         placeholder: 'Input Bank Data',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'mappedDataType',
       
         label: 'Mapped Data Type',
@@ -65,7 +68,10 @@ export class BankStatementTransactionSettingsItem extends Model {
         placeholder: 'Input Mapped Data Type',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'mappedData',
       
         label: 'Mapped Data',
@@ -75,7 +81,9 @@ export class BankStatementTransactionSettingsItem extends Model {
         placeholder: 'Input Mapped Data',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

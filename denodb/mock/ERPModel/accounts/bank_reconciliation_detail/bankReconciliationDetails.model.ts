@@ -21,23 +21,13 @@ export class BankReconciliationDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     paymentDocument: DataTypes.STRING,
-    
     paymentEntry: DataTypes.STRING,
-    
     againstAccount: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     chequeNumber: DataTypes.STRING,
-    
     chequeDate: DataTypes.STRING,
-    
     clearanceDate: DataTypes.STRING,
     
   };
@@ -46,6 +36,7 @@ export class BankReconciliationDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'paymentDocument',
       
         label: 'Payment Document',
@@ -55,7 +46,10 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input Payment Document',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentEntry',
       
         label: 'Payment Entry',
@@ -65,7 +59,10 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input Payment Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'againstAccount',
       
         label: 'Against Account',
@@ -75,7 +72,10 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input Against Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -85,7 +85,10 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -95,7 +98,10 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -105,7 +111,10 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chequeNumber',
       
         label: 'Cheque Number',
@@ -115,7 +124,10 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input Cheque Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chequeDate',
       
         label: 'Cheque Date',
@@ -125,7 +137,10 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input Cheque Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'clearanceDate',
       
         label: 'Clearance Date',
@@ -135,7 +150,9 @@ export class BankReconciliationDetail extends Model {
         placeholder: 'Input Clearance Date',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

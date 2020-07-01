@@ -21,43 +21,22 @@ export class LoyaltyProgram extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     loyaltyProgramName: DataTypes.STRING,
-    
     loyaltyProgramType: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     customerGroup: DataTypes.STRING,
-    
     customerTerritory: DataTypes.STRING,
-    
     autoOptInForAllCustomers: DataTypes.STRING,
-    
     collectionTier: DataTypes.STRING,
-    
     collectionRules: DataTypes.STRING,
-    
     redemption: DataTypes.STRING,
-    
     conversionFactor: DataTypes.STRING,
-    
     expiryDurationInDays: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     expenseAccount: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     helpSection: DataTypes.STRING,
-    
     loyaltyProgramHelp: DataTypes.STRING,
     
   };
@@ -66,6 +45,7 @@ export class LoyaltyProgram extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'loyaltyProgramName',
       
         label: 'Loyalty Program Name',
@@ -75,7 +55,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Loyalty Program Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loyaltyProgramType',
       
         label: 'Loyalty Program Type',
@@ -85,7 +68,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Loyalty Program Type',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -95,7 +81,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -105,7 +94,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -115,7 +107,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerGroup',
       
         label: 'Customer Group',
@@ -125,7 +120,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Customer Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerTerritory',
       
         label: 'Customer Territory',
@@ -135,7 +133,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Customer Territory',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'autoOptInForAllCustomers',
       
         label: 'Auto Opt In For All Customers',
@@ -145,7 +146,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Auto Opt In For All Customers',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'collectionTier',
       
         label: 'Collection Tier',
@@ -155,7 +159,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Collection Tier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'collectionRules',
       
         label: 'Collection Rules',
@@ -165,7 +172,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Collection Rules',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'redemption',
       
         label: 'Redemption',
@@ -175,7 +185,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Redemption',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'conversionFactor',
       
         label: 'Conversion Factor',
@@ -185,7 +198,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Conversion Factor',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expiryDurationInDays',
       
         label: 'Expiry Duration In Days',
@@ -195,7 +211,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Expiry Duration In Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -205,7 +224,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseAccount',
       
         label: 'Expense Account',
@@ -215,7 +237,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Expense Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -225,7 +250,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -235,7 +263,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'helpSection',
       
         label: 'Help Section',
@@ -245,7 +276,10 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Help Section',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loyaltyProgramHelp',
       
         label: 'Loyalty Program Help',
@@ -255,7 +289,9 @@ export class LoyaltyProgram extends Model {
         placeholder: 'Input Loyalty Program Help',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

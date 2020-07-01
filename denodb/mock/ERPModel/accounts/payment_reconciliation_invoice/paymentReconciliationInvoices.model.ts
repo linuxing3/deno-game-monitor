@@ -21,17 +21,10 @@ export class PaymentReconciliationInvoice extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     invoiceType: DataTypes.STRING,
-    
     invoiceNumber: DataTypes.STRING,
-    
     invoiceDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     outstandingAmount: DataTypes.STRING,
     
   };
@@ -40,6 +33,7 @@ export class PaymentReconciliationInvoice extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'invoiceType',
       
         label: 'Invoice Type',
@@ -49,7 +43,10 @@ export class PaymentReconciliationInvoice extends Model {
         placeholder: 'Input Invoice Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'invoiceNumber',
       
         label: 'Invoice Number',
@@ -59,7 +56,10 @@ export class PaymentReconciliationInvoice extends Model {
         placeholder: 'Input Invoice Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoiceDate',
       
         label: 'Invoice Date',
@@ -69,7 +69,10 @@ export class PaymentReconciliationInvoice extends Model {
         placeholder: 'Input Invoice Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -79,7 +82,10 @@ export class PaymentReconciliationInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -89,7 +95,10 @@ export class PaymentReconciliationInvoice extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'outstandingAmount',
       
         label: 'Outstanding Amount',
@@ -99,7 +108,9 @@ export class PaymentReconciliationInvoice extends Model {
         placeholder: 'Input Outstanding Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

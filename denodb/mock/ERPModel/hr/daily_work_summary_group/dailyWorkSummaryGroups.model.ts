@@ -21,21 +21,13 @@ export class DailyWorkSummaryGroup extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     enabled: DataTypes.STRING,
-    
     selectUsers: DataTypes.STRING,
-    
     users: DataTypes.STRING,
-    
     sendEmailsAt: DataTypes.STRING,
-    
     holidayList: DataTypes.STRING,
-    
     reminder: DataTypes.STRING,
-    
     subject: DataTypes.STRING,
-    
     message: DataTypes.STRING,
     
   };
@@ -44,6 +36,7 @@ export class DailyWorkSummaryGroup extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'enabled',
       
         label: 'Enabled',
@@ -53,7 +46,10 @@ export class DailyWorkSummaryGroup extends Model {
         placeholder: 'Input Enabled',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selectUsers',
       
         label: 'Select Users',
@@ -63,7 +59,10 @@ export class DailyWorkSummaryGroup extends Model {
         placeholder: 'Input Select Users',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'users',
       
         label: 'Users',
@@ -73,7 +72,10 @@ export class DailyWorkSummaryGroup extends Model {
         placeholder: 'Input Users',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sendEmailsAt',
       
         label: 'Send Emails At',
@@ -83,7 +85,10 @@ export class DailyWorkSummaryGroup extends Model {
         placeholder: 'Input Send Emails At',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'holidayList',
       
         label: 'Holiday List',
@@ -93,7 +98,10 @@ export class DailyWorkSummaryGroup extends Model {
         placeholder: 'Input Holiday List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reminder',
       
         label: 'Reminder',
@@ -103,7 +111,10 @@ export class DailyWorkSummaryGroup extends Model {
         placeholder: 'Input Reminder',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subject',
       
         label: 'Subject',
@@ -113,7 +124,10 @@ export class DailyWorkSummaryGroup extends Model {
         placeholder: 'Input Subject',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'message',
       
         label: 'Message',
@@ -123,7 +137,9 @@ export class DailyWorkSummaryGroup extends Model {
         placeholder: 'Input Message',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

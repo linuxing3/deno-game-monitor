@@ -21,23 +21,13 @@ export class PaymentEntryReference extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     type: DataTypes.STRING,
-    
     name: DataTypes.STRING,
-    
     dueDate: DataTypes.STRING,
-    
     supplierInvoiceNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalAmount: DataTypes.STRING,
-    
     outstanding: DataTypes.STRING,
-    
     allocated: DataTypes.STRING,
-    
     exchangeRate: DataTypes.STRING,
     
   };
@@ -46,6 +36,7 @@ export class PaymentEntryReference extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'type',
       
         label: 'Type',
@@ -55,7 +46,10 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'name',
       
         label: 'Name',
@@ -65,7 +59,10 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dueDate',
       
         label: 'Due Date',
@@ -75,7 +72,10 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplierInvoiceNo',
       
         label: 'Supplier Invoice No',
@@ -85,7 +85,10 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input Supplier Invoice No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -95,7 +98,10 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmount',
       
         label: 'Total Amount',
@@ -105,7 +111,10 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input Total Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'outstanding',
       
         label: 'Outstanding',
@@ -115,7 +124,10 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input Outstanding',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocated',
       
         label: 'Allocated',
@@ -125,7 +137,10 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input Allocated',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exchangeRate',
       
         label: 'Exchange Rate',
@@ -135,7 +150,9 @@ export class PaymentEntryReference extends Model {
         placeholder: 'Input Exchange Rate',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

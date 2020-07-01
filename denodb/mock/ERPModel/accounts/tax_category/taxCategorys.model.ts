@@ -21,7 +21,6 @@ export class TaxCategory extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     title: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class TaxCategory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'title',
       
         label: 'Title',
@@ -39,7 +39,9 @@ export class TaxCategory extends Model {
         placeholder: 'Input Title',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

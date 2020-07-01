@@ -21,27 +21,13 @@ export class OpeningInvoiceCreationToolItem extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
     temporaryOpeningAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     dueDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     itemName: DataTypes.STRING,
-    
     outstandingAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     quantity: DataTypes.STRING,
     
   };
@@ -50,6 +36,7 @@ export class OpeningInvoiceCreationToolItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -59,7 +46,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input Party Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -69,7 +59,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'temporaryOpeningAccount',
       
         label: 'Temporary Opening Account',
@@ -79,7 +72,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input Temporary Opening Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -89,7 +85,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -99,7 +98,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dueDate',
       
         label: 'Due Date',
@@ -109,7 +111,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -119,7 +124,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemName',
       
         label: 'Item Name',
@@ -129,7 +137,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input Item Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'outstandingAmount',
       
         label: 'Outstanding Amount',
@@ -139,7 +150,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input Outstanding Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -149,7 +163,10 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'quantity',
       
         label: 'Quantity',
@@ -159,7 +176,9 @@ export class OpeningInvoiceCreationToolItem extends Model {
         placeholder: 'Input Quantity',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

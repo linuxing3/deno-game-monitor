@@ -21,47 +21,24 @@ export class AccountsSettings extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     makeAccountingEntryForEveryStockMovement: DataTypes.STRING,
-    
     accountsFrozenUpto: DataTypes.STRING,
-    
     roleAllowedToSetFrozenAccountsEditFrozenEntries: DataTypes.STRING,
-    
     determineAddressTaxCategoryFrom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     creditController: DataTypes.STRING,
-    
     checkSupplierInvoiceNumberUniqueness: DataTypes.STRING,
-    
     makePaymentViaJournalEntry: DataTypes.STRING,
-    
     unlinkPaymentOnCancellationOfInvoice: DataTypes.STRING,
-    
     bookAssetDepreciationEntryAutomatically: DataTypes.STRING,
-    
     allowCostCenterInEntryOfBalanceSheetAccount: DataTypes.STRING,
-    
     automaticallyAddTaxesAndChargesFromItemTaxTemplate: DataTypes.STRING,
-    
     printSettings: DataTypes.STRING,
-    
     showInclusiveTaxInPrint: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     showPaymentScheduleInPrint: DataTypes.STRING,
-    
     currencyExchangeSettings: DataTypes.STRING,
-    
     allowStaleExchangeRates: DataTypes.STRING,
-    
     staleDays: DataTypes.STRING,
-    
     reportSettings: DataTypes.STRING,
-    
     useCustomCashFlowFormat: DataTypes.STRING,
     
   };
@@ -70,6 +47,7 @@ export class AccountsSettings extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'makeAccountingEntryForEveryStockMovement',
       
         label: 'Make Accounting Entry For Every Stock Movement',
@@ -79,7 +57,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Make Accounting Entry For Every Stock Movement',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountsFrozenUpto',
       
         label: 'Accounts Frozen Upto',
@@ -89,7 +70,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Accounts Frozen Upto',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roleAllowedToSetFrozenAccountsEditFrozenEntries',
       
         label: 'Role Allowed To Set Frozen Accounts Edit Frozen Entries',
@@ -99,7 +83,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Role Allowed To Set Frozen Accounts Edit Frozen Entries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'determineAddressTaxCategoryFrom',
       
         label: 'Determine Address Tax Category From',
@@ -109,7 +96,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Determine Address Tax Category From',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -119,7 +109,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'creditController',
       
         label: 'Credit Controller',
@@ -129,7 +122,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Credit Controller',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'checkSupplierInvoiceNumberUniqueness',
       
         label: 'Check Supplier Invoice Number Uniqueness',
@@ -139,7 +135,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Check Supplier Invoice Number Uniqueness',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'makePaymentViaJournalEntry',
       
         label: 'Make Payment Via Journal Entry',
@@ -149,7 +148,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Make Payment Via Journal Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'unlinkPaymentOnCancellationOfInvoice',
       
         label: 'Unlink Payment On Cancellation Of Invoice',
@@ -159,7 +161,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Unlink Payment On Cancellation Of Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bookAssetDepreciationEntryAutomatically',
       
         label: 'Book Asset Depreciation Entry Automatically',
@@ -169,7 +174,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Book Asset Depreciation Entry Automatically',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allowCostCenterInEntryOfBalanceSheetAccount',
       
         label: 'Allow Cost Center In Entry Of Balance Sheet Account',
@@ -179,7 +187,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Allow Cost Center In Entry Of Balance Sheet Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'automaticallyAddTaxesAndChargesFromItemTaxTemplate',
       
         label: 'Automatically Add Taxes And Charges From Item Tax Template',
@@ -189,7 +200,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Automatically Add Taxes And Charges From Item Tax Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printSettings',
       
         label: 'Print Settings',
@@ -199,7 +213,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Print Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'showInclusiveTaxInPrint',
       
         label: 'Show Inclusive Tax In Print',
@@ -209,7 +226,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Show Inclusive Tax In Print',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -219,7 +239,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'showPaymentScheduleInPrint',
       
         label: 'Show Payment Schedule In Print',
@@ -229,7 +252,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Show Payment Schedule In Print',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currencyExchangeSettings',
       
         label: 'Currency Exchange Settings',
@@ -239,7 +265,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Currency Exchange Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allowStaleExchangeRates',
       
         label: 'Allow Stale Exchange Rates',
@@ -249,7 +278,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Allow Stale Exchange Rates',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'staleDays',
       
         label: 'Stale Days',
@@ -259,7 +291,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Stale Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reportSettings',
       
         label: 'Report Settings',
@@ -269,7 +304,10 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Report Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'useCustomCashFlowFormat',
       
         label: 'Use Custom Cash Flow Format',
@@ -279,7 +317,9 @@ export class AccountsSettings extends Model {
         placeholder: 'Input Use Custom Cash Flow Format',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

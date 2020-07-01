@@ -21,11 +21,8 @@ export class ModeOfPayment extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     modeOfPayment: DataTypes.STRING,
-    
     type: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class ModeOfPayment extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -43,7 +41,10 @@ export class ModeOfPayment extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'type',
       
         label: 'Type',
@@ -53,7 +54,10 @@ export class ModeOfPayment extends Model {
         placeholder: 'Input Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -63,7 +67,9 @@ export class ModeOfPayment extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,9 +21,7 @@ export class PaymentTermsTemplate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     templateName: DataTypes.STRING,
-    
     paymentTerms: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class PaymentTermsTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'templateName',
       
         label: 'Template Name',
@@ -41,7 +40,10 @@ export class PaymentTermsTemplate extends Model {
         placeholder: 'Input Template Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentTerms',
       
         label: 'Payment Terms',
@@ -51,7 +53,9 @@ export class PaymentTermsTemplate extends Model {
         placeholder: 'Input Payment Terms',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

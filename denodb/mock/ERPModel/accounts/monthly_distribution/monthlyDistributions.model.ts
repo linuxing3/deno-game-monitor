@@ -21,11 +21,8 @@ export class MonthlyDistribution extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     distributionName: DataTypes.STRING,
-    
     fiscalYear: DataTypes.STRING,
-    
     monthlyDistributionPercentages: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class MonthlyDistribution extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'distributionName',
       
         label: 'Distribution Name',
@@ -43,7 +41,10 @@ export class MonthlyDistribution extends Model {
         placeholder: 'Input Distribution Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fiscalYear',
       
         label: 'Fiscal Year',
@@ -53,7 +54,10 @@ export class MonthlyDistribution extends Model {
         placeholder: 'Input Fiscal Year',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'monthlyDistributionPercentages',
       
         label: 'Monthly Distribution Percentages',
@@ -63,7 +67,9 @@ export class MonthlyDistribution extends Model {
         placeholder: 'Input Monthly Distribution Percentages',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

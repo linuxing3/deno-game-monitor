@@ -21,9 +21,7 @@ export class BankStatementSettingsItem extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     mappedHeader: DataTypes.STRING,
-    
     bankHeader: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class BankStatementSettingsItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'mappedHeader',
       
         label: 'Mapped Header',
@@ -41,7 +40,10 @@ export class BankStatementSettingsItem extends Model {
         placeholder: 'Input Mapped Header',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankHeader',
       
         label: 'Bank Header',
@@ -51,7 +53,9 @@ export class BankStatementSettingsItem extends Model {
         placeholder: 'Input Bank Header',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

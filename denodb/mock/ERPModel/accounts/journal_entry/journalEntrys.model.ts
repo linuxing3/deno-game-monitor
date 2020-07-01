@@ -21,107 +21,47 @@ export class JournalEntry extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
-    : DataTypes.STRING,
-    
     title: DataTypes.STRING,
-    
     entryType: DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     financeBook: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     accountingEntries: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     referenceNumber: DataTypes.STRING,
-    
     referenceDate: DataTypes.STRING,
-    
     userRemark: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalDebit: DataTypes.STRING,
-    
     totalCredit: DataTypes.STRING,
-    
     differenceDrCr: DataTypes.STRING,
-    
     makeDifferenceEntry: DataTypes.STRING,
-    
     multiCurrency: DataTypes.STRING,
-    
     totalAmountCurrency: DataTypes.STRING,
-    
     totalAmount: DataTypes.STRING,
-    
     totalAmountInWords: DataTypes.STRING,
-    
     reference: DataTypes.STRING,
-    
     clearanceDate: DataTypes.STRING,
-    
     remark: DataTypes.STRING,
-    
     paidLoan: DataTypes.STRING,
-    
     interCompanyJournalEntryReference: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     billNo: DataTypes.STRING,
-    
     billDate: DataTypes.STRING,
-    
     dueDate: DataTypes.STRING,
-    
     writeOff: DataTypes.STRING,
-    
     writeOffBasedOn: DataTypes.STRING,
-    
     getOutstandingInvoices: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     writeOffAmount: DataTypes.STRING,
-    
     printingSettings: DataTypes.STRING,
-    
     payToRecdFrom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
     printHeading: DataTypes.STRING,
-    
     moreInformation: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     paymentOrder: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isOpening: DataTypes.STRING,
-    
     stockEntry: DataTypes.STRING,
-    
     subscriptionSection: DataTypes.STRING,
-    
     autoRepeat: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -130,6 +70,7 @@ export class JournalEntry extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: '',
       
         label: '',
@@ -139,7 +80,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'title',
       
         label: 'Title',
@@ -149,7 +93,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'entryType',
       
         label: 'Entry Type',
@@ -159,7 +106,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Entry Type',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -169,7 +119,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -179,7 +132,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -189,7 +145,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -199,7 +158,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'financeBook',
       
         label: 'Finance Book',
@@ -209,7 +171,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Finance Book',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -219,7 +184,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountingEntries',
       
         label: 'Accounting Entries',
@@ -229,7 +197,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Accounting Entries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -239,7 +210,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceNumber',
       
         label: 'Reference Number',
@@ -249,7 +223,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Reference Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceDate',
       
         label: 'Reference Date',
@@ -259,7 +236,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Reference Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'userRemark',
       
         label: 'User Remark',
@@ -269,7 +249,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input User Remark',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -279,7 +262,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalDebit',
       
         label: 'Total Debit',
@@ -289,7 +275,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Total Debit',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalCredit',
       
         label: 'Total Credit',
@@ -299,7 +288,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Total Credit',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'differenceDrCr',
       
         label: 'Difference Dr Cr',
@@ -309,7 +301,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Difference Dr Cr',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'makeDifferenceEntry',
       
         label: 'Make Difference Entry',
@@ -319,7 +314,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Make Difference Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'multiCurrency',
       
         label: 'Multi Currency',
@@ -329,7 +327,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Multi Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmountCurrency',
       
         label: 'Total Amount Currency',
@@ -339,7 +340,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Total Amount Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmount',
       
         label: 'Total Amount',
@@ -349,7 +353,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Total Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmountInWords',
       
         label: 'Total Amount In Words',
@@ -359,7 +366,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Total Amount In Words',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reference',
       
         label: 'Reference',
@@ -369,7 +379,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'clearanceDate',
       
         label: 'Clearance Date',
@@ -379,7 +392,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Clearance Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remark',
       
         label: 'Remark',
@@ -389,7 +405,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Remark',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paidLoan',
       
         label: 'Paid Loan',
@@ -399,7 +418,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Paid Loan',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'interCompanyJournalEntryReference',
       
         label: 'Inter Company Journal Entry Reference',
@@ -409,7 +431,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Inter Company Journal Entry Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -419,7 +444,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billNo',
       
         label: 'Bill No',
@@ -429,7 +457,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Bill No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billDate',
       
         label: 'Bill Date',
@@ -439,7 +470,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Bill Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dueDate',
       
         label: 'Due Date',
@@ -449,7 +483,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOff',
       
         label: 'Write Off',
@@ -459,7 +496,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Write Off',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffBasedOn',
       
         label: 'Write Off Based On',
@@ -469,7 +509,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Write Off Based On',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'getOutstandingInvoices',
       
         label: 'Get Outstanding Invoices',
@@ -479,7 +522,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Get Outstanding Invoices',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -489,7 +535,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffAmount',
       
         label: 'Write Off Amount',
@@ -499,7 +548,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Write Off Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printingSettings',
       
         label: 'Printing Settings',
@@ -509,7 +561,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Printing Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payToRecdFrom',
       
         label: 'Pay To Recd From',
@@ -519,7 +574,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Pay To Recd From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -529,7 +587,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -539,7 +600,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printHeading',
       
         label: 'Print Heading',
@@ -549,7 +613,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Print Heading',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'moreInformation',
       
         label: 'More Information',
@@ -559,7 +626,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input More Information',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -569,7 +639,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentOrder',
       
         label: 'Payment Order',
@@ -579,7 +652,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Payment Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -589,7 +665,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isOpening',
       
         label: 'Is Opening',
@@ -599,7 +678,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Is Opening',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'stockEntry',
       
         label: 'Stock Entry',
@@ -609,7 +691,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Stock Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subscriptionSection',
       
         label: 'Subscription Section',
@@ -619,7 +704,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Subscription Section',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'autoRepeat',
       
         label: 'Auto Repeat',
@@ -629,7 +717,10 @@ export class JournalEntry extends Model {
         placeholder: 'Input Auto Repeat',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -639,7 +730,9 @@ export class JournalEntry extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

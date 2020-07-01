@@ -21,19 +21,11 @@ export class EmployeeOnboardingTemplate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     employeeGrade: DataTypes.STRING,
-    
     activities: DataTypes.STRING,
-    
     activities: DataTypes.STRING,
     
   };
@@ -42,6 +34,7 @@ export class EmployeeOnboardingTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -51,7 +44,10 @@ export class EmployeeOnboardingTemplate extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -61,7 +57,10 @@ export class EmployeeOnboardingTemplate extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -71,7 +70,10 @@ export class EmployeeOnboardingTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -81,7 +83,10 @@ export class EmployeeOnboardingTemplate extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeGrade',
       
         label: 'Employee Grade',
@@ -91,7 +96,10 @@ export class EmployeeOnboardingTemplate extends Model {
         placeholder: 'Input Employee Grade',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'activities',
       
         label: 'Activities',
@@ -101,7 +109,10 @@ export class EmployeeOnboardingTemplate extends Model {
         placeholder: 'Input Activities',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'activities',
       
         label: 'Activities',
@@ -111,7 +122,9 @@ export class EmployeeOnboardingTemplate extends Model {
         placeholder: 'Input Activities',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

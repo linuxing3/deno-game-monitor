@@ -21,157 +21,81 @@ export class Employee extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     salutation: DataTypes.STRING,
-    
     firstName: DataTypes.STRING,
-    
     middleName: DataTypes.STRING,
-    
     lastName: DataTypes.STRING,
-    
     fullName: DataTypes.STRING,
-    
     image: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     employeeNumber: DataTypes.STRING,
-    
     employmentType: DataTypes.STRING,
-    
     gender: DataTypes.STRING,
-    
     dateOfBirth: DataTypes.STRING,
-    
     dateOfJoining: DataTypes.STRING,
-    
     emergencyContact: DataTypes.STRING,
-    
     emergencyPhone: DataTypes.STRING,
-    
     emergencyContact: DataTypes.STRING,
-    
     relation: DataTypes.STRING,
-    
     jobApplicant: DataTypes.STRING,
-    
     offerDate: DataTypes.STRING,
-    
     confirmationDate: DataTypes.STRING,
-    
     contractEndDate: DataTypes.STRING,
-    
     noticeDays: DataTypes.STRING,
-    
     dateOfRetirement: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     reportsTo: DataTypes.STRING,
-    
     grade: DataTypes.STRING,
-    
     branch: DataTypes.STRING,
-    
     leavePolicy: DataTypes.STRING,
-    
     holidayList: DataTypes.STRING,
-    
     salaryMode: DataTypes.STRING,
-    
     bankName: DataTypes.STRING,
-    
     bankACNo: DataTypes.STRING,
-    
     healthInsurance: DataTypes.STRING,
-    
     healthInsuranceProvider: DataTypes.STRING,
-    
     healthInsuranceNo: DataTypes.STRING,
-    
     mobile: DataTypes.STRING,
-    
     preferedContactEmail: DataTypes.STRING,
-    
     preferedEmail: DataTypes.STRING,
-    
     companyEmail: DataTypes.STRING,
-    
     personalEmail: DataTypes.STRING,
-    
     unsubscribed: DataTypes.STRING,
-    
     permanentAddressIs: DataTypes.STRING,
-    
     permanentAddress: DataTypes.STRING,
-    
     currentAddressIs: DataTypes.STRING,
-    
     currentAddress: DataTypes.STRING,
-    
     bioCoverLetter: DataTypes.STRING,
-    
     passportNumber: DataTypes.STRING,
-    
     dateOfIssue: DataTypes.STRING,
-    
     validUpto: DataTypes.STRING,
-    
     placeOfIssue: DataTypes.STRING,
-    
     maritalStatus: DataTypes.STRING,
-    
     bloodGroup: DataTypes.STRING,
-    
     familyBackground: DataTypes.STRING,
-    
     healthDetails: DataTypes.STRING,
-    
     educationalQualification: DataTypes.STRING,
-    
     education: DataTypes.STRING,
-    
     previousWorkExperience: DataTypes.STRING,
-    
     externalWorkHistory: DataTypes.STRING,
-    
     historyInCompany: DataTypes.STRING,
-    
     internalWorkHistory: DataTypes.STRING,
-    
     resignationLetterDate: DataTypes.STRING,
-    
     relievingDate: DataTypes.STRING,
-    
     reasonForLeaving: DataTypes.STRING,
-    
     leaveEncashed: DataTypes.STRING,
-    
     encashmentDate: DataTypes.STRING,
-    
     exitInterviewDetails: DataTypes.STRING,
-    
     heldOn: DataTypes.STRING,
-    
     reasonForResignation: DataTypes.STRING,
-    
     newWorkplace: DataTypes.STRING,
-    
     feedback: DataTypes.STRING,
-    
     lft: DataTypes.STRING,
-    
     rgt: DataTypes.STRING,
-    
     oldParent: DataTypes.STRING,
     
   };
@@ -180,6 +104,7 @@ export class Employee extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -189,7 +114,10 @@ export class Employee extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -199,7 +127,10 @@ export class Employee extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salutation',
       
         label: 'Salutation',
@@ -209,7 +140,10 @@ export class Employee extends Model {
         placeholder: 'Input Salutation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'firstName',
       
         label: 'First Name',
@@ -219,7 +153,10 @@ export class Employee extends Model {
         placeholder: 'Input First Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'middleName',
       
         label: 'Middle Name',
@@ -229,7 +166,10 @@ export class Employee extends Model {
         placeholder: 'Input Middle Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lastName',
       
         label: 'Last Name',
@@ -239,7 +179,10 @@ export class Employee extends Model {
         placeholder: 'Input Last Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fullName',
       
         label: 'Full Name',
@@ -249,7 +192,10 @@ export class Employee extends Model {
         placeholder: 'Input Full Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'image',
       
         label: 'Image',
@@ -259,7 +205,10 @@ export class Employee extends Model {
         placeholder: 'Input Image',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -269,7 +218,10 @@ export class Employee extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -279,7 +231,10 @@ export class Employee extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'employeeNumber',
       
         label: 'Employee Number',
@@ -289,7 +244,10 @@ export class Employee extends Model {
         placeholder: 'Input Employee Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employmentType',
       
         label: 'Employment Type',
@@ -299,7 +257,10 @@ export class Employee extends Model {
         placeholder: 'Input Employment Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'gender',
       
         label: 'Gender',
@@ -309,7 +270,10 @@ export class Employee extends Model {
         placeholder: 'Input Gender',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateOfBirth',
       
         label: 'Date Of Birth',
@@ -319,7 +283,10 @@ export class Employee extends Model {
         placeholder: 'Input Date Of Birth',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateOfJoining',
       
         label: 'Date Of Joining',
@@ -329,7 +296,10 @@ export class Employee extends Model {
         placeholder: 'Input Date Of Joining',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'emergencyContact',
       
         label: 'Emergency Contact',
@@ -339,7 +309,10 @@ export class Employee extends Model {
         placeholder: 'Input Emergency Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'emergencyPhone',
       
         label: 'Emergency Phone',
@@ -349,7 +322,10 @@ export class Employee extends Model {
         placeholder: 'Input Emergency Phone',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'emergencyContact',
       
         label: 'Emergency Contact',
@@ -359,7 +335,10 @@ export class Employee extends Model {
         placeholder: 'Input Emergency Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'relation',
       
         label: 'Relation',
@@ -369,7 +348,10 @@ export class Employee extends Model {
         placeholder: 'Input Relation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'jobApplicant',
       
         label: 'Job Applicant',
@@ -379,7 +361,10 @@ export class Employee extends Model {
         placeholder: 'Input Job Applicant',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'offerDate',
       
         label: 'Offer Date',
@@ -389,7 +374,10 @@ export class Employee extends Model {
         placeholder: 'Input Offer Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'confirmationDate',
       
         label: 'Confirmation Date',
@@ -399,7 +387,10 @@ export class Employee extends Model {
         placeholder: 'Input Confirmation Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contractEndDate',
       
         label: 'Contract End Date',
@@ -409,7 +400,10 @@ export class Employee extends Model {
         placeholder: 'Input Contract End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'noticeDays',
       
         label: 'Notice Days',
@@ -419,7 +413,10 @@ export class Employee extends Model {
         placeholder: 'Input Notice Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateOfRetirement',
       
         label: 'Date Of Retirement',
@@ -429,7 +426,10 @@ export class Employee extends Model {
         placeholder: 'Input Date Of Retirement',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -439,7 +439,10 @@ export class Employee extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -449,7 +452,10 @@ export class Employee extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reportsTo',
       
         label: 'Reports To',
@@ -459,7 +465,10 @@ export class Employee extends Model {
         placeholder: 'Input Reports To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grade',
       
         label: 'Grade',
@@ -469,7 +478,10 @@ export class Employee extends Model {
         placeholder: 'Input Grade',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'branch',
       
         label: 'Branch',
@@ -479,7 +491,10 @@ export class Employee extends Model {
         placeholder: 'Input Branch',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leavePolicy',
       
         label: 'Leave Policy',
@@ -489,7 +504,10 @@ export class Employee extends Model {
         placeholder: 'Input Leave Policy',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'holidayList',
       
         label: 'Holiday List',
@@ -499,7 +517,10 @@ export class Employee extends Model {
         placeholder: 'Input Holiday List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salaryMode',
       
         label: 'Salary Mode',
@@ -509,7 +530,10 @@ export class Employee extends Model {
         placeholder: 'Input Salary Mode',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'bankName',
       
         label: 'Bank Name',
@@ -519,7 +543,10 @@ export class Employee extends Model {
         placeholder: 'Input Bank Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankACNo',
       
         label: 'Bank A C No',
@@ -529,7 +556,10 @@ export class Employee extends Model {
         placeholder: 'Input Bank A C No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'healthInsurance',
       
         label: 'Health Insurance',
@@ -539,7 +569,10 @@ export class Employee extends Model {
         placeholder: 'Input Health Insurance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'healthInsuranceProvider',
       
         label: 'Health Insurance Provider',
@@ -549,7 +582,10 @@ export class Employee extends Model {
         placeholder: 'Input Health Insurance Provider',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'healthInsuranceNo',
       
         label: 'Health Insurance No',
@@ -559,7 +595,10 @@ export class Employee extends Model {
         placeholder: 'Input Health Insurance No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'mobile',
       
         label: 'Mobile',
@@ -569,7 +608,10 @@ export class Employee extends Model {
         placeholder: 'Input Mobile',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'preferedContactEmail',
       
         label: 'Prefered Contact Email',
@@ -579,7 +621,10 @@ export class Employee extends Model {
         placeholder: 'Input Prefered Contact Email',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'preferedEmail',
       
         label: 'Prefered Email',
@@ -589,7 +634,10 @@ export class Employee extends Model {
         placeholder: 'Input Prefered Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'companyEmail',
       
         label: 'Company Email',
@@ -599,7 +647,10 @@ export class Employee extends Model {
         placeholder: 'Input Company Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'personalEmail',
       
         label: 'Personal Email',
@@ -609,7 +660,10 @@ export class Employee extends Model {
         placeholder: 'Input Personal Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'unsubscribed',
       
         label: 'Unsubscribed',
@@ -619,7 +673,10 @@ export class Employee extends Model {
         placeholder: 'Input Unsubscribed',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'permanentAddressIs',
       
         label: 'Permanent Address Is',
@@ -629,7 +686,10 @@ export class Employee extends Model {
         placeholder: 'Input Permanent Address Is',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'permanentAddress',
       
         label: 'Permanent Address',
@@ -639,7 +699,10 @@ export class Employee extends Model {
         placeholder: 'Input Permanent Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currentAddressIs',
       
         label: 'Current Address Is',
@@ -649,7 +712,10 @@ export class Employee extends Model {
         placeholder: 'Input Current Address Is',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'currentAddress',
       
         label: 'Current Address',
@@ -659,7 +725,10 @@ export class Employee extends Model {
         placeholder: 'Input Current Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bioCoverLetter',
       
         label: 'Bio Cover Letter',
@@ -669,7 +738,10 @@ export class Employee extends Model {
         placeholder: 'Input Bio Cover Letter',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'passportNumber',
       
         label: 'Passport Number',
@@ -679,7 +751,10 @@ export class Employee extends Model {
         placeholder: 'Input Passport Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateOfIssue',
       
         label: 'Date Of Issue',
@@ -689,7 +764,10 @@ export class Employee extends Model {
         placeholder: 'Input Date Of Issue',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'validUpto',
       
         label: 'Valid Upto',
@@ -699,7 +777,10 @@ export class Employee extends Model {
         placeholder: 'Input Valid Upto',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'placeOfIssue',
       
         label: 'Place Of Issue',
@@ -709,7 +790,10 @@ export class Employee extends Model {
         placeholder: 'Input Place Of Issue',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maritalStatus',
       
         label: 'Marital Status',
@@ -719,7 +803,10 @@ export class Employee extends Model {
         placeholder: 'Input Marital Status',
       
         options: '[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'bloodGroup',
       
         label: 'Blood Group',
@@ -729,7 +816,10 @@ export class Employee extends Model {
         placeholder: 'Input Blood Group',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'familyBackground',
       
         label: 'Family Background',
@@ -739,7 +829,10 @@ export class Employee extends Model {
         placeholder: 'Input Family Background',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'healthDetails',
       
         label: 'Health Details',
@@ -749,7 +842,10 @@ export class Employee extends Model {
         placeholder: 'Input Health Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'educationalQualification',
       
         label: 'Educational Qualification',
@@ -759,7 +855,10 @@ export class Employee extends Model {
         placeholder: 'Input Educational Qualification',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'education',
       
         label: 'Education',
@@ -769,7 +868,10 @@ export class Employee extends Model {
         placeholder: 'Input Education',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'previousWorkExperience',
       
         label: 'Previous Work Experience',
@@ -779,7 +881,10 @@ export class Employee extends Model {
         placeholder: 'Input Previous Work Experience',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'externalWorkHistory',
       
         label: 'External Work History',
@@ -789,7 +894,10 @@ export class Employee extends Model {
         placeholder: 'Input External Work History',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'historyInCompany',
       
         label: 'History In Company',
@@ -799,7 +907,10 @@ export class Employee extends Model {
         placeholder: 'Input History In Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'internalWorkHistory',
       
         label: 'Internal Work History',
@@ -809,7 +920,10 @@ export class Employee extends Model {
         placeholder: 'Input Internal Work History',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'resignationLetterDate',
       
         label: 'Resignation Letter Date',
@@ -819,7 +933,10 @@ export class Employee extends Model {
         placeholder: 'Input Resignation Letter Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'relievingDate',
       
         label: 'Relieving Date',
@@ -829,7 +946,10 @@ export class Employee extends Model {
         placeholder: 'Input Relieving Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reasonForLeaving',
       
         label: 'Reason For Leaving',
@@ -839,7 +959,10 @@ export class Employee extends Model {
         placeholder: 'Input Reason For Leaving',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveEncashed',
       
         label: 'Leave Encashed',
@@ -849,7 +972,10 @@ export class Employee extends Model {
         placeholder: 'Input Leave Encashed',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'encashmentDate',
       
         label: 'Encashment Date',
@@ -859,7 +985,10 @@ export class Employee extends Model {
         placeholder: 'Input Encashment Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exitInterviewDetails',
       
         label: 'Exit Interview Details',
@@ -869,7 +998,10 @@ export class Employee extends Model {
         placeholder: 'Input Exit Interview Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'heldOn',
       
         label: 'Held On',
@@ -879,7 +1011,10 @@ export class Employee extends Model {
         placeholder: 'Input Held On',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reasonForResignation',
       
         label: 'Reason For Resignation',
@@ -889,7 +1024,10 @@ export class Employee extends Model {
         placeholder: 'Input Reason For Resignation',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'newWorkplace',
       
         label: 'New Workplace',
@@ -899,7 +1037,10 @@ export class Employee extends Model {
         placeholder: 'Input New Workplace',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'feedback',
       
         label: 'Feedback',
@@ -909,7 +1050,10 @@ export class Employee extends Model {
         placeholder: 'Input Feedback',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lft',
       
         label: 'Lft',
@@ -919,7 +1063,10 @@ export class Employee extends Model {
         placeholder: 'Input Lft',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rgt',
       
         label: 'Rgt',
@@ -929,7 +1076,10 @@ export class Employee extends Model {
         placeholder: 'Input Rgt',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'oldParent',
       
         label: 'Old Parent',
@@ -939,7 +1089,9 @@ export class Employee extends Model {
         placeholder: 'Input Old Parent',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

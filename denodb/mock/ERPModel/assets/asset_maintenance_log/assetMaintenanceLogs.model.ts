@@ -21,51 +21,22 @@ export class AssetMaintenanceLog extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     assetMaintenance: DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     assetName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     itemCode: DataTypes.STRING,
-    
     itemName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     task: DataTypes.STRING,
-    
     maintenanceType: DataTypes.STRING,
-    
     periodicity: DataTypes.STRING,
-    
     assignTo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     dueDate: DataTypes.STRING,
-    
     completionDate: DataTypes.STRING,
-    
     maintenanceStatus: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     hasCertificate: DataTypes.STRING,
-    
     certificate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     actionsPerformed: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -74,6 +45,7 @@ export class AssetMaintenanceLog extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'assetMaintenance',
       
         label: 'Asset Maintenance',
@@ -83,7 +55,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Asset Maintenance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -93,7 +68,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assetName',
       
         label: 'Asset Name',
@@ -103,7 +81,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Asset Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -113,7 +94,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemCode',
       
         label: 'Item Code',
@@ -123,7 +107,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Item Code',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemName',
       
         label: 'Item Name',
@@ -133,7 +120,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Item Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -143,7 +133,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'task',
       
         label: 'Task',
@@ -153,7 +146,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Task',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceType',
       
         label: 'Maintenance Type',
@@ -163,7 +159,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Maintenance Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'periodicity',
       
         label: 'Periodicity',
@@ -173,7 +172,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Periodicity',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assignTo',
       
         label: 'Assign To',
@@ -183,7 +185,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Assign To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -193,7 +198,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dueDate',
       
         label: 'Due Date',
@@ -203,7 +211,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'completionDate',
       
         label: 'Completion Date',
@@ -213,7 +224,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Completion Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceStatus',
       
         label: 'Maintenance Status',
@@ -223,7 +237,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Maintenance Status',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -233,7 +250,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'hasCertificate',
       
         label: 'Has Certificate',
@@ -243,7 +263,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Has Certificate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'certificate',
       
         label: 'Certificate',
@@ -253,7 +276,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Certificate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -263,7 +289,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -273,7 +302,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -283,7 +315,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actionsPerformed',
       
         label: 'Actions Performed',
@@ -293,7 +328,10 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Actions Performed',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -303,7 +341,9 @@ export class AssetMaintenanceLog extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

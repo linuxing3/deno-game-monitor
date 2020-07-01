@@ -21,63 +21,25 @@ export class TimesheetDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     activityType: DataTypes.STRING,
-    
     fromTime: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     expectedHrs: DataTypes.STRING,
-    
     hrs: DataTypes.STRING,
-    
     toTime: DataTypes.STRING,
-    
     completed: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     completedQty: DataTypes.STRING,
-    
     workstation: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     operation: DataTypes.STRING,
-    
     operationId: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     task: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     bill: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     billingHours: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     billingRate: DataTypes.STRING,
-    
     billingAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     costingRate: DataTypes.STRING,
-    
     costingAmount: DataTypes.STRING,
-    
     reference: DataTypes.STRING,
-    
     salesInvoice: DataTypes.STRING,
     
   };
@@ -86,6 +48,7 @@ export class TimesheetDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'activityType',
       
         label: 'Activity Type',
@@ -95,7 +58,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Activity Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromTime',
       
         label: 'From Time',
@@ -105,7 +71,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input From Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -115,7 +84,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expectedHrs',
       
         label: 'Expected Hrs',
@@ -125,7 +97,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Expected Hrs',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'hrs',
       
         label: 'Hrs',
@@ -135,7 +110,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Hrs',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toTime',
       
         label: 'To Time',
@@ -145,7 +123,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input To Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'completed',
       
         label: 'Completed',
@@ -155,7 +136,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Completed',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -165,7 +149,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'completedQty',
       
         label: 'Completed Qty',
@@ -175,7 +162,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Completed Qty',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'workstation',
       
         label: 'Workstation',
@@ -185,7 +175,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Workstation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -195,7 +188,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'operation',
       
         label: 'Operation',
@@ -205,7 +201,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Operation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'operationId',
       
         label: 'Operation Id',
@@ -215,7 +214,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Operation Id',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -225,7 +227,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -235,7 +240,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -245,7 +253,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'task',
       
         label: 'Task',
@@ -255,7 +266,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Task',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -265,7 +279,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bill',
       
         label: 'Bill',
@@ -275,7 +292,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Bill',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -285,7 +305,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingHours',
       
         label: 'Billing Hours',
@@ -295,7 +318,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Billing Hours',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -305,7 +331,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingRate',
       
         label: 'Billing Rate',
@@ -315,7 +344,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Billing Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingAmount',
       
         label: 'Billing Amount',
@@ -325,7 +357,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Billing Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -335,7 +370,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costingRate',
       
         label: 'Costing Rate',
@@ -345,7 +383,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Costing Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costingAmount',
       
         label: 'Costing Amount',
@@ -355,7 +396,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Costing Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reference',
       
         label: 'Reference',
@@ -365,7 +409,10 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesInvoice',
       
         label: 'Sales Invoice',
@@ -375,7 +422,9 @@ export class TimesheetDetail extends Model {
         placeholder: 'Input Sales Invoice',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

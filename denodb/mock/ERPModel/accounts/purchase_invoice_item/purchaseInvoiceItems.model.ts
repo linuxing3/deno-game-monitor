@@ -21,167 +21,73 @@ export class PurchaseInvoiceItem extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     item: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     itemName: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     image: DataTypes.STRING,
-    
     imageView: DataTypes.STRING,
-    
     quantityAndRate: DataTypes.STRING,
-    
     receivedQty: DataTypes.STRING,
-    
     acceptedQty: DataTypes.STRING,
-    
     rejectedQty: DataTypes.STRING,
-    
     stockUom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     uom: DataTypes.STRING,
-    
     uomConversionFactor: DataTypes.STRING,
-    
     stockQty: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     priceListRate: DataTypes.STRING,
-    
     discountOnPriceListRate: DataTypes.STRING,
-    
     discountAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     priceListRateCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     rate: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     rateCompanyCurrency: DataTypes.STRING,
-    
     amountCompanyCurrency: DataTypes.STRING,
-    
     pricingRule: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     netRate: DataTypes.STRING,
-    
     netAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     netRateCompanyCurrency: DataTypes.STRING,
-    
     netAmountCompanyCurrency: DataTypes.STRING,
-    
     itemWeightDetails: DataTypes.STRING,
-    
     weightPerUnit: DataTypes.STRING,
-    
     totalWeight: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     weightUom: DataTypes.STRING,
-    
     warehouse: DataTypes.STRING,
-    
     acceptedWarehouse: DataTypes.STRING,
-    
     rejectedWarehouse: DataTypes.STRING,
-    
     qualityInspection: DataTypes.STRING,
-    
     batchNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     serialNo: DataTypes.STRING,
-    
     rejectedSerialNo: DataTypes.STRING,
-    
     accounting: DataTypes.STRING,
-    
     expenseHead: DataTypes.STRING,
-    
     itemTaxTemplate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     deferredExpense: DataTypes.STRING,
-    
     deferredExpenseAccount: DataTypes.STRING,
-    
     serviceStopDate: DataTypes.STRING,
-    
     enableDeferredExpense: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     serviceStartDate: DataTypes.STRING,
-    
     serviceEndDate: DataTypes.STRING,
-    
     reference: DataTypes.STRING,
-    
     allowZeroValuationRate: DataTypes.STRING,
-    
     brand: DataTypes.STRING,
-    
     itemGroup: DataTypes.STRING,
-    
     itemTaxRate: DataTypes.STRING,
-    
     itemTaxAmount: DataTypes.STRING,
-    
     purchaseOrder: DataTypes.STRING,
-    
     bom: DataTypes.STRING,
-    
     includeExplodedItems: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isFixedAsset: DataTypes.STRING,
-    
     asset: DataTypes.STRING,
-    
     assetLocation: DataTypes.STRING,
-    
     purchaseOrderItem: DataTypes.STRING,
-    
     purchaseReceipt: DataTypes.STRING,
-    
     pageBreak: DataTypes.STRING,
-    
     prDetail: DataTypes.STRING,
-    
     valuationRate: DataTypes.STRING,
-    
     rawMaterialsSuppliedCost: DataTypes.STRING,
-    
     landedCostVoucherAmount: DataTypes.STRING,
     
   };
@@ -190,6 +96,7 @@ export class PurchaseInvoiceItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'item',
       
         label: 'Item',
@@ -199,7 +106,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Item',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -209,7 +119,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemName',
       
         label: 'Item Name',
@@ -219,7 +132,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Item Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -229,7 +145,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -239,7 +158,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'image',
       
         label: 'Image',
@@ -249,7 +171,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Image',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'imageView',
       
         label: 'Image View',
@@ -259,7 +184,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Image View',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'quantityAndRate',
       
         label: 'Quantity And Rate',
@@ -269,7 +197,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Quantity And Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'receivedQty',
       
         label: 'Received Qty',
@@ -279,7 +210,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Received Qty',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'acceptedQty',
       
         label: 'Accepted Qty',
@@ -289,7 +223,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Accepted Qty',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rejectedQty',
       
         label: 'Rejected Qty',
@@ -299,7 +236,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Rejected Qty',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'stockUom',
       
         label: 'Stock Uom',
@@ -309,7 +249,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Stock Uom',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -319,7 +262,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'uom',
       
         label: 'Uom',
@@ -329,7 +275,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Uom',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'uomConversionFactor',
       
         label: 'Uom Conversion Factor',
@@ -339,7 +288,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Uom Conversion Factor',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'stockQty',
       
         label: 'Stock Qty',
@@ -349,7 +301,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Stock Qty',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -359,7 +314,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceListRate',
       
         label: 'Price List Rate',
@@ -369,7 +327,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Price List Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'discountOnPriceListRate',
       
         label: 'Discount On Price List Rate',
@@ -379,7 +340,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Discount On Price List Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'discountAmount',
       
         label: 'Discount Amount',
@@ -389,7 +353,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Discount Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -399,7 +366,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceListRateCompanyCurrency',
       
         label: 'Price List Rate Company Currency',
@@ -409,7 +379,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Price List Rate Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -419,7 +392,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rate',
       
         label: 'Rate',
@@ -429,7 +405,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -439,7 +418,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -449,7 +431,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rateCompanyCurrency',
       
         label: 'Rate Company Currency',
@@ -459,7 +444,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Rate Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amountCompanyCurrency',
       
         label: 'Amount Company Currency',
@@ -469,7 +457,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'pricingRule',
       
         label: 'Pricing Rule',
@@ -479,7 +470,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Pricing Rule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -489,7 +483,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netRate',
       
         label: 'Net Rate',
@@ -499,7 +496,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Net Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netAmount',
       
         label: 'Net Amount',
@@ -509,7 +509,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Net Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -519,7 +522,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netRateCompanyCurrency',
       
         label: 'Net Rate Company Currency',
@@ -529,7 +535,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Net Rate Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netAmountCompanyCurrency',
       
         label: 'Net Amount Company Currency',
@@ -539,7 +548,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Net Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemWeightDetails',
       
         label: 'Item Weight Details',
@@ -549,7 +561,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Item Weight Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'weightPerUnit',
       
         label: 'Weight Per Unit',
@@ -559,7 +574,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Weight Per Unit',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalWeight',
       
         label: 'Total Weight',
@@ -569,7 +587,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Total Weight',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -579,7 +600,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'weightUom',
       
         label: 'Weight Uom',
@@ -589,7 +613,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Weight Uom',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'warehouse',
       
         label: 'Warehouse',
@@ -599,7 +626,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Warehouse',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'acceptedWarehouse',
       
         label: 'Accepted Warehouse',
@@ -609,7 +639,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Accepted Warehouse',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rejectedWarehouse',
       
         label: 'Rejected Warehouse',
@@ -619,7 +652,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Rejected Warehouse',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'qualityInspection',
       
         label: 'Quality Inspection',
@@ -629,7 +665,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Quality Inspection',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'batchNo',
       
         label: 'Batch No',
@@ -639,7 +678,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Batch No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -649,7 +691,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'serialNo',
       
         label: 'Serial No',
@@ -659,7 +704,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Serial No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rejectedSerialNo',
       
         label: 'Rejected Serial No',
@@ -669,7 +717,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Rejected Serial No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounting',
       
         label: 'Accounting',
@@ -679,7 +730,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Accounting',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseHead',
       
         label: 'Expense Head',
@@ -689,7 +743,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Expense Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemTaxTemplate',
       
         label: 'Item Tax Template',
@@ -699,7 +756,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Item Tax Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -709,7 +769,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -719,7 +782,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -729,7 +795,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deferredExpense',
       
         label: 'Deferred Expense',
@@ -739,7 +808,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Deferred Expense',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deferredExpenseAccount',
       
         label: 'Deferred Expense Account',
@@ -749,7 +821,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Deferred Expense Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'serviceStopDate',
       
         label: 'Service Stop Date',
@@ -759,7 +834,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Service Stop Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'enableDeferredExpense',
       
         label: 'Enable Deferred Expense',
@@ -769,7 +847,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Enable Deferred Expense',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -779,7 +860,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'serviceStartDate',
       
         label: 'Service Start Date',
@@ -789,7 +873,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Service Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'serviceEndDate',
       
         label: 'Service End Date',
@@ -799,7 +886,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Service End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reference',
       
         label: 'Reference',
@@ -809,7 +899,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allowZeroValuationRate',
       
         label: 'Allow Zero Valuation Rate',
@@ -819,7 +912,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Allow Zero Valuation Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'brand',
       
         label: 'Brand',
@@ -829,7 +925,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Brand',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemGroup',
       
         label: 'Item Group',
@@ -839,7 +938,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Item Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemTaxRate',
       
         label: 'Item Tax Rate',
@@ -849,7 +951,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Item Tax Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemTaxAmount',
       
         label: 'Item Tax Amount',
@@ -859,7 +964,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Item Tax Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseOrder',
       
         label: 'Purchase Order',
@@ -869,7 +977,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Purchase Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bom',
       
         label: 'Bom',
@@ -879,7 +990,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Bom',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'includeExplodedItems',
       
         label: 'Include Exploded Items',
@@ -889,7 +1003,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Include Exploded Items',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -899,7 +1016,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isFixedAsset',
       
         label: 'Is Fixed Asset',
@@ -909,7 +1029,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Is Fixed Asset',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'asset',
       
         label: 'Asset',
@@ -919,7 +1042,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Asset',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assetLocation',
       
         label: 'Asset Location',
@@ -929,7 +1055,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Asset Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseOrderItem',
       
         label: 'Purchase Order Item',
@@ -939,7 +1068,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Purchase Order Item',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseReceipt',
       
         label: 'Purchase Receipt',
@@ -949,7 +1081,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Purchase Receipt',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'pageBreak',
       
         label: 'Page Break',
@@ -959,7 +1094,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Page Break',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'prDetail',
       
         label: 'Pr Detail',
@@ -969,7 +1107,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Pr Detail',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'valuationRate',
       
         label: 'Valuation Rate',
@@ -979,7 +1120,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Valuation Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rawMaterialsSuppliedCost',
       
         label: 'Raw Materials Supplied Cost',
@@ -989,7 +1133,10 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Raw Materials Supplied Cost',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'landedCostVoucherAmount',
       
         label: 'Landed Cost Voucher Amount',
@@ -999,7 +1146,9 @@ export class PurchaseInvoiceItem extends Model {
         placeholder: 'Input Landed Cost Voucher Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

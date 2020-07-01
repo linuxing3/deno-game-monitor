@@ -21,19 +21,10 @@ export class SalesTaxesAndChargesTemplate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     title: DataTypes.STRING,
-    
     default: DataTypes.STRING,
-    
     disabled: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salesTaxesAndCharges: DataTypes.STRING,
     
   };
@@ -42,6 +33,7 @@ export class SalesTaxesAndChargesTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'title',
       
         label: 'Title',
@@ -51,7 +43,10 @@ export class SalesTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'default',
       
         label: 'Default',
@@ -61,7 +56,10 @@ export class SalesTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Default',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disabled',
       
         label: 'Disabled',
@@ -71,7 +69,10 @@ export class SalesTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Disabled',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -81,7 +82,10 @@ export class SalesTaxesAndChargesTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -91,7 +95,10 @@ export class SalesTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -101,7 +108,10 @@ export class SalesTaxesAndChargesTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesTaxesAndCharges',
       
         label: 'Sales Taxes And Charges',
@@ -111,7 +121,9 @@ export class SalesTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Sales Taxes And Charges',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

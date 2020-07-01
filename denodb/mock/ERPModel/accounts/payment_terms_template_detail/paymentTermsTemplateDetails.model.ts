@@ -21,19 +21,12 @@ export class PaymentTermsTemplateDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     paymentTerm: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     invoicePortion: DataTypes.STRING,
-    
     dueDateBasedOn: DataTypes.STRING,
-    
     creditDays: DataTypes.STRING,
-    
     creditMonths: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
     
   };
@@ -42,6 +35,7 @@ export class PaymentTermsTemplateDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'paymentTerm',
       
         label: 'Payment Term',
@@ -51,7 +45,10 @@ export class PaymentTermsTemplateDetail extends Model {
         placeholder: 'Input Payment Term',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -61,7 +58,10 @@ export class PaymentTermsTemplateDetail extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoicePortion',
       
         label: 'Invoice Portion',
@@ -71,7 +71,10 @@ export class PaymentTermsTemplateDetail extends Model {
         placeholder: 'Input Invoice Portion',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dueDateBasedOn',
       
         label: 'Due Date Based On',
@@ -81,7 +84,10 @@ export class PaymentTermsTemplateDetail extends Model {
         placeholder: 'Input Due Date Based On',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'creditDays',
       
         label: 'Credit Days',
@@ -91,7 +97,10 @@ export class PaymentTermsTemplateDetail extends Model {
         placeholder: 'Input Credit Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'creditMonths',
       
         label: 'Credit Months',
@@ -101,7 +110,10 @@ export class PaymentTermsTemplateDetail extends Model {
         placeholder: 'Input Credit Months',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -111,7 +123,9 @@ export class PaymentTermsTemplateDetail extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

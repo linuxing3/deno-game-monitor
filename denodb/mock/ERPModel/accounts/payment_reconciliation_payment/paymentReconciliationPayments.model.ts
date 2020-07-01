@@ -21,27 +21,14 @@ export class PaymentReconciliationPayment extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     referenceType: DataTypes.STRING,
-    
     referenceName: DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     isAdvance: DataTypes.STRING,
-    
     referenceRow: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     invoiceNumber: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     allocatedAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     remark: DataTypes.STRING,
     
   };
@@ -50,6 +37,7 @@ export class PaymentReconciliationPayment extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'referenceType',
       
         label: 'Reference Type',
@@ -59,7 +47,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Reference Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceName',
       
         label: 'Reference Name',
@@ -69,7 +60,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Reference Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -79,7 +73,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isAdvance',
       
         label: 'Is Advance',
@@ -89,7 +86,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Is Advance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceRow',
       
         label: 'Reference Row',
@@ -99,7 +99,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Reference Row',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -109,7 +112,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoiceNumber',
       
         label: 'Invoice Number',
@@ -119,7 +125,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Invoice Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -129,7 +138,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocatedAmount',
       
         label: 'Allocated Amount',
@@ -139,7 +151,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Allocated Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -149,7 +164,10 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remark',
       
         label: 'Remark',
@@ -159,7 +177,9 @@ export class PaymentReconciliationPayment extends Model {
         placeholder: 'Input Remark',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

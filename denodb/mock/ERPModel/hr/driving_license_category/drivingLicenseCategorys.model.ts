@@ -21,13 +21,9 @@ export class DrivingLicenseCategory extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     class: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     issuingDate: DataTypes.STRING,
-    
     expiryDate: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class DrivingLicenseCategory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'class',
       
         label: 'Class',
@@ -45,7 +42,10 @@ export class DrivingLicenseCategory extends Model {
         placeholder: 'Input Class',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -55,7 +55,10 @@ export class DrivingLicenseCategory extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'issuingDate',
       
         label: 'Issuing Date',
@@ -65,7 +68,10 @@ export class DrivingLicenseCategory extends Model {
         placeholder: 'Input Issuing Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expiryDate',
       
         label: 'Expiry Date',
@@ -75,7 +81,9 @@ export class DrivingLicenseCategory extends Model {
         placeholder: 'Input Expiry Date',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

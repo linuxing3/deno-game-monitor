@@ -21,11 +21,8 @@ export class DailyWorkSummary extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     dailyWorkSummaryGroup: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     emailSentTo: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class DailyWorkSummary extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'dailyWorkSummaryGroup',
       
         label: 'Daily Work Summary Group',
@@ -43,7 +41,10 @@ export class DailyWorkSummary extends Model {
         placeholder: 'Input Daily Work Summary Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -53,7 +54,10 @@ export class DailyWorkSummary extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'emailSentTo',
       
         label: 'Email Sent To',
@@ -63,7 +67,9 @@ export class DailyWorkSummary extends Model {
         placeholder: 'Input Email Sent To',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,19 +21,12 @@ export class CashFlowMapper extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     sectionName: DataTypes.STRING,
-    
     sectionHeader: DataTypes.STRING,
-    
     sectionLeader: DataTypes.STRING,
-    
     sectionSubtotal: DataTypes.STRING,
-    
     sectionFooter: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
-    
     position: DataTypes.STRING,
     
   };
@@ -42,6 +35,7 @@ export class CashFlowMapper extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'sectionName',
       
         label: 'Section Name',
@@ -51,7 +45,10 @@ export class CashFlowMapper extends Model {
         placeholder: 'Input Section Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sectionHeader',
       
         label: 'Section Header',
@@ -61,7 +58,10 @@ export class CashFlowMapper extends Model {
         placeholder: 'Input Section Header',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sectionLeader',
       
         label: 'Section Leader',
@@ -71,7 +71,10 @@ export class CashFlowMapper extends Model {
         placeholder: 'Input Section Leader',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sectionSubtotal',
       
         label: 'Section Subtotal',
@@ -81,7 +84,10 @@ export class CashFlowMapper extends Model {
         placeholder: 'Input Section Subtotal',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sectionFooter',
       
         label: 'Section Footer',
@@ -91,7 +97,10 @@ export class CashFlowMapper extends Model {
         placeholder: 'Input Section Footer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -101,7 +110,10 @@ export class CashFlowMapper extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'position',
       
         label: 'Position',
@@ -111,7 +123,9 @@ export class CashFlowMapper extends Model {
         placeholder: 'Input Position',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,25 +21,14 @@ export class ShiftAssignment extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     shiftType: DataTypes.STRING,
-    
     present: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     date: DataTypes.STRING,
-    
     shiftRequest: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -48,6 +37,7 @@ export class ShiftAssignment extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -57,7 +47,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -67,7 +60,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -77,7 +73,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shiftType',
       
         label: 'Shift Type',
@@ -87,7 +86,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Shift Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'present',
       
         label: 'Present',
@@ -97,7 +99,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Present',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -107,7 +112,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -117,7 +125,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'date',
       
         label: 'Date',
@@ -127,7 +138,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shiftRequest',
       
         label: 'Shift Request',
@@ -137,7 +151,10 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Shift Request',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -147,7 +164,9 @@ export class ShiftAssignment extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

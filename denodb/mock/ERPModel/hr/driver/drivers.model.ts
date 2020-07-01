@@ -21,35 +21,17 @@ export class Driver extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     fullName: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     transporter: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     cellphoneNumber: DataTypes.STRING,
-    
     licenseDetails: DataTypes.STRING,
-    
     licenseNumber: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     issuingDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     expiryDate: DataTypes.STRING,
-    
     drivingLicenseCategories: DataTypes.STRING,
-    
     drivingLicenseCategory: DataTypes.STRING,
     
   };
@@ -58,6 +40,7 @@ export class Driver extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -67,7 +50,10 @@ export class Driver extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fullName',
       
         label: 'Full Name',
@@ -77,7 +63,10 @@ export class Driver extends Model {
         placeholder: 'Input Full Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -87,7 +76,10 @@ export class Driver extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'transporter',
       
         label: 'Transporter',
@@ -97,7 +89,10 @@ export class Driver extends Model {
         placeholder: 'Input Transporter',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -107,7 +102,10 @@ export class Driver extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -117,7 +115,10 @@ export class Driver extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cellphoneNumber',
       
         label: 'Cellphone Number',
@@ -127,7 +128,10 @@ export class Driver extends Model {
         placeholder: 'Input Cellphone Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'licenseDetails',
       
         label: 'License Details',
@@ -137,7 +141,10 @@ export class Driver extends Model {
         placeholder: 'Input License Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'licenseNumber',
       
         label: 'License Number',
@@ -147,7 +154,10 @@ export class Driver extends Model {
         placeholder: 'Input License Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -157,7 +167,10 @@ export class Driver extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'issuingDate',
       
         label: 'Issuing Date',
@@ -167,7 +180,10 @@ export class Driver extends Model {
         placeholder: 'Input Issuing Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -177,7 +193,10 @@ export class Driver extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expiryDate',
       
         label: 'Expiry Date',
@@ -187,7 +206,10 @@ export class Driver extends Model {
         placeholder: 'Input Expiry Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'drivingLicenseCategories',
       
         label: 'Driving License Categories',
@@ -197,7 +219,10 @@ export class Driver extends Model {
         placeholder: 'Input Driving License Categories',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'drivingLicenseCategory',
       
         label: 'Driving License Category',
@@ -207,7 +232,9 @@ export class Driver extends Model {
         placeholder: 'Input Driving License Category',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

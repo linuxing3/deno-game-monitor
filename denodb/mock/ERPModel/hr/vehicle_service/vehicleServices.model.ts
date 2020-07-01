@@ -21,13 +21,9 @@ export class VehicleService extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     serviceItem: DataTypes.STRING,
-    
     type: DataTypes.STRING,
-    
     frequency: DataTypes.STRING,
-    
     expense: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class VehicleService extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'serviceItem',
       
         label: 'Service Item',
@@ -45,7 +42,10 @@ export class VehicleService extends Model {
         placeholder: 'Input Service Item',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'type',
       
         label: 'Type',
@@ -55,7 +55,10 @@ export class VehicleService extends Model {
         placeholder: 'Input Type',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'frequency',
       
         label: 'Frequency',
@@ -65,7 +68,10 @@ export class VehicleService extends Model {
         placeholder: 'Input Frequency',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'expense',
       
         label: 'Expense',
@@ -75,7 +81,9 @@ export class VehicleService extends Model {
         placeholder: 'Input Expense',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,7 +21,6 @@ export class EmploymentType extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employmentType: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class EmploymentType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employmentType',
       
         label: 'Employment Type',
@@ -39,7 +39,9 @@ export class EmploymentType extends Model {
         placeholder: 'Input Employment Type',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,17 +21,10 @@ export class LeavePeriod extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     isActive: DataTypes.STRING,
-    
     holidayListForOptionalLeave: DataTypes.STRING,
     
   };
@@ -40,6 +33,7 @@ export class LeavePeriod extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -49,7 +43,10 @@ export class LeavePeriod extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -59,7 +56,10 @@ export class LeavePeriod extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -69,7 +69,10 @@ export class LeavePeriod extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -79,7 +82,10 @@ export class LeavePeriod extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isActive',
       
         label: 'Is Active',
@@ -89,7 +95,10 @@ export class LeavePeriod extends Model {
         placeholder: 'Input Is Active',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'holidayListForOptionalLeave',
       
         label: 'Holiday List For Optional Leave',
@@ -99,7 +108,9 @@ export class LeavePeriod extends Model {
         placeholder: 'Input Holiday List For Optional Leave',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

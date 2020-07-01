@@ -21,9 +21,7 @@ export class PartyAccount extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     account: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class PartyAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -41,7 +40,10 @@ export class PartyAccount extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -51,7 +53,9 @@ export class PartyAccount extends Model {
         placeholder: 'Input Account',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,25 +21,13 @@ export class ShareBalance extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     shareType: DataTypes.STRING,
-    
     fromNo: DataTypes.STRING,
-    
     rate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     noOfShares: DataTypes.STRING,
-    
     toNo: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isCompany: DataTypes.STRING,
-    
     currentState: DataTypes.STRING,
     
   };
@@ -48,6 +36,7 @@ export class ShareBalance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'shareType',
       
         label: 'Share Type',
@@ -57,7 +46,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input Share Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromNo',
       
         label: 'From No',
@@ -67,7 +59,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input From No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rate',
       
         label: 'Rate',
@@ -77,7 +72,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -87,7 +85,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'noOfShares',
       
         label: 'No Of Shares',
@@ -97,7 +98,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input No Of Shares',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toNo',
       
         label: 'To No',
@@ -107,7 +111,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input To No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -117,7 +124,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -127,7 +137,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isCompany',
       
         label: 'Is Company',
@@ -137,7 +150,10 @@ export class ShareBalance extends Model {
         placeholder: 'Input Is Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currentState',
       
         label: 'Current State',
@@ -147,7 +163,9 @@ export class ShareBalance extends Model {
         placeholder: 'Input Current State',
       
         options: '[object Object],[object Object]',
+      
       },
+      
     ]
   };
 } 

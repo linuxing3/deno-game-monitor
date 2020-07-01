@@ -21,15 +21,9 @@ export class PayrollEmployeeDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
     
   };
@@ -38,6 +32,7 @@ export class PayrollEmployeeDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -47,7 +42,10 @@ export class PayrollEmployeeDetail extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -57,7 +55,10 @@ export class PayrollEmployeeDetail extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -67,7 +68,10 @@ export class PayrollEmployeeDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -77,7 +81,10 @@ export class PayrollEmployeeDetail extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -87,7 +94,9 @@ export class PayrollEmployeeDetail extends Model {
         placeholder: 'Input Designation',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

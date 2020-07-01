@@ -21,13 +21,9 @@ export class AppraisalGoal extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     goal: DataTypes.STRING,
-    
     weightage: DataTypes.STRING,
-    
     score_0_5: DataTypes.STRING,
-    
     scoreEarned: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class AppraisalGoal extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'goal',
       
         label: 'Goal',
@@ -45,7 +42,10 @@ export class AppraisalGoal extends Model {
         placeholder: 'Input Goal',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'weightage',
       
         label: 'Weightage',
@@ -55,7 +55,10 @@ export class AppraisalGoal extends Model {
         placeholder: 'Input Weightage',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'score_0_5',
       
         label: 'Score 0 5',
@@ -65,7 +68,10 @@ export class AppraisalGoal extends Model {
         placeholder: 'Input Score 0 5',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'scoreEarned',
       
         label: 'Score Earned',
@@ -75,7 +81,9 @@ export class AppraisalGoal extends Model {
         placeholder: 'Input Score Earned',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

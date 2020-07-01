@@ -21,11 +21,8 @@ export class ShippingRuleCondition extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     fromValue: DataTypes.STRING,
-    
     toValue: DataTypes.STRING,
-    
     shippingAmount: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class ShippingRuleCondition extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'fromValue',
       
         label: 'From Value',
@@ -43,7 +41,10 @@ export class ShippingRuleCondition extends Model {
         placeholder: 'Input From Value',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toValue',
       
         label: 'To Value',
@@ -53,7 +54,10 @@ export class ShippingRuleCondition extends Model {
         placeholder: 'Input To Value',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingAmount',
       
         label: 'Shipping Amount',
@@ -63,7 +67,9 @@ export class ShippingRuleCondition extends Model {
         placeholder: 'Input Shipping Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

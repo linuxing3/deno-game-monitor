@@ -21,25 +21,11 @@ export class ExpenseClaimDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     expenseDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     expenseClaimType: DataTypes.STRING,
-    
     defaultAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     claimAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     sanctionedAmount: DataTypes.STRING,
     
   };
@@ -48,6 +34,7 @@ export class ExpenseClaimDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'expenseDate',
       
         label: 'Expense Date',
@@ -57,7 +44,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input Expense Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -67,7 +57,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseClaimType',
       
         label: 'Expense Claim Type',
@@ -77,7 +70,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input Expense Claim Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'defaultAccount',
       
         label: 'Default Account',
@@ -87,7 +83,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input Default Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -97,7 +96,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -107,7 +109,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -117,7 +122,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'claimAmount',
       
         label: 'Claim Amount',
@@ -127,7 +135,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input Claim Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -137,7 +148,10 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sanctionedAmount',
       
         label: 'Sanctioned Amount',
@@ -147,7 +161,9 @@ export class ExpenseClaimDetail extends Model {
         placeholder: 'Input Sanctioned Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

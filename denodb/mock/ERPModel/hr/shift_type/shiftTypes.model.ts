@@ -21,11 +21,8 @@ export class ShiftType extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     startTime: DataTypes.STRING,
-    
     endTime: DataTypes.STRING,
-    
     holidayList: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class ShiftType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'startTime',
       
         label: 'Start Time',
@@ -43,7 +41,10 @@ export class ShiftType extends Model {
         placeholder: 'Input Start Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endTime',
       
         label: 'End Time',
@@ -53,7 +54,10 @@ export class ShiftType extends Model {
         placeholder: 'Input End Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'holidayList',
       
         label: 'Holiday List',
@@ -63,7 +67,9 @@ export class ShiftType extends Model {
         placeholder: 'Input Holiday List',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,55 +21,27 @@ export class Subscription extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     customer: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     subscriptionPeriod: DataTypes.STRING,
-    
     subscriptionStartDate: DataTypes.STRING,
-    
     cancelationDate: DataTypes.STRING,
-    
     trialPeriodStartDate: DataTypes.STRING,
-    
     trialPeriodEndDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     currentInvoiceStartDate: DataTypes.STRING,
-    
     currentInvoiceEndDate: DataTypes.STRING,
-    
     daysUntilDue: DataTypes.STRING,
-    
     cancelAtEndOfPeriod: DataTypes.STRING,
-    
     generateInvoiceAtBeginningOfPeriod: DataTypes.STRING,
-    
     plans: DataTypes.STRING,
-    
     plans: DataTypes.STRING,
-    
     taxes: DataTypes.STRING,
-    
     salesTaxesAndChargesTemplate: DataTypes.STRING,
-    
     discounts: DataTypes.STRING,
-    
     applyAdditionalDiscountOn: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     additionalDIscountPercentage: DataTypes.STRING,
-    
     additionalDIscountAmount: DataTypes.STRING,
-    
     invoices: DataTypes.STRING,
-    
     invoices: DataTypes.STRING,
     
   };
@@ -78,6 +50,7 @@ export class Subscription extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -87,7 +60,10 @@ export class Subscription extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -97,7 +73,10 @@ export class Subscription extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -107,7 +86,10 @@ export class Subscription extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'subscriptionPeriod',
       
         label: 'Subscription Period',
@@ -117,7 +99,10 @@ export class Subscription extends Model {
         placeholder: 'Input Subscription Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subscriptionStartDate',
       
         label: 'Subscription Start Date',
@@ -127,7 +112,10 @@ export class Subscription extends Model {
         placeholder: 'Input Subscription Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cancelationDate',
       
         label: 'Cancelation Date',
@@ -137,7 +125,10 @@ export class Subscription extends Model {
         placeholder: 'Input Cancelation Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trialPeriodStartDate',
       
         label: 'Trial Period Start Date',
@@ -147,7 +138,10 @@ export class Subscription extends Model {
         placeholder: 'Input Trial Period Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trialPeriodEndDate',
       
         label: 'Trial Period End Date',
@@ -157,7 +151,10 @@ export class Subscription extends Model {
         placeholder: 'Input Trial Period End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -167,7 +164,10 @@ export class Subscription extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currentInvoiceStartDate',
       
         label: 'Current Invoice Start Date',
@@ -177,7 +177,10 @@ export class Subscription extends Model {
         placeholder: 'Input Current Invoice Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currentInvoiceEndDate',
       
         label: 'Current Invoice End Date',
@@ -187,7 +190,10 @@ export class Subscription extends Model {
         placeholder: 'Input Current Invoice End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'daysUntilDue',
       
         label: 'Days Until Due',
@@ -197,7 +203,10 @@ export class Subscription extends Model {
         placeholder: 'Input Days Until Due',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cancelAtEndOfPeriod',
       
         label: 'Cancel At End Of Period',
@@ -207,7 +216,10 @@ export class Subscription extends Model {
         placeholder: 'Input Cancel At End Of Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'generateInvoiceAtBeginningOfPeriod',
       
         label: 'Generate Invoice At Beginning Of Period',
@@ -217,7 +229,10 @@ export class Subscription extends Model {
         placeholder: 'Input Generate Invoice At Beginning Of Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'plans',
       
         label: 'Plans',
@@ -227,7 +242,10 @@ export class Subscription extends Model {
         placeholder: 'Input Plans',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'plans',
       
         label: 'Plans',
@@ -237,7 +255,10 @@ export class Subscription extends Model {
         placeholder: 'Input Plans',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxes',
       
         label: 'Taxes',
@@ -247,7 +268,10 @@ export class Subscription extends Model {
         placeholder: 'Input Taxes',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesTaxesAndChargesTemplate',
       
         label: 'Sales Taxes And Charges Template',
@@ -257,7 +281,10 @@ export class Subscription extends Model {
         placeholder: 'Input Sales Taxes And Charges Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'discounts',
       
         label: 'Discounts',
@@ -267,7 +294,10 @@ export class Subscription extends Model {
         placeholder: 'Input Discounts',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applyAdditionalDiscountOn',
       
         label: 'Apply Additional Discount On',
@@ -277,7 +307,10 @@ export class Subscription extends Model {
         placeholder: 'Input Apply Additional Discount On',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -287,7 +320,10 @@ export class Subscription extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDIscountPercentage',
       
         label: 'Additional D Iscount Percentage',
@@ -297,7 +333,10 @@ export class Subscription extends Model {
         placeholder: 'Input Additional D Iscount Percentage',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDIscountAmount',
       
         label: 'Additional D Iscount Amount',
@@ -307,7 +346,10 @@ export class Subscription extends Model {
         placeholder: 'Input Additional D Iscount Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoices',
       
         label: 'Invoices',
@@ -317,7 +359,10 @@ export class Subscription extends Model {
         placeholder: 'Input Invoices',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoices',
       
         label: 'Invoices',
@@ -327,7 +372,9 @@ export class Subscription extends Model {
         placeholder: 'Input Invoices',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

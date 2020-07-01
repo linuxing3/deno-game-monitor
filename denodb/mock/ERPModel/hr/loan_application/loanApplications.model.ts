@@ -21,49 +21,24 @@ export class LoanApplication extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     applicantType: DataTypes.STRING,
-    
     applicant: DataTypes.STRING,
-    
     applicantName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     loanInfo: DataTypes.STRING,
-    
     loanType: DataTypes.STRING,
-    
     loanAmount: DataTypes.STRING,
-    
     requiredByDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     reason: DataTypes.STRING,
-    
     repaymentInfo: DataTypes.STRING,
-    
     repaymentMethod: DataTypes.STRING,
-    
     rateOfInterest: DataTypes.STRING,
-    
     totalPayableInterest: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     monthlyRepaymentAmount: DataTypes.STRING,
-    
     repaymentPeriodInMonths: DataTypes.STRING,
-    
     totalPayableAmount: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -72,6 +47,7 @@ export class LoanApplication extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'applicantType',
       
         label: 'Applicant Type',
@@ -81,7 +57,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Applicant Type',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'applicant',
       
         label: 'Applicant',
@@ -91,7 +70,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Applicant',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicantName',
       
         label: 'Applicant Name',
@@ -101,7 +83,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Applicant Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -111,7 +96,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -121,7 +109,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -131,7 +122,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -141,7 +135,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanInfo',
       
         label: 'Loan Info',
@@ -151,7 +148,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Loan Info',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanType',
       
         label: 'Loan Type',
@@ -161,7 +161,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Loan Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanAmount',
       
         label: 'Loan Amount',
@@ -171,7 +174,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Loan Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'requiredByDate',
       
         label: 'Required By Date',
@@ -181,7 +187,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Required By Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -191,7 +200,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reason',
       
         label: 'Reason',
@@ -201,7 +213,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Reason',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repaymentInfo',
       
         label: 'Repayment Info',
@@ -211,7 +226,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Repayment Info',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repaymentMethod',
       
         label: 'Repayment Method',
@@ -221,7 +239,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Repayment Method',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'rateOfInterest',
       
         label: 'Rate Of Interest',
@@ -231,7 +252,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Rate Of Interest',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalPayableInterest',
       
         label: 'Total Payable Interest',
@@ -241,7 +265,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Total Payable Interest',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -251,7 +278,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'monthlyRepaymentAmount',
       
         label: 'Monthly Repayment Amount',
@@ -261,7 +291,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Monthly Repayment Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repaymentPeriodInMonths',
       
         label: 'Repayment Period In Months',
@@ -271,7 +304,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Repayment Period In Months',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalPayableAmount',
       
         label: 'Total Payable Amount',
@@ -281,7 +317,10 @@ export class LoanApplication extends Model {
         placeholder: 'Input Total Payable Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -291,7 +330,9 @@ export class LoanApplication extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

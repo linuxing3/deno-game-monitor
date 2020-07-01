@@ -21,45 +21,21 @@ export class VehicleLog extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
-    : DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     licensePlate: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     model: DataTypes.STRING,
-    
     make: DataTypes.STRING,
-    
     odometerReading: DataTypes.STRING,
-    
     date: DataTypes.STRING,
-    
     odometer: DataTypes.STRING,
-    
     refuellingDetails: DataTypes.STRING,
-    
     fuelQty: DataTypes.STRING,
-    
     fuelPrice: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     invoiceRef: DataTypes.STRING,
-    
     serviceDetails: DataTypes.STRING,
-    
     serviceDetail: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -68,6 +44,7 @@ export class VehicleLog extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: '',
       
         label: '',
@@ -77,7 +54,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -87,7 +67,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'licensePlate',
       
         label: 'License Plate',
@@ -97,7 +80,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input License Plate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -107,7 +93,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -117,7 +106,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -127,7 +119,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'model',
       
         label: 'Model',
@@ -137,7 +132,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Model',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'make',
       
         label: 'Make',
@@ -147,7 +145,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Make',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'odometerReading',
       
         label: 'Odometer Reading',
@@ -157,7 +158,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Odometer Reading',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'date',
       
         label: 'Date',
@@ -167,7 +171,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'odometer',
       
         label: 'Odometer',
@@ -177,7 +184,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Odometer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'refuellingDetails',
       
         label: 'Refuelling Details',
@@ -187,7 +197,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Refuelling Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fuelQty',
       
         label: 'Fuel Qty',
@@ -197,7 +210,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Fuel Qty',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fuelPrice',
       
         label: 'Fuel Price',
@@ -207,7 +223,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Fuel Price',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -217,7 +236,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -227,7 +249,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoiceRef',
       
         label: 'Invoice Ref',
@@ -237,7 +262,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Invoice Ref',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'serviceDetails',
       
         label: 'Service Details',
@@ -247,7 +275,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Service Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'serviceDetail',
       
         label: 'Service Detail',
@@ -257,7 +288,10 @@ export class VehicleLog extends Model {
         placeholder: 'Input Service Detail',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -267,7 +301,9 @@ export class VehicleLog extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

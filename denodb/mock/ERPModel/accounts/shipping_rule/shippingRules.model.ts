@@ -21,39 +21,18 @@ export class ShippingRule extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     shippingRuleLabel: DataTypes.STRING,
-    
     disabled: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     shippingRuleType: DataTypes.STRING,
-    
     accounting: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     shippingAccount: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     calculateBasedOn: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     shippingAmount: DataTypes.STRING,
-    
     shippingRuleConditions: DataTypes.STRING,
-    
     shippingRuleConditions: DataTypes.STRING,
-    
     restrictToCountries: DataTypes.STRING,
-    
     validForCountries: DataTypes.STRING,
     
   };
@@ -62,6 +41,7 @@ export class ShippingRule extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'shippingRuleLabel',
       
         label: 'Shipping Rule Label',
@@ -71,7 +51,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Shipping Rule Label',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disabled',
       
         label: 'Disabled',
@@ -81,7 +64,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Disabled',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -91,7 +77,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingRuleType',
       
         label: 'Shipping Rule Type',
@@ -101,7 +90,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Shipping Rule Type',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'accounting',
       
         label: 'Accounting',
@@ -111,7 +103,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Accounting',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -121,7 +116,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -131,7 +129,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingAccount',
       
         label: 'Shipping Account',
@@ -141,7 +142,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Shipping Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -151,7 +155,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -161,7 +168,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'calculateBasedOn',
       
         label: 'Calculate Based On',
@@ -171,7 +181,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Calculate Based On',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -181,7 +194,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingAmount',
       
         label: 'Shipping Amount',
@@ -191,7 +207,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Shipping Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingRuleConditions',
       
         label: 'Shipping Rule Conditions',
@@ -201,7 +220,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Shipping Rule Conditions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingRuleConditions',
       
         label: 'Shipping Rule Conditions',
@@ -211,7 +233,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Shipping Rule Conditions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'restrictToCountries',
       
         label: 'Restrict To Countries',
@@ -221,7 +246,10 @@ export class ShippingRule extends Model {
         placeholder: 'Input Restrict To Countries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'validForCountries',
       
         label: 'Valid For Countries',
@@ -231,7 +259,9 @@ export class ShippingRule extends Model {
         placeholder: 'Input Valid For Countries',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

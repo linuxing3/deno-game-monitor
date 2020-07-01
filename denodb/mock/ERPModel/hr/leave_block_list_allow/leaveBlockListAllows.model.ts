@@ -21,7 +21,6 @@ export class LeaveBlockListAllow extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     allowUser: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class LeaveBlockListAllow extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'allowUser',
       
         label: 'Allow User',
@@ -39,7 +39,9 @@ export class LeaveBlockListAllow extends Model {
         placeholder: 'Input Allow User',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

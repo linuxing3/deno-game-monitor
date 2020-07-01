@@ -21,23 +21,13 @@ export class DepreciationSchedule extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     financeBook: DataTypes.STRING,
-    
     scheduleDate: DataTypes.STRING,
-    
     depreciationAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     accumulatedDepreciationAmount: DataTypes.STRING,
-    
     journalEntry: DataTypes.STRING,
-    
     makeDepreciationEntry: DataTypes.STRING,
-    
     financeBookId: DataTypes.STRING,
-    
     depreciationMethod: DataTypes.STRING,
     
   };
@@ -46,6 +36,7 @@ export class DepreciationSchedule extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'financeBook',
       
         label: 'Finance Book',
@@ -55,7 +46,10 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input Finance Book',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'scheduleDate',
       
         label: 'Schedule Date',
@@ -65,7 +59,10 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input Schedule Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciationAmount',
       
         label: 'Depreciation Amount',
@@ -75,7 +72,10 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input Depreciation Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -85,7 +85,10 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accumulatedDepreciationAmount',
       
         label: 'Accumulated Depreciation Amount',
@@ -95,7 +98,10 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input Accumulated Depreciation Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'journalEntry',
       
         label: 'Journal Entry',
@@ -105,7 +111,10 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input Journal Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'makeDepreciationEntry',
       
         label: 'Make Depreciation Entry',
@@ -115,7 +124,10 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input Make Depreciation Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'financeBookId',
       
         label: 'Finance Book Id',
@@ -125,7 +137,10 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input Finance Book Id',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciationMethod',
       
         label: 'Depreciation Method',
@@ -135,7 +150,9 @@ export class DepreciationSchedule extends Model {
         placeholder: 'Input Depreciation Method',
       
         options: '[object Object],[object Object],[object Object],[object Object]',
+      
       },
+      
     ]
   };
 } 

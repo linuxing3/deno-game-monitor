@@ -21,101 +21,46 @@ export class PosProfile extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     disabled: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     country: DataTypes.STRING,
-    
     warehouse: DataTypes.STRING,
-    
     campaign: DataTypes.STRING,
-    
     companyAddress: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     updateStock: DataTypes.STRING,
-    
     ignorePricingRule: DataTypes.STRING,
-    
     allowDelete: DataTypes.STRING,
-    
     allowUserToEditRate: DataTypes.STRING,
-    
     allowUserToEditDiscount: DataTypes.STRING,
-    
     allowPrintBeforePay: DataTypes.STRING,
-    
     displayItemsInStock: DataTypes.STRING,
-    
     applicableForUsers: DataTypes.STRING,
-    
     applicableForUsers: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     salesInvoicePayment: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     itemGroups: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     customerGroups: DataTypes.STRING,
-    
     printSettings: DataTypes.STRING,
-    
     printFormatForOnline: DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     termsAndConditions: DataTypes.STRING,
-    
     printHeading: DataTypes.STRING,
-    
     offlinePosSettings: DataTypes.STRING,
-    
     territory: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     printFormat: DataTypes.STRING,
-    
     customerGroup: DataTypes.STRING,
-    
     accounting: DataTypes.STRING,
-    
     priceList: DataTypes.STRING,
-    
     currency: DataTypes.STRING,
-    
     writeOffAccount: DataTypes.STRING,
-    
     writeOffCostCenter: DataTypes.STRING,
-    
     accountForChangeAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     incomeAccount: DataTypes.STRING,
-    
     expenseAccount: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     taxesAndCharges: DataTypes.STRING,
-    
     applyDiscountOn: DataTypes.STRING,
     
   };
@@ -124,6 +69,7 @@ export class PosProfile extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'disabled',
       
         label: 'Disabled',
@@ -133,7 +79,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Disabled',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -143,7 +92,10 @@ export class PosProfile extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -153,7 +105,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -163,7 +118,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -173,7 +131,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'country',
       
         label: 'Country',
@@ -183,7 +144,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Country',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'warehouse',
       
         label: 'Warehouse',
@@ -193,7 +157,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Warehouse',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'campaign',
       
         label: 'Campaign',
@@ -203,7 +170,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Campaign',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'companyAddress',
       
         label: 'Company Address',
@@ -213,7 +183,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Company Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -223,7 +196,10 @@ export class PosProfile extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'updateStock',
       
         label: 'Update Stock',
@@ -233,7 +209,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Update Stock',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'ignorePricingRule',
       
         label: 'Ignore Pricing Rule',
@@ -243,7 +222,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Ignore Pricing Rule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allowDelete',
       
         label: 'Allow Delete',
@@ -253,7 +235,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Allow Delete',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allowUserToEditRate',
       
         label: 'Allow User To Edit Rate',
@@ -263,7 +248,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Allow User To Edit Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allowUserToEditDiscount',
       
         label: 'Allow User To Edit Discount',
@@ -273,7 +261,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Allow User To Edit Discount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allowPrintBeforePay',
       
         label: 'Allow Print Before Pay',
@@ -283,7 +274,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Allow Print Before Pay',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'displayItemsInStock',
       
         label: 'Display Items In Stock',
@@ -293,7 +287,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Display Items In Stock',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicableForUsers',
       
         label: 'Applicable For Users',
@@ -303,7 +300,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Applicable For Users',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicableForUsers',
       
         label: 'Applicable For Users',
@@ -313,7 +313,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Applicable For Users',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -323,7 +326,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesInvoicePayment',
       
         label: 'Sales Invoice Payment',
@@ -333,7 +339,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Sales Invoice Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -343,7 +352,10 @@ export class PosProfile extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemGroups',
       
         label: 'Item Groups',
@@ -353,7 +365,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Item Groups',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -363,7 +378,10 @@ export class PosProfile extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerGroups',
       
         label: 'Customer Groups',
@@ -373,7 +391,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Customer Groups',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printSettings',
       
         label: 'Print Settings',
@@ -383,7 +404,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Print Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printFormatForOnline',
       
         label: 'Print Format For Online',
@@ -393,7 +417,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Print Format For Online',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -403,7 +430,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -413,7 +443,10 @@ export class PosProfile extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'termsAndConditions',
       
         label: 'Terms And Conditions',
@@ -423,7 +456,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Terms And Conditions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printHeading',
       
         label: 'Print Heading',
@@ -433,7 +469,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Print Heading',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'offlinePosSettings',
       
         label: 'Offline Pos Settings',
@@ -443,7 +482,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Offline Pos Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'territory',
       
         label: 'Territory',
@@ -453,7 +495,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Territory',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -463,7 +508,10 @@ export class PosProfile extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printFormat',
       
         label: 'Print Format',
@@ -473,7 +521,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Print Format',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerGroup',
       
         label: 'Customer Group',
@@ -483,7 +534,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Customer Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounting',
       
         label: 'Accounting',
@@ -493,7 +547,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Accounting',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceList',
       
         label: 'Price List',
@@ -503,7 +560,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Price List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currency',
       
         label: 'Currency',
@@ -513,7 +573,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffAccount',
       
         label: 'Write Off Account',
@@ -523,7 +586,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Write Off Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffCostCenter',
       
         label: 'Write Off Cost Center',
@@ -533,7 +599,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Write Off Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountForChangeAmount',
       
         label: 'Account For Change Amount',
@@ -543,7 +612,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Account For Change Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -553,7 +625,10 @@ export class PosProfile extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'incomeAccount',
       
         label: 'Income Account',
@@ -563,7 +638,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Income Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseAccount',
       
         label: 'Expense Account',
@@ -573,7 +651,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Expense Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -583,7 +664,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxesAndCharges',
       
         label: 'Taxes And Charges',
@@ -593,7 +677,10 @@ export class PosProfile extends Model {
         placeholder: 'Input Taxes And Charges',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applyDiscountOn',
       
         label: 'Apply Discount On',
@@ -603,7 +690,9 @@ export class PosProfile extends Model {
         placeholder: 'Input Apply Discount On',
       
         options: '[object Object]',
+      
       },
+      
     ]
   };
 } 

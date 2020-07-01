@@ -21,59 +21,28 @@ export class JournalEntryAccount extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     account: DataTypes.STRING,
-    
     accountType: DataTypes.STRING,
-    
     accountBalance: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
     partyBalance: DataTypes.STRING,
-    
     currency: DataTypes.STRING,
-    
     accountCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     exchangeRate: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     debit: DataTypes.STRING,
-    
     debitInCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     credit: DataTypes.STRING,
-    
     creditInCompanyCurrency: DataTypes.STRING,
-    
     reference: DataTypes.STRING,
-    
     referenceType: DataTypes.STRING,
-    
     referenceName: DataTypes.STRING,
-    
     referenceDueDate: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isAdvance: DataTypes.STRING,
-    
     userRemark: DataTypes.STRING,
-    
     againstAccount: DataTypes.STRING,
     
   };
@@ -82,6 +51,7 @@ export class JournalEntryAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'account',
       
         label: 'Account',
@@ -91,7 +61,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountType',
       
         label: 'Account Type',
@@ -101,7 +74,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Account Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountBalance',
       
         label: 'Account Balance',
@@ -111,7 +87,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Account Balance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -121,7 +100,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -131,7 +113,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -141,7 +126,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Party Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -151,7 +139,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyBalance',
       
         label: 'Party Balance',
@@ -161,7 +152,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Party Balance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currency',
       
         label: 'Currency',
@@ -171,7 +165,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountCurrency',
       
         label: 'Account Currency',
@@ -181,7 +178,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -191,7 +191,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exchangeRate',
       
         label: 'Exchange Rate',
@@ -201,7 +204,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -211,7 +217,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'debit',
       
         label: 'Debit',
@@ -221,7 +230,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Debit',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'debitInCompanyCurrency',
       
         label: 'Debit In Company Currency',
@@ -231,7 +243,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Debit In Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -241,7 +256,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'credit',
       
         label: 'Credit',
@@ -251,7 +269,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Credit',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'creditInCompanyCurrency',
       
         label: 'Credit In Company Currency',
@@ -261,7 +282,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Credit In Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reference',
       
         label: 'Reference',
@@ -271,7 +295,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceType',
       
         label: 'Reference Type',
@@ -281,7 +308,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Reference Type',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'referenceName',
       
         label: 'Reference Name',
@@ -291,7 +321,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Reference Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceDueDate',
       
         label: 'Reference Due Date',
@@ -301,7 +334,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Reference Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -311,7 +347,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -321,7 +360,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isAdvance',
       
         label: 'Is Advance',
@@ -331,7 +373,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Is Advance',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'userRemark',
       
         label: 'User Remark',
@@ -341,7 +386,10 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input User Remark',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'againstAccount',
       
         label: 'Against Account',
@@ -351,7 +399,9 @@ export class JournalEntryAccount extends Model {
         placeholder: 'Input Against Account',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

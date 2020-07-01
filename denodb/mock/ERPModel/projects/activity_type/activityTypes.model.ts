@@ -21,15 +21,9 @@ export class ActivityType extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     activityType: DataTypes.STRING,
-    
     defaultCostingRate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     defaultBillingRate: DataTypes.STRING,
-    
     disabled: DataTypes.STRING,
     
   };
@@ -38,6 +32,7 @@ export class ActivityType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'activityType',
       
         label: 'Activity Type',
@@ -47,7 +42,10 @@ export class ActivityType extends Model {
         placeholder: 'Input Activity Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'defaultCostingRate',
       
         label: 'Default Costing Rate',
@@ -57,7 +55,10 @@ export class ActivityType extends Model {
         placeholder: 'Input Default Costing Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -67,7 +68,10 @@ export class ActivityType extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'defaultBillingRate',
       
         label: 'Default Billing Rate',
@@ -77,7 +81,10 @@ export class ActivityType extends Model {
         placeholder: 'Input Default Billing Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disabled',
       
         label: 'Disabled',
@@ -87,7 +94,9 @@ export class ActivityType extends Model {
         placeholder: 'Input Disabled',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

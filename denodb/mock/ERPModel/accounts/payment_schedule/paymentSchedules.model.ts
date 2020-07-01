@@ -21,17 +21,11 @@ export class PaymentSchedule extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     paymentTerm: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     dueDate: DataTypes.STRING,
-    
     invoicePortion: DataTypes.STRING,
-    
     paymentAmount: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
     
   };
@@ -40,6 +34,7 @@ export class PaymentSchedule extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'paymentTerm',
       
         label: 'Payment Term',
@@ -49,7 +44,10 @@ export class PaymentSchedule extends Model {
         placeholder: 'Input Payment Term',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -59,7 +57,10 @@ export class PaymentSchedule extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dueDate',
       
         label: 'Due Date',
@@ -69,7 +70,10 @@ export class PaymentSchedule extends Model {
         placeholder: 'Input Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoicePortion',
       
         label: 'Invoice Portion',
@@ -79,7 +83,10 @@ export class PaymentSchedule extends Model {
         placeholder: 'Input Invoice Portion',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentAmount',
       
         label: 'Payment Amount',
@@ -89,7 +96,10 @@ export class PaymentSchedule extends Model {
         placeholder: 'Input Payment Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -99,7 +109,9 @@ export class PaymentSchedule extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,25 +21,13 @@ export class JobApplicant extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     applicantName: DataTypes.STRING,
-    
     emailAddress: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     jobOpening: DataTypes.STRING,
-    
     source: DataTypes.STRING,
-    
     sourceName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     coverLetter: DataTypes.STRING,
-    
     resumeAttachment: DataTypes.STRING,
     
   };
@@ -48,6 +36,7 @@ export class JobApplicant extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'applicantName',
       
         label: 'Applicant Name',
@@ -57,7 +46,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input Applicant Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'emailAddress',
       
         label: 'Email Address',
@@ -67,7 +59,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input Email Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -77,7 +72,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -87,7 +85,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'jobOpening',
       
         label: 'Job Opening',
@@ -97,7 +98,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input Job Opening',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'source',
       
         label: 'Source',
@@ -107,7 +111,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input Source',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sourceName',
       
         label: 'Source Name',
@@ -117,7 +124,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input Source Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -127,7 +137,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'coverLetter',
       
         label: 'Cover Letter',
@@ -137,7 +150,10 @@ export class JobApplicant extends Model {
         placeholder: 'Input Cover Letter',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'resumeAttachment',
       
         label: 'Resume Attachment',
@@ -147,7 +163,9 @@ export class JobApplicant extends Model {
         placeholder: 'Input Resume Attachment',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

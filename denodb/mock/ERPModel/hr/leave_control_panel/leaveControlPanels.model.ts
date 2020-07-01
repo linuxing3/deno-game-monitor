@@ -21,35 +21,19 @@ export class LeaveControlPanel extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     employmentType: DataTypes.STRING,
-    
     branch: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     employeeGrade: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
     leavePolicy: DataTypes.STRING,
-    
     leaveType: DataTypes.STRING,
-    
     carryForward: DataTypes.STRING,
-    
     newLeavesAllocatedInDays: DataTypes.STRING,
-    
     allocate: DataTypes.STRING,
     
   };
@@ -58,6 +42,7 @@ export class LeaveControlPanel extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -67,7 +52,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employmentType',
       
         label: 'Employment Type',
@@ -77,7 +65,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Employment Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'branch',
       
         label: 'Branch',
@@ -87,7 +78,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Branch',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -97,7 +91,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -107,7 +104,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeGrade',
       
         label: 'Employee Grade',
@@ -117,7 +117,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Employee Grade',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -127,7 +130,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -137,7 +143,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -147,7 +156,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -157,7 +169,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leavePolicy',
       
         label: 'Leave Policy',
@@ -167,7 +182,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Leave Policy',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveType',
       
         label: 'Leave Type',
@@ -177,7 +195,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Leave Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'carryForward',
       
         label: 'Carry Forward',
@@ -187,7 +208,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Carry Forward',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'newLeavesAllocatedInDays',
       
         label: 'New Leaves Allocated In Days',
@@ -197,7 +221,10 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input New Leaves Allocated In Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocate',
       
         label: 'Allocate',
@@ -207,7 +234,9 @@ export class LeaveControlPanel extends Model {
         placeholder: 'Input Allocate',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

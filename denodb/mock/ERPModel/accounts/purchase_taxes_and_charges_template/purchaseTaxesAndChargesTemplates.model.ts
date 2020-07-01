@@ -21,19 +21,10 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     title: DataTypes.STRING,
-    
     default: DataTypes.STRING,
-    
     disabled: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     purchaseTaxesAndCharges: DataTypes.STRING,
     
   };
@@ -42,6 +33,7 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'title',
       
         label: 'Title',
@@ -51,7 +43,10 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'default',
       
         label: 'Default',
@@ -61,7 +56,10 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Default',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disabled',
       
         label: 'Disabled',
@@ -71,7 +69,10 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Disabled',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -81,7 +82,10 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -91,7 +95,10 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -101,7 +108,10 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseTaxesAndCharges',
       
         label: 'Purchase Taxes And Charges',
@@ -111,7 +121,9 @@ export class PurchaseTaxesAndChargesTemplate extends Model {
         placeholder: 'Input Purchase Taxes And Charges',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

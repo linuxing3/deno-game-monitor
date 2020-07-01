@@ -21,21 +21,12 @@ export class PayrollPeriod extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
     payrollPeriods: DataTypes.STRING,
-    
     payrollPeriods: DataTypes.STRING,
-    
     taxableSalarySlabs: DataTypes.STRING,
-    
     taxableSalarySlabs: DataTypes.STRING,
     
   };
@@ -44,6 +35,7 @@ export class PayrollPeriod extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -53,7 +45,10 @@ export class PayrollPeriod extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -63,7 +58,10 @@ export class PayrollPeriod extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -73,7 +71,10 @@ export class PayrollPeriod extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -83,47 +84,61 @@ export class PayrollPeriod extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
-        key: 'payrollPeriods',
       
-        label: 'Payroll Periods',
-      
-        type: 'input',
-      
-        placeholder: 'Input Payroll Periods',
-      
-        options: '',
-      },{
-        key: 'payrollPeriods',
-      
-        label: 'Payroll Periods',
-      
-        type: 'select',
-      
-        placeholder: 'Input Payroll Periods',
-      
-        options: '',
-      },{
-        key: 'taxableSalarySlabs',
-      
-        label: 'Taxable Salary Slabs',
-      
-        type: 'input',
-      
-        placeholder: 'Input Taxable Salary Slabs',
-      
-        options: '',
-      },{
-        key: 'taxableSalarySlabs',
-      
-        label: 'Taxable Salary Slabs',
-      
-        type: 'select',
-      
-        placeholder: 'Input Taxable Salary Slabs',
-      
-        options: '',
       },
+      {
+        
+        key: 'payrollPeriods',
+      
+        label: 'Payroll Periods',
+      
+        type: 'input',
+      
+        placeholder: 'Input Payroll Periods',
+      
+        options: '',
+      
+      },
+      {
+        
+        key: 'payrollPeriods',
+      
+        label: 'Payroll Periods',
+      
+        type: 'select',
+      
+        placeholder: 'Input Payroll Periods',
+      
+        options: '',
+      
+      },
+      {
+        
+        key: 'taxableSalarySlabs',
+      
+        label: 'Taxable Salary Slabs',
+      
+        type: 'input',
+      
+        placeholder: 'Input Taxable Salary Slabs',
+      
+        options: '',
+      
+      },
+      {
+        
+        key: 'taxableSalarySlabs',
+      
+        label: 'Taxable Salary Slabs',
+      
+        type: 'select',
+      
+        placeholder: 'Input Taxable Salary Slabs',
+      
+        options: '',
+      
+      },
+      
     ]
   };
 } 

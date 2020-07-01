@@ -21,9 +21,7 @@ export class ShareType extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     title: DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class ShareType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'title',
       
         label: 'Title',
@@ -41,7 +40,10 @@ export class ShareType extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -51,7 +53,9 @@ export class ShareType extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

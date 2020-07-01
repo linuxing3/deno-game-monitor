@@ -21,17 +21,11 @@ export class BankStatementSettings extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     bankAccount: DataTypes.STRING,
-    
     dateFormat: DataTypes.STRING,
-    
     statementHeaderMapping: DataTypes.STRING,
-    
     statementHeaders: DataTypes.STRING,
-    
     transactionDataMapping: DataTypes.STRING,
-    
     mappedItems: DataTypes.STRING,
     
   };
@@ -40,6 +34,7 @@ export class BankStatementSettings extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'bankAccount',
       
         label: 'Bank Account',
@@ -49,7 +44,10 @@ export class BankStatementSettings extends Model {
         placeholder: 'Input Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateFormat',
       
         label: 'Date Format',
@@ -59,7 +57,10 @@ export class BankStatementSettings extends Model {
         placeholder: 'Input Date Format',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'statementHeaderMapping',
       
         label: 'Statement Header Mapping',
@@ -69,7 +70,10 @@ export class BankStatementSettings extends Model {
         placeholder: 'Input Statement Header Mapping',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'statementHeaders',
       
         label: 'Statement Headers',
@@ -79,7 +83,10 @@ export class BankStatementSettings extends Model {
         placeholder: 'Input Statement Headers',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'transactionDataMapping',
       
         label: 'Transaction Data Mapping',
@@ -89,7 +96,10 @@ export class BankStatementSettings extends Model {
         placeholder: 'Input Transaction Data Mapping',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'mappedItems',
       
         label: 'Mapped Items',
@@ -99,7 +109,9 @@ export class BankStatementSettings extends Model {
         placeholder: 'Input Mapped Items',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

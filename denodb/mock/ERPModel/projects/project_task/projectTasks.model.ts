@@ -21,29 +21,15 @@ export class ProjectTask extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     title: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     viewTask: DataTypes.STRING,
-    
     viewTimesheet: DataTypes.STRING,
-    
     makeTimesheet: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
     weight: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     taskId: DataTypes.STRING,
     
   };
@@ -52,6 +38,7 @@ export class ProjectTask extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'title',
       
         label: 'Title',
@@ -61,7 +48,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -71,7 +61,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'viewTask',
       
         label: 'View Task',
@@ -81,7 +74,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input View Task',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'viewTimesheet',
       
         label: 'View Timesheet',
@@ -91,7 +87,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input View Timesheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'makeTimesheet',
       
         label: 'Make Timesheet',
@@ -101,7 +100,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input Make Timesheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -111,7 +113,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -121,7 +126,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -131,7 +139,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'weight',
       
         label: 'Weight',
@@ -141,7 +152,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input Weight',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -151,7 +165,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -161,7 +178,10 @@ export class ProjectTask extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taskId',
       
         label: 'Task Id',
@@ -171,7 +191,9 @@ export class ProjectTask extends Model {
         placeholder: 'Input Task Id',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,9 +21,7 @@ export class ClosedDocument extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     documentType: DataTypes.STRING,
-    
     closed: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class ClosedDocument extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'documentType',
       
         label: 'Document Type',
@@ -41,7 +40,10 @@ export class ClosedDocument extends Model {
         placeholder: 'Input Document Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'closed',
       
         label: 'Closed',
@@ -51,7 +53,9 @@ export class ClosedDocument extends Model {
         placeholder: 'Input Closed',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

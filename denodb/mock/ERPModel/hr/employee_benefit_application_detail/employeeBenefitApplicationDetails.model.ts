@@ -21,13 +21,9 @@ export class EmployeeBenefitApplicationDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     earningComponent: DataTypes.STRING,
-    
     payAgainstBenefitClaim: DataTypes.STRING,
-    
     maxBenefitAmount: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class EmployeeBenefitApplicationDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'earningComponent',
       
         label: 'Earning Component',
@@ -45,7 +42,10 @@ export class EmployeeBenefitApplicationDetail extends Model {
         placeholder: 'Input Earning Component',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payAgainstBenefitClaim',
       
         label: 'Pay Against Benefit Claim',
@@ -55,7 +55,10 @@ export class EmployeeBenefitApplicationDetail extends Model {
         placeholder: 'Input Pay Against Benefit Claim',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maxBenefitAmount',
       
         label: 'Max Benefit Amount',
@@ -65,7 +68,10 @@ export class EmployeeBenefitApplicationDetail extends Model {
         placeholder: 'Input Max Benefit Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -75,7 +81,9 @@ export class EmployeeBenefitApplicationDetail extends Model {
         placeholder: 'Input Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

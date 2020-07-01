@@ -21,15 +21,10 @@ export class AssetCategoryAccount extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     fixedAssetAccount: DataTypes.STRING,
-    
     accumulatedDepreciationAccount: DataTypes.STRING,
-    
     depreciationExpenseAccount: DataTypes.STRING,
-    
     capitalWorkInProgressAccount: DataTypes.STRING,
     
   };
@@ -38,6 +33,7 @@ export class AssetCategoryAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -47,7 +43,10 @@ export class AssetCategoryAccount extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fixedAssetAccount',
       
         label: 'Fixed Asset Account',
@@ -57,7 +56,10 @@ export class AssetCategoryAccount extends Model {
         placeholder: 'Input Fixed Asset Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accumulatedDepreciationAccount',
       
         label: 'Accumulated Depreciation Account',
@@ -67,7 +69,10 @@ export class AssetCategoryAccount extends Model {
         placeholder: 'Input Accumulated Depreciation Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'depreciationExpenseAccount',
       
         label: 'Depreciation Expense Account',
@@ -77,7 +82,10 @@ export class AssetCategoryAccount extends Model {
         placeholder: 'Input Depreciation Expense Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'capitalWorkInProgressAccount',
       
         label: 'Capital Work In Progress Account',
@@ -87,7 +95,9 @@ export class AssetCategoryAccount extends Model {
         placeholder: 'Input Capital Work In Progress Account',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,21 +21,11 @@ export class EmployeeBoardingActivity extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     activityName: DataTypes.STRING,
-    
     user: DataTypes.STRING,
-    
     role: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     task: DataTypes.STRING,
-    
     requiredForEmployeeCreation: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -44,6 +34,7 @@ export class EmployeeBoardingActivity extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'activityName',
       
         label: 'Activity Name',
@@ -53,7 +44,10 @@ export class EmployeeBoardingActivity extends Model {
         placeholder: 'Input Activity Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'user',
       
         label: 'User',
@@ -63,7 +57,10 @@ export class EmployeeBoardingActivity extends Model {
         placeholder: 'Input User',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'role',
       
         label: 'Role',
@@ -73,7 +70,10 @@ export class EmployeeBoardingActivity extends Model {
         placeholder: 'Input Role',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -83,7 +83,10 @@ export class EmployeeBoardingActivity extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'task',
       
         label: 'Task',
@@ -93,7 +96,10 @@ export class EmployeeBoardingActivity extends Model {
         placeholder: 'Input Task',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'requiredForEmployeeCreation',
       
         label: 'Required For Employee Creation',
@@ -103,7 +109,10 @@ export class EmployeeBoardingActivity extends Model {
         placeholder: 'Input Required For Employee Creation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -113,7 +122,10 @@ export class EmployeeBoardingActivity extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -123,7 +135,9 @@ export class EmployeeBoardingActivity extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

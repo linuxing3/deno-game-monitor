@@ -21,15 +21,9 @@ export class TrainingResult extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     trainingEvent: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employees: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     employeeEmails: DataTypes.STRING,
     
   };
@@ -38,6 +32,7 @@ export class TrainingResult extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'trainingEvent',
       
         label: 'Training Event',
@@ -47,7 +42,10 @@ export class TrainingResult extends Model {
         placeholder: 'Input Training Event',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -57,7 +55,10 @@ export class TrainingResult extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employees',
       
         label: 'Employees',
@@ -67,7 +68,10 @@ export class TrainingResult extends Model {
         placeholder: 'Input Employees',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -77,7 +81,10 @@ export class TrainingResult extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeEmails',
       
         label: 'Employee Emails',
@@ -87,7 +94,9 @@ export class TrainingResult extends Model {
         placeholder: 'Input Employee Emails',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

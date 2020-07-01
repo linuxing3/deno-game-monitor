@@ -21,11 +21,8 @@ export class MaintenanceTeamMember extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     teamMember: DataTypes.STRING,
-    
     fullName: DataTypes.STRING,
-    
     maintenanceRole: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class MaintenanceTeamMember extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'teamMember',
       
         label: 'Team Member',
@@ -43,7 +41,10 @@ export class MaintenanceTeamMember extends Model {
         placeholder: 'Input Team Member',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fullName',
       
         label: 'Full Name',
@@ -53,7 +54,10 @@ export class MaintenanceTeamMember extends Model {
         placeholder: 'Input Full Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceRole',
       
         label: 'Maintenance Role',
@@ -63,7 +67,9 @@ export class MaintenanceTeamMember extends Model {
         placeholder: 'Input Maintenance Role',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

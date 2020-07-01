@@ -21,7 +21,6 @@ export class DepartmentApprover extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     approver: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class DepartmentApprover extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'approver',
       
         label: 'Approver',
@@ -39,7 +39,9 @@ export class DepartmentApprover extends Model {
         placeholder: 'Input Approver',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,43 +21,20 @@ export class SalesTaxesAndCharges extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     type: DataTypes.STRING,
-    
     referenceRow: DataTypes.STRING,
-    
     accountHead: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     isThisTaxIncludedInBasicRate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     rate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     total: DataTypes.STRING,
-    
     taxAmountAfterDiscountAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     amountCompanyCurrency: DataTypes.STRING,
-    
     totalCompanyCurrency: DataTypes.STRING,
-    
     taxAmountAfterDiscountAmountCompanyCurrency: DataTypes.STRING,
-    
     itemWiseTaxDetail: DataTypes.STRING,
-    
     parenttype: DataTypes.STRING,
     
   };
@@ -66,6 +43,7 @@ export class SalesTaxesAndCharges extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'type',
       
         label: 'Type',
@@ -75,7 +53,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Type',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'referenceRow',
       
         label: 'Reference Row',
@@ -85,7 +66,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Reference Row',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountHead',
       
         label: 'Account Head',
@@ -95,7 +79,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Account Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -105,7 +92,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -115,7 +105,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -125,7 +118,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isThisTaxIncludedInBasicRate',
       
         label: 'Is This Tax Included In Basic Rate',
@@ -135,7 +131,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Is This Tax Included In Basic Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -145,7 +144,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rate',
       
         label: 'Rate',
@@ -155,7 +157,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -165,7 +170,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -175,7 +183,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'total',
       
         label: 'Total',
@@ -185,7 +196,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxAmountAfterDiscountAmount',
       
         label: 'Tax Amount After Discount Amount',
@@ -195,7 +209,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Tax Amount After Discount Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -205,7 +222,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amountCompanyCurrency',
       
         label: 'Amount Company Currency',
@@ -215,7 +235,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalCompanyCurrency',
       
         label: 'Total Company Currency',
@@ -225,7 +248,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxAmountAfterDiscountAmountCompanyCurrency',
       
         label: 'Tax Amount After Discount Amount Company Currency',
@@ -235,7 +261,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Tax Amount After Discount Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemWiseTaxDetail',
       
         label: 'Item Wise Tax Detail',
@@ -245,7 +274,10 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Item Wise Tax Detail',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'parenttype',
       
         label: 'Parenttype',
@@ -255,7 +287,9 @@ export class SalesTaxesAndCharges extends Model {
         placeholder: 'Input Parenttype',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

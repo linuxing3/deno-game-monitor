@@ -21,15 +21,10 @@ export class TaxWithholdingCategory extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     categoryName: DataTypes.STRING,
-    
     taxWithholdingRates: DataTypes.STRING,
-    
     rates: DataTypes.STRING,
-    
     accountDetails: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
     
   };
@@ -38,6 +33,7 @@ export class TaxWithholdingCategory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'categoryName',
       
         label: 'Category Name',
@@ -47,7 +43,10 @@ export class TaxWithholdingCategory extends Model {
         placeholder: 'Input Category Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxWithholdingRates',
       
         label: 'Tax Withholding Rates',
@@ -57,7 +56,10 @@ export class TaxWithholdingCategory extends Model {
         placeholder: 'Input Tax Withholding Rates',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rates',
       
         label: 'Rates',
@@ -67,7 +69,10 @@ export class TaxWithholdingCategory extends Model {
         placeholder: 'Input Rates',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountDetails',
       
         label: 'Account Details',
@@ -77,7 +82,10 @@ export class TaxWithholdingCategory extends Model {
         placeholder: 'Input Account Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -87,7 +95,9 @@ export class TaxWithholdingCategory extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

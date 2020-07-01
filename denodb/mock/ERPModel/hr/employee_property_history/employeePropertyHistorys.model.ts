@@ -21,13 +21,9 @@ export class EmployeePropertyHistory extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     property: DataTypes.STRING,
-    
     current: DataTypes.STRING,
-    
     new: DataTypes.STRING,
-    
     fieldName: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class EmployeePropertyHistory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'property',
       
         label: 'Property',
@@ -45,7 +42,10 @@ export class EmployeePropertyHistory extends Model {
         placeholder: 'Input Property',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'current',
       
         label: 'Current',
@@ -55,7 +55,10 @@ export class EmployeePropertyHistory extends Model {
         placeholder: 'Input Current',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'new',
       
         label: 'New',
@@ -65,7 +68,10 @@ export class EmployeePropertyHistory extends Model {
         placeholder: 'Input New',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fieldName',
       
         label: 'Field Name',
@@ -75,7 +81,9 @@ export class EmployeePropertyHistory extends Model {
         placeholder: 'Input Field Name',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

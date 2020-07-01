@@ -21,71 +21,34 @@ export class Loan extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     applicantType: DataTypes.STRING,
-    
     applicant: DataTypes.STRING,
-    
     applicantName: DataTypes.STRING,
-    
     loanApplication: DataTypes.STRING,
-    
     loanType: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     repayFromSalary: DataTypes.STRING,
-    
     loanDetails: DataTypes.STRING,
-    
     loanAmount: DataTypes.STRING,
-    
     rateOfInterestYear: DataTypes.STRING,
-    
     disbursementDate: DataTypes.STRING,
-    
     repaymentStartDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     repaymentMethod: DataTypes.STRING,
-    
     repaymentPeriodInMonths: DataTypes.STRING,
-    
     monthlyRepaymentAmount: DataTypes.STRING,
-    
     accountInfo: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     paymentAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     loanAccount: DataTypes.STRING,
-    
     interestIncomeAccount: DataTypes.STRING,
-    
     repaymentSchedule: DataTypes.STRING,
-    
     repaymentSchedule: DataTypes.STRING,
-    
     totals: DataTypes.STRING,
-    
     totalPayment: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalInterestPayable: DataTypes.STRING,
-    
     totalAmountPaid: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -94,6 +57,7 @@ export class Loan extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'applicantType',
       
         label: 'Applicant Type',
@@ -103,7 +67,10 @@ export class Loan extends Model {
         placeholder: 'Input Applicant Type',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'applicant',
       
         label: 'Applicant',
@@ -113,7 +80,10 @@ export class Loan extends Model {
         placeholder: 'Input Applicant',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicantName',
       
         label: 'Applicant Name',
@@ -123,7 +93,10 @@ export class Loan extends Model {
         placeholder: 'Input Applicant Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanApplication',
       
         label: 'Loan Application',
@@ -133,7 +106,10 @@ export class Loan extends Model {
         placeholder: 'Input Loan Application',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanType',
       
         label: 'Loan Type',
@@ -143,7 +119,10 @@ export class Loan extends Model {
         placeholder: 'Input Loan Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -153,7 +132,10 @@ export class Loan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -163,7 +145,10 @@ export class Loan extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -173,7 +158,10 @@ export class Loan extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -183,7 +171,10 @@ export class Loan extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'repayFromSalary',
       
         label: 'Repay From Salary',
@@ -193,7 +184,10 @@ export class Loan extends Model {
         placeholder: 'Input Repay From Salary',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanDetails',
       
         label: 'Loan Details',
@@ -203,7 +197,10 @@ export class Loan extends Model {
         placeholder: 'Input Loan Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanAmount',
       
         label: 'Loan Amount',
@@ -213,7 +210,10 @@ export class Loan extends Model {
         placeholder: 'Input Loan Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rateOfInterestYear',
       
         label: 'Rate Of Interest Year',
@@ -223,7 +223,10 @@ export class Loan extends Model {
         placeholder: 'Input Rate Of Interest Year',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disbursementDate',
       
         label: 'Disbursement Date',
@@ -233,7 +236,10 @@ export class Loan extends Model {
         placeholder: 'Input Disbursement Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repaymentStartDate',
       
         label: 'Repayment Start Date',
@@ -243,7 +249,10 @@ export class Loan extends Model {
         placeholder: 'Input Repayment Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -253,7 +262,10 @@ export class Loan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repaymentMethod',
       
         label: 'Repayment Method',
@@ -263,7 +275,10 @@ export class Loan extends Model {
         placeholder: 'Input Repayment Method',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'repaymentPeriodInMonths',
       
         label: 'Repayment Period In Months',
@@ -273,7 +288,10 @@ export class Loan extends Model {
         placeholder: 'Input Repayment Period In Months',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'monthlyRepaymentAmount',
       
         label: 'Monthly Repayment Amount',
@@ -283,7 +301,10 @@ export class Loan extends Model {
         placeholder: 'Input Monthly Repayment Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountInfo',
       
         label: 'Account Info',
@@ -293,7 +314,10 @@ export class Loan extends Model {
         placeholder: 'Input Account Info',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -303,7 +327,10 @@ export class Loan extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentAccount',
       
         label: 'Payment Account',
@@ -313,7 +340,10 @@ export class Loan extends Model {
         placeholder: 'Input Payment Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -323,7 +353,10 @@ export class Loan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loanAccount',
       
         label: 'Loan Account',
@@ -333,7 +366,10 @@ export class Loan extends Model {
         placeholder: 'Input Loan Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'interestIncomeAccount',
       
         label: 'Interest Income Account',
@@ -343,7 +379,10 @@ export class Loan extends Model {
         placeholder: 'Input Interest Income Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repaymentSchedule',
       
         label: 'Repayment Schedule',
@@ -353,7 +392,10 @@ export class Loan extends Model {
         placeholder: 'Input Repayment Schedule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repaymentSchedule',
       
         label: 'Repayment Schedule',
@@ -363,7 +405,10 @@ export class Loan extends Model {
         placeholder: 'Input Repayment Schedule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totals',
       
         label: 'Totals',
@@ -373,7 +418,10 @@ export class Loan extends Model {
         placeholder: 'Input Totals',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalPayment',
       
         label: 'Total Payment',
@@ -383,7 +431,10 @@ export class Loan extends Model {
         placeholder: 'Input Total Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -393,7 +444,10 @@ export class Loan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalInterestPayable',
       
         label: 'Total Interest Payable',
@@ -403,7 +457,10 @@ export class Loan extends Model {
         placeholder: 'Input Total Interest Payable',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmountPaid',
       
         label: 'Total Amount Paid',
@@ -413,7 +470,10 @@ export class Loan extends Model {
         placeholder: 'Input Total Amount Paid',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -423,7 +483,9 @@ export class Loan extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

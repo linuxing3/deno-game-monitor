@@ -21,23 +21,11 @@ export class ExchangeRateRevaluation extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     postingDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     getEntries: DataTypes.STRING,
-    
     exchangeRateRevaluationAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalGainLoss: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -46,6 +34,7 @@ export class ExchangeRateRevaluation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -55,7 +44,10 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -65,7 +57,10 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -75,7 +70,10 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -85,7 +83,10 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'getEntries',
       
         label: 'Get Entries',
@@ -95,7 +96,10 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input Get Entries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exchangeRateRevaluationAccount',
       
         label: 'Exchange Rate Revaluation Account',
@@ -105,7 +109,10 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input Exchange Rate Revaluation Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -115,7 +122,10 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalGainLoss',
       
         label: 'Total Gain Loss',
@@ -125,7 +135,10 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input Total Gain Loss',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -135,7 +148,9 @@ export class ExchangeRateRevaluation extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

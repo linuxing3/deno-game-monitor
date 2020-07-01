@@ -21,45 +21,21 @@ export class BankAccount extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     accountName: DataTypes.STRING,
-    
     account: DataTypes.STRING,
-    
     bank: DataTypes.STRING,
-    
     isCompanyAccount: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isDefault: DataTypes.STRING,
-    
     bankAccountNo: DataTypes.STRING,
-    
     iban: DataTypes.STRING,
-    
     branchCode: DataTypes.STRING,
-    
     swiftNumber: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
     addressAndContact: DataTypes.STRING,
-    
     addressHtml: DataTypes.STRING,
-    
     website: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     contactHtml: DataTypes.STRING,
     
   };
@@ -68,6 +44,7 @@ export class BankAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'accountName',
       
         label: 'Account Name',
@@ -77,7 +54,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Account Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -87,7 +67,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bank',
       
         label: 'Bank',
@@ -97,7 +80,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Bank',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isCompanyAccount',
       
         label: 'Is Company Account',
@@ -107,7 +93,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Is Company Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -117,7 +106,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -127,7 +119,10 @@ export class BankAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isDefault',
       
         label: 'Is Default',
@@ -137,7 +132,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Is Default',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccountNo',
       
         label: 'Bank Account No',
@@ -147,7 +145,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Bank Account No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'iban',
       
         label: 'Iban',
@@ -157,7 +158,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Iban',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'branchCode',
       
         label: 'Branch Code',
@@ -167,7 +171,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Branch Code',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'swiftNumber',
       
         label: 'Swift Number',
@@ -177,7 +184,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Swift Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -187,7 +197,10 @@ export class BankAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -197,7 +210,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Party Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -207,7 +223,10 @@ export class BankAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -217,7 +236,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addressAndContact',
       
         label: 'Address And Contact',
@@ -227,7 +249,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Address And Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addressHtml',
       
         label: 'Address Html',
@@ -237,7 +262,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Address Html',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'website',
       
         label: 'Website',
@@ -247,7 +275,10 @@ export class BankAccount extends Model {
         placeholder: 'Input Website',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -257,7 +288,10 @@ export class BankAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactHtml',
       
         label: 'Contact Html',
@@ -267,7 +301,9 @@ export class BankAccount extends Model {
         placeholder: 'Input Contact Html',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

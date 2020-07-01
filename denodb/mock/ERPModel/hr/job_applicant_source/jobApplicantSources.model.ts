@@ -21,9 +21,7 @@ export class JobApplicantSource extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     sourceName: DataTypes.STRING,
-    
     details: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class JobApplicantSource extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'sourceName',
       
         label: 'Source Name',
@@ -41,7 +40,10 @@ export class JobApplicantSource extends Model {
         placeholder: 'Input Source Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'details',
       
         label: 'Details',
@@ -51,7 +53,9 @@ export class JobApplicantSource extends Model {
         placeholder: 'Input Details',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

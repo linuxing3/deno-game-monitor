@@ -21,29 +21,15 @@ export class JobOpening extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     jobTitle: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     staffingPlan: DataTypes.STRING,
-    
     plannedNumberOfPositions: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     publishOnWebsite: DataTypes.STRING,
-    
     route: DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -52,6 +38,7 @@ export class JobOpening extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'jobTitle',
       
         label: 'Job Title',
@@ -61,7 +48,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Job Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -71,7 +61,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -81,7 +74,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -91,7 +87,10 @@ export class JobOpening extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -101,7 +100,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -111,7 +113,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'staffingPlan',
       
         label: 'Staffing Plan',
@@ -121,7 +126,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Staffing Plan',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'plannedNumberOfPositions',
       
         label: 'Planned Number Of Positions',
@@ -131,7 +139,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Planned Number Of Positions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -141,7 +152,10 @@ export class JobOpening extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'publishOnWebsite',
       
         label: 'Publish On Website',
@@ -151,7 +165,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Publish On Website',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'route',
       
         label: 'Route',
@@ -161,7 +178,10 @@ export class JobOpening extends Model {
         placeholder: 'Input Route',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -171,7 +191,9 @@ export class JobOpening extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

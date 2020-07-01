@@ -21,35 +21,17 @@ export class AssetMaintenance extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     assetName: DataTypes.STRING,
-    
     assetCategory: DataTypes.STRING,
-    
     itemCode: DataTypes.STRING,
-    
     itemName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     selectSerialNo: DataTypes.STRING,
-    
     serialNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     maintenanceTeam: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     maintenanceManager: DataTypes.STRING,
-    
     maintenanceManagerName: DataTypes.STRING,
-    
     tasks: DataTypes.STRING,
-    
     maintenanceTasks: DataTypes.STRING,
     
   };
@@ -58,6 +40,7 @@ export class AssetMaintenance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'assetName',
       
         label: 'Asset Name',
@@ -67,7 +50,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Asset Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assetCategory',
       
         label: 'Asset Category',
@@ -77,7 +63,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Asset Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemCode',
       
         label: 'Item Code',
@@ -87,7 +76,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Item Code',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemName',
       
         label: 'Item Name',
@@ -97,7 +89,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Item Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -107,7 +102,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -117,7 +115,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selectSerialNo',
       
         label: 'Select Serial No',
@@ -127,7 +128,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Select Serial No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'serialNo',
       
         label: 'Serial No',
@@ -137,7 +141,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Serial No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -147,7 +154,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceTeam',
       
         label: 'Maintenance Team',
@@ -157,7 +167,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Maintenance Team',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -167,7 +180,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceManager',
       
         label: 'Maintenance Manager',
@@ -177,7 +193,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Maintenance Manager',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceManagerName',
       
         label: 'Maintenance Manager Name',
@@ -187,7 +206,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Maintenance Manager Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'tasks',
       
         label: 'Tasks',
@@ -197,7 +219,10 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Tasks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceTasks',
       
         label: 'Maintenance Tasks',
@@ -207,7 +232,9 @@ export class AssetMaintenance extends Model {
         placeholder: 'Input Maintenance Tasks',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

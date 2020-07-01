@@ -21,9 +21,7 @@ export class EmployeeGrade extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     defaultLeavePolicy: DataTypes.STRING,
-    
     defaultSalaryStructure: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class EmployeeGrade extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'defaultLeavePolicy',
       
         label: 'Default Leave Policy',
@@ -41,7 +40,10 @@ export class EmployeeGrade extends Model {
         placeholder: 'Input Default Leave Policy',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'defaultSalaryStructure',
       
         label: 'Default Salary Structure',
@@ -51,7 +53,9 @@ export class EmployeeGrade extends Model {
         placeholder: 'Input Default Salary Structure',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

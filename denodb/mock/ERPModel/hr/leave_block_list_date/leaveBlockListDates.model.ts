@@ -21,9 +21,7 @@ export class LeaveBlockListDate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     blockDate: DataTypes.STRING,
-    
     reason: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class LeaveBlockListDate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'blockDate',
       
         label: 'Block Date',
@@ -41,7 +40,10 @@ export class LeaveBlockListDate extends Model {
         placeholder: 'Input Block Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reason',
       
         label: 'Reason',
@@ -51,7 +53,9 @@ export class LeaveBlockListDate extends Model {
         placeholder: 'Input Reason',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

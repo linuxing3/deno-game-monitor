@@ -21,31 +21,15 @@ export class SalaryStructureAssignment extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salaryStructure: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     base: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     variable: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -54,6 +38,7 @@ export class SalaryStructureAssignment extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -63,7 +48,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -73,7 +61,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -83,7 +74,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -93,7 +87,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -103,7 +100,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salaryStructure',
       
         label: 'Salary Structure',
@@ -113,7 +113,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Salary Structure',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -123,7 +126,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -133,7 +139,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -143,7 +152,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'base',
       
         label: 'Base',
@@ -153,7 +165,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Base',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -163,7 +178,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'variable',
       
         label: 'Variable',
@@ -173,7 +191,10 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Variable',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -183,7 +204,9 @@ export class SalaryStructureAssignment extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,9 +21,7 @@ export class SalarySlipTimesheet extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     timeSheet: DataTypes.STRING,
-    
     workingHours: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class SalarySlipTimesheet extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'timeSheet',
       
         label: 'Time Sheet',
@@ -41,7 +40,10 @@ export class SalarySlipTimesheet extends Model {
         placeholder: 'Input Time Sheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'workingHours',
       
         label: 'Working Hours',
@@ -51,7 +53,9 @@ export class SalarySlipTimesheet extends Model {
         placeholder: 'Input Working Hours',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

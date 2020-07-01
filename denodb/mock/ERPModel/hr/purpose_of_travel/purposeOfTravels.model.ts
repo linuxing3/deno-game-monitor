@@ -21,7 +21,6 @@ export class PurposeOfTravel extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     purposeOfTravel: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class PurposeOfTravel extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'purposeOfTravel',
       
         label: 'Purpose Of Travel',
@@ -39,7 +39,9 @@ export class PurposeOfTravel extends Model {
         placeholder: 'Input Purpose Of Travel',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

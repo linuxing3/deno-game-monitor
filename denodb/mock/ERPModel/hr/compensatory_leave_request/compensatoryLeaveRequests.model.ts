@@ -21,33 +21,17 @@ export class CompensatoryLeaveRequest extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     leaveType: DataTypes.STRING,
-    
     leaveAllocation: DataTypes.STRING,
-    
     workedOnHoliday: DataTypes.STRING,
-    
     workFromDate: DataTypes.STRING,
-    
     workEndDate: DataTypes.STRING,
-    
     halfDay: DataTypes.STRING,
-    
     halfDayDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     reason: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -56,6 +40,7 @@ export class CompensatoryLeaveRequest extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -65,7 +50,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -75,7 +63,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -85,7 +76,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -95,7 +89,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveType',
       
         label: 'Leave Type',
@@ -105,7 +102,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Leave Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveAllocation',
       
         label: 'Leave Allocation',
@@ -115,7 +115,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Leave Allocation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'workedOnHoliday',
       
         label: 'Worked On Holiday',
@@ -125,7 +128,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Worked On Holiday',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'workFromDate',
       
         label: 'Work From Date',
@@ -135,7 +141,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Work From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'workEndDate',
       
         label: 'Work End Date',
@@ -145,7 +154,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Work End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'halfDay',
       
         label: 'Half Day',
@@ -155,7 +167,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Half Day',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'halfDayDate',
       
         label: 'Half Day Date',
@@ -165,7 +180,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Half Day Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -175,7 +193,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reason',
       
         label: 'Reason',
@@ -185,7 +206,10 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Reason',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -195,7 +219,9 @@ export class CompensatoryLeaveRequest extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

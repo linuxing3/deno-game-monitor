@@ -21,13 +21,9 @@ export class SalesInvoiceTimesheet extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     timeSheet: DataTypes.STRING,
-    
     billingHours: DataTypes.STRING,
-    
     billingAmount: DataTypes.STRING,
-    
     timesheetDetail: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class SalesInvoiceTimesheet extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'timeSheet',
       
         label: 'Time Sheet',
@@ -45,7 +42,10 @@ export class SalesInvoiceTimesheet extends Model {
         placeholder: 'Input Time Sheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingHours',
       
         label: 'Billing Hours',
@@ -55,7 +55,10 @@ export class SalesInvoiceTimesheet extends Model {
         placeholder: 'Input Billing Hours',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingAmount',
       
         label: 'Billing Amount',
@@ -65,7 +68,10 @@ export class SalesInvoiceTimesheet extends Model {
         placeholder: 'Input Billing Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'timesheetDetail',
       
         label: 'Timesheet Detail',
@@ -75,7 +81,9 @@ export class SalesInvoiceTimesheet extends Model {
         placeholder: 'Input Timesheet Detail',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

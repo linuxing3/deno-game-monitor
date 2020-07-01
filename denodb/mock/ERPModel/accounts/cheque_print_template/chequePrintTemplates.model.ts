@@ -21,84 +21,37 @@ export class ChequePrintTemplate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
-    : DataTypes.STRING,
-    
     hasPrintFormat: DataTypes.STRING,
-    
     primarySettings: DataTypes.STRING,
-    
     bankName: DataTypes.STRING,
-    
     chequeSize: DataTypes.STRING,
-    
     startingPositionFromTopEdge: DataTypes.STRING,
-    
     chequeWidth: DataTypes.STRING,
-    
     chequeHeight: DataTypes.STRING,
-    
     scannedCheque: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isAccountPayable: DataTypes.STRING,
-    
     distanceFromTopEdge: DataTypes.STRING,
-    
     distanceFromLeftEdge: DataTypes.STRING,
-    
     messageToShow: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     dateSettings: DataTypes.STRING,
-    
     distanceFromTopEdge: DataTypes.STRING,
-    
     startingLocationFromLeftEdge: DataTypes.STRING,
-    
     payerSettings: DataTypes.STRING,
-    
     distanceFromTopEdge: DataTypes.STRING,
-    
     startingLocationFromLeftEdge: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     distanceFromTopEdge: DataTypes.STRING,
-    
     startingLocationFromLeftEdge: DataTypes.STRING,
-    
     widthOfAmountInWord: DataTypes.STRING,
-    
     lineSpacingForAmountInWords: DataTypes.STRING,
-    
     amountInFigure: DataTypes.STRING,
-    
     distanceFromTopEdge: DataTypes.STRING,
-    
     startingLocationFromLeftEdge: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     distanceFromTopEdge: DataTypes.STRING,
-    
     startingLocationFromLeftEdge: DataTypes.STRING,
-    
     signatoryPosition: DataTypes.STRING,
-    
     distanceFromTopEdge: DataTypes.STRING,
-    
     startingLocationFromLeftEdge: DataTypes.STRING,
-    
     preview: DataTypes.STRING,
-    
-    : DataTypes.STRING,
     
   };
 
@@ -106,6 +59,7 @@ export class ChequePrintTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: '',
       
         label: '',
@@ -115,7 +69,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input ',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'hasPrintFormat',
       
         label: 'Has Print Format',
@@ -125,7 +82,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Has Print Format',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'primarySettings',
       
         label: 'Primary Settings',
@@ -135,7 +95,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Primary Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankName',
       
         label: 'Bank Name',
@@ -145,7 +108,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Bank Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chequeSize',
       
         label: 'Cheque Size',
@@ -155,7 +121,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Cheque Size',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'startingPositionFromTopEdge',
       
         label: 'Starting Position From Top Edge',
@@ -165,7 +134,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Starting Position From Top Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chequeWidth',
       
         label: 'Cheque Width',
@@ -175,7 +147,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Cheque Width',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'chequeHeight',
       
         label: 'Cheque Height',
@@ -185,7 +160,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Cheque Height',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'scannedCheque',
       
         label: 'Scanned Cheque',
@@ -195,7 +173,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Scanned Cheque',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -205,7 +186,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isAccountPayable',
       
         label: 'Is Account Payable',
@@ -215,7 +199,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Is Account Payable',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'distanceFromTopEdge',
       
         label: 'Distance From Top Edge',
@@ -225,7 +212,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Distance From Top Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'distanceFromLeftEdge',
       
         label: 'Distance From Left Edge',
@@ -235,7 +225,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Distance From Left Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'messageToShow',
       
         label: 'Message To Show',
@@ -245,7 +238,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Message To Show',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -255,7 +251,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateSettings',
       
         label: 'Date Settings',
@@ -265,7 +264,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Date Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'distanceFromTopEdge',
       
         label: 'Distance From Top Edge',
@@ -275,7 +277,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Distance From Top Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startingLocationFromLeftEdge',
       
         label: 'Starting Location From Left Edge',
@@ -285,7 +290,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Starting Location From Left Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payerSettings',
       
         label: 'Payer Settings',
@@ -295,7 +303,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Payer Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'distanceFromTopEdge',
       
         label: 'Distance From Top Edge',
@@ -305,7 +316,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Distance From Top Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startingLocationFromLeftEdge',
       
         label: 'Starting Location From Left Edge',
@@ -315,7 +329,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Starting Location From Left Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -325,7 +342,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -335,7 +355,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'distanceFromTopEdge',
       
         label: 'Distance From Top Edge',
@@ -345,7 +368,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Distance From Top Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startingLocationFromLeftEdge',
       
         label: 'Starting Location From Left Edge',
@@ -355,7 +381,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Starting Location From Left Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'widthOfAmountInWord',
       
         label: 'Width Of Amount In Word',
@@ -365,7 +394,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Width Of Amount In Word',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lineSpacingForAmountInWords',
       
         label: 'Line Spacing For Amount In Words',
@@ -375,7 +407,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Line Spacing For Amount In Words',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amountInFigure',
       
         label: 'Amount In Figure',
@@ -385,7 +420,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Amount In Figure',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'distanceFromTopEdge',
       
         label: 'Distance From Top Edge',
@@ -395,7 +433,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Distance From Top Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startingLocationFromLeftEdge',
       
         label: 'Starting Location From Left Edge',
@@ -405,7 +446,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Starting Location From Left Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -415,7 +459,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -425,7 +472,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'distanceFromTopEdge',
       
         label: 'Distance From Top Edge',
@@ -435,7 +485,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Distance From Top Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startingLocationFromLeftEdge',
       
         label: 'Starting Location From Left Edge',
@@ -445,7 +498,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Starting Location From Left Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'signatoryPosition',
       
         label: 'Signatory Position',
@@ -455,7 +511,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Signatory Position',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'distanceFromTopEdge',
       
         label: 'Distance From Top Edge',
@@ -465,7 +524,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Distance From Top Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startingLocationFromLeftEdge',
       
         label: 'Starting Location From Left Edge',
@@ -475,7 +537,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Starting Location From Left Edge',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'preview',
       
         label: 'Preview',
@@ -485,7 +550,10 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input Preview',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -495,7 +563,9 @@ export class ChequePrintTemplate extends Model {
         placeholder: 'Input ',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,19 +21,10 @@ export class TravelRequestCosting extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     expenseType: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     sponsoredAmount: DataTypes.STRING,
-    
     fundedAmount: DataTypes.STRING,
-    
     totalAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     comments: DataTypes.STRING,
     
   };
@@ -42,6 +33,7 @@ export class TravelRequestCosting extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'expenseType',
       
         label: 'Expense Type',
@@ -51,7 +43,10 @@ export class TravelRequestCosting extends Model {
         placeholder: 'Input Expense Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -61,7 +56,10 @@ export class TravelRequestCosting extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sponsoredAmount',
       
         label: 'Sponsored Amount',
@@ -71,7 +69,10 @@ export class TravelRequestCosting extends Model {
         placeholder: 'Input Sponsored Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fundedAmount',
       
         label: 'Funded Amount',
@@ -81,7 +82,10 @@ export class TravelRequestCosting extends Model {
         placeholder: 'Input Funded Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmount',
       
         label: 'Total Amount',
@@ -91,7 +95,10 @@ export class TravelRequestCosting extends Model {
         placeholder: 'Input Total Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -101,7 +108,10 @@ export class TravelRequestCosting extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'comments',
       
         label: 'Comments',
@@ -111,7 +121,9 @@ export class TravelRequestCosting extends Model {
         placeholder: 'Input Comments',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

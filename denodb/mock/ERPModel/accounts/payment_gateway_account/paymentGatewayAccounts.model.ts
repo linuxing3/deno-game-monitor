@@ -21,21 +21,11 @@ export class PaymentGatewayAccount extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     paymentGateway: DataTypes.STRING,
-    
     isDefault: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paymentAccount: DataTypes.STRING,
-    
     currency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     defaultPaymentRequestMessage: DataTypes.STRING,
-    
     messageExamples: DataTypes.STRING,
     
   };
@@ -44,6 +34,7 @@ export class PaymentGatewayAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'paymentGateway',
       
         label: 'Payment Gateway',
@@ -53,7 +44,10 @@ export class PaymentGatewayAccount extends Model {
         placeholder: 'Input Payment Gateway',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isDefault',
       
         label: 'Is Default',
@@ -63,7 +57,10 @@ export class PaymentGatewayAccount extends Model {
         placeholder: 'Input Is Default',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -73,7 +70,10 @@ export class PaymentGatewayAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentAccount',
       
         label: 'Payment Account',
@@ -83,7 +83,10 @@ export class PaymentGatewayAccount extends Model {
         placeholder: 'Input Payment Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currency',
       
         label: 'Currency',
@@ -93,7 +96,10 @@ export class PaymentGatewayAccount extends Model {
         placeholder: 'Input Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -103,7 +109,10 @@ export class PaymentGatewayAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'defaultPaymentRequestMessage',
       
         label: 'Default Payment Request Message',
@@ -113,7 +122,10 @@ export class PaymentGatewayAccount extends Model {
         placeholder: 'Input Default Payment Request Message',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'messageExamples',
       
         label: 'Message Examples',
@@ -123,7 +135,9 @@ export class PaymentGatewayAccount extends Model {
         placeholder: 'Input Message Examples',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
+      
       },
+      
     ]
   };
 } 

@@ -21,11 +21,8 @@ export class EmployeeTaxExemptionSubCategory extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     taxExemptionCategory: DataTypes.STRING,
-    
     maxAmount: DataTypes.STRING,
-    
     isActive: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class EmployeeTaxExemptionSubCategory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'taxExemptionCategory',
       
         label: 'Tax Exemption Category',
@@ -43,7 +41,10 @@ export class EmployeeTaxExemptionSubCategory extends Model {
         placeholder: 'Input Tax Exemption Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maxAmount',
       
         label: 'Max Amount',
@@ -53,7 +54,10 @@ export class EmployeeTaxExemptionSubCategory extends Model {
         placeholder: 'Input Max Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isActive',
       
         label: 'Is Active',
@@ -63,7 +67,9 @@ export class EmployeeTaxExemptionSubCategory extends Model {
         placeholder: 'Input Is Active',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

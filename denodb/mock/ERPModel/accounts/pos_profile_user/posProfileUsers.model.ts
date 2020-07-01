@@ -21,9 +21,7 @@ export class PosProfileUser extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     default: DataTypes.STRING,
-    
     user: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class PosProfileUser extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'default',
       
         label: 'Default',
@@ -41,7 +40,10 @@ export class PosProfileUser extends Model {
         placeholder: 'Input Default',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'user',
       
         label: 'User',
@@ -51,7 +53,9 @@ export class PosProfileUser extends Model {
         placeholder: 'Input User',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

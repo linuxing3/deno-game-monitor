@@ -21,9 +21,7 @@ export class CashFlowMappingTemplate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     templateName: DataTypes.STRING,
-    
     cashFlowMapping: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class CashFlowMappingTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'templateName',
       
         label: 'Template Name',
@@ -41,7 +40,10 @@ export class CashFlowMappingTemplate extends Model {
         placeholder: 'Input Template Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cashFlowMapping',
       
         label: 'Cash Flow Mapping',
@@ -51,7 +53,9 @@ export class CashFlowMappingTemplate extends Model {
         placeholder: 'Input Cash Flow Mapping',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

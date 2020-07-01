@@ -21,7 +21,6 @@ export class PosCustomerGroup extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     customerGroup: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class PosCustomerGroup extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'customerGroup',
       
         label: 'Customer Group',
@@ -39,7 +39,9 @@ export class PosCustomerGroup extends Model {
         placeholder: 'Input Customer Group',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

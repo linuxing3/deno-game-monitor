@@ -21,45 +21,22 @@ export class SalaryDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     component: DataTypes.STRING,
-    
     abbr: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     statisticalComponent: DataTypes.STRING,
-    
     isTaxApplicable: DataTypes.STRING,
-    
     isFlexibleBenefit: DataTypes.STRING,
-    
     isAdditionalComponent: DataTypes.STRING,
-    
     variableBasedOnTaxableSalary: DataTypes.STRING,
-    
     dependsOnLeaveWithoutPay: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     condition: DataTypes.STRING,
-    
     amountBasedOnFormula: DataTypes.STRING,
-    
     formula: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     doNotIncludeInTotal: DataTypes.STRING,
-    
     defaultAmount: DataTypes.STRING,
-    
     taxOnFlexibleBenefit: DataTypes.STRING,
-    
     taxOnAdditionalSalary: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     conditionAndFormulaHelp: DataTypes.STRING,
     
   };
@@ -68,6 +45,7 @@ export class SalaryDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'component',
       
         label: 'Component',
@@ -77,7 +55,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Component',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'abbr',
       
         label: 'Abbr',
@@ -87,7 +68,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Abbr',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -97,7 +81,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'statisticalComponent',
       
         label: 'Statistical Component',
@@ -107,7 +94,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Statistical Component',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isTaxApplicable',
       
         label: 'Is Tax Applicable',
@@ -117,7 +107,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Is Tax Applicable',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isFlexibleBenefit',
       
         label: 'Is Flexible Benefit',
@@ -127,7 +120,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Is Flexible Benefit',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isAdditionalComponent',
       
         label: 'Is Additional Component',
@@ -137,7 +133,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Is Additional Component',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'variableBasedOnTaxableSalary',
       
         label: 'Variable Based On Taxable Salary',
@@ -147,7 +146,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Variable Based On Taxable Salary',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dependsOnLeaveWithoutPay',
       
         label: 'Depends On Leave Without Pay',
@@ -157,7 +159,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Depends On Leave Without Pay',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -167,7 +172,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'condition',
       
         label: 'Condition',
@@ -177,7 +185,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Condition',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amountBasedOnFormula',
       
         label: 'Amount Based On Formula',
@@ -187,7 +198,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Amount Based On Formula',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'formula',
       
         label: 'Formula',
@@ -197,7 +211,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Formula',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -207,7 +224,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'doNotIncludeInTotal',
       
         label: 'Do Not Include In Total',
@@ -217,7 +237,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Do Not Include In Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'defaultAmount',
       
         label: 'Default Amount',
@@ -227,7 +250,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Default Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxOnFlexibleBenefit',
       
         label: 'Tax On Flexible Benefit',
@@ -237,7 +263,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Tax On Flexible Benefit',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxOnAdditionalSalary',
       
         label: 'Tax On Additional Salary',
@@ -247,7 +276,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Tax On Additional Salary',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -257,7 +289,10 @@ export class SalaryDetail extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'conditionAndFormulaHelp',
       
         label: 'Condition And Formula Help',
@@ -267,7 +302,9 @@ export class SalaryDetail extends Model {
         placeholder: 'Input Condition And Formula Help',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
+      
       },
+      
     ]
   };
 } 

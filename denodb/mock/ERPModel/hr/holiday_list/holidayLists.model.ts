@@ -21,31 +21,16 @@ export class HolidayList extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     holidayListName: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalHolidays: DataTypes.STRING,
-    
     addWeeklyHolidays: DataTypes.STRING,
-    
     weeklyOff: DataTypes.STRING,
-    
     addToHolidays: DataTypes.STRING,
-    
     holidays: DataTypes.STRING,
-    
     holidays: DataTypes.STRING,
-    
     clearTable: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     color: DataTypes.STRING,
     
   };
@@ -54,6 +39,7 @@ export class HolidayList extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'holidayListName',
       
         label: 'Holiday List Name',
@@ -63,7 +49,10 @@ export class HolidayList extends Model {
         placeholder: 'Input Holiday List Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -73,7 +62,10 @@ export class HolidayList extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -83,7 +75,10 @@ export class HolidayList extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -93,7 +88,10 @@ export class HolidayList extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalHolidays',
       
         label: 'Total Holidays',
@@ -103,7 +101,10 @@ export class HolidayList extends Model {
         placeholder: 'Input Total Holidays',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addWeeklyHolidays',
       
         label: 'Add Weekly Holidays',
@@ -113,7 +114,10 @@ export class HolidayList extends Model {
         placeholder: 'Input Add Weekly Holidays',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'weeklyOff',
       
         label: 'Weekly Off',
@@ -123,7 +127,10 @@ export class HolidayList extends Model {
         placeholder: 'Input Weekly Off',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'addToHolidays',
       
         label: 'Add To Holidays',
@@ -133,7 +140,10 @@ export class HolidayList extends Model {
         placeholder: 'Input Add To Holidays',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'holidays',
       
         label: 'Holidays',
@@ -143,7 +153,10 @@ export class HolidayList extends Model {
         placeholder: 'Input Holidays',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'holidays',
       
         label: 'Holidays',
@@ -153,7 +166,10 @@ export class HolidayList extends Model {
         placeholder: 'Input Holidays',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'clearTable',
       
         label: 'Clear Table',
@@ -163,7 +179,10 @@ export class HolidayList extends Model {
         placeholder: 'Input Clear Table',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -173,7 +192,10 @@ export class HolidayList extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'color',
       
         label: 'Color',
@@ -183,7 +205,9 @@ export class HolidayList extends Model {
         placeholder: 'Input Color',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

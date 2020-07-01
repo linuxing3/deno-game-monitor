@@ -21,23 +21,13 @@ export class ShiftRequest extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     shiftType: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -46,6 +36,7 @@ export class ShiftRequest extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'shiftType',
       
         label: 'Shift Type',
@@ -55,7 +46,10 @@ export class ShiftRequest extends Model {
         placeholder: 'Input Shift Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -65,7 +59,10 @@ export class ShiftRequest extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -75,7 +72,10 @@ export class ShiftRequest extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -85,7 +85,10 @@ export class ShiftRequest extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -95,7 +98,10 @@ export class ShiftRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -105,7 +111,10 @@ export class ShiftRequest extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -115,7 +124,10 @@ export class ShiftRequest extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -125,7 +137,10 @@ export class ShiftRequest extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -135,7 +150,9 @@ export class ShiftRequest extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

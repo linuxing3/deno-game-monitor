@@ -21,29 +21,15 @@ export class PaymentOrderReference extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     type: DataTypes.STRING,
-    
     name: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     paymentRequest: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     bankAccountDetails: DataTypes.STRING,
-    
     bankAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     account: DataTypes.STRING,
-    
     paymentReference: DataTypes.STRING,
     
   };
@@ -52,6 +38,7 @@ export class PaymentOrderReference extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'type',
       
         label: 'Type',
@@ -61,7 +48,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'name',
       
         label: 'Name',
@@ -71,7 +61,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -81,7 +74,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -91,7 +87,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -101,7 +100,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentRequest',
       
         label: 'Payment Request',
@@ -111,7 +113,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Payment Request',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -121,7 +126,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccountDetails',
       
         label: 'Bank Account Details',
@@ -131,7 +139,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Bank Account Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccount',
       
         label: 'Bank Account',
@@ -141,7 +152,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -151,7 +165,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -161,7 +178,10 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentReference',
       
         label: 'Payment Reference',
@@ -171,7 +191,9 @@ export class PaymentOrderReference extends Model {
         placeholder: 'Input Payment Reference',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

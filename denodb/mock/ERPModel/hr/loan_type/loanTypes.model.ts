@@ -21,17 +21,10 @@ export class LoanType extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     loanName: DataTypes.STRING,
-    
     maximumLoanAmount: DataTypes.STRING,
-    
     rateOfInterestYearly: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     disabled: DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -40,6 +33,7 @@ export class LoanType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'loanName',
       
         label: 'Loan Name',
@@ -49,7 +43,10 @@ export class LoanType extends Model {
         placeholder: 'Input Loan Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maximumLoanAmount',
       
         label: 'Maximum Loan Amount',
@@ -59,7 +56,10 @@ export class LoanType extends Model {
         placeholder: 'Input Maximum Loan Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rateOfInterestYearly',
       
         label: 'Rate Of Interest Yearly',
@@ -69,7 +69,10 @@ export class LoanType extends Model {
         placeholder: 'Input Rate Of Interest Yearly',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -79,7 +82,10 @@ export class LoanType extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'disabled',
       
         label: 'Disabled',
@@ -89,7 +95,10 @@ export class LoanType extends Model {
         placeholder: 'Input Disabled',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -99,7 +108,9 @@ export class LoanType extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,9 +21,7 @@ export class SubscriptionPlanDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     quantity: DataTypes.STRING,
-    
     plan: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class SubscriptionPlanDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'quantity',
       
         label: 'Quantity',
@@ -41,7 +40,10 @@ export class SubscriptionPlanDetail extends Model {
         placeholder: 'Input Quantity',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'plan',
       
         label: 'Plan',
@@ -51,7 +53,9 @@ export class SubscriptionPlanDetail extends Model {
         placeholder: 'Input Plan',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

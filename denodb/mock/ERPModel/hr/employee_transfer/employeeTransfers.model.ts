@@ -21,31 +21,17 @@ export class EmployeeTransfer extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     transferDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     newCompany: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     employeeTransferDetails: DataTypes.STRING,
-    
     employeeTransferDetail: DataTypes.STRING,
-    
     reAllocateLeaves: DataTypes.STRING,
-    
     createNewEmployeeId: DataTypes.STRING,
-    
     newEmployeeId: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -54,6 +40,7 @@ export class EmployeeTransfer extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -63,7 +50,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -73,7 +63,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'transferDate',
       
         label: 'Transfer Date',
@@ -83,7 +76,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Transfer Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -93,7 +89,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -103,7 +102,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'newCompany',
       
         label: 'New Company',
@@ -113,7 +115,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input New Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -123,7 +128,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeTransferDetails',
       
         label: 'Employee Transfer Details',
@@ -133,7 +141,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Employee Transfer Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeTransferDetail',
       
         label: 'Employee Transfer Detail',
@@ -143,7 +154,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Employee Transfer Detail',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reAllocateLeaves',
       
         label: 'Re Allocate Leaves',
@@ -153,7 +167,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Re Allocate Leaves',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'createNewEmployeeId',
       
         label: 'Create New Employee Id',
@@ -163,7 +180,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Create New Employee Id',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'newEmployeeId',
       
         label: 'New Employee Id',
@@ -173,7 +193,10 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input New Employee Id',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -183,7 +206,9 @@ export class EmployeeTransfer extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

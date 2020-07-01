@@ -21,21 +21,12 @@ export class PeriodClosingVoucher extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     transactionDate: DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     closingFiscalYear: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     closingAccountHead: DataTypes.STRING,
-    
     remarks: DataTypes.STRING,
     
   };
@@ -44,6 +35,7 @@ export class PeriodClosingVoucher extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'transactionDate',
       
         label: 'Transaction Date',
@@ -53,7 +45,10 @@ export class PeriodClosingVoucher extends Model {
         placeholder: 'Input Transaction Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -63,7 +58,10 @@ export class PeriodClosingVoucher extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'closingFiscalYear',
       
         label: 'Closing Fiscal Year',
@@ -73,7 +71,10 @@ export class PeriodClosingVoucher extends Model {
         placeholder: 'Input Closing Fiscal Year',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -83,7 +84,10 @@ export class PeriodClosingVoucher extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -93,7 +97,10 @@ export class PeriodClosingVoucher extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -103,7 +110,10 @@ export class PeriodClosingVoucher extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'closingAccountHead',
       
         label: 'Closing Account Head',
@@ -113,7 +123,10 @@ export class PeriodClosingVoucher extends Model {
         placeholder: 'Input Closing Account Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remarks',
       
         label: 'Remarks',
@@ -123,7 +136,9 @@ export class PeriodClosingVoucher extends Model {
         placeholder: 'Input Remarks',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

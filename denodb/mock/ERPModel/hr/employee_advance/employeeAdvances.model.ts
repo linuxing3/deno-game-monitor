@@ -21,45 +21,20 @@ export class EmployeeAdvance extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     purpose: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     advanceAmount: DataTypes.STRING,
-    
     paidAmount: DataTypes.STRING,
-    
     dueAdvanceAmount: DataTypes.STRING,
-    
     claimedAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     advanceAccount: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
     
   };
@@ -68,6 +43,7 @@ export class EmployeeAdvance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -77,7 +53,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -87,7 +66,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -97,7 +79,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -107,7 +92,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -117,7 +105,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -127,7 +118,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -137,7 +131,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purpose',
       
         label: 'Purpose',
@@ -147,7 +144,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Purpose',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -157,7 +157,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advanceAmount',
       
         label: 'Advance Amount',
@@ -167,7 +170,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Advance Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paidAmount',
       
         label: 'Paid Amount',
@@ -177,7 +183,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Paid Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dueAdvanceAmount',
       
         label: 'Due Advance Amount',
@@ -187,7 +196,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Due Advance Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'claimedAmount',
       
         label: 'Claimed Amount',
@@ -197,7 +209,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Claimed Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -207,7 +222,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -217,7 +235,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -227,7 +248,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -237,7 +261,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -247,7 +274,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advanceAccount',
       
         label: 'Advance Account',
@@ -257,7 +287,10 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Advance Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -267,7 +300,9 @@ export class EmployeeAdvance extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

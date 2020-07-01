@@ -21,7 +21,6 @@ export class EmployeeHealthInsurance extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     healthInsuranceName: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class EmployeeHealthInsurance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'healthInsuranceName',
       
         label: 'Health Insurance Name',
@@ -39,7 +39,9 @@ export class EmployeeHealthInsurance extends Model {
         placeholder: 'Input Health Insurance Name',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

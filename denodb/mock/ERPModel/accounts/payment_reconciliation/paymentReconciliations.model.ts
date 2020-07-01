@@ -21,39 +21,21 @@ export class PaymentReconciliation extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
     receivablePayableAccount: DataTypes.STRING,
-    
     bankCashAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     fromInvoiceDate: DataTypes.STRING,
-    
     toInvoiceDate: DataTypes.STRING,
-    
     minimumInvoiceAmount: DataTypes.STRING,
-    
     maximumInvoiceAmount: DataTypes.STRING,
-    
     limit: DataTypes.STRING,
-    
     getUnreconciledEntries: DataTypes.STRING,
-    
     unreconciledPaymentDetails: DataTypes.STRING,
-    
     payments: DataTypes.STRING,
-    
     reconcile: DataTypes.STRING,
-    
     invoiceJournalEntryDetails: DataTypes.STRING,
-    
     invoices: DataTypes.STRING,
     
   };
@@ -62,6 +44,7 @@ export class PaymentReconciliation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -71,7 +54,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -81,7 +67,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Party Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -91,7 +80,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'receivablePayableAccount',
       
         label: 'Receivable Payable Account',
@@ -101,7 +93,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Receivable Payable Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankCashAccount',
       
         label: 'Bank Cash Account',
@@ -111,7 +106,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Bank Cash Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -121,7 +119,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromInvoiceDate',
       
         label: 'From Invoice Date',
@@ -131,7 +132,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input From Invoice Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toInvoiceDate',
       
         label: 'To Invoice Date',
@@ -141,7 +145,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input To Invoice Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'minimumInvoiceAmount',
       
         label: 'Minimum Invoice Amount',
@@ -151,7 +158,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Minimum Invoice Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maximumInvoiceAmount',
       
         label: 'Maximum Invoice Amount',
@@ -161,7 +171,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Maximum Invoice Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'limit',
       
         label: 'Limit',
@@ -171,7 +184,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Limit',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'getUnreconciledEntries',
       
         label: 'Get Unreconciled Entries',
@@ -181,7 +197,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Get Unreconciled Entries',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'unreconciledPaymentDetails',
       
         label: 'Unreconciled Payment Details',
@@ -191,7 +210,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Unreconciled Payment Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payments',
       
         label: 'Payments',
@@ -201,7 +223,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Payments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reconcile',
       
         label: 'Reconcile',
@@ -211,7 +236,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Reconcile',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoiceJournalEntryDetails',
       
         label: 'Invoice Journal Entry Details',
@@ -221,7 +249,10 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Invoice Journal Entry Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoices',
       
         label: 'Invoices',
@@ -231,7 +262,9 @@ export class PaymentReconciliation extends Model {
         placeholder: 'Input Invoices',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

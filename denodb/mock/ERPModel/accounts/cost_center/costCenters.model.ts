@@ -21,25 +21,13 @@ export class CostCenter extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
-    : DataTypes.STRING,
-    
     costCenterName: DataTypes.STRING,
-    
     costCenterNumber: DataTypes.STRING,
-    
     parentCostCenter: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isGroup: DataTypes.STRING,
-    
     lft: DataTypes.STRING,
-    
     rgt: DataTypes.STRING,
-    
     oldParent: DataTypes.STRING,
     
   };
@@ -48,6 +36,7 @@ export class CostCenter extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: '',
       
         label: '',
@@ -57,7 +46,10 @@ export class CostCenter extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenterName',
       
         label: 'Cost Center Name',
@@ -67,7 +59,10 @@ export class CostCenter extends Model {
         placeholder: 'Input Cost Center Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenterNumber',
       
         label: 'Cost Center Number',
@@ -77,7 +72,10 @@ export class CostCenter extends Model {
         placeholder: 'Input Cost Center Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'parentCostCenter',
       
         label: 'Parent Cost Center',
@@ -87,7 +85,10 @@ export class CostCenter extends Model {
         placeholder: 'Input Parent Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -97,7 +98,10 @@ export class CostCenter extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -107,7 +111,10 @@ export class CostCenter extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isGroup',
       
         label: 'Is Group',
@@ -117,7 +124,10 @@ export class CostCenter extends Model {
         placeholder: 'Input Is Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lft',
       
         label: 'Lft',
@@ -127,7 +137,10 @@ export class CostCenter extends Model {
         placeholder: 'Input Lft',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rgt',
       
         label: 'Rgt',
@@ -137,7 +150,10 @@ export class CostCenter extends Model {
         placeholder: 'Input Rgt',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'oldParent',
       
         label: 'Old Parent',
@@ -147,7 +163,9 @@ export class CostCenter extends Model {
         placeholder: 'Input Old Parent',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

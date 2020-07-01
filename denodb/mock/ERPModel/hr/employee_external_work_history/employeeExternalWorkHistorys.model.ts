@@ -21,17 +21,11 @@ export class EmployeeExternalWorkHistory extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     salary: DataTypes.STRING,
-    
     address: DataTypes.STRING,
-    
     contact: DataTypes.STRING,
-    
     totalExperience: DataTypes.STRING,
     
   };
@@ -40,6 +34,7 @@ export class EmployeeExternalWorkHistory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -49,7 +44,10 @@ export class EmployeeExternalWorkHistory extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -59,7 +57,10 @@ export class EmployeeExternalWorkHistory extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salary',
       
         label: 'Salary',
@@ -69,7 +70,10 @@ export class EmployeeExternalWorkHistory extends Model {
         placeholder: 'Input Salary',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'address',
       
         label: 'Address',
@@ -79,7 +83,10 @@ export class EmployeeExternalWorkHistory extends Model {
         placeholder: 'Input Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contact',
       
         label: 'Contact',
@@ -89,7 +96,10 @@ export class EmployeeExternalWorkHistory extends Model {
         placeholder: 'Input Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalExperience',
       
         label: 'Total Experience',
@@ -99,7 +109,9 @@ export class EmployeeExternalWorkHistory extends Model {
         placeholder: 'Input Total Experience',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,15 +21,10 @@ export class ProjectTemplateTask extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     subject: DataTypes.STRING,
-    
     beginOnDays: DataTypes.STRING,
-    
     durationDays: DataTypes.STRING,
-    
     taskWeight: DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -38,6 +33,7 @@ export class ProjectTemplateTask extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'subject',
       
         label: 'Subject',
@@ -47,7 +43,10 @@ export class ProjectTemplateTask extends Model {
         placeholder: 'Input Subject',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'beginOnDays',
       
         label: 'Begin On Days',
@@ -57,7 +56,10 @@ export class ProjectTemplateTask extends Model {
         placeholder: 'Input Begin On Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'durationDays',
       
         label: 'Duration Days',
@@ -67,7 +69,10 @@ export class ProjectTemplateTask extends Model {
         placeholder: 'Input Duration Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taskWeight',
       
         label: 'Task Weight',
@@ -77,7 +82,10 @@ export class ProjectTemplateTask extends Model {
         placeholder: 'Input Task Weight',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -87,7 +95,9 @@ export class ProjectTemplateTask extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

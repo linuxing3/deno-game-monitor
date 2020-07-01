@@ -21,13 +21,9 @@ export class EmployeeTaxExemptionProofSubmissionDetail extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     exemptionSubCategory: DataTypes.STRING,
-    
     exemptionCategory: DataTypes.STRING,
-    
     typeOfProof: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class EmployeeTaxExemptionProofSubmissionDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'exemptionSubCategory',
       
         label: 'Exemption Sub Category',
@@ -45,7 +42,10 @@ export class EmployeeTaxExemptionProofSubmissionDetail extends Model {
         placeholder: 'Input Exemption Sub Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exemptionCategory',
       
         label: 'Exemption Category',
@@ -55,7 +55,10 @@ export class EmployeeTaxExemptionProofSubmissionDetail extends Model {
         placeholder: 'Input Exemption Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'typeOfProof',
       
         label: 'Type Of Proof',
@@ -65,7 +68,10 @@ export class EmployeeTaxExemptionProofSubmissionDetail extends Model {
         placeholder: 'Input Type Of Proof',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -75,7 +81,9 @@ export class EmployeeTaxExemptionProofSubmissionDetail extends Model {
         placeholder: 'Input Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

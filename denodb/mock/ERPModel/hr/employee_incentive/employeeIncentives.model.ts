@@ -21,19 +21,11 @@ export class EmployeeIncentive extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     incentiveAmount: DataTypes.STRING,
-    
     payrollDate: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
     
   };
@@ -42,6 +34,7 @@ export class EmployeeIncentive extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -51,7 +44,10 @@ export class EmployeeIncentive extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'incentiveAmount',
       
         label: 'Incentive Amount',
@@ -61,7 +57,10 @@ export class EmployeeIncentive extends Model {
         placeholder: 'Input Incentive Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollDate',
       
         label: 'Payroll Date',
@@ -71,7 +70,10 @@ export class EmployeeIncentive extends Model {
         placeholder: 'Input Payroll Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -81,7 +83,10 @@ export class EmployeeIncentive extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -91,7 +96,10 @@ export class EmployeeIncentive extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -101,7 +109,10 @@ export class EmployeeIncentive extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -111,7 +122,9 @@ export class EmployeeIncentive extends Model {
         placeholder: 'Input Department',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

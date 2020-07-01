@@ -21,25 +21,15 @@ export class LoyaltyPointEntry extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     loyaltyProgram: DataTypes.STRING,
-    
     loyaltyProgramTier: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
     salesInvoice: DataTypes.STRING,
-    
     redeemAgainst: DataTypes.STRING,
-    
     loyaltyPoints: DataTypes.STRING,
-    
     purchaseAmount: DataTypes.STRING,
-    
     expiryDate: DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
     
   };
@@ -48,6 +38,7 @@ export class LoyaltyPointEntry extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'loyaltyProgram',
       
         label: 'Loyalty Program',
@@ -57,7 +48,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Loyalty Program',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loyaltyProgramTier',
       
         label: 'Loyalty Program Tier',
@@ -67,7 +61,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Loyalty Program Tier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -77,7 +74,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesInvoice',
       
         label: 'Sales Invoice',
@@ -87,7 +87,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Sales Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'redeemAgainst',
       
         label: 'Redeem Against',
@@ -97,7 +100,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Redeem Against',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loyaltyPoints',
       
         label: 'Loyalty Points',
@@ -107,7 +113,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Loyalty Points',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purchaseAmount',
       
         label: 'Purchase Amount',
@@ -117,7 +126,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Purchase Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expiryDate',
       
         label: 'Expiry Date',
@@ -127,7 +139,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Expiry Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -137,7 +152,10 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -147,7 +165,9 @@ export class LoyaltyPointEntry extends Model {
         placeholder: 'Input Company',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

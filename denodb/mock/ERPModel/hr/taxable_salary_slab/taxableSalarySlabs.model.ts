@@ -21,18 +21,10 @@ export class TaxableSalarySlab extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     fromAmount: DataTypes.STRING,
-    
     toAmount: DataTypes.STRING,
-    
     percentDeduction: DataTypes.STRING,
-    
     condition: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
-    : DataTypes.STRING,
     
   };
 
@@ -40,6 +32,7 @@ export class TaxableSalarySlab extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'fromAmount',
       
         label: 'From Amount',
@@ -49,7 +42,10 @@ export class TaxableSalarySlab extends Model {
         placeholder: 'Input From Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toAmount',
       
         label: 'To Amount',
@@ -59,7 +55,10 @@ export class TaxableSalarySlab extends Model {
         placeholder: 'Input To Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'percentDeduction',
       
         label: 'Percent Deduction',
@@ -69,7 +68,10 @@ export class TaxableSalarySlab extends Model {
         placeholder: 'Input Percent Deduction',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'condition',
       
         label: 'Condition',
@@ -79,7 +81,10 @@ export class TaxableSalarySlab extends Model {
         placeholder: 'Input Condition',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -89,7 +94,10 @@ export class TaxableSalarySlab extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -99,7 +107,9 @@ export class TaxableSalarySlab extends Model {
         placeholder: 'Input ',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
+      
       },
+      
     ]
   };
 } 

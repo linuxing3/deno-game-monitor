@@ -21,63 +21,27 @@ export class LeaveApplication extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     leaveType: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     leaveBalanceBeforeApplication: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
     halfDay: DataTypes.STRING,
-    
     halfDayDate: DataTypes.STRING,
-    
     totalLeaveDays: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     reason: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     leaveApprover: DataTypes.STRING,
-    
     leaveApproverName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     salarySlip: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     followViaEmail: DataTypes.STRING,
-    
     color: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -86,6 +50,7 @@ export class LeaveApplication extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -95,7 +60,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -105,7 +73,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -115,7 +86,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -125,7 +99,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveType',
       
         label: 'Leave Type',
@@ -135,7 +112,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Leave Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -145,7 +125,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveBalanceBeforeApplication',
       
         label: 'Leave Balance Before Application',
@@ -155,7 +138,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Leave Balance Before Application',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -165,7 +151,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -175,7 +164,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -185,7 +177,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'halfDay',
       
         label: 'Half Day',
@@ -195,7 +190,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Half Day',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'halfDayDate',
       
         label: 'Half Day Date',
@@ -205,7 +203,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Half Day Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalLeaveDays',
       
         label: 'Total Leave Days',
@@ -215,7 +216,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Total Leave Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -225,7 +229,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reason',
       
         label: 'Reason',
@@ -235,7 +242,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Reason',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -245,7 +255,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveApprover',
       
         label: 'Leave Approver',
@@ -255,7 +268,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Leave Approver',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveApproverName',
       
         label: 'Leave Approver Name',
@@ -265,7 +281,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Leave Approver Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -275,7 +294,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -285,7 +307,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlip',
       
         label: 'Salary Slip',
@@ -295,7 +320,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Salary Slip',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -305,7 +333,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -315,7 +346,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'followViaEmail',
       
         label: 'Follow Via Email',
@@ -325,7 +359,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Follow Via Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'color',
       
         label: 'Color',
@@ -335,7 +372,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Color',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -345,7 +385,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -355,7 +398,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -365,7 +411,10 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -375,7 +424,9 @@ export class LeaveApplication extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,47 +21,22 @@ export class PurchaseTaxesAndCharges extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     considerTaxOrChargeFor: DataTypes.STRING,
-    
     addOrDeduct: DataTypes.STRING,
-    
     type: DataTypes.STRING,
-    
     referenceRow: DataTypes.STRING,
-    
     isThisTaxIncludedInBasicRate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     accountHead: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     rate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     taxAmountAfterDiscountAmount: DataTypes.STRING,
-    
     total: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     amountCompanyCurrency: DataTypes.STRING,
-    
     totalCompanyCurrency: DataTypes.STRING,
-    
     taxAmountAfterDiscountAmount: DataTypes.STRING,
-    
     itemWiseTaxDetail: DataTypes.STRING,
-    
     parenttype: DataTypes.STRING,
     
   };
@@ -70,6 +45,7 @@ export class PurchaseTaxesAndCharges extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'considerTaxOrChargeFor',
       
         label: 'Consider Tax Or Charge For',
@@ -79,7 +55,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Consider Tax Or Charge For',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'addOrDeduct',
       
         label: 'Add Or Deduct',
@@ -89,7 +68,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Add Or Deduct',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'type',
       
         label: 'Type',
@@ -99,7 +81,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Type',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'referenceRow',
       
         label: 'Reference Row',
@@ -109,7 +94,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Reference Row',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isThisTaxIncludedInBasicRate',
       
         label: 'Is This Tax Included In Basic Rate',
@@ -119,7 +107,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Is This Tax Included In Basic Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -129,7 +120,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountHead',
       
         label: 'Account Head',
@@ -139,7 +133,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Account Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -149,7 +146,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -159,7 +159,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -169,7 +172,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rate',
       
         label: 'Rate',
@@ -179,7 +185,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -189,7 +198,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -199,7 +211,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxAmountAfterDiscountAmount',
       
         label: 'Tax Amount After Discount Amount',
@@ -209,7 +224,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Tax Amount After Discount Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'total',
       
         label: 'Total',
@@ -219,7 +237,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -229,7 +250,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amountCompanyCurrency',
       
         label: 'Amount Company Currency',
@@ -239,7 +263,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalCompanyCurrency',
       
         label: 'Total Company Currency',
@@ -249,7 +276,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxAmountAfterDiscountAmount',
       
         label: 'Tax Amount After Discount Amount',
@@ -259,7 +289,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Tax Amount After Discount Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemWiseTaxDetail',
       
         label: 'Item Wise Tax Detail',
@@ -269,7 +302,10 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Item Wise Tax Detail',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'parenttype',
       
         label: 'Parenttype',
@@ -279,7 +315,9 @@ export class PurchaseTaxesAndCharges extends Model {
         placeholder: 'Input Parenttype',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

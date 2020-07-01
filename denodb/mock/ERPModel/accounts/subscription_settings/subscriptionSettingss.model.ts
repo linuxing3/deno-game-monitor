@@ -21,11 +21,8 @@ export class SubscriptionSettings extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     gracePeriod: DataTypes.STRING,
-    
     cancelInvoiceAfterGracePeriod: DataTypes.STRING,
-    
     prorate: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class SubscriptionSettings extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'gracePeriod',
       
         label: 'Grace Period',
@@ -43,7 +41,10 @@ export class SubscriptionSettings extends Model {
         placeholder: 'Input Grace Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cancelInvoiceAfterGracePeriod',
       
         label: 'Cancel Invoice After Grace Period',
@@ -53,7 +54,10 @@ export class SubscriptionSettings extends Model {
         placeholder: 'Input Cancel Invoice After Grace Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'prorate',
       
         label: 'Prorate',
@@ -63,7 +67,9 @@ export class SubscriptionSettings extends Model {
         placeholder: 'Input Prorate',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

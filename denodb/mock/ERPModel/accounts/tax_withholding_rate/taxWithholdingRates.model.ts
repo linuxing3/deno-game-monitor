@@ -21,15 +21,9 @@ export class TaxWithholdingRate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     fiscalYear: DataTypes.STRING,
-    
     taxWithholdingRate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     singleTransactionThreshold: DataTypes.STRING,
-    
     cumulativeTransactionThreshold: DataTypes.STRING,
     
   };
@@ -38,6 +32,7 @@ export class TaxWithholdingRate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'fiscalYear',
       
         label: 'Fiscal Year',
@@ -47,7 +42,10 @@ export class TaxWithholdingRate extends Model {
         placeholder: 'Input Fiscal Year',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxWithholdingRate',
       
         label: 'Tax Withholding Rate',
@@ -57,7 +55,10 @@ export class TaxWithholdingRate extends Model {
         placeholder: 'Input Tax Withholding Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -67,7 +68,10 @@ export class TaxWithholdingRate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'singleTransactionThreshold',
       
         label: 'Single Transaction Threshold',
@@ -77,7 +81,10 @@ export class TaxWithholdingRate extends Model {
         placeholder: 'Input Single Transaction Threshold',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cumulativeTransactionThreshold',
       
         label: 'Cumulative Transaction Threshold',
@@ -87,7 +94,9 @@ export class TaxWithholdingRate extends Model {
         placeholder: 'Input Cumulative Transaction Threshold',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,119 +21,56 @@ export class Project extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     projectName: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     projectType: DataTypes.STRING,
-    
     isActive: DataTypes.STRING,
-    
     completeMethod: DataTypes.STRING,
-    
     completed: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     fromTemplate: DataTypes.STRING,
-    
     expectedStartDate: DataTypes.STRING,
-    
     expectedEndDate: DataTypes.STRING,
-    
     priority: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     customerDetails: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salesOrder: DataTypes.STRING,
-    
     users: DataTypes.STRING,
-    
     users: DataTypes.STRING,
-    
     tasks: DataTypes.STRING,
-    
     tasks: DataTypes.STRING,
-    
     copiedFrom: DataTypes.STRING,
-    
     notes: DataTypes.STRING,
-    
     notes: DataTypes.STRING,
-    
     startAndEndDates: DataTypes.STRING,
-    
     actualStartDate: DataTypes.STRING,
-    
     actualTimeInHours: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     actualEndDate: DataTypes.STRING,
-    
     costingAndBilling: DataTypes.STRING,
-    
     estimatedCost: DataTypes.STRING,
-    
     totalCostingAmountViaTimesheets: DataTypes.STRING,
-    
     totalExpenseClaimViaExpenseClaims: DataTypes.STRING,
-    
     totalPurchaseCostViaPurchaseInvoice: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalSalesAmountViaSalesOrder: DataTypes.STRING,
-    
     totalBillableAmountViaTimesheets: DataTypes.STRING,
-    
     totalBilledAmountViaSalesInvoices: DataTypes.STRING,
-    
     totalConsumedMaterialCostViaStockEntry: DataTypes.STRING,
-    
     defaultCostCenter: DataTypes.STRING,
-    
     margin: DataTypes.STRING,
-    
     grossMargin: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     grossMargin: DataTypes.STRING,
-    
     monitorProgress: DataTypes.STRING,
-    
     collectProgress: DataTypes.STRING,
-    
     holidayList: DataTypes.STRING,
-    
     frequencyToCollectProgress: DataTypes.STRING,
-    
     fromTime: DataTypes.STRING,
-    
     toTime: DataTypes.STRING,
-    
     firstEmail: DataTypes.STRING,
-    
     secondEmail: DataTypes.STRING,
-    
     timeToSend: DataTypes.STRING,
-    
     dayToSend: DataTypes.STRING,
-    
     timeToSend: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     message: DataTypes.STRING,
     
   };
@@ -142,6 +79,7 @@ export class Project extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'projectName',
       
         label: 'Project Name',
@@ -151,7 +89,10 @@ export class Project extends Model {
         placeholder: 'Input Project Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -161,7 +102,10 @@ export class Project extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'projectType',
       
         label: 'Project Type',
@@ -171,7 +115,10 @@ export class Project extends Model {
         placeholder: 'Input Project Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isActive',
       
         label: 'Is Active',
@@ -181,7 +128,10 @@ export class Project extends Model {
         placeholder: 'Input Is Active',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'completeMethod',
       
         label: 'Complete Method',
@@ -191,7 +141,10 @@ export class Project extends Model {
         placeholder: 'Input Complete Method',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'completed',
       
         label: 'Completed',
@@ -201,7 +154,10 @@ export class Project extends Model {
         placeholder: 'Input Completed',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -211,7 +167,10 @@ export class Project extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromTemplate',
       
         label: 'From Template',
@@ -221,7 +180,10 @@ export class Project extends Model {
         placeholder: 'Input From Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expectedStartDate',
       
         label: 'Expected Start Date',
@@ -231,7 +193,10 @@ export class Project extends Model {
         placeholder: 'Input Expected Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expectedEndDate',
       
         label: 'Expected End Date',
@@ -241,7 +206,10 @@ export class Project extends Model {
         placeholder: 'Input Expected End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priority',
       
         label: 'Priority',
@@ -251,7 +219,10 @@ export class Project extends Model {
         placeholder: 'Input Priority',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -261,7 +232,10 @@ export class Project extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerDetails',
       
         label: 'Customer Details',
@@ -271,7 +245,10 @@ export class Project extends Model {
         placeholder: 'Input Customer Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -281,7 +258,10 @@ export class Project extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -291,7 +271,10 @@ export class Project extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesOrder',
       
         label: 'Sales Order',
@@ -301,7 +284,10 @@ export class Project extends Model {
         placeholder: 'Input Sales Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'users',
       
         label: 'Users',
@@ -311,7 +297,10 @@ export class Project extends Model {
         placeholder: 'Input Users',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'users',
       
         label: 'Users',
@@ -321,7 +310,10 @@ export class Project extends Model {
         placeholder: 'Input Users',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'tasks',
       
         label: 'Tasks',
@@ -331,7 +323,10 @@ export class Project extends Model {
         placeholder: 'Input Tasks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'tasks',
       
         label: 'Tasks',
@@ -341,7 +336,10 @@ export class Project extends Model {
         placeholder: 'Input Tasks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'copiedFrom',
       
         label: 'Copied From',
@@ -351,7 +349,10 @@ export class Project extends Model {
         placeholder: 'Input Copied From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'notes',
       
         label: 'Notes',
@@ -361,7 +362,10 @@ export class Project extends Model {
         placeholder: 'Input Notes',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'notes',
       
         label: 'Notes',
@@ -371,7 +375,10 @@ export class Project extends Model {
         placeholder: 'Input Notes',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startAndEndDates',
       
         label: 'Start And End Dates',
@@ -381,7 +388,10 @@ export class Project extends Model {
         placeholder: 'Input Start And End Dates',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actualStartDate',
       
         label: 'Actual Start Date',
@@ -391,7 +401,10 @@ export class Project extends Model {
         placeholder: 'Input Actual Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actualTimeInHours',
       
         label: 'Actual Time In Hours',
@@ -401,7 +414,10 @@ export class Project extends Model {
         placeholder: 'Input Actual Time In Hours',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -411,7 +427,10 @@ export class Project extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actualEndDate',
       
         label: 'Actual End Date',
@@ -421,7 +440,10 @@ export class Project extends Model {
         placeholder: 'Input Actual End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costingAndBilling',
       
         label: 'Costing And Billing',
@@ -431,7 +453,10 @@ export class Project extends Model {
         placeholder: 'Input Costing And Billing',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'estimatedCost',
       
         label: 'Estimated Cost',
@@ -441,7 +466,10 @@ export class Project extends Model {
         placeholder: 'Input Estimated Cost',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalCostingAmountViaTimesheets',
       
         label: 'Total Costing Amount Via Timesheets',
@@ -451,7 +479,10 @@ export class Project extends Model {
         placeholder: 'Input Total Costing Amount Via Timesheets',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalExpenseClaimViaExpenseClaims',
       
         label: 'Total Expense Claim Via Expense Claims',
@@ -461,7 +492,10 @@ export class Project extends Model {
         placeholder: 'Input Total Expense Claim Via Expense Claims',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalPurchaseCostViaPurchaseInvoice',
       
         label: 'Total Purchase Cost Via Purchase Invoice',
@@ -471,7 +505,10 @@ export class Project extends Model {
         placeholder: 'Input Total Purchase Cost Via Purchase Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -481,7 +518,10 @@ export class Project extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -491,7 +531,10 @@ export class Project extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalSalesAmountViaSalesOrder',
       
         label: 'Total Sales Amount Via Sales Order',
@@ -501,7 +544,10 @@ export class Project extends Model {
         placeholder: 'Input Total Sales Amount Via Sales Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalBillableAmountViaTimesheets',
       
         label: 'Total Billable Amount Via Timesheets',
@@ -511,7 +557,10 @@ export class Project extends Model {
         placeholder: 'Input Total Billable Amount Via Timesheets',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalBilledAmountViaSalesInvoices',
       
         label: 'Total Billed Amount Via Sales Invoices',
@@ -521,7 +570,10 @@ export class Project extends Model {
         placeholder: 'Input Total Billed Amount Via Sales Invoices',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalConsumedMaterialCostViaStockEntry',
       
         label: 'Total Consumed Material Cost Via Stock Entry',
@@ -531,7 +583,10 @@ export class Project extends Model {
         placeholder: 'Input Total Consumed Material Cost Via Stock Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'defaultCostCenter',
       
         label: 'Default Cost Center',
@@ -541,7 +596,10 @@ export class Project extends Model {
         placeholder: 'Input Default Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'margin',
       
         label: 'Margin',
@@ -551,7 +609,10 @@ export class Project extends Model {
         placeholder: 'Input Margin',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grossMargin',
       
         label: 'Gross Margin',
@@ -561,7 +622,10 @@ export class Project extends Model {
         placeholder: 'Input Gross Margin',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -571,7 +635,10 @@ export class Project extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grossMargin',
       
         label: 'Gross Margin',
@@ -581,7 +648,10 @@ export class Project extends Model {
         placeholder: 'Input Gross Margin',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'monitorProgress',
       
         label: 'Monitor Progress',
@@ -591,7 +661,10 @@ export class Project extends Model {
         placeholder: 'Input Monitor Progress',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'collectProgress',
       
         label: 'Collect Progress',
@@ -601,7 +674,10 @@ export class Project extends Model {
         placeholder: 'Input Collect Progress',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'holidayList',
       
         label: 'Holiday List',
@@ -611,7 +687,10 @@ export class Project extends Model {
         placeholder: 'Input Holiday List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'frequencyToCollectProgress',
       
         label: 'Frequency To Collect Progress',
@@ -621,7 +700,10 @@ export class Project extends Model {
         placeholder: 'Input Frequency To Collect Progress',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'fromTime',
       
         label: 'From Time',
@@ -631,7 +713,10 @@ export class Project extends Model {
         placeholder: 'Input From Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toTime',
       
         label: 'To Time',
@@ -641,7 +726,10 @@ export class Project extends Model {
         placeholder: 'Input To Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'firstEmail',
       
         label: 'First Email',
@@ -651,7 +739,10 @@ export class Project extends Model {
         placeholder: 'Input First Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'secondEmail',
       
         label: 'Second Email',
@@ -661,7 +752,10 @@ export class Project extends Model {
         placeholder: 'Input Second Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'timeToSend',
       
         label: 'Time To Send',
@@ -671,7 +765,10 @@ export class Project extends Model {
         placeholder: 'Input Time To Send',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dayToSend',
       
         label: 'Day To Send',
@@ -681,7 +778,10 @@ export class Project extends Model {
         placeholder: 'Input Day To Send',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'timeToSend',
       
         label: 'Time To Send',
@@ -691,7 +791,10 @@ export class Project extends Model {
         placeholder: 'Input Time To Send',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -701,7 +804,10 @@ export class Project extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'message',
       
         label: 'Message',
@@ -711,7 +817,9 @@ export class Project extends Model {
         placeholder: 'Input Message',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

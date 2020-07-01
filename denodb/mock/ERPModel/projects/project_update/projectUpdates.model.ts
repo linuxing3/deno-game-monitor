@@ -21,23 +21,12 @@ export class ProjectUpdate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
     sent: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     date: DataTypes.STRING,
-    
     time: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     users: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -46,6 +35,7 @@ export class ProjectUpdate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -55,7 +45,10 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -65,7 +58,10 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sent',
       
         label: 'Sent',
@@ -75,7 +71,10 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input Sent',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -85,7 +84,10 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'date',
       
         label: 'Date',
@@ -95,7 +97,10 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'time',
       
         label: 'Time',
@@ -105,7 +110,10 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -115,7 +123,10 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'users',
       
         label: 'Users',
@@ -125,7 +136,10 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input Users',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -135,7 +149,9 @@ export class ProjectUpdate extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,39 +21,16 @@ export class SubscriptionPlan extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     planName: DataTypes.STRING,
-    
     currency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     item: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     priceDetermination: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     cost: DataTypes.STRING,
-    
     priceList: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     billingInterval: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     billingIntervalCount: DataTypes.STRING,
-    
     paymentPlan: DataTypes.STRING,
-    
     paymentPlan: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paymentGateway: DataTypes.STRING,
     
   };
@@ -62,6 +39,7 @@ export class SubscriptionPlan extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'planName',
       
         label: 'Plan Name',
@@ -71,7 +49,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Plan Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currency',
       
         label: 'Currency',
@@ -81,7 +62,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -91,7 +75,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'item',
       
         label: 'Item',
@@ -101,7 +88,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Item',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -111,7 +101,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceDetermination',
       
         label: 'Price Determination',
@@ -121,7 +114,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Price Determination',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -131,7 +127,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cost',
       
         label: 'Cost',
@@ -141,7 +140,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Cost',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceList',
       
         label: 'Price List',
@@ -151,7 +153,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Price List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -161,7 +166,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingInterval',
       
         label: 'Billing Interval',
@@ -171,7 +179,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Billing Interval',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -181,7 +192,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingIntervalCount',
       
         label: 'Billing Interval Count',
@@ -191,7 +205,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Billing Interval Count',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentPlan',
       
         label: 'Payment Plan',
@@ -201,7 +218,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Payment Plan',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentPlan',
       
         label: 'Payment Plan',
@@ -211,7 +231,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Payment Plan',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -221,7 +244,10 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentGateway',
       
         label: 'Payment Gateway',
@@ -231,7 +257,9 @@ export class SubscriptionPlan extends Model {
         placeholder: 'Input Payment Gateway',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,7 +21,6 @@ export class FiscalYearCompany extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class FiscalYearCompany extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -39,7 +39,9 @@ export class FiscalYearCompany extends Model {
         placeholder: 'Input Company',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

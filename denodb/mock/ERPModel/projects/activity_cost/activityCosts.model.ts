@@ -21,25 +21,12 @@ export class ActivityCost extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     activityType: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     billingRate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     costingRate: DataTypes.STRING,
-    
     title: DataTypes.STRING,
     
   };
@@ -48,6 +35,7 @@ export class ActivityCost extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'activityType',
       
         label: 'Activity Type',
@@ -57,7 +45,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input Activity Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -67,7 +58,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -77,7 +71,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -87,7 +84,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -97,7 +97,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -107,7 +110,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'billingRate',
       
         label: 'Billing Rate',
@@ -117,7 +123,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input Billing Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -127,7 +136,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costingRate',
       
         label: 'Costing Rate',
@@ -137,7 +149,10 @@ export class ActivityCost extends Model {
         placeholder: 'Input Costing Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'title',
       
         label: 'Title',
@@ -147,7 +162,9 @@ export class ActivityCost extends Model {
         placeholder: 'Input Title',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

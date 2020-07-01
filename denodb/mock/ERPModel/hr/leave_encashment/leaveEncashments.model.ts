@@ -21,33 +21,18 @@ export class LeaveEncashment extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     leavePeriod: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     leaveType: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     leaveAllocation: DataTypes.STRING,
-    
     leaveBalance: DataTypes.STRING,
-    
     encashableDays: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     payroll: DataTypes.STRING,
-    
     encashmentAmount: DataTypes.STRING,
-    
     encashmentDate: DataTypes.STRING,
-    
     additionalSalary: DataTypes.STRING,
     
   };
@@ -56,6 +41,7 @@ export class LeaveEncashment extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'leavePeriod',
       
         label: 'Leave Period',
@@ -65,7 +51,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Leave Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -75,7 +64,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -85,7 +77,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -95,7 +90,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveType',
       
         label: 'Leave Type',
@@ -105,7 +103,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Leave Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -115,7 +116,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveAllocation',
       
         label: 'Leave Allocation',
@@ -125,7 +129,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Leave Allocation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveBalance',
       
         label: 'Leave Balance',
@@ -135,7 +142,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Leave Balance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'encashableDays',
       
         label: 'Encashable Days',
@@ -145,7 +155,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Encashable Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -155,7 +168,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payroll',
       
         label: 'Payroll',
@@ -165,7 +181,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Payroll',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'encashmentAmount',
       
         label: 'Encashment Amount',
@@ -175,7 +194,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Encashment Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'encashmentDate',
       
         label: 'Encashment Date',
@@ -185,7 +207,10 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Encashment Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalSalary',
       
         label: 'Additional Salary',
@@ -195,7 +220,9 @@ export class LeaveEncashment extends Model {
         placeholder: 'Input Additional Salary',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

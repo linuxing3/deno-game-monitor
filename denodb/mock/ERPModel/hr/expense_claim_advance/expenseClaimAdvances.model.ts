@@ -21,17 +21,11 @@ export class ExpenseClaimAdvance extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employeeAdvance: DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     advancePaid: DataTypes.STRING,
-    
     unclaimedAmount: DataTypes.STRING,
-    
     allocatedAmount: DataTypes.STRING,
-    
     advanceAccount: DataTypes.STRING,
     
   };
@@ -40,6 +34,7 @@ export class ExpenseClaimAdvance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employeeAdvance',
       
         label: 'Employee Advance',
@@ -49,7 +44,10 @@ export class ExpenseClaimAdvance extends Model {
         placeholder: 'Input Employee Advance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -59,7 +57,10 @@ export class ExpenseClaimAdvance extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advancePaid',
       
         label: 'Advance Paid',
@@ -69,7 +70,10 @@ export class ExpenseClaimAdvance extends Model {
         placeholder: 'Input Advance Paid',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'unclaimedAmount',
       
         label: 'Unclaimed Amount',
@@ -79,7 +83,10 @@ export class ExpenseClaimAdvance extends Model {
         placeholder: 'Input Unclaimed Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocatedAmount',
       
         label: 'Allocated Amount',
@@ -89,7 +96,10 @@ export class ExpenseClaimAdvance extends Model {
         placeholder: 'Input Allocated Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advanceAccount',
       
         label: 'Advance Account',
@@ -99,7 +109,9 @@ export class ExpenseClaimAdvance extends Model {
         placeholder: 'Input Advance Account',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

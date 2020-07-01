@@ -21,61 +21,26 @@ export class SalaryStructure extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     isActive: DataTypes.STRING,
-    
     payrollFrequency: DataTypes.STRING,
-    
     isDefault: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salarySlipBasedOnTimesheet: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salaryComponent: DataTypes.STRING,
-    
     hourRate: DataTypes.STRING,
-    
     leaveEncashmentAmountPerDay: DataTypes.STRING,
-    
     maxBenefitsAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     earning: DataTypes.STRING,
-    
     earnings: DataTypes.STRING,
-    
     deduction: DataTypes.STRING,
-    
     deductions: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalEarning: DataTypes.STRING,
-    
     totalDeduction: DataTypes.STRING,
-    
     netPay: DataTypes.STRING,
-    
     account: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paymentAccount: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -84,6 +49,7 @@ export class SalaryStructure extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -93,7 +59,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -103,7 +72,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -113,7 +85,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isActive',
       
         label: 'Is Active',
@@ -123,7 +98,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Is Active',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'payrollFrequency',
       
         label: 'Payroll Frequency',
@@ -133,7 +111,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Payroll Frequency',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'isDefault',
       
         label: 'Is Default',
@@ -143,7 +124,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Is Default',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -153,7 +137,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlipBasedOnTimesheet',
       
         label: 'Salary Slip Based On Timesheet',
@@ -163,7 +150,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Salary Slip Based On Timesheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -173,7 +163,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salaryComponent',
       
         label: 'Salary Component',
@@ -183,7 +176,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Salary Component',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'hourRate',
       
         label: 'Hour Rate',
@@ -193,7 +189,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Hour Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveEncashmentAmountPerDay',
       
         label: 'Leave Encashment Amount Per Day',
@@ -203,7 +202,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Leave Encashment Amount Per Day',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maxBenefitsAmount',
       
         label: 'Max Benefits Amount',
@@ -213,7 +215,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Max Benefits Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -223,7 +228,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'earning',
       
         label: 'Earning',
@@ -233,7 +241,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Earning',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'earnings',
       
         label: 'Earnings',
@@ -243,7 +254,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Earnings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deduction',
       
         label: 'Deduction',
@@ -253,7 +267,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Deduction',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deductions',
       
         label: 'Deductions',
@@ -263,7 +280,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Deductions',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -273,7 +293,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -283,7 +306,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalEarning',
       
         label: 'Total Earning',
@@ -293,7 +319,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Total Earning',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalDeduction',
       
         label: 'Total Deduction',
@@ -303,7 +332,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Total Deduction',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netPay',
       
         label: 'Net Pay',
@@ -313,7 +345,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Net Pay',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -323,7 +358,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -333,7 +371,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -343,7 +384,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentAccount',
       
         label: 'Payment Account',
@@ -353,7 +397,10 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Payment Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -363,7 +410,9 @@ export class SalaryStructure extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

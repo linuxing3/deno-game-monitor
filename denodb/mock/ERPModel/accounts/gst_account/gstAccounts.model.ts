@@ -21,15 +21,10 @@ export class GstAccount extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     cgstAccount: DataTypes.STRING,
-    
     sgstAccount: DataTypes.STRING,
-    
     igstAccount: DataTypes.STRING,
-    
     cessAccount: DataTypes.STRING,
     
   };
@@ -38,6 +33,7 @@ export class GstAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -47,7 +43,10 @@ export class GstAccount extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cgstAccount',
       
         label: 'Cgst Account',
@@ -57,7 +56,10 @@ export class GstAccount extends Model {
         placeholder: 'Input Cgst Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'sgstAccount',
       
         label: 'Sgst Account',
@@ -67,7 +69,10 @@ export class GstAccount extends Model {
         placeholder: 'Input Sgst Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'igstAccount',
       
         label: 'Igst Account',
@@ -77,7 +82,10 @@ export class GstAccount extends Model {
         placeholder: 'Input Igst Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cessAccount',
       
         label: 'Cess Account',
@@ -87,7 +95,9 @@ export class GstAccount extends Model {
         placeholder: 'Input Cess Account',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

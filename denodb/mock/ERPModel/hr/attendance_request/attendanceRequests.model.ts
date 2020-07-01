@@ -21,33 +21,17 @@ export class AttendanceRequest extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
     halfDay: DataTypes.STRING,
-    
     halfDayDate: DataTypes.STRING,
-    
     reason: DataTypes.STRING,
-    
     reason: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     explanation: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -56,6 +40,7 @@ export class AttendanceRequest extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -65,7 +50,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -75,7 +63,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -85,7 +76,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -95,7 +89,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -105,7 +102,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -115,7 +115,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -125,7 +128,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'halfDay',
       
         label: 'Half Day',
@@ -135,7 +141,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Half Day',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'halfDayDate',
       
         label: 'Half Day Date',
@@ -145,7 +154,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Half Day Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reason',
       
         label: 'Reason',
@@ -155,7 +167,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Reason',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reason',
       
         label: 'Reason',
@@ -165,7 +180,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Reason',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -175,7 +193,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'explanation',
       
         label: 'Explanation',
@@ -185,7 +206,10 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Explanation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -195,7 +219,9 @@ export class AttendanceRequest extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

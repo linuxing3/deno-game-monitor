@@ -21,31 +21,16 @@ export class CForm extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     cFormNo: DataTypes.STRING,
-    
     receivedDate: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     quarter: DataTypes.STRING,
-    
     totalAmount: DataTypes.STRING,
-    
     state: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     invoices: DataTypes.STRING,
-    
     totalInvoicedAmount: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -54,6 +39,7 @@ export class CForm extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -63,7 +49,10 @@ export class CForm extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cFormNo',
       
         label: 'C Form No',
@@ -73,7 +62,10 @@ export class CForm extends Model {
         placeholder: 'Input C Form No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'receivedDate',
       
         label: 'Received Date',
@@ -83,7 +75,10 @@ export class CForm extends Model {
         placeholder: 'Input Received Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -93,7 +88,10 @@ export class CForm extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -103,7 +101,10 @@ export class CForm extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -113,7 +114,10 @@ export class CForm extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'quarter',
       
         label: 'Quarter',
@@ -123,7 +127,10 @@ export class CForm extends Model {
         placeholder: 'Input Quarter',
       
         options: '[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'totalAmount',
       
         label: 'Total Amount',
@@ -133,7 +140,10 @@ export class CForm extends Model {
         placeholder: 'Input Total Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'state',
       
         label: 'State',
@@ -143,7 +153,10 @@ export class CForm extends Model {
         placeholder: 'Input State',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -153,7 +166,10 @@ export class CForm extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoices',
       
         label: 'Invoices',
@@ -163,7 +179,10 @@ export class CForm extends Model {
         placeholder: 'Input Invoices',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalInvoicedAmount',
       
         label: 'Total Invoiced Amount',
@@ -173,7 +192,10 @@ export class CForm extends Model {
         placeholder: 'Input Total Invoiced Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -183,7 +205,9 @@ export class CForm extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

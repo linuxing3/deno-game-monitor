@@ -21,37 +21,20 @@ export class HrSettings extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employeeSettings: DataTypes.STRING,
-    
     retirementAge: DataTypes.STRING,
-    
     employeeRecordsToBeCreatedBy: DataTypes.STRING,
-    
     leaveApprovalNotificationTemplate: DataTypes.STRING,
-    
     leaveStatusNotificationTemplate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     stopBirthdayReminders: DataTypes.STRING,
-    
     maintainBillingHoursAndWorkingHoursSameOnTimesheet: DataTypes.STRING,
-    
     leaveApproverMandatoryInLeaveApplication: DataTypes.STRING,
-    
     expenseApproverMandatoryInExpenseClaim: DataTypes.STRING,
-    
     payrollSettings: DataTypes.STRING,
-    
     includeHolidaysInTotalNoOfWorkingDays: DataTypes.STRING,
-    
     emailSalarySlipToEmployee: DataTypes.STRING,
-    
     maxWorkingHoursAgainstTimesheet: DataTypes.STRING,
-    
     leaveSettings: DataTypes.STRING,
-    
     showLeavesOfAllDepartmentMembersInCalendar: DataTypes.STRING,
     
   };
@@ -60,6 +43,7 @@ export class HrSettings extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employeeSettings',
       
         label: 'Employee Settings',
@@ -69,7 +53,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Employee Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'retirementAge',
       
         label: 'Retirement Age',
@@ -79,7 +66,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Retirement Age',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeRecordsToBeCreatedBy',
       
         label: 'Employee Records To Be Created By',
@@ -89,7 +79,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Employee Records To Be Created By',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'leaveApprovalNotificationTemplate',
       
         label: 'Leave Approval Notification Template',
@@ -99,7 +92,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Leave Approval Notification Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveStatusNotificationTemplate',
       
         label: 'Leave Status Notification Template',
@@ -109,7 +105,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Leave Status Notification Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -119,7 +118,10 @@ export class HrSettings extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'stopBirthdayReminders',
       
         label: 'Stop Birthday Reminders',
@@ -129,7 +131,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Stop Birthday Reminders',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintainBillingHoursAndWorkingHoursSameOnTimesheet',
       
         label: 'Maintain Billing Hours And Working Hours Same On Timesheet',
@@ -139,7 +144,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Maintain Billing Hours And Working Hours Same On Timesheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveApproverMandatoryInLeaveApplication',
       
         label: 'Leave Approver Mandatory In Leave Application',
@@ -149,7 +157,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Leave Approver Mandatory In Leave Application',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseApproverMandatoryInExpenseClaim',
       
         label: 'Expense Approver Mandatory In Expense Claim',
@@ -159,7 +170,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Expense Approver Mandatory In Expense Claim',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollSettings',
       
         label: 'Payroll Settings',
@@ -169,7 +183,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Payroll Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'includeHolidaysInTotalNoOfWorkingDays',
       
         label: 'Include Holidays In Total No Of Working Days',
@@ -179,7 +196,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Include Holidays In Total No Of Working Days',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'emailSalarySlipToEmployee',
       
         label: 'Email Salary Slip To Employee',
@@ -189,7 +209,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Email Salary Slip To Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maxWorkingHoursAgainstTimesheet',
       
         label: 'Max Working Hours Against Timesheet',
@@ -199,7 +222,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Max Working Hours Against Timesheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leaveSettings',
       
         label: 'Leave Settings',
@@ -209,7 +235,10 @@ export class HrSettings extends Model {
         placeholder: 'Input Leave Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'showLeavesOfAllDepartmentMembersInCalendar',
       
         label: 'Show Leaves Of All Department Members In Calendar',
@@ -219,7 +248,9 @@ export class HrSettings extends Model {
         placeholder: 'Input Show Leaves Of All Department Members In Calendar',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

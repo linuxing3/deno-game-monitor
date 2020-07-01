@@ -21,85 +21,35 @@ export class Task extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     subject: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
     isGroup: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     priority: DataTypes.STRING,
-    
     parentTask: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     expectedStartDate: DataTypes.STRING,
-    
     expectedTimeInHours: DataTypes.STRING,
-    
     weight: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     expectedEndDate: DataTypes.STRING,
-    
     progress: DataTypes.STRING,
-    
     isMilestone: DataTypes.STRING,
-    
     color: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     details: DataTypes.STRING,
-    
     dependsOn: DataTypes.STRING,
-    
     dependsOn: DataTypes.STRING,
-    
     dependsOnTasks: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     actualStartDateViaTimeSheet: DataTypes.STRING,
-    
     actualTimeInHours: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     actualEndDateViaTimeSheet: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalCostingAmountViaTimeSheet: DataTypes.STRING,
-    
     totalExpenseClaimViaExpenseClaim: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalBillingAmountViaTimeSheet: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     reviewDate: DataTypes.STRING,
-    
     closingDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     lft: DataTypes.STRING,
-    
     rgt: DataTypes.STRING,
-    
     oldParent: DataTypes.STRING,
     
   };
@@ -108,6 +58,7 @@ export class Task extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'subject',
       
         label: 'Subject',
@@ -117,7 +68,10 @@ export class Task extends Model {
         placeholder: 'Input Subject',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -127,7 +81,10 @@ export class Task extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isGroup',
       
         label: 'Is Group',
@@ -137,7 +94,10 @@ export class Task extends Model {
         placeholder: 'Input Is Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -147,7 +107,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -157,7 +120,10 @@ export class Task extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'priority',
       
         label: 'Priority',
@@ -167,7 +133,10 @@ export class Task extends Model {
         placeholder: 'Input Priority',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'parentTask',
       
         label: 'Parent Task',
@@ -177,7 +146,10 @@ export class Task extends Model {
         placeholder: 'Input Parent Task',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -187,7 +159,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expectedStartDate',
       
         label: 'Expected Start Date',
@@ -197,7 +172,10 @@ export class Task extends Model {
         placeholder: 'Input Expected Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expectedTimeInHours',
       
         label: 'Expected Time In Hours',
@@ -207,7 +185,10 @@ export class Task extends Model {
         placeholder: 'Input Expected Time In Hours',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'weight',
       
         label: 'Weight',
@@ -217,7 +198,10 @@ export class Task extends Model {
         placeholder: 'Input Weight',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -227,7 +211,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expectedEndDate',
       
         label: 'Expected End Date',
@@ -237,7 +224,10 @@ export class Task extends Model {
         placeholder: 'Input Expected End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'progress',
       
         label: 'Progress',
@@ -247,7 +237,10 @@ export class Task extends Model {
         placeholder: 'Input Progress',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isMilestone',
       
         label: 'Is Milestone',
@@ -257,7 +250,10 @@ export class Task extends Model {
         placeholder: 'Input Is Milestone',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'color',
       
         label: 'Color',
@@ -267,7 +263,10 @@ export class Task extends Model {
         placeholder: 'Input Color',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -277,7 +276,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'details',
       
         label: 'Details',
@@ -287,7 +289,10 @@ export class Task extends Model {
         placeholder: 'Input Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dependsOn',
       
         label: 'Depends On',
@@ -297,7 +302,10 @@ export class Task extends Model {
         placeholder: 'Input Depends On',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dependsOn',
       
         label: 'Depends On',
@@ -307,7 +315,10 @@ export class Task extends Model {
         placeholder: 'Input Depends On',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dependsOnTasks',
       
         label: 'Depends On Tasks',
@@ -317,7 +328,10 @@ export class Task extends Model {
         placeholder: 'Input Depends On Tasks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -327,7 +341,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actualStartDateViaTimeSheet',
       
         label: 'Actual Start Date Via Time Sheet',
@@ -337,7 +354,10 @@ export class Task extends Model {
         placeholder: 'Input Actual Start Date Via Time Sheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actualTimeInHours',
       
         label: 'Actual Time In Hours',
@@ -347,7 +367,10 @@ export class Task extends Model {
         placeholder: 'Input Actual Time In Hours',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -357,7 +380,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actualEndDateViaTimeSheet',
       
         label: 'Actual End Date Via Time Sheet',
@@ -367,7 +393,10 @@ export class Task extends Model {
         placeholder: 'Input Actual End Date Via Time Sheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -377,7 +406,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalCostingAmountViaTimeSheet',
       
         label: 'Total Costing Amount Via Time Sheet',
@@ -387,7 +419,10 @@ export class Task extends Model {
         placeholder: 'Input Total Costing Amount Via Time Sheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalExpenseClaimViaExpenseClaim',
       
         label: 'Total Expense Claim Via Expense Claim',
@@ -397,7 +432,10 @@ export class Task extends Model {
         placeholder: 'Input Total Expense Claim Via Expense Claim',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -407,7 +445,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalBillingAmountViaTimeSheet',
       
         label: 'Total Billing Amount Via Time Sheet',
@@ -417,7 +458,10 @@ export class Task extends Model {
         placeholder: 'Input Total Billing Amount Via Time Sheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -427,7 +471,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'reviewDate',
       
         label: 'Review Date',
@@ -437,7 +484,10 @@ export class Task extends Model {
         placeholder: 'Input Review Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'closingDate',
       
         label: 'Closing Date',
@@ -447,7 +497,10 @@ export class Task extends Model {
         placeholder: 'Input Closing Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -457,7 +510,10 @@ export class Task extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -467,7 +523,10 @@ export class Task extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -477,7 +536,10 @@ export class Task extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lft',
       
         label: 'Lft',
@@ -487,7 +549,10 @@ export class Task extends Model {
         placeholder: 'Input Lft',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rgt',
       
         label: 'Rgt',
@@ -497,7 +562,10 @@ export class Task extends Model {
         placeholder: 'Input Rgt',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'oldParent',
       
         label: 'Old Parent',
@@ -507,7 +575,9 @@ export class Task extends Model {
         placeholder: 'Input Old Parent',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

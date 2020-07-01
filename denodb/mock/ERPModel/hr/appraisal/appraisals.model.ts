@@ -21,21 +21,13 @@ export class Appraisal extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     forEmployeeName: DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     goals: DataTypes.STRING,
-    
     totalScoreOutOf_5: DataTypes.STRING,
-    
     remarks: DataTypes.STRING,
-    
     company: DataTypes.STRING,
     
   };
@@ -44,6 +36,7 @@ export class Appraisal extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'forEmployeeName',
       
         label: 'For Employee Name',
@@ -53,7 +46,10 @@ export class Appraisal extends Model {
         placeholder: 'Input For Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -63,7 +59,10 @@ export class Appraisal extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -73,7 +72,10 @@ export class Appraisal extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -83,7 +85,10 @@ export class Appraisal extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'goals',
       
         label: 'Goals',
@@ -93,7 +98,10 @@ export class Appraisal extends Model {
         placeholder: 'Input Goals',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalScoreOutOf_5',
       
         label: 'Total Score Out Of 5',
@@ -103,7 +111,10 @@ export class Appraisal extends Model {
         placeholder: 'Input Total Score Out Of 5',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remarks',
       
         label: 'Remarks',
@@ -113,7 +124,10 @@ export class Appraisal extends Model {
         placeholder: 'Input Remarks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -123,7 +137,9 @@ export class Appraisal extends Model {
         placeholder: 'Input Company',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

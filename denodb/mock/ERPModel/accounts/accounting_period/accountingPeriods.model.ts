@@ -21,21 +21,11 @@ export class AccountingPeriod extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     periodName: DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     closedDocuments: DataTypes.STRING,
     
   };
@@ -44,6 +34,7 @@ export class AccountingPeriod extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'periodName',
       
         label: 'Period Name',
@@ -53,7 +44,10 @@ export class AccountingPeriod extends Model {
         placeholder: 'Input Period Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -63,7 +57,10 @@ export class AccountingPeriod extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -73,7 +70,10 @@ export class AccountingPeriod extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -83,7 +83,10 @@ export class AccountingPeriod extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -93,7 +96,10 @@ export class AccountingPeriod extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -103,7 +109,10 @@ export class AccountingPeriod extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -113,7 +122,10 @@ export class AccountingPeriod extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'closedDocuments',
       
         label: 'Closed Documents',
@@ -123,7 +135,9 @@ export class AccountingPeriod extends Model {
         placeholder: 'Input Closed Documents',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

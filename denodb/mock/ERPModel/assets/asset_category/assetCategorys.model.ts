@@ -21,17 +21,10 @@ export class AssetCategory extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     assetCategoryName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     financeBookDetail: DataTypes.STRING,
-    
     financeBooks: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
     
   };
@@ -40,6 +33,7 @@ export class AssetCategory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'assetCategoryName',
       
         label: 'Asset Category Name',
@@ -49,7 +43,10 @@ export class AssetCategory extends Model {
         placeholder: 'Input Asset Category Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -59,7 +56,10 @@ export class AssetCategory extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'financeBookDetail',
       
         label: 'Finance Book Detail',
@@ -69,7 +69,10 @@ export class AssetCategory extends Model {
         placeholder: 'Input Finance Book Detail',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'financeBooks',
       
         label: 'Finance Books',
@@ -79,7 +82,10 @@ export class AssetCategory extends Model {
         placeholder: 'Input Finance Books',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -89,7 +95,10 @@ export class AssetCategory extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -99,7 +108,9 @@ export class AssetCategory extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

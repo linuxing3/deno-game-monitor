@@ -21,31 +21,17 @@ export class AdditionalSalary extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     salaryComponent: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     overwriteSalaryStructureAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     payrollDate: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     salarySlip: DataTypes.STRING,
-    
     salaryComponentType: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -54,6 +40,7 @@ export class AdditionalSalary extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -63,7 +50,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -73,7 +63,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salaryComponent',
       
         label: 'Salary Component',
@@ -83,7 +76,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Salary Component',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -93,7 +89,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'overwriteSalaryStructureAmount',
       
         label: 'Overwrite Salary Structure Amount',
@@ -103,7 +102,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Overwrite Salary Structure Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -113,7 +115,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollDate',
       
         label: 'Payroll Date',
@@ -123,7 +128,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Payroll Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -133,7 +141,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -143,7 +154,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -153,7 +167,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlip',
       
         label: 'Salary Slip',
@@ -163,7 +180,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Salary Slip',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salaryComponentType',
       
         label: 'Salary Component Type',
@@ -173,7 +193,10 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Salary Component Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -183,7 +206,9 @@ export class AdditionalSalary extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

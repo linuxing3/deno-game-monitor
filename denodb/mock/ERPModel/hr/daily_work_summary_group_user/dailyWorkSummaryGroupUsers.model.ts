@@ -21,9 +21,7 @@ export class DailyWorkSummaryGroupUser extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     user: DataTypes.STRING,
-    
     email: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class DailyWorkSummaryGroupUser extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'user',
       
         label: 'User',
@@ -41,7 +40,10 @@ export class DailyWorkSummaryGroupUser extends Model {
         placeholder: 'Input User',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'email',
       
         label: 'Email',
@@ -51,7 +53,9 @@ export class DailyWorkSummaryGroupUser extends Model {
         placeholder: 'Input Email',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

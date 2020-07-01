@@ -21,9 +21,7 @@ export class CashierClosingPayments extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     modeOfPayment: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class CashierClosingPayments extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -41,7 +40,10 @@ export class CashierClosingPayments extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -51,7 +53,9 @@ export class CashierClosingPayments extends Model {
         placeholder: 'Input Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

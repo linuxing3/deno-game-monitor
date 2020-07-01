@@ -21,7 +21,6 @@ export class OfferTerm extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     offerTerm: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class OfferTerm extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'offerTerm',
       
         label: 'Offer Term',
@@ -39,7 +39,9 @@ export class OfferTerm extends Model {
         placeholder: 'Input Offer Term',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

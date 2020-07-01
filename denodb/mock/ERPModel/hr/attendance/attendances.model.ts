@@ -21,29 +21,15 @@ export class Attendance extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
-    : DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     leaveType: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     attendanceDate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     attendanceRequest: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -52,6 +38,7 @@ export class Attendance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: '',
       
         label: '',
@@ -61,7 +48,10 @@ export class Attendance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -71,7 +61,10 @@ export class Attendance extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -81,7 +74,10 @@ export class Attendance extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -91,7 +87,10 @@ export class Attendance extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -101,7 +100,10 @@ export class Attendance extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'leaveType',
       
         label: 'Leave Type',
@@ -111,7 +113,10 @@ export class Attendance extends Model {
         placeholder: 'Input Leave Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -121,7 +126,10 @@ export class Attendance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'attendanceDate',
       
         label: 'Attendance Date',
@@ -131,7 +139,10 @@ export class Attendance extends Model {
         placeholder: 'Input Attendance Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -141,7 +152,10 @@ export class Attendance extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -151,7 +165,10 @@ export class Attendance extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'attendanceRequest',
       
         label: 'Attendance Request',
@@ -161,7 +178,10 @@ export class Attendance extends Model {
         placeholder: 'Input Attendance Request',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -171,7 +191,9 @@ export class Attendance extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

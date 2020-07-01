@@ -21,7 +21,6 @@ export class ShippingRuleCountry extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     country: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class ShippingRuleCountry extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'country',
       
         label: 'Country',
@@ -39,7 +39,9 @@ export class ShippingRuleCountry extends Model {
         placeholder: 'Input Country',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

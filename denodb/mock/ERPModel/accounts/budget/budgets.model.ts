@@ -21,49 +21,23 @@ export class Budget extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     budgetAgainst: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
     fiscalYear: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     monthlyDistribution: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     controlAction: DataTypes.STRING,
-    
     applicableOnMaterialRequest: DataTypes.STRING,
-    
     actionIfAnnualBudgetExceededOnMr: DataTypes.STRING,
-    
     actionIfAccumulatedMonthlyBudgetExceededOnMr: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     applicableOnPurchaseOrder: DataTypes.STRING,
-    
     actionIfAnnualBudgetExceededOnPo: DataTypes.STRING,
-    
     actionIfAccumulatedMonthlyBudgetExceededOnPo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     applicableOnBookingActualExpenses: DataTypes.STRING,
-    
     actionIfAnnualBudgetExceededOnActual: DataTypes.STRING,
-    
     actionIfAccumulatedMonthlyBudgetExceededOnActual: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     budgetAccounts: DataTypes.STRING,
     
   };
@@ -72,6 +46,7 @@ export class Budget extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'budgetAgainst',
       
         label: 'Budget Against',
@@ -81,7 +56,10 @@ export class Budget extends Model {
         placeholder: 'Input Budget Against',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -91,7 +69,10 @@ export class Budget extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -101,7 +82,10 @@ export class Budget extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -111,7 +95,10 @@ export class Budget extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fiscalYear',
       
         label: 'Fiscal Year',
@@ -121,7 +108,10 @@ export class Budget extends Model {
         placeholder: 'Input Fiscal Year',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -131,7 +121,10 @@ export class Budget extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'monthlyDistribution',
       
         label: 'Monthly Distribution',
@@ -141,7 +134,10 @@ export class Budget extends Model {
         placeholder: 'Input Monthly Distribution',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -151,7 +147,10 @@ export class Budget extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'controlAction',
       
         label: 'Control Action',
@@ -161,7 +160,10 @@ export class Budget extends Model {
         placeholder: 'Input Control Action',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicableOnMaterialRequest',
       
         label: 'Applicable On Material Request',
@@ -171,7 +173,10 @@ export class Budget extends Model {
         placeholder: 'Input Applicable On Material Request',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actionIfAnnualBudgetExceededOnMr',
       
         label: 'Action If Annual Budget Exceeded On Mr',
@@ -181,7 +186,10 @@ export class Budget extends Model {
         placeholder: 'Input Action If Annual Budget Exceeded On Mr',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'actionIfAccumulatedMonthlyBudgetExceededOnMr',
       
         label: 'Action If Accumulated Monthly Budget Exceeded On Mr',
@@ -191,7 +199,10 @@ export class Budget extends Model {
         placeholder: 'Input Action If Accumulated Monthly Budget Exceeded On Mr',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -201,7 +212,10 @@ export class Budget extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicableOnPurchaseOrder',
       
         label: 'Applicable On Purchase Order',
@@ -211,7 +225,10 @@ export class Budget extends Model {
         placeholder: 'Input Applicable On Purchase Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actionIfAnnualBudgetExceededOnPo',
       
         label: 'Action If Annual Budget Exceeded On Po',
@@ -221,7 +238,10 @@ export class Budget extends Model {
         placeholder: 'Input Action If Annual Budget Exceeded On Po',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'actionIfAccumulatedMonthlyBudgetExceededOnPo',
       
         label: 'Action If Accumulated Monthly Budget Exceeded On Po',
@@ -231,7 +251,10 @@ export class Budget extends Model {
         placeholder: 'Input Action If Accumulated Monthly Budget Exceeded On Po',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -241,7 +264,10 @@ export class Budget extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicableOnBookingActualExpenses',
       
         label: 'Applicable On Booking Actual Expenses',
@@ -251,7 +277,10 @@ export class Budget extends Model {
         placeholder: 'Input Applicable On Booking Actual Expenses',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actionIfAnnualBudgetExceededOnActual',
       
         label: 'Action If Annual Budget Exceeded On Actual',
@@ -261,7 +290,10 @@ export class Budget extends Model {
         placeholder: 'Input Action If Annual Budget Exceeded On Actual',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'actionIfAccumulatedMonthlyBudgetExceededOnActual',
       
         label: 'Action If Accumulated Monthly Budget Exceeded On Actual',
@@ -271,7 +303,10 @@ export class Budget extends Model {
         placeholder: 'Input Action If Accumulated Monthly Budget Exceeded On Actual',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -281,7 +316,10 @@ export class Budget extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'budgetAccounts',
       
         label: 'Budget Accounts',
@@ -291,7 +329,9 @@ export class Budget extends Model {
         placeholder: 'Input Budget Accounts',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

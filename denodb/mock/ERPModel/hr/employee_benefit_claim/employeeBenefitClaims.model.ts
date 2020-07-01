@@ -21,33 +21,18 @@ export class EmployeeBenefitClaim extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     claimDate: DataTypes.STRING,
-    
     benefitTypeAndAmount: DataTypes.STRING,
-    
     claimBenefitFor: DataTypes.STRING,
-    
     maxAmountEligible: DataTypes.STRING,
-    
     payAgainstBenefitClaim: DataTypes.STRING,
-    
     claimedAmount: DataTypes.STRING,
-    
     salarySlip: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     expenseProof: DataTypes.STRING,
-    
     attachments: DataTypes.STRING,
     
   };
@@ -56,6 +41,7 @@ export class EmployeeBenefitClaim extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -65,7 +51,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -75,7 +64,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -85,7 +77,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -95,7 +90,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'claimDate',
       
         label: 'Claim Date',
@@ -105,7 +103,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Claim Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'benefitTypeAndAmount',
       
         label: 'Benefit Type And Amount',
@@ -115,7 +116,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Benefit Type And Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'claimBenefitFor',
       
         label: 'Claim Benefit For',
@@ -125,7 +129,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Claim Benefit For',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maxAmountEligible',
       
         label: 'Max Amount Eligible',
@@ -135,7 +142,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Max Amount Eligible',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payAgainstBenefitClaim',
       
         label: 'Pay Against Benefit Claim',
@@ -145,7 +155,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Pay Against Benefit Claim',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'claimedAmount',
       
         label: 'Claimed Amount',
@@ -155,7 +168,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Claimed Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlip',
       
         label: 'Salary Slip',
@@ -165,7 +181,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Salary Slip',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -175,7 +194,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'expenseProof',
       
         label: 'Expense Proof',
@@ -185,7 +207,10 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Expense Proof',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'attachments',
       
         label: 'Attachments',
@@ -195,7 +220,9 @@ export class EmployeeBenefitClaim extends Model {
         placeholder: 'Input Attachments',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

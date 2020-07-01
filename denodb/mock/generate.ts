@@ -28,14 +28,18 @@ const { cwd, stdout, copy } = Deno;
 console.log(`Starting waling the dir ${cwd()}`);
 // Choose a template
 
+const modelIndexFileName = 'models.index.ts';
+const modelIndexTemplate = 'models.index.ejs';
+
 const template: string = await Select.prompt({
   message: `Pick a template`,
   options: [
-    { name: "template.denodb.ejs", value: "template.denodb.ejs" },
-    { name: "template.dso.ejs", value: "template.dso.ejs" },
+    { name: "denodb min ejs template", value: "template.denodb.min.ejs" },
+    { name: "denodb ejs template", value: "template.denodb.ejs" },
     Select.separator("--------"),
-    { name: "template.cotton.ejs", value: "template.cotton.ejs" },
-    { name: "template.orm.ejs", value: "template.orm.ejs" },
+    { name: "dso ejs template", value: "template.dso.ejs" },
+    { name: "cotton ejs template", value: "template.cotton.ejs" },
+    { name: "orm ejs template", value: "template.orm.ejs" },
   ],
 });
 /**
@@ -43,8 +47,13 @@ const template: string = await Select.prompt({
  * @param path path
  */
 async function walkModels(path: string) {
+  let models = [];
   for await (const entry of walk(path)) {
     const ext = posix.extname(entry.path);
+    if(entry.name === 'test_records.json' || entry.name === "testRecordss.model.ts") {
+      console.log('removing' + entry.path);
+      await Deno.remove(entry.path);
+    };
     if (ext === ".json") {
       try {
         const shortDirName = posix.dirname(entry.path);
@@ -59,17 +68,32 @@ async function walkModels(path: string) {
           tableName,
           fields: model.fields,
         };
-        console.log('[model name] : ' + modelName);
-        console.log('[entry path] : ' +entry.path);
-        console.log('[model file name] :' + modelFileName);
-        const output = await renderFileToString(`${cwd()}/${template}`, schema);
-        await writeFileStr(modelFileName, output);
+        // console.log('[model name] : ' + modelName);
+        // console.log('[entry path] : ' +entry.path);
+        // console.log('[model file name] :' + modelFileName);
+        // render with ejs and write to separate file
+        const modelOutput = await renderFileToString(`${cwd()}/${template}`, schema);
+        await writeFileStr(modelFileName, modelOutput);
+
+        // push t a array for injection
+        const modelFileRelativePath = modelFileName.replace(`${cwd()}`, '.');
+        models.push({
+          tableName,
+          modelName,
+          path: modelFileRelativePath
+        })
+        // console.log(models);
       } catch (error) {
         console.log(error);
       }
-
     }
   }
+  // inject to a models index file
+  const modelIndexOutput = await renderFileToString(
+    `${cwd()}/${modelIndexTemplate}`,
+    { models },
+  );
+  await writeFileStr(`${cwd()}/${modelIndexFileName}`, modelIndexOutput);
 }
 
 console.log(`You choosed template: [${template}]`);

@@ -21,45 +21,17 @@ export class AssetMaintenanceTask extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     maintenanceTask: DataTypes.STRING,
-    
     maintenanceType: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     maintenanceStatus: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     periodicity: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
     certificateRequired: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     assignTo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     assignToName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     nextDueDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     lastCompletionDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -68,6 +40,7 @@ export class AssetMaintenanceTask extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'maintenanceTask',
       
         label: 'Maintenance Task',
@@ -77,7 +50,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Maintenance Task',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceType',
       
         label: 'Maintenance Type',
@@ -87,7 +63,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Maintenance Type',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -97,7 +76,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceStatus',
       
         label: 'Maintenance Status',
@@ -107,7 +89,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Maintenance Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -117,7 +102,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -127,7 +115,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'periodicity',
       
         label: 'Periodicity',
@@ -137,7 +128,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Periodicity',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -147,7 +141,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -157,7 +154,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'certificateRequired',
       
         label: 'Certificate Required',
@@ -167,7 +167,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Certificate Required',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -177,7 +180,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assignTo',
       
         label: 'Assign To',
@@ -187,7 +193,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Assign To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -197,7 +206,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assignToName',
       
         label: 'Assign To Name',
@@ -207,7 +219,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Assign To Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -217,7 +232,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'nextDueDate',
       
         label: 'Next Due Date',
@@ -227,7 +245,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Next Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -237,7 +258,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lastCompletionDate',
       
         label: 'Last Completion Date',
@@ -247,7 +271,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Last Completion Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -257,7 +284,10 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -267,7 +297,9 @@ export class AssetMaintenanceTask extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

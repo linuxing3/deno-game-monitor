@@ -21,11 +21,8 @@ export class AssetSettings extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     depreciationOptions: DataTypes.STRING,
-    
     calculateProratedDepreciationScheduleBasedOnFiscalYear: DataTypes.STRING,
-    
     numberOfDaysInFiscalYear: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class AssetSettings extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'depreciationOptions',
       
         label: 'Depreciation Options',
@@ -43,7 +41,10 @@ export class AssetSettings extends Model {
         placeholder: 'Input Depreciation Options',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'calculateProratedDepreciationScheduleBasedOnFiscalYear',
       
         label: 'Calculate Prorated Depreciation Schedule Based On Fiscal Year',
@@ -53,7 +54,10 @@ export class AssetSettings extends Model {
         placeholder: 'Input Calculate Prorated Depreciation Schedule Based On Fiscal Year',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'numberOfDaysInFiscalYear',
       
         label: 'Number Of Days In Fiscal Year',
@@ -63,7 +67,9 @@ export class AssetSettings extends Model {
         placeholder: 'Input Number Of Days In Fiscal Year',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

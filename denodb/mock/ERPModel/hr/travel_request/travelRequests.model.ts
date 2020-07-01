@@ -21,59 +21,29 @@ export class TravelRequest extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     travelType: DataTypes.STRING,
-    
     travelFunding: DataTypes.STRING,
-    
     copyOfInvitationAnnouncement: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     purposeOfTravel: DataTypes.STRING,
-    
     detailsOfSponsorNameLocation: DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     anyOtherDetails: DataTypes.STRING,
-    
     employeeDetails: DataTypes.STRING,
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     contactNumber: DataTypes.STRING,
-    
     contactEmail: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     dateOfBirth: DataTypes.STRING,
-    
     identificationDocumentType: DataTypes.STRING,
-    
     identificationDocumentNumber: DataTypes.STRING,
-    
     passportNumber: DataTypes.STRING,
-    
     travelItinerary: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     costingDetails: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     costing: DataTypes.STRING,
-    
     eventDetails: DataTypes.STRING,
-    
     nameOfOrganizer: DataTypes.STRING,
-    
     addressOfOrganizer: DataTypes.STRING,
-    
     otherDetails: DataTypes.STRING,
     
   };
@@ -82,6 +52,7 @@ export class TravelRequest extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'travelType',
       
         label: 'Travel Type',
@@ -91,7 +62,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Travel Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'travelFunding',
       
         label: 'Travel Funding',
@@ -101,7 +75,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Travel Funding',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'copyOfInvitationAnnouncement',
       
         label: 'Copy Of Invitation Announcement',
@@ -111,7 +88,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Copy Of Invitation Announcement',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -121,7 +101,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'purposeOfTravel',
       
         label: 'Purpose Of Travel',
@@ -131,7 +114,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Purpose Of Travel',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'detailsOfSponsorNameLocation',
       
         label: 'Details Of Sponsor Name Location',
@@ -141,7 +127,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Details Of Sponsor Name Location',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -151,7 +140,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'anyOtherDetails',
       
         label: 'Any Other Details',
@@ -161,7 +153,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Any Other Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeDetails',
       
         label: 'Employee Details',
@@ -171,7 +166,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Employee Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -181,7 +179,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -191,7 +192,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactNumber',
       
         label: 'Contact Number',
@@ -201,7 +205,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Contact Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactEmail',
       
         label: 'Contact Email',
@@ -211,7 +218,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Contact Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -221,7 +231,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'dateOfBirth',
       
         label: 'Date Of Birth',
@@ -231,7 +244,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Date Of Birth',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'identificationDocumentType',
       
         label: 'Identification Document Type',
@@ -241,7 +257,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Identification Document Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'identificationDocumentNumber',
       
         label: 'Identification Document Number',
@@ -251,7 +270,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Identification Document Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'passportNumber',
       
         label: 'Passport Number',
@@ -261,7 +283,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Passport Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'travelItinerary',
       
         label: 'Travel Itinerary',
@@ -271,7 +296,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Travel Itinerary',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -281,7 +309,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costingDetails',
       
         label: 'Costing Details',
@@ -291,7 +322,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Costing Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -301,7 +335,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costing',
       
         label: 'Costing',
@@ -311,7 +348,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Costing',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'eventDetails',
       
         label: 'Event Details',
@@ -321,7 +361,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Event Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'nameOfOrganizer',
       
         label: 'Name Of Organizer',
@@ -331,7 +374,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Name Of Organizer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addressOfOrganizer',
       
         label: 'Address Of Organizer',
@@ -341,7 +387,10 @@ export class TravelRequest extends Model {
         placeholder: 'Input Address Of Organizer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'otherDetails',
       
         label: 'Other Details',
@@ -351,7 +400,9 @@ export class TravelRequest extends Model {
         placeholder: 'Input Other Details',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

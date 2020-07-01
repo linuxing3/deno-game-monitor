@@ -21,7 +21,6 @@ export class Interest extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     interest: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class Interest extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'interest',
       
         label: 'Interest',
@@ -39,7 +39,9 @@ export class Interest extends Model {
         placeholder: 'Input Interest',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

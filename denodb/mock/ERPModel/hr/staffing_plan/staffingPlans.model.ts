@@ -21,25 +21,13 @@ export class StaffingPlan extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
     staffingPlanDetails: DataTypes.STRING,
-    
     staffingPlanDetail: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalEstimatedBudget: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -48,6 +36,7 @@ export class StaffingPlan extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -57,7 +46,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -67,7 +59,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -77,7 +72,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -87,7 +85,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -97,7 +98,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'staffingPlanDetails',
       
         label: 'Staffing Plan Details',
@@ -107,7 +111,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input Staffing Plan Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'staffingPlanDetail',
       
         label: 'Staffing Plan Detail',
@@ -117,7 +124,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input Staffing Plan Detail',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -127,7 +137,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalEstimatedBudget',
       
         label: 'Total Estimated Budget',
@@ -137,7 +150,10 @@ export class StaffingPlan extends Model {
         placeholder: 'Input Total Estimated Budget',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -147,7 +163,9 @@ export class StaffingPlan extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

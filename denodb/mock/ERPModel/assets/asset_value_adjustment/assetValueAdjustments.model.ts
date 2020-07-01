@@ -21,29 +21,16 @@ export class AssetValueAdjustment extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     company: DataTypes.STRING,
-    
     asset: DataTypes.STRING,
-    
     assetCategory: DataTypes.STRING,
-    
     financeBook: DataTypes.STRING,
-    
     journalEntry: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     date: DataTypes.STRING,
-    
     currentAssetValue: DataTypes.STRING,
-    
     newAssetValue: DataTypes.STRING,
-    
     differenceAmount: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -52,6 +39,7 @@ export class AssetValueAdjustment extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'company',
       
         label: 'Company',
@@ -61,7 +49,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'asset',
       
         label: 'Asset',
@@ -71,7 +62,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Asset',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assetCategory',
       
         label: 'Asset Category',
@@ -81,7 +75,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Asset Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'financeBook',
       
         label: 'Finance Book',
@@ -91,7 +88,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Finance Book',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'journalEntry',
       
         label: 'Journal Entry',
@@ -101,7 +101,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Journal Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -111,7 +114,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'date',
       
         label: 'Date',
@@ -121,7 +127,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currentAssetValue',
       
         label: 'Current Asset Value',
@@ -131,7 +140,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Current Asset Value',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'newAssetValue',
       
         label: 'New Asset Value',
@@ -141,7 +153,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input New Asset Value',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'differenceAmount',
       
         label: 'Difference Amount',
@@ -151,7 +166,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Difference Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -161,7 +179,10 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -171,7 +192,9 @@ export class AssetValueAdjustment extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

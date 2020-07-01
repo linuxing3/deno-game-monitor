@@ -21,9 +21,7 @@ export class MonthlyDistributionPercentage extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     month: DataTypes.STRING,
-    
     percentageAllocation: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class MonthlyDistributionPercentage extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'month',
       
         label: 'Month',
@@ -41,7 +40,10 @@ export class MonthlyDistributionPercentage extends Model {
         placeholder: 'Input Month',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'percentageAllocation',
       
         label: 'Percentage Allocation',
@@ -51,7 +53,9 @@ export class MonthlyDistributionPercentage extends Model {
         placeholder: 'Input Percentage Allocation',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

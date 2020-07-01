@@ -21,19 +21,10 @@ export class AssetMaintenanceTeam extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     maintenanceTeamName: DataTypes.STRING,
-    
     maintenanceManager: DataTypes.STRING,
-    
     maintenanceManagerName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     maintenanceTeamMembers: DataTypes.STRING,
     
   };
@@ -42,6 +33,7 @@ export class AssetMaintenanceTeam extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'maintenanceTeamName',
       
         label: 'Maintenance Team Name',
@@ -51,7 +43,10 @@ export class AssetMaintenanceTeam extends Model {
         placeholder: 'Input Maintenance Team Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceManager',
       
         label: 'Maintenance Manager',
@@ -61,7 +56,10 @@ export class AssetMaintenanceTeam extends Model {
         placeholder: 'Input Maintenance Manager',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceManagerName',
       
         label: 'Maintenance Manager Name',
@@ -71,7 +69,10 @@ export class AssetMaintenanceTeam extends Model {
         placeholder: 'Input Maintenance Manager Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -81,7 +82,10 @@ export class AssetMaintenanceTeam extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -91,7 +95,10 @@ export class AssetMaintenanceTeam extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -101,7 +108,10 @@ export class AssetMaintenanceTeam extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maintenanceTeamMembers',
       
         label: 'Maintenance Team Members',
@@ -111,7 +121,9 @@ export class AssetMaintenanceTeam extends Model {
         placeholder: 'Input Maintenance Team Members',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

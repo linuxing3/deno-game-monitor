@@ -21,95 +21,44 @@ export class PaymentRequest extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     paymentRequestType: DataTypes.STRING,
-    
     transactionDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     modeOfPayment: DataTypes.STRING,
-    
     partyDetails: DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     referenceDoctype: DataTypes.STRING,
-    
     referenceName: DataTypes.STRING,
-    
     transactionDetails: DataTypes.STRING,
-    
     amount: DataTypes.STRING,
-    
     isASubscription: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     transactionCurrency: DataTypes.STRING,
-    
     subscriptionSection: DataTypes.STRING,
-    
     subscriptionPlans: DataTypes.STRING,
-    
     bankAccountDetails: DataTypes.STRING,
-    
     bankAccount: DataTypes.STRING,
-    
     bank: DataTypes.STRING,
-    
     bankAccountNo: DataTypes.STRING,
-    
     account: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     iban: DataTypes.STRING,
-    
     branchCode: DataTypes.STRING,
-    
     swiftNumber: DataTypes.STRING,
-    
     recipientMessageAndPaymentDetails: DataTypes.STRING,
-    
     printFormat: DataTypes.STRING,
-    
     to: DataTypes.STRING,
-    
     subject: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paymentGatewayAccount: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     makeSalesInvoice: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     message: DataTypes.STRING,
-    
     messageExamples: DataTypes.STRING,
-    
     muteEmail: DataTypes.STRING,
-    
     paymentUrl: DataTypes.STRING,
-    
     paymentGatewayDetails: DataTypes.STRING,
-    
     paymentGateway: DataTypes.STRING,
-    
     paymentAccount: DataTypes.STRING,
-    
     paymentOrder: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -118,6 +67,7 @@ export class PaymentRequest extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'paymentRequestType',
       
         label: 'Payment Request Type',
@@ -127,7 +77,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Payment Request Type',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'transactionDate',
       
         label: 'Transaction Date',
@@ -137,7 +90,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Transaction Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -147,7 +103,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -157,7 +116,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfPayment',
       
         label: 'Mode Of Payment',
@@ -167,7 +129,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Mode Of Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyDetails',
       
         label: 'Party Details',
@@ -177,7 +142,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Party Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -187,7 +155,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Party Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -197,7 +168,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -207,7 +181,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceDoctype',
       
         label: 'Reference Doctype',
@@ -217,7 +194,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Reference Doctype',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceName',
       
         label: 'Reference Name',
@@ -227,7 +207,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Reference Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'transactionDetails',
       
         label: 'Transaction Details',
@@ -237,7 +220,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Transaction Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amount',
       
         label: 'Amount',
@@ -247,7 +233,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isASubscription',
       
         label: 'Is A Subscription',
@@ -257,7 +246,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Is A Subscription',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -267,7 +259,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'transactionCurrency',
       
         label: 'Transaction Currency',
@@ -277,7 +272,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Transaction Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subscriptionSection',
       
         label: 'Subscription Section',
@@ -287,7 +285,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Subscription Section',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subscriptionPlans',
       
         label: 'Subscription Plans',
@@ -297,7 +298,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Subscription Plans',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccountDetails',
       
         label: 'Bank Account Details',
@@ -307,7 +311,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Bank Account Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccount',
       
         label: 'Bank Account',
@@ -317,7 +324,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bank',
       
         label: 'Bank',
@@ -327,7 +337,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Bank',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bankAccountNo',
       
         label: 'Bank Account No',
@@ -337,7 +350,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Bank Account No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'account',
       
         label: 'Account',
@@ -347,7 +363,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -357,7 +376,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'iban',
       
         label: 'Iban',
@@ -367,7 +389,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Iban',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'branchCode',
       
         label: 'Branch Code',
@@ -377,7 +402,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Branch Code',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'swiftNumber',
       
         label: 'Swift Number',
@@ -387,7 +415,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Swift Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'recipientMessageAndPaymentDetails',
       
         label: 'Recipient Message And Payment Details',
@@ -397,7 +428,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Recipient Message And Payment Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printFormat',
       
         label: 'Print Format',
@@ -407,7 +441,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Print Format',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'to',
       
         label: 'To',
@@ -417,7 +454,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subject',
       
         label: 'Subject',
@@ -427,7 +467,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Subject',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -437,7 +480,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentGatewayAccount',
       
         label: 'Payment Gateway Account',
@@ -447,7 +493,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Payment Gateway Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -457,7 +506,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'makeSalesInvoice',
       
         label: 'Make Sales Invoice',
@@ -467,7 +519,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Make Sales Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -477,7 +532,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'message',
       
         label: 'Message',
@@ -487,7 +545,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Message',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'messageExamples',
       
         label: 'Message Examples',
@@ -497,7 +558,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Message Examples',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'muteEmail',
       
         label: 'Mute Email',
@@ -507,7 +571,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Mute Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentUrl',
       
         label: 'Payment Url',
@@ -517,7 +584,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Payment Url',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentGatewayDetails',
       
         label: 'Payment Gateway Details',
@@ -527,7 +597,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Payment Gateway Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentGateway',
       
         label: 'Payment Gateway',
@@ -537,7 +610,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Payment Gateway',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentAccount',
       
         label: 'Payment Account',
@@ -547,7 +623,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Payment Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentOrder',
       
         label: 'Payment Order',
@@ -557,7 +636,10 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Payment Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -567,7 +649,9 @@ export class PaymentRequest extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

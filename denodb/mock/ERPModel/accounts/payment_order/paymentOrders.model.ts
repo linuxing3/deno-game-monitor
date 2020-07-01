@@ -21,23 +21,12 @@ export class PaymentOrder extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     series: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     bank: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paymentOrderReference: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -46,6 +35,7 @@ export class PaymentOrder extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'series',
       
         label: 'Series',
@@ -55,7 +45,10 @@ export class PaymentOrder extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -65,7 +58,10 @@ export class PaymentOrder extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -75,7 +71,10 @@ export class PaymentOrder extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -85,7 +84,10 @@ export class PaymentOrder extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -95,7 +97,10 @@ export class PaymentOrder extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'bank',
       
         label: 'Bank',
@@ -105,7 +110,10 @@ export class PaymentOrder extends Model {
         placeholder: 'Input Bank',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -115,7 +123,10 @@ export class PaymentOrder extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentOrderReference',
       
         label: 'Payment Order Reference',
@@ -125,7 +136,10 @@ export class PaymentOrder extends Model {
         placeholder: 'Input Payment Order Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -135,7 +149,9 @@ export class PaymentOrder extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

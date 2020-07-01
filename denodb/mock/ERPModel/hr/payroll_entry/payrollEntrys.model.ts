@@ -21,77 +21,30 @@ export class PayrollEntry extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     selectEmployees: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     postingDate: DataTypes.STRING,
-    
     payrollFrequency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     employees: DataTypes.STRING,
-    
     branch: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     numberOfEmployees: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employeeDetails: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     validateAttendance: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salarySlipBasedOnTimesheet: DataTypes.STRING,
-    
     selectPayrollPeriod: DataTypes.STRING,
-    
     startDate: DataTypes.STRING,
-    
     endDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     deductTaxForUnclaimedEmployeeBenefits: DataTypes.STRING,
-    
     deductTaxForUnsubmittedTaxExemptionProof: DataTypes.STRING,
-    
     accounts: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paymentEntry: DataTypes.STRING,
-    
     paymentAccount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     salarySlipsCreated: DataTypes.STRING,
-    
     salarySlipsSubmitted: DataTypes.STRING,
     
   };
@@ -100,6 +53,7 @@ export class PayrollEntry extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'selectEmployees',
       
         label: 'Select Employees',
@@ -109,7 +63,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Select Employees',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -119,7 +76,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingDate',
       
         label: 'Posting Date',
@@ -129,7 +89,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Posting Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollFrequency',
       
         label: 'Payroll Frequency',
@@ -139,7 +102,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Payroll Frequency',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -149,7 +115,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -159,7 +128,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employees',
       
         label: 'Employees',
@@ -169,7 +141,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Employees',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'branch',
       
         label: 'Branch',
@@ -179,7 +154,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Branch',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -189,7 +167,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -199,7 +180,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -209,7 +193,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'numberOfEmployees',
       
         label: 'Number Of Employees',
@@ -219,7 +206,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Number Of Employees',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -229,7 +219,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeDetails',
       
         label: 'Employee Details',
@@ -239,7 +232,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Employee Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -249,7 +245,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'validateAttendance',
       
         label: 'Validate Attendance',
@@ -259,7 +258,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Validate Attendance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -269,7 +271,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -279,7 +284,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlipBasedOnTimesheet',
       
         label: 'Salary Slip Based On Timesheet',
@@ -289,7 +297,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Salary Slip Based On Timesheet',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selectPayrollPeriod',
       
         label: 'Select Payroll Period',
@@ -299,7 +310,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Select Payroll Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'startDate',
       
         label: 'Start Date',
@@ -309,7 +323,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Start Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'endDate',
       
         label: 'End Date',
@@ -319,7 +336,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input End Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -329,7 +349,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deductTaxForUnclaimedEmployeeBenefits',
       
         label: 'Deduct Tax For Unclaimed Employee Benefits',
@@ -339,7 +362,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Deduct Tax For Unclaimed Employee Benefits',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'deductTaxForUnsubmittedTaxExemptionProof',
       
         label: 'Deduct Tax For Unsubmitted Tax Exemption Proof',
@@ -349,7 +375,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Deduct Tax For Unsubmitted Tax Exemption Proof',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accounts',
       
         label: 'Accounts',
@@ -359,7 +388,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Accounts',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -369,7 +401,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -379,7 +414,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -389,7 +427,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -399,7 +440,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentEntry',
       
         label: 'Payment Entry',
@@ -409,7 +453,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Payment Entry',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentAccount',
       
         label: 'Payment Account',
@@ -419,7 +466,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Payment Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -429,7 +479,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -439,7 +492,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlipsCreated',
       
         label: 'Salary Slips Created',
@@ -449,7 +505,10 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Salary Slips Created',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salarySlipsSubmitted',
       
         label: 'Salary Slips Submitted',
@@ -459,7 +518,9 @@ export class PayrollEntry extends Model {
         placeholder: 'Input Salary Slips Submitted',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

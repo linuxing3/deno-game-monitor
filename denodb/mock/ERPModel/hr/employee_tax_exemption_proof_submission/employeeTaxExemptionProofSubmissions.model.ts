@@ -21,29 +21,14 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     payrollPeriod: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     submissionDate: DataTypes.STRING,
-    
     totalExemptionAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     taxExemptionProofs: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     attachments: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -52,6 +37,7 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -61,7 +47,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -71,7 +60,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -81,7 +73,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payrollPeriod',
       
         label: 'Payroll Period',
@@ -91,7 +86,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Payroll Period',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -101,7 +99,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'submissionDate',
       
         label: 'Submission Date',
@@ -111,7 +112,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Submission Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalExemptionAmount',
       
         label: 'Total Exemption Amount',
@@ -121,7 +125,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Total Exemption Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -131,7 +138,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxExemptionProofs',
       
         label: 'Tax Exemption Proofs',
@@ -141,7 +151,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Tax Exemption Proofs',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -151,7 +164,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'attachments',
       
         label: 'Attachments',
@@ -161,7 +177,10 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Attachments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -171,7 +190,9 @@ export class EmployeeTaxExemptionProofSubmission extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

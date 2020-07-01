@@ -21,7 +21,6 @@ export class Branch extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     branch: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class Branch extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'branch',
       
         label: 'Branch',
@@ -39,7 +39,9 @@ export class Branch extends Model {
         placeholder: 'Input Branch',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,9 +21,7 @@ export class Holiday extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     date: DataTypes.STRING,
-    
     description: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class Holiday extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'date',
       
         label: 'Date',
@@ -41,7 +40,10 @@ export class Holiday extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -51,7 +53,9 @@ export class Holiday extends Model {
         placeholder: 'Input Description',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

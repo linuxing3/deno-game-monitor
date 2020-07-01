@@ -21,13 +21,9 @@ export class ProjectsSettings extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     timesheets: DataTypes.STRING,
-    
     ignoreWorkstationTimeOverlap: DataTypes.STRING,
-    
     ignoreUserTimeOverlap: DataTypes.STRING,
-    
     ignoreEmployeeTimeOverlap: DataTypes.STRING,
     
   };
@@ -36,6 +32,7 @@ export class ProjectsSettings extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'timesheets',
       
         label: 'Timesheets',
@@ -45,7 +42,10 @@ export class ProjectsSettings extends Model {
         placeholder: 'Input Timesheets',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'ignoreWorkstationTimeOverlap',
       
         label: 'Ignore Workstation Time Overlap',
@@ -55,7 +55,10 @@ export class ProjectsSettings extends Model {
         placeholder: 'Input Ignore Workstation Time Overlap',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'ignoreUserTimeOverlap',
       
         label: 'Ignore User Time Overlap',
@@ -65,7 +68,10 @@ export class ProjectsSettings extends Model {
         placeholder: 'Input Ignore User Time Overlap',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'ignoreEmployeeTimeOverlap',
       
         label: 'Ignore Employee Time Overlap',
@@ -75,7 +81,9 @@ export class ProjectsSettings extends Model {
         placeholder: 'Input Ignore Employee Time Overlap',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

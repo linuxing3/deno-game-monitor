@@ -21,91 +21,36 @@ export class PricingRule extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
-    : DataTypes.STRING,
-    
     title: DataTypes.STRING,
-    
     applyOn: DataTypes.STRING,
-    
     itemCode: DataTypes.STRING,
-    
     brand: DataTypes.STRING,
-    
     itemGroup: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     priority: DataTypes.STRING,
-    
     disable: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     selling: DataTypes.STRING,
-    
     buying: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     applicableFor: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
     customerGroup: DataTypes.STRING,
-    
     territory: DataTypes.STRING,
-    
     salesPartner: DataTypes.STRING,
-    
     campaign: DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     supplierGroup: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     minQty: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     maxQty: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     validFrom: DataTypes.STRING,
-    
     validUpto: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     currency: DataTypes.STRING,
-    
     margin: DataTypes.STRING,
-    
     marginType: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     marginRateOrAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     rateOrDiscount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     rate: DataTypes.STRING,
-    
     discountOnPriceListRate: DataTypes.STRING,
-    
     forPriceList: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     pricingRuleHelp: DataTypes.STRING,
     
   };
@@ -114,6 +59,7 @@ export class PricingRule extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: '',
       
         label: '',
@@ -123,7 +69,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'title',
       
         label: 'Title',
@@ -133,7 +82,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applyOn',
       
         label: 'Apply On',
@@ -143,7 +95,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Apply On',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'itemCode',
       
         label: 'Item Code',
@@ -153,7 +108,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Item Code',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'brand',
       
         label: 'Brand',
@@ -163,7 +121,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Brand',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemGroup',
       
         label: 'Item Group',
@@ -173,7 +134,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Item Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -183,7 +147,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priority',
       
         label: 'Priority',
@@ -193,7 +160,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Priority',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'disable',
       
         label: 'Disable',
@@ -203,7 +173,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Disable',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -213,7 +186,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'selling',
       
         label: 'Selling',
@@ -223,7 +199,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Selling',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'buying',
       
         label: 'Buying',
@@ -233,7 +212,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Buying',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -243,7 +225,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applicableFor',
       
         label: 'Applicable For',
@@ -253,7 +238,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Applicable For',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -263,7 +251,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerGroup',
       
         label: 'Customer Group',
@@ -273,7 +264,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Customer Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'territory',
       
         label: 'Territory',
@@ -283,7 +277,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Territory',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesPartner',
       
         label: 'Sales Partner',
@@ -293,7 +290,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Sales Partner',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'campaign',
       
         label: 'Campaign',
@@ -303,7 +303,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Campaign',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -313,7 +316,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplierGroup',
       
         label: 'Supplier Group',
@@ -323,7 +329,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Supplier Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -333,7 +342,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'minQty',
       
         label: 'Min Qty',
@@ -343,7 +355,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Min Qty',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -353,7 +368,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'maxQty',
       
         label: 'Max Qty',
@@ -363,7 +381,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Max Qty',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -373,7 +394,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'validFrom',
       
         label: 'Valid From',
@@ -383,7 +407,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Valid From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'validUpto',
       
         label: 'Valid Upto',
@@ -393,7 +420,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Valid Upto',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -403,7 +433,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -413,7 +446,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currency',
       
         label: 'Currency',
@@ -423,7 +459,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'margin',
       
         label: 'Margin',
@@ -433,7 +472,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Margin',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'marginType',
       
         label: 'Margin Type',
@@ -443,7 +485,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Margin Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -453,7 +498,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'marginRateOrAmount',
       
         label: 'Margin Rate Or Amount',
@@ -463,7 +511,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Margin Rate Or Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -473,7 +524,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rateOrDiscount',
       
         label: 'Rate Or Discount',
@@ -483,7 +537,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Rate Or Discount',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -493,7 +550,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'rate',
       
         label: 'Rate',
@@ -503,7 +563,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'discountOnPriceListRate',
       
         label: 'Discount On Price List Rate',
@@ -513,7 +576,10 @@ export class PricingRule extends Model {
         placeholder: 'Input Discount On Price List Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'forPriceList',
       
         label: 'For Price List',
@@ -523,7 +589,10 @@ export class PricingRule extends Model {
         placeholder: 'Input For Price List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -533,7 +602,10 @@ export class PricingRule extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'pricingRuleHelp',
       
         label: 'Pricing Rule Help',
@@ -543,7 +615,9 @@ export class PricingRule extends Model {
         placeholder: 'Input Pricing Rule Help',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

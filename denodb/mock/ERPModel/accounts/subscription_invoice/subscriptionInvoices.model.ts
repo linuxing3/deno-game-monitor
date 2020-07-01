@@ -21,7 +21,6 @@ export class SubscriptionInvoice extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     invoice: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class SubscriptionInvoice extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'invoice',
       
         label: 'Invoice',
@@ -39,7 +39,9 @@ export class SubscriptionInvoice extends Model {
         placeholder: 'Input Invoice',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

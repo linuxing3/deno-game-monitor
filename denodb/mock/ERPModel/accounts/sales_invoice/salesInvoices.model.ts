@@ -21,349 +21,148 @@ export class SalesInvoice extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
-    : DataTypes.STRING,
-    
     title: DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
     customer: DataTypes.STRING,
-    
     customerName: DataTypes.STRING,
-    
     taxId: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
     includePaymentPos: DataTypes.STRING,
-    
     posProfile: DataTypes.STRING,
-    
     offlinePosName: DataTypes.STRING,
-    
     isReturnCreditNote: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     costCenter: DataTypes.STRING,
-    
     date: DataTypes.STRING,
-    
     postingTime: DataTypes.STRING,
-    
     editPostingDateAndTime: DataTypes.STRING,
-    
     paymentDueDate: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
-    
     returns: DataTypes.STRING,
-    
     returnAgainstSalesInvoice: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     updateBilledAmountInSalesOrder: DataTypes.STRING,
-    
     customerPoDetails: DataTypes.STRING,
-    
     customerSPurchaseOrder: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     customerSPurchaseOrderDate: DataTypes.STRING,
-    
     addressAndContact: DataTypes.STRING,
-    
     customerAddress: DataTypes.STRING,
-    
     address: DataTypes.STRING,
-    
     contactPerson: DataTypes.STRING,
-    
     contact: DataTypes.STRING,
-    
     mobileNo: DataTypes.STRING,
-    
     contactEmail: DataTypes.STRING,
-    
     territory: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     shippingAddressName: DataTypes.STRING,
-    
     shippingAddress: DataTypes.STRING,
-    
     companyAddressName: DataTypes.STRING,
-    
     companyAddress: DataTypes.STRING,
-    
     currencyAndPriceList: DataTypes.STRING,
-    
     currency: DataTypes.STRING,
-    
     exchangeRate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     priceList: DataTypes.STRING,
-    
     priceListCurrency: DataTypes.STRING,
-    
     priceListExchangeRate: DataTypes.STRING,
-    
     ignorePricingRule: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     setSourceWarehouse: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     updateStock: DataTypes.STRING,
-    
     scanBarcode: DataTypes.STRING,
-    
     items: DataTypes.STRING,
-    
     packingList: DataTypes.STRING,
-    
     packedItems: DataTypes.STRING,
-    
     productBundleHelp: DataTypes.STRING,
-    
     timeSheetList: DataTypes.STRING,
-    
     timeSheets: DataTypes.STRING,
-    
     totalBillingAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalQuantity: DataTypes.STRING,
-    
     totalCompanyCurrency: DataTypes.STRING,
-    
     netTotalCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     total: DataTypes.STRING,
-    
     netTotal: DataTypes.STRING,
-    
     totalNetWeight: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     taxCategory: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     shippingRule: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     salesTaxesAndChargesTemplate: DataTypes.STRING,
-    
     salesTaxesAndCharges: DataTypes.STRING,
-    
     taxBreakup: DataTypes.STRING,
-    
     taxesAndChargesCalculation: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalTaxesAndChargesCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     totalTaxesAndCharges: DataTypes.STRING,
-    
     loyaltyPointsRedemption: DataTypes.STRING,
-    
     loyaltyPoints: DataTypes.STRING,
-    
     loyaltyAmount: DataTypes.STRING,
-    
     redeemLoyaltyPoints: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     loyaltyProgram: DataTypes.STRING,
-    
     redemptionAccount: DataTypes.STRING,
-    
     redemptionCostCenter: DataTypes.STRING,
-    
     additionalDiscount: DataTypes.STRING,
-    
     applyAdditionalDiscountOn: DataTypes.STRING,
-    
     additionalDiscountAmountCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     additionalDiscountPercentage: DataTypes.STRING,
-    
     additionalDiscountAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     grandTotalCompanyCurrency: DataTypes.STRING,
-    
     roundingAdjustmentCompanyCurrency: DataTypes.STRING,
-    
     roundedTotalCompanyCurrency: DataTypes.STRING,
-    
     inWordsCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     grandTotal: DataTypes.STRING,
-    
     roundingAdjustment: DataTypes.STRING,
-    
     roundedTotal: DataTypes.STRING,
-    
     inWords: DataTypes.STRING,
-    
     totalAdvance: DataTypes.STRING,
-    
     outstandingAmount: DataTypes.STRING,
-    
     advancePayments: DataTypes.STRING,
-    
     allocateAdvancesAutomaticallyFifo: DataTypes.STRING,
-    
     getAdvancesReceived: DataTypes.STRING,
-    
     advances: DataTypes.STRING,
-    
     paymentTerms: DataTypes.STRING,
-    
     paymentTermsTemplate: DataTypes.STRING,
-    
     paymentSchedule: DataTypes.STRING,
-    
     payments: DataTypes.STRING,
-    
     cashBankAccount: DataTypes.STRING,
-    
     salesInvoicePayment: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paidAmountCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     paidAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     baseChangeAmountCompanyCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     changeAmount: DataTypes.STRING,
-    
     accountForChangeAmount: DataTypes.STRING,
-    
     writeOff: DataTypes.STRING,
-    
     writeOffAmount: DataTypes.STRING,
-    
     writeOffAmountCompanyCurrency: DataTypes.STRING,
-    
     writeOffOutstandingAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     writeOffAccount: DataTypes.STRING,
-    
     writeOffCostCenter: DataTypes.STRING,
-    
     terms: DataTypes.STRING,
-    
     terms: DataTypes.STRING,
-    
     termsAndConditionsDetails: DataTypes.STRING,
-    
     printingSettings: DataTypes.STRING,
-    
     letterHead: DataTypes.STRING,
-    
     groupSameItems: DataTypes.STRING,
-    
     printLanguage: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     printHeading: DataTypes.STRING,
-    
     moreInformation: DataTypes.STRING,
-    
     interCompanyInvoiceReference: DataTypes.STRING,
-    
     customerGroup: DataTypes.STRING,
-    
     campaign: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     source: DataTypes.STRING,
-    
     accountingDetails: DataTypes.STRING,
-    
     debitTo: DataTypes.STRING,
-    
     partyAccountCurrency: DataTypes.STRING,
-    
     isOpeningEntry: DataTypes.STRING,
-    
     cFormApplicable: DataTypes.STRING,
-    
     cFormNo: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     remarks: DataTypes.STRING,
-    
     commission: DataTypes.STRING,
-    
     salesPartner: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     commissionRate: DataTypes.STRING,
-    
     totalCommission: DataTypes.STRING,
-    
     salesTeam: DataTypes.STRING,
-    
     salesTeam1: DataTypes.STRING,
-    
     subscriptionSection: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     autoRepeat: DataTypes.STRING,
-    
     updateAutoRepeatReference: DataTypes.STRING,
-    
     againstIncomeAccount: DataTypes.STRING,
-    
     totalQty: DataTypes.STRING,
     
   };
@@ -372,6 +171,7 @@ export class SalesInvoice extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: '',
       
         label: '',
@@ -381,7 +181,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'title',
       
         label: 'Title',
@@ -391,7 +194,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -401,7 +207,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customer',
       
         label: 'Customer',
@@ -411,7 +220,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Customer',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerName',
       
         label: 'Customer Name',
@@ -421,7 +233,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Customer Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxId',
       
         label: 'Tax Id',
@@ -431,7 +246,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Tax Id',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -441,7 +259,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'includePaymentPos',
       
         label: 'Include Payment Pos',
@@ -451,7 +272,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Include Payment Pos',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'posProfile',
       
         label: 'Pos Profile',
@@ -461,7 +285,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Pos Profile',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'offlinePosName',
       
         label: 'Offline Pos Name',
@@ -471,7 +298,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Offline Pos Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isReturnCreditNote',
       
         label: 'Is Return Credit Note',
@@ -481,7 +311,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Is Return Credit Note',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -491,7 +324,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -501,7 +337,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'costCenter',
       
         label: 'Cost Center',
@@ -511,7 +350,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'date',
       
         label: 'Date',
@@ -521,7 +363,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'postingTime',
       
         label: 'Posting Time',
@@ -531,7 +376,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Posting Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'editPostingDateAndTime',
       
         label: 'Edit Posting Date And Time',
@@ -541,7 +389,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Edit Posting Date And Time',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentDueDate',
       
         label: 'Payment Due Date',
@@ -551,7 +402,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Payment Due Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -561,7 +415,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'returns',
       
         label: 'Returns',
@@ -571,7 +428,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Returns',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'returnAgainstSalesInvoice',
       
         label: 'Return Against Sales Invoice',
@@ -581,7 +441,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Return Against Sales Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -591,7 +454,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'updateBilledAmountInSalesOrder',
       
         label: 'Update Billed Amount In Sales Order',
@@ -601,7 +467,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Update Billed Amount In Sales Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerPoDetails',
       
         label: 'Customer Po Details',
@@ -611,7 +480,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Customer Po Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerSPurchaseOrder',
       
         label: 'Customer S Purchase Order',
@@ -621,7 +493,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Customer S Purchase Order',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -631,7 +506,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerSPurchaseOrderDate',
       
         label: 'Customer S Purchase Order Date',
@@ -641,7 +519,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Customer S Purchase Order Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'addressAndContact',
       
         label: 'Address And Contact',
@@ -651,7 +532,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Address And Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerAddress',
       
         label: 'Customer Address',
@@ -661,7 +545,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Customer Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'address',
       
         label: 'Address',
@@ -671,7 +558,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactPerson',
       
         label: 'Contact Person',
@@ -681,7 +571,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Contact Person',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contact',
       
         label: 'Contact',
@@ -691,7 +584,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Contact',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'mobileNo',
       
         label: 'Mobile No',
@@ -701,7 +597,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Mobile No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactEmail',
       
         label: 'Contact Email',
@@ -711,7 +610,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Contact Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'territory',
       
         label: 'Territory',
@@ -721,7 +623,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Territory',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -731,7 +636,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingAddressName',
       
         label: 'Shipping Address Name',
@@ -741,7 +649,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Shipping Address Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingAddress',
       
         label: 'Shipping Address',
@@ -751,7 +662,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Shipping Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'companyAddressName',
       
         label: 'Company Address Name',
@@ -761,7 +675,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Company Address Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'companyAddress',
       
         label: 'Company Address',
@@ -771,7 +688,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Company Address',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currencyAndPriceList',
       
         label: 'Currency And Price List',
@@ -781,7 +701,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Currency And Price List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currency',
       
         label: 'Currency',
@@ -791,7 +714,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exchangeRate',
       
         label: 'Exchange Rate',
@@ -801,7 +727,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -811,7 +740,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceList',
       
         label: 'Price List',
@@ -821,7 +753,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Price List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceListCurrency',
       
         label: 'Price List Currency',
@@ -831,7 +766,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Price List Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'priceListExchangeRate',
       
         label: 'Price List Exchange Rate',
@@ -841,7 +779,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Price List Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'ignorePricingRule',
       
         label: 'Ignore Pricing Rule',
@@ -851,7 +792,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Ignore Pricing Rule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -861,7 +805,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'setSourceWarehouse',
       
         label: 'Set Source Warehouse',
@@ -871,7 +818,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Set Source Warehouse',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -881,7 +831,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'updateStock',
       
         label: 'Update Stock',
@@ -891,7 +844,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Update Stock',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'scanBarcode',
       
         label: 'Scan Barcode',
@@ -901,7 +857,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Scan Barcode',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'items',
       
         label: 'Items',
@@ -911,7 +870,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Items',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'packingList',
       
         label: 'Packing List',
@@ -921,7 +883,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Packing List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'packedItems',
       
         label: 'Packed Items',
@@ -931,7 +896,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Packed Items',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'productBundleHelp',
       
         label: 'Product Bundle Help',
@@ -941,7 +909,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Product Bundle Help',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'timeSheetList',
       
         label: 'Time Sheet List',
@@ -951,7 +922,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Time Sheet List',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'timeSheets',
       
         label: 'Time Sheets',
@@ -961,7 +935,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Time Sheets',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalBillingAmount',
       
         label: 'Total Billing Amount',
@@ -971,7 +948,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Billing Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -981,7 +961,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalQuantity',
       
         label: 'Total Quantity',
@@ -991,7 +974,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Quantity',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalCompanyCurrency',
       
         label: 'Total Company Currency',
@@ -1001,7 +987,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netTotalCompanyCurrency',
       
         label: 'Net Total Company Currency',
@@ -1011,7 +1000,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Net Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1021,7 +1013,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'total',
       
         label: 'Total',
@@ -1031,7 +1026,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'netTotal',
       
         label: 'Net Total',
@@ -1041,7 +1039,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Net Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalNetWeight',
       
         label: 'Total Net Weight',
@@ -1051,7 +1052,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Net Weight',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1061,7 +1065,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxCategory',
       
         label: 'Tax Category',
@@ -1071,7 +1078,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Tax Category',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1081,7 +1091,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'shippingRule',
       
         label: 'Shipping Rule',
@@ -1091,7 +1104,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Shipping Rule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1101,7 +1117,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesTaxesAndChargesTemplate',
       
         label: 'Sales Taxes And Charges Template',
@@ -1111,7 +1130,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Sales Taxes And Charges Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesTaxesAndCharges',
       
         label: 'Sales Taxes And Charges',
@@ -1121,7 +1143,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Sales Taxes And Charges',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxBreakup',
       
         label: 'Tax Breakup',
@@ -1131,7 +1156,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Tax Breakup',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxesAndChargesCalculation',
       
         label: 'Taxes And Charges Calculation',
@@ -1141,7 +1169,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Taxes And Charges Calculation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1151,7 +1182,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalTaxesAndChargesCompanyCurrency',
       
         label: 'Total Taxes And Charges Company Currency',
@@ -1161,7 +1195,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Taxes And Charges Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1171,7 +1208,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalTaxesAndCharges',
       
         label: 'Total Taxes And Charges',
@@ -1181,7 +1221,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Taxes And Charges',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loyaltyPointsRedemption',
       
         label: 'Loyalty Points Redemption',
@@ -1191,7 +1234,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Loyalty Points Redemption',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loyaltyPoints',
       
         label: 'Loyalty Points',
@@ -1201,7 +1247,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Loyalty Points',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loyaltyAmount',
       
         label: 'Loyalty Amount',
@@ -1211,7 +1260,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Loyalty Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'redeemLoyaltyPoints',
       
         label: 'Redeem Loyalty Points',
@@ -1221,7 +1273,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Redeem Loyalty Points',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1231,7 +1286,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'loyaltyProgram',
       
         label: 'Loyalty Program',
@@ -1241,7 +1299,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Loyalty Program',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'redemptionAccount',
       
         label: 'Redemption Account',
@@ -1251,7 +1312,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Redemption Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'redemptionCostCenter',
       
         label: 'Redemption Cost Center',
@@ -1261,7 +1325,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Redemption Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDiscount',
       
         label: 'Additional Discount',
@@ -1271,7 +1338,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Additional Discount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'applyAdditionalDiscountOn',
       
         label: 'Apply Additional Discount On',
@@ -1281,7 +1351,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Apply Additional Discount On',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDiscountAmountCompanyCurrency',
       
         label: 'Additional Discount Amount Company Currency',
@@ -1291,7 +1364,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Additional Discount Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1301,7 +1377,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDiscountPercentage',
       
         label: 'Additional Discount Percentage',
@@ -1311,7 +1390,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Additional Discount Percentage',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'additionalDiscountAmount',
       
         label: 'Additional Discount Amount',
@@ -1321,7 +1403,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Additional Discount Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1331,7 +1416,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grandTotalCompanyCurrency',
       
         label: 'Grand Total Company Currency',
@@ -1341,7 +1429,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Grand Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundingAdjustmentCompanyCurrency',
       
         label: 'Rounding Adjustment Company Currency',
@@ -1351,7 +1442,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Rounding Adjustment Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundedTotalCompanyCurrency',
       
         label: 'Rounded Total Company Currency',
@@ -1361,7 +1455,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Rounded Total Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'inWordsCompanyCurrency',
       
         label: 'In Words Company Currency',
@@ -1371,7 +1468,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input In Words Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1381,7 +1481,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grandTotal',
       
         label: 'Grand Total',
@@ -1391,7 +1494,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Grand Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundingAdjustment',
       
         label: 'Rounding Adjustment',
@@ -1401,7 +1507,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Rounding Adjustment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'roundedTotal',
       
         label: 'Rounded Total',
@@ -1411,7 +1520,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Rounded Total',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'inWords',
       
         label: 'In Words',
@@ -1421,7 +1533,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input In Words',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalAdvance',
       
         label: 'Total Advance',
@@ -1431,7 +1546,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Advance',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'outstandingAmount',
       
         label: 'Outstanding Amount',
@@ -1441,7 +1559,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Outstanding Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advancePayments',
       
         label: 'Advance Payments',
@@ -1451,7 +1572,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Advance Payments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocateAdvancesAutomaticallyFifo',
       
         label: 'Allocate Advances Automatically Fifo',
@@ -1461,7 +1585,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Allocate Advances Automatically Fifo',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'getAdvancesReceived',
       
         label: 'Get Advances Received',
@@ -1471,7 +1598,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Get Advances Received',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advances',
       
         label: 'Advances',
@@ -1481,7 +1611,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Advances',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentTerms',
       
         label: 'Payment Terms',
@@ -1491,7 +1624,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Payment Terms',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentTermsTemplate',
       
         label: 'Payment Terms Template',
@@ -1501,7 +1637,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Payment Terms Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentSchedule',
       
         label: 'Payment Schedule',
@@ -1511,7 +1650,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Payment Schedule',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'payments',
       
         label: 'Payments',
@@ -1521,7 +1663,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Payments',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'cashBankAccount',
       
         label: 'Cash Bank Account',
@@ -1531,7 +1676,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Cash Bank Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesInvoicePayment',
       
         label: 'Sales Invoice Payment',
@@ -1541,7 +1689,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Sales Invoice Payment',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1551,7 +1702,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paidAmountCompanyCurrency',
       
         label: 'Paid Amount Company Currency',
@@ -1561,7 +1715,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Paid Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1571,7 +1728,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paidAmount',
       
         label: 'Paid Amount',
@@ -1581,7 +1741,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Paid Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1591,7 +1754,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'baseChangeAmountCompanyCurrency',
       
         label: 'Base Change Amount Company Currency',
@@ -1601,7 +1767,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Base Change Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1611,7 +1780,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'changeAmount',
       
         label: 'Change Amount',
@@ -1621,7 +1793,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Change Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountForChangeAmount',
       
         label: 'Account For Change Amount',
@@ -1631,7 +1806,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Account For Change Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOff',
       
         label: 'Write Off',
@@ -1641,7 +1819,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Write Off',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffAmount',
       
         label: 'Write Off Amount',
@@ -1651,7 +1832,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Write Off Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffAmountCompanyCurrency',
       
         label: 'Write Off Amount Company Currency',
@@ -1661,7 +1845,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Write Off Amount Company Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffOutstandingAmount',
       
         label: 'Write Off Outstanding Amount',
@@ -1671,7 +1858,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Write Off Outstanding Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1681,7 +1871,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffAccount',
       
         label: 'Write Off Account',
@@ -1691,7 +1884,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Write Off Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'writeOffCostCenter',
       
         label: 'Write Off Cost Center',
@@ -1701,7 +1897,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Write Off Cost Center',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'terms',
       
         label: 'Terms',
@@ -1711,7 +1910,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Terms',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'terms',
       
         label: 'Terms',
@@ -1721,7 +1923,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Terms',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'termsAndConditionsDetails',
       
         label: 'Terms And Conditions Details',
@@ -1731,7 +1936,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Terms And Conditions Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printingSettings',
       
         label: 'Printing Settings',
@@ -1741,7 +1949,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Printing Settings',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'letterHead',
       
         label: 'Letter Head',
@@ -1751,7 +1962,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Letter Head',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'groupSameItems',
       
         label: 'Group Same Items',
@@ -1761,7 +1975,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Group Same Items',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printLanguage',
       
         label: 'Print Language',
@@ -1771,7 +1988,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Print Language',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1781,7 +2001,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'printHeading',
       
         label: 'Print Heading',
@@ -1791,7 +2014,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Print Heading',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'moreInformation',
       
         label: 'More Information',
@@ -1801,7 +2027,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input More Information',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'interCompanyInvoiceReference',
       
         label: 'Inter Company Invoice Reference',
@@ -1811,7 +2040,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Inter Company Invoice Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'customerGroup',
       
         label: 'Customer Group',
@@ -1821,7 +2053,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Customer Group',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'campaign',
       
         label: 'Campaign',
@@ -1831,7 +2066,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Campaign',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1841,7 +2079,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -1851,7 +2092,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'source',
       
         label: 'Source',
@@ -1861,7 +2105,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Source',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountingDetails',
       
         label: 'Accounting Details',
@@ -1871,7 +2118,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Accounting Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'debitTo',
       
         label: 'Debit To',
@@ -1881,7 +2131,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Debit To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyAccountCurrency',
       
         label: 'Party Account Currency',
@@ -1891,7 +2144,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Party Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'isOpeningEntry',
       
         label: 'Is Opening Entry',
@@ -1901,7 +2157,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Is Opening Entry',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'cFormApplicable',
       
         label: 'C Form Applicable',
@@ -1911,7 +2170,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input C Form Applicable',
       
         options: '[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'cFormNo',
       
         label: 'C Form No',
@@ -1921,7 +2183,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input C Form No',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1931,7 +2196,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remarks',
       
         label: 'Remarks',
@@ -1941,7 +2209,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Remarks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'commission',
       
         label: 'Commission',
@@ -1951,7 +2222,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Commission',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesPartner',
       
         label: 'Sales Partner',
@@ -1961,7 +2235,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Sales Partner',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -1971,7 +2248,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'commissionRate',
       
         label: 'Commission Rate',
@@ -1981,7 +2261,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Commission Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalCommission',
       
         label: 'Total Commission',
@@ -1991,7 +2274,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Commission',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesTeam',
       
         label: 'Sales Team',
@@ -2001,7 +2287,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Sales Team',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'salesTeam1',
       
         label: 'Sales Team1',
@@ -2011,7 +2300,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Sales Team1',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subscriptionSection',
       
         label: 'Subscription Section',
@@ -2021,7 +2313,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Subscription Section',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -2031,7 +2326,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -2041,7 +2339,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input To Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -2051,7 +2352,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'autoRepeat',
       
         label: 'Auto Repeat',
@@ -2061,7 +2365,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Auto Repeat',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'updateAutoRepeatReference',
       
         label: 'Update Auto Repeat Reference',
@@ -2071,7 +2378,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Update Auto Repeat Reference',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'againstIncomeAccount',
       
         label: 'Against Income Account',
@@ -2081,7 +2391,10 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Against Income Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'totalQty',
       
         label: 'Total Qty',
@@ -2091,7 +2404,9 @@ export class SalesInvoice extends Model {
         placeholder: 'Input Total Qty',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

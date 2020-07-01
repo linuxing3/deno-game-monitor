@@ -21,25 +21,14 @@ export class BankStatementTransactionInvoiceItem extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     transactionDate: DataTypes.STRING,
-    
     paymentDescription: DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     invoiceDate: DataTypes.STRING,
-    
     invoiceType: DataTypes.STRING,
-    
     invoice: DataTypes.STRING,
-    
     outstandingAmount: DataTypes.STRING,
-    
     allocatedAmount: DataTypes.STRING,
     
   };
@@ -48,6 +37,7 @@ export class BankStatementTransactionInvoiceItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'transactionDate',
       
         label: 'Transaction Date',
@@ -57,7 +47,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Transaction Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'paymentDescription',
       
         label: 'Payment Description',
@@ -67,7 +60,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Payment Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -77,7 +73,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Party Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -87,7 +86,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -97,7 +99,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoiceDate',
       
         label: 'Invoice Date',
@@ -107,7 +112,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Invoice Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'invoiceType',
       
         label: 'Invoice Type',
@@ -117,7 +125,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Invoice Type',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'invoice',
       
         label: 'Invoice',
@@ -127,7 +138,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'outstandingAmount',
       
         label: 'Outstanding Amount',
@@ -137,7 +151,10 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Outstanding Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocatedAmount',
       
         label: 'Allocated Amount',
@@ -147,7 +164,9 @@ export class BankStatementTransactionInvoiceItem extends Model {
         placeholder: 'Input Allocated Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

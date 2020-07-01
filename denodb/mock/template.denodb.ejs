@@ -22,7 +22,7 @@ export class <%= modelName %> extends Model {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     <% for (let i = 0; i < fields.length; i++) { %>
-    <%= fields[i]['key'] %>: DataTypes.STRING,
+    <% if(fields[i]['key']) { %><%= fields[i]['key'] %>: DataTypes.STRING,<% } %>
     <% } %>
   };
 
@@ -30,7 +30,9 @@ export class <%= modelName %> extends Model {
     // field meta information for UI render
     fieldProperty: [
       <% for (let i = 0; i < fields.length; i++) { %>{<% for (let j = 0; j < 5; j++) { %>
+        <% if(Object.keys(fields[i])[j]) { %>
         <%= Object.keys(fields[i])[j] %>: '<%= fields[i][Object.keys(fields[i])[j]]  %>',
+        <% } %>
       <% } %>},<% } %>
     ]
   };

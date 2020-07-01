@@ -21,7 +21,6 @@ export class LinkedLocation extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     location: DataTypes.STRING,
     
   };
@@ -30,6 +29,7 @@ export class LinkedLocation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'location',
       
         label: 'Location',
@@ -39,7 +39,9 @@ export class LinkedLocation extends Model {
         placeholder: 'Input Location',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

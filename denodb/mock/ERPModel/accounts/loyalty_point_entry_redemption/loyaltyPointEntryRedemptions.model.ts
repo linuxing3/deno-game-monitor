@@ -21,11 +21,8 @@ export class LoyaltyPointEntryRedemption extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     salesInvoice: DataTypes.STRING,
-    
     redemptionDate: DataTypes.STRING,
-    
     redeemedPoints: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class LoyaltyPointEntryRedemption extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'salesInvoice',
       
         label: 'Sales Invoice',
@@ -43,7 +41,10 @@ export class LoyaltyPointEntryRedemption extends Model {
         placeholder: 'Input Sales Invoice',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'redemptionDate',
       
         label: 'Redemption Date',
@@ -53,7 +54,10 @@ export class LoyaltyPointEntryRedemption extends Model {
         placeholder: 'Input Redemption Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'redeemedPoints',
       
         label: 'Redeemed Points',
@@ -63,7 +67,9 @@ export class LoyaltyPointEntryRedemption extends Model {
         placeholder: 'Input Redeemed Points',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

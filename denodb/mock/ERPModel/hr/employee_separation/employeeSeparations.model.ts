@@ -21,37 +21,18 @@ export class EmployeeSeparation extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     resignationLetterDate: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
     project: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employeeSeparationTemplate: DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     employeeGrade: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     activities: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     exitInterviewSummary: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -60,6 +41,7 @@ export class EmployeeSeparation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -69,7 +51,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -79,7 +64,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'resignationLetterDate',
       
         label: 'Resignation Letter Date',
@@ -89,7 +77,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Resignation Letter Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -99,7 +90,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -109,7 +103,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Project',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -119,7 +116,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeSeparationTemplate',
       
         label: 'Employee Separation Template',
@@ -129,7 +129,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Employee Separation Template',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -139,7 +142,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -149,7 +155,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -159,7 +168,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeGrade',
       
         label: 'Employee Grade',
@@ -169,7 +181,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Employee Grade',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -179,7 +194,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'activities',
       
         label: 'Activities',
@@ -189,7 +207,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Activities',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -199,7 +220,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'exitInterviewSummary',
       
         label: 'Exit Interview Summary',
@@ -209,7 +233,10 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Exit Interview Summary',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -219,7 +246,9 @@ export class EmployeeSeparation extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

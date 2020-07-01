@@ -21,27 +21,14 @@ export class TrainingFeedback extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     course: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     trainingEvent: DataTypes.STRING,
-    
     eventName: DataTypes.STRING,
-    
     trainerName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     feedback: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -50,6 +37,7 @@ export class TrainingFeedback extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -59,7 +47,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -69,7 +60,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -79,7 +73,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'course',
       
         label: 'Course',
@@ -89,7 +86,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Course',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -99,7 +99,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trainingEvent',
       
         label: 'Training Event',
@@ -109,7 +112,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Training Event',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'eventName',
       
         label: 'Event Name',
@@ -119,7 +125,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Event Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trainerName',
       
         label: 'Trainer Name',
@@ -129,7 +138,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Trainer Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -139,7 +151,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'feedback',
       
         label: 'Feedback',
@@ -149,7 +164,10 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Feedback',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -159,7 +177,9 @@ export class TrainingFeedback extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

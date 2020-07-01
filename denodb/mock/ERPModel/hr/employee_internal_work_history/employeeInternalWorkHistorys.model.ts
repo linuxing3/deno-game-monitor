@@ -21,15 +21,10 @@ export class EmployeeInternalWorkHistory extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     branch: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
     designation: DataTypes.STRING,
-    
     fromDate: DataTypes.STRING,
-    
     toDate: DataTypes.STRING,
     
   };
@@ -38,6 +33,7 @@ export class EmployeeInternalWorkHistory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'branch',
       
         label: 'Branch',
@@ -47,7 +43,10 @@ export class EmployeeInternalWorkHistory extends Model {
         placeholder: 'Input Branch',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -57,7 +56,10 @@ export class EmployeeInternalWorkHistory extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'designation',
       
         label: 'Designation',
@@ -67,7 +69,10 @@ export class EmployeeInternalWorkHistory extends Model {
         placeholder: 'Input Designation',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'fromDate',
       
         label: 'From Date',
@@ -77,7 +82,10 @@ export class EmployeeInternalWorkHistory extends Model {
         placeholder: 'Input From Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'toDate',
       
         label: 'To Date',
@@ -87,7 +95,9 @@ export class EmployeeInternalWorkHistory extends Model {
         placeholder: 'Input To Date',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

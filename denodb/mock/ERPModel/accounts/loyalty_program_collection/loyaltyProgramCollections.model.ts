@@ -21,13 +21,8 @@ export class LoyaltyProgramCollection extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     tierName: DataTypes.STRING,
-    
     minimumTotalSpent: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     collectionFactor_1Lp: DataTypes.STRING,
     
   };
@@ -36,6 +31,7 @@ export class LoyaltyProgramCollection extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'tierName',
       
         label: 'Tier Name',
@@ -45,7 +41,10 @@ export class LoyaltyProgramCollection extends Model {
         placeholder: 'Input Tier Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'minimumTotalSpent',
       
         label: 'Minimum Total Spent',
@@ -55,7 +54,10 @@ export class LoyaltyProgramCollection extends Model {
         placeholder: 'Input Minimum Total Spent',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -65,7 +67,10 @@ export class LoyaltyProgramCollection extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'collectionFactor_1Lp',
       
         label: 'Collection Factor 1 Lp',
@@ -75,7 +80,9 @@ export class LoyaltyProgramCollection extends Model {
         placeholder: 'Input Collection Factor 1 Lp',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,19 +21,11 @@ export class SalesInvoiceAdvance extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     referenceType: DataTypes.STRING,
-    
     referenceName: DataTypes.STRING,
-    
     remarks: DataTypes.STRING,
-    
     referenceRow: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     advanceAmount: DataTypes.STRING,
-    
     allocatedAmount: DataTypes.STRING,
     
   };
@@ -42,6 +34,7 @@ export class SalesInvoiceAdvance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'referenceType',
       
         label: 'Reference Type',
@@ -51,7 +44,10 @@ export class SalesInvoiceAdvance extends Model {
         placeholder: 'Input Reference Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceName',
       
         label: 'Reference Name',
@@ -61,7 +57,10 @@ export class SalesInvoiceAdvance extends Model {
         placeholder: 'Input Reference Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'remarks',
       
         label: 'Remarks',
@@ -71,7 +70,10 @@ export class SalesInvoiceAdvance extends Model {
         placeholder: 'Input Remarks',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'referenceRow',
       
         label: 'Reference Row',
@@ -81,7 +83,10 @@ export class SalesInvoiceAdvance extends Model {
         placeholder: 'Input Reference Row',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -91,7 +96,10 @@ export class SalesInvoiceAdvance extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advanceAmount',
       
         label: 'Advance Amount',
@@ -101,7 +109,10 @@ export class SalesInvoiceAdvance extends Model {
         placeholder: 'Input Advance Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'allocatedAmount',
       
         label: 'Allocated Amount',
@@ -111,7 +122,9 @@ export class SalesInvoiceAdvance extends Model {
         placeholder: 'Input Allocated Amount',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,23 +21,11 @@ export class TrainingResultEmployee extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     employee: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     employeeName: DataTypes.STRING,
-    
     department: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     hours: DataTypes.STRING,
-    
     grade: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     comments: DataTypes.STRING,
     
   };
@@ -46,6 +34,7 @@ export class TrainingResultEmployee extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'employee',
       
         label: 'Employee',
@@ -55,7 +44,10 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input Employee',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -65,7 +57,10 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'employeeName',
       
         label: 'Employee Name',
@@ -75,7 +70,10 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input Employee Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'department',
       
         label: 'Department',
@@ -85,7 +83,10 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input Department',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -95,7 +96,10 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'hours',
       
         label: 'Hours',
@@ -105,7 +109,10 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input Hours',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'grade',
       
         label: 'Grade',
@@ -115,7 +122,10 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input Grade',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -125,7 +135,10 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'comments',
       
         label: 'Comments',
@@ -135,7 +148,9 @@ export class TrainingResultEmployee extends Model {
         placeholder: 'Input Comments',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

@@ -21,11 +21,8 @@ export class LeavePolicy extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     leaveAllocations: DataTypes.STRING,
-    
     leavePolicyDetails: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class LeavePolicy extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'leaveAllocations',
       
         label: 'Leave Allocations',
@@ -43,7 +41,10 @@ export class LeavePolicy extends Model {
         placeholder: 'Input Leave Allocations',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'leavePolicyDetails',
       
         label: 'Leave Policy Details',
@@ -53,7 +54,10 @@ export class LeavePolicy extends Model {
         placeholder: 'Input Leave Policy Details',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -63,7 +67,9 @@ export class LeavePolicy extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

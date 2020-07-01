@@ -21,13 +21,8 @@ export class TaskDependsOn extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     task: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     subject: DataTypes.STRING,
-    
     project: DataTypes.STRING,
     
   };
@@ -36,6 +31,7 @@ export class TaskDependsOn extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'task',
       
         label: 'Task',
@@ -45,7 +41,10 @@ export class TaskDependsOn extends Model {
         placeholder: 'Input Task',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -55,7 +54,10 @@ export class TaskDependsOn extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'subject',
       
         label: 'Subject',
@@ -65,7 +67,10 @@ export class TaskDependsOn extends Model {
         placeholder: 'Input Subject',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'project',
       
         label: 'Project',
@@ -75,7 +80,9 @@ export class TaskDependsOn extends Model {
         placeholder: 'Input Project',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

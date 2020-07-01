@@ -21,31 +21,14 @@ export class TrainingProgram extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     trainingProgram: DataTypes.STRING,
-    
     status: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     company: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     trainerName: DataTypes.STRING,
-    
     trainerEmail: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     supplier: DataTypes.STRING,
-    
     contactNumber: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     description: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -54,6 +37,7 @@ export class TrainingProgram extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'trainingProgram',
       
         label: 'Training Program',
@@ -63,7 +47,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Training Program',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'status',
       
         label: 'Status',
@@ -73,7 +60,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -83,7 +73,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'company',
       
         label: 'Company',
@@ -93,7 +86,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Company',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -103,7 +99,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trainerName',
       
         label: 'Trainer Name',
@@ -113,7 +112,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Trainer Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'trainerEmail',
       
         label: 'Trainer Email',
@@ -123,7 +125,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Trainer Email',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -133,7 +138,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'supplier',
       
         label: 'Supplier',
@@ -143,7 +151,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Supplier',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'contactNumber',
       
         label: 'Contact Number',
@@ -153,7 +164,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Contact Number',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -163,7 +177,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'description',
       
         label: 'Description',
@@ -173,7 +190,10 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -183,7 +203,9 @@ export class TrainingProgram extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

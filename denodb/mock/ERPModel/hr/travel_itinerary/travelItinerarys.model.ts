@@ -21,35 +21,18 @@ export class TravelItinerary extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     travelFrom: DataTypes.STRING,
-    
     travelTo: DataTypes.STRING,
-    
     modeOfTravel: DataTypes.STRING,
-    
     mealPreference: DataTypes.STRING,
-    
     travelAdvanceRequired: DataTypes.STRING,
-    
     advanceAmount: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     departureDatetime: DataTypes.STRING,
-    
     arrivalDatetime: DataTypes.STRING,
-    
     lodgingRequired: DataTypes.STRING,
-    
     preferredAreaForLodging: DataTypes.STRING,
-    
     checkInDate: DataTypes.STRING,
-    
     checkOutDate: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     otherDetails: DataTypes.STRING,
     
   };
@@ -58,6 +41,7 @@ export class TravelItinerary extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'travelFrom',
       
         label: 'Travel From',
@@ -67,7 +51,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Travel From',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'travelTo',
       
         label: 'Travel To',
@@ -77,7 +64,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Travel To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'modeOfTravel',
       
         label: 'Mode Of Travel',
@@ -87,7 +77,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Mode Of Travel',
       
         options: '[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'mealPreference',
       
         label: 'Meal Preference',
@@ -97,7 +90,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Meal Preference',
       
         options: '[object Object],[object Object],[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: 'travelAdvanceRequired',
       
         label: 'Travel Advance Required',
@@ -107,7 +103,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Travel Advance Required',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'advanceAmount',
       
         label: 'Advance Amount',
@@ -117,7 +116,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Advance Amount',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -127,7 +129,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'departureDatetime',
       
         label: 'Departure Datetime',
@@ -137,7 +142,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Departure Datetime',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'arrivalDatetime',
       
         label: 'Arrival Datetime',
@@ -147,7 +155,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Arrival Datetime',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'lodgingRequired',
       
         label: 'Lodging Required',
@@ -157,7 +168,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Lodging Required',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'preferredAreaForLodging',
       
         label: 'Preferred Area For Lodging',
@@ -167,7 +181,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Preferred Area For Lodging',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'checkInDate',
       
         label: 'Check In Date',
@@ -177,7 +194,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Check In Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'checkOutDate',
       
         label: 'Check Out Date',
@@ -187,7 +207,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Check Out Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -197,7 +220,10 @@ export class TravelItinerary extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'otherDetails',
       
         label: 'Other Details',
@@ -207,7 +233,9 @@ export class TravelItinerary extends Model {
         placeholder: 'Input Other Details',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

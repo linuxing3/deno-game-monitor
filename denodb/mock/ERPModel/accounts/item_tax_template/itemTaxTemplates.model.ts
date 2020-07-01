@@ -21,9 +21,7 @@ export class ItemTaxTemplate extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     title: DataTypes.STRING,
-    
     taxRates: DataTypes.STRING,
     
   };
@@ -32,6 +30,7 @@ export class ItemTaxTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'title',
       
         label: 'Title',
@@ -41,7 +40,10 @@ export class ItemTaxTemplate extends Model {
         placeholder: 'Input Title',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'taxRates',
       
         label: 'Tax Rates',
@@ -51,7 +53,9 @@ export class ItemTaxTemplate extends Model {
         placeholder: 'Input Tax Rates',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

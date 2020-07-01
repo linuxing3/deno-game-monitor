@@ -21,31 +21,15 @@ export class ExchangeRateRevaluationAccount extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     account: DataTypes.STRING,
-    
     partyType: DataTypes.STRING,
-    
     party: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     accountCurrency: DataTypes.STRING,
-    
     balanceInAccountCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     currentExchangeRate: DataTypes.STRING,
-    
     balanceInBaseCurrency: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     newExchangeRate: DataTypes.STRING,
-    
     newBalanceInBaseCurrency: DataTypes.STRING,
-    
     gainLoss: DataTypes.STRING,
     
   };
@@ -54,6 +38,7 @@ export class ExchangeRateRevaluationAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'account',
       
         label: 'Account',
@@ -63,7 +48,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input Account',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'partyType',
       
         label: 'Party Type',
@@ -73,7 +61,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input Party Type',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'party',
       
         label: 'Party',
@@ -83,7 +74,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input Party',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -93,7 +87,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'accountCurrency',
       
         label: 'Account Currency',
@@ -103,7 +100,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'balanceInAccountCurrency',
       
         label: 'Balance In Account Currency',
@@ -113,7 +113,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input Balance In Account Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -123,7 +126,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'currentExchangeRate',
       
         label: 'Current Exchange Rate',
@@ -133,7 +139,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input Current Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'balanceInBaseCurrency',
       
         label: 'Balance In Base Currency',
@@ -143,7 +152,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input Balance In Base Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -153,7 +165,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'newExchangeRate',
       
         label: 'New Exchange Rate',
@@ -163,7 +178,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input New Exchange Rate',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'newBalanceInBaseCurrency',
       
         label: 'New Balance In Base Currency',
@@ -173,7 +191,10 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input New Balance In Base Currency',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'gainLoss',
       
         label: 'Gain Loss',
@@ -183,7 +204,9 @@ export class ExchangeRateRevaluationAccount extends Model {
         placeholder: 'Input Gain Loss',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

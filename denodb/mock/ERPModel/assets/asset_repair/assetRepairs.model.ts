@@ -21,47 +21,19 @@ export class AssetRepair extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     assetName: DataTypes.STRING,
-    
     series: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     itemCode: DataTypes.STRING,
-    
     itemName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     failureDate: DataTypes.STRING,
-    
     assignTo: DataTypes.STRING,
-    
     assignToName: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     completionDate: DataTypes.STRING,
-    
     repairStatus: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     errorDescription: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     actionsPerformed: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     downtime: DataTypes.STRING,
-    
-    : DataTypes.STRING,
-    
     repairCost: DataTypes.STRING,
-    
     amendedFrom: DataTypes.STRING,
     
   };
@@ -70,6 +42,7 @@ export class AssetRepair extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'assetName',
       
         label: 'Asset Name',
@@ -79,7 +52,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Asset Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'series',
       
         label: 'Series',
@@ -89,7 +65,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Series',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -99,7 +78,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemCode',
       
         label: 'Item Code',
@@ -109,7 +91,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Item Code',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'itemName',
       
         label: 'Item Name',
@@ -119,7 +104,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Item Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -129,7 +117,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'failureDate',
       
         label: 'Failure Date',
@@ -139,7 +130,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Failure Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assignTo',
       
         label: 'Assign To',
@@ -149,7 +143,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Assign To',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'assignToName',
       
         label: 'Assign To Name',
@@ -159,7 +156,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Assign To Name',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -169,7 +169,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'completionDate',
       
         label: 'Completion Date',
@@ -179,7 +182,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Completion Date',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repairStatus',
       
         label: 'Repair Status',
@@ -189,7 +195,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Repair Status',
       
         options: '[object Object],[object Object]',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -199,7 +208,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'errorDescription',
       
         label: 'Error Description',
@@ -209,7 +221,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Error Description',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -219,7 +234,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'actionsPerformed',
       
         label: 'Actions Performed',
@@ -229,7 +247,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Actions Performed',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -239,7 +260,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'downtime',
       
         label: 'Downtime',
@@ -249,7 +273,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Downtime',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: '',
       
         label: '',
@@ -259,7 +286,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input ',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'repairCost',
       
         label: 'Repair Cost',
@@ -269,7 +299,10 @@ export class AssetRepair extends Model {
         placeholder: 'Input Repair Cost',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'amendedFrom',
       
         label: 'Amended From',
@@ -279,7 +312,9 @@ export class AssetRepair extends Model {
         placeholder: 'Input Amended From',
       
         options: '',
+      
       },
+      
     ]
   };
 } 

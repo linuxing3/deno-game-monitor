@@ -21,11 +21,8 @@ export class EmployeeTransferProperty extends Model {
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    
     property: DataTypes.STRING,
-    
     current: DataTypes.STRING,
-    
     new: DataTypes.STRING,
     
   };
@@ -34,6 +31,7 @@ export class EmployeeTransferProperty extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
+        
         key: 'property',
       
         label: 'Property',
@@ -43,7 +41,10 @@ export class EmployeeTransferProperty extends Model {
         placeholder: 'Input Property',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'current',
       
         label: 'Current',
@@ -53,7 +54,10 @@ export class EmployeeTransferProperty extends Model {
         placeholder: 'Input Current',
       
         options: '',
-      },{
+      
+      },
+      {
+        
         key: 'new',
       
         label: 'New',
@@ -63,7 +67,9 @@ export class EmployeeTransferProperty extends Model {
         placeholder: 'Input New',
       
         options: '',
+      
       },
+      
     ]
   };
 } 
