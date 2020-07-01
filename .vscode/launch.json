@@ -5,6 +5,21 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Debug generator",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/denodb/mock",
+      "runtimeExecutable": "${HOME}/.deno/bin/deno",
+      "runtimeArgs": [
+        "run",
+        "--inspect-brk",
+        "--unstable",
+        "-A",
+        "generate.ts"
+      ],
+      "port": 9229
+    },
+    {
       "name": "Debug smart logger",
       "type": "node",
       "request": "launch",
