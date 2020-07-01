@@ -30,30 +30,20 @@ export class LeavePolicyDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'leaveType',
-      
         label: 'Leave Type',
-      
         type: 'select',
-      
         placeholder: 'Input Leave Type',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'annualAllocation',
-      
         label: 'Annual Allocation',
-      
         type: 'input',
-      
         placeholder: 'Input Annual Allocation',
-      
         options: '',
-      
+        
       },
       
     ]

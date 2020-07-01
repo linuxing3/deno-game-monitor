@@ -29,17 +29,12 @@ export class Bank extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'bankName',
-      
         label: 'Bank Name',
-      
         type: 'input',
-      
         placeholder: 'Input Bank Name',
-      
         options: '',
-      
+        
       },
       
     ]

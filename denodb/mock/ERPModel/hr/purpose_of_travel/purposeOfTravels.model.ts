@@ -29,17 +29,12 @@ export class PurposeOfTravel extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'purposeOfTravel',
-      
         label: 'Purpose Of Travel',
-      
         type: 'input',
-      
         placeholder: 'Input Purpose Of Travel',
-      
         options: '',
-      
+        
       },
       
     ]

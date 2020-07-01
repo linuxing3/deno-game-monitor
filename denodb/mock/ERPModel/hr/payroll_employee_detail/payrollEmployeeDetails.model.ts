@@ -32,69 +32,44 @@ export class PayrollEmployeeDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'employee',
-      
         label: 'Employee',
-      
         type: 'select',
-      
         placeholder: 'Input Employee',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'employeeName',
-      
         label: 'Employee Name',
-      
         type: 'input',
-      
         placeholder: 'Input Employee Name',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'department',
-      
         label: 'Department',
-      
         type: 'select',
-      
         placeholder: 'Input Department',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'designation',
-      
         label: 'Designation',
-      
         type: 'input',
-      
         placeholder: 'Input Designation',
-      
         options: '',
-      
+        
       },
       
     ]

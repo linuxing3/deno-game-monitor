@@ -30,30 +30,20 @@ export class Designation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'designation',
-      
         label: 'Designation',
-      
         type: 'input',
-      
         placeholder: 'Input Designation',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'description',
-      
         label: 'Description',
-      
         type: 'input',
-      
         placeholder: 'Input Description',
-      
         options: '',
-      
+        
       },
       
     ]

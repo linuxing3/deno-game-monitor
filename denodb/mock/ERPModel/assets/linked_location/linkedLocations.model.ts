@@ -29,17 +29,12 @@ export class LinkedLocation extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'location',
-      
         label: 'Location',
-      
         type: 'select',
-      
         placeholder: 'Input Location',
-      
         options: '',
-      
+        
       },
       
     ]

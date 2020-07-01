@@ -29,17 +29,12 @@ export class PosCustomerGroup extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'customerGroup',
-      
         label: 'Customer Group',
-      
         type: 'select',
-      
         placeholder: 'Input Customer Group',
-      
         options: '',
-      
+        
       },
       
     ]

@@ -29,17 +29,12 @@ export class PosItemGroup extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'itemGroup',
-      
         label: 'Item Group',
-      
         type: 'select',
-      
         placeholder: 'Input Item Group',
-      
         options: '',
-      
+        
       },
       
     ]

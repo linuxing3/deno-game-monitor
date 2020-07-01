@@ -32,56 +32,36 @@ export class BankStatementTransactionSettingsItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'mappingType',
-      
         label: 'Mapping Type',
-      
         type: 'select',
-      
         placeholder: 'Input Mapping Type',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'bankData',
-      
         label: 'Bank Data',
-      
         type: 'input',
-      
         placeholder: 'Input Bank Data',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'mappedDataType',
-      
         label: 'Mapped Data Type',
-      
         type: 'select',
-      
         placeholder: 'Input Mapped Data Type',
-      
         options: '[object Object],[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: 'mappedData',
-      
         label: 'Mapped Data',
-      
         type: 'select',
-      
         placeholder: 'Input Mapped Data',
-      
         options: '',
-      
+        
       },
       
     ]

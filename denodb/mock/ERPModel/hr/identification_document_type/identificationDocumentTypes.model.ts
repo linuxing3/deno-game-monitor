@@ -29,17 +29,12 @@ export class IdentificationDocumentType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'identificationDocumentType',
-      
         label: 'Identification Document Type',
-      
         type: 'input',
-      
         placeholder: 'Input Identification Document Type',
-      
         options: '',
-      
+        
       },
       
     ]

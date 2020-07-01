@@ -40,264 +40,164 @@ export class AssetMaintenanceTask extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'maintenanceTask',
-      
         label: 'Maintenance Task',
-      
         type: 'input',
-      
         placeholder: 'Input Maintenance Task',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'maintenanceType',
-      
         label: 'Maintenance Type',
-      
         type: 'select',
-      
         placeholder: 'Input Maintenance Type',
-      
         options: '[object Object]',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'maintenanceStatus',
-      
         label: 'Maintenance Status',
-      
         type: 'select',
-      
         placeholder: 'Input Maintenance Status',
-      
         options: '[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'startDate',
-      
         label: 'Start Date',
-      
         type: 'input',
-      
         placeholder: 'Input Start Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'periodicity',
-      
         label: 'Periodicity',
-      
         type: 'select',
-      
         placeholder: 'Input Periodicity',
-      
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'endDate',
-      
         label: 'End Date',
-      
         type: 'input',
-      
         placeholder: 'Input End Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'certificateRequired',
-      
         label: 'Certificate Required',
-      
         type: 'input',
-      
         placeholder: 'Input Certificate Required',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'assignTo',
-      
         label: 'Assign To',
-      
         type: 'select',
-      
         placeholder: 'Input Assign To',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'assignToName',
-      
         label: 'Assign To Name',
-      
         type: 'input',
-      
         placeholder: 'Input Assign To Name',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'nextDueDate',
-      
         label: 'Next Due Date',
-      
         type: 'input',
-      
         placeholder: 'Input Next Due Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'lastCompletionDate',
-      
         label: 'Last Completion Date',
-      
         type: 'input',
-      
         placeholder: 'Input Last Completion Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'description',
-      
         label: 'Description',
-      
         type: 'input',
-      
         placeholder: 'Input Description',
-      
         options: '',
-      
+        
       },
       
     ]

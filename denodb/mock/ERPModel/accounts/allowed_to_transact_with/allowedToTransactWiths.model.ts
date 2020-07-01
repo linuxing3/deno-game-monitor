@@ -29,17 +29,12 @@ export class AllowedToTransactWith extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'select',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       
     ]

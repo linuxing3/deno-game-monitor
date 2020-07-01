@@ -33,95 +33,60 @@ export class TravelRequestCosting extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'expenseType',
-      
         label: 'Expense Type',
-      
         type: 'select',
-      
         placeholder: 'Input Expense Type',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'sponsoredAmount',
-      
         label: 'Sponsored Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Sponsored Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'fundedAmount',
-      
         label: 'Funded Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Funded Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'totalAmount',
-      
         label: 'Total Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Total Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'comments',
-      
         label: 'Comments',
-      
         type: 'input',
-      
         placeholder: 'Input Comments',
-      
         options: '',
-      
+        
       },
       
     ]

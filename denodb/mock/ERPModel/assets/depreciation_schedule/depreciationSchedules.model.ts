@@ -36,121 +36,76 @@ export class DepreciationSchedule extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'financeBook',
-      
         label: 'Finance Book',
-      
         type: 'select',
-      
         placeholder: 'Input Finance Book',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'scheduleDate',
-      
         label: 'Schedule Date',
-      
         type: 'input',
-      
         placeholder: 'Input Schedule Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'depreciationAmount',
-      
         label: 'Depreciation Amount',
-      
         type: 'select',
-      
         placeholder: 'Input Depreciation Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'accumulatedDepreciationAmount',
-      
         label: 'Accumulated Depreciation Amount',
-      
         type: 'select',
-      
         placeholder: 'Input Accumulated Depreciation Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'journalEntry',
-      
         label: 'Journal Entry',
-      
         type: 'select',
-      
         placeholder: 'Input Journal Entry',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'makeDepreciationEntry',
-      
         label: 'Make Depreciation Entry',
-      
         type: 'input',
-      
         placeholder: 'Input Make Depreciation Entry',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'financeBookId',
-      
         label: 'Finance Book Id',
-      
         type: 'input',
-      
         placeholder: 'Input Finance Book Id',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'depreciationMethod',
-      
         label: 'Depreciation Method',
-      
         type: 'select',
-      
         placeholder: 'Input Depreciation Method',
-      
         options: '[object Object],[object Object],[object Object],[object Object]',
-      
+        
       },
       
     ]

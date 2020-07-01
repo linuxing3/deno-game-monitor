@@ -30,30 +30,20 @@ export class BankStatementSettingsItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'mappedHeader',
-      
         label: 'Mapped Header',
-      
         type: 'input',
-      
         placeholder: 'Input Mapped Header',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'bankHeader',
-      
         label: 'Bank Header',
-      
         type: 'input',
-      
         placeholder: 'Input Bank Header',
-      
         options: '',
-      
+        
       },
       
     ]

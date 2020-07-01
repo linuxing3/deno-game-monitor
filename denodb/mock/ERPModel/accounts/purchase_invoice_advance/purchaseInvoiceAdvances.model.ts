@@ -34,95 +34,60 @@ export class PurchaseInvoiceAdvance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'referenceType',
-      
         label: 'Reference Type',
-      
         type: 'select',
-      
         placeholder: 'Input Reference Type',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'referenceName',
-      
         label: 'Reference Name',
-      
         type: 'select',
-      
         placeholder: 'Input Reference Name',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'remarks',
-      
         label: 'Remarks',
-      
         type: 'input',
-      
         placeholder: 'Input Remarks',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'referenceRow',
-      
         label: 'Reference Row',
-      
         type: 'input',
-      
         placeholder: 'Input Reference Row',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'advanceAmount',
-      
         label: 'Advance Amount',
-      
         type: 'select',
-      
         placeholder: 'Input Advance Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'allocatedAmount',
-      
         label: 'Allocated Amount',
-      
         type: 'select',
-      
         placeholder: 'Input Allocated Amount',
-      
         options: '',
-      
+        
       },
       
     ]

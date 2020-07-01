@@ -31,43 +31,28 @@ export class DailyWorkSummary extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'dailyWorkSummaryGroup',
-      
         label: 'Daily Work Summary Group',
-      
         type: 'select',
-      
         placeholder: 'Input Daily Work Summary Group',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'status',
-      
         label: 'Status',
-      
         type: 'select',
-      
         placeholder: 'Input Status',
-      
         options: '[object Object]',
-      
+        
       },
       {
-        
         key: 'emailSentTo',
-      
         label: 'Email Sent To',
-      
         type: 'input',
-      
         placeholder: 'Input Email Sent To',
-      
         options: '',
-      
+        
       },
       
     ]

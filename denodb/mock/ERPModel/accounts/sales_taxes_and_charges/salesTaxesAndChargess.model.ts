@@ -43,251 +43,156 @@ export class SalesTaxesAndCharges extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'type',
-      
         label: 'Type',
-      
         type: 'select',
-      
         placeholder: 'Input Type',
-      
         options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: 'referenceRow',
-      
         label: 'Reference Row',
-      
         type: 'input',
-      
         placeholder: 'Input Reference Row',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'accountHead',
-      
         label: 'Account Head',
-      
         type: 'select',
-      
         placeholder: 'Input Account Head',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'costCenter',
-      
         label: 'Cost Center',
-      
         type: 'select',
-      
         placeholder: 'Input Cost Center',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'description',
-      
         label: 'Description',
-      
         type: 'input',
-      
         placeholder: 'Input Description',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'isThisTaxIncludedInBasicRate',
-      
         label: 'Is This Tax Included In Basic Rate',
-      
         type: 'input',
-      
         placeholder: 'Input Is This Tax Included In Basic Rate',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'rate',
-      
         label: 'Rate',
-      
         type: 'input',
-      
         placeholder: 'Input Rate',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amount',
-      
         label: 'Amount',
-      
         type: 'select',
-      
         placeholder: 'Input Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'total',
-      
         label: 'Total',
-      
         type: 'select',
-      
         placeholder: 'Input Total',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'taxAmountAfterDiscountAmount',
-      
         label: 'Tax Amount After Discount Amount',
-      
         type: 'select',
-      
         placeholder: 'Input Tax Amount After Discount Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amountCompanyCurrency',
-      
         label: 'Amount Company Currency',
-      
         type: 'select',
-      
         placeholder: 'Input Amount Company Currency',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'totalCompanyCurrency',
-      
         label: 'Total Company Currency',
-      
         type: 'select',
-      
         placeholder: 'Input Total Company Currency',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'taxAmountAfterDiscountAmountCompanyCurrency',
-      
         label: 'Tax Amount After Discount Amount Company Currency',
-      
         type: 'select',
-      
         placeholder: 'Input Tax Amount After Discount Amount Company Currency',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'itemWiseTaxDetail',
-      
         label: 'Item Wise Tax Detail',
-      
         type: 'input',
-      
         placeholder: 'Input Item Wise Tax Detail',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'parenttype',
-      
         label: 'Parenttype',
-      
         type: 'input',
-      
         placeholder: 'Input Parenttype',
-      
         options: '',
-      
+        
       },
       
     ]

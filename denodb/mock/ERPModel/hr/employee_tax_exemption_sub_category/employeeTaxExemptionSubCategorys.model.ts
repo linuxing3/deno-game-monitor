@@ -31,43 +31,28 @@ export class EmployeeTaxExemptionSubCategory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'taxExemptionCategory',
-      
         label: 'Tax Exemption Category',
-      
         type: 'select',
-      
         placeholder: 'Input Tax Exemption Category',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'maxAmount',
-      
         label: 'Max Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Max Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'isActive',
-      
         label: 'Is Active',
-      
         type: 'input',
-      
         placeholder: 'Input Is Active',
-      
         options: '',
-      
+        
       },
       
     ]

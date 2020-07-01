@@ -35,108 +35,68 @@ export class PayrollPeriod extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'select',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'startDate',
-      
         label: 'Start Date',
-      
         type: 'input',
-      
         placeholder: 'Input Start Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'endDate',
-      
         label: 'End Date',
-      
         type: 'input',
-      
         placeholder: 'Input End Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'payrollPeriods',
-      
         label: 'Payroll Periods',
-      
         type: 'input',
-      
         placeholder: 'Input Payroll Periods',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'payrollPeriods',
-      
         label: 'Payroll Periods',
-      
         type: 'select',
-      
         placeholder: 'Input Payroll Periods',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'taxableSalarySlabs',
-      
         label: 'Taxable Salary Slabs',
-      
         type: 'input',
-      
         placeholder: 'Input Taxable Salary Slabs',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'taxableSalarySlabs',
-      
         label: 'Taxable Salary Slabs',
-      
         type: 'select',
-      
         placeholder: 'Input Taxable Salary Slabs',
-      
         options: '',
-      
+        
       },
       
     ]

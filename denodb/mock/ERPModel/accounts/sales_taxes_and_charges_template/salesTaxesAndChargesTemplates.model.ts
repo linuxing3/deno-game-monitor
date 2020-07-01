@@ -33,95 +33,60 @@ export class SalesTaxesAndChargesTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'title',
-      
         label: 'Title',
-      
         type: 'input',
-      
         placeholder: 'Input Title',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'default',
-      
         label: 'Default',
-      
         type: 'input',
-      
         placeholder: 'Input Default',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'disabled',
-      
         label: 'Disabled',
-      
         type: 'input',
-      
         placeholder: 'Input Disabled',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'select',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'salesTaxesAndCharges',
-      
         label: 'Sales Taxes And Charges',
-      
         type: 'select',
-      
         placeholder: 'Input Sales Taxes And Charges',
-      
         options: '',
-      
+        
       },
       
     ]

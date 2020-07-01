@@ -35,108 +35,68 @@ export class StaffingPlanDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'designation',
-      
         label: 'Designation',
-      
         type: 'select',
-      
         placeholder: 'Input Designation',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'numberOfPositions',
-      
         label: 'Number Of Positions',
-      
         type: 'input',
-      
         placeholder: 'Input Number Of Positions',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'estimatedCostPerPosition',
-      
         label: 'Estimated Cost Per Position',
-      
         type: 'input',
-      
         placeholder: 'Input Estimated Cost Per Position',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'currentCount',
-      
         label: 'Current Count',
-      
         type: 'input',
-      
         placeholder: 'Input Current Count',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'currentOpenings',
-      
         label: 'Current Openings',
-      
         type: 'input',
-      
         placeholder: 'Input Current Openings',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'vacancies',
-      
         label: 'Vacancies',
-      
         type: 'input',
-      
         placeholder: 'Input Vacancies',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'totalEstimatedCost',
-      
         label: 'Total Estimated Cost',
-      
         type: 'input',
-      
         placeholder: 'Input Total Estimated Cost',
-      
         options: '',
-      
+        
       },
       
     ]

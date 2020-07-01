@@ -32,56 +32,36 @@ export class EmployeeBenefitApplicationDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'earningComponent',
-      
         label: 'Earning Component',
-      
         type: 'select',
-      
         placeholder: 'Input Earning Component',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'payAgainstBenefitClaim',
-      
         label: 'Pay Against Benefit Claim',
-      
         type: 'input',
-      
         placeholder: 'Input Pay Against Benefit Claim',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'maxBenefitAmount',
-      
         label: 'Max Benefit Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Max Benefit Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amount',
-      
         label: 'Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Amount',
-      
         options: '',
-      
+        
       },
       
     ]

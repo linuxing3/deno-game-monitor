@@ -32,69 +32,44 @@ export class TrainingResult extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'trainingEvent',
-      
         label: 'Training Event',
-      
         type: 'select',
-      
         placeholder: 'Input Training Event',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'employees',
-      
         label: 'Employees',
-      
         type: 'select',
-      
         placeholder: 'Input Employees',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amendedFrom',
-      
         label: 'Amended From',
-      
         type: 'select',
-      
         placeholder: 'Input Amended From',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'employeeEmails',
-      
         label: 'Employee Emails',
-      
         type: 'select',
-      
         placeholder: 'Input Employee Emails',
-      
         options: '',
-      
+        
       },
       
     ]

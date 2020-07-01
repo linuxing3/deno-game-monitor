@@ -37,134 +37,84 @@ export class BankStatementTransactionInvoiceItem extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'transactionDate',
-      
         label: 'Transaction Date',
-      
         type: 'input',
-      
         placeholder: 'Input Transaction Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'paymentDescription',
-      
         label: 'Payment Description',
-      
         type: 'input',
-      
         placeholder: 'Input Payment Description',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'partyType',
-      
         label: 'Party Type',
-      
         type: 'select',
-      
         placeholder: 'Input Party Type',
-      
         options: '[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: 'party',
-      
         label: 'Party',
-      
         type: 'select',
-      
         placeholder: 'Input Party',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'invoiceDate',
-      
         label: 'Invoice Date',
-      
         type: 'input',
-      
         placeholder: 'Input Invoice Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'invoiceType',
-      
         label: 'Invoice Type',
-      
         type: 'select',
-      
         placeholder: 'Input Invoice Type',
-      
         options: '[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: 'invoice',
-      
         label: 'Invoice',
-      
         type: 'select',
-      
         placeholder: 'Input Invoice',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'outstandingAmount',
-      
         label: 'Outstanding Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Outstanding Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'allocatedAmount',
-      
         label: 'Allocated Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Allocated Amount',
-      
         options: '',
-      
+        
       },
       
     ]

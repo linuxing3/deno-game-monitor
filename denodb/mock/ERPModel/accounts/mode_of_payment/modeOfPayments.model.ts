@@ -31,43 +31,28 @@ export class ModeOfPayment extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'modeOfPayment',
-      
         label: 'Mode Of Payment',
-      
         type: 'input',
-      
         placeholder: 'Input Mode Of Payment',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'type',
-      
         label: 'Type',
-      
         type: 'select',
-      
         placeholder: 'Input Type',
-      
         options: '[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: 'accounts',
-      
         label: 'Accounts',
-      
         type: 'select',
-      
         placeholder: 'Input Accounts',
-      
         options: '',
-      
+        
       },
       
     ]

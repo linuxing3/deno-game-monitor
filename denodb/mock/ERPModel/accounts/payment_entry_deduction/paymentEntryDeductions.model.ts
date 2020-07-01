@@ -31,43 +31,28 @@ export class PaymentEntryDeduction extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'account',
-      
         label: 'Account',
-      
         type: 'select',
-      
         placeholder: 'Input Account',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'costCenter',
-      
         label: 'Cost Center',
-      
         type: 'select',
-      
         placeholder: 'Input Cost Center',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amount',
-      
         label: 'Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Amount',
-      
         options: '',
-      
+        
       },
       
     ]

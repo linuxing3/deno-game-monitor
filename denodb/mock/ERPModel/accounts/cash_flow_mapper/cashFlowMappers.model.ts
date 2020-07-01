@@ -35,95 +35,60 @@ export class CashFlowMapper extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'sectionName',
-      
         label: 'Section Name',
-      
         type: 'input',
-      
         placeholder: 'Input Section Name',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'sectionHeader',
-      
         label: 'Section Header',
-      
         type: 'input',
-      
         placeholder: 'Input Section Header',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'sectionLeader',
-      
         label: 'Section Leader',
-      
         type: 'input',
-      
         placeholder: 'Input Section Leader',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'sectionSubtotal',
-      
         label: 'Section Subtotal',
-      
         type: 'input',
-      
         placeholder: 'Input Section Subtotal',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'sectionFooter',
-      
         label: 'Section Footer',
-      
         type: 'input',
-      
         placeholder: 'Input Section Footer',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'accounts',
-      
         label: 'Accounts',
-      
         type: 'select',
-      
         placeholder: 'Input Accounts',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'position',
-      
         label: 'Position',
-      
         type: 'input',
-      
         placeholder: 'Input Position',
-      
         options: '',
-      
+        
       },
       
     ]

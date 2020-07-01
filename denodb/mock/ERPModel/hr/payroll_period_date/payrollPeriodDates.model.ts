@@ -30,30 +30,20 @@ export class PayrollPeriodDate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'startDate',
-      
         label: 'Start Date',
-      
         type: 'input',
-      
         placeholder: 'Input Start Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'endDate',
-      
         label: 'End Date',
-      
         type: 'input',
-      
         placeholder: 'Input End Date',
-      
         options: '',
-      
+        
       },
       
     ]

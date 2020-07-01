@@ -29,17 +29,12 @@ export class DepartmentApprover extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'approver',
-      
         label: 'Approver',
-      
         type: 'select',
-      
         placeholder: 'Input Approver',
-      
         options: '',
-      
+        
       },
       
     ]

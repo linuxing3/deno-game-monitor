@@ -29,9 +29,8 @@ export class <%= modelName %> extends Model {
     // field meta information for UI render
     fieldProperty: [
       <% for (let i = 0; i < fields.length; i++) { %>{
-        <% for (let j = 0; j < 5; j++) { %><% if(Object.keys(fields[i])[j]) { %>
-        <%= Object.keys(fields[i])[j] %>: '<%= fields[i][Object.keys(fields[i])[j]]  %>',
-      <% } %><% } %>
+        <% for (let j = 0; j < 5; j++) { %><% if(Object.keys(fields[i])[j]) { %><%= Object.keys(fields[i])[j] %>: '<%= fields[i][Object.keys(fields[i])[j]]  %>',
+        <% } %><% } %>
       },
       <% } %>
     ]

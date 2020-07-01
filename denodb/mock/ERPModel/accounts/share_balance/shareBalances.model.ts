@@ -36,134 +36,84 @@ export class ShareBalance extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'shareType',
-      
         label: 'Share Type',
-      
         type: 'select',
-      
         placeholder: 'Input Share Type',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'fromNo',
-      
         label: 'From No',
-      
         type: 'input',
-      
         placeholder: 'Input From No',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'rate',
-      
         label: 'Rate',
-      
         type: 'input',
-      
         placeholder: 'Input Rate',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'noOfShares',
-      
         label: 'No Of Shares',
-      
         type: 'input',
-      
         placeholder: 'Input No Of Shares',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'toNo',
-      
         label: 'To No',
-      
         type: 'input',
-      
         placeholder: 'Input To No',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amount',
-      
         label: 'Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'isCompany',
-      
         label: 'Is Company',
-      
         type: 'input',
-      
         placeholder: 'Input Is Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'currentState',
-      
         label: 'Current State',
-      
         type: 'select',
-      
         placeholder: 'Input Current State',
-      
         options: '[object Object],[object Object]',
-      
+        
       },
       
     ]

@@ -30,30 +30,20 @@ export class LeaveBlockListDate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'blockDate',
-      
         label: 'Block Date',
-      
         type: 'input',
-      
         placeholder: 'Input Block Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'reason',
-      
         label: 'Reason',
-      
         type: 'input',
-      
         placeholder: 'Input Reason',
-      
         options: '',
-      
+        
       },
       
     ]

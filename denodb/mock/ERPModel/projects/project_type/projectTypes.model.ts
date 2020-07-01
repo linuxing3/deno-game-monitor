@@ -30,30 +30,20 @@ export class ProjectType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'projectType',
-      
         label: 'Project Type',
-      
         type: 'input',
-      
         placeholder: 'Input Project Type',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'description',
-      
         label: 'Description',
-      
         type: 'input',
-      
         placeholder: 'Input Description',
-      
         options: '',
-      
+        
       },
       
     ]

@@ -29,17 +29,12 @@ export class SubscriptionInvoice extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'invoice',
-      
         label: 'Invoice',
-      
         type: 'select',
-      
         placeholder: 'Input Invoice',
-      
         options: '',
-      
+        
       },
       
     ]

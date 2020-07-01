@@ -41,225 +41,140 @@ export class ShippingRule extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'shippingRuleLabel',
-      
         label: 'Shipping Rule Label',
-      
         type: 'input',
-      
         placeholder: 'Input Shipping Rule Label',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'disabled',
-      
         label: 'Disabled',
-      
         type: 'input',
-      
         placeholder: 'Input Disabled',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'shippingRuleType',
-      
         label: 'Shipping Rule Type',
-      
         type: 'select',
-      
         placeholder: 'Input Shipping Rule Type',
-      
         options: '[object Object]',
-      
+        
       },
       {
-        
         key: 'accounting',
-      
         label: 'Accounting',
-      
         type: 'input',
-      
         placeholder: 'Input Accounting',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'select',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'shippingAccount',
-      
         label: 'Shipping Account',
-      
         type: 'select',
-      
         placeholder: 'Input Shipping Account',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'costCenter',
-      
         label: 'Cost Center',
-      
         type: 'select',
-      
         placeholder: 'Input Cost Center',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'calculateBasedOn',
-      
         label: 'Calculate Based On',
-      
         type: 'select',
-      
         placeholder: 'Input Calculate Based On',
-      
         options: '[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'shippingAmount',
-      
         label: 'Shipping Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Shipping Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'shippingRuleConditions',
-      
         label: 'Shipping Rule Conditions',
-      
         type: 'input',
-      
         placeholder: 'Input Shipping Rule Conditions',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'shippingRuleConditions',
-      
         label: 'Shipping Rule Conditions',
-      
         type: 'select',
-      
         placeholder: 'Input Shipping Rule Conditions',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'restrictToCountries',
-      
         label: 'Restrict To Countries',
-      
         type: 'input',
-      
         placeholder: 'Input Restrict To Countries',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'validForCountries',
-      
         label: 'Valid For Countries',
-      
         type: 'select',
-      
         placeholder: 'Input Valid For Countries',
-      
         options: '',
-      
+        
       },
       
     ]

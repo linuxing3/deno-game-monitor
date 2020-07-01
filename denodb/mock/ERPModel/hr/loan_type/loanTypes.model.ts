@@ -33,82 +33,52 @@ export class LoanType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'loanName',
-      
         label: 'Loan Name',
-      
         type: 'input',
-      
         placeholder: 'Input Loan Name',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'maximumLoanAmount',
-      
         label: 'Maximum Loan Amount',
-      
         type: 'select',
-      
         placeholder: 'Input Maximum Loan Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'rateOfInterestYearly',
-      
         label: 'Rate Of Interest Yearly',
-      
         type: 'input',
-      
         placeholder: 'Input Rate Of Interest Yearly',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'disabled',
-      
         label: 'Disabled',
-      
         type: 'input',
-      
         placeholder: 'Input Disabled',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'description',
-      
         label: 'Description',
-      
         type: 'input',
-      
         placeholder: 'Input Description',
-      
         options: '',
-      
+        
       },
       
     ]

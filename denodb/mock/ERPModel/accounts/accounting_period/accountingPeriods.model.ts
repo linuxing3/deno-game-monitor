@@ -34,108 +34,68 @@ export class AccountingPeriod extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'periodName',
-      
         label: 'Period Name',
-      
         type: 'input',
-      
         placeholder: 'Input Period Name',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'startDate',
-      
         label: 'Start Date',
-      
         type: 'input',
-      
         placeholder: 'Input Start Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'endDate',
-      
         label: 'End Date',
-      
         type: 'input',
-      
         placeholder: 'Input End Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'select',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'status',
-      
         label: 'Status',
-      
         type: 'select',
-      
         placeholder: 'Input Status',
-      
         options: '[object Object]',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'closedDocuments',
-      
         label: 'Closed Documents',
-      
         type: 'select',
-      
         placeholder: 'Input Closed Documents',
-      
         options: '',
-      
+        
       },
       
     ]

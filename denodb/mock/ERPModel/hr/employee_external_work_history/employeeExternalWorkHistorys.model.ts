@@ -34,82 +34,52 @@ export class EmployeeExternalWorkHistory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'input',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'designation',
-      
         label: 'Designation',
-      
         type: 'input',
-      
         placeholder: 'Input Designation',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'salary',
-      
         label: 'Salary',
-      
         type: 'select',
-      
         placeholder: 'Input Salary',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'address',
-      
         label: 'Address',
-      
         type: 'input',
-      
         placeholder: 'Input Address',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'contact',
-      
         label: 'Contact',
-      
         type: 'input',
-      
         placeholder: 'Input Contact',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'totalExperience',
-      
         label: 'Total Experience',
-      
         type: 'input',
-      
         placeholder: 'Input Total Experience',
-      
         options: '',
-      
+        
       },
       
     ]

@@ -33,69 +33,44 @@ export class EmployeeInternalWorkHistory extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'branch',
-      
         label: 'Branch',
-      
         type: 'select',
-      
         placeholder: 'Input Branch',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'department',
-      
         label: 'Department',
-      
         type: 'select',
-      
         placeholder: 'Input Department',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'designation',
-      
         label: 'Designation',
-      
         type: 'select',
-      
         placeholder: 'Input Designation',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'fromDate',
-      
         label: 'From Date',
-      
         type: 'input',
-      
         placeholder: 'Input From Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'toDate',
-      
         label: 'To Date',
-      
         type: 'input',
-      
         placeholder: 'Input To Date',
-      
         options: '',
-      
+        
       },
       
     ]

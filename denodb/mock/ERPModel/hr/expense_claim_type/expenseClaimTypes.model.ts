@@ -31,43 +31,28 @@ export class ExpenseClaimType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'expenseClaimType',
-      
         label: 'Expense Claim Type',
-      
         type: 'input',
-      
         placeholder: 'Input Expense Claim Type',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'description',
-      
         label: 'Description',
-      
         type: 'input',
-      
         placeholder: 'Input Description',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'accounts',
-      
         label: 'Accounts',
-      
         type: 'select',
-      
         placeholder: 'Input Accounts',
-      
         options: '',
-      
+        
       },
       
     ]

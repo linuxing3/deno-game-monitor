@@ -29,17 +29,12 @@ export class Interest extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'interest',
-      
         label: 'Interest',
-      
         type: 'input',
-      
         placeholder: 'Input Interest',
-      
         options: '',
-      
+        
       },
       
     ]

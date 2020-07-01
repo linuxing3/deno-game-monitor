@@ -30,30 +30,20 @@ export class MonthlyDistributionPercentage extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'month',
-      
         label: 'Month',
-      
         type: 'input',
-      
         placeholder: 'Input Month',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'percentageAllocation',
-      
         label: 'Percentage Allocation',
-      
         type: 'input',
-      
         placeholder: 'Input Percentage Allocation',
-      
         options: '',
-      
+        
       },
       
     ]

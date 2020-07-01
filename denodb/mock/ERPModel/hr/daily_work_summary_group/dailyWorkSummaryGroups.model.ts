@@ -36,108 +36,68 @@ export class DailyWorkSummaryGroup extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'enabled',
-      
         label: 'Enabled',
-      
         type: 'input',
-      
         placeholder: 'Input Enabled',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'selectUsers',
-      
         label: 'Select Users',
-      
         type: 'input',
-      
         placeholder: 'Input Select Users',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'users',
-      
         label: 'Users',
-      
         type: 'select',
-      
         placeholder: 'Input Users',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'sendEmailsAt',
-      
         label: 'Send Emails At',
-      
         type: 'select',
-      
         placeholder: 'Input Send Emails At',
-      
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: 'holidayList',
-      
         label: 'Holiday List',
-      
         type: 'select',
-      
         placeholder: 'Input Holiday List',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'reminder',
-      
         label: 'Reminder',
-      
         type: 'input',
-      
         placeholder: 'Input Reminder',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'subject',
-      
         label: 'Subject',
-      
         type: 'input',
-      
         placeholder: 'Input Subject',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'message',
-      
         label: 'Message',
-      
         type: 'input',
-      
         placeholder: 'Input Message',
-      
         options: '',
-      
+        
       },
       
     ]

@@ -29,17 +29,12 @@ export class FinanceBook extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'name',
-      
         label: 'Name',
-      
         type: 'input',
-      
         placeholder: 'Input Name',
-      
         options: '',
-      
+        
       },
       
     ]

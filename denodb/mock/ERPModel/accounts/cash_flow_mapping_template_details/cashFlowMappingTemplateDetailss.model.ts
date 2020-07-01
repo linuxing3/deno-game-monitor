@@ -29,17 +29,12 @@ export class CashFlowMappingTemplateDetails extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'mapping',
-      
         label: 'Mapping',
-      
         type: 'select',
-      
         placeholder: 'Input Mapping',
-      
         options: '',
-      
+        
       },
       
     ]

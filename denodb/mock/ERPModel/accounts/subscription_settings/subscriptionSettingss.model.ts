@@ -31,43 +31,28 @@ export class SubscriptionSettings extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'gracePeriod',
-      
         label: 'Grace Period',
-      
         type: 'input',
-      
         placeholder: 'Input Grace Period',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'cancelInvoiceAfterGracePeriod',
-      
         label: 'Cancel Invoice After Grace Period',
-      
         type: 'input',
-      
         placeholder: 'Input Cancel Invoice After Grace Period',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'prorate',
-      
         label: 'Prorate',
-      
         type: 'input',
-      
         placeholder: 'Input Prorate',
-      
         options: '',
-      
+        
       },
       
     ]

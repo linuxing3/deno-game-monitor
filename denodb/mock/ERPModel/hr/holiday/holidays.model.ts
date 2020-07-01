@@ -30,30 +30,20 @@ export class Holiday extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'date',
-      
         label: 'Date',
-      
         type: 'input',
-      
         placeholder: 'Input Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'description',
-      
         label: 'Description',
-      
         type: 'input',
-      
         placeholder: 'Input Description',
-      
         options: '',
-      
+        
       },
       
     ]

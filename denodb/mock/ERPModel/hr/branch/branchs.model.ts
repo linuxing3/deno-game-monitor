@@ -29,17 +29,12 @@ export class Branch extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'branch',
-      
         label: 'Branch',
-      
         type: 'input',
-      
         placeholder: 'Input Branch',
-      
         options: '',
-      
+        
       },
       
     ]

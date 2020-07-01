@@ -31,43 +31,28 @@ export class ShiftType extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'startTime',
-      
         label: 'Start Time',
-      
         type: 'input',
-      
         placeholder: 'Input Start Time',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'endTime',
-      
         label: 'End Time',
-      
         type: 'input',
-      
         placeholder: 'Input End Time',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'holidayList',
-      
         label: 'Holiday List',
-      
         type: 'select',
-      
         placeholder: 'Input Holiday List',
-      
         options: '',
-      
+        
       },
       
     ]

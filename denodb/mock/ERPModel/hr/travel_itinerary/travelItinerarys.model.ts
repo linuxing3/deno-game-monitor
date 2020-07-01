@@ -41,199 +41,124 @@ export class TravelItinerary extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'travelFrom',
-      
         label: 'Travel From',
-      
         type: 'input',
-      
         placeholder: 'Input Travel From',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'travelTo',
-      
         label: 'Travel To',
-      
         type: 'input',
-      
         placeholder: 'Input Travel To',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'modeOfTravel',
-      
         label: 'Mode Of Travel',
-      
         type: 'select',
-      
         placeholder: 'Input Mode Of Travel',
-      
         options: '[object Object],[object Object],[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: 'mealPreference',
-      
         label: 'Meal Preference',
-      
         type: 'select',
-      
         placeholder: 'Input Meal Preference',
-      
         options: '[object Object],[object Object],[object Object],[object Object]',
-      
+        
       },
       {
-        
         key: 'travelAdvanceRequired',
-      
         label: 'Travel Advance Required',
-      
         type: 'input',
-      
         placeholder: 'Input Travel Advance Required',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'advanceAmount',
-      
         label: 'Advance Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Advance Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'departureDatetime',
-      
         label: 'Departure Datetime',
-      
         type: 'input',
-      
         placeholder: 'Input Departure Datetime',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'arrivalDatetime',
-      
         label: 'Arrival Datetime',
-      
         type: 'input',
-      
         placeholder: 'Input Arrival Datetime',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'lodgingRequired',
-      
         label: 'Lodging Required',
-      
         type: 'input',
-      
         placeholder: 'Input Lodging Required',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'preferredAreaForLodging',
-      
         label: 'Preferred Area For Lodging',
-      
         type: 'input',
-      
         placeholder: 'Input Preferred Area For Lodging',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'checkInDate',
-      
         label: 'Check In Date',
-      
         type: 'input',
-      
         placeholder: 'Input Check In Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'checkOutDate',
-      
         label: 'Check Out Date',
-      
         type: 'input',
-      
         placeholder: 'Input Check Out Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'otherDetails',
-      
         label: 'Other Details',
-      
         type: 'input',
-      
         placeholder: 'Input Other Details',
-      
         options: '',
-      
+        
       },
       
     ]

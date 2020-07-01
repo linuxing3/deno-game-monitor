@@ -34,95 +34,60 @@ export class EmployeeSeparationTemplate extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'select',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'department',
-      
         label: 'Department',
-      
         type: 'select',
-      
         placeholder: 'Input Department',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'designation',
-      
         label: 'Designation',
-      
         type: 'select',
-      
         placeholder: 'Input Designation',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'employeeGrade',
-      
         label: 'Employee Grade',
-      
         type: 'select',
-      
         placeholder: 'Input Employee Grade',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'activities',
-      
         label: 'Activities',
-      
         type: 'input',
-      
         placeholder: 'Input Activities',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'activities',
-      
         label: 'Activities',
-      
         type: 'select',
-      
         placeholder: 'Input Activities',
-      
         options: '',
-      
+        
       },
       
     ]

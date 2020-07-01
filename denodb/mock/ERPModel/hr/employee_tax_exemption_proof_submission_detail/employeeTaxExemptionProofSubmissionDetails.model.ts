@@ -32,56 +32,36 @@ export class EmployeeTaxExemptionProofSubmissionDetail extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'exemptionSubCategory',
-      
         label: 'Exemption Sub Category',
-      
         type: 'select',
-      
         placeholder: 'Input Exemption Sub Category',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'exemptionCategory',
-      
         label: 'Exemption Category',
-      
         type: 'input',
-      
         placeholder: 'Input Exemption Category',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'typeOfProof',
-      
         label: 'Type Of Proof',
-      
         type: 'input',
-      
         placeholder: 'Input Type Of Proof',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amount',
-      
         label: 'Amount',
-      
         type: 'input',
-      
         placeholder: 'Input Amount',
-      
         options: '',
-      
+        
       },
       
     ]

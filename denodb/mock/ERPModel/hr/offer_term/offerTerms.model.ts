@@ -29,17 +29,12 @@ export class OfferTerm extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'offerTerm',
-      
         label: 'Offer Term',
-      
         type: 'input',
-      
         placeholder: 'Input Offer Term',
-      
         options: '',
-      
+        
       },
       
     ]

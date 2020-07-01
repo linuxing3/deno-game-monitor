@@ -30,30 +30,20 @@ export class ClosedDocument extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'documentType',
-      
         label: 'Document Type',
-      
         type: 'select',
-      
         placeholder: 'Input Document Type',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'closed',
-      
         label: 'Closed',
-      
         type: 'input',
-      
         placeholder: 'Input Closed',
-      
         options: '',
-      
+        
       },
       
     ]

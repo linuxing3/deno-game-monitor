@@ -33,69 +33,44 @@ export class GstAccount extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'select',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'cgstAccount',
-      
         label: 'Cgst Account',
-      
         type: 'select',
-      
         placeholder: 'Input Cgst Account',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'sgstAccount',
-      
         label: 'Sgst Account',
-      
         type: 'select',
-      
         placeholder: 'Input Sgst Account',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'igstAccount',
-      
         label: 'Igst Account',
-      
         type: 'select',
-      
         placeholder: 'Input Igst Account',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'cessAccount',
-      
         label: 'Cess Account',
-      
         type: 'select',
-      
         placeholder: 'Input Cess Account',
-      
         options: '',
-      
+        
       },
       
     ]

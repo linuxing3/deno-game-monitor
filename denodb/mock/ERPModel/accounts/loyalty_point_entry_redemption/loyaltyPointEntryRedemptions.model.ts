@@ -31,43 +31,28 @@ export class LoyaltyPointEntryRedemption extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'salesInvoice',
-      
         label: 'Sales Invoice',
-      
         type: 'input',
-      
         placeholder: 'Input Sales Invoice',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'redemptionDate',
-      
         label: 'Redemption Date',
-      
         type: 'input',
-      
         placeholder: 'Input Redemption Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'redeemedPoints',
-      
         label: 'Redeemed Points',
-      
         type: 'input',
-      
         placeholder: 'Input Redeemed Points',
-      
         options: '',
-      
+        
       },
       
     ]

@@ -29,17 +29,12 @@ export class LeaveBlockListAllow extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'allowUser',
-      
         label: 'Allow User',
-      
         type: 'select',
-      
         placeholder: 'Input Allow User',
-      
         options: '',
-      
+        
       },
       
     ]

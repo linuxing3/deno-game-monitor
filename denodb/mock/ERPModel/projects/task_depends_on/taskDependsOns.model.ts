@@ -31,56 +31,36 @@ export class TaskDependsOn extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'task',
-      
         label: 'Task',
-      
         type: 'select',
-      
         placeholder: 'Input Task',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'subject',
-      
         label: 'Subject',
-      
         type: 'input',
-      
         placeholder: 'Input Subject',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'project',
-      
         label: 'Project',
-      
         type: 'input',
-      
         placeholder: 'Input Project',
-      
         options: '',
-      
+        
       },
       
     ]

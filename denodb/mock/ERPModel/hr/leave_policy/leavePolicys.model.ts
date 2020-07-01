@@ -31,43 +31,28 @@ export class LeavePolicy extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'leaveAllocations',
-      
         label: 'Leave Allocations',
-      
         type: 'input',
-      
         placeholder: 'Input Leave Allocations',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'leavePolicyDetails',
-      
         label: 'Leave Policy Details',
-      
         type: 'select',
-      
         placeholder: 'Input Leave Policy Details',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amendedFrom',
-      
         label: 'Amended From',
-      
         type: 'select',
-      
         placeholder: 'Input Amended From',
-      
         options: '',
-      
+        
       },
       
     ]

@@ -29,17 +29,12 @@ export class CashFlowMappingAccounts extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'account',
-      
         label: 'Account',
-      
         type: 'select',
-      
         placeholder: 'Input Account',
-      
         options: '',
-      
+        
       },
       
     ]

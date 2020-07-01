@@ -35,121 +35,76 @@ export class PaymentOrder extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'series',
-      
         label: 'Series',
-      
         type: 'select',
-      
         placeholder: 'Input Series',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'company',
-      
         label: 'Company',
-      
         type: 'select',
-      
         placeholder: 'Input Company',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'supplier',
-      
         label: 'Supplier',
-      
         type: 'select',
-      
         placeholder: 'Input Supplier',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'postingDate',
-      
         label: 'Posting Date',
-      
         type: 'input',
-      
         placeholder: 'Input Posting Date',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'bank',
-      
         label: 'Bank',
-      
         type: 'select',
-      
         placeholder: 'Input Bank',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'paymentOrderReference',
-      
         label: 'Payment Order Reference',
-      
         type: 'select',
-      
         placeholder: 'Input Payment Order Reference',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'amendedFrom',
-      
         label: 'Amended From',
-      
         type: 'select',
-      
         placeholder: 'Input Amended From',
-      
         options: '',
-      
+        
       },
       
     ]

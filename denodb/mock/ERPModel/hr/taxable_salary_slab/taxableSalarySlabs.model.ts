@@ -32,82 +32,52 @@ export class TaxableSalarySlab extends Model {
     // field meta information for UI render
     fieldProperty: [
       {
-        
         key: 'fromAmount',
-      
         label: 'From Amount',
-      
         type: 'input',
-      
         placeholder: 'Input From Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'toAmount',
-      
         label: 'To Amount',
-      
         type: 'input',
-      
         placeholder: 'Input To Amount',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'percentDeduction',
-      
         label: 'Percent Deduction',
-      
         type: 'input',
-      
         placeholder: 'Input Percent Deduction',
-      
         options: '',
-      
+        
       },
       {
-        
         key: 'condition',
-      
         label: 'Condition',
-      
         type: 'input',
-      
         placeholder: 'Input Condition',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'input',
-      
         placeholder: 'Input ',
-      
         options: '',
-      
+        
       },
       {
-        
         key: '',
-      
         label: '',
-      
         type: 'select',
-      
         placeholder: 'Input ',
-      
         options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-      
+        
       },
       
     ]
