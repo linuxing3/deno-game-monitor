@@ -23,7 +23,29 @@ import { Select } from "https://deno.land/x/cliffy/prompt.ts";
 
 const { cwd } = Deno;
 
-async function renderModelFile(path: string, schema: any, template: string) {
+interface TemplateConfig {
+  modelTemplate: string;
+  modelIndexFileName: string;
+  modelIndexTemplate: string;
+}
+
+interface SchemaConfig {
+  modelName: string;
+  tableName: string;
+  fields: any;
+}
+
+interface ModelConfig {
+  tableName: string;
+  modelName: string;
+  path: string;
+}
+
+async function renderModelFile(
+  path: string,
+  schema: SchemaConfig,
+  template: string,
+) {
   try {
     console.log("[model file name] :" + path);
     const modelOutput = await renderFileToString(template, schema);
@@ -35,35 +57,30 @@ async function renderModelFile(path: string, schema: any, template: string) {
 
 // inject to a models index file
 async function renderModelIndexFile(
-  path: string,
-  models: any,
-  template: string,
+  models: ModelConfig[],
+  config: TemplateConfig,
 ) {
+  const { modelIndexFileName, modelIndexTemplate } = config;
   try {
     const modelIndexOutput = await renderFileToString(
-      template,
+      modelIndexTemplate,
       { models },
     );
-    await writeFileStr(path, modelIndexOutput);
-    console.log("[model index file name] :" + path);
+    await writeFileStr(modelIndexFileName, modelIndexOutput);
+    console.log("[model index file name] :" + modelIndexFileName);
   } catch (error) {
     console.log(error);
   }
 }
 
-/**
- * Walk through dir and generate ORM models
- * @param path path
- */
-async function walkModels(path: string) {
+async function useTemplates(): Promise<TemplateConfig> {
   const modelIndexFileName = "models.index.ts";
   const modelIndexTemplate = "models.index.ejs";
-  let models = [];
 
   // Choose a template
   console.log(`Starting waling the dir ${cwd()}`);
   const modelTemplate: string = await Select.prompt({
-    message: `Pick a template`,
+    message: `Pick a template to generate model file `,
     options: [
       { name: "denodb min ejs template", value: "template.denodb.min.ejs" },
       { name: "denodb ejs template", value: "template.denodb.ejs" },
@@ -74,6 +91,28 @@ async function walkModels(path: string) {
     ],
   });
   console.log(`You choosed template: [${modelTemplate}]`);
+  console.log(`Using default model index template: [${modelIndexTemplate}]`);
+  console.log(`Model Index file will be: [${modelIndexFileName}]`);
+  return {
+    modelTemplate,
+    modelIndexFileName,
+    modelIndexTemplate,
+  };
+}
+
+/**
+ * Walk through dir and generate ORM models
+ * @param path path
+ */
+async function walkModels(
+  path: string,
+  config: TemplateConfig,
+): Promise<ModelConfig[]> {
+  const {
+    modelTemplate,
+  } = config;
+
+  let models: ModelConfig[] = [];
 
   // Start walking
   for await (const entry of walk(path)) {
@@ -88,15 +127,17 @@ async function walkModels(path: string) {
     const ext = posix.extname(entry.path);
     if (ext === ".json") {
       try {
-        const shortDirName = posix.dirname(entry.path);
         const shortFileName = posix.basename(entry.path).split(".")[0];
         const modelName = pascalCase(shortFileName);
         const tableName = camelCase(shortFileName) + "s";
+
+        const shortDirName = posix.dirname(entry.path);
         const modelFileName = `${shortDirName}/${tableName}.model.ts`;
+
         // Read file and fetch model schema
         const model: any = await readJson(entry.path);
         // define schema of model
-        const schema = {
+        const schema: SchemaConfig = {
           modelName,
           tableName,
           fields: model.fields,
@@ -120,13 +161,14 @@ async function walkModels(path: string) {
       }
     }
   }
-  // inject to a models index file
-  await renderModelIndexFile(
-    `${cwd()}/${modelIndexFileName}`,
-    models,
-    `${cwd()}/${modelIndexTemplate}`,
-  );
+  return models;
 }
 
-await walkModels(`${cwd()}`);
+const config = await useTemplates();
+const models = await walkModels(`${cwd()}`, config);
+// inject to a models index file
+await renderModelIndexFile(
+  models,
+  config,
+);
 console.log(`Done!`);
