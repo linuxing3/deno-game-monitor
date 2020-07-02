@@ -82,7 +82,6 @@ async function useTemplates(): Promise<TemplateConfig> {
   const modelTemplate: string = await Select.prompt({
     message: `Pick a template to generate model file `,
     options: [
-      { name: "denodb min ejs template", value: "template.denodb.min.ejs" },
       { name: "denodb ejs template", value: "template.denodb.ejs" },
       Select.separator("--------"),
       { name: "dso ejs template", value: "template.dso.ejs" },

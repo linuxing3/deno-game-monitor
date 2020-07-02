@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: ShiftAssignment
 |--------------------------------------------------------------------------
 |
-| Model of shiftAssignments
+| Model Class and Interface of shiftAssignments
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class ShiftAssignment extends Model {
+
+export class ShiftAssignment extends Model { 
   static table = "shiftAssignments";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     employee: DataTypes.STRING,
@@ -30,81 +37,107 @@ export class ShiftAssignment extends Model {
     date: DataTypes.STRING,
     shiftRequest: DataTypes.STRING,
     amendedFrom: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "employee",
-        label: "Employee",
-        type: "select",
-        placeholder: "Input Employee",
-        options: "",
+        key: 'employee',
+        label: 'Employee',
+        type: 'select',
+        placeholder: 'Input Employee',
+        options: '',
+        
       },
       {
-        key: "employeeName",
-        label: "Employee Name",
-        type: "input",
-        placeholder: "Input Employee Name",
-        options: "",
+        key: 'employeeName',
+        label: 'Employee Name',
+        type: 'input',
+        placeholder: 'Input Employee Name',
+        options: '',
+        
       },
       {
-        key: "department",
-        label: "Department",
-        type: "select",
-        placeholder: "Input Department",
-        options: "",
+        key: 'department',
+        label: 'Department',
+        type: 'select',
+        placeholder: 'Input Department',
+        options: '',
+        
       },
       {
-        key: "shiftType",
-        label: "Shift Type",
-        type: "select",
-        placeholder: "Input Shift Type",
-        options: "",
+        key: 'shiftType',
+        label: 'Shift Type',
+        type: 'select',
+        placeholder: 'Input Shift Type',
+        options: '',
+        
       },
       {
-        key: "present",
-        label: "Present",
-        type: "input",
-        placeholder: "Input Present",
-        options: "",
+        key: 'present',
+        label: 'Present',
+        type: 'input',
+        placeholder: 'Input Present',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "date",
-        label: "Date",
-        type: "input",
-        placeholder: "Input Date",
-        options: "",
+        key: 'date',
+        label: 'Date',
+        type: 'input',
+        placeholder: 'Input Date',
+        options: '',
+        
       },
       {
-        key: "shiftRequest",
-        label: "Shift Request",
-        type: "select",
-        placeholder: "Input Shift Request",
-        options: "",
+        key: 'shiftRequest',
+        label: 'Shift Request',
+        type: 'select',
+        placeholder: 'Input Shift Request',
+        options: '',
+        
       },
       {
-        key: "amendedFrom",
-        label: "Amended From",
-        type: "select",
-        placeholder: "Input Amended From",
-        options: "",
+        key: 'amendedFrom',
+        label: 'Amended From',
+        type: 'select',
+        placeholder: 'Input Amended From',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IShiftAssignment {
+  id: FieldValue;
+  employee: FieldValue;
+  employeeName: FieldValue;
+  department: FieldValue;
+  shiftType: FieldValue;
+  present: FieldValue;
+  company: FieldValue;
+  date: FieldValue;
+  shiftRequest: FieldValue;
+  amendedFrom: FieldValue;
+  
 }

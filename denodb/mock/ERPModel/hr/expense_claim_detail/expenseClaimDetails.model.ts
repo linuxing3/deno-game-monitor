@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: ExpenseClaimDetail
 |--------------------------------------------------------------------------
 |
-| Model of expenseClaimDetails
+| Model Class and Interface of expenseClaimDetails
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class ExpenseClaimDetail extends Model {
+
+export class ExpenseClaimDetail extends Model { 
   static table = "expenseClaimDetails";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     expenseDate: DataTypes.STRING,
@@ -27,81 +34,104 @@ export class ExpenseClaimDetail extends Model {
     description: DataTypes.STRING,
     claimAmount: DataTypes.STRING,
     sanctionedAmount: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "expenseDate",
-        label: "Expense Date",
-        type: "input",
-        placeholder: "Input Expense Date",
-        options: "",
+        key: 'expenseDate',
+        label: 'Expense Date',
+        type: 'input',
+        placeholder: 'Input Expense Date',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "expenseClaimType",
-        label: "Expense Claim Type",
-        type: "select",
-        placeholder: "Input Expense Claim Type",
-        options: "",
+        key: 'expenseClaimType',
+        label: 'Expense Claim Type',
+        type: 'select',
+        placeholder: 'Input Expense Claim Type',
+        options: '',
+        
       },
       {
-        key: "defaultAccount",
-        label: "Default Account",
-        type: "select",
-        placeholder: "Input Default Account",
-        options: "",
+        key: 'defaultAccount',
+        label: 'Default Account',
+        type: 'select',
+        placeholder: 'Input Default Account',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "description",
-        label: "Description",
-        type: "input",
-        placeholder: "Input Description",
-        options: "",
+        key: 'description',
+        label: 'Description',
+        type: 'input',
+        placeholder: 'Input Description',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "claimAmount",
-        label: "Claim Amount",
-        type: "select",
-        placeholder: "Input Claim Amount",
-        options: "",
+        key: 'claimAmount',
+        label: 'Claim Amount',
+        type: 'select',
+        placeholder: 'Input Claim Amount',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "sanctionedAmount",
-        label: "Sanctioned Amount",
-        type: "select",
-        placeholder: "Input Sanctioned Amount",
-        options: "",
+        key: 'sanctionedAmount',
+        label: 'Sanctioned Amount',
+        type: 'select',
+        placeholder: 'Input Sanctioned Amount',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IExpenseClaimDetail {
+  id: FieldValue;
+  expenseDate: FieldValue;
+  expenseClaimType: FieldValue;
+  defaultAccount: FieldValue;
+  description: FieldValue;
+  claimAmount: FieldValue;
+  sanctionedAmount: FieldValue;
+  
 }

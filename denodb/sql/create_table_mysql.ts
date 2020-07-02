@@ -3,11 +3,9 @@ import {
   User,
   Member,
   Document,
-  Vehicle,
   Militant,
-  Project,
-  Flight,
 } from "../mock/models.ts";
+import { models } from "../mock/models.index.ts";
 
 const mydb = new Database("mysql", {
   host: "xunqinji.top",
@@ -17,7 +15,7 @@ const mydb = new Database("mysql", {
   port: 9005,
 });
 
-mydb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);
+mydb.link([User, Member, Document, Militant, ...models]);
 
 await mydb.sync({ drop: true });
 

@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: LeaveEncashment
 |--------------------------------------------------------------------------
 |
-| Model of leaveEncashments
+| Model Class and Interface of leaveEncashments
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class LeaveEncashment extends Model {
+
+export class LeaveEncashment extends Model { 
   static table = "leaveEncashments";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     leavePeriod: DataTypes.STRING,
@@ -34,109 +41,143 @@ export class LeaveEncashment extends Model {
     encashmentAmount: DataTypes.STRING,
     encashmentDate: DataTypes.STRING,
     additionalSalary: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "leavePeriod",
-        label: "Leave Period",
-        type: "select",
-        placeholder: "Input Leave Period",
-        options: "",
+        key: 'leavePeriod',
+        label: 'Leave Period',
+        type: 'select',
+        placeholder: 'Input Leave Period',
+        options: '',
+        
       },
       {
-        key: "employee",
-        label: "Employee",
-        type: "select",
-        placeholder: "Input Employee",
-        options: "",
+        key: 'employee',
+        label: 'Employee',
+        type: 'select',
+        placeholder: 'Input Employee',
+        options: '',
+        
       },
       {
-        key: "employeeName",
-        label: "Employee Name",
-        type: "input",
-        placeholder: "Input Employee Name",
-        options: "",
+        key: 'employeeName',
+        label: 'Employee Name',
+        type: 'input',
+        placeholder: 'Input Employee Name',
+        options: '',
+        
       },
       {
-        key: "department",
-        label: "Department",
-        type: "select",
-        placeholder: "Input Department",
-        options: "",
+        key: 'department',
+        label: 'Department',
+        type: 'select',
+        placeholder: 'Input Department',
+        options: '',
+        
       },
       {
-        key: "leaveType",
-        label: "Leave Type",
-        type: "select",
-        placeholder: "Input Leave Type",
-        options: "",
+        key: 'leaveType',
+        label: 'Leave Type',
+        type: 'select',
+        placeholder: 'Input Leave Type',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "leaveAllocation",
-        label: "Leave Allocation",
-        type: "select",
-        placeholder: "Input Leave Allocation",
-        options: "",
+        key: 'leaveAllocation',
+        label: 'Leave Allocation',
+        type: 'select',
+        placeholder: 'Input Leave Allocation',
+        options: '',
+        
       },
       {
-        key: "leaveBalance",
-        label: "Leave Balance",
-        type: "input",
-        placeholder: "Input Leave Balance",
-        options: "",
+        key: 'leaveBalance',
+        label: 'Leave Balance',
+        type: 'input',
+        placeholder: 'Input Leave Balance',
+        options: '',
+        
       },
       {
-        key: "encashableDays",
-        label: "Encashable Days",
-        type: "input",
-        placeholder: "Input Encashable Days",
-        options: "",
+        key: 'encashableDays',
+        label: 'Encashable Days',
+        type: 'input',
+        placeholder: 'Input Encashable Days',
+        options: '',
+        
       },
       {
-        key: "amendedFrom",
-        label: "Amended From",
-        type: "select",
-        placeholder: "Input Amended From",
-        options: "",
+        key: 'amendedFrom',
+        label: 'Amended From',
+        type: 'select',
+        placeholder: 'Input Amended From',
+        options: '',
+        
       },
       {
-        key: "payroll",
-        label: "Payroll",
-        type: "input",
-        placeholder: "Input Payroll",
-        options: "",
+        key: 'payroll',
+        label: 'Payroll',
+        type: 'input',
+        placeholder: 'Input Payroll',
+        options: '',
+        
       },
       {
-        key: "encashmentAmount",
-        label: "Encashment Amount",
-        type: "input",
-        placeholder: "Input Encashment Amount",
-        options: "",
+        key: 'encashmentAmount',
+        label: 'Encashment Amount',
+        type: 'input',
+        placeholder: 'Input Encashment Amount',
+        options: '',
+        
       },
       {
-        key: "encashmentDate",
-        label: "Encashment Date",
-        type: "input",
-        placeholder: "Input Encashment Date",
-        options: "",
+        key: 'encashmentDate',
+        label: 'Encashment Date',
+        type: 'input',
+        placeholder: 'Input Encashment Date',
+        options: '',
+        
       },
       {
-        key: "additionalSalary",
-        label: "Additional Salary",
-        type: "select",
-        placeholder: "Input Additional Salary",
-        options: "",
+        key: 'additionalSalary',
+        label: 'Additional Salary',
+        type: 'select',
+        placeholder: 'Input Additional Salary',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ILeaveEncashment {
+  id: FieldValue;
+  leavePeriod: FieldValue;
+  employee: FieldValue;
+  employeeName: FieldValue;
+  department: FieldValue;
+  leaveType: FieldValue;
+  leaveAllocation: FieldValue;
+  leaveBalance: FieldValue;
+  encashableDays: FieldValue;
+  amendedFrom: FieldValue;
+  payroll: FieldValue;
+  encashmentAmount: FieldValue;
+  encashmentDate: FieldValue;
+  additionalSalary: FieldValue;
+  
 }

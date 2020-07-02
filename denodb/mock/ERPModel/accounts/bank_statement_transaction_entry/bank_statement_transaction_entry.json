@@ -141,13 +141,6 @@
       "options": []
     },
     {
-      "key": "reconciledTransactions",
-      "label": "Reconciled Transactions",
-      "type": "select",
-      "placeholder": "Input Reconciled Transactions",
-      "options": []
-    },
-    {
       "key": "amendedFrom",
       "label": "Amended From",
       "type": "select",

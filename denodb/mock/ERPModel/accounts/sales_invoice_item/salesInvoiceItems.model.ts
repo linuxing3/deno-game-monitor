@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: SalesInvoiceItem
 |--------------------------------------------------------------------------
 |
-| Model of salesInvoiceItems
+| Model Class and Interface of salesInvoiceItems
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class SalesInvoiceItem extends Model {
+
+export class SalesInvoiceItem extends Model { 
   static table = "salesInvoiceItems";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     barcode: DataTypes.STRING,
@@ -90,606 +97,767 @@ export class SalesInvoiceItem extends Model {
     isFixedAsset: DataTypes.STRING,
     asset: DataTypes.STRING,
     pageBreak: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "barcode",
-        label: "Barcode",
-        type: "input",
-        placeholder: "Input Barcode",
-        options: "",
+        key: 'barcode',
+        label: 'Barcode',
+        type: 'input',
+        placeholder: 'Input Barcode',
+        options: '',
+        
+      },
+      {
+        key: 'item',
+        label: 'Item',
+        type: 'select',
+        placeholder: 'Input Item',
+        options: '',
+        
+      },
+      {
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
+      },
+      {
+        key: 'itemName',
+        label: 'Item Name',
+        type: 'input',
+        placeholder: 'Input Item Name',
+        options: '',
+        
+      },
+      {
+        key: 'customerSItemCode',
+        label: 'Customer S Item Code',
+        type: 'input',
+        placeholder: 'Input Customer S Item Code',
+        options: '',
+        
+      },
+      {
+        key: 'editDescription',
+        label: 'Edit Description',
+        type: 'input',
+        placeholder: 'Input Edit Description',
+        options: '',
+        
+      },
+      {
+        key: 'description',
+        label: 'Description',
+        type: 'input',
+        placeholder: 'Input Description',
+        options: '',
+        
+      },
+      {
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
+      },
+      {
+        key: 'imageView',
+        label: 'Image View',
+        type: 'select',
+        placeholder: 'Input Image View',
+        options: '',
+        
+      },
+      {
+        key: 'image',
+        label: 'Image',
+        type: 'input',
+        placeholder: 'Input Image',
+        options: '',
+        
+      },
+      {
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
+      },
+      {
+        key: 'quantity',
+        label: 'Quantity',
+        type: 'input',
+        placeholder: 'Input Quantity',
+        options: '',
+        
+      },
+      {
+        key: 'stockUom',
+        label: 'Stock Uom',
+        type: 'select',
+        placeholder: 'Input Stock Uom',
+        options: '',
+        
       },
       {
-        key: "item",
-        label: "Item",
-        type: "select",
-        placeholder: "Input Item",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'uom',
+        label: 'Uom',
+        type: 'select',
+        placeholder: 'Input Uom',
+        options: '',
+        
       },
       {
-        key: "itemName",
-        label: "Item Name",
-        type: "input",
-        placeholder: "Input Item Name",
-        options: "",
+        key: 'uomConversionFactor',
+        label: 'Uom Conversion Factor',
+        type: 'input',
+        placeholder: 'Input Uom Conversion Factor',
+        options: '',
+        
       },
       {
-        key: "customerSItemCode",
-        label: "Customer S Item Code",
-        type: "input",
-        placeholder: "Input Customer S Item Code",
-        options: "",
+        key: 'qtyAsPerStockUom',
+        label: 'Qty As Per Stock Uom',
+        type: 'input',
+        placeholder: 'Input Qty As Per Stock Uom',
+        options: '',
+        
       },
       {
-        key: "editDescription",
-        label: "Edit Description",
-        type: "input",
-        placeholder: "Input Edit Description",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "description",
-        label: "Description",
-        type: "input",
-        placeholder: "Input Description",
-        options: "",
+        key: 'priceListRate',
+        label: 'Price List Rate',
+        type: 'select',
+        placeholder: 'Input Price List Rate',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'priceListRateCompanyCurrency',
+        label: 'Price List Rate Company Currency',
+        type: 'select',
+        placeholder: 'Input Price List Rate Company Currency',
+        options: '',
+        
       },
       {
-        key: "imageView",
-        label: "Image View",
-        type: "select",
-        placeholder: "Input Image View",
-        options: "",
+        key: 'discountAndMargin',
+        label: 'Discount And Margin',
+        type: 'input',
+        placeholder: 'Input Discount And Margin',
+        options: '',
+        
       },
       {
-        key: "image",
-        label: "Image",
-        type: "input",
-        placeholder: "Input Image",
-        options: "",
+        key: 'marginType',
+        label: 'Margin Type',
+        type: 'select',
+        placeholder: 'Input Margin Type',
+        options: '[object Object],[object Object]',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'marginRateOrAmount',
+        label: 'Margin Rate Or Amount',
+        type: 'input',
+        placeholder: 'Input Margin Rate Or Amount',
+        options: '',
+        
       },
       {
-        key: "quantity",
-        label: "Quantity",
-        type: "input",
-        placeholder: "Input Quantity",
-        options: "",
+        key: 'rateWithMargin',
+        label: 'Rate With Margin',
+        type: 'select',
+        placeholder: 'Input Rate With Margin',
+        options: '',
+        
       },
       {
-        key: "stockUom",
-        label: "Stock Uom",
-        type: "select",
-        placeholder: "Input Stock Uom",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'discountOnPriceListRateWithMargin',
+        label: 'Discount On Price List Rate With Margin',
+        type: 'input',
+        placeholder: 'Input Discount On Price List Rate With Margin',
+        options: '',
+        
       },
       {
-        key: "uom",
-        label: "Uom",
-        type: "select",
-        placeholder: "Input Uom",
-        options: "",
+        key: 'discountAmount',
+        label: 'Discount Amount',
+        type: 'select',
+        placeholder: 'Input Discount Amount',
+        options: '',
+        
       },
       {
-        key: "uomConversionFactor",
-        label: "Uom Conversion Factor",
-        type: "input",
-        placeholder: "Input Uom Conversion Factor",
-        options: "",
+        key: 'rateWithMarginCompanyCurrency',
+        label: 'Rate With Margin Company Currency',
+        type: 'select',
+        placeholder: 'Input Rate With Margin Company Currency',
+        options: '',
+        
       },
       {
-        key: "qtyAsPerStockUom",
-        label: "Qty As Per Stock Uom",
-        type: "input",
-        placeholder: "Input Qty As Per Stock Uom",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'rate',
+        label: 'Rate',
+        type: 'select',
+        placeholder: 'Input Rate',
+        options: '',
+        
       },
       {
-        key: "priceListRate",
-        label: "Price List Rate",
-        type: "select",
-        placeholder: "Input Price List Rate",
-        options: "",
+        key: 'amount',
+        label: 'Amount',
+        type: 'select',
+        placeholder: 'Input Amount',
+        options: '',
+        
       },
       {
-        key: "priceListRateCompanyCurrency",
-        label: "Price List Rate Company Currency",
-        type: "select",
-        placeholder: "Input Price List Rate Company Currency",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "discountAndMargin",
-        label: "Discount And Margin",
-        type: "input",
-        placeholder: "Input Discount And Margin",
-        options: "",
+        key: 'rateCompanyCurrency',
+        label: 'Rate Company Currency',
+        type: 'select',
+        placeholder: 'Input Rate Company Currency',
+        options: '',
+        
       },
       {
-        key: "marginType",
-        label: "Margin Type",
-        type: "select",
-        placeholder: "Input Margin Type",
-        options: "[object Object],[object Object]",
+        key: 'amountCompanyCurrency',
+        label: 'Amount Company Currency',
+        type: 'select',
+        placeholder: 'Input Amount Company Currency',
+        options: '',
+        
       },
       {
-        key: "marginRateOrAmount",
-        label: "Margin Rate Or Amount",
-        type: "input",
-        placeholder: "Input Margin Rate Or Amount",
-        options: "",
+        key: 'pricingRule',
+        label: 'Pricing Rule',
+        type: 'select',
+        placeholder: 'Input Pricing Rule',
+        options: '',
+        
       },
       {
-        key: "rateWithMargin",
-        label: "Rate With Margin",
-        type: "select",
-        placeholder: "Input Rate With Margin",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'netRate',
+        label: 'Net Rate',
+        type: 'select',
+        placeholder: 'Input Net Rate',
+        options: '',
+        
       },
       {
-        key: "discountOnPriceListRateWithMargin",
-        label: "Discount On Price List Rate With Margin",
-        type: "input",
-        placeholder: "Input Discount On Price List Rate With Margin",
-        options: "",
+        key: 'netAmount',
+        label: 'Net Amount',
+        type: 'select',
+        placeholder: 'Input Net Amount',
+        options: '',
+        
       },
       {
-        key: "discountAmount",
-        label: "Discount Amount",
-        type: "select",
-        placeholder: "Input Discount Amount",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "rateWithMarginCompanyCurrency",
-        label: "Rate With Margin Company Currency",
-        type: "select",
-        placeholder: "Input Rate With Margin Company Currency",
-        options: "",
+        key: 'netRateCompanyCurrency',
+        label: 'Net Rate Company Currency',
+        type: 'select',
+        placeholder: 'Input Net Rate Company Currency',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'netAmountCompanyCurrency',
+        label: 'Net Amount Company Currency',
+        type: 'select',
+        placeholder: 'Input Net Amount Company Currency',
+        options: '',
+        
       },
       {
-        key: "rate",
-        label: "Rate",
-        type: "select",
-        placeholder: "Input Rate",
-        options: "",
+        key: 'dropShip',
+        label: 'Drop Ship',
+        type: 'input',
+        placeholder: 'Input Drop Ship',
+        options: '',
+        
       },
       {
-        key: "amount",
-        label: "Amount",
-        type: "select",
-        placeholder: "Input Amount",
-        options: "",
+        key: 'deliveredBySupplier',
+        label: 'Delivered By Supplier',
+        type: 'input',
+        placeholder: 'Input Delivered By Supplier',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'accountingDetails',
+        label: 'Accounting Details',
+        type: 'input',
+        placeholder: 'Input Accounting Details',
+        options: '',
+        
       },
       {
-        key: "rateCompanyCurrency",
-        label: "Rate Company Currency",
-        type: "select",
-        placeholder: "Input Rate Company Currency",
-        options: "",
+        key: 'incomeAccount',
+        label: 'Income Account',
+        type: 'select',
+        placeholder: 'Input Income Account',
+        options: '',
+        
       },
       {
-        key: "amountCompanyCurrency",
-        label: "Amount Company Currency",
-        type: "select",
-        placeholder: "Input Amount Company Currency",
-        options: "",
+        key: 'expenseAccount',
+        label: 'Expense Account',
+        type: 'select',
+        placeholder: 'Input Expense Account',
+        options: '',
+        
       },
       {
-        key: "pricingRule",
-        label: "Pricing Rule",
-        type: "select",
-        placeholder: "Input Pricing Rule",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'itemTaxTemplate',
+        label: 'Item Tax Template',
+        type: 'select',
+        placeholder: 'Input Item Tax Template',
+        options: '',
+        
       },
       {
-        key: "netRate",
-        label: "Net Rate",
-        type: "select",
-        placeholder: "Input Net Rate",
-        options: "",
+        key: 'costCenter',
+        label: 'Cost Center',
+        type: 'select',
+        placeholder: 'Input Cost Center',
+        options: '',
+        
       },
       {
-        key: "netAmount",
-        label: "Net Amount",
-        type: "select",
-        placeholder: "Input Net Amount",
-        options: "",
+        key: 'deferredRevenue',
+        label: 'Deferred Revenue',
+        type: 'input',
+        placeholder: 'Input Deferred Revenue',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'deferredRevenueAccount',
+        label: 'Deferred Revenue Account',
+        type: 'select',
+        placeholder: 'Input Deferred Revenue Account',
+        options: '',
+        
       },
       {
-        key: "netRateCompanyCurrency",
-        label: "Net Rate Company Currency",
-        type: "select",
-        placeholder: "Input Net Rate Company Currency",
-        options: "",
+        key: 'serviceStopDate',
+        label: 'Service Stop Date',
+        type: 'input',
+        placeholder: 'Input Service Stop Date',
+        options: '',
+        
       },
       {
-        key: "netAmountCompanyCurrency",
-        label: "Net Amount Company Currency",
-        type: "select",
-        placeholder: "Input Net Amount Company Currency",
-        options: "",
+        key: 'enableDeferredRevenue',
+        label: 'Enable Deferred Revenue',
+        type: 'input',
+        placeholder: 'Input Enable Deferred Revenue',
+        options: '',
+        
       },
       {
-        key: "dropShip",
-        label: "Drop Ship",
-        type: "input",
-        placeholder: "Input Drop Ship",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "deliveredBySupplier",
-        label: "Delivered By Supplier",
-        type: "input",
-        placeholder: "Input Delivered By Supplier",
-        options: "",
+        key: 'serviceStartDate',
+        label: 'Service Start Date',
+        type: 'input',
+        placeholder: 'Input Service Start Date',
+        options: '',
+        
       },
       {
-        key: "accountingDetails",
-        label: "Accounting Details",
-        type: "input",
-        placeholder: "Input Accounting Details",
-        options: "",
+        key: 'serviceEndDate',
+        label: 'Service End Date',
+        type: 'input',
+        placeholder: 'Input Service End Date',
+        options: '',
+        
       },
       {
-        key: "incomeAccount",
-        label: "Income Account",
-        type: "select",
-        placeholder: "Input Income Account",
-        options: "",
+        key: 'itemWeightDetails',
+        label: 'Item Weight Details',
+        type: 'input',
+        placeholder: 'Input Item Weight Details',
+        options: '',
+        
       },
       {
-        key: "expenseAccount",
-        label: "Expense Account",
-        type: "select",
-        placeholder: "Input Expense Account",
-        options: "",
+        key: 'weightPerUnit',
+        label: 'Weight Per Unit',
+        type: 'input',
+        placeholder: 'Input Weight Per Unit',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'totalWeight',
+        label: 'Total Weight',
+        type: 'input',
+        placeholder: 'Input Total Weight',
+        options: '',
+        
       },
       {
-        key: "itemTaxTemplate",
-        label: "Item Tax Template",
-        type: "select",
-        placeholder: "Input Item Tax Template",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "costCenter",
-        label: "Cost Center",
-        type: "select",
-        placeholder: "Input Cost Center",
-        options: "",
+        key: 'weightUom',
+        label: 'Weight Uom',
+        type: 'select',
+        placeholder: 'Input Weight Uom',
+        options: '',
+        
       },
       {
-        key: "deferredRevenue",
-        label: "Deferred Revenue",
-        type: "input",
-        placeholder: "Input Deferred Revenue",
-        options: "",
+        key: 'stockDetails',
+        label: 'Stock Details',
+        type: 'input',
+        placeholder: 'Input Stock Details',
+        options: '',
+        
       },
       {
-        key: "deferredRevenueAccount",
-        label: "Deferred Revenue Account",
-        type: "select",
-        placeholder: "Input Deferred Revenue Account",
-        options: "",
+        key: 'warehouse',
+        label: 'Warehouse',
+        type: 'select',
+        placeholder: 'Input Warehouse',
+        options: '',
+        
       },
       {
-        key: "serviceStopDate",
-        label: "Service Stop Date",
-        type: "input",
-        placeholder: "Input Service Stop Date",
-        options: "",
+        key: 'customerWarehouseOptional',
+        label: 'Customer Warehouse Optional',
+        type: 'select',
+        placeholder: 'Input Customer Warehouse Optional',
+        options: '',
+        
       },
       {
-        key: "enableDeferredRevenue",
-        label: "Enable Deferred Revenue",
-        type: "input",
-        placeholder: "Input Enable Deferred Revenue",
-        options: "",
+        key: 'qualityInspection',
+        label: 'Quality Inspection',
+        type: 'select',
+        placeholder: 'Input Quality Inspection',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'batchNo',
+        label: 'Batch No',
+        type: 'select',
+        placeholder: 'Input Batch No',
+        options: '',
+        
       },
       {
-        key: "serviceStartDate",
-        label: "Service Start Date",
-        type: "input",
-        placeholder: "Input Service Start Date",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "serviceEndDate",
-        label: "Service End Date",
-        type: "input",
-        placeholder: "Input Service End Date",
-        options: "",
+        key: 'allowZeroValuationRate',
+        label: 'Allow Zero Valuation Rate',
+        type: 'input',
+        placeholder: 'Input Allow Zero Valuation Rate',
+        options: '',
+        
       },
       {
-        key: "itemWeightDetails",
-        label: "Item Weight Details",
-        type: "input",
-        placeholder: "Input Item Weight Details",
-        options: "",
+        key: 'serialNo',
+        label: 'Serial No',
+        type: 'input',
+        placeholder: 'Input Serial No',
+        options: '',
+        
       },
       {
-        key: "weightPerUnit",
-        label: "Weight Per Unit",
-        type: "input",
-        placeholder: "Input Weight Per Unit",
-        options: "",
+        key: 'itemGroup',
+        label: 'Item Group',
+        type: 'select',
+        placeholder: 'Input Item Group',
+        options: '',
+        
       },
       {
-        key: "totalWeight",
-        label: "Total Weight",
-        type: "input",
-        placeholder: "Input Total Weight",
-        options: "",
+        key: 'brandName',
+        label: 'Brand Name',
+        type: 'input',
+        placeholder: 'Input Brand Name',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'itemTaxRate',
+        label: 'Item Tax Rate',
+        type: 'input',
+        placeholder: 'Input Item Tax Rate',
+        options: '',
+        
       },
       {
-        key: "weightUom",
-        label: "Weight Uom",
-        type: "select",
-        placeholder: "Input Weight Uom",
-        options: "",
-      },
-      {
-        key: "stockDetails",
-        label: "Stock Details",
-        type: "input",
-        placeholder: "Input Stock Details",
-        options: "",
-      },
-      {
-        key: "warehouse",
-        label: "Warehouse",
-        type: "select",
-        placeholder: "Input Warehouse",
-        options: "",
-      },
-      {
-        key: "customerWarehouseOptional",
-        label: "Customer Warehouse Optional",
-        type: "select",
-        placeholder: "Input Customer Warehouse Optional",
-        options: "",
-      },
-      {
-        key: "qualityInspection",
-        label: "Quality Inspection",
-        type: "select",
-        placeholder: "Input Quality Inspection",
-        options: "",
-      },
-      {
-        key: "batchNo",
-        label: "Batch No",
-        type: "select",
-        placeholder: "Input Batch No",
-        options: "",
-      },
-      {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
-      },
-      {
-        key: "allowZeroValuationRate",
-        label: "Allow Zero Valuation Rate",
-        type: "input",
-        placeholder: "Input Allow Zero Valuation Rate",
-        options: "",
-      },
-      {
-        key: "serialNo",
-        label: "Serial No",
-        type: "input",
-        placeholder: "Input Serial No",
-        options: "",
-      },
-      {
-        key: "itemGroup",
-        label: "Item Group",
-        type: "select",
-        placeholder: "Input Item Group",
-        options: "",
-      },
-      {
-        key: "brandName",
-        label: "Brand Name",
-        type: "input",
-        placeholder: "Input Brand Name",
-        options: "",
-      },
-      {
-        key: "itemTaxRate",
-        label: "Item Tax Rate",
-        type: "input",
-        placeholder: "Input Item Tax Rate",
-        options: "",
-      },
-      {
-        key: "availableBatchQtyAtWarehouse",
-        label: "Available Batch Qty At Warehouse",
-        type: "input",
-        placeholder: "Input Available Batch Qty At Warehouse",
-        options: "",
-      },
-      {
-        key: "availableQtyAtWarehouse",
-        label: "Available Qty At Warehouse",
-        type: "input",
-        placeholder: "Input Available Qty At Warehouse",
-        options: "",
-      },
-      {
-        key: "references",
-        label: "References",
-        type: "input",
-        placeholder: "Input References",
-        options: "",
-      },
-      {
-        key: "salesOrder",
-        label: "Sales Order",
-        type: "select",
-        placeholder: "Input Sales Order",
-        options: "",
-      },
-      {
-        key: "salesOrderItem",
-        label: "Sales Order Item",
-        type: "input",
-        placeholder: "Input Sales Order Item",
-        options: "",
-      },
-      {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
-      },
-      {
-        key: "deliveryNote",
-        label: "Delivery Note",
-        type: "select",
-        placeholder: "Input Delivery Note",
-        options: "",
-      },
-      {
-        key: "deliveryNoteItem",
-        label: "Delivery Note Item",
-        type: "input",
-        placeholder: "Input Delivery Note Item",
-        options: "",
-      },
-      {
-        key: "deliveredQty",
-        label: "Delivered Qty",
-        type: "input",
-        placeholder: "Input Delivered Qty",
-        options: "",
-      },
-      {
-        key: "isFixedAsset",
-        label: "Is Fixed Asset",
-        type: "input",
-        placeholder: "Input Is Fixed Asset",
-        options: "",
-      },
-      {
-        key: "asset",
-        label: "Asset",
-        type: "select",
-        placeholder: "Input Asset",
-        options: "",
-      },
-      {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
-      },
-      {
-        key: "pageBreak",
-        label: "Page Break",
-        type: "input",
-        placeholder: "Input Page Break",
-        options: "",
-      },
-    ],
+        key: 'availableBatchQtyAtWarehouse',
+        label: 'Available Batch Qty At Warehouse',
+        type: 'input',
+        placeholder: 'Input Available Batch Qty At Warehouse',
+        options: '',
+        
+      },
+      {
+        key: 'availableQtyAtWarehouse',
+        label: 'Available Qty At Warehouse',
+        type: 'input',
+        placeholder: 'Input Available Qty At Warehouse',
+        options: '',
+        
+      },
+      {
+        key: 'references',
+        label: 'References',
+        type: 'input',
+        placeholder: 'Input References',
+        options: '',
+        
+      },
+      {
+        key: 'salesOrder',
+        label: 'Sales Order',
+        type: 'select',
+        placeholder: 'Input Sales Order',
+        options: '',
+        
+      },
+      {
+        key: 'salesOrderItem',
+        label: 'Sales Order Item',
+        type: 'input',
+        placeholder: 'Input Sales Order Item',
+        options: '',
+        
+      },
+      {
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
+      },
+      {
+        key: 'deliveryNote',
+        label: 'Delivery Note',
+        type: 'select',
+        placeholder: 'Input Delivery Note',
+        options: '',
+        
+      },
+      {
+        key: 'deliveryNoteItem',
+        label: 'Delivery Note Item',
+        type: 'input',
+        placeholder: 'Input Delivery Note Item',
+        options: '',
+        
+      },
+      {
+        key: 'deliveredQty',
+        label: 'Delivered Qty',
+        type: 'input',
+        placeholder: 'Input Delivered Qty',
+        options: '',
+        
+      },
+      {
+        key: 'isFixedAsset',
+        label: 'Is Fixed Asset',
+        type: 'input',
+        placeholder: 'Input Is Fixed Asset',
+        options: '',
+        
+      },
+      {
+        key: 'asset',
+        label: 'Asset',
+        type: 'select',
+        placeholder: 'Input Asset',
+        options: '',
+        
+      },
+      {
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
+      },
+      {
+        key: 'pageBreak',
+        label: 'Page Break',
+        type: 'input',
+        placeholder: 'Input Page Break',
+        options: '',
+        
+      },
+      
+    ]
   };
+}
+
+export interface ISalesInvoiceItem {
+  id: FieldValue;
+  barcode: FieldValue;
+  item: FieldValue;
+  itemName: FieldValue;
+  customerSItemCode: FieldValue;
+  editDescription: FieldValue;
+  description: FieldValue;
+  imageView: FieldValue;
+  image: FieldValue;
+  quantity: FieldValue;
+  stockUom: FieldValue;
+  uom: FieldValue;
+  uomConversionFactor: FieldValue;
+  qtyAsPerStockUom: FieldValue;
+  priceListRate: FieldValue;
+  priceListRateCompanyCurrency: FieldValue;
+  discountAndMargin: FieldValue;
+  marginType: FieldValue;
+  marginRateOrAmount: FieldValue;
+  rateWithMargin: FieldValue;
+  discountOnPriceListRateWithMargin: FieldValue;
+  discountAmount: FieldValue;
+  rateWithMarginCompanyCurrency: FieldValue;
+  rate: FieldValue;
+  amount: FieldValue;
+  rateCompanyCurrency: FieldValue;
+  amountCompanyCurrency: FieldValue;
+  pricingRule: FieldValue;
+  netRate: FieldValue;
+  netAmount: FieldValue;
+  netRateCompanyCurrency: FieldValue;
+  netAmountCompanyCurrency: FieldValue;
+  dropShip: FieldValue;
+  deliveredBySupplier: FieldValue;
+  accountingDetails: FieldValue;
+  incomeAccount: FieldValue;
+  expenseAccount: FieldValue;
+  itemTaxTemplate: FieldValue;
+  costCenter: FieldValue;
+  deferredRevenue: FieldValue;
+  deferredRevenueAccount: FieldValue;
+  serviceStopDate: FieldValue;
+  enableDeferredRevenue: FieldValue;
+  serviceStartDate: FieldValue;
+  serviceEndDate: FieldValue;
+  itemWeightDetails: FieldValue;
+  weightPerUnit: FieldValue;
+  totalWeight: FieldValue;
+  weightUom: FieldValue;
+  stockDetails: FieldValue;
+  warehouse: FieldValue;
+  customerWarehouseOptional: FieldValue;
+  qualityInspection: FieldValue;
+  batchNo: FieldValue;
+  allowZeroValuationRate: FieldValue;
+  serialNo: FieldValue;
+  itemGroup: FieldValue;
+  brandName: FieldValue;
+  itemTaxRate: FieldValue;
+  availableBatchQtyAtWarehouse: FieldValue;
+  availableQtyAtWarehouse: FieldValue;
+  references: FieldValue;
+  salesOrder: FieldValue;
+  salesOrderItem: FieldValue;
+  deliveryNote: FieldValue;
+  deliveryNoteItem: FieldValue;
+  deliveredQty: FieldValue;
+  isFixedAsset: FieldValue;
+  asset: FieldValue;
+  pageBreak: FieldValue;
+  
 }

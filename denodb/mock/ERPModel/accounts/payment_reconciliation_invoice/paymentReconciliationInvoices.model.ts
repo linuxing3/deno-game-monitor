@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: PaymentReconciliationInvoice
 |--------------------------------------------------------------------------
 |
-| Model of paymentReconciliationInvoices
+| Model Class and Interface of paymentReconciliationInvoices
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class PaymentReconciliationInvoice extends Model {
+
+export class PaymentReconciliationInvoice extends Model { 
   static table = "paymentReconciliationInvoices";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     invoiceType: DataTypes.STRING,
@@ -26,53 +33,71 @@ export class PaymentReconciliationInvoice extends Model {
     invoiceDate: DataTypes.STRING,
     amount: DataTypes.STRING,
     outstandingAmount: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "invoiceType",
-        label: "Invoice Type",
-        type: "select",
-        placeholder: "Input Invoice Type",
-        options: "[object Object],[object Object]",
+        key: 'invoiceType',
+        label: 'Invoice Type',
+        type: 'select',
+        placeholder: 'Input Invoice Type',
+        options: '[object Object],[object Object]',
+        
       },
       {
-        key: "invoiceNumber",
-        label: "Invoice Number",
-        type: "select",
-        placeholder: "Input Invoice Number",
-        options: "",
+        key: 'invoiceNumber',
+        label: 'Invoice Number',
+        type: 'select',
+        placeholder: 'Input Invoice Number',
+        options: '',
+        
       },
       {
-        key: "invoiceDate",
-        label: "Invoice Date",
-        type: "input",
-        placeholder: "Input Invoice Date",
-        options: "",
+        key: 'invoiceDate',
+        label: 'Invoice Date',
+        type: 'input',
+        placeholder: 'Input Invoice Date',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "amount",
-        label: "Amount",
-        type: "input",
-        placeholder: "Input Amount",
-        options: "",
+        key: 'amount',
+        label: 'Amount',
+        type: 'input',
+        placeholder: 'Input Amount',
+        options: '',
+        
       },
       {
-        key: "outstandingAmount",
-        label: "Outstanding Amount",
-        type: "input",
-        placeholder: "Input Outstanding Amount",
-        options: "",
+        key: 'outstandingAmount',
+        label: 'Outstanding Amount',
+        type: 'input',
+        placeholder: 'Input Outstanding Amount',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IPaymentReconciliationInvoice {
+  id: FieldValue;
+  invoiceType: FieldValue;
+  invoiceNumber: FieldValue;
+  invoiceDate: FieldValue;
+  amount: FieldValue;
+  outstandingAmount: FieldValue;
+  
 }

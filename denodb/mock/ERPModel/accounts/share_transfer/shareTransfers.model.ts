@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: ShareTransfer
 |--------------------------------------------------------------------------
 |
-| Model of shareTransfers
+| Model Class and Interface of shareTransfers
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class ShareTransfer extends Model {
+
+export class ShareTransfer extends Model { 
   static table = "shareTransfers";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     transferType: DataTypes.STRING,
@@ -38,179 +45,227 @@ export class ShareTransfer extends Model {
     company: DataTypes.STRING,
     remarks: DataTypes.STRING,
     amendedFrom: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "transferType",
-        label: "Transfer Type",
-        type: "select",
-        placeholder: "Input Transfer Type",
-        options: "[object Object],[object Object],[object Object]",
+        key: 'transferType',
+        label: 'Transfer Type',
+        type: 'select',
+        placeholder: 'Input Transfer Type',
+        options: '[object Object],[object Object],[object Object]',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "date",
-        label: "Date",
-        type: "input",
-        placeholder: "Input Date",
-        options: "",
+        key: 'date',
+        label: 'Date',
+        type: 'input',
+        placeholder: 'Input Date',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "fromShareholder",
-        label: "From Shareholder",
-        type: "select",
-        placeholder: "Input From Shareholder",
-        options: "",
+        key: 'fromShareholder',
+        label: 'From Shareholder',
+        type: 'select',
+        placeholder: 'Input From Shareholder',
+        options: '',
+        
       },
       {
-        key: "fromFolioNo",
-        label: "From Folio No",
-        type: "input",
-        placeholder: "Input From Folio No",
-        options: "",
+        key: 'fromFolioNo',
+        label: 'From Folio No',
+        type: 'input',
+        placeholder: 'Input From Folio No',
+        options: '',
+        
       },
       {
-        key: "equityLiabilityAccount",
-        label: "Equity Liability Account",
-        type: "select",
-        placeholder: "Input Equity Liability Account",
-        options: "",
+        key: 'equityLiabilityAccount',
+        label: 'Equity Liability Account',
+        type: 'select',
+        placeholder: 'Input Equity Liability Account',
+        options: '',
+        
       },
       {
-        key: "assetAccount",
-        label: "Asset Account",
-        type: "select",
-        placeholder: "Input Asset Account",
-        options: "",
+        key: 'assetAccount',
+        label: 'Asset Account',
+        type: 'select',
+        placeholder: 'Input Asset Account',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "toShareholder",
-        label: "To Shareholder",
-        type: "select",
-        placeholder: "Input To Shareholder",
-        options: "",
+        key: 'toShareholder',
+        label: 'To Shareholder',
+        type: 'select',
+        placeholder: 'Input To Shareholder',
+        options: '',
+        
       },
       {
-        key: "toFolioNo",
-        label: "To Folio No",
-        type: "input",
-        placeholder: "Input To Folio No",
-        options: "",
+        key: 'toFolioNo',
+        label: 'To Folio No',
+        type: 'input',
+        placeholder: 'Input To Folio No',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "shareType",
-        label: "Share Type",
-        type: "select",
-        placeholder: "Input Share Type",
-        options: "",
+        key: 'shareType',
+        label: 'Share Type',
+        type: 'select',
+        placeholder: 'Input Share Type',
+        options: '',
+        
       },
       {
-        key: "fromNo",
-        label: "From No",
-        type: "input",
-        placeholder: "Input From No",
-        options: "",
+        key: 'fromNo',
+        label: 'From No',
+        type: 'input',
+        placeholder: 'Input From No',
+        options: '',
+        
       },
       {
-        key: "rate",
-        label: "Rate",
-        type: "input",
-        placeholder: "Input Rate",
-        options: "",
+        key: 'rate',
+        label: 'Rate',
+        type: 'input',
+        placeholder: 'Input Rate',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "noOfShares",
-        label: "No Of Shares",
-        type: "input",
-        placeholder: "Input No Of Shares",
-        options: "",
+        key: 'noOfShares',
+        label: 'No Of Shares',
+        type: 'input',
+        placeholder: 'Input No Of Shares',
+        options: '',
+        
       },
       {
-        key: "toNo",
-        label: "To No",
-        type: "input",
-        placeholder: "Input To No",
-        options: "",
+        key: 'toNo',
+        label: 'To No',
+        type: 'input',
+        placeholder: 'Input To No',
+        options: '',
+        
       },
       {
-        key: "amount",
-        label: "Amount",
-        type: "input",
-        placeholder: "Input Amount",
-        options: "",
+        key: 'amount',
+        label: 'Amount',
+        type: 'input',
+        placeholder: 'Input Amount',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "remarks",
-        label: "Remarks",
-        type: "input",
-        placeholder: "Input Remarks",
-        options: "",
+        key: 'remarks',
+        label: 'Remarks',
+        type: 'input',
+        placeholder: 'Input Remarks',
+        options: '',
+        
       },
       {
-        key: "amendedFrom",
-        label: "Amended From",
-        type: "select",
-        placeholder: "Input Amended From",
-        options: "",
+        key: 'amendedFrom',
+        label: 'Amended From',
+        type: 'select',
+        placeholder: 'Input Amended From',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IShareTransfer {
+  id: FieldValue;
+  transferType: FieldValue;
+  date: FieldValue;
+  fromShareholder: FieldValue;
+  fromFolioNo: FieldValue;
+  equityLiabilityAccount: FieldValue;
+  assetAccount: FieldValue;
+  toShareholder: FieldValue;
+  toFolioNo: FieldValue;
+  shareType: FieldValue;
+  fromNo: FieldValue;
+  rate: FieldValue;
+  noOfShares: FieldValue;
+  toNo: FieldValue;
+  amount: FieldValue;
+  company: FieldValue;
+  remarks: FieldValue;
+  amendedFrom: FieldValue;
+  
 }

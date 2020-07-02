@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: PosProfile
 |--------------------------------------------------------------------------
 |
-| Model of posProfiles
+| Model Class and Interface of posProfiles
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class PosProfile extends Model {
+
+export class PosProfile extends Model { 
   static table = "posProfiles";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     disabled: DataTypes.STRING,
@@ -36,7 +43,6 @@ export class PosProfile extends Model {
     allowUserToEditDiscount: DataTypes.STRING,
     allowPrintBeforePay: DataTypes.STRING,
     displayItemsInStock: DataTypes.STRING,
-    applicableForUsers: DataTypes.STRING,
     applicableForUsers: DataTypes.STRING,
     modeOfPayment: DataTypes.STRING,
     salesInvoicePayment: DataTypes.STRING,
@@ -62,347 +68,434 @@ export class PosProfile extends Model {
     costCenter: DataTypes.STRING,
     taxesAndCharges: DataTypes.STRING,
     applyDiscountOn: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "disabled",
-        label: "Disabled",
-        type: "input",
-        placeholder: "Input Disabled",
-        options: "",
+        key: 'disabled',
+        label: 'Disabled',
+        type: 'input',
+        placeholder: 'Input Disabled',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "series",
-        label: "Series",
-        type: "select",
-        placeholder: "Input Series",
-        options: "",
+        key: 'series',
+        label: 'Series',
+        type: 'select',
+        placeholder: 'Input Series',
+        options: '',
+        
       },
       {
-        key: "customer",
-        label: "Customer",
-        type: "select",
-        placeholder: "Input Customer",
-        options: "",
+        key: 'customer',
+        label: 'Customer',
+        type: 'select',
+        placeholder: 'Input Customer',
+        options: '',
+        
       },
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "country",
-        label: "Country",
-        type: "input",
-        placeholder: "Input Country",
-        options: "",
+        key: 'country',
+        label: 'Country',
+        type: 'input',
+        placeholder: 'Input Country',
+        options: '',
+        
       },
       {
-        key: "warehouse",
-        label: "Warehouse",
-        type: "select",
-        placeholder: "Input Warehouse",
-        options: "",
+        key: 'warehouse',
+        label: 'Warehouse',
+        type: 'select',
+        placeholder: 'Input Warehouse',
+        options: '',
+        
       },
       {
-        key: "campaign",
-        label: "Campaign",
-        type: "select",
-        placeholder: "Input Campaign",
-        options: "",
+        key: 'campaign',
+        label: 'Campaign',
+        type: 'select',
+        placeholder: 'Input Campaign',
+        options: '',
+        
       },
       {
-        key: "companyAddress",
-        label: "Company Address",
-        type: "select",
-        placeholder: "Input Company Address",
-        options: "",
+        key: 'companyAddress',
+        label: 'Company Address',
+        type: 'select',
+        placeholder: 'Input Company Address',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "updateStock",
-        label: "Update Stock",
-        type: "input",
-        placeholder: "Input Update Stock",
-        options: "",
+        key: 'updateStock',
+        label: 'Update Stock',
+        type: 'input',
+        placeholder: 'Input Update Stock',
+        options: '',
+        
       },
       {
-        key: "ignorePricingRule",
-        label: "Ignore Pricing Rule",
-        type: "input",
-        placeholder: "Input Ignore Pricing Rule",
-        options: "",
+        key: 'ignorePricingRule',
+        label: 'Ignore Pricing Rule',
+        type: 'input',
+        placeholder: 'Input Ignore Pricing Rule',
+        options: '',
+        
       },
       {
-        key: "allowDelete",
-        label: "Allow Delete",
-        type: "input",
-        placeholder: "Input Allow Delete",
-        options: "",
+        key: 'allowDelete',
+        label: 'Allow Delete',
+        type: 'input',
+        placeholder: 'Input Allow Delete',
+        options: '',
+        
       },
       {
-        key: "allowUserToEditRate",
-        label: "Allow User To Edit Rate",
-        type: "input",
-        placeholder: "Input Allow User To Edit Rate",
-        options: "",
+        key: 'allowUserToEditRate',
+        label: 'Allow User To Edit Rate',
+        type: 'input',
+        placeholder: 'Input Allow User To Edit Rate',
+        options: '',
+        
       },
       {
-        key: "allowUserToEditDiscount",
-        label: "Allow User To Edit Discount",
-        type: "input",
-        placeholder: "Input Allow User To Edit Discount",
-        options: "",
+        key: 'allowUserToEditDiscount',
+        label: 'Allow User To Edit Discount',
+        type: 'input',
+        placeholder: 'Input Allow User To Edit Discount',
+        options: '',
+        
       },
       {
-        key: "allowPrintBeforePay",
-        label: "Allow Print Before Pay",
-        type: "input",
-        placeholder: "Input Allow Print Before Pay",
-        options: "",
+        key: 'allowPrintBeforePay',
+        label: 'Allow Print Before Pay',
+        type: 'input',
+        placeholder: 'Input Allow Print Before Pay',
+        options: '',
+        
       },
       {
-        key: "displayItemsInStock",
-        label: "Display Items In Stock",
-        type: "input",
-        placeholder: "Input Display Items In Stock",
-        options: "",
+        key: 'displayItemsInStock',
+        label: 'Display Items In Stock',
+        type: 'input',
+        placeholder: 'Input Display Items In Stock',
+        options: '',
+        
       },
       {
-        key: "applicableForUsers",
-        label: "Applicable For Users",
-        type: "input",
-        placeholder: "Input Applicable For Users",
-        options: "",
+        key: 'applicableForUsers',
+        label: 'Applicable For Users',
+        type: 'input',
+        placeholder: 'Input Applicable For Users',
+        options: '',
+        
       },
       {
-        key: "applicableForUsers",
-        label: "Applicable For Users",
-        type: "select",
-        placeholder: "Input Applicable For Users",
-        options: "",
+        key: 'modeOfPayment',
+        label: 'Mode Of Payment',
+        type: 'input',
+        placeholder: 'Input Mode Of Payment',
+        options: '',
+        
       },
       {
-        key: "modeOfPayment",
-        label: "Mode Of Payment",
-        type: "input",
-        placeholder: "Input Mode Of Payment",
-        options: "",
+        key: 'salesInvoicePayment',
+        label: 'Sales Invoice Payment',
+        type: 'select',
+        placeholder: 'Input Sales Invoice Payment',
+        options: '',
+        
       },
       {
-        key: "salesInvoicePayment",
-        label: "Sales Invoice Payment",
-        type: "select",
-        placeholder: "Input Sales Invoice Payment",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'itemGroups',
+        label: 'Item Groups',
+        type: 'select',
+        placeholder: 'Input Item Groups',
+        options: '',
+        
       },
       {
-        key: "itemGroups",
-        label: "Item Groups",
-        type: "select",
-        placeholder: "Input Item Groups",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'customerGroups',
+        label: 'Customer Groups',
+        type: 'select',
+        placeholder: 'Input Customer Groups',
+        options: '',
+        
       },
       {
-        key: "customerGroups",
-        label: "Customer Groups",
-        type: "select",
-        placeholder: "Input Customer Groups",
-        options: "",
+        key: 'printSettings',
+        label: 'Print Settings',
+        type: 'input',
+        placeholder: 'Input Print Settings',
+        options: '',
+        
       },
       {
-        key: "printSettings",
-        label: "Print Settings",
-        type: "input",
-        placeholder: "Input Print Settings",
-        options: "",
+        key: 'printFormatForOnline',
+        label: 'Print Format For Online',
+        type: 'select',
+        placeholder: 'Input Print Format For Online',
+        options: '',
+        
       },
       {
-        key: "printFormatForOnline",
-        label: "Print Format For Online",
-        type: "select",
-        placeholder: "Input Print Format For Online",
-        options: "",
+        key: 'letterHead',
+        label: 'Letter Head',
+        type: 'select',
+        placeholder: 'Input Letter Head',
+        options: '',
+        
       },
       {
-        key: "letterHead",
-        label: "Letter Head",
-        type: "select",
-        placeholder: "Input Letter Head",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'termsAndConditions',
+        label: 'Terms And Conditions',
+        type: 'select',
+        placeholder: 'Input Terms And Conditions',
+        options: '',
+        
       },
       {
-        key: "termsAndConditions",
-        label: "Terms And Conditions",
-        type: "select",
-        placeholder: "Input Terms And Conditions",
-        options: "",
+        key: 'printHeading',
+        label: 'Print Heading',
+        type: 'select',
+        placeholder: 'Input Print Heading',
+        options: '',
+        
       },
       {
-        key: "printHeading",
-        label: "Print Heading",
-        type: "select",
-        placeholder: "Input Print Heading",
-        options: "",
+        key: 'offlinePosSettings',
+        label: 'Offline Pos Settings',
+        type: 'input',
+        placeholder: 'Input Offline Pos Settings',
+        options: '',
+        
       },
       {
-        key: "offlinePosSettings",
-        label: "Offline Pos Settings",
-        type: "input",
-        placeholder: "Input Offline Pos Settings",
-        options: "",
+        key: 'territory',
+        label: 'Territory',
+        type: 'select',
+        placeholder: 'Input Territory',
+        options: '',
+        
       },
       {
-        key: "territory",
-        label: "Territory",
-        type: "select",
-        placeholder: "Input Territory",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'printFormat',
+        label: 'Print Format',
+        type: 'select',
+        placeholder: 'Input Print Format',
+        options: '',
+        
       },
       {
-        key: "printFormat",
-        label: "Print Format",
-        type: "select",
-        placeholder: "Input Print Format",
-        options: "",
+        key: 'customerGroup',
+        label: 'Customer Group',
+        type: 'select',
+        placeholder: 'Input Customer Group',
+        options: '',
+        
       },
       {
-        key: "customerGroup",
-        label: "Customer Group",
-        type: "select",
-        placeholder: "Input Customer Group",
-        options: "",
+        key: 'accounting',
+        label: 'Accounting',
+        type: 'input',
+        placeholder: 'Input Accounting',
+        options: '',
+        
       },
       {
-        key: "accounting",
-        label: "Accounting",
-        type: "input",
-        placeholder: "Input Accounting",
-        options: "",
+        key: 'priceList',
+        label: 'Price List',
+        type: 'select',
+        placeholder: 'Input Price List',
+        options: '',
+        
       },
       {
-        key: "priceList",
-        label: "Price List",
-        type: "select",
-        placeholder: "Input Price List",
-        options: "",
+        key: 'currency',
+        label: 'Currency',
+        type: 'select',
+        placeholder: 'Input Currency',
+        options: '',
+        
       },
       {
-        key: "currency",
-        label: "Currency",
-        type: "select",
-        placeholder: "Input Currency",
-        options: "",
+        key: 'writeOffAccount',
+        label: 'Write Off Account',
+        type: 'select',
+        placeholder: 'Input Write Off Account',
+        options: '',
+        
       },
       {
-        key: "writeOffAccount",
-        label: "Write Off Account",
-        type: "select",
-        placeholder: "Input Write Off Account",
-        options: "",
+        key: 'writeOffCostCenter',
+        label: 'Write Off Cost Center',
+        type: 'select',
+        placeholder: 'Input Write Off Cost Center',
+        options: '',
+        
       },
       {
-        key: "writeOffCostCenter",
-        label: "Write Off Cost Center",
-        type: "select",
-        placeholder: "Input Write Off Cost Center",
-        options: "",
+        key: 'accountForChangeAmount',
+        label: 'Account For Change Amount',
+        type: 'select',
+        placeholder: 'Input Account For Change Amount',
+        options: '',
+        
       },
       {
-        key: "accountForChangeAmount",
-        label: "Account For Change Amount",
-        type: "select",
-        placeholder: "Input Account For Change Amount",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: 'incomeAccount',
+        label: 'Income Account',
+        type: 'select',
+        placeholder: 'Input Income Account',
+        options: '',
+        
       },
       {
-        key: "incomeAccount",
-        label: "Income Account",
-        type: "select",
-        placeholder: "Input Income Account",
-        options: "",
+        key: 'expenseAccount',
+        label: 'Expense Account',
+        type: 'select',
+        placeholder: 'Input Expense Account',
+        options: '',
+        
       },
       {
-        key: "expenseAccount",
-        label: "Expense Account",
-        type: "select",
-        placeholder: "Input Expense Account",
-        options: "",
+        key: 'costCenter',
+        label: 'Cost Center',
+        type: 'select',
+        placeholder: 'Input Cost Center',
+        options: '',
+        
       },
       {
-        key: "costCenter",
-        label: "Cost Center",
-        type: "select",
-        placeholder: "Input Cost Center",
-        options: "",
+        key: 'taxesAndCharges',
+        label: 'Taxes And Charges',
+        type: 'select',
+        placeholder: 'Input Taxes And Charges',
+        options: '',
+        
       },
       {
-        key: "taxesAndCharges",
-        label: "Taxes And Charges",
-        type: "select",
-        placeholder: "Input Taxes And Charges",
-        options: "",
+        key: 'applyDiscountOn',
+        label: 'Apply Discount On',
+        type: 'select',
+        placeholder: 'Input Apply Discount On',
+        options: '[object Object]',
+        
       },
-      {
-        key: "applyDiscountOn",
-        label: "Apply Discount On",
-        type: "select",
-        placeholder: "Input Apply Discount On",
-        options: "[object Object]",
-      },
-    ],
+      
+    ]
   };
+}
+
+export interface IPosProfile {
+  id: FieldValue;
+  disabled: FieldValue;
+  series: FieldValue;
+  customer: FieldValue;
+  company: FieldValue;
+  country: FieldValue;
+  warehouse: FieldValue;
+  campaign: FieldValue;
+  companyAddress: FieldValue;
+  updateStock: FieldValue;
+  ignorePricingRule: FieldValue;
+  allowDelete: FieldValue;
+  allowUserToEditRate: FieldValue;
+  allowUserToEditDiscount: FieldValue;
+  allowPrintBeforePay: FieldValue;
+  displayItemsInStock: FieldValue;
+  applicableForUsers: FieldValue;
+  modeOfPayment: FieldValue;
+  salesInvoicePayment: FieldValue;
+  itemGroups: FieldValue;
+  customerGroups: FieldValue;
+  printSettings: FieldValue;
+  printFormatForOnline: FieldValue;
+  letterHead: FieldValue;
+  termsAndConditions: FieldValue;
+  printHeading: FieldValue;
+  offlinePosSettings: FieldValue;
+  territory: FieldValue;
+  printFormat: FieldValue;
+  customerGroup: FieldValue;
+  accounting: FieldValue;
+  priceList: FieldValue;
+  currency: FieldValue;
+  writeOffAccount: FieldValue;
+  writeOffCostCenter: FieldValue;
+  accountForChangeAmount: FieldValue;
+  incomeAccount: FieldValue;
+  expenseAccount: FieldValue;
+  costCenter: FieldValue;
+  taxesAndCharges: FieldValue;
+  applyDiscountOn: FieldValue;
+  
 }

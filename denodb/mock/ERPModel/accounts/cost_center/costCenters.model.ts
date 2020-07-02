@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: CostCenter
 |--------------------------------------------------------------------------
 |
-| Model of costCenters
+| Model Class and Interface of costCenters
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class CostCenter extends Model {
+
+export class CostCenter extends Model { 
   static table = "costCenters";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     costCenterName: DataTypes.STRING,
@@ -29,81 +36,106 @@ export class CostCenter extends Model {
     lft: DataTypes.STRING,
     rgt: DataTypes.STRING,
     oldParent: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "costCenterName",
-        label: "Cost Center Name",
-        type: "input",
-        placeholder: "Input Cost Center Name",
-        options: "",
+        key: 'costCenterName',
+        label: 'Cost Center Name',
+        type: 'input',
+        placeholder: 'Input Cost Center Name',
+        options: '',
+        
       },
       {
-        key: "costCenterNumber",
-        label: "Cost Center Number",
-        type: "input",
-        placeholder: "Input Cost Center Number",
-        options: "",
+        key: 'costCenterNumber',
+        label: 'Cost Center Number',
+        type: 'input',
+        placeholder: 'Input Cost Center Number',
+        options: '',
+        
       },
       {
-        key: "parentCostCenter",
-        label: "Parent Cost Center",
-        type: "select",
-        placeholder: "Input Parent Cost Center",
-        options: "",
+        key: 'parentCostCenter',
+        label: 'Parent Cost Center',
+        type: 'select',
+        placeholder: 'Input Parent Cost Center',
+        options: '',
+        
       },
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "isGroup",
-        label: "Is Group",
-        type: "input",
-        placeholder: "Input Is Group",
-        options: "",
+        key: 'isGroup',
+        label: 'Is Group',
+        type: 'input',
+        placeholder: 'Input Is Group',
+        options: '',
+        
       },
       {
-        key: "lft",
-        label: "Lft",
-        type: "input",
-        placeholder: "Input Lft",
-        options: "",
+        key: 'lft',
+        label: 'Lft',
+        type: 'input',
+        placeholder: 'Input Lft',
+        options: '',
+        
       },
       {
-        key: "rgt",
-        label: "Rgt",
-        type: "input",
-        placeholder: "Input Rgt",
-        options: "",
+        key: 'rgt',
+        label: 'Rgt',
+        type: 'input',
+        placeholder: 'Input Rgt',
+        options: '',
+        
       },
       {
-        key: "oldParent",
-        label: "Old Parent",
-        type: "select",
-        placeholder: "Input Old Parent",
-        options: "",
+        key: 'oldParent',
+        label: 'Old Parent',
+        type: 'select',
+        placeholder: 'Input Old Parent',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ICostCenter {
+  id: FieldValue;
+  costCenterName: FieldValue;
+  costCenterNumber: FieldValue;
+  parentCostCenter: FieldValue;
+  company: FieldValue;
+  isGroup: FieldValue;
+  lft: FieldValue;
+  rgt: FieldValue;
+  oldParent: FieldValue;
+  
 }

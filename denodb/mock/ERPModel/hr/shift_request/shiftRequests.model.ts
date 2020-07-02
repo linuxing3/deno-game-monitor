@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: ShiftRequest
 |--------------------------------------------------------------------------
 |
-| Model of shiftRequests
+| Model Class and Interface of shiftRequests
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class ShiftRequest extends Model {
+
+export class ShiftRequest extends Model { 
   static table = "shiftRequests";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     shiftType: DataTypes.STRING,
@@ -29,74 +36,98 @@ export class ShiftRequest extends Model {
     fromDate: DataTypes.STRING,
     toDate: DataTypes.STRING,
     amendedFrom: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "shiftType",
-        label: "Shift Type",
-        type: "select",
-        placeholder: "Input Shift Type",
-        options: "",
+        key: 'shiftType',
+        label: 'Shift Type',
+        type: 'select',
+        placeholder: 'Input Shift Type',
+        options: '',
+        
       },
       {
-        key: "employee",
-        label: "Employee",
-        type: "select",
-        placeholder: "Input Employee",
-        options: "",
+        key: 'employee',
+        label: 'Employee',
+        type: 'select',
+        placeholder: 'Input Employee',
+        options: '',
+        
       },
       {
-        key: "employeeName",
-        label: "Employee Name",
-        type: "input",
-        placeholder: "Input Employee Name",
-        options: "",
+        key: 'employeeName',
+        label: 'Employee Name',
+        type: 'input',
+        placeholder: 'Input Employee Name',
+        options: '',
+        
       },
       {
-        key: "department",
-        label: "Department",
-        type: "select",
-        placeholder: "Input Department",
-        options: "",
+        key: 'department',
+        label: 'Department',
+        type: 'select',
+        placeholder: 'Input Department',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "fromDate",
-        label: "From Date",
-        type: "input",
-        placeholder: "Input From Date",
-        options: "",
+        key: 'fromDate',
+        label: 'From Date',
+        type: 'input',
+        placeholder: 'Input From Date',
+        options: '',
+        
       },
       {
-        key: "toDate",
-        label: "To Date",
-        type: "input",
-        placeholder: "Input To Date",
-        options: "",
+        key: 'toDate',
+        label: 'To Date',
+        type: 'input',
+        placeholder: 'Input To Date',
+        options: '',
+        
       },
       {
-        key: "amendedFrom",
-        label: "Amended From",
-        type: "select",
-        placeholder: "Input Amended From",
-        options: "",
+        key: 'amendedFrom',
+        label: 'Amended From',
+        type: 'select',
+        placeholder: 'Input Amended From',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IShiftRequest {
+  id: FieldValue;
+  shiftType: FieldValue;
+  employee: FieldValue;
+  employeeName: FieldValue;
+  department: FieldValue;
+  company: FieldValue;
+  fromDate: FieldValue;
+  toDate: FieldValue;
+  amendedFrom: FieldValue;
+  
 }

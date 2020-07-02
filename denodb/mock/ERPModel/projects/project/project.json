@@ -152,20 +152,6 @@
       "options": []
     },
     {
-      "key": "users",
-      "label": "Users",
-      "type": "select",
-      "placeholder": "Input Users",
-      "options": []
-    },
-    {
-      "key": "tasks",
-      "label": "Tasks",
-      "type": "select",
-      "placeholder": "Input Tasks",
-      "options": []
-    },
-    {
       "key": "tasks",
       "label": "Tasks",
       "type": "select",
@@ -177,13 +163,6 @@
       "label": "Copied From",
       "type": "input",
       "placeholder": "Input Copied From",
-      "options": []
-    },
-    {
-      "key": "notes",
-      "label": "Notes",
-      "type": "select",
-      "placeholder": "Input Notes",
       "options": []
     },
     {
@@ -334,13 +313,6 @@
       "options": []
     },
     {
-      "key": "grossMargin",
-      "label": "Gross Margin",
-      "type": "input",
-      "placeholder": "Input Gross Margin",
-      "options": []
-    },
-    {
       "key": "monitorProgress",
       "label": "Monitor Progress",
       "type": "input",
@@ -407,13 +379,6 @@
       "label": "Second Email",
       "type": "input",
       "placeholder": "Input Second Email",
-      "options": []
-    },
-    {
-      "key": "timeToSend",
-      "label": "Time To Send",
-      "type": "input",
-      "placeholder": "Input Time To Send",
       "options": []
     },
     {

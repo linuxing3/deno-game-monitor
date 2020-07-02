@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,42 +6,60 @@
 | Model: Designation
 |--------------------------------------------------------------------------
 |
-| Model of designations
+| Model Class and Interface of designations
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class Designation extends Model {
+
+export class Designation extends Model { 
   static table = "designations";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     designation: DataTypes.STRING,
     description: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "designation",
-        label: "Designation",
-        type: "input",
-        placeholder: "Input Designation",
-        options: "",
+        key: 'designation',
+        label: 'Designation',
+        type: 'input',
+        placeholder: 'Input Designation',
+        options: '',
+        
       },
       {
-        key: "description",
-        label: "Description",
-        type: "input",
-        placeholder: "Input Description",
-        options: "",
+        key: 'description',
+        label: 'Description',
+        type: 'input',
+        placeholder: 'Input Description',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IDesignation {
+  id: FieldValue;
+  designation: FieldValue;
+  description: FieldValue;
+  
 }

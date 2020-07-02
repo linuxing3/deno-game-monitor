@@ -36,23 +36,9 @@
       "options": []
     },
     {
-      "key": "payrollPeriods",
-      "label": "Payroll Periods",
-      "type": "select",
-      "placeholder": "Input Payroll Periods",
-      "options": []
-    },
-    {
       "key": "taxableSalarySlabs",
       "label": "Taxable Salary Slabs",
       "type": "input",
-      "placeholder": "Input Taxable Salary Slabs",
-      "options": []
-    },
-    {
-      "key": "taxableSalarySlabs",
-      "label": "Taxable Salary Slabs",
-      "type": "select",
       "placeholder": "Input Taxable Salary Slabs",
       "options": []
     }

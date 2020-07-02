@@ -121,13 +121,6 @@
       "options": []
     },
     {
-      "key": "paymentPlan",
-      "label": "Payment Plan",
-      "type": "input",
-      "placeholder": "Input Payment Plan",
-      "options": []
-    },
-    {
       "key": "",
       "label": "",
       "type": "input",

@@ -3,11 +3,9 @@ import {
   User,
   Member,
   Document,
-  Vehicle,
   Militant,
-  Project,
-  Flight,
 } from "../mock/models.ts";
+import { models } from "../mock/models.index.ts";
 
 const postdb = new Database("postgres", {
   host: "dongxishijie.xyz",
@@ -17,7 +15,7 @@ const postdb = new Database("postgres", {
   port: 9006,
 });
 
-postdb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);
+postdb.link([User, Member, Document, Militant, ...models]);
 
 await postdb.sync({ drop: true });
 

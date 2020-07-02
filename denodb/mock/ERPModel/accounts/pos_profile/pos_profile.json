@@ -127,13 +127,6 @@
       "options": []
     },
     {
-      "key": "applicableForUsers",
-      "label": "Applicable For Users",
-      "type": "select",
-      "placeholder": "Input Applicable For Users",
-      "options": []
-    },
-    {
       "key": "modeOfPayment",
       "label": "Mode Of Payment",
       "type": "input",

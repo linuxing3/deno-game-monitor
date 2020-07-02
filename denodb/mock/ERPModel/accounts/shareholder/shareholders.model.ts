@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: Shareholder
 |--------------------------------------------------------------------------
 |
-| Model of shareholders
+| Model Class and Interface of shareholders
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class Shareholder extends Model {
+
+export class Shareholder extends Model { 
   static table = "shareholders";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     title: DataTypes.STRING,
@@ -29,118 +36,140 @@ export class Shareholder extends Model {
     addressHtml: DataTypes.STRING,
     contactHtml: DataTypes.STRING,
     shareBalance: DataTypes.STRING,
-    shareBalance: DataTypes.STRING,
     contactList: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "title",
-        label: "Title",
-        type: "input",
-        placeholder: "Input Title",
-        options: "",
+        key: 'title',
+        label: 'Title',
+        type: 'input',
+        placeholder: 'Input Title',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "select",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'select',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "folioNo",
-        label: "Folio No",
-        type: "input",
-        placeholder: "Input Folio No",
-        options: "",
+        key: 'folioNo',
+        label: 'Folio No',
+        type: 'input',
+        placeholder: 'Input Folio No',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "isCompany",
-        label: "Is Company",
-        type: "input",
-        placeholder: "Input Is Company",
-        options: "",
+        key: 'isCompany',
+        label: 'Is Company',
+        type: 'input',
+        placeholder: 'Input Is Company',
+        options: '',
+        
       },
       {
-        key: "addressAndContacts",
-        label: "Address And Contacts",
-        type: "select",
-        placeholder: "Input Address And Contacts",
-        options: "",
+        key: 'addressAndContacts',
+        label: 'Address And Contacts',
+        type: 'select',
+        placeholder: 'Input Address And Contacts',
+        options: '',
+        
       },
       {
-        key: "addressHtml",
-        label: "Address Html",
-        type: "input",
-        placeholder: "Input Address Html",
-        options: "",
+        key: 'addressHtml',
+        label: 'Address Html',
+        type: 'input',
+        placeholder: 'Input Address Html',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "contactHtml",
-        label: "Contact Html",
-        type: "input",
-        placeholder: "Input Contact Html",
-        options: "",
+        key: 'contactHtml',
+        label: 'Contact Html',
+        type: 'input',
+        placeholder: 'Input Contact Html',
+        options: '',
+        
       },
       {
-        key: "shareBalance",
-        label: "Share Balance",
-        type: "input",
-        placeholder: "Input Share Balance",
-        options: "",
+        key: 'shareBalance',
+        label: 'Share Balance',
+        type: 'input',
+        placeholder: 'Input Share Balance',
+        options: '',
+        
       },
       {
-        key: "shareBalance",
-        label: "Share Balance",
-        type: "select",
-        placeholder: "Input Share Balance",
-        options: "",
+        key: 'contactList',
+        label: 'Contact List',
+        type: 'input',
+        placeholder: 'Input Contact List',
+        options: '',
+        
       },
-      {
-        key: "contactList",
-        label: "Contact List",
-        type: "input",
-        placeholder: "Input Contact List",
-        options: "",
-      },
-    ],
+      
+    ]
   };
+}
+
+export interface IShareholder {
+  id: FieldValue;
+  title: FieldValue;
+  folioNo: FieldValue;
+  company: FieldValue;
+  isCompany: FieldValue;
+  addressAndContacts: FieldValue;
+  addressHtml: FieldValue;
+  contactHtml: FieldValue;
+  shareBalance: FieldValue;
+  contactList: FieldValue;
+  
 }

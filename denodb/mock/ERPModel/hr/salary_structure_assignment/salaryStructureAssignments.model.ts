@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: SalaryStructureAssignment
 |--------------------------------------------------------------------------
 |
-| Model of salaryStructureAssignments
+| Model Class and Interface of salaryStructureAssignments
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class SalaryStructureAssignment extends Model {
+
+export class SalaryStructureAssignment extends Model { 
   static table = "salaryStructureAssignments";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     employee: DataTypes.STRING,
@@ -31,102 +38,132 @@ export class SalaryStructureAssignment extends Model {
     base: DataTypes.STRING,
     variable: DataTypes.STRING,
     amendedFrom: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "employee",
-        label: "Employee",
-        type: "select",
-        placeholder: "Input Employee",
-        options: "",
+        key: 'employee',
+        label: 'Employee',
+        type: 'select',
+        placeholder: 'Input Employee',
+        options: '',
+        
       },
       {
-        key: "employeeName",
-        label: "Employee Name",
-        type: "input",
-        placeholder: "Input Employee Name",
-        options: "",
+        key: 'employeeName',
+        label: 'Employee Name',
+        type: 'input',
+        placeholder: 'Input Employee Name',
+        options: '',
+        
       },
       {
-        key: "department",
-        label: "Department",
-        type: "select",
-        placeholder: "Input Department",
-        options: "",
+        key: 'department',
+        label: 'Department',
+        type: 'select',
+        placeholder: 'Input Department',
+        options: '',
+        
       },
       {
-        key: "designation",
-        label: "Designation",
-        type: "select",
-        placeholder: "Input Designation",
-        options: "",
+        key: 'designation',
+        label: 'Designation',
+        type: 'select',
+        placeholder: 'Input Designation',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "salaryStructure",
-        label: "Salary Structure",
-        type: "select",
-        placeholder: "Input Salary Structure",
-        options: "",
+        key: 'salaryStructure',
+        label: 'Salary Structure',
+        type: 'select',
+        placeholder: 'Input Salary Structure',
+        options: '',
+        
       },
       {
-        key: "fromDate",
-        label: "From Date",
-        type: "input",
-        placeholder: "Input From Date",
-        options: "",
+        key: 'fromDate',
+        label: 'From Date',
+        type: 'input',
+        placeholder: 'Input From Date',
+        options: '',
+        
       },
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "base",
-        label: "Base",
-        type: "input",
-        placeholder: "Input Base",
-        options: "",
+        key: 'base',
+        label: 'Base',
+        type: 'input',
+        placeholder: 'Input Base',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "variable",
-        label: "Variable",
-        type: "input",
-        placeholder: "Input Variable",
-        options: "",
+        key: 'variable',
+        label: 'Variable',
+        type: 'input',
+        placeholder: 'Input Variable',
+        options: '',
+        
       },
       {
-        key: "amendedFrom",
-        label: "Amended From",
-        type: "select",
-        placeholder: "Input Amended From",
-        options: "",
+        key: 'amendedFrom',
+        label: 'Amended From',
+        type: 'select',
+        placeholder: 'Input Amended From',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ISalaryStructureAssignment {
+  id: FieldValue;
+  employee: FieldValue;
+  employeeName: FieldValue;
+  department: FieldValue;
+  designation: FieldValue;
+  salaryStructure: FieldValue;
+  fromDate: FieldValue;
+  company: FieldValue;
+  base: FieldValue;
+  variable: FieldValue;
+  amendedFrom: FieldValue;
+  
 }

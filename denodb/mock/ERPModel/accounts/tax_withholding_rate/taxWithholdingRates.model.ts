@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,65 +6,88 @@
 | Model: TaxWithholdingRate
 |--------------------------------------------------------------------------
 |
-| Model of taxWithholdingRates
+| Model Class and Interface of taxWithholdingRates
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class TaxWithholdingRate extends Model {
+
+export class TaxWithholdingRate extends Model { 
   static table = "taxWithholdingRates";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     fiscalYear: DataTypes.STRING,
     taxWithholdingRate: DataTypes.STRING,
     singleTransactionThreshold: DataTypes.STRING,
     cumulativeTransactionThreshold: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "fiscalYear",
-        label: "Fiscal Year",
-        type: "select",
-        placeholder: "Input Fiscal Year",
-        options: "",
+        key: 'fiscalYear',
+        label: 'Fiscal Year',
+        type: 'select',
+        placeholder: 'Input Fiscal Year',
+        options: '',
+        
       },
       {
-        key: "taxWithholdingRate",
-        label: "Tax Withholding Rate",
-        type: "input",
-        placeholder: "Input Tax Withholding Rate",
-        options: "",
+        key: 'taxWithholdingRate',
+        label: 'Tax Withholding Rate',
+        type: 'input',
+        placeholder: 'Input Tax Withholding Rate',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "singleTransactionThreshold",
-        label: "Single Transaction Threshold",
-        type: "input",
-        placeholder: "Input Single Transaction Threshold",
-        options: "",
+        key: 'singleTransactionThreshold',
+        label: 'Single Transaction Threshold',
+        type: 'input',
+        placeholder: 'Input Single Transaction Threshold',
+        options: '',
+        
       },
       {
-        key: "cumulativeTransactionThreshold",
-        label: "Cumulative Transaction Threshold",
-        type: "input",
-        placeholder: "Input Cumulative Transaction Threshold",
-        options: "",
+        key: 'cumulativeTransactionThreshold',
+        label: 'Cumulative Transaction Threshold',
+        type: 'input',
+        placeholder: 'Input Cumulative Transaction Threshold',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ITaxWithholdingRate {
+  id: FieldValue;
+  fiscalYear: FieldValue;
+  taxWithholdingRate: FieldValue;
+  singleTransactionThreshold: FieldValue;
+  cumulativeTransactionThreshold: FieldValue;
+  
 }

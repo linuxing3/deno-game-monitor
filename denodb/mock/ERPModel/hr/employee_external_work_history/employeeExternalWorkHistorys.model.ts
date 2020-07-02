@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: EmployeeExternalWorkHistory
 |--------------------------------------------------------------------------
 |
-| Model of employeeExternalWorkHistorys
+| Model Class and Interface of employeeExternalWorkHistorys
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class EmployeeExternalWorkHistory extends Model {
+
+export class EmployeeExternalWorkHistory extends Model { 
   static table = "employeeExternalWorkHistorys";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     company: DataTypes.STRING,
@@ -27,53 +34,72 @@ export class EmployeeExternalWorkHistory extends Model {
     address: DataTypes.STRING,
     contact: DataTypes.STRING,
     totalExperience: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "company",
-        label: "Company",
-        type: "input",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'input',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "designation",
-        label: "Designation",
-        type: "input",
-        placeholder: "Input Designation",
-        options: "",
+        key: 'designation',
+        label: 'Designation',
+        type: 'input',
+        placeholder: 'Input Designation',
+        options: '',
+        
       },
       {
-        key: "salary",
-        label: "Salary",
-        type: "select",
-        placeholder: "Input Salary",
-        options: "",
+        key: 'salary',
+        label: 'Salary',
+        type: 'select',
+        placeholder: 'Input Salary',
+        options: '',
+        
       },
       {
-        key: "address",
-        label: "Address",
-        type: "input",
-        placeholder: "Input Address",
-        options: "",
+        key: 'address',
+        label: 'Address',
+        type: 'input',
+        placeholder: 'Input Address',
+        options: '',
+        
       },
       {
-        key: "contact",
-        label: "Contact",
-        type: "input",
-        placeholder: "Input Contact",
-        options: "",
+        key: 'contact',
+        label: 'Contact',
+        type: 'input',
+        placeholder: 'Input Contact',
+        options: '',
+        
       },
       {
-        key: "totalExperience",
-        label: "Total Experience",
-        type: "input",
-        placeholder: "Input Total Experience",
-        options: "",
+        key: 'totalExperience',
+        label: 'Total Experience',
+        type: 'input',
+        placeholder: 'Input Total Experience',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IEmployeeExternalWorkHistory {
+  id: FieldValue;
+  company: FieldValue;
+  designation: FieldValue;
+  salary: FieldValue;
+  address: FieldValue;
+  contact: FieldValue;
+  totalExperience: FieldValue;
+  
 }

@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: SalesInvoiceAdvance
 |--------------------------------------------------------------------------
 |
-| Model of salesInvoiceAdvances
+| Model Class and Interface of salesInvoiceAdvances
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class SalesInvoiceAdvance extends Model {
+
+export class SalesInvoiceAdvance extends Model { 
   static table = "salesInvoiceAdvances";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     referenceType: DataTypes.STRING,
@@ -27,60 +34,80 @@ export class SalesInvoiceAdvance extends Model {
     referenceRow: DataTypes.STRING,
     advanceAmount: DataTypes.STRING,
     allocatedAmount: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "referenceType",
-        label: "Reference Type",
-        type: "select",
-        placeholder: "Input Reference Type",
-        options: "",
+        key: 'referenceType',
+        label: 'Reference Type',
+        type: 'select',
+        placeholder: 'Input Reference Type',
+        options: '',
+        
       },
       {
-        key: "referenceName",
-        label: "Reference Name",
-        type: "select",
-        placeholder: "Input Reference Name",
-        options: "",
+        key: 'referenceName',
+        label: 'Reference Name',
+        type: 'select',
+        placeholder: 'Input Reference Name',
+        options: '',
+        
       },
       {
-        key: "remarks",
-        label: "Remarks",
-        type: "input",
-        placeholder: "Input Remarks",
-        options: "",
+        key: 'remarks',
+        label: 'Remarks',
+        type: 'input',
+        placeholder: 'Input Remarks',
+        options: '',
+        
       },
       {
-        key: "referenceRow",
-        label: "Reference Row",
-        type: "input",
-        placeholder: "Input Reference Row",
-        options: "",
+        key: 'referenceRow',
+        label: 'Reference Row',
+        type: 'input',
+        placeholder: 'Input Reference Row',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "advanceAmount",
-        label: "Advance Amount",
-        type: "select",
-        placeholder: "Input Advance Amount",
-        options: "",
+        key: 'advanceAmount',
+        label: 'Advance Amount',
+        type: 'select',
+        placeholder: 'Input Advance Amount',
+        options: '',
+        
       },
       {
-        key: "allocatedAmount",
-        label: "Allocated Amount",
-        type: "select",
-        placeholder: "Input Allocated Amount",
-        options: "",
+        key: 'allocatedAmount',
+        label: 'Allocated Amount',
+        type: 'select',
+        placeholder: 'Input Allocated Amount',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ISalesInvoiceAdvance {
+  id: FieldValue;
+  referenceType: FieldValue;
+  referenceName: FieldValue;
+  remarks: FieldValue;
+  referenceRow: FieldValue;
+  advanceAmount: FieldValue;
+  allocatedAmount: FieldValue;
+  
 }

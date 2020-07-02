@@ -71,18 +71,6 @@
       "options": []
     },
     {
-      "key": "reason",
-      "label": "Reason",
-      "type": "select",
-      "placeholder": "Input Reason",
-      "options": [
-        {
-          "label": "On Duty",
-          "value": "On Duty"
-        }
-      ]
-    },
-    {
       "key": "",
       "label": "",
       "type": "input",

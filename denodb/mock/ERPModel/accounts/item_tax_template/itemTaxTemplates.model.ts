@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,42 +6,60 @@
 | Model: ItemTaxTemplate
 |--------------------------------------------------------------------------
 |
-| Model of itemTaxTemplates
+| Model Class and Interface of itemTaxTemplates
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class ItemTaxTemplate extends Model {
+
+export class ItemTaxTemplate extends Model { 
   static table = "itemTaxTemplates";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     title: DataTypes.STRING,
     taxRates: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "title",
-        label: "Title",
-        type: "input",
-        placeholder: "Input Title",
-        options: "",
+        key: 'title',
+        label: 'Title',
+        type: 'input',
+        placeholder: 'Input Title',
+        options: '',
+        
       },
       {
-        key: "taxRates",
-        label: "Tax Rates",
-        type: "select",
-        placeholder: "Input Tax Rates",
-        options: "",
+        key: 'taxRates',
+        label: 'Tax Rates',
+        type: 'select',
+        placeholder: 'Input Tax Rates',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IItemTaxTemplate {
+  id: FieldValue;
+  title: FieldValue;
+  taxRates: FieldValue;
+  
 }

@@ -120,13 +120,6 @@
       "options": []
     },
     {
-      "key": "holdInvoice",
-      "label": "Hold Invoice",
-      "type": "input",
-      "placeholder": "Input Hold Invoice",
-      "options": []
-    },
-    {
       "key": "releaseDate",
       "label": "Release Date",
       "type": "input",
@@ -342,18 +335,6 @@
       "type": "input",
       "placeholder": "Input ",
       "options": []
-    },
-    {
-      "key": "rawMaterialsSupplied",
-      "label": "Raw Materials Supplied",
-      "type": "select",
-      "placeholder": "Input Raw Materials Supplied",
-      "options": [
-        {
-          "label": "Yes",
-          "value": "Yes"
-        }
-      ]
     },
     {
       "key": "supplierWarehouse",

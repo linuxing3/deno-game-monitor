@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,60 +6,80 @@
 | Model: VehicleService
 |--------------------------------------------------------------------------
 |
-| Model of vehicleServices
+| Model Class and Interface of vehicleServices
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class VehicleService extends Model {
+
+export class VehicleService extends Model { 
   static table = "vehicleServices";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     serviceItem: DataTypes.STRING,
     type: DataTypes.STRING,
     frequency: DataTypes.STRING,
     expense: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "serviceItem",
-        label: "Service Item",
-        type: "select",
-        placeholder: "Input Service Item",
-        options:
-          "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]",
+        key: 'serviceItem',
+        label: 'Service Item',
+        type: 'select',
+        placeholder: 'Input Service Item',
+        options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
+        
       },
       {
-        key: "type",
-        label: "Type",
-        type: "select",
-        placeholder: "Input Type",
-        options: "[object Object],[object Object],[object Object]",
+        key: 'type',
+        label: 'Type',
+        type: 'select',
+        placeholder: 'Input Type',
+        options: '[object Object],[object Object],[object Object]',
+        
       },
       {
-        key: "frequency",
-        label: "Frequency",
-        type: "select",
-        placeholder: "Input Frequency",
-        options:
-          "[object Object],[object Object],[object Object],[object Object],[object Object]",
+        key: 'frequency',
+        label: 'Frequency',
+        type: 'select',
+        placeholder: 'Input Frequency',
+        options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
+        
       },
       {
-        key: "expense",
-        label: "Expense",
-        type: "input",
-        placeholder: "Input Expense",
-        options: "",
+        key: 'expense',
+        label: 'Expense',
+        type: 'input',
+        placeholder: 'Input Expense',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IVehicleService {
+  id: FieldValue;
+  serviceItem: FieldValue;
+  type: FieldValue;
+  frequency: FieldValue;
+  expense: FieldValue;
+  
 }

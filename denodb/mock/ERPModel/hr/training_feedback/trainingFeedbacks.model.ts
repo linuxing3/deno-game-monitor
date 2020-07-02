@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: TrainingFeedback
 |--------------------------------------------------------------------------
 |
-| Model of trainingFeedbacks
+| Model Class and Interface of trainingFeedbacks
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class TrainingFeedback extends Model {
+
+export class TrainingFeedback extends Model { 
   static table = "trainingFeedbacks";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     employee: DataTypes.STRING,
@@ -30,88 +37,115 @@ export class TrainingFeedback extends Model {
     trainerName: DataTypes.STRING,
     feedback: DataTypes.STRING,
     amendedFrom: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "employee",
-        label: "Employee",
-        type: "select",
-        placeholder: "Input Employee",
-        options: "",
+        key: 'employee',
+        label: 'Employee',
+        type: 'select',
+        placeholder: 'Input Employee',
+        options: '',
+        
       },
       {
-        key: "employeeName",
-        label: "Employee Name",
-        type: "input",
-        placeholder: "Input Employee Name",
-        options: "",
+        key: 'employeeName',
+        label: 'Employee Name',
+        type: 'input',
+        placeholder: 'Input Employee Name',
+        options: '',
+        
       },
       {
-        key: "department",
-        label: "Department",
-        type: "select",
-        placeholder: "Input Department",
-        options: "",
+        key: 'department',
+        label: 'Department',
+        type: 'select',
+        placeholder: 'Input Department',
+        options: '',
+        
       },
       {
-        key: "course",
-        label: "Course",
-        type: "select",
-        placeholder: "Input Course",
-        options: "",
+        key: 'course',
+        label: 'Course',
+        type: 'select',
+        placeholder: 'Input Course',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "trainingEvent",
-        label: "Training Event",
-        type: "select",
-        placeholder: "Input Training Event",
-        options: "",
+        key: 'trainingEvent',
+        label: 'Training Event',
+        type: 'select',
+        placeholder: 'Input Training Event',
+        options: '',
+        
       },
       {
-        key: "eventName",
-        label: "Event Name",
-        type: "input",
-        placeholder: "Input Event Name",
-        options: "",
+        key: 'eventName',
+        label: 'Event Name',
+        type: 'input',
+        placeholder: 'Input Event Name',
+        options: '',
+        
       },
       {
-        key: "trainerName",
-        label: "Trainer Name",
-        type: "input",
-        placeholder: "Input Trainer Name",
-        options: "",
+        key: 'trainerName',
+        label: 'Trainer Name',
+        type: 'input',
+        placeholder: 'Input Trainer Name',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "feedback",
-        label: "Feedback",
-        type: "input",
-        placeholder: "Input Feedback",
-        options: "",
+        key: 'feedback',
+        label: 'Feedback',
+        type: 'input',
+        placeholder: 'Input Feedback',
+        options: '',
+        
       },
       {
-        key: "amendedFrom",
-        label: "Amended From",
-        type: "select",
-        placeholder: "Input Amended From",
-        options: "",
+        key: 'amendedFrom',
+        label: 'Amended From',
+        type: 'select',
+        placeholder: 'Input Amended From',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ITrainingFeedback {
+  id: FieldValue;
+  employee: FieldValue;
+  employeeName: FieldValue;
+  department: FieldValue;
+  course: FieldValue;
+  trainingEvent: FieldValue;
+  eventName: FieldValue;
+  trainerName: FieldValue;
+  feedback: FieldValue;
+  amendedFrom: FieldValue;
+  
 }

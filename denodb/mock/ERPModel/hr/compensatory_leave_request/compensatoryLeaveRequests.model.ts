@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: CompensatoryLeaveRequest
 |--------------------------------------------------------------------------
 |
-| Model of compensatoryLeaveRequests
+| Model Class and Interface of compensatoryLeaveRequests
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class CompensatoryLeaveRequest extends Model {
+
+export class CompensatoryLeaveRequest extends Model { 
   static table = "compensatoryLeaveRequests";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     employee: DataTypes.STRING,
@@ -33,109 +40,142 @@ export class CompensatoryLeaveRequest extends Model {
     halfDayDate: DataTypes.STRING,
     reason: DataTypes.STRING,
     amendedFrom: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "employee",
-        label: "Employee",
-        type: "select",
-        placeholder: "Input Employee",
-        options: "",
+        key: 'employee',
+        label: 'Employee',
+        type: 'select',
+        placeholder: 'Input Employee',
+        options: '',
+        
       },
       {
-        key: "employeeName",
-        label: "Employee Name",
-        type: "input",
-        placeholder: "Input Employee Name",
-        options: "",
+        key: 'employeeName',
+        label: 'Employee Name',
+        type: 'input',
+        placeholder: 'Input Employee Name',
+        options: '',
+        
       },
       {
-        key: "department",
-        label: "Department",
-        type: "select",
-        placeholder: "Input Department",
-        options: "",
+        key: 'department',
+        label: 'Department',
+        type: 'select',
+        placeholder: 'Input Department',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "leaveType",
-        label: "Leave Type",
-        type: "select",
-        placeholder: "Input Leave Type",
-        options: "",
+        key: 'leaveType',
+        label: 'Leave Type',
+        type: 'select',
+        placeholder: 'Input Leave Type',
+        options: '',
+        
       },
       {
-        key: "leaveAllocation",
-        label: "Leave Allocation",
-        type: "select",
-        placeholder: "Input Leave Allocation",
-        options: "",
+        key: 'leaveAllocation',
+        label: 'Leave Allocation',
+        type: 'select',
+        placeholder: 'Input Leave Allocation',
+        options: '',
+        
       },
       {
-        key: "workedOnHoliday",
-        label: "Worked On Holiday",
-        type: "input",
-        placeholder: "Input Worked On Holiday",
-        options: "",
+        key: 'workedOnHoliday',
+        label: 'Worked On Holiday',
+        type: 'input',
+        placeholder: 'Input Worked On Holiday',
+        options: '',
+        
       },
       {
-        key: "workFromDate",
-        label: "Work From Date",
-        type: "input",
-        placeholder: "Input Work From Date",
-        options: "",
+        key: 'workFromDate',
+        label: 'Work From Date',
+        type: 'input',
+        placeholder: 'Input Work From Date',
+        options: '',
+        
       },
       {
-        key: "workEndDate",
-        label: "Work End Date",
-        type: "input",
-        placeholder: "Input Work End Date",
-        options: "",
+        key: 'workEndDate',
+        label: 'Work End Date',
+        type: 'input',
+        placeholder: 'Input Work End Date',
+        options: '',
+        
       },
       {
-        key: "halfDay",
-        label: "Half Day",
-        type: "input",
-        placeholder: "Input Half Day",
-        options: "",
+        key: 'halfDay',
+        label: 'Half Day',
+        type: 'input',
+        placeholder: 'Input Half Day',
+        options: '',
+        
       },
       {
-        key: "halfDayDate",
-        label: "Half Day Date",
-        type: "input",
-        placeholder: "Input Half Day Date",
-        options: "",
+        key: 'halfDayDate',
+        label: 'Half Day Date',
+        type: 'input',
+        placeholder: 'Input Half Day Date',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "reason",
-        label: "Reason",
-        type: "input",
-        placeholder: "Input Reason",
-        options: "",
+        key: 'reason',
+        label: 'Reason',
+        type: 'input',
+        placeholder: 'Input Reason',
+        options: '',
+        
       },
       {
-        key: "amendedFrom",
-        label: "Amended From",
-        type: "select",
-        placeholder: "Input Amended From",
-        options: "",
+        key: 'amendedFrom',
+        label: 'Amended From',
+        type: 'select',
+        placeholder: 'Input Amended From',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ICompensatoryLeaveRequest {
+  id: FieldValue;
+  employee: FieldValue;
+  employeeName: FieldValue;
+  department: FieldValue;
+  leaveType: FieldValue;
+  leaveAllocation: FieldValue;
+  workedOnHoliday: FieldValue;
+  workFromDate: FieldValue;
+  workEndDate: FieldValue;
+  halfDay: FieldValue;
+  halfDayDate: FieldValue;
+  reason: FieldValue;
+  amendedFrom: FieldValue;
+  
 }

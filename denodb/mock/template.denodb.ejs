@@ -6,34 +6,46 @@
 | Model: <%= modelName %>
 |--------------------------------------------------------------------------
 |
-| Model of <%= tableName %>
+| Model Class and Interface of <%= tableName %>
 |
 */
 import {
   DataTypes,
   Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
+
 
 export class <%= modelName %> extends Model { 
   static table = "<%= tableName %>";
   static timestamps = true;
   
-  static fields = {
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    <% for (let i = 0; i < fields.length; i++) { %>
-    <% if(fields[i]['key']) { %><%= fields[i]['key'] %>: DataTypes.STRING,<% } %>
-    <% } %>
+    <% for (let i = 0; i < fields.length; i++) { %><% if(fields[i]['key']) { %><%= fields[i]['key'] %>: DataTypes.STRING,
+    <% } %><% } %>
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
-      <% for (let i = 0; i < fields.length; i++) { %>{<% for (let j = 0; j < 5; j++) { %>
-        <% if(Object.keys(fields[i])[j]) { %>
-        <%= Object.keys(fields[i])[j] %>: '<%= fields[i][Object.keys(fields[i])[j]]  %>',
-        <% } %>
-      <% } %>},<% } %>
+      <% for (let i = 0; i < fields.length; i++) { %>{
+        <% for (let j = 0; j < 5; j++) { %><% if(Object.keys(fields[i])[j]) { %><%= Object.keys(fields[i])[j] %>: '<%= fields[i][Object.keys(fields[i])[j]]  %>',
+        <% } %><% } %>
+      },
+      <% } %>
     ]
   };
-} 
+}
+
+export interface I<%= modelName %> {
+  id: FieldValue;
+  <% for (let i = 0; i < fields.length; i++) { %><% if(fields[i]['key']) { %><%= fields[i]['key'] %>: FieldValue;
+  <% } %><% } %>
+}

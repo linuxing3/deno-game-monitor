@@ -162,13 +162,6 @@
       "options": []
     },
     {
-      "key": "taxAmountAfterDiscountAmount",
-      "label": "Tax Amount After Discount Amount",
-      "type": "select",
-      "placeholder": "Input Tax Amount After Discount Amount",
-      "options": []
-    },
-    {
       "key": "itemWiseTaxDetail",
       "label": "Item Wise Tax Detail",
       "type": "input",

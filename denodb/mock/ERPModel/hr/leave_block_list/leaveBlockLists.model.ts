@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: LeaveBlockList
 |--------------------------------------------------------------------------
 |
-| Model of leaveBlockLists
+| Model Class and Interface of leaveBlockLists
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class LeaveBlockList extends Model {
+
+export class LeaveBlockList extends Model { 
   static table = "leaveBlockLists";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     leaveBlockListName: DataTypes.STRING,
@@ -28,60 +35,81 @@ export class LeaveBlockList extends Model {
     leaveBlockListDates: DataTypes.STRING,
     allowUsers: DataTypes.STRING,
     leaveBlockListAllowed: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "leaveBlockListName",
-        label: "Leave Block List Name",
-        type: "input",
-        placeholder: "Input Leave Block List Name",
-        options: "",
+        key: 'leaveBlockListName',
+        label: 'Leave Block List Name',
+        type: 'input',
+        placeholder: 'Input Leave Block List Name',
+        options: '',
+        
       },
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "appliesToCompany",
-        label: "Applies To Company",
-        type: "input",
-        placeholder: "Input Applies To Company",
-        options: "",
+        key: 'appliesToCompany',
+        label: 'Applies To Company',
+        type: 'input',
+        placeholder: 'Input Applies To Company',
+        options: '',
+        
       },
       {
-        key: "blockDays",
-        label: "Block Days",
-        type: "input",
-        placeholder: "Input Block Days",
-        options: "",
+        key: 'blockDays',
+        label: 'Block Days',
+        type: 'input',
+        placeholder: 'Input Block Days',
+        options: '',
+        
       },
       {
-        key: "leaveBlockListDates",
-        label: "Leave Block List Dates",
-        type: "select",
-        placeholder: "Input Leave Block List Dates",
-        options: "",
+        key: 'leaveBlockListDates',
+        label: 'Leave Block List Dates',
+        type: 'select',
+        placeholder: 'Input Leave Block List Dates',
+        options: '',
+        
       },
       {
-        key: "allowUsers",
-        label: "Allow Users",
-        type: "input",
-        placeholder: "Input Allow Users",
-        options: "",
+        key: 'allowUsers',
+        label: 'Allow Users',
+        type: 'input',
+        placeholder: 'Input Allow Users',
+        options: '',
+        
       },
       {
-        key: "leaveBlockListAllowed",
-        label: "Leave Block List Allowed",
-        type: "select",
-        placeholder: "Input Leave Block List Allowed",
-        options: "",
+        key: 'leaveBlockListAllowed',
+        label: 'Leave Block List Allowed',
+        type: 'select',
+        placeholder: 'Input Leave Block List Allowed',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ILeaveBlockList {
+  id: FieldValue;
+  leaveBlockListName: FieldValue;
+  company: FieldValue;
+  appliesToCompany: FieldValue;
+  blockDays: FieldValue;
+  leaveBlockListDates: FieldValue;
+  allowUsers: FieldValue;
+  leaveBlockListAllowed: FieldValue;
+  
 }

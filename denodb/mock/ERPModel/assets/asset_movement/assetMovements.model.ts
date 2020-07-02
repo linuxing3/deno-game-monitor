@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: AssetMovement
 |--------------------------------------------------------------------------
 |
-| Model of assetMovements
+| Model Class and Interface of assetMovements
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class AssetMovement extends Model {
+
+export class AssetMovement extends Model { 
   static table = "assetMovements";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     company: DataTypes.STRING,
@@ -36,137 +43,177 @@ export class AssetMovement extends Model {
     referenceDocType: DataTypes.STRING,
     referenceName: DataTypes.STRING,
     amendedFrom: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "company",
-        label: "Company",
-        type: "select",
-        placeholder: "Input Company",
-        options: "",
+        key: 'company',
+        label: 'Company',
+        type: 'select',
+        placeholder: 'Input Company',
+        options: '',
+        
       },
       {
-        key: "purpose",
-        label: "Purpose",
-        type: "select",
-        placeholder: "Input Purpose",
-        options: "[object Object],[object Object],[object Object]",
+        key: 'purpose',
+        label: 'Purpose',
+        type: 'select',
+        placeholder: 'Input Purpose',
+        options: '[object Object],[object Object],[object Object]',
+        
       },
       {
-        key: "asset",
-        label: "Asset",
-        type: "select",
-        placeholder: "Input Asset",
-        options: "",
+        key: 'asset',
+        label: 'Asset',
+        type: 'select',
+        placeholder: 'Input Asset',
+        options: '',
+        
       },
       {
-        key: "transactionDate",
-        label: "Transaction Date",
-        type: "input",
-        placeholder: "Input Transaction Date",
-        options: "",
+        key: 'transactionDate',
+        label: 'Transaction Date',
+        type: 'input',
+        placeholder: 'Input Transaction Date',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "quantity",
-        label: "Quantity",
-        type: "input",
-        placeholder: "Input Quantity",
-        options: "",
+        key: 'quantity',
+        label: 'Quantity',
+        type: 'input',
+        placeholder: 'Input Quantity',
+        options: '',
+        
       },
       {
-        key: "selectSerialNo",
-        label: "Select Serial No",
-        type: "select",
-        placeholder: "Input Select Serial No",
-        options: "",
+        key: 'selectSerialNo',
+        label: 'Select Serial No',
+        type: 'select',
+        placeholder: 'Input Select Serial No',
+        options: '',
+        
       },
       {
-        key: "serialNo",
-        label: "Serial No",
-        type: "input",
-        placeholder: "Input Serial No",
-        options: "",
+        key: 'serialNo',
+        label: 'Serial No',
+        type: 'input',
+        placeholder: 'Input Serial No',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "sourceLocation",
-        label: "Source Location",
-        type: "select",
-        placeholder: "Input Source Location",
-        options: "",
+        key: 'sourceLocation',
+        label: 'Source Location',
+        type: 'select',
+        placeholder: 'Input Source Location',
+        options: '',
+        
       },
       {
-        key: "targetLocation",
-        label: "Target Location",
-        type: "select",
-        placeholder: "Input Target Location",
-        options: "",
+        key: 'targetLocation',
+        label: 'Target Location',
+        type: 'select',
+        placeholder: 'Input Target Location',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "fromEmployee",
-        label: "From Employee",
-        type: "select",
-        placeholder: "Input From Employee",
-        options: "",
+        key: 'fromEmployee',
+        label: 'From Employee',
+        type: 'select',
+        placeholder: 'Input From Employee',
+        options: '',
+        
       },
       {
-        key: "toEmployee",
-        label: "To Employee",
-        type: "select",
-        placeholder: "Input To Employee",
-        options: "",
+        key: 'toEmployee',
+        label: 'To Employee',
+        type: 'select',
+        placeholder: 'Input To Employee',
+        options: '',
+        
       },
       {
-        key: "reference",
-        label: "Reference",
-        type: "input",
-        placeholder: "Input Reference",
-        options: "",
+        key: 'reference',
+        label: 'Reference',
+        type: 'input',
+        placeholder: 'Input Reference',
+        options: '',
+        
       },
       {
-        key: "referenceDocType",
-        label: "Reference Doc Type",
-        type: "select",
-        placeholder: "Input Reference Doc Type",
-        options: "",
+        key: 'referenceDocType',
+        label: 'Reference Doc Type',
+        type: 'select',
+        placeholder: 'Input Reference Doc Type',
+        options: '',
+        
       },
       {
-        key: "referenceName",
-        label: "Reference Name",
-        type: "select",
-        placeholder: "Input Reference Name",
-        options: "",
+        key: 'referenceName',
+        label: 'Reference Name',
+        type: 'select',
+        placeholder: 'Input Reference Name',
+        options: '',
+        
       },
       {
-        key: "amendedFrom",
-        label: "Amended From",
-        type: "select",
-        placeholder: "Input Amended From",
-        options: "",
+        key: 'amendedFrom',
+        label: 'Amended From',
+        type: 'select',
+        placeholder: 'Input Amended From',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IAssetMovement {
+  id: FieldValue;
+  company: FieldValue;
+  purpose: FieldValue;
+  asset: FieldValue;
+  transactionDate: FieldValue;
+  quantity: FieldValue;
+  selectSerialNo: FieldValue;
+  serialNo: FieldValue;
+  sourceLocation: FieldValue;
+  targetLocation: FieldValue;
+  fromEmployee: FieldValue;
+  toEmployee: FieldValue;
+  reference: FieldValue;
+  referenceDocType: FieldValue;
+  referenceName: FieldValue;
+  amendedFrom: FieldValue;
+  
 }

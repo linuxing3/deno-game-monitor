@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,19 +6,26 @@
 | Model: ActivityCost
 |--------------------------------------------------------------------------
 |
-| Model of activityCosts
+| Model Class and Interface of activityCosts
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class ActivityCost extends Model {
+
+export class ActivityCost extends Model { 
   static table = "activityCosts";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     activityType: DataTypes.STRING,
@@ -28,81 +35,105 @@ export class ActivityCost extends Model {
     billingRate: DataTypes.STRING,
     costingRate: DataTypes.STRING,
     title: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "activityType",
-        label: "Activity Type",
-        type: "select",
-        placeholder: "Input Activity Type",
-        options: "",
+        key: 'activityType',
+        label: 'Activity Type',
+        type: 'select',
+        placeholder: 'Input Activity Type',
+        options: '',
+        
       },
       {
-        key: "employee",
-        label: "Employee",
-        type: "select",
-        placeholder: "Input Employee",
-        options: "",
+        key: 'employee',
+        label: 'Employee',
+        type: 'select',
+        placeholder: 'Input Employee',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "employeeName",
-        label: "Employee Name",
-        type: "input",
-        placeholder: "Input Employee Name",
-        options: "",
+        key: 'employeeName',
+        label: 'Employee Name',
+        type: 'input',
+        placeholder: 'Input Employee Name',
+        options: '',
+        
       },
       {
-        key: "department",
-        label: "Department",
-        type: "select",
-        placeholder: "Input Department",
-        options: "",
+        key: 'department',
+        label: 'Department',
+        type: 'select',
+        placeholder: 'Input Department',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "billingRate",
-        label: "Billing Rate",
-        type: "input",
-        placeholder: "Input Billing Rate",
-        options: "",
+        key: 'billingRate',
+        label: 'Billing Rate',
+        type: 'input',
+        placeholder: 'Input Billing Rate',
+        options: '',
+        
       },
       {
-        key: "",
-        label: "",
-        type: "input",
-        placeholder: "Input ",
-        options: "",
+        key: '',
+        label: '',
+        type: 'input',
+        placeholder: 'Input ',
+        options: '',
+        
       },
       {
-        key: "costingRate",
-        label: "Costing Rate",
-        type: "input",
-        placeholder: "Input Costing Rate",
-        options: "",
+        key: 'costingRate',
+        label: 'Costing Rate',
+        type: 'input',
+        placeholder: 'Input Costing Rate',
+        options: '',
+        
       },
       {
-        key: "title",
-        label: "Title",
-        type: "input",
-        placeholder: "Input Title",
-        options: "",
+        key: 'title',
+        label: 'Title',
+        type: 'input',
+        placeholder: 'Input Title',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IActivityCost {
+  id: FieldValue;
+  activityType: FieldValue;
+  employee: FieldValue;
+  employeeName: FieldValue;
+  department: FieldValue;
+  billingRate: FieldValue;
+  costingRate: FieldValue;
+  title: FieldValue;
+  
 }

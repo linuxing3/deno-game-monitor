@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,58 +6,80 @@
 | Model: DrivingLicenseCategory
 |--------------------------------------------------------------------------
 |
-| Model of drivingLicenseCategorys
+| Model Class and Interface of drivingLicenseCategorys
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class DrivingLicenseCategory extends Model {
+
+export class DrivingLicenseCategory extends Model { 
   static table = "drivingLicenseCategorys";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     class: DataTypes.STRING,
     description: DataTypes.STRING,
     issuingDate: DataTypes.STRING,
     expiryDate: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "class",
-        label: "Class",
-        type: "input",
-        placeholder: "Input Class",
-        options: "",
+        key: 'class',
+        label: 'Class',
+        type: 'input',
+        placeholder: 'Input Class',
+        options: '',
+        
       },
       {
-        key: "description",
-        label: "Description",
-        type: "input",
-        placeholder: "Input Description",
-        options: "",
+        key: 'description',
+        label: 'Description',
+        type: 'input',
+        placeholder: 'Input Description',
+        options: '',
+        
       },
       {
-        key: "issuingDate",
-        label: "Issuing Date",
-        type: "input",
-        placeholder: "Input Issuing Date",
-        options: "",
+        key: 'issuingDate',
+        label: 'Issuing Date',
+        type: 'input',
+        placeholder: 'Input Issuing Date',
+        options: '',
+        
       },
       {
-        key: "expiryDate",
-        label: "Expiry Date",
-        type: "input",
-        placeholder: "Input Expiry Date",
-        options: "",
+        key: 'expiryDate',
+        label: 'Expiry Date',
+        type: 'input',
+        placeholder: 'Input Expiry Date',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface IDrivingLicenseCategory {
+  id: FieldValue;
+  class: FieldValue;
+  description: FieldValue;
+  issuingDate: FieldValue;
+  expiryDate: FieldValue;
+  
 }

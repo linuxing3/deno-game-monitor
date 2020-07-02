@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju.
+// Copyright 2018-2020 Xing Wenju. 
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -6,34 +6,50 @@
 | Model: SubscriptionInvoice
 |--------------------------------------------------------------------------
 |
-| Model of subscriptionInvoices
+| Model Class and Interface of subscriptionInvoices
 |
 */
 import {
   DataTypes,
-  Model,
+  Model
 } from "https://deno.land/x/denodb/mod.ts";
+import {
+  FieldValue,
+} from "https://deno.land/x/denodb/lib/query-builder.ts";
+import {
+  ModelFields,
+} from "https://deno.land/x/denodb/lib/model.ts";
 
-export class SubscriptionInvoice extends Model {
+
+export class SubscriptionInvoice extends Model { 
   static table = "subscriptionInvoices";
   static timestamps = true;
-
-  static fields = {
+  
+  static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     invoice: DataTypes.STRING,
+    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: "invoice",
-        label: "Invoice",
-        type: "select",
-        placeholder: "Input Invoice",
-        options: "",
+        key: 'invoice',
+        label: 'Invoice',
+        type: 'select',
+        placeholder: 'Input Invoice',
+        options: '',
+        
       },
-    ],
+      
+    ]
   };
+}
+
+export interface ISubscriptionInvoice {
+  id: FieldValue;
+  invoice: FieldValue;
+  
 }

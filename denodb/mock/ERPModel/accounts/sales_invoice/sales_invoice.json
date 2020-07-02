@@ -948,13 +948,6 @@
       "options": []
     },
     {
-      "key": "terms",
-      "label": "Terms",
-      "type": "select",
-      "placeholder": "Input Terms",
-      "options": []
-    },
-    {
       "key": "termsAndConditionsDetails",
       "label": "Terms And Conditions Details",
       "type": "input",
