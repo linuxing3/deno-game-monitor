@@ -21,7 +21,7 @@ import {
   pascalCase,
 } from "https://deno.land/x/case/mod.ts";
 import { singular, plural } from "https://deno.land/x/deno_plural/mod.ts";
-import { Select } from "https://deno.land/x/cliffy/prompt.ts";
+import { Input, Select } from "https://deno.land/x/cliffy/prompt.ts";
 
 interface SchemaConfig {
   modelName: string;
@@ -48,7 +48,7 @@ class ModelGenerator {
   postfix: string = "model";
 
   constructor(adaptor?: string, cwd?: string) {
-    this.adaptor = adaptor || 'denodb';
+    this.adaptor = adaptor || "denodb";
     this.cwd = cwd || Deno.cwd();
     this.useTemplates();
   }
@@ -93,13 +93,13 @@ class ModelGenerator {
   useTemplates = async () => {
     this.modelIndexFileName = this.fileAdapter(
       this.modelIndexFileName,
-      'index',
+      "index",
     );
     this.modelIndexTemplate = this.fileAdapter(
       this.modelIndexTemplate,
-      'index',
+      "index",
     );
-    this.modelTemplate = this.fileAdapter(this.modelTemplate, 'single');
+    this.modelTemplate = this.fileAdapter(this.modelTemplate, "single");
   };
 
   shouldBeCleand(entry: WalkEntry) {
@@ -150,7 +150,7 @@ class ModelGenerator {
     const {
       models,
       modelTemplate,
-      cwd
+      cwd,
     } = this;
 
     // Start walking
@@ -161,8 +161,12 @@ class ModelGenerator {
       const ext = posix.extname(entry.path);
       if (ext === ".json") {
         try {
-          const { modelFileName, schema, tableName, modelName } = await this.useModelConfig(entry);
-          const adaptedModelFileName = this.fileAdapter(modelFileName, this.postfix);
+          const { modelFileName, schema, tableName, modelName } = await this
+            .useModelConfig(entry);
+          const adaptedModelFileName = this.fileAdapter(
+            modelFileName,
+            this.postfix,
+          );
           // render model and write to file
           await this.renderModelFile(
             adaptedModelFileName,
@@ -187,7 +191,23 @@ class ModelGenerator {
 }
 
 // Bootstrap
-let generator = new ModelGenerator("denodb", Deno.cwd());
+const adaptor: string = await Select.prompt({
+  message: "Select your adaptor?",
+  options: [
+    {
+      name: "denodb",
+      value: "denodb",
+    },
+    {
+      name: "dso",
+      value: "dso",
+    },
+  ],
+});
+const dir: string = await Input.prompt(
+  `What's your working dir, empty for current?`,
+);
+let generator = new ModelGenerator(adaptor, dir || Deno.cwd());
 await generator.walkModels();
 await generator.renderModelIndexFile();
 console.log(`Done!`);
