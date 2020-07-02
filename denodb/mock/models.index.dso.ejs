@@ -1,0 +1,15 @@
+// loop for import list
+<% for (let i = 0; i < models.length; i++) { %><% if(models[i]['tableName']) { %>
+import { <%= models[i]['modelName'] %> } from '<%= models[i]['path'] %>';
+<% } %><% } %>
+
+// Loop for a models list
+export const models = [
+<% for (let i = 0; i < models.length; i++) { %><% if(models[i]['tableName']) { %><%= models[i]['modelName'] %>,
+  <% } %><% } %>
+]
+
+export const modelPool = {
+<% for (let i = 0; i < models.length; i++) { %><% if(models[i]['tableName']) { %><%= models[i]['tableName'] %>: <%= models[i]['modelName'] %>,
+  <% } %><% } %>
+}

@@ -1,0 +1,40 @@
+// Copyright 2018-2020 Xing Wenju. 
+// All rights reserved. MIT license.
+// deno-lint-ignore-file
+/*
+|--------------------------------------------------------------------------
+| Model: <%= modelName %>
+|--------------------------------------------------------------------------
+|
+| Model Class and Interface of <%= tableName %>
+|
+*/
+import {
+  BaseModel,
+  Field,
+  FieldType,
+  Model
+} from "https://deno.land/x/dso@v1.0.0/mod.ts";
+
+@Model("<%= tableName %>")
+export class <%= modelName %> extends BaseModel { 
+
+  @Field({
+    type: FieldType.INT,
+    primary: true,
+    length: 11,
+    autoIncrement: true
+  })
+  id!: number;
+
+  <% for (let i = 0; i < fields.length; i++) { %><% if(fields[i]['key']) { %>@Field({ type: FieldType.STRING })
+  <%= fields[i]['key'] %>!: string;
+  
+  <% } %><% } %>
+}
+
+export interface I<%= modelName %> {
+  id: number;
+  <% for (let i = 0; i < fields.length; i++) { %><% if(fields[i]['key']) { %><%= fields[i]['key'] %>: string;
+  <% } %><% } %>
+}
