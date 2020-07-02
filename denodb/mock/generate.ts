@@ -10,6 +10,7 @@ import {
   walk,
   readJson,
   writeFileStr,
+  WalkEntry,
 } from "https://deno.land/x/std/fs/mod.ts";
 import { posix } from "https://deno.land/std/path/mod.ts";
 import {
@@ -19,6 +20,7 @@ import {
   camelCase,
   pascalCase,
 } from "https://deno.land/x/case/mod.ts";
+import { singular, plural } from "https://deno.land/x/deno_plural/mod.ts";
 import { Select } from "https://deno.land/x/cliffy/prompt.ts";
 
 const { cwd } = Deno;
@@ -99,6 +101,46 @@ async function useTemplates(): Promise<TemplateConfig> {
   };
 }
 
+function shouldBeCleand(entry: WalkEntry) {
+  return entry.name === "test_records.json" ||
+  posix.extname(entry.path) === ".ts";
+}
+
+// Delete unuseful files
+async function clean(entry: WalkEntry) {
+  if (shouldBeCleand(entry)){
+    const confirmClean: string = await Select.prompt({
+      message: `confirm to delete`,
+      options: [
+        { name: "No", value: "n" },
+        { name: "Yes", value: "y" },
+      ]
+    });
+    if (confirmClean === "n") console.log("Not deleted old file!");
+    if (confirmClean === "y") await Deno.remove(entry.path);
+  }
+}
+
+async function useModelConfig(entry: WalkEntry) {
+  const shortFileName = posix.basename(entry.path).split(".")[0];
+  const modelName = pascalCase(singular(shortFileName));
+  const tableName = camelCase(plural(shortFileName));
+
+  const shortDirName = posix.dirname(entry.path);
+  const modelFileName = `${shortDirName}/${tableName}.model.ts`;
+
+  // Read file and fetch model schema
+  const model: any = await readJson(entry.path);
+  // define schema of model
+  const schema: SchemaConfig = {
+    modelName,
+    tableName,
+    fields: model.fields,
+  };
+
+  return { tableName, modelName, modelFileName, schema };
+}
+
 /**
  * Walk through dir and generate ORM models
  * @param path path
@@ -116,31 +158,13 @@ async function walkModels(
   // Start walking
   for await (const entry of walk(path)) {
     // Delete unuseful files
-    if (
-      entry.name === "test_records.json" ||
-      entry.name === "testRecordss.model.ts"
-    ) {
-      console.log("removing" + entry.path);
-      await Deno.remove(entry.path);
-    } // check extension of json file
+    // await clean(entry);
+
     const ext = posix.extname(entry.path);
     if (ext === ".json") {
       try {
-        const shortFileName = posix.basename(entry.path).split(".")[0];
-        const modelName = pascalCase(shortFileName);
-        const tableName = camelCase(shortFileName) + "s";
 
-        const shortDirName = posix.dirname(entry.path);
-        const modelFileName = `${shortDirName}/${tableName}.model.ts`;
-
-        // Read file and fetch model schema
-        const model: any = await readJson(entry.path);
-        // define schema of model
-        const schema: SchemaConfig = {
-          modelName,
-          tableName,
-          fields: model.fields,
-        };
+        const { modelFileName, schema,  tableName, modelName } = await useModelConfig(entry);
         // render model and write to file
         await renderModelFile(
           modelFileName,

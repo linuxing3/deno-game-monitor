@@ -2,7 +2,7 @@
 
 import { AccountingPeriod } from './ERPModel/accounts/accounting_period/accountingPeriods.model.ts';
 
-import { AccountsSettings } from './ERPModel/accounts/accounts_settings/accountsSettingss.model.ts';
+import { AccountsSetting } from './ERPModel/accounts/accounts_settings/accountsSettings.model.ts';
 
 import { AllowedToTransactWith } from './ERPModel/accounts/allowed_to_transact_with/allowedToTransactWiths.model.ts';
 
@@ -16,17 +16,17 @@ import { BankReconciliation } from './ERPModel/accounts/bank_reconciliation/bank
 
 import { BankReconciliationDetail } from './ERPModel/accounts/bank_reconciliation_detail/bankReconciliationDetails.model.ts';
 
-import { BankStatementSettings } from './ERPModel/accounts/bank_statement_settings/bankStatementSettingss.model.ts';
+import { BankStatementSetting } from './ERPModel/accounts/bank_statement_settings/bankStatementSettings.model.ts';
 
 import { BankStatementSettingsItem } from './ERPModel/accounts/bank_statement_settings_item/bankStatementSettingsItems.model.ts';
 
-import { BankStatementTransactionEntry } from './ERPModel/accounts/bank_statement_transaction_entry/bankStatementTransactionEntrys.model.ts';
+import { BankStatementTransactionEntry } from './ERPModel/accounts/bank_statement_transaction_entry/bankStatementTransactionEntries.model.ts';
 
 import { BankStatementTransactionInvoiceItem } from './ERPModel/accounts/bank_statement_transaction_invoice_item/bankStatementTransactionInvoiceItems.model.ts';
 
 import { BankStatementTransactionPaymentItem } from './ERPModel/accounts/bank_statement_transaction_payment_item/bankStatementTransactionPaymentItems.model.ts';
 
-import { BankStatementTransactionSettings } from './ERPModel/accounts/bank_statement_transaction_settings/bankStatementTransactionSettingss.model.ts';
+import { BankStatementTransactionSetting } from './ERPModel/accounts/bank_statement_transaction_settings/bankStatementTransactionSettings.model.ts';
 
 import { BankStatementTransactionSettingsItem } from './ERPModel/accounts/bank_statement_transaction_settings_item/bankStatementTransactionSettingsItems.model.ts';
 
@@ -42,15 +42,15 @@ import { CashFlowMapper } from './ERPModel/accounts/cash_flow_mapper/cashFlowMap
 
 import { CashFlowMapping } from './ERPModel/accounts/cash_flow_mapping/cashFlowMappings.model.ts';
 
-import { CashFlowMappingAccounts } from './ERPModel/accounts/cash_flow_mapping_accounts/cashFlowMappingAccountss.model.ts';
+import { CashFlowMappingAccount } from './ERPModel/accounts/cash_flow_mapping_accounts/cashFlowMappingAccounts.model.ts';
 
 import { CashFlowMappingTemplate } from './ERPModel/accounts/cash_flow_mapping_template/cashFlowMappingTemplates.model.ts';
 
-import { CashFlowMappingTemplateDetails } from './ERPModel/accounts/cash_flow_mapping_template_details/cashFlowMappingTemplateDetailss.model.ts';
+import { CashFlowMappingTemplateDetail } from './ERPModel/accounts/cash_flow_mapping_template_details/cashFlowMappingTemplateDetails.model.ts';
 
 import { CashierClosing } from './ERPModel/accounts/cashier_closing/cashierClosings.model.ts';
 
-import { CashierClosingPayments } from './ERPModel/accounts/cashier_closing_payments/cashierClosingPaymentss.model.ts';
+import { CashierClosingPayment } from './ERPModel/accounts/cashier_closing_payments/cashierClosingPayments.model.ts';
 
 import { ChequePrintTemplate } from './ERPModel/accounts/cheque_print_template/chequePrintTemplates.model.ts';
 
@@ -66,9 +66,9 @@ import { FinanceBook } from './ERPModel/accounts/finance_book/financeBooks.model
 
 import { FiscalYear } from './ERPModel/accounts/fiscal_year/fiscalYears.model.ts';
 
-import { FiscalYearCompany } from './ERPModel/accounts/fiscal_year_company/fiscalYearCompanys.model.ts';
+import { FiscalYearCompany } from './ERPModel/accounts/fiscal_year_company/fiscalYearCompanies.model.ts';
 
-import { GlEntry } from './ERPModel/accounts/gl_entry/glEntrys.model.ts';
+import { GlEntry } from './ERPModel/accounts/gl_entry/glEntries.model.ts';
 
 import { GstAccount } from './ERPModel/accounts/gst_account/gstAccounts.model.ts';
 
@@ -76,11 +76,11 @@ import { ItemTaxTemplate } from './ERPModel/accounts/item_tax_template/itemTaxTe
 
 import { ItemTaxTemplateDetail } from './ERPModel/accounts/item_tax_template_detail/itemTaxTemplateDetails.model.ts';
 
-import { JournalEntry } from './ERPModel/accounts/journal_entry/journalEntrys.model.ts';
+import { JournalEntry } from './ERPModel/accounts/journal_entry/journalEntries.model.ts';
 
 import { JournalEntryAccount } from './ERPModel/accounts/journal_entry_account/journalEntryAccounts.model.ts';
 
-import { LoyaltyPointEntry } from './ERPModel/accounts/loyalty_point_entry/loyaltyPointEntrys.model.ts';
+import { LoyaltyPointEntry } from './ERPModel/accounts/loyalty_point_entry/loyaltyPointEntries.model.ts';
 
 import { LoyaltyPointEntryRedemption } from './ERPModel/accounts/loyalty_point_entry_redemption/loyaltyPointEntryRedemptions.model.ts';
 
@@ -102,7 +102,7 @@ import { OpeningInvoiceCreationToolItem } from './ERPModel/accounts/opening_invo
 
 import { PartyAccount } from './ERPModel/accounts/party_account/partyAccounts.model.ts';
 
-import { PaymentEntry } from './ERPModel/accounts/payment_entry/paymentEntrys.model.ts';
+import { PaymentEntry } from './ERPModel/accounts/payment_entry/paymentEntries.model.ts';
 
 import { PaymentEntryDeduction } from './ERPModel/accounts/payment_entry_deduction/paymentEntryDeductions.model.ts';
 
@@ -140,7 +140,7 @@ import { PosProfile } from './ERPModel/accounts/pos_profile/posProfiles.model.ts
 
 import { PosProfileUser } from './ERPModel/accounts/pos_profile_user/posProfileUsers.model.ts';
 
-import { PosSettings } from './ERPModel/accounts/pos_settings/posSettingss.model.ts';
+import { PosSetting } from './ERPModel/accounts/pos_settings/posSettings.model.ts';
 
 import { PricingRule } from './ERPModel/accounts/pricing_rule/pricingRules.model.ts';
 
@@ -150,7 +150,7 @@ import { PurchaseInvoiceAdvance } from './ERPModel/accounts/purchase_invoice_adv
 
 import { PurchaseInvoiceItem } from './ERPModel/accounts/purchase_invoice_item/purchaseInvoiceItems.model.ts';
 
-import { PurchaseTaxesAndCharges } from './ERPModel/accounts/purchase_taxes_and_charges/purchaseTaxesAndChargess.model.ts';
+import { PurchaseTaxesAndCharge } from './ERPModel/accounts/purchase_taxes_and_charges/purchaseTaxesAndCharges.model.ts';
 
 import { PurchaseTaxesAndChargesTemplate } from './ERPModel/accounts/purchase_taxes_and_charges_template/purchaseTaxesAndChargesTemplates.model.ts';
 
@@ -166,7 +166,7 @@ import { SalesInvoicePayment } from './ERPModel/accounts/sales_invoice_payment/s
 
 import { SalesInvoiceTimesheet } from './ERPModel/accounts/sales_invoice_timesheet/salesInvoiceTimesheets.model.ts';
 
-import { SalesTaxesAndCharges } from './ERPModel/accounts/sales_taxes_and_charges/salesTaxesAndChargess.model.ts';
+import { SalesTaxesAndCharge } from './ERPModel/accounts/sales_taxes_and_charges/salesTaxesAndCharges.model.ts';
 
 import { SalesTaxesAndChargesTemplate } from './ERPModel/accounts/sales_taxes_and_charges_template/salesTaxesAndChargesTemplates.model.ts';
 
@@ -182,7 +182,7 @@ import { ShippingRule } from './ERPModel/accounts/shipping_rule/shippingRules.mo
 
 import { ShippingRuleCondition } from './ERPModel/accounts/shipping_rule_condition/shippingRuleConditions.model.ts';
 
-import { ShippingRuleCountry } from './ERPModel/accounts/shipping_rule_country/shippingRuleCountrys.model.ts';
+import { ShippingRuleCountry } from './ERPModel/accounts/shipping_rule_country/shippingRuleCountries.model.ts';
 
 import { Subscription } from './ERPModel/accounts/subscription/subscriptions.model.ts';
 
@@ -192,21 +192,21 @@ import { SubscriptionPlan } from './ERPModel/accounts/subscription_plan/subscrip
 
 import { SubscriptionPlanDetail } from './ERPModel/accounts/subscription_plan_detail/subscriptionPlanDetails.model.ts';
 
-import { SubscriptionSettings } from './ERPModel/accounts/subscription_settings/subscriptionSettingss.model.ts';
+import { SubscriptionSetting } from './ERPModel/accounts/subscription_settings/subscriptionSettings.model.ts';
 
-import { TaxCategory } from './ERPModel/accounts/tax_category/taxCategorys.model.ts';
+import { TaxCategory } from './ERPModel/accounts/tax_category/taxCategories.model.ts';
 
 import { TaxRule } from './ERPModel/accounts/tax_rule/taxRules.model.ts';
 
 import { TaxWithholdingAccount } from './ERPModel/accounts/tax_withholding_account/taxWithholdingAccounts.model.ts';
 
-import { TaxWithholdingCategory } from './ERPModel/accounts/tax_withholding_category/taxWithholdingCategorys.model.ts';
+import { TaxWithholdingCategory } from './ERPModel/accounts/tax_withholding_category/taxWithholdingCategories.model.ts';
 
 import { TaxWithholdingRate } from './ERPModel/accounts/tax_withholding_rate/taxWithholdingRates.model.ts';
 
 import { Asset } from './ERPModel/assets/asset/assets.model.ts';
 
-import { AssetCategory } from './ERPModel/assets/asset_category/assetCategorys.model.ts';
+import { AssetCategory } from './ERPModel/assets/asset_category/assetCategories.model.ts';
 
 import { AssetCategoryAccount } from './ERPModel/assets/asset_category_account/assetCategoryAccounts.model.ts';
 
@@ -224,7 +224,7 @@ import { AssetMovement } from './ERPModel/assets/asset_movement/assetMovements.m
 
 import { AssetRepair } from './ERPModel/assets/asset_repair/assetRepairs.model.ts';
 
-import { AssetSettings } from './ERPModel/assets/asset_settings/assetSettingss.model.ts';
+import { AssetSetting } from './ERPModel/assets/asset_settings/assetSettings.model.ts';
 
 import { AssetValueAdjustment } from './ERPModel/assets/asset_value_adjustment/assetValueAdjustments.model.ts';
 
@@ -236,7 +236,7 @@ import { Location } from './ERPModel/assets/location/locations.model.ts';
 
 import { MaintenanceTeamMember } from './ERPModel/assets/maintenance_team_member/maintenanceTeamMembers.model.ts';
 
-import { AdditionalSalary } from './ERPModel/hr/additional_salary/additionalSalarys.model.ts';
+import { AdditionalSalary } from './ERPModel/hr/additional_salary/additionalSalaries.model.ts';
 
 import { Appraisal } from './ERPModel/hr/appraisal/appraisals.model.ts';
 
@@ -246,11 +246,11 @@ import { Attendance } from './ERPModel/hr/attendance/attendances.model.ts';
 
 import { AttendanceRequest } from './ERPModel/hr/attendance_request/attendanceRequests.model.ts';
 
-import { Branch } from './ERPModel/hr/branch/branchs.model.ts';
+import { Branch } from './ERPModel/hr/branch/branches.model.ts';
 
 import { CompensatoryLeaveRequest } from './ERPModel/hr/compensatory_leave_request/compensatoryLeaveRequests.model.ts';
 
-import { DailyWorkSummary } from './ERPModel/hr/daily_work_summary/dailyWorkSummarys.model.ts';
+import { DailyWorkSummary } from './ERPModel/hr/daily_work_summary/dailyWorkSummaries.model.ts';
 
 import { DailyWorkSummaryGroup } from './ERPModel/hr/daily_work_summary_group/dailyWorkSummaryGroups.model.ts';
 
@@ -264,7 +264,7 @@ import { Designation } from './ERPModel/hr/designation/designations.model.ts';
 
 import { Driver } from './ERPModel/hr/driver/drivers.model.ts';
 
-import { DrivingLicenseCategory } from './ERPModel/hr/driving_license_category/drivingLicenseCategorys.model.ts';
+import { DrivingLicenseCategory } from './ERPModel/hr/driving_license_category/drivingLicenseCategories.model.ts';
 
 import { Employee } from './ERPModel/hr/employee/employees.model.ts';
 
@@ -278,11 +278,11 @@ import { EmployeeBenefitApplicationDetail } from './ERPModel/hr/employee_benefit
 
 import { EmployeeBenefitClaim } from './ERPModel/hr/employee_benefit_claim/employeeBenefitClaims.model.ts';
 
-import { EmployeeBoardingActivity } from './ERPModel/hr/employee_boarding_activity/employeeBoardingActivitys.model.ts';
+import { EmployeeBoardingActivity } from './ERPModel/hr/employee_boarding_activity/employeeBoardingActivities.model.ts';
 
 import { EmployeeEducation } from './ERPModel/hr/employee_education/employeeEducations.model.ts';
 
-import { EmployeeExternalWorkHistory } from './ERPModel/hr/employee_external_work_history/employeeExternalWorkHistorys.model.ts';
+import { EmployeeExternalWorkHistory } from './ERPModel/hr/employee_external_work_history/employeeExternalWorkHistories.model.ts';
 
 import { EmployeeGrade } from './ERPModel/hr/employee_grade/employeeGrades.model.ts';
 
@@ -290,37 +290,37 @@ import { EmployeeHealthInsurance } from './ERPModel/hr/employee_health_insurance
 
 import { EmployeeIncentive } from './ERPModel/hr/employee_incentive/employeeIncentives.model.ts';
 
-import { EmployeeInternalWorkHistory } from './ERPModel/hr/employee_internal_work_history/employeeInternalWorkHistorys.model.ts';
+import { EmployeeInternalWorkHistory } from './ERPModel/hr/employee_internal_work_history/employeeInternalWorkHistories.model.ts';
 
 import { EmployeeOnboarding } from './ERPModel/hr/employee_onboarding/employeeOnboardings.model.ts';
 
-import { EmployeeOnboardingActivity } from './ERPModel/hr/employee_onboarding_activity/employeeOnboardingActivitys.model.ts';
+import { EmployeeOnboardingActivity } from './ERPModel/hr/employee_onboarding_activity/employeeOnboardingActivities.model.ts';
 
 import { EmployeeOnboardingTemplate } from './ERPModel/hr/employee_onboarding_template/employeeOnboardingTemplates.model.ts';
 
 import { EmployeePromotion } from './ERPModel/hr/employee_promotion/employeePromotions.model.ts';
 
-import { EmployeePropertyHistory } from './ERPModel/hr/employee_property_history/employeePropertyHistorys.model.ts';
+import { EmployeePropertyHistory } from './ERPModel/hr/employee_property_history/employeePropertyHistories.model.ts';
 
 import { EmployeeSeparation } from './ERPModel/hr/employee_separation/employeeSeparations.model.ts';
 
 import { EmployeeSeparationTemplate } from './ERPModel/hr/employee_separation_template/employeeSeparationTemplates.model.ts';
 
-import { EmployeeTaxExemptionCategory } from './ERPModel/hr/employee_tax_exemption_category/employeeTaxExemptionCategorys.model.ts';
+import { EmployeeTaxExemptionCategory } from './ERPModel/hr/employee_tax_exemption_category/employeeTaxExemptionCategories.model.ts';
 
 import { EmployeeTaxExemptionDeclaration } from './ERPModel/hr/employee_tax_exemption_declaration/employeeTaxExemptionDeclarations.model.ts';
 
-import { EmployeeTaxExemptionDeclarationCategory } from './ERPModel/hr/employee_tax_exemption_declaration_category/employeeTaxExemptionDeclarationCategorys.model.ts';
+import { EmployeeTaxExemptionDeclarationCategory } from './ERPModel/hr/employee_tax_exemption_declaration_category/employeeTaxExemptionDeclarationCategories.model.ts';
 
 import { EmployeeTaxExemptionProofSubmission } from './ERPModel/hr/employee_tax_exemption_proof_submission/employeeTaxExemptionProofSubmissions.model.ts';
 
 import { EmployeeTaxExemptionProofSubmissionDetail } from './ERPModel/hr/employee_tax_exemption_proof_submission_detail/employeeTaxExemptionProofSubmissionDetails.model.ts';
 
-import { EmployeeTaxExemptionSubCategory } from './ERPModel/hr/employee_tax_exemption_sub_category/employeeTaxExemptionSubCategorys.model.ts';
+import { EmployeeTaxExemptionSubCategory } from './ERPModel/hr/employee_tax_exemption_sub_category/employeeTaxExemptionSubCategories.model.ts';
 
 import { EmployeeTransfer } from './ERPModel/hr/employee_transfer/employeeTransfers.model.ts';
 
-import { EmployeeTransferProperty } from './ERPModel/hr/employee_transfer_property/employeeTransferPropertys.model.ts';
+import { EmployeeTransferProperty } from './ERPModel/hr/employee_transfer_property/employeeTransferProperties.model.ts';
 
 import { EmploymentType } from './ERPModel/hr/employment_type/employmentTypes.model.ts';
 
@@ -338,7 +338,7 @@ import { Holiday } from './ERPModel/hr/holiday/holidays.model.ts';
 
 import { HolidayList } from './ERPModel/hr/holiday_list/holidayLists.model.ts';
 
-import { HrSettings } from './ERPModel/hr/hr_settings/hrSettingss.model.ts';
+import { HrSetting } from './ERPModel/hr/hr_settings/hrSettings.model.ts';
 
 import { IdentificationDocumentType } from './ERPModel/hr/identification_document_type/identificationDocumentTypes.model.ts';
 
@@ -370,7 +370,7 @@ import { LeaveEncashment } from './ERPModel/hr/leave_encashment/leaveEncashments
 
 import { LeavePeriod } from './ERPModel/hr/leave_period/leavePeriods.model.ts';
 
-import { LeavePolicy } from './ERPModel/hr/leave_policy/leavePolicys.model.ts';
+import { LeavePolicy } from './ERPModel/hr/leave_policy/leavePolicies.model.ts';
 
 import { LeavePolicyDetail } from './ERPModel/hr/leave_policy_detail/leavePolicyDetails.model.ts';
 
@@ -386,7 +386,7 @@ import { OfferTerm } from './ERPModel/hr/offer_term/offerTerms.model.ts';
 
 import { PayrollEmployeeDetail } from './ERPModel/hr/payroll_employee_detail/payrollEmployeeDetails.model.ts';
 
-import { PayrollEntry } from './ERPModel/hr/payroll_entry/payrollEntrys.model.ts';
+import { PayrollEntry } from './ERPModel/hr/payroll_entry/payrollEntries.model.ts';
 
 import { PayrollPeriod } from './ERPModel/hr/payroll_period/payrollPeriods.model.ts';
 
@@ -396,7 +396,7 @@ import { PurposeOfTravel } from './ERPModel/hr/purpose_of_travel/purposeOfTravel
 
 import { RepaymentSchedule } from './ERPModel/hr/repayment_schedule/repaymentSchedules.model.ts';
 
-import { RetentionBonus } from './ERPModel/hr/retention_bonus/retentionBonuss.model.ts';
+import { RetentionBonu } from './ERPModel/hr/retention_bonus/retentionBonuses.model.ts';
 
 import { SalaryComponent } from './ERPModel/hr/salary_component/salaryComponents.model.ts';
 
@@ -436,7 +436,7 @@ import { TrainingResult } from './ERPModel/hr/training_result/trainingResults.mo
 
 import { TrainingResultEmployee } from './ERPModel/hr/training_result_employee/trainingResultEmployees.model.ts';
 
-import { TravelItinerary } from './ERPModel/hr/travel_itinerary/travelItinerarys.model.ts';
+import { TravelItinerary } from './ERPModel/hr/travel_itinerary/travelItineraries.model.ts';
 
 import { TravelRequest } from './ERPModel/hr/travel_request/travelRequests.model.ts';
 
@@ -470,7 +470,7 @@ import { ProjectUpdate } from './ERPModel/projects/project_update/projectUpdates
 
 import { ProjectUser } from './ERPModel/projects/project_user/projectUsers.model.ts';
 
-import { ProjectsSettings } from './ERPModel/projects/projects_settings/projectsSettingss.model.ts';
+import { ProjectsSetting } from './ERPModel/projects/projects_settings/projectsSettings.model.ts';
 
 import { Task } from './ERPModel/projects/task/tasks.model.ts';
 
@@ -484,19 +484,19 @@ import { TimesheetDetail } from './ERPModel/projects/timesheet_detail/timesheetD
 // Loop for a models list
 export const models = [
 AccountingPeriod,
-  AccountsSettings,
+  AccountsSetting,
   AllowedToTransactWith,
   Bank,
   BankAccount,
   BankGuarantee,
   BankReconciliation,
   BankReconciliationDetail,
-  BankStatementSettings,
+  BankStatementSetting,
   BankStatementSettingsItem,
   BankStatementTransactionEntry,
   BankStatementTransactionInvoiceItem,
   BankStatementTransactionPaymentItem,
-  BankStatementTransactionSettings,
+  BankStatementTransactionSetting,
   BankStatementTransactionSettingsItem,
   Budget,
   BudgetAccount,
@@ -504,11 +504,11 @@ AccountingPeriod,
   CFormInvoiceDetail,
   CashFlowMapper,
   CashFlowMapping,
-  CashFlowMappingAccounts,
+  CashFlowMappingAccount,
   CashFlowMappingTemplate,
-  CashFlowMappingTemplateDetails,
+  CashFlowMappingTemplateDetail,
   CashierClosing,
-  CashierClosingPayments,
+  CashierClosingPayment,
   ChequePrintTemplate,
   ClosedDocument,
   CostCenter,
@@ -553,12 +553,12 @@ AccountingPeriod,
   PosItemGroup,
   PosProfile,
   PosProfileUser,
-  PosSettings,
+  PosSetting,
   PricingRule,
   PurchaseInvoice,
   PurchaseInvoiceAdvance,
   PurchaseInvoiceItem,
-  PurchaseTaxesAndCharges,
+  PurchaseTaxesAndCharge,
   PurchaseTaxesAndChargesTemplate,
   SalaryComponentAccount,
   SalesInvoice,
@@ -566,7 +566,7 @@ AccountingPeriod,
   SalesInvoiceItem,
   SalesInvoicePayment,
   SalesInvoiceTimesheet,
-  SalesTaxesAndCharges,
+  SalesTaxesAndCharge,
   SalesTaxesAndChargesTemplate,
   ShareBalance,
   ShareTransfer,
@@ -579,7 +579,7 @@ AccountingPeriod,
   SubscriptionInvoice,
   SubscriptionPlan,
   SubscriptionPlanDetail,
-  SubscriptionSettings,
+  SubscriptionSetting,
   TaxCategory,
   TaxRule,
   TaxWithholdingAccount,
@@ -595,7 +595,7 @@ AccountingPeriod,
   AssetMaintenanceTeam,
   AssetMovement,
   AssetRepair,
-  AssetSettings,
+  AssetSetting,
   AssetValueAdjustment,
   DepreciationSchedule,
   LinkedLocation,
@@ -652,7 +652,7 @@ AccountingPeriod,
   ExpenseClaimType,
   Holiday,
   HolidayList,
-  HrSettings,
+  HrSetting,
   IdentificationDocumentType,
   Interest,
   JobApplicant,
@@ -681,7 +681,7 @@ AccountingPeriod,
   PayrollPeriodDate,
   PurposeOfTravel,
   RepaymentSchedule,
-  RetentionBonus,
+  RetentionBonu,
   SalaryComponent,
   SalaryDetail,
   SalarySlip,
@@ -718,7 +718,7 @@ AccountingPeriod,
   ProjectType,
   ProjectUpdate,
   ProjectUser,
-  ProjectsSettings,
+  ProjectsSetting,
   Task,
   TaskDependsOn,
   Timesheet,
@@ -728,19 +728,19 @@ AccountingPeriod,
 
 export const modelPool = {
 accountingPeriods: AccountingPeriod,
-  accountsSettingss: AccountsSettings,
+  accountsSettings: AccountsSetting,
   allowedToTransactWiths: AllowedToTransactWith,
   banks: Bank,
   bankAccounts: BankAccount,
   bankGuarantees: BankGuarantee,
   bankReconciliations: BankReconciliation,
   bankReconciliationDetails: BankReconciliationDetail,
-  bankStatementSettingss: BankStatementSettings,
+  bankStatementSettings: BankStatementSetting,
   bankStatementSettingsItems: BankStatementSettingsItem,
-  bankStatementTransactionEntrys: BankStatementTransactionEntry,
+  bankStatementTransactionEntries: BankStatementTransactionEntry,
   bankStatementTransactionInvoiceItems: BankStatementTransactionInvoiceItem,
   bankStatementTransactionPaymentItems: BankStatementTransactionPaymentItem,
-  bankStatementTransactionSettingss: BankStatementTransactionSettings,
+  bankStatementTransactionSettings: BankStatementTransactionSetting,
   bankStatementTransactionSettingsItems: BankStatementTransactionSettingsItem,
   budgets: Budget,
   budgetAccounts: BudgetAccount,
@@ -748,11 +748,11 @@ accountingPeriods: AccountingPeriod,
   cFormInvoiceDetails: CFormInvoiceDetail,
   cashFlowMappers: CashFlowMapper,
   cashFlowMappings: CashFlowMapping,
-  cashFlowMappingAccountss: CashFlowMappingAccounts,
+  cashFlowMappingAccounts: CashFlowMappingAccount,
   cashFlowMappingTemplates: CashFlowMappingTemplate,
-  cashFlowMappingTemplateDetailss: CashFlowMappingTemplateDetails,
+  cashFlowMappingTemplateDetails: CashFlowMappingTemplateDetail,
   cashierClosings: CashierClosing,
-  cashierClosingPaymentss: CashierClosingPayments,
+  cashierClosingPayments: CashierClosingPayment,
   chequePrintTemplates: ChequePrintTemplate,
   closedDocuments: ClosedDocument,
   costCenters: CostCenter,
@@ -760,14 +760,14 @@ accountingPeriods: AccountingPeriod,
   exchangeRateRevaluationAccounts: ExchangeRateRevaluationAccount,
   financeBooks: FinanceBook,
   fiscalYears: FiscalYear,
-  fiscalYearCompanys: FiscalYearCompany,
-  glEntrys: GlEntry,
+  fiscalYearCompanies: FiscalYearCompany,
+  glEntries: GlEntry,
   gstAccounts: GstAccount,
   itemTaxTemplates: ItemTaxTemplate,
   itemTaxTemplateDetails: ItemTaxTemplateDetail,
-  journalEntrys: JournalEntry,
+  journalEntries: JournalEntry,
   journalEntryAccounts: JournalEntryAccount,
-  loyaltyPointEntrys: LoyaltyPointEntry,
+  loyaltyPointEntries: LoyaltyPointEntry,
   loyaltyPointEntryRedemptions: LoyaltyPointEntryRedemption,
   loyaltyPrograms: LoyaltyProgram,
   loyaltyProgramCollections: LoyaltyProgramCollection,
@@ -778,7 +778,7 @@ accountingPeriods: AccountingPeriod,
   openingInvoiceCreationTools: OpeningInvoiceCreationTool,
   openingInvoiceCreationToolItems: OpeningInvoiceCreationToolItem,
   partyAccounts: PartyAccount,
-  paymentEntrys: PaymentEntry,
+  paymentEntries: PaymentEntry,
   paymentEntryDeductions: PaymentEntryDeduction,
   paymentEntryReferences: PaymentEntryReference,
   paymentGatewayAccounts: PaymentGatewayAccount,
@@ -797,12 +797,12 @@ accountingPeriods: AccountingPeriod,
   posItemGroups: PosItemGroup,
   posProfiles: PosProfile,
   posProfileUsers: PosProfileUser,
-  posSettingss: PosSettings,
+  posSettings: PosSetting,
   pricingRules: PricingRule,
   purchaseInvoices: PurchaseInvoice,
   purchaseInvoiceAdvances: PurchaseInvoiceAdvance,
   purchaseInvoiceItems: PurchaseInvoiceItem,
-  purchaseTaxesAndChargess: PurchaseTaxesAndCharges,
+  purchaseTaxesAndCharges: PurchaseTaxesAndCharge,
   purchaseTaxesAndChargesTemplates: PurchaseTaxesAndChargesTemplate,
   salaryComponentAccounts: SalaryComponentAccount,
   salesInvoices: SalesInvoice,
@@ -810,7 +810,7 @@ accountingPeriods: AccountingPeriod,
   salesInvoiceItems: SalesInvoiceItem,
   salesInvoicePayments: SalesInvoicePayment,
   salesInvoiceTimesheets: SalesInvoiceTimesheet,
-  salesTaxesAndChargess: SalesTaxesAndCharges,
+  salesTaxesAndCharges: SalesTaxesAndCharge,
   salesTaxesAndChargesTemplates: SalesTaxesAndChargesTemplate,
   shareBalances: ShareBalance,
   shareTransfers: ShareTransfer,
@@ -818,19 +818,19 @@ accountingPeriods: AccountingPeriod,
   shareholders: Shareholder,
   shippingRules: ShippingRule,
   shippingRuleConditions: ShippingRuleCondition,
-  shippingRuleCountrys: ShippingRuleCountry,
+  shippingRuleCountries: ShippingRuleCountry,
   subscriptions: Subscription,
   subscriptionInvoices: SubscriptionInvoice,
   subscriptionPlans: SubscriptionPlan,
   subscriptionPlanDetails: SubscriptionPlanDetail,
-  subscriptionSettingss: SubscriptionSettings,
-  taxCategorys: TaxCategory,
+  subscriptionSettings: SubscriptionSetting,
+  taxCategories: TaxCategory,
   taxRules: TaxRule,
   taxWithholdingAccounts: TaxWithholdingAccount,
-  taxWithholdingCategorys: TaxWithholdingCategory,
+  taxWithholdingCategories: TaxWithholdingCategory,
   taxWithholdingRates: TaxWithholdingRate,
   assets: Asset,
-  assetCategorys: AssetCategory,
+  assetCategories: AssetCategory,
   assetCategoryAccounts: AssetCategoryAccount,
   assetFinanceBooks: AssetFinanceBook,
   assetMaintenances: AssetMaintenance,
@@ -839,55 +839,55 @@ accountingPeriods: AccountingPeriod,
   assetMaintenanceTeams: AssetMaintenanceTeam,
   assetMovements: AssetMovement,
   assetRepairs: AssetRepair,
-  assetSettingss: AssetSettings,
+  assetSettings: AssetSetting,
   assetValueAdjustments: AssetValueAdjustment,
   depreciationSchedules: DepreciationSchedule,
   linkedLocations: LinkedLocation,
   locations: Location,
   maintenanceTeamMembers: MaintenanceTeamMember,
-  additionalSalarys: AdditionalSalary,
+  additionalSalaries: AdditionalSalary,
   appraisals: Appraisal,
   appraisalGoals: AppraisalGoal,
   attendances: Attendance,
   attendanceRequests: AttendanceRequest,
-  branchs: Branch,
+  branches: Branch,
   compensatoryLeaveRequests: CompensatoryLeaveRequest,
-  dailyWorkSummarys: DailyWorkSummary,
+  dailyWorkSummaries: DailyWorkSummary,
   dailyWorkSummaryGroups: DailyWorkSummaryGroup,
   dailyWorkSummaryGroupUsers: DailyWorkSummaryGroupUser,
   departments: Department,
   departmentApprovers: DepartmentApprover,
   designations: Designation,
   drivers: Driver,
-  drivingLicenseCategorys: DrivingLicenseCategory,
+  drivingLicenseCategories: DrivingLicenseCategory,
   employees: Employee,
   employeeAdvances: EmployeeAdvance,
   employeeAttendanceTools: EmployeeAttendanceTool,
   employeeBenefitApplications: EmployeeBenefitApplication,
   employeeBenefitApplicationDetails: EmployeeBenefitApplicationDetail,
   employeeBenefitClaims: EmployeeBenefitClaim,
-  employeeBoardingActivitys: EmployeeBoardingActivity,
+  employeeBoardingActivities: EmployeeBoardingActivity,
   employeeEducations: EmployeeEducation,
-  employeeExternalWorkHistorys: EmployeeExternalWorkHistory,
+  employeeExternalWorkHistories: EmployeeExternalWorkHistory,
   employeeGrades: EmployeeGrade,
   employeeHealthInsurances: EmployeeHealthInsurance,
   employeeIncentives: EmployeeIncentive,
-  employeeInternalWorkHistorys: EmployeeInternalWorkHistory,
+  employeeInternalWorkHistories: EmployeeInternalWorkHistory,
   employeeOnboardings: EmployeeOnboarding,
-  employeeOnboardingActivitys: EmployeeOnboardingActivity,
+  employeeOnboardingActivities: EmployeeOnboardingActivity,
   employeeOnboardingTemplates: EmployeeOnboardingTemplate,
   employeePromotions: EmployeePromotion,
-  employeePropertyHistorys: EmployeePropertyHistory,
+  employeePropertyHistories: EmployeePropertyHistory,
   employeeSeparations: EmployeeSeparation,
   employeeSeparationTemplates: EmployeeSeparationTemplate,
-  employeeTaxExemptionCategorys: EmployeeTaxExemptionCategory,
+  employeeTaxExemptionCategories: EmployeeTaxExemptionCategory,
   employeeTaxExemptionDeclarations: EmployeeTaxExemptionDeclaration,
-  employeeTaxExemptionDeclarationCategorys: EmployeeTaxExemptionDeclarationCategory,
+  employeeTaxExemptionDeclarationCategories: EmployeeTaxExemptionDeclarationCategory,
   employeeTaxExemptionProofSubmissions: EmployeeTaxExemptionProofSubmission,
   employeeTaxExemptionProofSubmissionDetails: EmployeeTaxExemptionProofSubmissionDetail,
-  employeeTaxExemptionSubCategorys: EmployeeTaxExemptionSubCategory,
+  employeeTaxExemptionSubCategories: EmployeeTaxExemptionSubCategory,
   employeeTransfers: EmployeeTransfer,
-  employeeTransferPropertys: EmployeeTransferProperty,
+  employeeTransferProperties: EmployeeTransferProperty,
   employmentTypes: EmploymentType,
   expenseClaims: ExpenseClaim,
   expenseClaimAccounts: ExpenseClaimAccount,
@@ -896,7 +896,7 @@ accountingPeriods: AccountingPeriod,
   expenseClaimTypes: ExpenseClaimType,
   holidays: Holiday,
   holidayLists: HolidayList,
-  hrSettingss: HrSettings,
+  hrSettings: HrSetting,
   identificationDocumentTypes: IdentificationDocumentType,
   interests: Interest,
   jobApplicants: JobApplicant,
@@ -912,7 +912,7 @@ accountingPeriods: AccountingPeriod,
   leaveControlPanels: LeaveControlPanel,
   leaveEncashments: LeaveEncashment,
   leavePeriods: LeavePeriod,
-  leavePolicys: LeavePolicy,
+  leavePolicies: LeavePolicy,
   leavePolicyDetails: LeavePolicyDetail,
   leaveTypes: LeaveType,
   loans: Loan,
@@ -920,12 +920,12 @@ accountingPeriods: AccountingPeriod,
   loanTypes: LoanType,
   offerTerms: OfferTerm,
   payrollEmployeeDetails: PayrollEmployeeDetail,
-  payrollEntrys: PayrollEntry,
+  payrollEntries: PayrollEntry,
   payrollPeriods: PayrollPeriod,
   payrollPeriodDates: PayrollPeriodDate,
   purposeOfTravels: PurposeOfTravel,
   repaymentSchedules: RepaymentSchedule,
-  retentionBonuss: RetentionBonus,
+  retentionBonuses: RetentionBonu,
   salaryComponents: SalaryComponent,
   salaryDetails: SalaryDetail,
   salarySlips: SalarySlip,
@@ -945,7 +945,7 @@ accountingPeriods: AccountingPeriod,
   trainingPrograms: TrainingProgram,
   trainingResults: TrainingResult,
   trainingResultEmployees: TrainingResultEmployee,
-  travelItinerarys: TravelItinerary,
+  travelItineraries: TravelItinerary,
   travelRequests: TravelRequest,
   travelRequestCostings: TravelRequestCosting,
   uploadAttendances: UploadAttendance,
@@ -962,7 +962,7 @@ accountingPeriods: AccountingPeriod,
   projectTypes: ProjectType,
   projectUpdates: ProjectUpdate,
   projectUsers: ProjectUser,
-  projectsSettingss: ProjectsSettings,
+  projectsSettings: ProjectsSetting,
   tasks: Task,
   taskDependsOns: TaskDependsOn,
   timesheets: Timesheet,
