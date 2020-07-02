@@ -45,6 +45,7 @@ class ModelGenerator {
   adaptor: string = "";
   models: ModelConfig[] = [];
   cwd: string = ".";
+  postfix: string = "model";
 
   constructor(adaptor?: string, cwd?: string) {
     this.adaptor = adaptor || 'denodb';
@@ -127,7 +128,7 @@ class ModelGenerator {
     const tableName = camelCase(plural(shortFileName));
 
     const shortDirName = posix.dirname(entry.path);
-    const modelFileName = `${shortDirName}/${tableName}.model.ts`;
+    const modelFileName = `${shortDirName}/${tableName}.${this.postfix}.ts`;
 
     // Read file and fetch model schema
     const model: any = await readJson(entry.path);
@@ -161,7 +162,7 @@ class ModelGenerator {
       if (ext === ".json") {
         try {
           const { modelFileName, schema, tableName, modelName } = await this.useModelConfig(entry);
-          const adaptedModelFileName = this.fileAdapter(modelFileName, "model");
+          const adaptedModelFileName = this.fileAdapter(modelFileName, this.postfix);
           // render model and write to file
           await this.renderModelFile(
             adaptedModelFileName,

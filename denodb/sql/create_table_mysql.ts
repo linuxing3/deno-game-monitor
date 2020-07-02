@@ -4,8 +4,8 @@ import {
   Member,
   Document,
   Militant,
-} from "../mock/models.ts";
-import { models } from "../mock/models.index.ts";
+} from "../mock/CoreModels.ts";
+import { models } from "../mock/models.index.denodb.ts";
 
 const mydb = new Database("mysql", {
   host: "xunqinji.top",

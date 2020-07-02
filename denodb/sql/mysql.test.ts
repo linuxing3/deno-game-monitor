@@ -4,11 +4,9 @@ import {
   User,
   Member,
   Document,
-  Vehicle,
   Militant,
-  Project,
-  Flight,
-} from "../mock/models.ts";
+  Flight
+} from "../mock/CoreModels.ts";
 import { flights } from "../mock/data.ts";
 
 const mydb = new Database("mysql", {
@@ -19,7 +17,7 @@ const mydb = new Database("mysql", {
   port: 9005,
 });
 
-mydb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);
+mydb.link([User, Member, Document, Militant, Flight]);
 
 await mydb.sync({ drop: true });
 
