@@ -14,4 +14,4 @@ export const postOptions = {
   password: env["POST_PASSWORD"],
   port: parseInt(env["POST_PORT"]),
   database: env["POST_DATABASE"],
-}
+};

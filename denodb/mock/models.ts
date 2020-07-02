@@ -1,7 +1,7 @@
 import {
   DataTypes,
   Model,
-  Relationships
+  Relationships,
 } from "https://deno.land/x/denodb/mod.ts";
 
 export class User extends Model {
@@ -12,7 +12,7 @@ export class User extends Model {
     id: { primaryKey: true, autoIncrement: true },
     name: DataTypes.STRING,
     password: DataTypes.STRING,
-    email: DataTypes.STRING
+    email: DataTypes.STRING,
   };
 }
 
@@ -25,7 +25,7 @@ export class Militant extends Model {
     admitted_at: DataTypes.STRING,
     formalized_at: DataTypes.STRING,
     registered_at: DataTypes.STRING,
-    transfered_at: DataTypes.DATE
+    transfered_at: DataTypes.DATE,
   };
 }
 
@@ -59,7 +59,7 @@ export class Member extends Model {
     militant: DataTypes.STRING,
     appraisals: DataTypes.STRING,
     designations: DataTypes.STRING,
-    projects: DataTypes.STRING
+    projects: DataTypes.STRING,
   };
 }
 
@@ -87,7 +87,7 @@ export class Project extends Model {
     collectProgress: DataTypes.STRING,
     frequency: DataTypes.STRING,
     fromTime: DataTypes.DATETIME,
-    toTime: DataTypes.DATETIME
+    toTime: DataTypes.DATETIME,
   };
 }
 
@@ -99,11 +99,11 @@ export class Flight extends Model {
     id: { primaryKey: true, autoIncrement: true },
     departure: DataTypes.STRING,
     destination: DataTypes.STRING,
-    flightDuration: DataTypes.FLOAT
+    flightDuration: DataTypes.FLOAT,
   };
 
   static defaults = {
-    flightDuration: 2.5
+    flightDuration: 2.5,
   };
 }
 
@@ -132,11 +132,11 @@ export class Vehicle extends Model {
     fuelUom: DataTypes.STRING,
     color: DataTypes.STRING,
     wheels: DataTypes.STRING,
-    door: DataTypes.STRING
+    door: DataTypes.STRING,
   };
 
   static defaults = {
-    flightDuration: 2.5
+    flightDuration: 2.5,
   };
 }
 
@@ -160,7 +160,7 @@ export class Document extends Model {
     attachment: DataTypes.STRING,
     keyword: DataTypes.STRING,
     workEntity: DataTypes.STRING,
-    author: DataTypes.STRING
+    author: DataTypes.STRING,
   };
 }
 
@@ -224,6 +224,6 @@ export class Employee extends Model {
     encashDate: DataTypes.DATE,
     resiged: DataTypes.STRING,
     reasonForResignation: DataTypes.STRING,
-    feedback: DataTypes.STRING
+    feedback: DataTypes.STRING,
   };
 }

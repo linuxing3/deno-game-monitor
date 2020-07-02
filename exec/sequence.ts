@@ -1,6 +1,10 @@
-import { exec, execSequence, OutputMode } from "https://deno.land/x/exec/mod.ts";
+import {
+  exec,
+  execSequence,
+  OutputMode,
+} from "https://deno.land/x/exec/mod.ts";
 
-await exec('echo Running Sequence');
+await exec("echo Running Sequence");
 
 let response = await execSequence([
   "echo Hello World",

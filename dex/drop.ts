@@ -15,7 +15,6 @@ await dexecutor.connect();
 
 let sqlQuery;
 
-
 // DROP TABLE Query
 sqlQuery = dex.schema.dropTable("dex").toString();
 

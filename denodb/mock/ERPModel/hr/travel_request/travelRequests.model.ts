@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju. 
+// Copyright 2018-2020 Xing Wenju.
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -11,13 +11,13 @@
 */
 import {
   DataTypes,
-  Model
+  Model,
 } from "https://deno.land/x/denodb/mod.ts";
 
-export class TravelRequest extends Model { 
+export class TravelRequest extends Model {
   static table = "travelRequests";
   static timestamps = true;
-  
+
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
@@ -45,229 +45,200 @@ export class TravelRequest extends Model {
     nameOfOrganizer: DataTypes.STRING,
     addressOfOrganizer: DataTypes.STRING,
     otherDetails: DataTypes.STRING,
-    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: 'travelType',
-        label: 'Travel Type',
-        type: 'select',
-        placeholder: 'Input Travel Type',
-        options: '[object Object],[object Object]',
-        
+        key: "travelType",
+        label: "Travel Type",
+        type: "select",
+        placeholder: "Input Travel Type",
+        options: "[object Object],[object Object]",
       },
       {
-        key: 'travelFunding',
-        label: 'Travel Funding',
-        type: 'select',
-        placeholder: 'Input Travel Funding',
-        options: '[object Object],[object Object],[object Object]',
-        
+        key: "travelFunding",
+        label: "Travel Funding",
+        type: "select",
+        placeholder: "Input Travel Funding",
+        options: "[object Object],[object Object],[object Object]",
       },
       {
-        key: 'copyOfInvitationAnnouncement',
-        label: 'Copy Of Invitation Announcement',
-        type: 'input',
-        placeholder: 'Input Copy Of Invitation Announcement',
-        options: '',
-        
+        key: "copyOfInvitationAnnouncement",
+        label: "Copy Of Invitation Announcement",
+        type: "input",
+        placeholder: "Input Copy Of Invitation Announcement",
+        options: "",
       },
       {
-        key: '',
-        label: '',
-        type: 'input',
-        placeholder: 'Input ',
-        options: '',
-        
+        key: "",
+        label: "",
+        type: "input",
+        placeholder: "Input ",
+        options: "",
       },
       {
-        key: 'purposeOfTravel',
-        label: 'Purpose Of Travel',
-        type: 'select',
-        placeholder: 'Input Purpose Of Travel',
-        options: '',
-        
+        key: "purposeOfTravel",
+        label: "Purpose Of Travel",
+        type: "select",
+        placeholder: "Input Purpose Of Travel",
+        options: "",
       },
       {
-        key: 'detailsOfSponsorNameLocation',
-        label: 'Details Of Sponsor Name Location',
-        type: 'input',
-        placeholder: 'Input Details Of Sponsor Name Location',
-        options: '',
-        
+        key: "detailsOfSponsorNameLocation",
+        label: "Details Of Sponsor Name Location",
+        type: "input",
+        placeholder: "Input Details Of Sponsor Name Location",
+        options: "",
       },
       {
-        key: 'description',
-        label: 'Description',
-        type: 'input',
-        placeholder: 'Input Description',
-        options: '',
-        
+        key: "description",
+        label: "Description",
+        type: "input",
+        placeholder: "Input Description",
+        options: "",
       },
       {
-        key: 'anyOtherDetails',
-        label: 'Any Other Details',
-        type: 'input',
-        placeholder: 'Input Any Other Details',
-        options: '',
-        
+        key: "anyOtherDetails",
+        label: "Any Other Details",
+        type: "input",
+        placeholder: "Input Any Other Details",
+        options: "",
       },
       {
-        key: 'employeeDetails',
-        label: 'Employee Details',
-        type: 'input',
-        placeholder: 'Input Employee Details',
-        options: '',
-        
+        key: "employeeDetails",
+        label: "Employee Details",
+        type: "input",
+        placeholder: "Input Employee Details",
+        options: "",
       },
       {
-        key: 'employee',
-        label: 'Employee',
-        type: 'select',
-        placeholder: 'Input Employee',
-        options: '',
-        
+        key: "employee",
+        label: "Employee",
+        type: "select",
+        placeholder: "Input Employee",
+        options: "",
       },
       {
-        key: 'employeeName',
-        label: 'Employee Name',
-        type: 'input',
-        placeholder: 'Input Employee Name',
-        options: '',
-        
+        key: "employeeName",
+        label: "Employee Name",
+        type: "input",
+        placeholder: "Input Employee Name",
+        options: "",
       },
       {
-        key: 'contactNumber',
-        label: 'Contact Number',
-        type: 'input',
-        placeholder: 'Input Contact Number',
-        options: '',
-        
+        key: "contactNumber",
+        label: "Contact Number",
+        type: "input",
+        placeholder: "Input Contact Number",
+        options: "",
       },
       {
-        key: 'contactEmail',
-        label: 'Contact Email',
-        type: 'input',
-        placeholder: 'Input Contact Email',
-        options: '',
-        
+        key: "contactEmail",
+        label: "Contact Email",
+        type: "input",
+        placeholder: "Input Contact Email",
+        options: "",
       },
       {
-        key: '',
-        label: '',
-        type: 'input',
-        placeholder: 'Input ',
-        options: '',
-        
+        key: "",
+        label: "",
+        type: "input",
+        placeholder: "Input ",
+        options: "",
       },
       {
-        key: 'dateOfBirth',
-        label: 'Date Of Birth',
-        type: 'input',
-        placeholder: 'Input Date Of Birth',
-        options: '',
-        
+        key: "dateOfBirth",
+        label: "Date Of Birth",
+        type: "input",
+        placeholder: "Input Date Of Birth",
+        options: "",
       },
       {
-        key: 'identificationDocumentType',
-        label: 'Identification Document Type',
-        type: 'select',
-        placeholder: 'Input Identification Document Type',
-        options: '',
-        
+        key: "identificationDocumentType",
+        label: "Identification Document Type",
+        type: "select",
+        placeholder: "Input Identification Document Type",
+        options: "",
       },
       {
-        key: 'identificationDocumentNumber',
-        label: 'Identification Document Number',
-        type: 'input',
-        placeholder: 'Input Identification Document Number',
-        options: '',
-        
+        key: "identificationDocumentNumber",
+        label: "Identification Document Number",
+        type: "input",
+        placeholder: "Input Identification Document Number",
+        options: "",
       },
       {
-        key: 'passportNumber',
-        label: 'Passport Number',
-        type: 'input',
-        placeholder: 'Input Passport Number',
-        options: '',
-        
+        key: "passportNumber",
+        label: "Passport Number",
+        type: "input",
+        placeholder: "Input Passport Number",
+        options: "",
       },
       {
-        key: 'travelItinerary',
-        label: 'Travel Itinerary',
-        type: 'input',
-        placeholder: 'Input Travel Itinerary',
-        options: '',
-        
+        key: "travelItinerary",
+        label: "Travel Itinerary",
+        type: "input",
+        placeholder: "Input Travel Itinerary",
+        options: "",
       },
       {
-        key: '',
-        label: '',
-        type: 'select',
-        placeholder: 'Input ',
-        options: '',
-        
+        key: "",
+        label: "",
+        type: "select",
+        placeholder: "Input ",
+        options: "",
       },
       {
-        key: 'costingDetails',
-        label: 'Costing Details',
-        type: 'input',
-        placeholder: 'Input Costing Details',
-        options: '',
-        
+        key: "costingDetails",
+        label: "Costing Details",
+        type: "input",
+        placeholder: "Input Costing Details",
+        options: "",
       },
       {
-        key: 'costCenter',
-        label: 'Cost Center',
-        type: 'select',
-        placeholder: 'Input Cost Center',
-        options: '',
-        
+        key: "costCenter",
+        label: "Cost Center",
+        type: "select",
+        placeholder: "Input Cost Center",
+        options: "",
       },
       {
-        key: 'costing',
-        label: 'Costing',
-        type: 'select',
-        placeholder: 'Input Costing',
-        options: '',
-        
+        key: "costing",
+        label: "Costing",
+        type: "select",
+        placeholder: "Input Costing",
+        options: "",
       },
       {
-        key: 'eventDetails',
-        label: 'Event Details',
-        type: 'input',
-        placeholder: 'Input Event Details',
-        options: '',
-        
+        key: "eventDetails",
+        label: "Event Details",
+        type: "input",
+        placeholder: "Input Event Details",
+        options: "",
       },
       {
-        key: 'nameOfOrganizer',
-        label: 'Name Of Organizer',
-        type: 'input',
-        placeholder: 'Input Name Of Organizer',
-        options: '',
-        
+        key: "nameOfOrganizer",
+        label: "Name Of Organizer",
+        type: "input",
+        placeholder: "Input Name Of Organizer",
+        options: "",
       },
       {
-        key: 'addressOfOrganizer',
-        label: 'Address Of Organizer',
-        type: 'input',
-        placeholder: 'Input Address Of Organizer',
-        options: '',
-        
+        key: "addressOfOrganizer",
+        label: "Address Of Organizer",
+        type: "input",
+        placeholder: "Input Address Of Organizer",
+        options: "",
       },
       {
-        key: 'otherDetails',
-        label: 'Other Details',
-        type: 'input',
-        placeholder: 'Input Other Details',
-        options: '',
-        
+        key: "otherDetails",
+        label: "Other Details",
+        type: "input",
+        placeholder: "Input Other Details",
+        options: "",
       },
-      
-    ]
+    ],
   };
-} 
+}

@@ -5,7 +5,7 @@ import { writeJsonSync } from "https://deno.land/std/fs/mod.ts";
 import {
   readCSVObjects,
 } from "https://deno.land/x/csv/mod.ts";
-import Ask from 'https://deno.land/x/ask/mod.ts';
+import Ask from "https://deno.land/x/ask/mod.ts";
 
 const token = Deno.env.toObject()["LOGGER_REST_TOKEN"] ||
   "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwibmFtZSI6Inhpbmd3ZW5qdSIsImVtYWlsIjoieGluZ3dlbmp1QGdtYWlsLmNvbSJ9.auCidFeJ7foumlVGCws7Aqlzk-RpqLlhO9NcHmzXpbI";
@@ -18,44 +18,42 @@ const KILL_BIN = "/mnt/c/Windows/system32/taskkill.exe";
 
 // const INSTALL_PATH = "smart-logger";
 
-
 async function askParams() {
   const ask = new Ask();
   const answers = await ask.prompt([
     {
-      name: 'file',
-      type: 'input',
-      message: 'File Name (default /tmp/games): '
+      name: "file",
+      type: "input",
+      message: "File Name (default /tmp/games): ",
     },
     {
-      name: 'format',
-      type: 'input',
-      message: 'File Format (default csv): '
+      name: "format",
+      type: "input",
+      message: "File Format (default csv): ",
     },
     {
-      name: 'process',
-      type: 'input',
-      message: 'Process Name (default Minecraft): '
+      name: "process",
+      type: "input",
+      message: "Process Name (default Minecraft): ",
     },
     {
-      name: 'kill',
-      type: 'confirm',
-      message: 'Kill process (default false): '
+      name: "kill",
+      type: "confirm",
+      message: "Kill process (default false): ",
     },
   ]);
   if (!answers.file) {
-    answers.file = '/tmp/games'
+    answers.file = "/tmp/games";
   }
   if (!answers.format) {
-    answers.format = 'csv'
+    answers.format = "csv";
   }
   if (!answers.process) {
-    answers.process = 'Minecraft'
+    answers.process = "Minecraft";
   }
   console.log(answers);
   return answers;
 }
-
 
 async function ensureExePath(command: string = "deno") {
   // link any command you want to link, if available
@@ -142,20 +140,20 @@ async function taskKill(pid: string) {
  */
 async function logAll(process: string, kill: boolean) {
   await ensureExePath("deno");
-  await taskListAll('/tmp/games', 'csv');
+  await taskListAll("/tmp/games", "csv");
   const data = await filterLogWithKeyword(
     process,
-    '/tmp/games',
-    'csv',
+    "/tmp/games",
+    "csv",
   );
-  await createJsonLog('/tmp/games', data);
-  await createPidOnlyLog('/tmp/games', data);
+  await createJsonLog("/tmp/games", data);
+  await createPidOnlyLog("/tmp/games", data);
   // FIXME: network error will hang process
   // await sendTextLog(baseURL, data);
   if (kill) {
     await taskKillAll(data);
   }
-  console.log('Done!')
+  console.log("Done!");
 }
 
 /**
@@ -179,7 +177,7 @@ async function logAllWithAsk() {
   if (kill) {
     await taskKillAll(data);
   }
-  console.log('Done!')
+  console.log("Done!");
 }
 
 /**
@@ -411,8 +409,8 @@ program
   .action(async ({ command }: { command: string }) => {
     await ensureExePath(command);
   });
-  
-  program
+
+program
   .command("log-all [process]")
   .option("-k --kill", "kill or not")
   .description("log-all Code --kill true")
@@ -424,7 +422,7 @@ program
   .command("log-ask")
   .description("log-ask")
   .action(async () => {
-    await logAllWithAsk()
+    await logAllWithAsk();
   });
 
 program

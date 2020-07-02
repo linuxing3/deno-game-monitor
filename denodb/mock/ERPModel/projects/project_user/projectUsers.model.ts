@@ -1,4 +1,4 @@
-// Copyright 2018-2020 Xing Wenju. 
+// Copyright 2018-2020 Xing Wenju.
 // All rights reserved. MIT license.
 // deno-lint-ignore-file
 /*
@@ -11,13 +11,13 @@
 */
 import {
   DataTypes,
-  Model
+  Model,
 } from "https://deno.land/x/denodb/mod.ts";
 
-export class ProjectUser extends Model { 
+export class ProjectUser extends Model {
   static table = "projectUsers";
   static timestamps = true;
-  
+
   static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
@@ -28,85 +28,74 @@ export class ProjectUser extends Model {
     welcomeEmailSent: DataTypes.STRING,
     viewAttachments: DataTypes.STRING,
     projectStatus: DataTypes.STRING,
-    
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
       {
-        key: 'user',
-        label: 'User',
-        type: 'select',
-        placeholder: 'Input User',
-        options: '',
-        
+        key: "user",
+        label: "User",
+        type: "select",
+        placeholder: "Input User",
+        options: "",
       },
       {
-        key: 'email',
-        label: 'Email',
-        type: 'input',
-        placeholder: 'Input Email',
-        options: '',
-        
+        key: "email",
+        label: "Email",
+        type: "input",
+        placeholder: "Input Email",
+        options: "",
       },
       {
-        key: 'image',
-        label: 'Image',
-        type: 'input',
-        placeholder: 'Input Image',
-        options: '',
-        
+        key: "image",
+        label: "Image",
+        type: "input",
+        placeholder: "Input Image",
+        options: "",
       },
       {
-        key: '',
-        label: '',
-        type: 'input',
-        placeholder: 'Input ',
-        options: '',
-        
+        key: "",
+        label: "",
+        type: "input",
+        placeholder: "Input ",
+        options: "",
       },
       {
-        key: 'fullName',
-        label: 'Full Name',
-        type: 'input',
-        placeholder: 'Input Full Name',
-        options: '',
-        
+        key: "fullName",
+        label: "Full Name",
+        type: "input",
+        placeholder: "Input Full Name",
+        options: "",
       },
       {
-        key: 'welcomeEmailSent',
-        label: 'Welcome Email Sent',
-        type: 'input',
-        placeholder: 'Input Welcome Email Sent',
-        options: '',
-        
+        key: "welcomeEmailSent",
+        label: "Welcome Email Sent",
+        type: "input",
+        placeholder: "Input Welcome Email Sent",
+        options: "",
       },
       {
-        key: 'viewAttachments',
-        label: 'View Attachments',
-        type: 'input',
-        placeholder: 'Input View Attachments',
-        options: '',
-        
+        key: "viewAttachments",
+        label: "View Attachments",
+        type: "input",
+        placeholder: "Input View Attachments",
+        options: "",
       },
       {
-        key: '',
-        label: '',
-        type: 'input',
-        placeholder: 'Input ',
-        options: '',
-        
+        key: "",
+        label: "",
+        type: "input",
+        placeholder: "Input ",
+        options: "",
       },
       {
-        key: 'projectStatus',
-        label: 'Project Status',
-        type: 'input',
-        placeholder: 'Input Project Status',
-        options: '',
-        
+        key: "projectStatus",
+        label: "Project Status",
+        type: "input",
+        placeholder: "Input Project Status",
+        options: "",
       },
-      
-    ]
+    ],
   };
-} 
+}

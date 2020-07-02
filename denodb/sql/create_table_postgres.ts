@@ -6,7 +6,7 @@ import {
   Vehicle,
   Militant,
   Project,
-  Flight
+  Flight,
 } from "../mock/models.ts";
 
 const postdb = new Database("postgres", {
@@ -14,7 +14,7 @@ const postdb = new Database("postgres", {
   username: "postgres",
   password: "20090909",
   database: "monitor",
-  port: 9006
+  port: 9006,
 });
 
 postdb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);

@@ -23,15 +23,19 @@ exports.handler = async (event, context) => {
   const variables = {
     name: request.event.data.new.name,
     email: filter.clean(request.event.data.new.email),
-    password: filter.clean(request.event.data.new.password)
+    password: filter.clean(request.event.data.new.password),
   };
 
   const headers = {
     "Hasura-Client-Name": "hasura-console",
-    "hasura-collaborator-token": "IDToken eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzoyMzIyM2JiNi1lODQ3LTRhMTAtOThhNS02Yzk1YjZlYWUxOGEiLCJ0eXAiOiJKV1QifQ.eyJhbGxvd2VkX3NjaGVtYXMiOltdLCJhbGxvd2VkX3RhYmxlcyI6e30sImF0X2hhc2giOiI1YlV5czN5MHcwc0Jiek9ZUGZETkZBIiwiYXVkIjpbIjhmNzE2MDc5LTgyOTYtNDA4Yy1i"
-  }
+    "hasura-collaborator-token":
+      "IDToken eyJhbGciOiJSUzI1NiIsImtpZCI6InB1YmxpYzoyMzIyM2JiNi1lODQ3LTRhMTAtOThhNS02Yzk1YjZlYWUxOGEiLCJ0eXAiOiJKV1QifQ.eyJhbGxvd2VkX3NjaGVtYXMiOltdLCJhbGxvd2VkX3RhYmxlcyI6e30sImF0X2hhc2giOiI1YlV5czN5MHcwc0Jiek9ZUGZETkZBIiwiYXVkIjpbIjhmNzE2MDc5LTgyOTYtNDA4Yy1i",
+  };
   try {
-    await axios.post(hgeEndpoint + "/v1/graphql", { headers, query, variables });
+    await axios.post(
+      hgeEndpoint + "/v1/graphql",
+      { headers, query, variables },
+    );
     return { statusCode: 200, body: "success" };
   } catch (err) {
     return { statusCode: 500, body: err.toString() };

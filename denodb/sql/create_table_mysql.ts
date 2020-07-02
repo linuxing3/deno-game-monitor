@@ -6,7 +6,7 @@ import {
   Vehicle,
   Militant,
   Project,
-  Flight
+  Flight,
 } from "../mock/models.ts";
 
 const mydb = new Database("mysql", {
@@ -14,7 +14,7 @@ const mydb = new Database("mysql", {
   username: "monitor",
   password: "20090909",
   database: "monitor",
-  port: 9005
+  port: 9005,
 });
 
 mydb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);
