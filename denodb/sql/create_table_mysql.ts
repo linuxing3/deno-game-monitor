@@ -10,15 +10,15 @@ import {
 } from "../mock/models.ts";
 
 const mydb = new Database("mysql", {
-  host: "xunqinji.top",
-  username: "monitor",
-  password: "20090909",
-  database: "monitor",
-  port: 9005,
+  host: "dongxishijie.xyz",
+  username: "root",
+  password: "qpRAW",
+  database: "trojan",
+  port: 31911,
 });
 
-mydb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);
+mydb.link([ Member, Document, Vehicle, Militant, Project, Flight]);
 
-await mydb.sync({ drop: true });
+await mydb.sync({ drop: false });
 
 await mydb.close();

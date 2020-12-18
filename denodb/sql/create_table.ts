@@ -12,6 +12,22 @@ try {
             PRIMARY KEY (id)
         ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
     `);
+
+  await client.execute(`
+    CREATE TABLE IF NOT EXISTS trojan_users (
+        id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+        username VARCHAR(64) NOT NULL,
+        password CHAR(56) NOT NULL,
+        passwordShow VARCHAR(255) NOT NULL,
+        quota BIGINT NOT NULL DEFAULT 0,
+        download BIGINT UNSIGNED NOT NULL DEFAULT 0,
+        upload BIGINT UNSIGNED NOT NULL DEFAULT 0,
+        useDays int(10) DEFAULT 0,
+        expiryDate char(10) DEFAULT '',
+        PRIMARY KEY (id),
+        INDEX (password)
+    )
+  `)
   await client.execute(`
         CREATE TABLE documents (
             id int(11) NOT NULL AUTO_INCREMENT,

@@ -12,12 +12,13 @@ import {
 import { flights } from "../mock/data.ts";
 
 const mydb = new Database("mysql", {
-  host: "xunqinji.top",
-  username: "monitor",
-  password: "20090909",
-  database: "monitor",
-  port: 9005,
+  host: "dongxishijie.xyz",
+  username: "root",
+  password: "WBZZO",
+  database: "trojan",
+  port: 51433,
 });
+
 
 mydb.link([User, Member, Document, Vehicle, Militant, Project, Flight]);
 
