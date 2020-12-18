@@ -127,13 +127,6 @@
       "options": []
     },
     {
-      "key": "plans",
-      "label": "Plans",
-      "type": "select",
-      "placeholder": "Input Plans",
-      "options": []
-    },
-    {
       "key": "taxes",
       "label": "Taxes",
       "type": "input",
@@ -195,13 +188,6 @@
       "key": "invoices",
       "label": "Invoices",
       "type": "input",
-      "placeholder": "Input Invoices",
-      "options": []
-    },
-    {
-      "key": "invoices",
-      "label": "Invoices",
-      "type": "select",
       "placeholder": "Input Invoices",
       "options": []
     }

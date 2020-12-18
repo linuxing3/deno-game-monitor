@@ -93,13 +93,6 @@
       "options": []
     },
     {
-      "key": "holidays",
-      "label": "Holidays",
-      "type": "select",
-      "placeholder": "Input Holidays",
-      "options": []
-    },
-    {
       "key": "clearTable",
       "label": "Clear Table",
       "type": "select",

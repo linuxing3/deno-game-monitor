@@ -3,11 +3,9 @@ import {
   User,
   Member,
   Document,
-  Vehicle,
   Militant,
-  Project,
-  Flight,
-} from "../mock/models.ts";
+} from "../mock/CoreModels.ts";
+import { models } from "../mock/models.index.denodb.ts";
 
 const mydb = new Database("mysql", {
   host: "dongxishijie.xyz",

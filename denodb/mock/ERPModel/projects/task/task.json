@@ -163,13 +163,6 @@
     {
       "key": "dependsOn",
       "label": "Depends On",
-      "type": "input",
-      "placeholder": "Input Depends On",
-      "options": []
-    },
-    {
-      "key": "dependsOn",
-      "label": "Depends On",
       "type": "select",
       "placeholder": "Input Depends On",
       "options": []

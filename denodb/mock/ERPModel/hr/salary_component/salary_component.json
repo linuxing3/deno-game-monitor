@@ -160,13 +160,6 @@
       "options": []
     },
     {
-      "key": "accounts",
-      "label": "Accounts",
-      "type": "select",
-      "placeholder": "Input Accounts",
-      "options": []
-    },
-    {
       "key": "conditionAndFormula",
       "label": "Condition And Formula",
       "type": "input",

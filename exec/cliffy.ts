@@ -6,12 +6,9 @@ import { Select, Separator } from "https://deno.land/x/cliffy/prompt.ts";
 
 const pizza: string = await Select.prompt({
   message: "Select your pizza?",
-  options: [
-    "Margherita",
-    "Caprese",
-    Select.separator("Special"),
-    { name: "Diavola", disabled: true },
-  ],
+  options: [{
+    name: "", value: "taste"
+  }],
 });
 
 const useDeno: boolean = await Confirm.prompt("Would you like to use deno?");

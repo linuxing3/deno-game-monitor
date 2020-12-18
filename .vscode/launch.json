@@ -15,7 +15,7 @@
         "--inspect-brk",
         "--unstable",
         "-A",
-        "generate.ts"
+        "modelGenerator.ts"
       ],
       "port": 9229
     },

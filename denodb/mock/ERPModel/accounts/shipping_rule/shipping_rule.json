@@ -113,13 +113,6 @@
       "options": []
     },
     {
-      "key": "shippingRuleConditions",
-      "label": "Shipping Rule Conditions",
-      "type": "select",
-      "placeholder": "Input Shipping Rule Conditions",
-      "options": []
-    },
-    {
       "key": "restrictToCountries",
       "label": "Restrict To Countries",
       "type": "input",

@@ -129,13 +129,6 @@
       "options": []
     },
     {
-      "key": "emergencyContact",
-      "label": "Emergency Contact",
-      "type": "input",
-      "placeholder": "Input Emergency Contact",
-      "options": []
-    },
-    {
       "key": "relation",
       "label": "Relation",
       "type": "input",

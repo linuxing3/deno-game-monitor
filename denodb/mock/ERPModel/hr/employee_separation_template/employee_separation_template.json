@@ -41,13 +41,6 @@
       "type": "input",
       "placeholder": "Input Activities",
       "options": []
-    },
-    {
-      "key": "activities",
-      "label": "Activities",
-      "type": "select",
-      "placeholder": "Input Activities",
-      "options": []
     }
   ]
 }

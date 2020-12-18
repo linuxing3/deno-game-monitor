@@ -29,13 +29,6 @@
       "options": []
     },
     {
-      "key": "description",
-      "label": "Description",
-      "type": "input",
-      "placeholder": "Input Description",
-      "options": []
-    },
-    {
       "key": "image",
       "label": "Image",
       "type": "input",

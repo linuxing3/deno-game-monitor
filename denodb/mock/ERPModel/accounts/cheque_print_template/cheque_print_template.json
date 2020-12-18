@@ -54,13 +54,6 @@
       ]
     },
     {
-      "key": "startingPositionFromTopEdge",
-      "label": "Starting Position From Top Edge",
-      "type": "input",
-      "placeholder": "Input Starting Position From Top Edge",
-      "options": []
-    },
-    {
       "key": "chequeWidth",
       "label": "Cheque Width",
       "type": "input",
@@ -96,13 +89,6 @@
       "options": []
     },
     {
-      "key": "distanceFromTopEdge",
-      "label": "Distance From Top Edge",
-      "type": "input",
-      "placeholder": "Input Distance From Top Edge",
-      "options": []
-    },
-    {
       "key": "distanceFromLeftEdge",
       "label": "Distance From Left Edge",
       "type": "input",
@@ -131,31 +117,10 @@
       "options": []
     },
     {
-      "key": "distanceFromTopEdge",
-      "label": "Distance From Top Edge",
-      "type": "input",
-      "placeholder": "Input Distance From Top Edge",
-      "options": []
-    },
-    {
-      "key": "startingLocationFromLeftEdge",
-      "label": "Starting Location From Left Edge",
-      "type": "input",
-      "placeholder": "Input Starting Location From Left Edge",
-      "options": []
-    },
-    {
       "key": "payerSettings",
       "label": "Payer Settings",
       "type": "input",
       "placeholder": "Input Payer Settings",
-      "options": []
-    },
-    {
-      "key": "distanceFromTopEdge",
-      "label": "Distance From Top Edge",
-      "type": "input",
-      "placeholder": "Input Distance From Top Edge",
       "options": []
     },
     {
@@ -177,20 +142,6 @@
       "label": "",
       "type": "select",
       "placeholder": "Input ",
-      "options": []
-    },
-    {
-      "key": "distanceFromTopEdge",
-      "label": "Distance From Top Edge",
-      "type": "input",
-      "placeholder": "Input Distance From Top Edge",
-      "options": []
-    },
-    {
-      "key": "startingLocationFromLeftEdge",
-      "label": "Starting Location From Left Edge",
-      "type": "input",
-      "placeholder": "Input Starting Location From Left Edge",
       "options": []
     },
     {
@@ -215,20 +166,6 @@
       "options": []
     },
     {
-      "key": "distanceFromTopEdge",
-      "label": "Distance From Top Edge",
-      "type": "input",
-      "placeholder": "Input Distance From Top Edge",
-      "options": []
-    },
-    {
-      "key": "startingLocationFromLeftEdge",
-      "label": "Starting Location From Left Edge",
-      "type": "input",
-      "placeholder": "Input Starting Location From Left Edge",
-      "options": []
-    },
-    {
       "key": "",
       "label": "",
       "type": "input",
@@ -243,20 +180,6 @@
       "options": []
     },
     {
-      "key": "distanceFromTopEdge",
-      "label": "Distance From Top Edge",
-      "type": "input",
-      "placeholder": "Input Distance From Top Edge",
-      "options": []
-    },
-    {
-      "key": "startingLocationFromLeftEdge",
-      "label": "Starting Location From Left Edge",
-      "type": "input",
-      "placeholder": "Input Starting Location From Left Edge",
-      "options": []
-    },
-    {
       "key": "signatoryPosition",
       "label": "Signatory Position",
       "type": "input",
@@ -268,13 +191,6 @@
       "label": "Distance From Top Edge",
       "type": "input",
       "placeholder": "Input Distance From Top Edge",
-      "options": []
-    },
-    {
-      "key": "startingLocationFromLeftEdge",
-      "label": "Starting Location From Left Edge",
-      "type": "input",
-      "placeholder": "Input Starting Location From Left Edge",
       "options": []
     },
     {

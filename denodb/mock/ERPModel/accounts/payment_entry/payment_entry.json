@@ -171,20 +171,6 @@
       "options": []
     },
     {
-      "key": "accountCurrency",
-      "label": "Account Currency",
-      "type": "select",
-      "placeholder": "Input Account Currency",
-      "options": []
-    },
-    {
-      "key": "accountBalance",
-      "label": "Account Balance",
-      "type": "select",
-      "placeholder": "Input Account Balance",
-      "options": []
-    },
-    {
       "key": "amount",
       "label": "Amount",
       "type": "input",
@@ -196,13 +182,6 @@
       "label": "Paid Amount",
       "type": "select",
       "placeholder": "Input Paid Amount",
-      "options": []
-    },
-    {
-      "key": "exchangeRate",
-      "label": "Exchange Rate",
-      "type": "input",
-      "placeholder": "Input Exchange Rate",
       "options": []
     },
     {

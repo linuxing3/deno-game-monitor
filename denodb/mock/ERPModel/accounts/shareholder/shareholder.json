@@ -92,13 +92,6 @@
       "options": []
     },
     {
-      "key": "shareBalance",
-      "label": "Share Balance",
-      "type": "select",
-      "placeholder": "Input Share Balance",
-      "options": []
-    },
-    {
       "key": "contactList",
       "label": "Contact List",
       "type": "input",

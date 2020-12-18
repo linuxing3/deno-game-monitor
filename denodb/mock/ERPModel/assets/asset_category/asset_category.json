@@ -34,13 +34,6 @@
       "type": "input",
       "placeholder": "Input Accounts",
       "options": []
-    },
-    {
-      "key": "accounts",
-      "label": "Accounts",
-      "type": "select",
-      "placeholder": "Input Accounts",
-      "options": []
     }
   ]
 }

@@ -4,6 +4,8 @@
     "install": "deno install -f --allow-run --allow-read https://raw.githubusercontent.com/apiel/den/master/den.ts",
     "ls": "ls -l",
     "start": "deno run -A --importmap=import_map.json --unstable server.ts",
+    "db:post": "deno run -A --importmap=import_map.json --unstable ./denodb/sql/create_table_postgres.ts",
+    "db:mysql": "deno run -A --importmap=import_map.json --unstable ./denodb/sql/create_table_mysql.ts",
     "aqua": "deno run -A --importmap=import_map.json --unstable ./aqua/aqua.ts",
     "actdb": "deno run -A --importmap=import_map.json --unstable ./actdb/actdb.ts",
     "attain": "deno run -A --importmap=import_map.json --unstable ./attain/attain.ts",

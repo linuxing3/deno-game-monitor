@@ -206,13 +206,6 @@
       "options": []
     },
     {
-      "key": "repaymentSchedule",
-      "label": "Repayment Schedule",
-      "type": "select",
-      "placeholder": "Input Repayment Schedule",
-      "options": []
-    },
-    {
       "key": "totals",
       "label": "Totals",
       "type": "input",
