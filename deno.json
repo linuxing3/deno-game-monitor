@@ -1,7 +1,8 @@
 {
   "cmds": {
     "multi": ["ls", "pwd"],
-    "install": "deno install -f --allow-run --allow-read https://raw.githubusercontent.com/apiel/den/master/den.ts",
+    "install:den": "deno install -f --allow-run --allow-read https://raw.githubusercontent.com/apiel/den/master/den.ts",
+    "install:denox": "$ deno install -Af -n denox https://denopkg.com/BentoumiTech/denox/denox.ts",
     "ls": "ls -l",
     "start": "deno run -A --importmap=import_map.json --unstable server.ts",
     "db:post": "deno run -A --importmap=import_map.json --unstable ./denodb/sql/create_table_postgres.ts",
