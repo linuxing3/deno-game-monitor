@@ -1,7 +1,7 @@
 // deno-lint-ignore-file
 import { exec, OutputMode } from "https://deno.land/x/exec/mod.ts";
 import Denomander from "https://deno.land/x/denomander/mod.ts";
-import { writeJsonSync } from "https://deno.land/std/fs/mod.ts";
+import { writeJsonSync } from "https://deno.land/std@0.68.0/fs/mod.ts";
 import {
   readCSVObjects,
 } from "https://deno.land/x/csv/mod.ts";
