@@ -9,15 +9,17 @@ import {
 } from "../mock/CoreModels.ts";
 import { flights } from "../mock/data.ts";
 
-const postdb = new Database("postgres", {
-  host: "dongxishijie.xyz",
-  username: "postgres",
-  password: "20090909",
-  database: "monitor",
-  port: 9006,
-});
+import { postOptions } from "../../config/db.ts";
 
-postdb.link([User, Member, Document, Militant, Flight]);
+const { host, database, port, user, password} = postOptions;
+
+const postdb = new Database("postgres", {
+  host: host,
+  username: user,
+  password: password,
+  database: database,
+  port: port,
+});
 
 await postdb.sync({ drop: true });
 

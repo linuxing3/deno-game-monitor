@@ -6,13 +6,16 @@ import {
   Militant,
 } from "../mock/CoreModels.ts";
 import { models } from "../mock/models.index.denodb.ts";
+import { postOptions } from "../../config/db.ts";
+
+const { host, database, port, user, password} = postOptions;
 
 const postdb = new Database("postgres", {
-  host: "dongxishijie.xyz",
-  username: "postgres",
-  password: "20090909",
-  database: "monitor",
-  port: 9006,
+  host: host,
+  username: user,
+  password: password,
+  database: database,
+  port: port,
 });
 
 postdb.link([User, Member, Document, Militant, ...models]);

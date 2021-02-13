@@ -5,14 +5,16 @@ import {
   Militant,
   Flight,
 } from "../mock/CoreModels.ts";
-import { models } from "../mock/models.index.denodb.ts";
+// import { models } from "../mock/models.index.denodb.ts";
+import { mysqlOption} from "../../config/db.ts";
 
+const { hostname, db, port, username, password} = mysqlOption;
 const mydb = new Database("mysql", {
-  host: "dongxishijie.xyz",
-  username: "root",
-  password: "qpRAW",
-  database: "trojan",
-  port: 31911,
+  host: hostname,
+  username: username,
+  password: password,
+  database: db,
+  port: port,
 });
 
 mydb.link([ Member, Document, Militant, Flight]);
