@@ -11,7 +11,7 @@ import {
   readJson,
   writeFileStr,
   WalkEntry,
-} from "https://deno.land/x/std/fs/mod.ts";
+} from "https://deno.land/x/std@0.68.0/fs/mod.ts";
 import { posix } from "https://deno.land/std/path/mod.ts";
 import {
   renderFileToString,
@@ -21,7 +21,7 @@ import {
   pascalCase,
 } from "https://deno.land/x/case/mod.ts";
 import { singular, plural } from "https://deno.land/x/deno_plural/mod.ts";
-import { Input, Select } from "https://deno.land/x/cliffy/prompt.ts";
+import { Input, Select } from "https://deno.land/x/cliffy/mod.ts";
 
 interface SchemaConfig {
   modelName: string;
