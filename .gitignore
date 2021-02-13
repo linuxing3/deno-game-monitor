@@ -35,3 +35,4 @@ data/*.json
 *.sqlite
 # Local Netlify folder
 .netlify
+docs/dist

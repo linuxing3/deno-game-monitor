@@ -5,6 +5,7 @@
     "fmt/": "https://deno.land/std/fmt/",
     "fs/": "https://deno.land/std/fs/",
     "http/": "https://deno.land/std/http/",
-    "oak": "https://deno.land/x/oak/mod.ts"
+    "oak": "https://deno.land/x/oak/mod.ts",
+    "pagic": "https://deno.land/x/pagic/mod.ts"
   }
 }

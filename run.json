@@ -7,6 +7,7 @@
     "install:trex":"deno install -A --unstable -n trex --no-check https://deno.land/x/trex/cli.ts",
     "install:den": "deno install -f --allow-run --allow-read https://raw.githubusercontent.com/apiel/den/master/den.ts",
     "install:denox": "$ deno install -Af -n denox https://denopkg.com/BentoumiTech/denox/denox.ts",
+    "install:denon":"deno install -qAf --unstable https://deno.land/x/denon/denon.ts",
     "serve": "deno run -A --unstable server.ts",
     "db:post": "deno run -A --unstable ./denodb/sql/create_table_postgres.ts",
     "db:mysql": "deno run -A --unstable ./denodb/sql/create_table_mysql.ts",
