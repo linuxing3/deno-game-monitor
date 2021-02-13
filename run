@@ -1,0 +1,64 @@
+multi() {
+ls
+pwd
+}
+install_den() { 
+deno install -f --allow-run --allow-read https_//raw.githubusercontent.com/apiel/den/master/den.ts 
+}
+install_denox() { 
+deno install -Af -n denox https://denopkg.com/BentoumiTech/denox/denox.ts 
+}
+ls() { 
+ls -l 
+}
+start() { 
+deno run -A --importmap=import_map.json --unstable server.ts 
+}
+db_post() { 
+deno run -A --importmap=import_map.json --unstable ./denodb/sql/create_table_postgres.ts 
+}
+db_mysql() { 
+deno run -A --importmap=import_map.json --unstable ./denodb/sql/create_table_mysql.ts 
+}
+aqua() { 
+deno run -A --importmap=import_map.json --unstable ./aqua/aqua.ts 
+}
+actdb() { 
+deno run -A --importmap=import_map.json --unstable ./actdb/actdb.ts 
+}
+attain() { 
+deno run -A --importmap=import_map.json --unstable ./attain/attain.ts 
+}
+attain_graphql() { 
+deno run -A --importmap=import_map.json --unstable ./attain/attain_graphql.ts 
+}
+casualdb() { 
+deno run -A --importmap=import_map.json --unstable ./casualdb/casualdb.ts 
+}
+faker() { 
+deno run -A --importmap=import_map.json --unstable ./faker/faker.ts 
+}
+dex_create() { 
+deno run -A --importmap=import_map.json --unstable ./dex/create.ts 
+}
+dex_drop() { 
+deno run -A --importmap=import_map.json --unstable ./dex/drop.ts 
+}
+dex_query() { 
+deno run -A  --importmap=import_map.json --unstable ./dex/query.ts 
+}
+exec_hello() { 
+deno run -A  --importmap=import_map.json --unstable ./exec/hello.ts 
+}
+exec_seq() { 
+deno run -A --importmap=import_map.json --unstable ./exec/sequence.ts 
+}
+exec_logger() { 
+deno run -A --importmap=import_map.json --unstable ./exec/smart-logger.ts 
+}
+exec_ask() { 
+deno run -A --importmap=import_map.json --unstable ./exec/ask.ts 
+}
+rxjs_observable() { 
+deno run -A --importmap=import_map.json --unstable ./rxjs/observable.ts
+}

@@ -33,3 +33,5 @@ data/*.json
 */.deno_plugins/*.*
 
 *.sqlite
+# Local Netlify folder
+.netlify
