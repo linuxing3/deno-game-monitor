@@ -9,16 +9,17 @@ import {
 } from "../mock/CoreModels.ts";
 import { flights } from "../mock/data.ts";
 
+import { mysqlOption} from "../../config/db.ts";
+
+const { hostname, db, port, username, password} = mysqlOption;
 const mydb = new Database("mysql", {
-  host: "dongxishijie.xyz",
-  username: "root",
-  password: "WBZZO",
-  database: "trojan",
-  port: 51433,
+  host: hostname,
+  username: username,
+  password: password,
+  database: db,
+  port: port,
 });
 
-
-mydb.link([ Member, Document, Vehicle, Militant, Project, Flight]);
 
 await mydb.sync({ drop: true });
 
