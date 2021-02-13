@@ -1,9 +1,9 @@
 import { Database } from "https://deno.land/x/denodb/mod.ts";
 import {
-  User,
   Member,
   Document,
   Militant,
+  Flight,
 } from "../mock/CoreModels.ts";
 import { models } from "../mock/models.index.denodb.ts";
 
@@ -15,7 +15,7 @@ const mydb = new Database("mysql", {
   port: 31911,
 });
 
-mydb.link([ Member, Document, Vehicle, Militant, Project, Flight]);
+mydb.link([ Member, Document, Militant, Flight]);
 
 await mydb.sync({ drop: false });
 

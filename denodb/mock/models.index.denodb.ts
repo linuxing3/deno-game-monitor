@@ -483,7 +483,7 @@ import { TimesheetDetail } from './ERPModel/projects/timesheet_detail/timesheetD
 
 // Loop for a models list
 export const models = [
-AccountingPeriod,
+  AccountingPeriod,
   AccountsSetting,
   AllowedToTransactWith,
   Bank,

@@ -1,25 +1,31 @@
 {
   "scripts": {
-    "multi": ["ls", "pwd"],
+    "start": "trex run welcome",
+    "welcome": "deno run https://deno.land/std@0.71.0/examples/welcome.ts",
+    "bundler": "denopack -i mod.ts -o bundle.mod.js",
+    "publish": "eggs publish",
+    "install:trex":"deno install -A --unstable -n trex --no-check https://deno.land/x/trex/cli.ts",
     "install:den": "deno install -f --allow-run --allow-read https://raw.githubusercontent.com/apiel/den/master/den.ts",
     "install:denox": "$ deno install -Af -n denox https://denopkg.com/BentoumiTech/denox/denox.ts",
-    "ls": "ls -l",
-    "start": "deno run -A --importmap=import_map.json --unstable server.ts",
-    "db:post": "deno run -A --importmap=import_map.json --unstable ./denodb/sql/create_table_postgres.ts",
-    "db:mysql": "deno run -A --importmap=import_map.json --unstable ./denodb/sql/create_table_mysql.ts",
-    "aqua": "deno run -A --importmap=import_map.json --unstable ./aqua/aqua.ts",
-    "actdb": "deno run -A --importmap=import_map.json --unstable ./actdb/actdb.ts",
-    "attain": "deno run -A --importmap=import_map.json --unstable ./attain/attain.ts",
-    "attain:graphql": "deno run -A --importmap=import_map.json --unstable ./attain/attain_graphql.ts",
-    "casualdb": "deno run -A --importmap=import_map.json --unstable ./casualdb/casualdb.ts",
-    "faker": "deno run -A --importmap=import_map.json --unstable ./faker/faker.ts",
-    "dex:create": "deno run -A --importmap=import_map.json --unstable ./dex/create.ts",
-    "dex:drop": "deno run -A --importmap=import_map.json --unstable ./dex/drop.ts",
-    "dex:query": "deno run -A  --importmap=import_map.json --unstable ./dex/query.ts",
-    "exec:hello": "deno run -A  --importmap=import_map.json --unstable ./exec/hello.ts",
-    "exec:seq": "deno run -A --importmap=import_map.json --unstable ./exec/sequence.ts",
-    "exec:logger": "deno run -A --importmap=import_map.json --unstable ./exec/smart-logger.ts",
-    "exec:ask": "deno run -A --importmap=import_map.json --unstable ./exec/ask.ts",
-    "rxjs:observable": "deno run -A --importmap=import_map.json --unstable ./rxjs/observable.ts"
-  }
+    "serve": "deno run -A --unstable server.ts",
+    "db:post": "deno run -A --unstable ./denodb/sql/create_table_postgres.ts",
+    "db:mysql": "deno run -A --unstable ./denodb/sql/create_table_mysql.ts",
+    "aqua": "deno run -A --unstable ./aqua/aqua.ts",
+    "actdb": "deno run -A --unstable ./actdb/actdb.ts",
+    "attain": "deno run -A --unstable ./attain/attain.ts",
+    "attain:graphql": "deno run -A --unstable ./attain/attain_graphql.ts",
+    "casualdb": "deno run -A --unstable ./casualdb/casualdb.ts",
+    "faker": "deno run -A --unstable ./faker/faker.ts",
+    "dex:create": "deno run -A --unstable ./dex/create.ts",
+    "dex:drop": "deno run -A --unstable ./dex/drop.ts",
+    "dex:query": "deno run -A  --unstable ./dex/query.ts",
+    "exec:hello": "deno run -A  --unstable ./exec/hello.ts",
+    "exec:seq": "deno run -A --unstable ./exec/sequence.ts",
+    "exec:logger": "deno run -A --unstable ./exec/smart-logger.ts",
+    "exec:ask": "deno run -A --unstable ./exec/ask.ts",
+    "rxjs:observable": "deno run -A --unstable ./rxjs/observable.ts"
+  }, 
+  "files":[
+    "./server.ts"
+  ]
 }
