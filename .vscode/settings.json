@@ -17,5 +17,8 @@
   "remote.restoreForwardedPorts": true,
   "python.linting.enabled": true,
   "python.linting.mypyEnabled": true,
-  "remote.SSH.defaultForwardedPorts": []
+  "remote.SSH.defaultForwardedPorts": [],
+  "deno.enable": true,
+  "deno.import_map": "./import_map.json",
+  "deno.unstable": true
 }

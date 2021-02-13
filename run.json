@@ -1,5 +1,5 @@
 {
-  "cmds": {
+  "scripts": {
     "multi": ["ls", "pwd"],
     "install": "deno install -f --allow-run --allow-read https://raw.githubusercontent.com/apiel/den/master/den.ts",
     "ls": "ls -l",
