@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -169,21 +166,4 @@ export class BankStatementTransactionPaymentItem extends Model {
       
     ]
   };
-}
-
-export interface IBankStatementTransactionPaymentItem {
-  id: FieldValue;
-  transactionDate: FieldValue;
-  description: FieldValue;
-  amount: FieldValue;
-  partyType: FieldValue;
-  party: FieldValue;
-  referenceType: FieldValue;
-  account: FieldValue;
-  modeOfPayment: FieldValue;
-  outstandingAmount: FieldValue;
-  referenceName: FieldValue;
-  paymentReference: FieldValue;
-  invoices: FieldValue;
-  
 }

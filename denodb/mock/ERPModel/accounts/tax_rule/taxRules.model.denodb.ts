@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -320,36 +317,4 @@ export class TaxRule extends Model {
       
     ]
   };
-}
-
-export interface ITaxRule {
-  id: FieldValue;
-  taxType: FieldValue;
-  useForShoppingCart: FieldValue;
-  salesTaxTemplate: FieldValue;
-  purchaseTaxTemplate: FieldValue;
-  filters: FieldValue;
-  customer: FieldValue;
-  supplier: FieldValue;
-  item: FieldValue;
-  billingCity: FieldValue;
-  billingCounty: FieldValue;
-  billingState: FieldValue;
-  billingZipcode: FieldValue;
-  billingCountry: FieldValue;
-  taxCategory: FieldValue;
-  customerGroup: FieldValue;
-  supplierGroup: FieldValue;
-  itemGroup: FieldValue;
-  shippingCity: FieldValue;
-  shippingCounty: FieldValue;
-  shippingState: FieldValue;
-  shippingZipcode: FieldValue;
-  shippingCountry: FieldValue;
-  validity: FieldValue;
-  fromDate: FieldValue;
-  toDate: FieldValue;
-  priority: FieldValue;
-  company: FieldValue;
-  
 }

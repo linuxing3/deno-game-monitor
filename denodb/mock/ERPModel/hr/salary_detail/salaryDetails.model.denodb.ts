@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -214,26 +211,4 @@ export class SalaryDetail extends Model {
       
     ]
   };
-}
-
-export interface ISalaryDetail {
-  id: FieldValue;
-  component: FieldValue;
-  abbr: FieldValue;
-  statisticalComponent: FieldValue;
-  isTaxApplicable: FieldValue;
-  isFlexibleBenefit: FieldValue;
-  isAdditionalComponent: FieldValue;
-  variableBasedOnTaxableSalary: FieldValue;
-  dependsOnLeaveWithoutPay: FieldValue;
-  condition: FieldValue;
-  amountBasedOnFormula: FieldValue;
-  formula: FieldValue;
-  amount: FieldValue;
-  doNotIncludeInTotal: FieldValue;
-  defaultAmount: FieldValue;
-  taxOnFlexibleBenefit: FieldValue;
-  taxOnAdditionalSalary: FieldValue;
-  conditionAndFormulaHelp: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -117,17 +114,4 @@ export class BankReconciliationDetail extends Model {
       
     ]
   };
-}
-
-export interface IBankReconciliationDetail {
-  id: FieldValue;
-  paymentDocument: FieldValue;
-  paymentEntry: FieldValue;
-  againstAccount: FieldValue;
-  amount: FieldValue;
-  postingDate: FieldValue;
-  chequeNumber: FieldValue;
-  chequeDate: FieldValue;
-  clearanceDate: FieldValue;
-  
 }

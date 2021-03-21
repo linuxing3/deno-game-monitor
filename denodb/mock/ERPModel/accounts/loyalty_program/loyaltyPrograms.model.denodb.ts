@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -206,26 +203,4 @@ export class LoyaltyProgram extends Model {
       
     ]
   };
-}
-
-export interface ILoyaltyProgram {
-  id: FieldValue;
-  loyaltyProgramName: FieldValue;
-  loyaltyProgramType: FieldValue;
-  fromDate: FieldValue;
-  toDate: FieldValue;
-  customerGroup: FieldValue;
-  customerTerritory: FieldValue;
-  autoOptInForAllCustomers: FieldValue;
-  collectionTier: FieldValue;
-  collectionRules: FieldValue;
-  redemption: FieldValue;
-  conversionFactor: FieldValue;
-  expiryDurationInDays: FieldValue;
-  expenseAccount: FieldValue;
-  costCenter: FieldValue;
-  company: FieldValue;
-  helpSection: FieldValue;
-  loyaltyProgramHelp: FieldValue;
-  
 }

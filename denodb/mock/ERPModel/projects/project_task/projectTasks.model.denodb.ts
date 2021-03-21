@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -143,19 +140,4 @@ export class ProjectTask extends Model {
       
     ]
   };
-}
-
-export interface IProjectTask {
-  id: FieldValue;
-  title: FieldValue;
-  status: FieldValue;
-  viewTask: FieldValue;
-  viewTimesheet: FieldValue;
-  makeTimesheet: FieldValue;
-  startDate: FieldValue;
-  endDate: FieldValue;
-  weight: FieldValue;
-  description: FieldValue;
-  taskId: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -171,23 +168,4 @@ export class LeaveControlPanel extends Model {
       
     ]
   };
-}
-
-export interface ILeaveControlPanel {
-  id: FieldValue;
-  company: FieldValue;
-  employmentType: FieldValue;
-  branch: FieldValue;
-  department: FieldValue;
-  designation: FieldValue;
-  employeeGrade: FieldValue;
-  employee: FieldValue;
-  fromDate: FieldValue;
-  toDate: FieldValue;
-  leavePolicy: FieldValue;
-  leaveType: FieldValue;
-  carryForward: FieldValue;
-  newLeavesAllocatedInDays: FieldValue;
-  allocate: FieldValue;
-  
 }

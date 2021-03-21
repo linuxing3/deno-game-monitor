@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -246,26 +243,4 @@ export class ShareTransfer extends Model {
       
     ]
   };
-}
-
-export interface IShareTransfer {
-  id: FieldValue;
-  transferType: FieldValue;
-  date: FieldValue;
-  fromShareholder: FieldValue;
-  fromFolioNo: FieldValue;
-  equityLiabilityAccount: FieldValue;
-  assetAccount: FieldValue;
-  toShareholder: FieldValue;
-  toFolioNo: FieldValue;
-  shareType: FieldValue;
-  fromNo: FieldValue;
-  rate: FieldValue;
-  noOfShares: FieldValue;
-  toNo: FieldValue;
-  amount: FieldValue;
-  company: FieldValue;
-  remarks: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

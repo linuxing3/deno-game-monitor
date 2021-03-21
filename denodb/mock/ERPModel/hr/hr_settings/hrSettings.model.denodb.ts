@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -180,24 +177,4 @@ export class HrSetting extends Model {
       
     ]
   };
-}
-
-export interface IHrSetting {
-  id: FieldValue;
-  employeeSettings: FieldValue;
-  retirementAge: FieldValue;
-  employeeRecordsToBeCreatedBy: FieldValue;
-  leaveApprovalNotificationTemplate: FieldValue;
-  leaveStatusNotificationTemplate: FieldValue;
-  stopBirthdayReminders: FieldValue;
-  maintainBillingHoursAndWorkingHoursSameOnTimesheet: FieldValue;
-  leaveApproverMandatoryInLeaveApplication: FieldValue;
-  expenseApproverMandatoryInExpenseClaim: FieldValue;
-  payrollSettings: FieldValue;
-  includeHolidaysInTotalNoOfWorkingDays: FieldValue;
-  emailSalarySlipToEmployee: FieldValue;
-  maxWorkingHoursAgainstTimesheet: FieldValue;
-  leaveSettings: FieldValue;
-  showLeavesOfAllDepartmentMembersInCalendar: FieldValue;
-  
 }

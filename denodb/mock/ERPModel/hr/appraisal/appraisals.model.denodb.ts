@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -109,17 +106,4 @@ export class Appraisal extends Model {
       
     ]
   };
-}
-
-export interface IAppraisal {
-  id: FieldValue;
-  forEmployeeName: FieldValue;
-  startDate: FieldValue;
-  endDate: FieldValue;
-  department: FieldValue;
-  goals: FieldValue;
-  totalScoreOutOf_5: FieldValue;
-  remarks: FieldValue;
-  company: FieldValue;
-  
 }

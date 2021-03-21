@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -116,16 +113,4 @@ export class ProjectUpdate extends Model {
       
     ]
   };
-}
-
-export interface IProjectUpdate {
-  id: FieldValue;
-  series: FieldValue;
-  project: FieldValue;
-  sent: FieldValue;
-  date: FieldValue;
-  time: FieldValue;
-  users: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

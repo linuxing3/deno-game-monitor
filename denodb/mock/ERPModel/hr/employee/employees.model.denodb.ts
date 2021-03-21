@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -712,84 +709,4 @@ export class Employee extends Model {
       
     ]
   };
-}
-
-export interface IEmployee {
-  id: FieldValue;
-  employee: FieldValue;
-  series: FieldValue;
-  salutation: FieldValue;
-  firstName: FieldValue;
-  middleName: FieldValue;
-  lastName: FieldValue;
-  fullName: FieldValue;
-  image: FieldValue;
-  company: FieldValue;
-  status: FieldValue;
-  employeeNumber: FieldValue;
-  employmentType: FieldValue;
-  gender: FieldValue;
-  dateOfBirth: FieldValue;
-  dateOfJoining: FieldValue;
-  emergencyContact: FieldValue;
-  emergencyPhone: FieldValue;
-  relation: FieldValue;
-  jobApplicant: FieldValue;
-  offerDate: FieldValue;
-  confirmationDate: FieldValue;
-  contractEndDate: FieldValue;
-  noticeDays: FieldValue;
-  dateOfRetirement: FieldValue;
-  department: FieldValue;
-  designation: FieldValue;
-  reportsTo: FieldValue;
-  grade: FieldValue;
-  branch: FieldValue;
-  leavePolicy: FieldValue;
-  holidayList: FieldValue;
-  salaryMode: FieldValue;
-  bankName: FieldValue;
-  bankACNo: FieldValue;
-  healthInsurance: FieldValue;
-  healthInsuranceProvider: FieldValue;
-  healthInsuranceNo: FieldValue;
-  mobile: FieldValue;
-  preferedContactEmail: FieldValue;
-  preferedEmail: FieldValue;
-  companyEmail: FieldValue;
-  personalEmail: FieldValue;
-  unsubscribed: FieldValue;
-  permanentAddressIs: FieldValue;
-  permanentAddress: FieldValue;
-  currentAddressIs: FieldValue;
-  currentAddress: FieldValue;
-  bioCoverLetter: FieldValue;
-  passportNumber: FieldValue;
-  dateOfIssue: FieldValue;
-  validUpto: FieldValue;
-  placeOfIssue: FieldValue;
-  maritalStatus: FieldValue;
-  bloodGroup: FieldValue;
-  familyBackground: FieldValue;
-  healthDetails: FieldValue;
-  educationalQualification: FieldValue;
-  education: FieldValue;
-  previousWorkExperience: FieldValue;
-  externalWorkHistory: FieldValue;
-  historyInCompany: FieldValue;
-  internalWorkHistory: FieldValue;
-  resignationLetterDate: FieldValue;
-  relievingDate: FieldValue;
-  reasonForLeaving: FieldValue;
-  leaveEncashed: FieldValue;
-  encashmentDate: FieldValue;
-  exitInterviewDetails: FieldValue;
-  heldOn: FieldValue;
-  reasonForResignation: FieldValue;
-  newWorkplace: FieldValue;
-  feedback: FieldValue;
-  lft: FieldValue;
-  rgt: FieldValue;
-  oldParent: FieldValue;
-  
 }

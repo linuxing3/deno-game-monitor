@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -199,27 +196,4 @@ export class LeaveType extends Model {
       
     ]
   };
-}
-
-export interface ILeaveType {
-  id: FieldValue;
-  leaveTypeName: FieldValue;
-  maxLeavesAllowed: FieldValue;
-  applicableAfterWorkingDays: FieldValue;
-  maximumContinuousDaysApplicable: FieldValue;
-  isCarryForward: FieldValue;
-  isLeaveWithoutPay: FieldValue;
-  isOptionalLeave: FieldValue;
-  allowNegativeBalance: FieldValue;
-  includeHolidaysWithinLeavesAsLeaves: FieldValue;
-  isCompensatory: FieldValue;
-  encashment: FieldValue;
-  allowEncashment: FieldValue;
-  encashmentThresholdDays: FieldValue;
-  earningComponent: FieldValue;
-  earnedLeave: FieldValue;
-  isEarnedLeave: FieldValue;
-  earnedLeaveFrequency: FieldValue;
-  rounding: FieldValue;
-  
 }

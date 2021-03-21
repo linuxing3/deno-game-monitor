@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -289,29 +286,4 @@ export class TimesheetDetail extends Model {
       
     ]
   };
-}
-
-export interface ITimesheetDetail {
-  id: FieldValue;
-  activityType: FieldValue;
-  fromTime: FieldValue;
-  expectedHrs: FieldValue;
-  hrs: FieldValue;
-  toTime: FieldValue;
-  completed: FieldValue;
-  completedQty: FieldValue;
-  workstation: FieldValue;
-  operation: FieldValue;
-  operationId: FieldValue;
-  project: FieldValue;
-  task: FieldValue;
-  bill: FieldValue;
-  billingHours: FieldValue;
-  billingRate: FieldValue;
-  billingAmount: FieldValue;
-  costingRate: FieldValue;
-  costingAmount: FieldValue;
-  reference: FieldValue;
-  salesInvoice: FieldValue;
-  
 }

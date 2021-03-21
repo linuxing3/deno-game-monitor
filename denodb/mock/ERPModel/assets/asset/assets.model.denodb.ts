@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -543,59 +540,4 @@ export class Asset extends Model {
       
     ]
   };
-}
-
-export interface IAsset {
-  id: FieldValue;
-  namingSeries: FieldValue;
-  assetName: FieldValue;
-  itemCode: FieldValue;
-  itemName: FieldValue;
-  assetCategory: FieldValue;
-  assetOwner: FieldValue;
-  assetOwnerCompany: FieldValue;
-  supplier: FieldValue;
-  customer: FieldValue;
-  image: FieldValue;
-  company: FieldValue;
-  location: FieldValue;
-  custodian: FieldValue;
-  costCenter: FieldValue;
-  department: FieldValue;
-  purchaseDate: FieldValue;
-  disposalDate: FieldValue;
-  journalEntryForScrap: FieldValue;
-  grossPurchaseAmount: FieldValue;
-  availableForUseDate: FieldValue;
-  calculateDepreciation: FieldValue;
-  isExistingAsset: FieldValue;
-  openingAccumulatedDepreciation: FieldValue;
-  numberOfDepreciationsBooked: FieldValue;
-  depreciation: FieldValue;
-  financeBooks: FieldValue;
-  depreciationMethod: FieldValue;
-  valueAfterDepreciation: FieldValue;
-  totalNumberOfDepreciations: FieldValue;
-  frequencyOfDepreciationMonths: FieldValue;
-  nextDepreciationDate: FieldValue;
-  depreciationSchedule: FieldValue;
-  depreciationSchedules: FieldValue;
-  insuranceDetails: FieldValue;
-  policyNumber: FieldValue;
-  insurer: FieldValue;
-  insuredValue: FieldValue;
-  insuranceStartDate: FieldValue;
-  insuranceEndDate: FieldValue;
-  comprehensiveInsurance: FieldValue;
-  maintenance: FieldValue;
-  maintenanceRequired: FieldValue;
-  otherDetails: FieldValue;
-  status: FieldValue;
-  bookedFixedAsset: FieldValue;
-  purchaseReceipt: FieldValue;
-  purchaseReceiptAmount: FieldValue;
-  purchaseInvoice: FieldValue;
-  defaultFinanceBook: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

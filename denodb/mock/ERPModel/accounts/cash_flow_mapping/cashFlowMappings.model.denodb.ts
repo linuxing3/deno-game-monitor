@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -118,18 +115,4 @@ export class CashFlowMapping extends Model {
       
     ]
   };
-}
-
-export interface ICashFlowMapping {
-  id: FieldValue;
-  name: FieldValue;
-  label: FieldValue;
-  accounts: FieldValue;
-  selectMaximumOf_1: FieldValue;
-  isFinanceCost: FieldValue;
-  isWorkingCapital: FieldValue;
-  isFinanceCostAdjustment: FieldValue;
-  isIncomeTaxLiability: FieldValue;
-  isIncomeTaxExpense: FieldValue;
-  
 }

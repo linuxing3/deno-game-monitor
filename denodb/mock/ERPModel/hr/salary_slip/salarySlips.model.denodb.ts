@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -536,52 +533,4 @@ export class SalarySlip extends Model {
       
     ]
   };
-}
-
-export interface ISalarySlip {
-  id: FieldValue;
-  postingDate: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  department: FieldValue;
-  designation: FieldValue;
-  branch: FieldValue;
-  status: FieldValue;
-  journalEntry: FieldValue;
-  payrollEntry: FieldValue;
-  company: FieldValue;
-  letterHead: FieldValue;
-  salarySlipBasedOnTimesheet: FieldValue;
-  startDate: FieldValue;
-  endDate: FieldValue;
-  salaryStructure: FieldValue;
-  payrollFrequency: FieldValue;
-  workingDays: FieldValue;
-  leaveWithoutPay: FieldValue;
-  paymentDays: FieldValue;
-  salarySlipTimesheet: FieldValue;
-  totalWorkingHours: FieldValue;
-  hourRate: FieldValue;
-  bankName: FieldValue;
-  bankAccountNo: FieldValue;
-  amendedFrom: FieldValue;
-  deductTaxForUnclaimedEmployeeBenefits: FieldValue;
-  deductTaxForUnsubmittedTaxExemptionProof: FieldValue;
-  earningDeduction: FieldValue;
-  earning: FieldValue;
-  earnings: FieldValue;
-  deduction: FieldValue;
-  deductions: FieldValue;
-  grossPay: FieldValue;
-  totalDeduction: FieldValue;
-  loanRepayment: FieldValue;
-  employeeLoan: FieldValue;
-  totalPrincipalAmount: FieldValue;
-  totalInterestAmount: FieldValue;
-  totalLoanRepayment: FieldValue;
-  netPayInfo: FieldValue;
-  netPay: FieldValue;
-  roundedTotal: FieldValue;
-  totalInWords: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -219,23 +216,4 @@ export class AssetRepair extends Model {
       
     ]
   };
-}
-
-export interface IAssetRepair {
-  id: FieldValue;
-  assetName: FieldValue;
-  series: FieldValue;
-  itemCode: FieldValue;
-  itemName: FieldValue;
-  failureDate: FieldValue;
-  assignTo: FieldValue;
-  assignToName: FieldValue;
-  completionDate: FieldValue;
-  repairStatus: FieldValue;
-  errorDescription: FieldValue;
-  actionsPerformed: FieldValue;
-  downtime: FieldValue;
-  repairCost: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

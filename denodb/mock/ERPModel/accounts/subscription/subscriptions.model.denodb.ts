@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -241,29 +238,4 @@ export class Subscription extends Model {
       
     ]
   };
-}
-
-export interface ISubscription {
-  id: FieldValue;
-  customer: FieldValue;
-  status: FieldValue;
-  subscriptionPeriod: FieldValue;
-  subscriptionStartDate: FieldValue;
-  cancelationDate: FieldValue;
-  trialPeriodStartDate: FieldValue;
-  trialPeriodEndDate: FieldValue;
-  currentInvoiceStartDate: FieldValue;
-  currentInvoiceEndDate: FieldValue;
-  daysUntilDue: FieldValue;
-  cancelAtEndOfPeriod: FieldValue;
-  generateInvoiceAtBeginningOfPeriod: FieldValue;
-  plans: FieldValue;
-  taxes: FieldValue;
-  salesTaxesAndChargesTemplate: FieldValue;
-  discounts: FieldValue;
-  applyAdditionalDiscountOn: FieldValue;
-  additionalDIscountPercentage: FieldValue;
-  additionalDIscountAmount: FieldValue;
-  invoices: FieldValue;
-  
 }

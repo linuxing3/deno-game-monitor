@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -175,19 +172,4 @@ export class SubscriptionPlan extends Model {
       
     ]
   };
-}
-
-export interface ISubscriptionPlan {
-  id: FieldValue;
-  planName: FieldValue;
-  currency: FieldValue;
-  item: FieldValue;
-  priceDetermination: FieldValue;
-  cost: FieldValue;
-  priceList: FieldValue;
-  billingInterval: FieldValue;
-  billingIntervalCount: FieldValue;
-  paymentPlan: FieldValue;
-  paymentGateway: FieldValue;
-  
 }

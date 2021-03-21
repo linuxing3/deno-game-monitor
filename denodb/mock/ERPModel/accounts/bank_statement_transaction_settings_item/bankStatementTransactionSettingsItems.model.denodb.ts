@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -73,13 +70,4 @@ export class BankStatementTransactionSettingsItem extends Model {
       
     ]
   };
-}
-
-export interface IBankStatementTransactionSettingsItem {
-  id: FieldValue;
-  mappingType: FieldValue;
-  bankData: FieldValue;
-  mappedDataType: FieldValue;
-  mappedData: FieldValue;
-  
 }

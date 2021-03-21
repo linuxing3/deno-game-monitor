@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -108,16 +105,4 @@ export class StaffingPlanDetail extends Model {
       
     ]
   };
-}
-
-export interface IStaffingPlanDetail {
-  id: FieldValue;
-  designation: FieldValue;
-  numberOfPositions: FieldValue;
-  estimatedCostPerPosition: FieldValue;
-  currentCount: FieldValue;
-  currentOpenings: FieldValue;
-  vacancies: FieldValue;
-  totalEstimatedCost: FieldValue;
-  
 }

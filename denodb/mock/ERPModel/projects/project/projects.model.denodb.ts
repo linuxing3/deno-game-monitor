@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -499,55 +496,4 @@ export class Project extends Model {
       
     ]
   };
-}
-
-export interface IProject {
-  id: FieldValue;
-  projectName: FieldValue;
-  status: FieldValue;
-  projectType: FieldValue;
-  isActive: FieldValue;
-  completeMethod: FieldValue;
-  completed: FieldValue;
-  fromTemplate: FieldValue;
-  expectedStartDate: FieldValue;
-  expectedEndDate: FieldValue;
-  priority: FieldValue;
-  department: FieldValue;
-  customerDetails: FieldValue;
-  customer: FieldValue;
-  salesOrder: FieldValue;
-  users: FieldValue;
-  tasks: FieldValue;
-  copiedFrom: FieldValue;
-  notes: FieldValue;
-  startAndEndDates: FieldValue;
-  actualStartDate: FieldValue;
-  actualTimeInHours: FieldValue;
-  actualEndDate: FieldValue;
-  costingAndBilling: FieldValue;
-  estimatedCost: FieldValue;
-  totalCostingAmountViaTimesheets: FieldValue;
-  totalExpenseClaimViaExpenseClaims: FieldValue;
-  totalPurchaseCostViaPurchaseInvoice: FieldValue;
-  company: FieldValue;
-  totalSalesAmountViaSalesOrder: FieldValue;
-  totalBillableAmountViaTimesheets: FieldValue;
-  totalBilledAmountViaSalesInvoices: FieldValue;
-  totalConsumedMaterialCostViaStockEntry: FieldValue;
-  defaultCostCenter: FieldValue;
-  margin: FieldValue;
-  grossMargin: FieldValue;
-  monitorProgress: FieldValue;
-  collectProgress: FieldValue;
-  holidayList: FieldValue;
-  frequencyToCollectProgress: FieldValue;
-  fromTime: FieldValue;
-  toTime: FieldValue;
-  firstEmail: FieldValue;
-  secondEmail: FieldValue;
-  dayToSend: FieldValue;
-  timeToSend: FieldValue;
-  message: FieldValue;
-  
 }

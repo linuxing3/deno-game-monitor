@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -115,15 +112,4 @@ export class ExchangeRateRevaluation extends Model {
       
     ]
   };
-}
-
-export interface IExchangeRateRevaluation {
-  id: FieldValue;
-  postingDate: FieldValue;
-  company: FieldValue;
-  getEntries: FieldValue;
-  exchangeRateRevaluationAccount: FieldValue;
-  totalGainLoss: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

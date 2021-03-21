@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -177,21 +174,4 @@ export class ShippingRule extends Model {
       
     ]
   };
-}
-
-export interface IShippingRule {
-  id: FieldValue;
-  shippingRuleLabel: FieldValue;
-  disabled: FieldValue;
-  shippingRuleType: FieldValue;
-  accounting: FieldValue;
-  company: FieldValue;
-  shippingAccount: FieldValue;
-  costCenter: FieldValue;
-  calculateBasedOn: FieldValue;
-  shippingAmount: FieldValue;
-  shippingRuleConditions: FieldValue;
-  restrictToCountries: FieldValue;
-  validForCountries: FieldValue;
-  
 }

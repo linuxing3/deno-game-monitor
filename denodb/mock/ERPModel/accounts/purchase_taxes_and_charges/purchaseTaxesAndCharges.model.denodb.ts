@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -213,25 +210,4 @@ export class PurchaseTaxesAndCharge extends Model {
       
     ]
   };
-}
-
-export interface IPurchaseTaxesAndCharge {
-  id: FieldValue;
-  considerTaxOrChargeFor: FieldValue;
-  addOrDeduct: FieldValue;
-  type: FieldValue;
-  referenceRow: FieldValue;
-  isThisTaxIncludedInBasicRate: FieldValue;
-  accountHead: FieldValue;
-  costCenter: FieldValue;
-  description: FieldValue;
-  rate: FieldValue;
-  amount: FieldValue;
-  taxAmountAfterDiscountAmount: FieldValue;
-  total: FieldValue;
-  amountCompanyCurrency: FieldValue;
-  totalCompanyCurrency: FieldValue;
-  itemWiseTaxDetail: FieldValue;
-  parenttype: FieldValue;
-  
 }

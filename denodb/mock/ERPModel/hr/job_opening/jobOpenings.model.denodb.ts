@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -143,19 +140,4 @@ export class JobOpening extends Model {
       
     ]
   };
-}
-
-export interface IJobOpening {
-  id: FieldValue;
-  jobTitle: FieldValue;
-  company: FieldValue;
-  status: FieldValue;
-  designation: FieldValue;
-  department: FieldValue;
-  staffingPlan: FieldValue;
-  plannedNumberOfPositions: FieldValue;
-  publishOnWebsite: FieldValue;
-  route: FieldValue;
-  description: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -143,19 +140,4 @@ export class Attendance extends Model {
       
     ]
   };
-}
-
-export interface IAttendance {
-  id: FieldValue;
-  series: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  status: FieldValue;
-  leaveType: FieldValue;
-  attendanceDate: FieldValue;
-  company: FieldValue;
-  department: FieldValue;
-  attendanceRequest: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

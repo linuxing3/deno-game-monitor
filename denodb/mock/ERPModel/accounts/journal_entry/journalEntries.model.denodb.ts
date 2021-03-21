@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -487,51 +484,4 @@ export class JournalEntry extends Model {
       
     ]
   };
-}
-
-export interface IJournalEntry {
-  id: FieldValue;
-  title: FieldValue;
-  entryType: FieldValue;
-  series: FieldValue;
-  postingDate: FieldValue;
-  company: FieldValue;
-  financeBook: FieldValue;
-  accountingEntries: FieldValue;
-  referenceNumber: FieldValue;
-  referenceDate: FieldValue;
-  userRemark: FieldValue;
-  totalDebit: FieldValue;
-  totalCredit: FieldValue;
-  differenceDrCr: FieldValue;
-  makeDifferenceEntry: FieldValue;
-  multiCurrency: FieldValue;
-  totalAmountCurrency: FieldValue;
-  totalAmount: FieldValue;
-  totalAmountInWords: FieldValue;
-  reference: FieldValue;
-  clearanceDate: FieldValue;
-  remark: FieldValue;
-  paidLoan: FieldValue;
-  interCompanyJournalEntryReference: FieldValue;
-  billNo: FieldValue;
-  billDate: FieldValue;
-  dueDate: FieldValue;
-  writeOff: FieldValue;
-  writeOffBasedOn: FieldValue;
-  getOutstandingInvoices: FieldValue;
-  writeOffAmount: FieldValue;
-  printingSettings: FieldValue;
-  payToRecdFrom: FieldValue;
-  letterHead: FieldValue;
-  printHeading: FieldValue;
-  moreInformation: FieldValue;
-  modeOfPayment: FieldValue;
-  paymentOrder: FieldValue;
-  isOpening: FieldValue;
-  stockEntry: FieldValue;
-  subscriptionSection: FieldValue;
-  autoRepeat: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

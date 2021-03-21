@@ -9,7 +9,6 @@
 import {
   walk,
   readJson,
-  writeFileStr,
   WalkEntry,
 } from "https://deno.land/x/std@0.68.0/fs/mod.ts";
 import { posix } from "https://deno.land/std/path/mod.ts";
@@ -61,7 +60,7 @@ class ModelGenerator {
     try {
       console.log("[model file name]:  " + path);
       const modelOutput = await renderFileToString(template, schema);
-      await writeFileStr(path, modelOutput);
+      await Deno.writeTextFile(path, modelOutput);
     } catch (error) {
       console.log(error);
     }
@@ -74,7 +73,7 @@ class ModelGenerator {
         modelIndexTemplate,
         { models },
       );
-      await writeFileStr(modelIndexFileName, modelIndexOutput);
+      await Deno.writeTextFile(modelIndexFileName, modelIndexOutput);
       console.log("[model index file name]:    " + modelIndexFileName);
     } catch (error) {
       console.log(error);

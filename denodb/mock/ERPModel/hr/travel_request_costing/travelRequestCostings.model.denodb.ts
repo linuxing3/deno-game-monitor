@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -98,14 +95,4 @@ export class TravelRequestCosting extends Model {
       
     ]
   };
-}
-
-export interface ITravelRequestCosting {
-  id: FieldValue;
-  expenseType: FieldValue;
-  sponsoredAmount: FieldValue;
-  fundedAmount: FieldValue;
-  totalAmount: FieldValue;
-  comments: FieldValue;
-  
 }

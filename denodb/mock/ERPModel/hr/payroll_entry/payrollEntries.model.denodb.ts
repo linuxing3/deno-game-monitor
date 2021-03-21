@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -350,34 +347,4 @@ export class PayrollEntry extends Model {
       
     ]
   };
-}
-
-export interface IPayrollEntry {
-  id: FieldValue;
-  selectEmployees: FieldValue;
-  postingDate: FieldValue;
-  payrollFrequency: FieldValue;
-  company: FieldValue;
-  employees: FieldValue;
-  branch: FieldValue;
-  department: FieldValue;
-  designation: FieldValue;
-  numberOfEmployees: FieldValue;
-  employeeDetails: FieldValue;
-  validateAttendance: FieldValue;
-  salarySlipBasedOnTimesheet: FieldValue;
-  selectPayrollPeriod: FieldValue;
-  startDate: FieldValue;
-  endDate: FieldValue;
-  deductTaxForUnclaimedEmployeeBenefits: FieldValue;
-  deductTaxForUnsubmittedTaxExemptionProof: FieldValue;
-  accounts: FieldValue;
-  costCenter: FieldValue;
-  project: FieldValue;
-  paymentEntry: FieldValue;
-  paymentAccount: FieldValue;
-  amendedFrom: FieldValue;
-  salarySlipsCreated: FieldValue;
-  salarySlipsSubmitted: FieldValue;
-  
 }

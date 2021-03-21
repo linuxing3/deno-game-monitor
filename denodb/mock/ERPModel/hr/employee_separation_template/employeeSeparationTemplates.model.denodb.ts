@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -90,14 +87,4 @@ export class EmployeeSeparationTemplate extends Model {
       
     ]
   };
-}
-
-export interface IEmployeeSeparationTemplate {
-  id: FieldValue;
-  company: FieldValue;
-  department: FieldValue;
-  designation: FieldValue;
-  employeeGrade: FieldValue;
-  activities: FieldValue;
-  
 }

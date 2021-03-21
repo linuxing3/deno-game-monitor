@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -162,22 +159,4 @@ export class EmployeeBenefitApplication extends Model {
       
     ]
   };
-}
-
-export interface IEmployeeBenefitApplication {
-  id: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  maxBenefitsYearly: FieldValue;
-  remainingBenefitsYearly: FieldValue;
-  date: FieldValue;
-  payrollPeriod: FieldValue;
-  department: FieldValue;
-  amendedFrom: FieldValue;
-  benefitsApplied: FieldValue;
-  employeeBenefits: FieldValue;
-  totals: FieldValue;
-  totalAmount: FieldValue;
-  dispensedAmountProRated: FieldValue;
-  
 }

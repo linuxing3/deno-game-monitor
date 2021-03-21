@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -151,19 +148,4 @@ export class ExchangeRateRevaluationAccount extends Model {
       
     ]
   };
-}
-
-export interface IExchangeRateRevaluationAccount {
-  id: FieldValue;
-  account: FieldValue;
-  partyType: FieldValue;
-  party: FieldValue;
-  accountCurrency: FieldValue;
-  balanceInAccountCurrency: FieldValue;
-  currentExchangeRate: FieldValue;
-  balanceInBaseCurrency: FieldValue;
-  newExchangeRate: FieldValue;
-  newBalanceInBaseCurrency: FieldValue;
-  gainLoss: FieldValue;
-  
 }

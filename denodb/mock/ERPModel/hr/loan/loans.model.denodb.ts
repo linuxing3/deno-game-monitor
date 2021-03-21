@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -321,37 +318,4 @@ export class Loan extends Model {
       
     ]
   };
-}
-
-export interface ILoan {
-  id: FieldValue;
-  applicantType: FieldValue;
-  applicant: FieldValue;
-  applicantName: FieldValue;
-  loanApplication: FieldValue;
-  loanType: FieldValue;
-  postingDate: FieldValue;
-  company: FieldValue;
-  status: FieldValue;
-  repayFromSalary: FieldValue;
-  loanDetails: FieldValue;
-  loanAmount: FieldValue;
-  rateOfInterestYear: FieldValue;
-  disbursementDate: FieldValue;
-  repaymentStartDate: FieldValue;
-  repaymentMethod: FieldValue;
-  repaymentPeriodInMonths: FieldValue;
-  monthlyRepaymentAmount: FieldValue;
-  accountInfo: FieldValue;
-  modeOfPayment: FieldValue;
-  paymentAccount: FieldValue;
-  loanAccount: FieldValue;
-  interestIncomeAccount: FieldValue;
-  repaymentSchedule: FieldValue;
-  totals: FieldValue;
-  totalPayment: FieldValue;
-  totalInterestPayable: FieldValue;
-  totalAmountPaid: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

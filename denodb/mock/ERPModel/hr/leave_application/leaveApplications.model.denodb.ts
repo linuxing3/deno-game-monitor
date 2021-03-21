@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -291,31 +288,4 @@ export class LeaveApplication extends Model {
       
     ]
   };
-}
-
-export interface ILeaveApplication {
-  id: FieldValue;
-  series: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  leaveType: FieldValue;
-  department: FieldValue;
-  leaveBalanceBeforeApplication: FieldValue;
-  fromDate: FieldValue;
-  toDate: FieldValue;
-  halfDay: FieldValue;
-  halfDayDate: FieldValue;
-  totalLeaveDays: FieldValue;
-  reason: FieldValue;
-  leaveApprover: FieldValue;
-  leaveApproverName: FieldValue;
-  status: FieldValue;
-  salarySlip: FieldValue;
-  postingDate: FieldValue;
-  followViaEmail: FieldValue;
-  color: FieldValue;
-  company: FieldValue;
-  letterHead: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

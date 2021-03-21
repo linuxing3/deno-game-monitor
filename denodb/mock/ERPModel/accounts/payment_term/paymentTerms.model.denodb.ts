@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -116,16 +113,4 @@ export class PaymentTerm extends Model {
       
     ]
   };
-}
-
-export interface IPaymentTerm {
-  id: FieldValue;
-  paymentTermName: FieldValue;
-  invoicePortion: FieldValue;
-  modeOfPayment: FieldValue;
-  dueDateBasedOn: FieldValue;
-  creditDays: FieldValue;
-  creditMonths: FieldValue;
-  description: FieldValue;
-  
 }

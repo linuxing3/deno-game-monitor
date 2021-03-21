@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -238,26 +235,4 @@ export class AssetMaintenanceLog extends Model {
       
     ]
   };
-}
-
-export interface IAssetMaintenanceLog {
-  id: FieldValue;
-  assetMaintenance: FieldValue;
-  series: FieldValue;
-  assetName: FieldValue;
-  itemCode: FieldValue;
-  itemName: FieldValue;
-  task: FieldValue;
-  maintenanceType: FieldValue;
-  periodicity: FieldValue;
-  assignTo: FieldValue;
-  dueDate: FieldValue;
-  completionDate: FieldValue;
-  maintenanceStatus: FieldValue;
-  hasCertificate: FieldValue;
-  certificate: FieldValue;
-  description: FieldValue;
-  actionsPerformed: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

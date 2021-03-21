@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -786,78 +783,4 @@ export class SalesInvoiceItem extends Model {
       
     ]
   };
-}
-
-export interface ISalesInvoiceItem {
-  id: FieldValue;
-  barcode: FieldValue;
-  item: FieldValue;
-  itemName: FieldValue;
-  customerSItemCode: FieldValue;
-  editDescription: FieldValue;
-  description: FieldValue;
-  imageView: FieldValue;
-  image: FieldValue;
-  quantity: FieldValue;
-  stockUom: FieldValue;
-  uom: FieldValue;
-  uomConversionFactor: FieldValue;
-  qtyAsPerStockUom: FieldValue;
-  priceListRate: FieldValue;
-  priceListRateCompanyCurrency: FieldValue;
-  discountAndMargin: FieldValue;
-  marginType: FieldValue;
-  marginRateOrAmount: FieldValue;
-  rateWithMargin: FieldValue;
-  discountOnPriceListRateWithMargin: FieldValue;
-  discountAmount: FieldValue;
-  rateWithMarginCompanyCurrency: FieldValue;
-  rate: FieldValue;
-  amount: FieldValue;
-  rateCompanyCurrency: FieldValue;
-  amountCompanyCurrency: FieldValue;
-  pricingRule: FieldValue;
-  netRate: FieldValue;
-  netAmount: FieldValue;
-  netRateCompanyCurrency: FieldValue;
-  netAmountCompanyCurrency: FieldValue;
-  dropShip: FieldValue;
-  deliveredBySupplier: FieldValue;
-  accountingDetails: FieldValue;
-  incomeAccount: FieldValue;
-  expenseAccount: FieldValue;
-  itemTaxTemplate: FieldValue;
-  costCenter: FieldValue;
-  deferredRevenue: FieldValue;
-  deferredRevenueAccount: FieldValue;
-  serviceStopDate: FieldValue;
-  enableDeferredRevenue: FieldValue;
-  serviceStartDate: FieldValue;
-  serviceEndDate: FieldValue;
-  itemWeightDetails: FieldValue;
-  weightPerUnit: FieldValue;
-  totalWeight: FieldValue;
-  weightUom: FieldValue;
-  stockDetails: FieldValue;
-  warehouse: FieldValue;
-  customerWarehouseOptional: FieldValue;
-  qualityInspection: FieldValue;
-  batchNo: FieldValue;
-  allowZeroValuationRate: FieldValue;
-  serialNo: FieldValue;
-  itemGroup: FieldValue;
-  brandName: FieldValue;
-  itemTaxRate: FieldValue;
-  availableBatchQtyAtWarehouse: FieldValue;
-  availableQtyAtWarehouse: FieldValue;
-  references: FieldValue;
-  salesOrder: FieldValue;
-  salesOrderItem: FieldValue;
-  deliveryNote: FieldValue;
-  deliveryNoteItem: FieldValue;
-  deliveredQty: FieldValue;
-  isFixedAsset: FieldValue;
-  asset: FieldValue;
-  pageBreak: FieldValue;
-  
 }

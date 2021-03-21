@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -99,15 +96,4 @@ export class PurchaseInvoiceAdvance extends Model {
       
     ]
   };
-}
-
-export interface IPurchaseInvoiceAdvance {
-  id: FieldValue;
-  referenceType: FieldValue;
-  referenceName: FieldValue;
-  remarks: FieldValue;
-  referenceRow: FieldValue;
-  advanceAmount: FieldValue;
-  allocatedAmount: FieldValue;
-  
 }

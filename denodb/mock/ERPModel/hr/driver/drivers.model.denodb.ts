@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -169,21 +166,4 @@ export class Driver extends Model {
       
     ]
   };
-}
-
-export interface IDriver {
-  id: FieldValue;
-  series: FieldValue;
-  fullName: FieldValue;
-  status: FieldValue;
-  transporter: FieldValue;
-  employee: FieldValue;
-  cellphoneNumber: FieldValue;
-  licenseDetails: FieldValue;
-  licenseNumber: FieldValue;
-  issuingDate: FieldValue;
-  expiryDate: FieldValue;
-  drivingLicenseCategories: FieldValue;
-  drivingLicenseCategory: FieldValue;
-  
 }

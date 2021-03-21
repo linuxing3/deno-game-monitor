@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -126,18 +123,4 @@ export class ShiftAssignment extends Model {
       
     ]
   };
-}
-
-export interface IShiftAssignment {
-  id: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  department: FieldValue;
-  shiftType: FieldValue;
-  present: FieldValue;
-  company: FieldValue;
-  date: FieldValue;
-  shiftRequest: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

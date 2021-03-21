@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -276,32 +273,4 @@ export class JournalEntryAccount extends Model {
       
     ]
   };
-}
-
-export interface IJournalEntryAccount {
-  id: FieldValue;
-  account: FieldValue;
-  accountType: FieldValue;
-  accountBalance: FieldValue;
-  costCenter: FieldValue;
-  partyType: FieldValue;
-  party: FieldValue;
-  partyBalance: FieldValue;
-  currency: FieldValue;
-  accountCurrency: FieldValue;
-  exchangeRate: FieldValue;
-  amount: FieldValue;
-  debit: FieldValue;
-  debitInCompanyCurrency: FieldValue;
-  credit: FieldValue;
-  creditInCompanyCurrency: FieldValue;
-  reference: FieldValue;
-  referenceType: FieldValue;
-  referenceName: FieldValue;
-  referenceDueDate: FieldValue;
-  project: FieldValue;
-  isAdvance: FieldValue;
-  userRemark: FieldValue;
-  againstAccount: FieldValue;
-  
 }

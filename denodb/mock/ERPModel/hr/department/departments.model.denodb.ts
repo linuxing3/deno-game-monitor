@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -162,22 +159,4 @@ export class Department extends Model {
       
     ]
   };
-}
-
-export interface IDepartment {
-  id: FieldValue;
-  department: FieldValue;
-  parentDepartment: FieldValue;
-  company: FieldValue;
-  isGroup: FieldValue;
-  disabled: FieldValue;
-  leaveBlockList: FieldValue;
-  leaveApprovers: FieldValue;
-  leaveApprover: FieldValue;
-  expenseApprovers: FieldValue;
-  expenseApprover: FieldValue;
-  lft: FieldValue;
-  rgt: FieldValue;
-  oldParent: FieldValue;
-  
 }

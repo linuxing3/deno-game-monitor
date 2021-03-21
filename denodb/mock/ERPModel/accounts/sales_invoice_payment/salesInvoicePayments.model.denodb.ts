@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -108,16 +105,4 @@ export class SalesInvoicePayment extends Model {
       
     ]
   };
-}
-
-export interface ISalesInvoicePayment {
-  id: FieldValue;
-  default: FieldValue;
-  modeOfPayment: FieldValue;
-  amount: FieldValue;
-  account: FieldValue;
-  type: FieldValue;
-  baseAmountCompanyCurrency: FieldValue;
-  clearanceDate: FieldValue;
-  
 }

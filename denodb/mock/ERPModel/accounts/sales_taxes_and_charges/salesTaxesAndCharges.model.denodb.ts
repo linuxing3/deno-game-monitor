@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -204,24 +201,4 @@ export class SalesTaxesAndCharge extends Model {
       
     ]
   };
-}
-
-export interface ISalesTaxesAndCharge {
-  id: FieldValue;
-  type: FieldValue;
-  referenceRow: FieldValue;
-  accountHead: FieldValue;
-  costCenter: FieldValue;
-  description: FieldValue;
-  isThisTaxIncludedInBasicRate: FieldValue;
-  rate: FieldValue;
-  amount: FieldValue;
-  total: FieldValue;
-  taxAmountAfterDiscountAmount: FieldValue;
-  amountCompanyCurrency: FieldValue;
-  totalCompanyCurrency: FieldValue;
-  taxAmountAfterDiscountAmountCompanyCurrency: FieldValue;
-  itemWiseTaxDetail: FieldValue;
-  parenttype: FieldValue;
-  
 }

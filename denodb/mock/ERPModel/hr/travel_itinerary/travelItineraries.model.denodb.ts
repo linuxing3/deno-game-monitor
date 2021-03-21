@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -170,22 +167,4 @@ export class TravelItinerary extends Model {
       
     ]
   };
-}
-
-export interface ITravelItinerary {
-  id: FieldValue;
-  travelFrom: FieldValue;
-  travelTo: FieldValue;
-  modeOfTravel: FieldValue;
-  mealPreference: FieldValue;
-  travelAdvanceRequired: FieldValue;
-  advanceAmount: FieldValue;
-  departureDatetime: FieldValue;
-  arrivalDatetime: FieldValue;
-  lodgingRequired: FieldValue;
-  preferredAreaForLodging: FieldValue;
-  checkInDate: FieldValue;
-  checkOutDate: FieldValue;
-  otherDetails: FieldValue;
-  
 }

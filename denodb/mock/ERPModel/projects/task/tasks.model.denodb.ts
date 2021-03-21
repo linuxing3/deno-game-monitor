@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -378,38 +375,4 @@ export class Task extends Model {
       
     ]
   };
-}
-
-export interface ITask {
-  id: FieldValue;
-  subject: FieldValue;
-  project: FieldValue;
-  isGroup: FieldValue;
-  status: FieldValue;
-  priority: FieldValue;
-  parentTask: FieldValue;
-  expectedStartDate: FieldValue;
-  expectedTimeInHours: FieldValue;
-  weight: FieldValue;
-  expectedEndDate: FieldValue;
-  progress: FieldValue;
-  isMilestone: FieldValue;
-  color: FieldValue;
-  details: FieldValue;
-  dependsOn: FieldValue;
-  dependsOnTasks: FieldValue;
-  actualStartDateViaTimeSheet: FieldValue;
-  actualTimeInHours: FieldValue;
-  actualEndDateViaTimeSheet: FieldValue;
-  totalCostingAmountViaTimeSheet: FieldValue;
-  totalExpenseClaimViaExpenseClaim: FieldValue;
-  totalBillingAmountViaTimeSheet: FieldValue;
-  reviewDate: FieldValue;
-  closingDate: FieldValue;
-  department: FieldValue;
-  company: FieldValue;
-  lft: FieldValue;
-  rgt: FieldValue;
-  oldParent: FieldValue;
-  
 }

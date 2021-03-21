@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -108,16 +105,4 @@ export class PeriodClosingVoucher extends Model {
       
     ]
   };
-}
-
-export interface IPeriodClosingVoucher {
-  id: FieldValue;
-  transactionDate: FieldValue;
-  postingDate: FieldValue;
-  closingFiscalYear: FieldValue;
-  amendedFrom: FieldValue;
-  company: FieldValue;
-  closingAccountHead: FieldValue;
-  remarks: FieldValue;
-  
 }

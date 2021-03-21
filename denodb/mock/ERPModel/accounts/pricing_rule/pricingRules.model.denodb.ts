@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -412,40 +409,4 @@ export class PricingRule extends Model {
       
     ]
   };
-}
-
-export interface IPricingRule {
-  id: FieldValue;
-  title: FieldValue;
-  applyOn: FieldValue;
-  itemCode: FieldValue;
-  brand: FieldValue;
-  itemGroup: FieldValue;
-  priority: FieldValue;
-  disable: FieldValue;
-  selling: FieldValue;
-  buying: FieldValue;
-  applicableFor: FieldValue;
-  customer: FieldValue;
-  customerGroup: FieldValue;
-  territory: FieldValue;
-  salesPartner: FieldValue;
-  campaign: FieldValue;
-  supplier: FieldValue;
-  supplierGroup: FieldValue;
-  minQty: FieldValue;
-  maxQty: FieldValue;
-  validFrom: FieldValue;
-  validUpto: FieldValue;
-  company: FieldValue;
-  currency: FieldValue;
-  margin: FieldValue;
-  marginType: FieldValue;
-  marginRateOrAmount: FieldValue;
-  rateOrDiscount: FieldValue;
-  rate: FieldValue;
-  discountOnPriceListRate: FieldValue;
-  forPriceList: FieldValue;
-  pricingRuleHelp: FieldValue;
-  
 }

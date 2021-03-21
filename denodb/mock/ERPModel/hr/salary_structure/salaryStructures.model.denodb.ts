@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -282,30 +279,4 @@ export class SalaryStructure extends Model {
       
     ]
   };
-}
-
-export interface ISalaryStructure {
-  id: FieldValue;
-  company: FieldValue;
-  letterHead: FieldValue;
-  isActive: FieldValue;
-  payrollFrequency: FieldValue;
-  isDefault: FieldValue;
-  salarySlipBasedOnTimesheet: FieldValue;
-  salaryComponent: FieldValue;
-  hourRate: FieldValue;
-  leaveEncashmentAmountPerDay: FieldValue;
-  maxBenefitsAmount: FieldValue;
-  earning: FieldValue;
-  earnings: FieldValue;
-  deduction: FieldValue;
-  deductions: FieldValue;
-  totalEarning: FieldValue;
-  totalDeduction: FieldValue;
-  netPay: FieldValue;
-  account: FieldValue;
-  modeOfPayment: FieldValue;
-  paymentAccount: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

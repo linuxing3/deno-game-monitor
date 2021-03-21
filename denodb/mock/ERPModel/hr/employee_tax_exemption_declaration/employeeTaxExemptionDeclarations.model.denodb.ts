@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -116,16 +113,4 @@ export class EmployeeTaxExemptionDeclaration extends Model {
       
     ]
   };
-}
-
-export interface IEmployeeTaxExemptionDeclaration {
-  id: FieldValue;
-  employee: FieldValue;
-  company: FieldValue;
-  payrollPeriod: FieldValue;
-  totalExemptionAmount: FieldValue;
-  department: FieldValue;
-  amendedFrom: FieldValue;
-  declarations: FieldValue;
-  
 }

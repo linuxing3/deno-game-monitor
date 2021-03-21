@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -187,23 +184,4 @@ export class Location extends Model {
       
     ]
   };
-}
-
-export interface ILocation {
-  id: FieldValue;
-  locationName: FieldValue;
-  parentLocation: FieldValue;
-  isContainer: FieldValue;
-  isGroup: FieldValue;
-  locationDetails: FieldValue;
-  latitude: FieldValue;
-  longitude: FieldValue;
-  area: FieldValue;
-  areaUom: FieldValue;
-  location: FieldValue;
-  treeDetails: FieldValue;
-  lft: FieldValue;
-  rgt: FieldValue;
-  oldParent: FieldValue;
-  
 }

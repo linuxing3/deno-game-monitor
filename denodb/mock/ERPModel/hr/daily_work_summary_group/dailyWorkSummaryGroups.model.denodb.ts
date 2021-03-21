@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -109,17 +106,4 @@ export class DailyWorkSummaryGroup extends Model {
       
     ]
   };
-}
-
-export interface IDailyWorkSummaryGroup {
-  id: FieldValue;
-  enabled: FieldValue;
-  selectUsers: FieldValue;
-  users: FieldValue;
-  sendEmailsAt: FieldValue;
-  holidayList: FieldValue;
-  reminder: FieldValue;
-  subject: FieldValue;
-  message: FieldValue;
-  
 }

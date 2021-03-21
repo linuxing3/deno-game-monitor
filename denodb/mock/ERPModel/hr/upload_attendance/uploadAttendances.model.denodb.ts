@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -100,16 +97,4 @@ export class UploadAttendance extends Model {
       
     ]
   };
-}
-
-export interface IUploadAttendance {
-  id: FieldValue;
-  downloadTemplate: FieldValue;
-  attendanceFromDate: FieldValue;
-  attendanceToDate: FieldValue;
-  getTemplate: FieldValue;
-  importAttendance: FieldValue;
-  uploadHtml: FieldValue;
-  importLog: FieldValue;
-  
 }

@@ -100,3 +100,27 @@ export class Flight extends Model {
     flightDuration: 2.5,
   };
 }
+
+export class Movies extends Model {
+  static table = "documents";
+  static timestamps = true;
+
+  static fields = {
+    id: { primaryKey: true, autoIncrement: true },
+    year: DataTypes.STRING,
+    date: DataTypes.DATE,
+    classiLevel: DataTypes.STRING,
+    category: DataTypes.STRING,
+    inOrOut: DataTypes.STRING,
+    sendingCode: DataTypes.STRING,
+    orderedNumber: DataTypes.STRING,
+    title: DataTypes.STRING,
+    content: DataTypes.STRING,
+    toEntity: DataTypes.STRING,
+    copyEntity: DataTypes.STRING,
+    attachment: DataTypes.STRING,
+    keyword: DataTypes.STRING,
+    workEntity: DataTypes.STRING,
+    author: DataTypes.STRING,
+  };
+}

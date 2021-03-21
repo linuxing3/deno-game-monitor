@@ -34,9 +34,9 @@ import { Budget } from './ERPModel/accounts/budget/budgets.model.denodb.ts';
 
 import { BudgetAccount } from './ERPModel/accounts/budget_account/budgetAccounts.model.denodb.ts';
 
-import { CForm } from './ERPModel/accounts/c_form/cForms.model.denodb.ts';
+import { CashierClosing } from './ERPModel/accounts/cashier_closing/cashierClosings.model.denodb.ts';
 
-import { CFormInvoiceDetail } from './ERPModel/accounts/c_form_invoice_detail/cFormInvoiceDetails.model.denodb.ts';
+import { CashierClosingPayment } from './ERPModel/accounts/cashier_closing_payments/cashierClosingPayments.model.denodb.ts';
 
 import { CashFlowMapper } from './ERPModel/accounts/cash_flow_mapper/cashFlowMappers.model.denodb.ts';
 
@@ -48,15 +48,15 @@ import { CashFlowMappingTemplate } from './ERPModel/accounts/cash_flow_mapping_t
 
 import { CashFlowMappingTemplateDetail } from './ERPModel/accounts/cash_flow_mapping_template_details/cashFlowMappingTemplateDetails.model.denodb.ts';
 
-import { CashierClosing } from './ERPModel/accounts/cashier_closing/cashierClosings.model.denodb.ts';
-
-import { CashierClosingPayment } from './ERPModel/accounts/cashier_closing_payments/cashierClosingPayments.model.denodb.ts';
-
 import { ChequePrintTemplate } from './ERPModel/accounts/cheque_print_template/chequePrintTemplates.model.denodb.ts';
 
 import { ClosedDocument } from './ERPModel/accounts/closed_document/closedDocuments.model.denodb.ts';
 
 import { CostCenter } from './ERPModel/accounts/cost_center/costCenters.model.denodb.ts';
+
+import { CForm } from './ERPModel/accounts/c_form/cForms.model.denodb.ts';
+
+import { CFormInvoiceDetail } from './ERPModel/accounts/c_form_invoice_detail/cFormInvoiceDetails.model.denodb.ts';
 
 import { ExchangeRateRevaluation } from './ERPModel/accounts/exchange_rate_revaluation/exchangeRateRevaluations.model.denodb.ts';
 
@@ -170,13 +170,13 @@ import { SalesTaxesAndCharge } from './ERPModel/accounts/sales_taxes_and_charges
 
 import { SalesTaxesAndChargesTemplate } from './ERPModel/accounts/sales_taxes_and_charges_template/salesTaxesAndChargesTemplates.model.denodb.ts';
 
+import { Shareholder } from './ERPModel/accounts/shareholder/shareholders.model.denodb.ts';
+
 import { ShareBalance } from './ERPModel/accounts/share_balance/shareBalances.model.denodb.ts';
 
 import { ShareTransfer } from './ERPModel/accounts/share_transfer/shareTransfers.model.denodb.ts';
 
 import { ShareType } from './ERPModel/accounts/share_type/shareTypes.model.denodb.ts';
-
-import { Shareholder } from './ERPModel/accounts/shareholder/shareholders.model.denodb.ts';
 
 import { ShippingRule } from './ERPModel/accounts/shipping_rule/shippingRules.model.denodb.ts';
 
@@ -458,6 +458,8 @@ import { DependentTask } from './ERPModel/projects/dependent_task/dependentTasks
 
 import { Project } from './ERPModel/projects/project/projects.model.denodb.ts';
 
+import { ProjectsSetting } from './ERPModel/projects/projects_settings/projectsSettings.model.denodb.ts';
+
 import { ProjectTask } from './ERPModel/projects/project_task/projectTasks.model.denodb.ts';
 
 import { ProjectTemplate } from './ERPModel/projects/project_template/projectTemplates.model.denodb.ts';
@@ -470,8 +472,6 @@ import { ProjectUpdate } from './ERPModel/projects/project_update/projectUpdates
 
 import { ProjectUser } from './ERPModel/projects/project_user/projectUsers.model.denodb.ts';
 
-import { ProjectsSetting } from './ERPModel/projects/projects_settings/projectsSettings.model.denodb.ts';
-
 import { Task } from './ERPModel/projects/task/tasks.model.denodb.ts';
 
 import { TaskDependsOn } from './ERPModel/projects/task_depends_on/taskDependsOns.model.denodb.ts';
@@ -483,7 +483,7 @@ import { TimesheetDetail } from './ERPModel/projects/timesheet_detail/timesheetD
 
 // Loop for a models list
 export const models = [
-  AccountingPeriod,
+AccountingPeriod,
   AccountsSetting,
   AllowedToTransactWith,
   Bank,
@@ -500,18 +500,18 @@ export const models = [
   BankStatementTransactionSettingsItem,
   Budget,
   BudgetAccount,
-  CForm,
-  CFormInvoiceDetail,
+  CashierClosing,
+  CashierClosingPayment,
   CashFlowMapper,
   CashFlowMapping,
   CashFlowMappingAccount,
   CashFlowMappingTemplate,
   CashFlowMappingTemplateDetail,
-  CashierClosing,
-  CashierClosingPayment,
   ChequePrintTemplate,
   ClosedDocument,
   CostCenter,
+  CForm,
+  CFormInvoiceDetail,
   ExchangeRateRevaluation,
   ExchangeRateRevaluationAccount,
   FinanceBook,
@@ -568,10 +568,10 @@ export const models = [
   SalesInvoiceTimesheet,
   SalesTaxesAndCharge,
   SalesTaxesAndChargesTemplate,
+  Shareholder,
   ShareBalance,
   ShareTransfer,
   ShareType,
-  Shareholder,
   ShippingRule,
   ShippingRuleCondition,
   ShippingRuleCountry,
@@ -712,13 +712,13 @@ export const models = [
   ActivityType,
   DependentTask,
   Project,
+  ProjectsSetting,
   ProjectTask,
   ProjectTemplate,
   ProjectTemplateTask,
   ProjectType,
   ProjectUpdate,
   ProjectUser,
-  ProjectsSetting,
   Task,
   TaskDependsOn,
   Timesheet,
@@ -744,18 +744,18 @@ accountingPeriods: AccountingPeriod,
   bankStatementTransactionSettingsItems: BankStatementTransactionSettingsItem,
   budgets: Budget,
   budgetAccounts: BudgetAccount,
-  cForms: CForm,
-  cFormInvoiceDetails: CFormInvoiceDetail,
+  cashierClosings: CashierClosing,
+  cashierClosingPayments: CashierClosingPayment,
   cashFlowMappers: CashFlowMapper,
   cashFlowMappings: CashFlowMapping,
   cashFlowMappingAccounts: CashFlowMappingAccount,
   cashFlowMappingTemplates: CashFlowMappingTemplate,
   cashFlowMappingTemplateDetails: CashFlowMappingTemplateDetail,
-  cashierClosings: CashierClosing,
-  cashierClosingPayments: CashierClosingPayment,
   chequePrintTemplates: ChequePrintTemplate,
   closedDocuments: ClosedDocument,
   costCenters: CostCenter,
+  cForms: CForm,
+  cFormInvoiceDetails: CFormInvoiceDetail,
   exchangeRateRevaluations: ExchangeRateRevaluation,
   exchangeRateRevaluationAccounts: ExchangeRateRevaluationAccount,
   financeBooks: FinanceBook,
@@ -812,10 +812,10 @@ accountingPeriods: AccountingPeriod,
   salesInvoiceTimesheets: SalesInvoiceTimesheet,
   salesTaxesAndCharges: SalesTaxesAndCharge,
   salesTaxesAndChargesTemplates: SalesTaxesAndChargesTemplate,
+  shareholders: Shareholder,
   shareBalances: ShareBalance,
   shareTransfers: ShareTransfer,
   shareTypes: ShareType,
-  shareholders: Shareholder,
   shippingRules: ShippingRule,
   shippingRuleConditions: ShippingRuleCondition,
   shippingRuleCountries: ShippingRuleCountry,
@@ -956,13 +956,13 @@ accountingPeriods: AccountingPeriod,
   activityTypes: ActivityType,
   dependentTasks: DependentTask,
   projects: Project,
+  projectsSettings: ProjectsSetting,
   projectTasks: ProjectTask,
   projectTemplates: ProjectTemplate,
   projectTemplateTasks: ProjectTemplateTask,
   projectTypes: ProjectType,
   projectUpdates: ProjectUpdate,
   projectUsers: ProjectUser,
-  projectsSettings: ProjectsSetting,
   tasks: Task,
   taskDependsOns: TaskDependsOn,
   timesheets: Timesheet,

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -338,38 +335,4 @@ export class ExpenseClaim extends Model {
       
     ]
   };
-}
-
-export interface IExpenseClaim {
-  id: FieldValue;
-  series: FieldValue;
-  fromEmployee: FieldValue;
-  employeeName: FieldValue;
-  department: FieldValue;
-  expenseApprover: FieldValue;
-  approvalStatus: FieldValue;
-  totalClaimedAmount: FieldValue;
-  totalSanctionedAmount: FieldValue;
-  isPaid: FieldValue;
-  expenses: FieldValue;
-  postingDate: FieldValue;
-  vehicleLog: FieldValue;
-  project: FieldValue;
-  task: FieldValue;
-  totalAmountReimbursed: FieldValue;
-  remark: FieldValue;
-  title: FieldValue;
-  employeesEmailId: FieldValue;
-  accountingDetails: FieldValue;
-  company: FieldValue;
-  modeOfPayment: FieldValue;
-  payableAccount: FieldValue;
-  costCenter: FieldValue;
-  moreDetails: FieldValue;
-  status: FieldValue;
-  amendedFrom: FieldValue;
-  advancePayments: FieldValue;
-  advances: FieldValue;
-  totalAdvanceAmount: FieldValue;
-  
 }

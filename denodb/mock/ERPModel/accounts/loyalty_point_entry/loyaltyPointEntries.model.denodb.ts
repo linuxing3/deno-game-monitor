@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -127,19 +124,4 @@ export class LoyaltyPointEntry extends Model {
       
     ]
   };
-}
-
-export interface ILoyaltyPointEntry {
-  id: FieldValue;
-  loyaltyProgram: FieldValue;
-  loyaltyProgramTier: FieldValue;
-  customer: FieldValue;
-  salesInvoice: FieldValue;
-  redeemAgainst: FieldValue;
-  loyaltyPoints: FieldValue;
-  purchaseAmount: FieldValue;
-  expiryDate: FieldValue;
-  postingDate: FieldValue;
-  company: FieldValue;
-  
 }

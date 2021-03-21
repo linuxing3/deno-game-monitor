@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -91,15 +88,4 @@ export class EmployeeEducation extends Model {
       
     ]
   };
-}
-
-export interface IEmployeeEducation {
-  id: FieldValue;
-  schoolUniversity: FieldValue;
-  qualification: FieldValue;
-  level: FieldValue;
-  yearOfPassing: FieldValue;
-  classPercentage: FieldValue;
-  majorOptionalSubjects: FieldValue;
-  
 }

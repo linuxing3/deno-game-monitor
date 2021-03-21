@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -262,34 +259,4 @@ export class GlEntry extends Model {
       
     ]
   };
-}
-
-export interface IGlEntry {
-  id: FieldValue;
-  postingDate: FieldValue;
-  transactionDate: FieldValue;
-  account: FieldValue;
-  partyType: FieldValue;
-  party: FieldValue;
-  costCenter: FieldValue;
-  debitAmount: FieldValue;
-  creditAmount: FieldValue;
-  accountCurrency: FieldValue;
-  debitAmountInAccountCurrency: FieldValue;
-  creditAmountInAccountCurrency: FieldValue;
-  against: FieldValue;
-  againstVoucherType: FieldValue;
-  againstVoucher: FieldValue;
-  voucherType: FieldValue;
-  voucherNo: FieldValue;
-  voucherDetailNo: FieldValue;
-  project: FieldValue;
-  remarks: FieldValue;
-  isOpening: FieldValue;
-  isAdvance: FieldValue;
-  fiscalYear: FieldValue;
-  company: FieldValue;
-  financeBook: FieldValue;
-  toRename: FieldValue;
-  
 }

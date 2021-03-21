@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -99,15 +96,4 @@ export class SalarySlipLoan extends Model {
       
     ]
   };
-}
-
-export interface ISalarySlipLoan {
-  id: FieldValue;
-  loan: FieldValue;
-  loanAccount: FieldValue;
-  interestIncomeAccount: FieldValue;
-  principalAmount: FieldValue;
-  interestAmount: FieldValue;
-  totalPayment: FieldValue;
-  
 }

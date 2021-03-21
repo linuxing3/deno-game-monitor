@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -107,15 +104,4 @@ export class EmployeeOnboardingActivity extends Model {
       
     ]
   };
-}
-
-export interface IEmployeeOnboardingActivity {
-  id: FieldValue;
-  activityName: FieldValue;
-  user: FieldValue;
-  role: FieldValue;
-  completed: FieldValue;
-  requiredForEmployeeCreation: FieldValue;
-  description: FieldValue;
-  
 }

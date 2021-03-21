@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -222,26 +219,4 @@ export class BankStatementTransactionEntry extends Model {
       
     ]
   };
-}
-
-export interface IBankStatementTransactionEntry {
-  id: FieldValue;
-  bankAccount: FieldValue;
-  fromDate: FieldValue;
-  toDate: FieldValue;
-  bankStatementSettings: FieldValue;
-  bank: FieldValue;
-  receivableAccount: FieldValue;
-  payableAccount: FieldValue;
-  bankStatement: FieldValue;
-  bankTransactionEntries: FieldValue;
-  newTransactions: FieldValue;
-  matchTransactionToInvoices: FieldValue;
-  createNewPaymentJournalEntry: FieldValue;
-  submitReconcilePayments: FieldValue;
-  matchingInvoices: FieldValue;
-  paymentInvoiceItems: FieldValue;
-  reconciledTransactions: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

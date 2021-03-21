@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -162,22 +159,4 @@ export class LeaveEncashment extends Model {
       
     ]
   };
-}
-
-export interface ILeaveEncashment {
-  id: FieldValue;
-  leavePeriod: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  department: FieldValue;
-  leaveType: FieldValue;
-  leaveAllocation: FieldValue;
-  leaveBalance: FieldValue;
-  encashableDays: FieldValue;
-  amendedFrom: FieldValue;
-  payroll: FieldValue;
-  encashmentAmount: FieldValue;
-  encashmentDate: FieldValue;
-  additionalSalary: FieldValue;
-  
 }

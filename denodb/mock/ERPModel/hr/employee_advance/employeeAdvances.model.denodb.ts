@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -212,24 +209,4 @@ export class EmployeeAdvance extends Model {
       
     ]
   };
-}
-
-export interface IEmployeeAdvance {
-  id: FieldValue;
-  series: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  postingDate: FieldValue;
-  department: FieldValue;
-  purpose: FieldValue;
-  advanceAmount: FieldValue;
-  paidAmount: FieldValue;
-  dueAdvanceAmount: FieldValue;
-  claimedAmount: FieldValue;
-  status: FieldValue;
-  company: FieldValue;
-  amendedFrom: FieldValue;
-  advanceAccount: FieldValue;
-  modeOfPayment: FieldValue;
-  
 }

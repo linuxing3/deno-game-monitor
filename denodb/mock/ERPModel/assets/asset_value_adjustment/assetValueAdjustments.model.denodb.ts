@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -144,20 +141,4 @@ export class AssetValueAdjustment extends Model {
       
     ]
   };
-}
-
-export interface IAssetValueAdjustment {
-  id: FieldValue;
-  company: FieldValue;
-  asset: FieldValue;
-  assetCategory: FieldValue;
-  financeBook: FieldValue;
-  journalEntry: FieldValue;
-  date: FieldValue;
-  currentAssetValue: FieldValue;
-  newAssetValue: FieldValue;
-  differenceAmount: FieldValue;
-  costCenter: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

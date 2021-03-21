@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -453,49 +450,4 @@ export class PosProfile extends Model {
       
     ]
   };
-}
-
-export interface IPosProfile {
-  id: FieldValue;
-  disabled: FieldValue;
-  series: FieldValue;
-  customer: FieldValue;
-  company: FieldValue;
-  country: FieldValue;
-  warehouse: FieldValue;
-  campaign: FieldValue;
-  companyAddress: FieldValue;
-  updateStock: FieldValue;
-  ignorePricingRule: FieldValue;
-  allowDelete: FieldValue;
-  allowUserToEditRate: FieldValue;
-  allowUserToEditDiscount: FieldValue;
-  allowPrintBeforePay: FieldValue;
-  displayItemsInStock: FieldValue;
-  applicableForUsers: FieldValue;
-  modeOfPayment: FieldValue;
-  salesInvoicePayment: FieldValue;
-  itemGroups: FieldValue;
-  customerGroups: FieldValue;
-  printSettings: FieldValue;
-  printFormatForOnline: FieldValue;
-  letterHead: FieldValue;
-  termsAndConditions: FieldValue;
-  printHeading: FieldValue;
-  offlinePosSettings: FieldValue;
-  territory: FieldValue;
-  printFormat: FieldValue;
-  customerGroup: FieldValue;
-  accounting: FieldValue;
-  priceList: FieldValue;
-  currency: FieldValue;
-  writeOffAccount: FieldValue;
-  writeOffCostCenter: FieldValue;
-  accountForChangeAmount: FieldValue;
-  incomeAccount: FieldValue;
-  expenseAccount: FieldValue;
-  costCenter: FieldValue;
-  taxesAndCharges: FieldValue;
-  applyDiscountOn: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -224,28 +221,4 @@ export class AccountsSetting extends Model {
       
     ]
   };
-}
-
-export interface IAccountsSetting {
-  id: FieldValue;
-  makeAccountingEntryForEveryStockMovement: FieldValue;
-  accountsFrozenUpto: FieldValue;
-  roleAllowedToSetFrozenAccountsEditFrozenEntries: FieldValue;
-  determineAddressTaxCategoryFrom: FieldValue;
-  creditController: FieldValue;
-  checkSupplierInvoiceNumberUniqueness: FieldValue;
-  makePaymentViaJournalEntry: FieldValue;
-  unlinkPaymentOnCancellationOfInvoice: FieldValue;
-  bookAssetDepreciationEntryAutomatically: FieldValue;
-  allowCostCenterInEntryOfBalanceSheetAccount: FieldValue;
-  automaticallyAddTaxesAndChargesFromItemTaxTemplate: FieldValue;
-  printSettings: FieldValue;
-  showInclusiveTaxInPrint: FieldValue;
-  showPaymentScheduleInPrint: FieldValue;
-  currencyExchangeSettings: FieldValue;
-  allowStaleExchangeRates: FieldValue;
-  staleDays: FieldValue;
-  reportSettings: FieldValue;
-  useCustomCashFlowFormat: FieldValue;
-  
 }

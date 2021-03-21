@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -115,15 +112,4 @@ export class TrainingResultEmployee extends Model {
       
     ]
   };
-}
-
-export interface ITrainingResultEmployee {
-  id: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  department: FieldValue;
-  hours: FieldValue;
-  grade: FieldValue;
-  comments: FieldValue;
-  
 }

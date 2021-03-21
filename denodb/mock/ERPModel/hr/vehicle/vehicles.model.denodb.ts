@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -276,32 +273,4 @@ export class Vehicle extends Model {
       
     ]
   };
-}
-
-export interface IVehicle {
-  id: FieldValue;
-  licensePlate: FieldValue;
-  make: FieldValue;
-  model: FieldValue;
-  details: FieldValue;
-  odometerValueLast: FieldValue;
-  acquisitionDate: FieldValue;
-  location: FieldValue;
-  chassisNo: FieldValue;
-  vehicleValue: FieldValue;
-  employee: FieldValue;
-  insuranceDetails: FieldValue;
-  insuranceCompany: FieldValue;
-  policyNo: FieldValue;
-  startDate: FieldValue;
-  endDate: FieldValue;
-  additionalDetails: FieldValue;
-  fuelType: FieldValue;
-  fuelUom: FieldValue;
-  lastCarbonCheck: FieldValue;
-  color: FieldValue;
-  wheels: FieldValue;
-  doors: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

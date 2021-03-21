@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -151,19 +148,4 @@ export class SalaryStructureAssignment extends Model {
       
     ]
   };
-}
-
-export interface ISalaryStructureAssignment {
-  id: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  department: FieldValue;
-  designation: FieldValue;
-  salaryStructure: FieldValue;
-  fromDate: FieldValue;
-  company: FieldValue;
-  base: FieldValue;
-  variable: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

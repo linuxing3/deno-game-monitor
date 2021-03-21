@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -303,35 +300,4 @@ export class BankGuarantee extends Model {
       
     ]
   };
-}
-
-export interface IBankGuarantee {
-  id: FieldValue;
-  bankGuaranteeType: FieldValue;
-  referenceDocumentType: FieldValue;
-  referenceDocumentName: FieldValue;
-  customer: FieldValue;
-  supplier: FieldValue;
-  project: FieldValue;
-  amount: FieldValue;
-  startDate: FieldValue;
-  validityInDays: FieldValue;
-  endDate: FieldValue;
-  bankAccountInfo: FieldValue;
-  bank: FieldValue;
-  bankAccount: FieldValue;
-  account: FieldValue;
-  bankAccountNo: FieldValue;
-  iban: FieldValue;
-  branchCode: FieldValue;
-  swiftNumber: FieldValue;
-  clausesAndConditions: FieldValue;
-  otherDetails: FieldValue;
-  bankGuaranteeNumber: FieldValue;
-  nameOfBeneficiary: FieldValue;
-  marginMoney: FieldValue;
-  chargesIncurred: FieldValue;
-  fixedDepositNumber: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -169,21 +166,4 @@ export class AssetMaintenance extends Model {
       
     ]
   };
-}
-
-export interface IAssetMaintenance {
-  id: FieldValue;
-  assetName: FieldValue;
-  assetCategory: FieldValue;
-  itemCode: FieldValue;
-  itemName: FieldValue;
-  company: FieldValue;
-  selectSerialNo: FieldValue;
-  serialNo: FieldValue;
-  maintenanceTeam: FieldValue;
-  maintenanceManager: FieldValue;
-  maintenanceManagerName: FieldValue;
-  tasks: FieldValue;
-  maintenanceTasks: FieldValue;
-  
 }

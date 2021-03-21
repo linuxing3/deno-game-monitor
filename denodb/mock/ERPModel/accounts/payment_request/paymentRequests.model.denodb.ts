@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -436,48 +433,4 @@ export class PaymentRequest extends Model {
       
     ]
   };
-}
-
-export interface IPaymentRequest {
-  id: FieldValue;
-  paymentRequestType: FieldValue;
-  transactionDate: FieldValue;
-  series: FieldValue;
-  modeOfPayment: FieldValue;
-  partyDetails: FieldValue;
-  partyType: FieldValue;
-  party: FieldValue;
-  referenceDoctype: FieldValue;
-  referenceName: FieldValue;
-  transactionDetails: FieldValue;
-  amount: FieldValue;
-  isASubscription: FieldValue;
-  transactionCurrency: FieldValue;
-  subscriptionSection: FieldValue;
-  subscriptionPlans: FieldValue;
-  bankAccountDetails: FieldValue;
-  bankAccount: FieldValue;
-  bank: FieldValue;
-  bankAccountNo: FieldValue;
-  account: FieldValue;
-  iban: FieldValue;
-  branchCode: FieldValue;
-  swiftNumber: FieldValue;
-  recipientMessageAndPaymentDetails: FieldValue;
-  printFormat: FieldValue;
-  to: FieldValue;
-  subject: FieldValue;
-  paymentGatewayAccount: FieldValue;
-  status: FieldValue;
-  makeSalesInvoice: FieldValue;
-  message: FieldValue;
-  messageExamples: FieldValue;
-  muteEmail: FieldValue;
-  paymentUrl: FieldValue;
-  paymentGatewayDetails: FieldValue;
-  paymentGateway: FieldValue;
-  paymentAccount: FieldValue;
-  paymentOrder: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

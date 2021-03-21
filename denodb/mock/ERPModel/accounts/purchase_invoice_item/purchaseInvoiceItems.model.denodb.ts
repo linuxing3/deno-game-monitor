@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -744,76 +741,4 @@ export class PurchaseInvoiceItem extends Model {
       
     ]
   };
-}
-
-export interface IPurchaseInvoiceItem {
-  id: FieldValue;
-  item: FieldValue;
-  itemName: FieldValue;
-  description: FieldValue;
-  image: FieldValue;
-  imageView: FieldValue;
-  quantityAndRate: FieldValue;
-  receivedQty: FieldValue;
-  acceptedQty: FieldValue;
-  rejectedQty: FieldValue;
-  stockUom: FieldValue;
-  uom: FieldValue;
-  uomConversionFactor: FieldValue;
-  stockQty: FieldValue;
-  priceListRate: FieldValue;
-  discountOnPriceListRate: FieldValue;
-  discountAmount: FieldValue;
-  priceListRateCompanyCurrency: FieldValue;
-  rate: FieldValue;
-  amount: FieldValue;
-  rateCompanyCurrency: FieldValue;
-  amountCompanyCurrency: FieldValue;
-  pricingRule: FieldValue;
-  netRate: FieldValue;
-  netAmount: FieldValue;
-  netRateCompanyCurrency: FieldValue;
-  netAmountCompanyCurrency: FieldValue;
-  itemWeightDetails: FieldValue;
-  weightPerUnit: FieldValue;
-  totalWeight: FieldValue;
-  weightUom: FieldValue;
-  warehouse: FieldValue;
-  acceptedWarehouse: FieldValue;
-  rejectedWarehouse: FieldValue;
-  qualityInspection: FieldValue;
-  batchNo: FieldValue;
-  serialNo: FieldValue;
-  rejectedSerialNo: FieldValue;
-  accounting: FieldValue;
-  expenseHead: FieldValue;
-  itemTaxTemplate: FieldValue;
-  project: FieldValue;
-  costCenter: FieldValue;
-  deferredExpense: FieldValue;
-  deferredExpenseAccount: FieldValue;
-  serviceStopDate: FieldValue;
-  enableDeferredExpense: FieldValue;
-  serviceStartDate: FieldValue;
-  serviceEndDate: FieldValue;
-  reference: FieldValue;
-  allowZeroValuationRate: FieldValue;
-  brand: FieldValue;
-  itemGroup: FieldValue;
-  itemTaxRate: FieldValue;
-  itemTaxAmount: FieldValue;
-  purchaseOrder: FieldValue;
-  bom: FieldValue;
-  includeExplodedItems: FieldValue;
-  isFixedAsset: FieldValue;
-  asset: FieldValue;
-  assetLocation: FieldValue;
-  purchaseOrderItem: FieldValue;
-  purchaseReceipt: FieldValue;
-  pageBreak: FieldValue;
-  prDetail: FieldValue;
-  valuationRate: FieldValue;
-  rawMaterialsSuppliedCost: FieldValue;
-  landedCostVoucherAmount: FieldValue;
-  
 }

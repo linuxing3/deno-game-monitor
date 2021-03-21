@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -158,18 +155,4 @@ export class Shareholder extends Model {
       
     ]
   };
-}
-
-export interface IShareholder {
-  id: FieldValue;
-  title: FieldValue;
-  folioNo: FieldValue;
-  company: FieldValue;
-  isCompany: FieldValue;
-  addressAndContacts: FieldValue;
-  addressHtml: FieldValue;
-  contactHtml: FieldValue;
-  shareBalance: FieldValue;
-  contactList: FieldValue;
-  
 }

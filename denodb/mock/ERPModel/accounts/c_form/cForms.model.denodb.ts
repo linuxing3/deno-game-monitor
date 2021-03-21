@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -152,20 +149,4 @@ export class CForm extends Model {
       
     ]
   };
-}
-
-export interface ICForm {
-  id: FieldValue;
-  series: FieldValue;
-  cFormNo: FieldValue;
-  receivedDate: FieldValue;
-  customer: FieldValue;
-  company: FieldValue;
-  quarter: FieldValue;
-  totalAmount: FieldValue;
-  state: FieldValue;
-  invoices: FieldValue;
-  totalInvoicedAmount: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

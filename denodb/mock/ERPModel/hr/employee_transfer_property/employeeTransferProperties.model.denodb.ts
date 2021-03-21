@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -64,12 +61,4 @@ export class EmployeeTransferProperty extends Model {
       
     ]
   };
-}
-
-export interface IEmployeeTransferProperty {
-  id: FieldValue;
-  property: FieldValue;
-  current: FieldValue;
-  new: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -277,33 +274,4 @@ export class TravelRequest extends Model {
       
     ]
   };
-}
-
-export interface ITravelRequest {
-  id: FieldValue;
-  travelType: FieldValue;
-  travelFunding: FieldValue;
-  copyOfInvitationAnnouncement: FieldValue;
-  purposeOfTravel: FieldValue;
-  detailsOfSponsorNameLocation: FieldValue;
-  description: FieldValue;
-  anyOtherDetails: FieldValue;
-  employeeDetails: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  contactNumber: FieldValue;
-  contactEmail: FieldValue;
-  dateOfBirth: FieldValue;
-  identificationDocumentType: FieldValue;
-  identificationDocumentNumber: FieldValue;
-  passportNumber: FieldValue;
-  travelItinerary: FieldValue;
-  costingDetails: FieldValue;
-  costCenter: FieldValue;
-  costing: FieldValue;
-  eventDetails: FieldValue;
-  nameOfOrganizer: FieldValue;
-  addressOfOrganizer: FieldValue;
-  otherDetails: FieldValue;
-  
 }

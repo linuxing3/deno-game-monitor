@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -272,28 +269,4 @@ export class ChequePrintTemplate extends Model {
       
     ]
   };
-}
-
-export interface IChequePrintTemplate {
-  id: FieldValue;
-  hasPrintFormat: FieldValue;
-  primarySettings: FieldValue;
-  bankName: FieldValue;
-  chequeSize: FieldValue;
-  chequeWidth: FieldValue;
-  chequeHeight: FieldValue;
-  scannedCheque: FieldValue;
-  isAccountPayable: FieldValue;
-  distanceFromLeftEdge: FieldValue;
-  messageToShow: FieldValue;
-  dateSettings: FieldValue;
-  payerSettings: FieldValue;
-  startingLocationFromLeftEdge: FieldValue;
-  widthOfAmountInWord: FieldValue;
-  lineSpacingForAmountInWords: FieldValue;
-  amountInFigure: FieldValue;
-  signatoryPosition: FieldValue;
-  distanceFromTopEdge: FieldValue;
-  preview: FieldValue;
-  
 }

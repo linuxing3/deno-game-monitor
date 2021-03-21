@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -145,21 +142,4 @@ export class CashierClosing extends Model {
       
     ]
   };
-}
-
-export interface ICashierClosing {
-  id: FieldValue;
-  series: FieldValue;
-  user: FieldValue;
-  date: FieldValue;
-  fromTime: FieldValue;
-  toTime: FieldValue;
-  expense: FieldValue;
-  custody: FieldValue;
-  returns: FieldValue;
-  outstandingAmount: FieldValue;
-  payments: FieldValue;
-  netAmount: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

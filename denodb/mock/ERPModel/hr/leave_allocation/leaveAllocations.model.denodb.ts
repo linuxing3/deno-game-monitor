@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -215,27 +212,4 @@ export class LeaveAllocation extends Model {
       
     ]
   };
-}
-
-export interface ILeaveAllocation {
-  id: FieldValue;
-  series: FieldValue;
-  employee: FieldValue;
-  employeeName: FieldValue;
-  department: FieldValue;
-  leaveType: FieldValue;
-  fromDate: FieldValue;
-  toDate: FieldValue;
-  allocation: FieldValue;
-  newLeavesAllocated: FieldValue;
-  addUnusedLeavesFromPreviousAllocations: FieldValue;
-  unusedLeaves: FieldValue;
-  totalLeavesAllocated: FieldValue;
-  totalLeavesEncashed: FieldValue;
-  compensatoryLeaveRequest: FieldValue;
-  leavePeriod: FieldValue;
-  amendedFrom: FieldValue;
-  notes: FieldValue;
-  description: FieldValue;
-  
 }

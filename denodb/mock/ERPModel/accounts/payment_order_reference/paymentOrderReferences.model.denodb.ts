@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -143,19 +140,4 @@ export class PaymentOrderReference extends Model {
       
     ]
   };
-}
-
-export interface IPaymentOrderReference {
-  id: FieldValue;
-  type: FieldValue;
-  name: FieldValue;
-  amount: FieldValue;
-  supplier: FieldValue;
-  paymentRequest: FieldValue;
-  modeOfPayment: FieldValue;
-  bankAccountDetails: FieldValue;
-  bankAccount: FieldValue;
-  account: FieldValue;
-  paymentReference: FieldValue;
-  
 }

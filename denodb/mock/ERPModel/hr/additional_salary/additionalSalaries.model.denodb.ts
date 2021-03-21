@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -153,21 +150,4 @@ export class AdditionalSalary extends Model {
       
     ]
   };
-}
-
-export interface IAdditionalSalary {
-  id: FieldValue;
-  series: FieldValue;
-  employee: FieldValue;
-  salaryComponent: FieldValue;
-  amount: FieldValue;
-  overwriteSalaryStructureAmount: FieldValue;
-  payrollDate: FieldValue;
-  employeeName: FieldValue;
-  department: FieldValue;
-  company: FieldValue;
-  salarySlip: FieldValue;
-  salaryComponentType: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -579,63 +576,4 @@ export class PaymentEntry extends Model {
       
     ]
   };
-}
-
-export interface IPaymentEntry {
-  id: FieldValue;
-  typeOfPayment: FieldValue;
-  series: FieldValue;
-  paymentType: FieldValue;
-  postingDate: FieldValue;
-  company: FieldValue;
-  costCenter: FieldValue;
-  modeOfPayment: FieldValue;
-  paymentFromTo: FieldValue;
-  partyType: FieldValue;
-  party: FieldValue;
-  partyName: FieldValue;
-  bankAccount: FieldValue;
-  email: FieldValue;
-  contact: FieldValue;
-  accounts: FieldValue;
-  partyBalance: FieldValue;
-  accountPaidFrom: FieldValue;
-  accountCurrency: FieldValue;
-  accountBalance: FieldValue;
-  accountPaidTo: FieldValue;
-  amount: FieldValue;
-  paidAmount: FieldValue;
-  paidAmountCompanyCurrency: FieldValue;
-  receivedAmount: FieldValue;
-  exchangeRate: FieldValue;
-  receivedAmountCompanyCurrency: FieldValue;
-  reference: FieldValue;
-  allocatePaymentAmount: FieldValue;
-  paymentReferences: FieldValue;
-  writeoff: FieldValue;
-  totalAllocatedAmount: FieldValue;
-  totalAllocatedAmountCompanyCurrency: FieldValue;
-  setExchangeGainLoss: FieldValue;
-  unallocatedAmount: FieldValue;
-  differenceAmountCompanyCurrency: FieldValue;
-  writeOffDifferenceAmount: FieldValue;
-  deductionsOrLoss: FieldValue;
-  paymentDeductionsOrLoss: FieldValue;
-  transactionId: FieldValue;
-  chequeReferenceNo: FieldValue;
-  chequeReferenceDate: FieldValue;
-  clearanceDate: FieldValue;
-  moreInformation: FieldValue;
-  project: FieldValue;
-  remarks: FieldValue;
-  letterHead: FieldValue;
-  printHeading: FieldValue;
-  bank: FieldValue;
-  bankAccountNo: FieldValue;
-  paymentOrder: FieldValue;
-  subscriptionSection: FieldValue;
-  autoRepeat: FieldValue;
-  amendedFrom: FieldValue;
-  title: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -117,17 +114,4 @@ export class PaymentEntryReference extends Model {
       
     ]
   };
-}
-
-export interface IPaymentEntryReference {
-  id: FieldValue;
-  type: FieldValue;
-  name: FieldValue;
-  dueDate: FieldValue;
-  supplierInvoiceNo: FieldValue;
-  totalAmount: FieldValue;
-  outstanding: FieldValue;
-  allocated: FieldValue;
-  exchangeRate: FieldValue;
-  
 }

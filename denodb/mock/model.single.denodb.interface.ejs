@@ -3,10 +3,10 @@
 // deno-lint-ignore-file
 /*
 |--------------------------------------------------------------------------
-| Model: ProjectType
+| Model: <%= modelName %>
 |--------------------------------------------------------------------------
 |
-| Model Class and Interface of projectTypes
+| Model Class and Interface of <%= tableName %>
 |
 */
 import {
@@ -21,45 +21,31 @@ import {
 } from "https://deno.land/x/denodb/lib/model.ts";
 
 
-export class ProjectType extends Model { 
-  static table = "projectTypes";
+export class <%= modelName %> extends Model { 
+  static table = "<%= tableName %>";
   static timestamps = true;
   
   static fields: ModelFields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
-    projectType: DataTypes.STRING,
-    description: DataTypes.STRING,
-    
+    <% for (let i = 0; i < fields.length; i++) { %><% if(fields[i]['key']) { %><%= fields[i]['key'] %>: DataTypes.STRING,
+    <% } %><% } %>
   };
 
   static meta = {
     // field meta information for UI render
     fieldProperty: [
-      {
-        key: 'projectType',
-        label: 'Project Type',
-        type: 'input',
-        placeholder: 'Input Project Type',
-        options: '',
-        
+      <% for (let i = 0; i < fields.length; i++) { %>{
+        <% for (let j = 0; j < 5; j++) { %><% if(Object.keys(fields[i])[j]) { %><%= Object.keys(fields[i])[j] %>: '<%= fields[i][Object.keys(fields[i])[j]]  %>',
+        <% } %><% } %>
       },
-      {
-        key: 'description',
-        label: 'Description',
-        type: 'input',
-        placeholder: 'Input Description',
-        options: '',
-        
-      },
-      
+      <% } %>
     ]
   };
 }
 
-export interface IProjectType {
+export interface I<%= modelName %> {
   id: FieldValue;
-  projectType: FieldValue;
-  description: FieldValue;
-  
+  <% for (let i = 0; i < fields.length; i++) { %><% if(fields[i]['key']) { %><%= fields[i]['key'] %>: FieldValue;
+  <% } %><% } %>
 }

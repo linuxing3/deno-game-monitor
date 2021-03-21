@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -189,25 +186,4 @@ export class PaymentReconciliation extends Model {
       
     ]
   };
-}
-
-export interface IPaymentReconciliation {
-  id: FieldValue;
-  company: FieldValue;
-  partyType: FieldValue;
-  party: FieldValue;
-  receivablePayableAccount: FieldValue;
-  bankCashAccount: FieldValue;
-  fromInvoiceDate: FieldValue;
-  toInvoiceDate: FieldValue;
-  minimumInvoiceAmount: FieldValue;
-  maximumInvoiceAmount: FieldValue;
-  limit: FieldValue;
-  getUnreconciledEntries: FieldValue;
-  unreconciledPaymentDetails: FieldValue;
-  payments: FieldValue;
-  reconcile: FieldValue;
-  invoiceJournalEntryDetails: FieldValue;
-  invoices: FieldValue;
-  
 }

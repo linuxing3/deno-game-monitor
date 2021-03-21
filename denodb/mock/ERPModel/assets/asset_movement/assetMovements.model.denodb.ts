@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -196,24 +193,4 @@ export class AssetMovement extends Model {
       
     ]
   };
-}
-
-export interface IAssetMovement {
-  id: FieldValue;
-  company: FieldValue;
-  purpose: FieldValue;
-  asset: FieldValue;
-  transactionDate: FieldValue;
-  quantity: FieldValue;
-  selectSerialNo: FieldValue;
-  serialNo: FieldValue;
-  sourceLocation: FieldValue;
-  targetLocation: FieldValue;
-  fromEmployee: FieldValue;
-  toEmployee: FieldValue;
-  reference: FieldValue;
-  referenceDocType: FieldValue;
-  referenceName: FieldValue;
-  amendedFrom: FieldValue;
-  
 }

@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -213,25 +210,4 @@ export class BankAccount extends Model {
       
     ]
   };
-}
-
-export interface IBankAccount {
-  id: FieldValue;
-  accountName: FieldValue;
-  account: FieldValue;
-  bank: FieldValue;
-  isCompanyAccount: FieldValue;
-  company: FieldValue;
-  isDefault: FieldValue;
-  bankAccountNo: FieldValue;
-  iban: FieldValue;
-  branchCode: FieldValue;
-  swiftNumber: FieldValue;
-  partyType: FieldValue;
-  party: FieldValue;
-  addressAndContact: FieldValue;
-  addressHtml: FieldValue;
-  website: FieldValue;
-  contactHtml: FieldValue;
-  
 }

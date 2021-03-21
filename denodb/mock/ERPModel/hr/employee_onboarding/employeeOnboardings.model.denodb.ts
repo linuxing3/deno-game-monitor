@@ -14,9 +14,6 @@ import {
   Model
 } from "https://deno.land/x/denodb/mod.ts";
 import {
-  FieldValue,
-} from "https://deno.land/x/denodb/lib/query-builder.ts";
-import {
   ModelFields,
 } from "https://deno.land/x/denodb/lib/model.ts";
 
@@ -179,23 +176,4 @@ export class EmployeeOnboarding extends Model {
       
     ]
   };
-}
-
-export interface IEmployeeOnboarding {
-  id: FieldValue;
-  jobApplicant: FieldValue;
-  jobOffer: FieldValue;
-  employeeName: FieldValue;
-  employee: FieldValue;
-  dateOfJoining: FieldValue;
-  status: FieldValue;
-  employeeOnboardingTemplate: FieldValue;
-  company: FieldValue;
-  department: FieldValue;
-  designation: FieldValue;
-  employeeGrade: FieldValue;
-  project: FieldValue;
-  activities: FieldValue;
-  amendedFrom: FieldValue;
-  
 }
