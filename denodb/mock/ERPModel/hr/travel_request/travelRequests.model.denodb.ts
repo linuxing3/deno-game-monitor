@@ -13,16 +13,13 @@ import {
   DataTypes,
   Model
 } from "https://deno.land/x/denodb/mod.ts";
-import {
-  ModelFields,
-} from "https://deno.land/x/denodb/lib/model.ts";
 
 
 export class TravelRequest extends Model { 
   static table = "travelRequests";
   static timestamps = true;
   
-  static fields: ModelFields = {
+  static fields = {
     // fields list for ORM Maping
     id: { primaryKey: true, autoIncrement: true },
     travelType: DataTypes.STRING,
