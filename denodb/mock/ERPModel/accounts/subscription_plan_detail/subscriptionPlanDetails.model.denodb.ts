@@ -27,26 +27,4 @@ export class SubscriptionPlanDetail extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'quantity',
-        label: 'Quantity',
-        type: 'input',
-        placeholder: 'Input Quantity',
-        options: '',
-        
-      },
-      {
-        key: 'plan',
-        label: 'Plan',
-        type: 'select',
-        placeholder: 'Input Plan',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

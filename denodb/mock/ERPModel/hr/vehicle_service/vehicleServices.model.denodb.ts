@@ -29,42 +29,4 @@ export class VehicleService extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'serviceItem',
-        label: 'Service Item',
-        type: 'select',
-        placeholder: 'Input Service Item',
-        options: '[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]',
-        
-      },
-      {
-        key: 'type',
-        label: 'Type',
-        type: 'select',
-        placeholder: 'Input Type',
-        options: '[object Object],[object Object],[object Object]',
-        
-      },
-      {
-        key: 'frequency',
-        label: 'Frequency',
-        type: 'select',
-        placeholder: 'Input Frequency',
-        options: '[object Object],[object Object],[object Object],[object Object],[object Object]',
-        
-      },
-      {
-        key: 'expense',
-        label: 'Expense',
-        type: 'input',
-        placeholder: 'Input Expense',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

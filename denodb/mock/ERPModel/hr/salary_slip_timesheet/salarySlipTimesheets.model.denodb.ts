@@ -27,26 +27,4 @@ export class SalarySlipTimesheet extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'timeSheet',
-        label: 'Time Sheet',
-        type: 'select',
-        placeholder: 'Input Time Sheet',
-        options: '',
-        
-      },
-      {
-        key: 'workingHours',
-        label: 'Working Hours',
-        type: 'input',
-        placeholder: 'Input Working Hours',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

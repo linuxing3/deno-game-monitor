@@ -26,18 +26,4 @@ export class FiscalYearCompany extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'company',
-        label: 'Company',
-        type: 'select',
-        placeholder: 'Input Company',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

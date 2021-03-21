@@ -28,42 +28,4 @@ export class LoyaltyProgramCollection extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'tierName',
-        label: 'Tier Name',
-        type: 'input',
-        placeholder: 'Input Tier Name',
-        options: '',
-        
-      },
-      {
-        key: 'minimumTotalSpent',
-        label: 'Minimum Total Spent',
-        type: 'input',
-        placeholder: 'Input Minimum Total Spent',
-        options: '',
-        
-      },
-      {
-        key: '',
-        label: '',
-        type: 'input',
-        placeholder: 'Input ',
-        options: '',
-        
-      },
-      {
-        key: 'collectionFactor_1Lp',
-        label: 'Collection Factor 1 Lp',
-        type: 'input',
-        placeholder: 'Input Collection Factor 1 Lp',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

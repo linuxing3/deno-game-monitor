@@ -26,18 +26,4 @@ export class Branch extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'branch',
-        label: 'Branch',
-        type: 'input',
-        placeholder: 'Input Branch',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

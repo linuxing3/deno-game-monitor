@@ -27,26 +27,4 @@ export class DailyWorkSummaryGroupUser extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'user',
-        label: 'User',
-        type: 'select',
-        placeholder: 'Input User',
-        options: '',
-        
-      },
-      {
-        key: 'email',
-        label: 'Email',
-        type: 'input',
-        placeholder: 'Input Email',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

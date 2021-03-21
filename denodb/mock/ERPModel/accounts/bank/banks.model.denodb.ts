@@ -26,18 +26,4 @@ export class Bank extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'bankName',
-        label: 'Bank Name',
-        type: 'input',
-        placeholder: 'Input Bank Name',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

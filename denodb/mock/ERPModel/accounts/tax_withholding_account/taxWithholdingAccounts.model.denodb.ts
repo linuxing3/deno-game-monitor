@@ -27,26 +27,4 @@ export class TaxWithholdingAccount extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'company',
-        label: 'Company',
-        type: 'select',
-        placeholder: 'Input Company',
-        options: '',
-        
-      },
-      {
-        key: 'account',
-        label: 'Account',
-        type: 'select',
-        placeholder: 'Input Account',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

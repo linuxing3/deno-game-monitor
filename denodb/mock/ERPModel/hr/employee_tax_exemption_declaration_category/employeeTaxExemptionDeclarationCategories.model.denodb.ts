@@ -28,34 +28,4 @@ export class EmployeeTaxExemptionDeclarationCategory extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'exemptionSubCategory',
-        label: 'Exemption Sub Category',
-        type: 'select',
-        placeholder: 'Input Exemption Sub Category',
-        options: '',
-        
-      },
-      {
-        key: 'exemptionCategory',
-        label: 'Exemption Category',
-        type: 'select',
-        placeholder: 'Input Exemption Category',
-        options: '',
-        
-      },
-      {
-        key: 'amount',
-        label: 'Amount',
-        type: 'input',
-        placeholder: 'Input Amount',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

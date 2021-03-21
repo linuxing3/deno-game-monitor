@@ -28,34 +28,4 @@ export class MaintenanceTeamMember extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'teamMember',
-        label: 'Team Member',
-        type: 'select',
-        placeholder: 'Input Team Member',
-        options: '',
-        
-      },
-      {
-        key: 'fullName',
-        label: 'Full Name',
-        type: 'input',
-        placeholder: 'Input Full Name',
-        options: '',
-        
-      },
-      {
-        key: 'maintenanceRole',
-        label: 'Maintenance Role',
-        type: 'select',
-        placeholder: 'Input Maintenance Role',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

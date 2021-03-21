@@ -27,26 +27,4 @@ export class ProjectTemplate extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'projectType',
-        label: 'Project Type',
-        type: 'select',
-        placeholder: 'Input Project Type',
-        options: '',
-        
-      },
-      {
-        key: 'tasks',
-        label: 'Tasks',
-        type: 'select',
-        placeholder: 'Input Tasks',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

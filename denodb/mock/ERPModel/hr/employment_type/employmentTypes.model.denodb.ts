@@ -26,18 +26,4 @@ export class EmploymentType extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'employmentType',
-        label: 'Employment Type',
-        type: 'input',
-        placeholder: 'Input Employment Type',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

@@ -28,34 +28,4 @@ export class AssetSetting extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'depreciationOptions',
-        label: 'Depreciation Options',
-        type: 'input',
-        placeholder: 'Input Depreciation Options',
-        options: '',
-        
-      },
-      {
-        key: 'calculateProratedDepreciationScheduleBasedOnFiscalYear',
-        label: 'Calculate Prorated Depreciation Schedule Based On Fiscal Year',
-        type: 'input',
-        placeholder: 'Input Calculate Prorated Depreciation Schedule Based On Fiscal Year',
-        options: '',
-        
-      },
-      {
-        key: 'numberOfDaysInFiscalYear',
-        label: 'Number Of Days In Fiscal Year',
-        type: 'input',
-        placeholder: 'Input Number Of Days In Fiscal Year',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

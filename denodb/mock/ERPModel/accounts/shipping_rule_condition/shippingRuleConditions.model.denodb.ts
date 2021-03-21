@@ -28,34 +28,4 @@ export class ShippingRuleCondition extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'fromValue',
-        label: 'From Value',
-        type: 'input',
-        placeholder: 'Input From Value',
-        options: '',
-        
-      },
-      {
-        key: 'toValue',
-        label: 'To Value',
-        type: 'input',
-        placeholder: 'Input To Value',
-        options: '',
-        
-      },
-      {
-        key: 'shippingAmount',
-        label: 'Shipping Amount',
-        type: 'select',
-        placeholder: 'Input Shipping Amount',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

@@ -27,26 +27,4 @@ export class ShareType extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'title',
-        label: 'Title',
-        type: 'input',
-        placeholder: 'Input Title',
-        options: '',
-        
-      },
-      {
-        key: 'description',
-        label: 'Description',
-        type: 'input',
-        placeholder: 'Input Description',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

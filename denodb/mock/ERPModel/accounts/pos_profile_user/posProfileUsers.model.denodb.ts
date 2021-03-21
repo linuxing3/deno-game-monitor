@@ -27,26 +27,4 @@ export class PosProfileUser extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'default',
-        label: 'Default',
-        type: 'input',
-        placeholder: 'Input Default',
-        options: '',
-        
-      },
-      {
-        key: 'user',
-        label: 'User',
-        type: 'select',
-        placeholder: 'Input User',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

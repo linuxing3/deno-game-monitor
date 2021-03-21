@@ -26,18 +26,4 @@ export class PosSetting extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'usePosInOfflineMode',
-        label: 'Use Pos In Offline Mode',
-        type: 'input',
-        placeholder: 'Input Use Pos In Offline Mode',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

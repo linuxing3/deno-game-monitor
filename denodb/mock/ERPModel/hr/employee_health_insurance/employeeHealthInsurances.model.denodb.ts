@@ -26,18 +26,4 @@ export class EmployeeHealthInsurance extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'healthInsuranceName',
-        label: 'Health Insurance Name',
-        type: 'input',
-        placeholder: 'Input Health Insurance Name',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

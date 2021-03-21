@@ -27,26 +27,4 @@ export class EmployeeTaxExemptionCategory extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'maxAmount',
-        label: 'Max Amount',
-        type: 'input',
-        placeholder: 'Input Max Amount',
-        options: '',
-        
-      },
-      {
-        key: 'isActive',
-        label: 'Is Active',
-        type: 'input',
-        placeholder: 'Input Is Active',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

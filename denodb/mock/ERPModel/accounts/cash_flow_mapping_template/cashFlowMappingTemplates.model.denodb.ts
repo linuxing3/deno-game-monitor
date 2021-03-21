@@ -27,26 +27,4 @@ export class CashFlowMappingTemplate extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'templateName',
-        label: 'Template Name',
-        type: 'input',
-        placeholder: 'Input Template Name',
-        options: '',
-        
-      },
-      {
-        key: 'cashFlowMapping',
-        label: 'Cash Flow Mapping',
-        type: 'select',
-        placeholder: 'Input Cash Flow Mapping',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

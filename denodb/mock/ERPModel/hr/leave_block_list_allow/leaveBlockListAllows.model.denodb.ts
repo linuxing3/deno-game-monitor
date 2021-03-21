@@ -26,18 +26,4 @@ export class LeaveBlockListAllow extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'allowUser',
-        label: 'Allow User',
-        type: 'select',
-        placeholder: 'Input Allow User',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

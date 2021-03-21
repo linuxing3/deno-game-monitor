@@ -27,26 +27,4 @@ export class CashierClosingPayment extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'modeOfPayment',
-        label: 'Mode Of Payment',
-        type: 'select',
-        placeholder: 'Input Mode Of Payment',
-        options: '',
-        
-      },
-      {
-        key: 'amount',
-        label: 'Amount',
-        type: 'input',
-        placeholder: 'Input Amount',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

@@ -27,26 +27,4 @@ export class PaymentTermsTemplate extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'templateName',
-        label: 'Template Name',
-        type: 'input',
-        placeholder: 'Input Template Name',
-        options: '',
-        
-      },
-      {
-        key: 'paymentTerms',
-        label: 'Payment Terms',
-        type: 'select',
-        placeholder: 'Input Payment Terms',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

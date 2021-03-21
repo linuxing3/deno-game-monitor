@@ -26,18 +26,4 @@ export class Interest extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'interest',
-        label: 'Interest',
-        type: 'input',
-        placeholder: 'Input Interest',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

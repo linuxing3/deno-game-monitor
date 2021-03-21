@@ -26,18 +26,4 @@ export class DependentTask extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'task',
-        label: 'Task',
-        type: 'select',
-        placeholder: 'Input Task',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

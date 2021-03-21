@@ -27,26 +27,4 @@ export class JobApplicantSource extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'sourceName',
-        label: 'Source Name',
-        type: 'input',
-        placeholder: 'Input Source Name',
-        options: '',
-        
-      },
-      {
-        key: 'details',
-        label: 'Details',
-        type: 'input',
-        placeholder: 'Input Details',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

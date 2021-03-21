@@ -26,18 +26,4 @@ export class TaxCategory extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'title',
-        label: 'Title',
-        type: 'input',
-        placeholder: 'Input Title',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

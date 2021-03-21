@@ -26,18 +26,4 @@ export class LinkedLocation extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'location',
-        label: 'Location',
-        type: 'select',
-        placeholder: 'Input Location',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

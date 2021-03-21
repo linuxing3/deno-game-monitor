@@ -28,34 +28,4 @@ export class MonthlyDistribution extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'distributionName',
-        label: 'Distribution Name',
-        type: 'input',
-        placeholder: 'Input Distribution Name',
-        options: '',
-        
-      },
-      {
-        key: 'fiscalYear',
-        label: 'Fiscal Year',
-        type: 'select',
-        placeholder: 'Input Fiscal Year',
-        options: '',
-        
-      },
-      {
-        key: 'monthlyDistributionPercentages',
-        label: 'Monthly Distribution Percentages',
-        type: 'select',
-        placeholder: 'Input Monthly Distribution Percentages',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

@@ -27,26 +27,4 @@ export class EmployeeGrade extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'defaultLeavePolicy',
-        label: 'Default Leave Policy',
-        type: 'select',
-        placeholder: 'Input Default Leave Policy',
-        options: '',
-        
-      },
-      {
-        key: 'defaultSalaryStructure',
-        label: 'Default Salary Structure',
-        type: 'select',
-        placeholder: 'Input Default Salary Structure',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

@@ -26,18 +26,4 @@ export class CashFlowMappingAccount extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'account',
-        label: 'Account',
-        type: 'select',
-        placeholder: 'Input Account',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

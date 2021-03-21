@@ -27,26 +27,4 @@ export class ItemTaxTemplateDetail extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'tax',
-        label: 'Tax',
-        type: 'select',
-        placeholder: 'Input Tax',
-        options: '',
-        
-      },
-      {
-        key: 'taxRate',
-        label: 'Tax Rate',
-        type: 'input',
-        placeholder: 'Input Tax Rate',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

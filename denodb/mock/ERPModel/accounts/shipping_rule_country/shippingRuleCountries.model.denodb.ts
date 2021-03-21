@@ -26,18 +26,4 @@ export class ShippingRuleCountry extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'country',
-        label: 'Country',
-        type: 'select',
-        placeholder: 'Input Country',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

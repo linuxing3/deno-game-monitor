@@ -29,42 +29,4 @@ export class DrivingLicenseCategory extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'class',
-        label: 'Class',
-        type: 'input',
-        placeholder: 'Input Class',
-        options: '',
-        
-      },
-      {
-        key: 'description',
-        label: 'Description',
-        type: 'input',
-        placeholder: 'Input Description',
-        options: '',
-        
-      },
-      {
-        key: 'issuingDate',
-        label: 'Issuing Date',
-        type: 'input',
-        placeholder: 'Input Issuing Date',
-        options: '',
-        
-      },
-      {
-        key: 'expiryDate',
-        label: 'Expiry Date',
-        type: 'input',
-        placeholder: 'Input Expiry Date',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

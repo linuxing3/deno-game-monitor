@@ -26,18 +26,4 @@ export class SubscriptionInvoice extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'invoice',
-        label: 'Invoice',
-        type: 'select',
-        placeholder: 'Input Invoice',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }

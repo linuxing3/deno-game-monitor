@@ -28,34 +28,4 @@ export class EmployeeTransferProperty extends Model {
     
   };
 
-  static meta = {
-    // field meta information for UI render
-    fieldProperty: [
-      {
-        key: 'property',
-        label: 'Property',
-        type: 'input',
-        placeholder: 'Input Property',
-        options: '',
-        
-      },
-      {
-        key: 'current',
-        label: 'Current',
-        type: 'input',
-        placeholder: 'Input Current',
-        options: '',
-        
-      },
-      {
-        key: 'new',
-        label: 'New',
-        type: 'input',
-        placeholder: 'Input New',
-        options: '',
-        
-      },
-      
-    ]
-  };
 }
